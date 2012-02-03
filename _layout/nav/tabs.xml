@@ -27,12 +27,8 @@
 	</tabGroup>
 	<tabGroup id="arenaTeam">
 		<tab href="team-info.xml" id="teamInfo" key="armory.arenatab.teamprofile"/>
-		<tab href="arena-team-game-chart.xml" id="matchHistory" key="armory.arenatab.matchhistory">
-			<exclude region="CN"/>
-		</tab>
-		<tab href="arena-team-report-opposing-teams.xml" id="opponentHistory" key="armory.arenatab.opponenthistory">
-			<exclude region="CN"/>
-		</tab>
+		<tab href="arena-team-game-chart.xml" id="matchHistory" key="armory.arenatab.matchhistory"/>
+		<tab href="arena-team-report-opposing-teams.xml" id="opponentHistory" key="armory.arenatab.opponenthistory"/>
 	</tabGroup>
 	<tabGroup id="dungeons_and_factions">
 		<tab href="factions.xml" id="factions" key="armory.tabs.factions">
