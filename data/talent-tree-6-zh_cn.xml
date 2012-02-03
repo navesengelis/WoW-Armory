@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?><page globalSearch="1" lang="en_gb" requestUrl="/talent-tree.xml">
+  <talentTrees>
+    <tree bgImage="DeathKnightFrost" icon="spell_deathknight_frostpresence" key="Frost" name="冰霜" order="1">
+      <talent column="0" icon="spell_deathknight_icetouch" key="2031" name="強化冰結之觸" tier="0">
+        <rank description="你的冰結之觸可額外造成5%的傷害，並且你的冰霜熱疫可額外降低2%的近戰、遠程和施法速度。" lvl="1"/>
+        <rank description="你的冰結之觸可額外造成10%的傷害，並且你的冰霜熱疫可額外降低4%的近戰、遠程和施法速度。" lvl="2"/>
+        <rank description="你的冰結之觸可額外造成15%的傷害，並且你的冰霜熱疫可額外降低6%的近戰、遠程和施法速度。" lvl="3"/>
+      </talent>
+      <talent column="1" icon="spell_arcane_arcane01" key="2020" name="精通符能" tier="0">
+        <rank description="使你的符能上限提高15點。" lvl="1"/>
+        <rank description="使你的符能上限提高30點。" lvl="2"/>
+      </talent>
+      <talent column="2" icon="spell_holy_devotion" key="1968" name="堅韌" tier="0">
+        <rank description="使你從裝備獲得的護甲值提高2%，且所有減緩移動速度效果的持續時間縮短6%。" lvl="1"/>
+        <rank description="使你從裝備獲得的護甲值提高4%，且所有減緩移動速度效果的持續時間縮短12%。" lvl="2"/>
+        <rank description="使你從裝備獲得的護甲值提高6%，且所有減緩移動速度效果的持續時間縮短18%。" lvl="3"/>
+        <rank description="使你從裝備獲得的護甲值提高8%，且所有減緩移動速度效果的持續時間縮短24%。" lvl="4"/>
+        <rank description="使你從裝備獲得的護甲值提高10%，且所有減緩移動速度效果的持續時間縮短30%。" lvl="5"/>
+      </talent>
+      <talent column="1" icon="spell_frost_manarecharge" key="2035" name="冰結延伸" tier="1">
+        <rank description="使你的冰結之觸、冰鍊術以及凜風衝擊的射程延長5碼。" lvl="1"/>
+        <rank description="使你的冰結之觸、冰鍊術以及凜風衝擊的射程延長10碼。" lvl="2"/>
+      </talent>
+      <talent column="2" icon="spell_shadow_darkritual" key="1973" name="黑暗冰魄" tier="1">
+        <rank description="使你的冰霜和暗影傷害提高2%。" lvl="1"/>
+        <rank description="使你的冰霜和暗影傷害提高4%。" lvl="2"/>
+        <rank description="使你的冰霜和暗影傷害提高6%。" lvl="3"/>
+        <rank description="使你的冰霜和暗影傷害提高8%。" lvl="4"/>
+        <rank description="使你的冰霜和暗影傷害提高10%。" lvl="5"/>
+      </talent>
+      <talent column="3" icon="ability_dualwield" key="2022" name="冷鋼沉著" tier="1">
+        <rank description="使你單手近戰武器命中目標的機率提高1%，副手武器造成的傷害提高5%。" lvl="1"/>
+        <rank description="使你單手近戰武器命中目標的機率提高2%，副手武器造成的傷害提高10%。" lvl="2"/>
+        <rank description="使你單手近戰武器命中目標的機率提高3%，副手武器造成的傷害提高15%。" lvl="3"/>
+      </talent>
+      <talent column="0" icon="spell_deathknight_icytalons" key="2042" name="冰結之爪" requires="2031" tier="2">
+        <rank description="你從受你冰霜熱疫感染的目標身上吸取熱能，當他們的近戰攻擊速度降低時，你的近戰攻擊速度將在接下來的20秒內提高4%。" lvl="1"/>
+        <rank description="你從受你冰霜熱疫感染的目標身上吸取熱能，當他們的近戰攻擊速度降低時，你的近戰攻擊速度將在接下來的20秒內提高8%。" lvl="2"/>
+        <rank description="你從受你冰霜熱疫感染的目標身上吸取熱能，當他們的近戰攻擊速度降低時，你的近戰攻擊速度將在接下來的20秒內提高12%。" lvl="3"/>
+        <rank description="你從受你冰霜熱疫感染的目標身上吸取熱能，當他們的近戰攻擊速度降低時，你的近戰攻擊速度將在接下來的20秒內提高16%。" lvl="4"/>
+        <rank description="你從受你冰霜熱疫感染的目標身上吸取熱能，當他們的近戰攻擊速度降低時，你的近戰攻擊速度將在接下來的20秒內提高20%。" lvl="5"/>
+      </talent>
+      <talent column="1" icon="spell_shadow_raisedead" key="2215" name="巫妖之軀" tier="2">
+        <rank description="吸取穢邪能量變成不死生物，持續10秒。變成不死生物可使你免疫於魅惑、恐懼和睡眠效果。" lvl="1"/>
+        <spell castTime="0" cooldown="120000"/>
+      </talent>
+      <talent column="2" icon="inv_weapon_hand_18" key="2048" name="殲滅" tier="2">
+        <rank description="使你的近戰特殊技能致命一擊機率提高1%。此外，你的滅寂有33%的機率可以在不消耗疾病效果的情況下造成傷害。" lvl="1"/>
+        <rank description="使你的近戰特殊技能致命一擊機率提高2%。此外，你的滅寂有66%的機率可以在不消耗疾病效果的情況下造成傷害。" lvl="2"/>
+        <rank description="使你的近戰特殊技能致命一擊機率提高3%。此外，你的滅寂有100%的機率可以在不消耗疾病效果的情況下造成傷害。" lvl="3"/>
+      </talent>
+      <talent column="1" icon="inv_sword_122" key="2044" name="殺戮酷刑" tier="3">
+        <rank description="你的近戰攻擊有一定的機率使你的下一個冰結之觸、凜風衝擊或冰霜打擊必定造成致命一擊。" lvl="1"/>
+        <rank description="你的近戰攻擊有一定的機率使你的下一個冰結之觸、凜風衝擊或冰霜打擊必定造成致命一擊。此效果發動的機率比殺戮酷刑(等級1)還要高。" lvl="2"/>
+        <rank description="你的近戰攻擊有一定的機率使你的下一個冰結之觸、凜風衝擊或冰霜打擊必定造成致命一擊。此效果發動的機率比殺戮酷刑(等級2)還要高。" lvl="3"/>
+        <rank description="你的近戰攻擊有一定的機率使你的下一個冰結之觸、凜風衝擊或冰霜打擊必定造成致命一擊。此效果發動的機率比殺戮酷刑(等級3)還要高。" lvl="4"/>
+        <rank description="你的近戰攻擊有一定的機率使你的下一個冰結之觸、凜風衝擊或冰霜打擊必定造成致命一擊。此效果發動的機率比殺戮酷刑(等級4)還要高。" lvl="5"/>
+      </talent>
+      <talent column="2" icon="spell_frost_frostshock" key="1981" name="墓地之寒" tier="3">
+        <rank description="使你的冰鍊術、凜風衝擊、冰結之觸和滅寂可額外產生2.5點符能。" lvl="1"/>
+        <rank description="使你的冰鍊術、凜風衝擊、冰結之觸和滅寂可額外產生5點符能。" lvl="2"/>
+      </talent>
+      <talent column="3" icon="spell_shadow_twilight" key="1971" name="無盡凜冬" tier="3">
+        <rank description="使你的冰鍊術有50%的機率造成冰霜熱疫，並且心智冰封消耗的符能降低10點。" lvl="1"/>
+        <rank description="使你的冰鍊術有100%的機率造成冰霜熱疫，並且心智冰封不需消耗符能。" lvl="2"/>
+      </talent>
+      <talent column="1" icon="inv_chest_mail_04" key="1990" name="嚴寒懼鎧" tier="4">
+        <rank description="降低近戰攻擊命中你的機率1%。" lvl="1"/>
+        <rank description="降低近戰攻擊命中你的機率2%。" lvl="2"/>
+        <rank description="降低近戰攻擊命中你的機率3%。" lvl="3"/>
+      </talent>
+      <talent column="2" icon="spell_nature_removedisease" key="2030" name="冰河腐疾" tier="4">
+        <rank description="使你的冰結之觸、凜風衝擊和冰霜打擊對感染疾病的目標造成的傷害提高7%。" lvl="1"/>
+        <rank description="使你的冰結之觸、凜風衝擊和冰霜打擊對感染疾病的目標造成的傷害提高13%。" lvl="2"/>
+        <rank description="使你的冰結之觸、凜風衝擊和冰霜打擊對感染疾病的目標造成的傷害提高20%。" lvl="3"/>
+      </talent>
+      <talent column="3" icon="spell_shadow_soulleech_2" key="1980" name="死亡之寒" tier="4">
+        <rank description="啟動之後，你在30秒內施放的下一個冰結之觸、凜風衝擊、冰霜打擊或滅寂必定造成致命一擊。" lvl="1"/>
+        <spell castTime="0" cooldown="120000"/>
+      </talent>
+      <talent column="0" icon="spell_deathknight_icytalons" key="2223" name="強化冰結之爪" requires="2042" tier="5">
+        <rank description="你的加速提高5%。此外，你的冰結之爪效果使整個小隊或團隊的近戰加速在接下來的20秒內提高20%。" lvl="1"/>
+        <spell castTime="0"/>
+      </talent>
+      <talent column="1" icon="inv_sword_112" key="1993" name="殘忍戰技" tier="5">
+        <rank description="當你攻擊生命力低於35%的目標時，你的冰結之觸、凜風衝擊、滅寂和冰霜打擊可對目標造成6%的額外傷害。" lvl="1"/>
+        <rank description="當你攻擊生命力低於35%的目標時，你的冰結之觸、凜風衝擊、滅寂和冰霜打擊可對目標造成12的額外傷害。" lvl="2"/>
+      </talent>
+      <talent column="2" icon="spell_frost_freezingbreath" key="1992" name="凝霜" tier="5">
+        <rank description="使你冰結之觸和滅寂造成致命一擊的機率提高5%，並且施放滅寂時有5%的機率重置凜風衝擊的冷卻時間，並且使你的下一個凜風衝擊不需消耗符文。" lvl="1"/>
+        <rank description="使你冰結之觸和滅寂造成致命一擊的機率提高10%，並且施放滅寂時有10%的機率重置凜風衝擊的冷卻時間，並且使你的下一個凜風衝擊不需消耗符文。" lvl="2"/>
+        <rank description="使你冰結之觸和滅寂造成致命一擊的機率提高15%，並且施放滅寂時有15%的機率重置凜風衝擊的冷卻時間，並且使你的下一個凜風衝擊不需消耗符文。" lvl="3"/>
+      </talent>
+      <talent column="0" icon="spell_frost_wisp" key="2260" name="凍瘡" tier="6">
+        <rank description="使你的冰霜熱疫附帶冰冷效果，降低移動速度15%，持續10秒。" lvl="1"/>
+        <rank description="使你的冰霜熱疫附帶冰冷效果，降低移動速度30%，持續10秒。" lvl="2"/>
+        <rank description="使你的冰霜熱疫附帶冰冷效果，降低移動速度50%，持續10秒。" lvl="3"/>
+      </talent>
+      <talent column="1" icon="inv_staff_15" key="1999" name="噬溫酷寒" tier="6">
+        <rank description="淨除死亡騎士周圍地面的所有熱能，並冰封0碼範圍內的所有敵人，使其在10秒內無法採取任何行動並染上冰霜熱疫。此時敵人被視為處於冰凍狀態，但任何疾病以外的傷害均會中斷此效果。" lvl="1"/>
+        <spell castTime="0" cooldown="60000">
+          <power cost="40" type="runic"/>
+        </spell>
+      </talent>
+      <talent column="2" icon="spell_deathknight_frostpresence" key="2029" name="強化冰霜領域" tier="6">
+        <rank description="當你處於血魄領域或穢邪領域時，你仍可獲得冰霜領域3%的耐力，並且當你處於冰霜領域時受到的傷害可額外降低1%。" lvl="1"/>
+        <rank description="當你處於血魄領域或穢邪領域時，你仍可獲得冰霜領域6%的耐力，並且當你處於冰霜領域時受到的傷害可額外降低2%。" lvl="2"/>
+      </talent>
+      <talent column="0" icon="ability_dualwieldspecialization" key="2284" name="薩沙理安之脅" tier="7">
+        <rank description="當你雙持武器時，你的死亡打擊、滅寂、瘟疫打擊、符文打擊、血魄打擊和冰霜打擊有30%的機率同時使用副手武器作出攻擊。" lvl="1"/>
+        <rank description="當你雙持武器時，你的死亡打擊、滅寂、瘟疫打擊、符文打擊、血魄打擊和冰霜打擊有60%的機率同時使用副手武器作出攻擊。" lvl="2"/>
+        <rank description="當你雙持武器時，你的死亡打擊、滅寂、瘟疫打擊、符文打擊、血魄打擊和冰霜打擊有100%的機率同時使用副手武器作出攻擊。" lvl="3"/>
+      </talent>
+      <talent column="1" icon="inv_weapon_shortblade_79" key="2210" name="北方之血" tier="7">
+        <rank description="使你血魄打擊和冰霜打擊造成的傷害提高3%。此外，每當你的血魄打擊或瘟疫同化命中敵人時，你有30%的機率使你的血魄符文在啟動時變成一個死亡符文。死亡符文可視為血魄、冰霜或者穢邪符文。" lvl="1"/>
+        <rank description="使你血魄打擊和冰霜打擊造成的傷害提高6%。此外，每當你的血魄打擊或瘟疫同化命中敵人時，你有60%的機率使你的血魄符文在啟動時變成一個死亡符文。死亡符文可視為血魄、冰霜或者穢邪符文。" lvl="2"/>
+        <rank description="使你血魄打擊和冰霜打擊造成的傷害提高10%。此外，每當你的血魄打擊或瘟疫同化命中敵人時，你有100%的機率使你的血魄符文在啟動時變成一個死亡符文。死亡符文可視為血魄、冰霜或者穢邪符文。" lvl="3"/>
+      </talent>
+      <talent column="2" icon="inv_armor_helm_plate_naxxramas_raidwarrior_c_01" key="1979" name="無毀堅甲" tier="7">
+        <rank description="以厚實的寒冰強化你的護甲，使你的護甲值提高25%，並提高10%力量，持續20秒。" lvl="1"/>
+        <spell castTime="0" cooldown="60000">
+          <power cost="1" type="frost"/>
+        </spell>
+      </talent>
+      <talent column="0" icon="spell_fire_elementaldevastation" key="1997" name="抗禦魔法" tier="8">
+        <rank description="當你被法術擊中時，你有10%的機會提高對該系的魔法抗性，持續18秒，最多可堆疊3次。" lvl="1"/>
+        <rank description="當你被法術擊中時，你有20%的機會提高對該系的魔法抗性，持續18秒，最多可堆疊3次。" lvl="2"/>
+        <rank description="當你被法術擊中時，你有30%的機會提高對該系的魔法抗性，持續18秒，最多可堆疊3次。" lvl="3"/>
+      </talent>
+      <talent column="1" icon="spell_deathknight_empowerruneblade2" key="1975" name="冰霜打擊" tier="8">
+        <rank description="立即打擊敵人，造成55%武器傷害再加上4785點冰霜傷害。" lvl="1"/>
+        <spell castTime="0" maxRange="5">
+          <power cost="40" type="runic"/>
+        </spell>
+      </talent>
+      <talent column="2" icon="inv-sword_53" key="2040" name="血魔之詐" tier="8">
+        <rank description="使你血魄打擊、冰霜打擊、凜風衝擊和滅寂的致命一擊傷害加成提高15%，並延長冰錮堅韌的持續時間2秒。" lvl="1"/>
+        <rank description="使你血魄打擊、冰霜打擊、凜風衝擊和滅寂的致命一擊傷害加成提高30%，並延長冰錮堅韌的持續時間4秒。" lvl="2"/>
+        <rank description="使你血魄打擊、冰霜打擊、凜風衝擊和滅寂的致命一擊傷害加成提高45%，並延長冰錮堅韌的持續時間6秒。" lvl="3"/>
+      </talent>
+      <talent column="1" icon="spell_nature_tranquility" key="1998" name="凍原殺手" tier="9">
+        <rank description="提高1點熟練技能。此外，你的法術和技能對感染冰霜熱疫的目標可額外造成3%傷害。" lvl="1"/>
+        <rank description="提高2點熟練技能。此外，你的法術和技能對感染冰霜熱疫的目標可額外造成6%傷害。" lvl="2"/>
+        <rank description="提高3點熟練技能。此外，你的法術和技能對感染冰霜熱疫的目標可額外造成9%傷害。" lvl="3"/>
+        <rank description="提高4點熟練技能。此外，你的法術和技能對感染冰霜熱疫的目標可額外造成12%傷害。" lvl="4"/>
+        <rank description="提高5點熟練技能。此外，你的法術和技能對感染冰霜熱疫的目標可額外造成15%傷害。" lvl="5"/>
+      </talent>
+      <talent column="1" icon="spell_frost_arcticwinds" key="1989" name="凜風衝擊" tier="10">
+        <rank description="以寒風衝擊目標，並且對10碼範圍內的所有敵人造成198到214點冰霜傷害。" lvl="1"/>
+        <spell castTime="0" cooldown="8000" maxRange="20">
+          <power cost="1" type="unholy"/>
+          <power cost="1" type="frost"/>
+        </spell>
+      </talent>
+    </tree>
+    <tree bgImage="DeathKnightBlood" icon="spell_deathknight_bloodpresence" key="Blood" name="Blood" order="0">
+      <talent column="0" icon="inv_axe_68" key="1939" name="Butchery" tier="0">
+        <rank description="Whenever you kill an enemy that grants experience or honor, you generate up to 10 runic power.  In addition, you generate 1 runic power per 5 sec while in combat." lvl="1"/>
+        <rank description="Whenever you kill an enemy that grants experience or honor, you generate up to 20 runic power.  In addition, you generate 2 runic power per 5 sec while in combat." lvl="2"/>
+      </talent>
+      <talent column="1" icon="spell_deathknight_subversion" key="1945" name="Subversion" tier="0">
+        <rank description="Increases the critical strike chance of Blood Strike, Scourge Strike, Heart Strike and Obliterate by 3%, and reduces threat generated while in Blood or Unholy Presence by 8%." lvl="1"/>
+        <rank description="Increases the critical strike chance of Blood Strike, Scourge Strike, Heart Strike and Obliterate by 6%, and reduces threat generated while in Blood or Unholy Presence by 16%." lvl="2"/>
+        <rank description="Increases the critical strike chance of Blood Strike, Scourge Strike, Heart Strike and Obliterate by 9%, and reduces threat generated while in Blood or Unholy Presence by 25%." lvl="3"/>
+      </talent>
+      <talent column="2" icon="ability_upgrademoonglaive" key="2017" name="Blade Barrier" tier="0">
+        <rank description="Whenever your Blood Runes are on cooldown, you gain the Blade Barrier effect, which decreases damage taken by 1% for the next 10 sec." lvl="1"/>
+        <rank description="Whenever your Blood Runes are on cooldown, you gain the Blade Barrier effect, which decreases damage taken by 2% for the next 10 sec." lvl="2"/>
+        <rank description="Whenever your Blood Runes are on cooldown, you gain the Blade Barrier effect, which decreases damage taken by 3% for the next 10 sec." lvl="3"/>
+        <rank description="Whenever your Blood Runes are on cooldown, you gain the Blade Barrier effect, which decreases damage taken by 4% for the next 10 sec." lvl="4"/>
+        <rank description="Whenever your Blood Runes are on cooldown, you gain the Blade Barrier effect, which decreases damage taken by 5% for the next 10 sec." lvl="5"/>
+      </talent>
+      <talent column="0" icon="inv_shoulder_36" key="1938" name="Bladed Armor" tier="1">
+        <rank description="Increases your attack power by 1 for every 180 armor value you have." lvl="1"/>
+        <rank description="Increases your attack power by 2 for every 180 armor value you have." lvl="2"/>
+        <rank description="Increases your attack power by 3 for every 180 armor value you have." lvl="3"/>
+        <rank description="Increases your attack power by 4 for every 180 armor value you have." lvl="4"/>
+        <rank description="Increases your attack power by 5 for every 180 armor value you have." lvl="5"/>
+      </talent>
+      <talent column="1" icon="ability_rogue_bloodyeye" key="1948" name="Scent of Blood" tier="1">
+        <rank description="You have a 15% chance after dodging, parrying or taking  direct damage to gain the Scent of Blood effect, causing your next melee hit to generate 10 runic power." lvl="1"/>
+        <rank description="You have a 15% chance after dodging, parrying or taking  direct damage to gain the Scent of Blood effect, causing your next 2 melee hits to generate 10 runic power." lvl="2"/>
+        <rank description="You have a 15% chance after dodging, parrying or taking  direct damage to gain the Scent of Blood effect, causing your next 3 melee hits to generate 10 runic power." lvl="3"/>
+      </talent>
+      <talent column="2" icon="inv_sword_68" key="2217" name="Two-Handed Weapon Specialization" tier="1">
+        <rank description="Increases the damage you deal with two-handed melee weapons by 2%." lvl="1"/>
+        <rank description="Increases the damage you deal with two-handed melee weapons by 4%." lvl="2"/>
+      </talent>
+      <talent column="0" icon="spell_deathknight_runetap" key="1941" name="Rune Tap" tier="2">
+        <rank description="Converts 1 Blood Rune into 10% of your maximum health." lvl="1"/>
+        <spell castTime="0" cooldown="60000">
+          <power cost="1" type="blood"/>
+        </spell>
+      </talent>
+      <talent column="1" icon="spell_deathknight_darkconviction" key="1943" name="Dark Conviction" tier="2">
+        <rank description="Increases your chance to critically hit with weapons, spells and abilities by 1%." lvl="1"/>
+        <rank description="Increases your chance to critically hit with weapons, spells and abilities by 2%." lvl="2"/>
+        <rank description="Increases your chance to critically hit with weapons, spells and abilities by 3%." lvl="3"/>
+        <rank description="Increases your chance to critically hit with weapons, spells and abilities by 4%." lvl="4"/>
+        <rank description="Increases your chance to critically hit with weapons, spells and abilities by 5%." lvl="5"/>
+      </talent>
+      <talent column="2" icon="inv_sword_62" key="2086" name="Death Rune Mastery" tier="2">
+        <rank description="Whenever you hit with Death Strike or Obliterate there is a 33% chance that the Frost and Unholy Runes will become Death Runes when they activate.  Death Runes count as a Blood, Frost or Unholy Rune." lvl="1"/>
+        <rank description="Whenever you hit with Death Strike or Obliterate there is a 66% chance that the Frost and Unholy Runes will become Death Runes when they activate.  Death Runes count as a Blood, Frost or Unholy Rune." lvl="2"/>
+        <rank description="Whenever you hit with Death Strike or Obliterate there is a 100% chance that the Frost and Unholy Runes will become Death Runes when they activate.  Death Runes count as a Blood, Frost or Unholy Rune." lvl="3"/>
+      </talent>
+      <talent column="0" icon="spell_deathknight_runetap" key="1942" name="Improved Rune Tap" requires="1941" tier="3">
+        <rank description="Increases the health provided by Rune Tap by 33% and lowers its cooldown by 10 sec." lvl="1"/>
+        <rank description="Increases the health provided by Rune Tap by 66% and lowers its cooldown by 20 sec." lvl="2"/>
+        <rank description="Increases the health provided by Rune Tap by 100% and lowers its cooldown by 30 sec." lvl="3"/>
+      </talent>
+      <talent column="2" icon="spell_deathknight_spelldeflection" key="2018" name="Spell Deflection" tier="3">
+        <rank description="You have a chance equal to your Parry chance of taking 15% less damage from a direct damage spell." lvl="1"/>
+        <rank description="You have a chance equal to your Parry chance of taking 30% less damage from a direct damage spell." lvl="2"/>
+        <rank description="You have a chance equal to your Parry chance of taking 45% less damage from a direct damage spell." lvl="3"/>
+      </talent>
+      <talent column="3" icon="spell_deathknight_vendetta" key="1953" name="Vendetta" tier="3">
+        <rank description="Heals you for up to 2% of your maximum health whenever you kill a target that yields experience or honor." lvl="1"/>
+        <rank description="Heals you for up to 4% of your maximum health whenever you kill a target that yields experience or honor." lvl="2"/>
+        <rank description="Heals you for up to 6% of your maximum health whenever you kill a target that yields experience or honor." lvl="3"/>
+      </talent>
+      <talent column="0" icon="spell_deathknight_deathstrike" key="2015" name="Bloody Strikes" tier="4">
+        <rank description="Increases the damage of Blood Strike by 5% and Heart Strike by 15%, and increases the damage of Blood Boil by 10%." lvl="1"/>
+        <rank description="Increases the damage of Blood Strike by 10% and Heart Strike by 30%, and increases the damage of Blood Boil by 20%." lvl="2"/>
+        <rank description="Increases the damage of Blood Strike by 15% and Heart Strike by 45%, and increases the damage of Blood Boil by 30%." lvl="3"/>
+      </talent>
+      <talent column="2" icon="spell_misc_warsongfocus" key="1950" name="Veteran of the Third War" tier="4">
+        <rank description="Increases your total Strength by 2%, your Stamina by 1%, and your expertise by 2." lvl="1"/>
+        <rank description="Increases your total Strength by 4%, your Stamina by 2%, and your expertise by 4." lvl="2"/>
+        <rank description="Increases your total Strength by 6%, your Stamina by 3%, and your expertise by 6." lvl="3"/>
+      </talent>
+      <talent column="3" icon="ability_hunter_rapidkilling" key="1949" name="Mark of Blood" tier="4">
+        <rank description="Place a Mark of Blood on an enemy.  Whenever the marked enemy deals damage to a target, that target is healed for 4% of its maximum health.  Lasts for 20 sec or up to 20 hits." lvl="1"/>
+        <spell castTime="0" cooldown="180000" maxRange="30">
+          <power cost="1" type="blood"/>
+        </spell>
+      </talent>
+      <talent column="1" icon="ability_backstab" key="1944" name="Bloody Vengeance" requires="1943" tier="5">
+        <rank description="Gives you a 1% bonus to physical damage you deal for 30 sec after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to 3 times." lvl="1"/>
+        <rank description="Gives you a 2% bonus to physical damage you deal for 30 sec after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to 3 times." lvl="2"/>
+        <rank description="Gives you a 3% bonus to physical damage you deal for 30 sec after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to 3 times." lvl="3"/>
+      </talent>
+      <talent column="2" icon="ability_warrior_intensifyrage" key="2105" name="Abomination's Might" tier="5">
+        <rank description="Increases the attack power by 5% of party and raid members within 100 yards.  Also increases your total Strength by 1%." lvl="1"/>
+        <rank description="Increases the attack power by 10% of party and raid members within 100 yards.  Also increases your total Strength by 2%." lvl="2"/>
+      </talent>
+      <talent column="0" icon="spell_shadow_soulleech" key="1960" name="Bloodworms" tier="6">
+        <rank description="Your weapon hits have a 3% chance to cause the target to spawn 2-4 Bloodworms.  Bloodworms attack your enemies, healing you as they do damage for 20 sec or until killed." lvl="1"/>
+        <rank description="Your weapon hits have a 6% chance to cause the target to spawn 2-4 Bloodworms.  Bloodworms attack your enemies, healing you as they do damage for 20 sec or until killed." lvl="2"/>
+        <rank description="Your weapon hits have a 9% chance to cause the target to spawn 2-4 Bloodworms.  Bloodworms attack your enemies, healing you as they do damage for 20 sec or until killed." lvl="3"/>
+      </talent>
+      <talent column="1" icon="spell_deathknight_bladedarmor" key="1954" name="Hysteria" tier="6">
+        <rank description="Induces a friendly unit into a killing frenzy for 30 sec.  The target is Enraged, which increases their physical damage by 20%, but causes them to lose health equal to 1% of their maximum health every second." lvl="1"/>
+        <spell castTime="0" cooldown="180000" maxRange="30"/>
+      </talent>
+      <talent column="2" icon="spell_deathknight_bloodpresence" key="1936" name="Improved Blood Presence" tier="6">
+        <rank description="While in Frost Presence or Unholy Presence, you retain 2% healing from Blood Presence, and healing done to you is increased by 5% in Blood Presence." lvl="1"/>
+        <rank description="While in Frost Presence or Unholy Presence, you retain 4% healing from Blood Presence, and healing done to you is increased by 10% in Blood Presence." lvl="2"/>
+      </talent>
+      <talent column="0" icon="spell_deathknight_butcher2" key="2259" name="Improved Death Strike" tier="7">
+        <rank description="Increases the damage of your Death Strike by 15%, increases its critical strike chance by 3%, and increases the healing granted by 25%." lvl="1"/>
+        <rank description="Increases the damage of your Death Strike by 30%, increases its critical strike chance by 6%, and increases the healing granted by 50%." lvl="2"/>
+      </talent>
+      <talent column="1" icon="spell_shadow_painspike" key="1955" name="Sudden Doom" tier="7">
+        <rank description="Your Blood Strikes and Heart Strikes have a 5% chance to launch a free Death Coil at your target." lvl="1"/>
+        <rank description="Your Blood Strikes and Heart Strikes have a 10% chance to launch a free Death Coil at your target." lvl="2"/>
+        <rank description="Your Blood Strikes and Heart Strikes have a 15% chance to launch a free Death Coil at your target." lvl="3"/>
+      </talent>
+      <talent column="2" icon="spell_shadow_lifedrain" key="2019" name="Vampiric Blood" tier="7">
+        <rank description="Temporarily grants the Death Knight 15% of maximum health and increases the amount of health generated through spells and effects by 35% for 10 sec.  After the effect expires, the health is lost." lvl="1"/>
+        <spell castTime="0" cooldown="60000">
+          <power cost="1" type="blood"/>
+        </spell>
+      </talent>
+      <talent column="0" icon="ability_creature_cursed_02" key="1959" name="Will of the Necropolis" tier="8">
+        <rank description="Damage that would take you below 35% health or taken while you are at 35% health is reduced by 5%." lvl="1"/>
+        <rank description="Damage that would take you below 35% health or taken while you are at 35% health is reduced by 10%." lvl="2"/>
+        <rank description="Damage that would take you below 35% health or taken while you are at 35% health is reduced by 15%." lvl="3"/>
+      </talent>
+      <talent column="1" icon="inv_weapon_shortblade_40" key="1957" name="Heart Strike" tier="8">
+        <rank description="Instantly strike the target and his nearest ally, causing 50% weapon damage plus 125 on the primary target, and 25% weapon damage plus 63 on the secondary target.  Each target takes 10% additional damage for each of your diseases active on that target." lvl="1"/>
+        <spell castTime="0" maxRange="5">
+          <power cost="1" type="blood"/>
+        </spell>
+      </talent>
+      <talent column="2" icon="spell_deathknight_classicon" key="1958" name="Might of Mograine" tier="8">
+        <rank description="Increases the critical strike damage bonus of your Blood Boil, Blood Strike, Death Strike, and Heart Strike abilities by 15%." lvl="1"/>
+        <rank description="Increases the critical strike damage bonus of your Blood Boil, Blood Strike, Death Strike, and Heart Strike abilities by 30%." lvl="2"/>
+        <rank description="Increases the critical strike damage bonus of your Blood Boil, Blood Strike, Death Strike, and Heart Strike abilities by 45%." lvl="3"/>
+      </talent>
+      <talent column="1" icon="spell_nature_reincarnation" key="2034" name="Blood Gorged" tier="9">
+        <rank description="When you are above 75% health, you deal 2% more damage.  In addition, your attacks ignore up to 2% of your opponent's armor at all times." lvl="1"/>
+        <rank description="When you are above 75% health, you deal 4% more damage.  In addition, your attacks ignore up to 4% of your opponent's armor at all times." lvl="2"/>
+        <rank description="When you are above 75% health, you deal 6% more damage.  In addition, your attacks ignore up to 6% of your opponent's armor at all times." lvl="3"/>
+        <rank description="When you are above 75% health, you deal 8% more damage.  In addition, your attacks ignore up to 8% of your opponent's armor at all times." lvl="4"/>
+        <rank description="When you are above 75% health, you deal 10% more damage.  In addition, your attacks ignore up to 10% of your opponent's armor at all times." lvl="5"/>
+      </talent>
+      <talent column="1" icon="inv_sword_07" key="1961" name="Dancing Rune Weapon" tier="10">
+        <rank description="Summons a second rune weapon that fights on its own for 12 sec, doing the same attacks as the Death Knight but for 50% reduced damage." lvl="1"/>
+        <spell castTime="0" cooldown="90000" maxRange="30">
+          <power cost="60" type="runic"/>
+        </spell>
+      </talent>
+    </tree>
+    <tree bgImage="DeathKnightUnholy" icon="spell_deathknight_unholypresence" key="Unholy" name="Unholy" order="2">
+      <talent column="0" icon="spell_deathknight_plaguestrike" key="2082" name="Vicious Strikes" tier="0">
+        <rank description="Increases the critical strike chance by 3% and critical strike damage bonus by 15% of your Plague Strike and Scourge Strike." lvl="1"/>
+        <rank description="Increases the critical strike chance by 6% and critical strike damage bonus by 30% of your Plague Strike and Scourge Strike." lvl="2"/>
+      </talent>
+      <talent column="1" icon="spell_shadow_burningspirit" key="1932" name="Virulence" tier="0">
+        <rank description="Increases your chance to hit with your spells by 1% and reduces the chance that your damage over time diseases can be cured by 10%." lvl="1"/>
+        <rank description="Increases your chance to hit with your spells by 2% and reduces the chance that your damage over time diseases can be cured by 20%." lvl="2"/>
+        <rank description="Increases your chance to hit with your spells by 3% and reduces the chance that your damage over time diseases can be cured by 30%." lvl="3"/>
+      </talent>
+      <talent column="2" icon="spell_nature_mirrorimage" key="2218" name="Anticipation" tier="0">
+        <rank description="Increases your Dodge chance by 1%." lvl="1"/>
+        <rank description="Increases your Dodge chance by 2%." lvl="2"/>
+        <rank description="Increases your Dodge chance by 3%." lvl="3"/>
+        <rank description="Increases your Dodge chance by 4%." lvl="4"/>
+        <rank description="Increases your Dodge chance by 5%." lvl="5"/>
+      </talent>
+      <talent column="0" icon="spell_shadow_shadowwordpain" key="1963" name="Epidemic" tier="1">
+        <rank description="Increases the duration of Blood Plague and Frost Fever by 3 sec." lvl="1"/>
+        <rank description="Increases the duration of Blood Plague and Frost Fever by 6 sec." lvl="2"/>
+      </talent>
+      <talent column="1" icon="spell_shadow_deathanddecay" key="1933" name="Morbidity" tier="1">
+        <rank description="Increases the damage and healing of Death Coil by 5% and reduces the cooldown on Death and Decay by 5 sec." lvl="1"/>
+        <rank description="Increases the damage and healing of Death Coil by 10% and reduces the cooldown on Death and Decay by 10 sec." lvl="2"/>
+        <rank description="Increases the damage and healing of Death Coil by 15% and reduces the cooldown on Death and Decay by 15 sec." lvl="3"/>
+      </talent>
+      <talent column="2" icon="spell_deathknight_strangulate" key="2025" name="Unholy Command" tier="1">
+        <rank description="Reduces the cooldown of your Death Grip ability by 5 sec." lvl="1"/>
+        <rank description="Reduces the cooldown of your Death Grip ability by 10 sec." lvl="2"/>
+      </talent>
+      <talent column="3" icon="spell_deathknight_gnaw_ghoul" key="1934" name="Ravenous Dead" tier="1">
+        <rank description="Increases your total Strength by 1% and the contribution your Ghouls get from your Strength and Stamina by 20%." lvl="1"/>
+        <rank description="Increases your total Strength by 2% and the contribution your Ghouls get from your Strength and Stamina by 40%." lvl="2"/>
+        <rank description="Increases your total Strength by 3% and the contribution your Ghouls get from your Strength and Stamina by 60%" lvl="3"/>
+      </talent>
+      <talent column="0" icon="spell_shadow_plaguecloud" key="2008" name="Outbreak" tier="2">
+        <rank description="Increases the damage of Plague Strike by 10% and Scourge Strike by 7%." lvl="1"/>
+        <rank description="Increases the damage of Plague Strike by 20% and Scourge Strike by 13%." lvl="2"/>
+        <rank description="Increases the damage of Plague Strike by 30% and Scourge Strike by 20%." lvl="3"/>
+      </talent>
+      <talent column="1" icon="inv_weapon_shortblade_60" key="2047" name="Necrosis" tier="2">
+        <rank description="Your auto attacks deal an additional 4% Shadow damage." lvl="1"/>
+        <rank description="Your auto attacks deal an additional 8% Shadow damage." lvl="2"/>
+        <rank description="Your auto attacks deal an additional 12% Shadow damage." lvl="3"/>
+        <rank description="Your auto attacks deal an additional 16% Shadow damage." lvl="4"/>
+        <rank description="Your auto attacks deal an additional 20% Shadow damage." lvl="5"/>
+      </talent>
+      <talent column="2" icon="ability_creature_disease_02" key="1985" name="Corpse Explosion" tier="2">
+        <rank description="Cause a corpse to explode for 166 Shadow damage to all enemies within 10 yards.  Will use a nearby corpse if the target is not a corpse.  Does not affect mechanical or elemental corpses." lvl="1"/>
+        <spell castTime="0" cooldown="5000" maxRange="30">
+          <power cost="40" type="runic"/>
+        </spell>
+      </talent>
+      <talent column="1" icon="spell_deathknight_summondeathcharger" key="2039" name="On a Pale Horse" tier="3">
+        <rank description="You become as hard to stop as death itself.  The duration of all Stun and Fear effects used against you is reduced by 10%, and your mounted speed is increased by 10%.  This does not stack with other movement speed increasing effects." lvl="1"/>
+        <rank description="You become as hard to stop as death itself.  The duration of all Stun and Fear effects used against you is reduced by 20%, and your mounted speed is increased by 20%.  This does not stack with other movement speed increasing effects." lvl="2"/>
+      </talent>
+      <talent column="2" icon="ability_criticalstrike" key="2004" name="Blood-Caked Blade" tier="3">
+        <rank description="Your auto attacks have a 10% chance to cause a Blood-Caked Strike, which hits for 25% weapon damage plus 12.5% for each of your diseases on the target." lvl="1"/>
+        <rank description="Your auto attacks have a 20% chance to cause a Blood-Caked Strike, which hits for 25% weapon damage plus 12.5% for each of your diseases on the target." lvl="2"/>
+        <rank description="Your auto attacks have a 30% chance to cause a Blood-Caked Strike, which hits for 25% weapon damage plus 12.5% for each of your diseases on the target." lvl="3"/>
+      </talent>
+      <talent column="3" icon="spell_deathknight_armyofthedead" key="2225" name="Night of the Dead" tier="3">
+        <rank description="Reduces the cooldown on Raise Dead by 45 sec and the cooldown on Army of the Dead by 2 min.  Also reduces the damage your pet takes from creature area of effect attacks by 45%." lvl="1"/>
+        <rank description="Reduces the cooldown on Raise Dead by 90 sec and the cooldown on Army of the Dead by 4 min.  Also reduces the damage your pet takes from creature area of effect attacks by 90%." lvl="2"/>
+      </talent>
+      <talent column="0" icon="spell_shadow_contagion" key="1996" name="Unholy Blight" tier="4">
+        <rank description="Causes the victims of your Death Coil to be surrounded by a vile swarm of unholy insects, taking 10% of the damage done by the Death Coil over 10 sec, and preventing any diseases on the victim from being dispelled." lvl="1"/>
+      </talent>
+      <talent column="1" icon="spell_shadow_shadowandflame" key="2005" name="Impurity" tier="4">
+        <rank description="The attack power bonus of your spells is increased by 4%." lvl="1"/>
+        <rank description="The attack power bonus of your spells is increased by 8%." lvl="2"/>
+        <rank description="The attack power bonus of your spells is increased by 12%." lvl="3"/>
+        <rank description="The attack power bonus of your spells is increased by 16%." lvl="4"/>
+        <rank description="Your spells receive an additional 20% benefit from your attack power." lvl="5"/>
+      </talent>
+      <talent column="2" icon="spell_shadow_shadesofdarkness" key="2011" name="Dirge" tier="4">
+        <rank description="Your Death Strike, Plague Strike and Scourge Strike generate 2.5 additional runic power." lvl="1"/>
+        <rank description="Your Death Strike, Plague Strike and Scourge Strike generate 5 additional runic power." lvl="2"/>
+      </talent>
+      <talent column="0" icon="spell_shadow_shadowfiend" key="2226" name="Desecration" tier="5">
+        <rank description="Your Plague Strikes and Scourge Strikes cause the Desecrated Ground effect.  Targets in the area are slowed by 25% by the grasping arms of the dead while standing on the unholy ground.  Lasts 20 sec." lvl="1"/>
+        <rank description="Your Plague Strikes and Scourge Strikes cause the Desecrated Ground effect.  Targets in the area are slowed by 50% by the grasping arms of the dead while standing on the unholy ground.  Lasts 20 sec." lvl="2"/>
+      </talent>
+      <talent column="1" icon="spell_shadow_antimagicshell" key="2009" name="Magic Suppression" tier="5">
+        <rank description="You take 2% less damage from all magic.  In addition, your Anti-Magic Shell absorbs an additional 8% of spell damage." lvl="1"/>
+        <rank description="You take 4% less damage from all magic.  In addition, your Anti-Magic Shell absorbs an additional 16% of spell damage." lvl="2"/>
+        <rank description="You take 6% less damage from all magic.  In addition, your Anti-Magic Shell absorbs an additional 25% of spell damage." lvl="3"/>
+      </talent>
+      <talent column="2" icon="spell_shadow_shadetruesight" key="2001" name="Reaping" tier="5">
+        <rank description="Whenever you hit with Blood Strike or Pestilence there is a 33% chance that the Blood Rune becomes a Death Rune when it activates.  Death Runes count as a Blood, Frost or Unholy Rune." lvl="1"/>
+        <rank description="Whenever you hit with Blood Strike or Pestilence there is a 66% chance that the Blood Rune becomes a Death Rune when it activates.  Death Runes count as a Blood, Frost or Unholy Rune." lvl="2"/>
+        <rank description="Whenever you hit with Blood Strike or Pestilence there is a 100% chance that the Blood Rune becomes a Death Rune when it activates.  Death Runes count as a Blood, Frost or Unholy Rune." lvl="3"/>
+      </talent>
+      <talent column="3" icon="spell_shadow_animatedead" key="1984" name="Master of Ghouls" requires="2225" tier="5">
+        <rank description="Reduces the cooldown on Raise Dead by 60 sec, and the Ghoul summoned by your Raise Dead spell is considered a pet under your control.  Unlike normal Death Knight Ghouls, your pet does not have a limited duration." lvl="1"/>
+      </talent>
+      <talent column="0" icon="spell_shadow_unholyfrenzy" key="2285" name="Desolation" tier="6">
+        <rank description="Your Blood Strikes cause you to deal 1% additional damage with all attacks for the next 20 sec." lvl="1"/>
+        <rank description="Your Blood Strikes cause you to deal 2% additional damage with all attacks for the next 20 sec." lvl="2"/>
+        <rank description="Your Blood Strikes cause you to deal 3% additional damage with all attacks for the next 20 sec." lvl="3"/>
+        <rank description="Your Blood Strikes cause you to deal 4% additional damage with all attacks for the next 20 sec." lvl="4"/>
+        <rank description="Your Blood Strikes cause you to deal 5% additional damage with all attacks for the next 20 sec." lvl="5"/>
+      </talent>
+      <talent column="1" icon="spell_deathknight_antimagiczone" key="2221" name="Anti-Magic Zone" requires="2009" tier="6">
+        <rank description="Places a large, stationary Anti-Magic Zone that reduces spell damage done to party or raid members inside it by 75%.  The Anti-Magic Zone lasts for 10 sec or until it absorbs 10052 spell damage." lvl="1"/>
+        <spell castTime="0" cooldown="120000">
+          <power cost="1" type="unholy"/>
+        </spell>
+      </talent>
+      <talent column="2" icon="spell_deathknight_unholypresence" key="2013" name="Improved Unholy Presence" tier="6">
+        <rank description="While in Blood Presence or Frost Presence, you retain 8% increased movement speed from Unholy Presence, and your runes finish their cooldowns 5% faster in Unholy Presence." lvl="1"/>
+        <rank description="While in Blood Presence or Frost Presence, you retain 15% increased movement speed from Unholy Presence, and your runes finish their cooldowns 10% faster in Unholy Presence." lvl="2"/>
+      </talent>
+      <talent column="3" icon="ability_ghoulfrenzy" key="2085" name="Ghoul Frenzy" requires="1984" tier="6">
+        <rank description="Grants your pet 25% haste for 30 sec and  heals it for 60% of its health over the duration." lvl="1"/>
+        <spell castTime="0" cooldown="10000" maxRange="45">
+          <power cost="1" type="unholy"/>
+        </spell>
+      </talent>
+      <talent column="1" icon="spell_nature_nullifydisease" key="1962" name="Crypt Fever" tier="7">
+        <rank description="Your diseases also cause Crypt Fever, which increases disease damage taken by the target by 10%." lvl="1"/>
+        <rank description="Your diseases also cause Crypt Fever, which increases disease damage taken by the target by 20%." lvl="2"/>
+        <rank description="Your diseases also cause Crypt Fever, which increases disease damage taken by the target by 30%." lvl="3"/>
+      </talent>
+      <talent column="2" icon="inv_chest_leather_13" key="2007" name="Bone Shield" tier="7">
+        <rank description="The Death Knight is surrounded by 3 whirling bones.  While at least 1 bone remains, she takes 20% less damage from all sources and deals 2% more damage with all attacks, spells and abilities.  Each damaging attack that lands consumes 1 bone.  Lasts 5 min." lvl="1"/>
+        <spell castTime="0" cooldown="60000">
+          <power cost="1" type="unholy"/>
+        </spell>
+      </talent>
+      <talent column="0" icon="spell_shadow_callofbone" key="2003" name="Wandering Plague" tier="8">
+        <rank description="When your diseases damage an enemy, there is a chance equal to your melee critical strike chance that they will cause 33% additional damage to the target and all enemies within 8 yards.  Ignores any target under the effect of a spell that is cancelled by taking damage." lvl="1"/>
+        <rank description="When your diseases damage an enemy, there is a chance equal to your melee critical strike chance that they will cause 66% additional damage to the target and all enemies within 8 yards.  Ignores any target under the effect of a spell that is cancelled by taking damage." lvl="2"/>
+        <rank description="When your diseases damage an enemy, there is a chance equal to your melee critical strike chance that they will cause 100% additional damage to the target and all enemies within 8 yards.  Ignores any target under the effect of a spell that is cancelled by taking damage." lvl="3"/>
+      </talent>
+      <talent column="1" icon="ability_creature_cursed_03" key="2043" name="Ebon Plaguebringer" requires="1962" tier="8">
+        <rank description="Your Crypt Fever morphs into Ebon Plague, which increases magic damage taken by 4% in addition to increasing disease damage taken.  Improves your critical strike chance with weapons and spells by 1% at all times." lvl="1"/>
+        <rank description="Your Crypt Fever morphs into Ebon Plague, which increases magic damage taken by 9% in addition to increasing disease damage taken.  Improves your critical strike chance with weapons and spells by 2% at all times." lvl="2"/>
+        <rank description="Your Crypt Fever morphs into Ebon Plague, which increases magic damage taken by 13% in addition to increasing disease damage taken.  Improves your critical strike chance with weapons and spells by 3% at all times." lvl="3"/>
+      </talent>
+      <talent column="2" icon="spell_deathknight_scourgestrike" key="2216" name="Scourge Strike" tier="8">
+        <rank description="An unholy strike that deals 70% of weapon damage as Physical damage plus 238.  In addition, for each of your diseases on your target, you deal an additional 12% of the Physical damage done as Shadow damage." lvl="1"/>
+        <spell castTime="0" maxRange="5">
+          <power cost="1" type="unholy"/>
+          <power cost="1" type="frost"/>
+        </spell>
+      </talent>
+      <talent column="1" icon="inv_weapon_halberd14" key="2036" name="Rage of Rivendare" tier="9">
+        <rank description="Your spells and abilities deal 2% more damage to targets infected with Blood Plague.  Also increases your expertise by 1." lvl="1"/>
+        <rank description="Your spells and abilities deal 4% more damage to targets infected with Blood Plague.  Also increases your expertise by 2." lvl="2"/>
+        <rank description="Your spells and abilities deal 6% more damage to targets infected with Blood Plague.  Also increases your expertise by 3." lvl="3"/>
+        <rank description="Your spells and abilities deal 8% more damage to targets infected with Blood Plague.  Also increases your expertise by 4." lvl="4"/>
+        <rank description="Your spells and abilities deal 10% more damage to targets infected with Blood Plague.  Also increases your expertise by 5." lvl="5"/>
+      </talent>
+      <talent column="1" icon="ability_hunter_pet_bat" key="2000" name="Summon Gargoyle" tier="10">
+        <rank description="A Gargoyle flies into the area and bombards the target with Nature damage modified by the Death Knight's attack power.  Persists for 30 sec." lvl="1"/>
+        <spell castTime="0" cooldown="180000" maxRange="30">
+          <power cost="60" type="runic"/>
+        </spell>
+      </talent>
+    </tree>
+  </talentTrees>
+</page>
