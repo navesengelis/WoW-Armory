@@ -71,6 +71,7 @@
     <select name="defaultLocale">
         <option value="en_gb"<?php echo Armory::$armoryconfig['defaultLocale'] == 'en_gb' ? ' selected' : null; ?>>English (EU)</option>
         <option value="en_us"<?php echo Armory::$armoryconfig['defaultLocale'] == 'en_us' ? ' selected' : null; ?>>English (US)</option>
+        <option value="zh_cn"<?php echo Armory::$armoryconfig['defaultLocale'] == 'zh_cn' ? ' selected' : null; ?>>Chinese</option>
         <option value="de_de"<?php echo Armory::$armoryconfig['defaultLocale'] == 'de_de' ? ' selected' : null; ?>>German</option>
         <option value="es_es"<?php echo Armory::$armoryconfig['defaultLocale'] == 'es_es' ? ' selected' : null; ?>>Spanish</option>
         <option value="fr_fr"<?php echo Armory::$armoryconfig['defaultLocale'] == 'fr_fr' ? ' selected' : null; ?>>French</option>

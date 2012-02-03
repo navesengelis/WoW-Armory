@@ -125,11 +125,13 @@ function doSubmit(){
 function doReset(){
    self.focus();
    document.edit.title_de_de.value = "";
+   document.edit.title_zh_cn.value = "";
    document.edit.title_en_gb.value = "";
    document.edit.title_es_es.value = "";
    document.edit.title_fr_fr.value = "";
    document.edit.title_ru_ru.value = "";
    document.edit.text_de_de.value = "";
+   document.edit.text_zh_cn.value = "";
    document.edit.text_en_gb.value = "";
    document.edit.text_es_es.value = "";
    document.edit.text_fr_fr.value = "";

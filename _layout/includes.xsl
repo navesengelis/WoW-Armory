@@ -559,7 +559,7 @@
 		  <xsl:value-of select="format-number($value, '#,###', 'us_numberFormat')"/>
 
 		</xsl:when>
-		<xsl:when test="$lang = 'de_de' or $lang = 'en_gb' or $lang = 'es_es' or $lang = 'fr_fr' or $lang = 'ru_ru'">
+		<xsl:when test="$lang = 'de_de' or $lang = 'zh_cn' or $lang = 'en_gb' or $lang = 'es_es' or $lang = 'fr_fr' or $lang = 'ru_ru'">
 		  <xsl:value-of select="format-number($value, '#.###', 'eu_numberFormat')"/>
 		</xsl:when>
 		<xsl:otherwise>

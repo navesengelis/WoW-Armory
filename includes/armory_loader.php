@@ -151,6 +151,12 @@ if(isset($_GET['locale'])) {
             $_SESSION['armoryLocale'] = 'es_es';
             $_SESSION['armoryLocaleId'] = 6;
             break;
+        case 'zh_cn':
+        case 'zhcn':
+        case 'zh':
+        	$_SESSION['armoryLocale'] = 'zh_cn';
+            $_SESSION['armoryLocaleId'] = 4;
+            break;
         case 'de_de':
         case 'dede':
         case 'de':

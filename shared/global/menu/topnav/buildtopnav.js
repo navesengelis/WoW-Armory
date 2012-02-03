@@ -103,7 +103,7 @@ case "zh_cn":
 	
 	link3 = new Object();
 	link3.text = "官方论坛"
-	link3.href = "http://bbs.wowchina.com/wow/forum_list.aspx?forum_id=1"
+	link3.href = "http://5151wow.gicp.net/bbs/"
 	opt = false;
 break;
 
