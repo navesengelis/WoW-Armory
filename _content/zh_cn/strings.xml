@@ -3471,9 +3471,9 @@
 		<str id="compare.achievements">添加人物比较</str>
 		<str id="compare.achievements.button">比较</str>
 				<str id="compare.max">You can compare up to <param1/> characters at one time. You must remove a character below before adding another.</str>
-		<str id="stats.latest">Latest Updated Statistics</str>
+		<str id="stats.latest">最近更新统计</str>
 		<str id="stats.latest.compare">
-      <param1/>'s Latest Updated Statistics</str>
+      <param1/>的最新更新统计</str>
 		<err id="notfound">人物 "<param1/>" 无法在服务器 "<param2/>上找到."</err>
 		<str id="totalcompleted">总计完成:</str>
 		<str id="solo">Solo</str>
