@@ -1531,7 +1531,7 @@ Class Utils {
      * @retunr   bool
      **/
     public function IsWriteRaw() {
-        if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'en_us' || Armory::GetLocale() == 'ru_ru') {
+        if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'en_us' || Armory::GetLocale() == 'zh_cn' || Armory::GetLocale() == 'ru_ru') {
             return false;
         }
         return true;
