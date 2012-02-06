@@ -1117,11 +1117,14 @@ Class Utils {
             'en_gb' => array(
                 'days', 'hours', 'min', 'sec'
             ),
+            'zh_cn' => array(
+                '天', '小时', '分钟', '秒'
+            ),
             'ru_ru' => array(
                 'дней', 'часов', 'мин', 'сек'
             )
         );
-        if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'ru_ru') {
+        if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'zh_cn'|| Armory::GetLocale() == 'ru_ru') {
             $preferLocale = $strings_array[Armory::GetLocale()];
         }
         else {
