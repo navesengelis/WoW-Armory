@@ -167,7 +167,7 @@ Class Armory {
                 return 'es_es'; //es_mx?
                 break;
             case 'zh':
-            	return 'zh_cb';
+            	return 'zh_cn';
             	break;
             case 'fr':
                 return 'fr_fr';
