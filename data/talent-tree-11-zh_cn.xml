@@ -41,7 +41,7 @@
       <talent column="2" icon="spell_nature_natureguardian" key="2240" name="自然光采" requires="1822" tier="2">
         <rank description="使你的月火術和回春術的持續時間延長3秒，癒合的持續時間延長6秒，蟲群和生命之花的持續時間延長2秒。" lvl="1"/>
       </talent>
-      <talent column="3" icon="spell_nature_naturetouchgrow" key="764" name="自然延伸 tier="2">
+      <talent column="3" icon="spell_nature_naturetouchgrow" key="764" name="自然延伸" tier="2">
         <rank description="I使你平衡系法術和精靈之火(野性)的射程延長10%，並使你平衡系法術造成的威脅值降低15%。" lvl="1"/>
         <rank description="使你平衡系法術和精靈之火(野性)的射程延長20%，並使你平衡系法術造成的威脅值降低30%。" lvl="2"/>
       </talent>
@@ -142,13 +142,13 @@
         <rank description="使你法術造成的傷害提高3%。此外，你的憤怒和星火術有100%的機率對目標造成大地新月的效果，此效果可使目標受到的法術傷害提高13%，持續12秒。" lvl="3"/>
       </talent>
       <talent column="1" icon="ability_druid_starfall" key="1926" name="星殞術" tier="10">
-        <rank description="你從空中召喚一陣星雨落在施法者周圍0碼範圍內的所有目標身上，每顆墜落的星體可造成111到129點秘法傷害，並對其周圍0碼範圍內的所有敵人造成20點秘法傷害。最多可召喚20顆星體，持續10秒。變身為動物形態或者騎乘坐騎將取消此效果。任何使你喪失角色控制權的效果將抑止星殞術的效果。 lvl="1"/>
+        <rank description="你從空中召喚一陣星雨落在施法者周圍0碼範圍內的所有目標身上，每顆墜落的星體可造成111到129點秘法傷害，並對其周圍0碼範圍內的所有敵人造成20點秘法傷害。最多可召喚20顆星體，持續10秒。變身為動物形態或者騎乘坐騎將取消此效果。任何使你喪失角色控制權的效果將抑止星殞術的效果。" lvl="1"/>
         <spell castTime="0" cooldown="90000">
           <power cost="35" type="mana"/>
         </spell>
       </talent>
     </tree>
-    <tree bgImage="DruidFeralCombat" icon="ability_racial_bearform" key="FeralCombat" name="野性戰鬥" order="1">
+   	<tree bgImage="DruidFeralCombat" icon="ability_racial_bearform" key="FeralCombat" name="野性戰鬥" order="1">
       <talent column="1" icon="ability_hunter_pet_hyena" key="796" name="兇暴" tier="0">
         <rank description="使你槌擊、揮擊、爪擊、掃擊和割碎技能所消耗的怒氣或能量降低1點。" lvl="1"/>
         <rank description="使你槌擊、揮擊、爪擊、掃擊和割碎技能所消耗的怒氣或能量降低2點。" lvl="2"/>
