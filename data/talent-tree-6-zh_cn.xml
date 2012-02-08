@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><page globalSearch="1" lang="en_gb" requestUrl="/talent-tree.xml">
+<?xml version="1.0" encoding="UTF-8"?><page globalSearch="1" lang="zh_cn" requestUrl="/talent-tree.xml">
   <talentTrees>
     <tree bgImage="DeathKnightFrost" icon="spell_deathknight_frostpresence" key="Frost" name="冰霜" order="1">
       <talent column="0" icon="spell_deathknight_icetouch" key="2031" name="強化冰結之觸" tier="0">
@@ -153,312 +153,312 @@
         </spell>
       </talent>
     </tree>
-    <tree bgImage="DeathKnightBlood" icon="spell_deathknight_bloodpresence" key="Blood" name="Blood" order="0">
-      <talent column="0" icon="inv_axe_68" key="1939" name="Butchery" tier="0">
-        <rank description="Whenever you kill an enemy that grants experience or honor, you generate up to 10 runic power.  In addition, you generate 1 runic power per 5 sec while in combat." lvl="1"/>
-        <rank description="Whenever you kill an enemy that grants experience or honor, you generate up to 20 runic power.  In addition, you generate 2 runic power per 5 sec while in combat." lvl="2"/>
+    <tree bgImage="DeathKnightBlood" icon="spell_deathknight_bloodpresence" key="Blood" name="鮮血" order="0">
+      <talent column="0" icon="inv_axe_68" key="1939" name="屠殺" tier="0">
+        <rank description="當你殺死可取得經驗值或榮譽值的敵人後，你將產生10點符能。此外，在戰鬥狀態下每5秒可產生1點符能。" lvl="1"/>
+        <rank description="當你殺死可取得經驗值或榮譽值的敵人後，你將產生20點符能。此外，在戰鬥狀態下每5秒可產生2點符能。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_deathknight_subversion" key="1945" name="Subversion" tier="0">
-        <rank description="Increases the critical strike chance of Blood Strike, Scourge Strike, Heart Strike and Obliterate by 3%, and reduces threat generated while in Blood or Unholy Presence by 8%." lvl="1"/>
-        <rank description="Increases the critical strike chance of Blood Strike, Scourge Strike, Heart Strike and Obliterate by 6%, and reduces threat generated while in Blood or Unholy Presence by 16%." lvl="2"/>
-        <rank description="Increases the critical strike chance of Blood Strike, Scourge Strike, Heart Strike and Obliterate by 9%, and reduces threat generated while in Blood or Unholy Presence by 25%." lvl="3"/>
+      <talent column="1" icon="spell_deathknight_subversion" key="1945" name="覆滅" tier="0">
+        <rank description="使你血魄打擊、天譴打擊、碎心打擊和滅寂的致命一擊機率提高3%，並且處於血魄或穢邪領域時，產生的威脅值降低8%。" lvl="1"/>
+        <rank description="使你血魄打擊、天譴打擊、碎心打擊和滅寂的致命一擊機率提高6%，並且處於血魄或穢邪領域時，產生的威脅值降低16%。" lvl="2"/>
+        <rank description="使你血魄打擊、天譴打擊、碎心打擊和滅寂的致命一擊機率提高9%，並且處於血魄或穢邪領域時，產生的威脅值降低25%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="ability_upgrademoonglaive" key="2017" name="Blade Barrier" tier="0">
-        <rank description="Whenever your Blood Runes are on cooldown, you gain the Blade Barrier effect, which decreases damage taken by 1% for the next 10 sec." lvl="1"/>
-        <rank description="Whenever your Blood Runes are on cooldown, you gain the Blade Barrier effect, which decreases damage taken by 2% for the next 10 sec." lvl="2"/>
-        <rank description="Whenever your Blood Runes are on cooldown, you gain the Blade Barrier effect, which decreases damage taken by 3% for the next 10 sec." lvl="3"/>
-        <rank description="Whenever your Blood Runes are on cooldown, you gain the Blade Barrier effect, which decreases damage taken by 4% for the next 10 sec." lvl="4"/>
-        <rank description="Whenever your Blood Runes are on cooldown, you gain the Blade Barrier effect, which decreases damage taken by 5% for the next 10 sec." lvl="5"/>
+      <talent column="2" icon="ability_upgrademoonglaive" key="2017" name="劍刃屏障" tier="0">
+        <rank description="當你的血魄符文皆處於冷卻狀態時可獲得劍刃屏障的效果，使你在接下來的10秒內受到的傷害降低1%。" lvl="1"/>
+        <rank description="當你的血魄符文皆處於冷卻狀態時可獲得劍刃屏障的效果，使你在接下來的10秒內受到的傷害降低2%。" lvl="2"/>
+        <rank description="當你的血魄符文皆處於冷卻狀態時可獲得劍刃屏障的效果，使你在接下來的10秒內受到的傷害降低3%。" lvl="3"/>
+        <rank description="當你的血魄符文皆處於冷卻狀態時可獲得劍刃屏障的效果，使你在接下來的10秒內受到的傷害降低4%。" lvl="4"/>
+        <rank description="當你的血魄符文皆處於冷卻狀態時可獲得劍刃屏障的效果，使你在接下來的10秒內受到的傷害降低5%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="inv_shoulder_36" key="1938" name="Bladed Armor" tier="1">
-        <rank description="Increases your attack power by 1 for every 180 armor value you have." lvl="1"/>
-        <rank description="Increases your attack power by 2 for every 180 armor value you have." lvl="2"/>
-        <rank description="Increases your attack power by 3 for every 180 armor value you have." lvl="3"/>
-        <rank description="Increases your attack power by 4 for every 180 armor value you have." lvl="4"/>
-        <rank description="Increases your attack power by 5 for every 180 armor value you have." lvl="5"/>
+      <talent column="0" icon="inv_shoulder_36" key="1938" name="劍刃護甲" tier="1">
+        <rank description="'每180點護甲值能讓你獲得1點攻擊強度。" lvl="1"/>
+        <rank description="'每180點護甲值能讓你獲得2點攻擊強度。" lvl="2"/>
+        <rank description="'每180點護甲值能讓你獲得3點攻擊強度。" lvl="3"/>
+        <rank description="'每180點護甲值能讓你獲得4點攻擊強度。" lvl="4"/>
+        <rank description="'每180點護甲值能讓你獲得5點攻擊強度。" lvl="5"/>
       </talent>
-      <talent column="1" icon="ability_rogue_bloodyeye" key="1948" name="Scent of Blood" tier="1">
-        <rank description="You have a 15% chance after dodging, parrying or taking  direct damage to gain the Scent of Blood effect, causing your next melee hit to generate 10 runic power." lvl="1"/>
-        <rank description="You have a 15% chance after dodging, parrying or taking  direct damage to gain the Scent of Blood effect, causing your next 2 melee hits to generate 10 runic power." lvl="2"/>
-        <rank description="You have a 15% chance after dodging, parrying or taking  direct damage to gain the Scent of Blood effect, causing your next 3 melee hits to generate 10 runic power." lvl="3"/>
+      <talent column="1" icon="ability_rogue_bloodyeye" key="1948" name="血魄氣息" tier="1">
+        <rank description="當你閃躲、招架或受到直接傷害時，有15%的機率獲得血魄氣息的效果，使你下1次的近戰攻擊命中時可產生10點符能。" lvl="1"/>
+        <rank description="當你閃躲、招架或受到直接傷害時，有15%的機率獲得血魄氣息的效果，使你下2次的近戰攻擊命中時可產生10點符能。" lvl="2"/>
+        <rank description="當你閃躲、招架或受到直接傷害時，有15%的機率獲得血魄氣息的效果，使你下3次的近戰攻擊命中時可產生10點符能。" lvl="3"/>
       </talent>
-      <talent column="2" icon="inv_sword_68" key="2217" name="Two-Handed Weapon Specialization" tier="1">
-        <rank description="Increases the damage you deal with two-handed melee weapons by 2%." lvl="1"/>
-        <rank description="Increases the damage you deal with two-handed melee weapons by 4%." lvl="2"/>
+      <talent column="2" icon="inv_sword_68" key="2217" name="雙手武器專精" tier="1">
+        <rank description="使你雙手近戰武器所造成的傷害提高2%。" lvl="1"/>
+        <rank description="使你雙手近戰武器所造成的傷害提高4%。" lvl="2"/>
       </talent>
-      <talent column="0" icon="spell_deathknight_runetap" key="1941" name="Rune Tap" tier="2">
-        <rank description="Converts 1 Blood Rune into 10% of your maximum health." lvl="1"/>
+      <talent column="0" icon="spell_deathknight_runetap" key="1941" name="符文轉化" tier="2">
+        <rank description="將1個血魄符文轉化為生命力上限的10%。" lvl="1"/>
         <spell castTime="0" cooldown="60000">
           <power cost="1" type="blood"/>
         </spell>
       </talent>
-      <talent column="1" icon="spell_deathknight_darkconviction" key="1943" name="Dark Conviction" tier="2">
-        <rank description="Increases your chance to critically hit with weapons, spells and abilities by 1%." lvl="1"/>
-        <rank description="Increases your chance to critically hit with weapons, spells and abilities by 2%." lvl="2"/>
-        <rank description="Increases your chance to critically hit with weapons, spells and abilities by 3%." lvl="3"/>
-        <rank description="Increases your chance to critically hit with weapons, spells and abilities by 4%." lvl="4"/>
-        <rank description="Increases your chance to critically hit with weapons, spells and abilities by 5%." lvl="5"/>
+      <talent column="1" icon="spell_deathknight_darkconviction" key="1943" name="黑暗定罪" tier="2">
+        <rank description="使你的武器、法術和技能造成致命一擊的機率提高1%。" lvl="1"/>
+        <rank description="使你的武器、法術和技能造成致命一擊的機率提高2%。" lvl="2"/>
+        <rank description="使你的武器、法術和技能造成致命一擊的機率提高3%。" lvl="3"/>
+        <rank description="使你的武器、法術和技能造成致命一擊的機率提高4%。" lvl="4"/>
+        <rank description="使你的武器、法術和技能造成致命一擊的機率提高5%。" lvl="5"/>
       </talent>
-      <talent column="2" icon="inv_sword_62" key="2086" name="Death Rune Mastery" tier="2">
-        <rank description="Whenever you hit with Death Strike or Obliterate there is a 33% chance that the Frost and Unholy Runes will become Death Runes when they activate.  Death Runes count as a Blood, Frost or Unholy Rune." lvl="1"/>
-        <rank description="Whenever you hit with Death Strike or Obliterate there is a 66% chance that the Frost and Unholy Runes will become Death Runes when they activate.  Death Runes count as a Blood, Frost or Unholy Rune." lvl="2"/>
-        <rank description="Whenever you hit with Death Strike or Obliterate there is a 100% chance that the Frost and Unholy Runes will become Death Runes when they activate.  Death Runes count as a Blood, Frost or Unholy Rune." lvl="3"/>
+      <talent column="2" icon="inv_sword_62" key="2086" name="精通死亡符文" tier="2">
+        <rank description="當你使用死亡打擊或滅寂時，有33%的機率使你的冰霜符文和穢邪符文在啟動時轉化成死亡符文。死亡符文可視為血魄、冰霜或者穢邪符文。" lvl="1"/>
+        <rank description="當你使用死亡打擊或滅寂時，有66%的機率使你的冰霜符文和穢邪符文在啟動時轉化成死亡符文。死亡符文可視為血魄、冰霜或者穢邪符文。" lvl="2"/>
+        <rank description="當你使用死亡打擊或滅寂時，有100%的機率使你的冰霜符文和穢邪符文在啟動時轉化成死亡符文。死亡符文可視為血魄、冰霜或者穢邪符文。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_deathknight_runetap" key="1942" name="Improved Rune Tap" requires="1941" tier="3">
-        <rank description="Increases the health provided by Rune Tap by 33% and lowers its cooldown by 10 sec." lvl="1"/>
-        <rank description="Increases the health provided by Rune Tap by 66% and lowers its cooldown by 20 sec." lvl="2"/>
-        <rank description="Increases the health provided by Rune Tap by 100% and lowers its cooldown by 30 sec." lvl="3"/>
+      <talent column="0" icon="spell_deathknight_runetap" key="1942" name="強化符文轉化" requires="1941" tier="3">
+        <rank description="由符文轉化提供的生命力提高33%，並縮短其冷卻時間10秒。" lvl="1"/>
+        <rank description="由符文轉化提供的生命力提高33%，並縮短其冷卻時間20秒。" lvl="2"/>
+        <rank description="由符文轉化提供的生命力提高33%，並縮短其冷卻時間30秒。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_deathknight_spelldeflection" key="2018" name="Spell Deflection" tier="3">
-        <rank description="You have a chance equal to your Parry chance of taking 15% less damage from a direct damage spell." lvl="1"/>
-        <rank description="You have a chance equal to your Parry chance of taking 30% less damage from a direct damage spell." lvl="2"/>
-        <rank description="You have a chance equal to your Parry chance of taking 45% less damage from a direct damage spell." lvl="3"/>
+      <talent column="2" icon="spell_deathknight_spelldeflection" key="2018" name="法術偏斜" tier="3">
+        <rank description="使你有與招架機率相同的機會，令你受到的直接性法術傷害降低15%。" lvl="1"/>
+        <rank description="使你有與招架機率相同的機會，令你受到的直接性法術傷害降低30%。" lvl="2"/>
+        <rank description="使你有與招架機率相同的機會，令你受到的直接性法術傷害降低45%。" lvl="3"/>
       </talent>
-      <talent column="3" icon="spell_deathknight_vendetta" key="1953" name="Vendetta" tier="3">
-        <rank description="Heals you for up to 2% of your maximum health whenever you kill a target that yields experience or honor." lvl="1"/>
-        <rank description="Heals you for up to 4% of your maximum health whenever you kill a target that yields experience or honor." lvl="2"/>
-        <rank description="Heals you for up to 6% of your maximum health whenever you kill a target that yields experience or honor." lvl="3"/>
+      <talent column="3" icon="spell_deathknight_vendetta" key="1953" name="世仇" tier="3">
+        <rank description="每當你殺死目標且獲得經驗或榮譽值時，可使你恢復生命力上限的2%。" lvl="1"/>
+        <rank description="每當你殺死目標且獲得經驗或榮譽值時，可使你恢復生命力上限的4%。" lvl="2"/>
+        <rank description="每當你殺死目標且獲得經驗或榮譽值時，可使你恢復生命力上限的6%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_deathknight_deathstrike" key="2015" name="Bloody Strikes" tier="4">
-        <rank description="Increases the damage of Blood Strike by 5% and Heart Strike by 15%, and increases the damage of Blood Boil by 10%." lvl="1"/>
-        <rank description="Increases the damage of Blood Strike by 10% and Heart Strike by 30%, and increases the damage of Blood Boil by 20%." lvl="2"/>
-        <rank description="Increases the damage of Blood Strike by 15% and Heart Strike by 45%, and increases the damage of Blood Boil by 30%." lvl="3"/>
+      <talent column="0" icon="spell_deathknight_deathstrike" key="2015" name="血腥打擊" tier="4">
+        <rank description="使你血魄打擊造成的傷害提高5%，碎心打擊造成的傷害提高15%，沸血術造成的傷害提高10%。" lvl="1"/>
+        <rank description="使你血魄打擊造成的傷害提高10%，碎心打擊造成的傷害提高30%，沸血術造成的傷害提高20%。" lvl="2"/>
+        <rank description="使你血魄打擊造成的傷害提高15%，碎心打擊造成的傷害提高45%，沸血術造成的傷害提高30%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_misc_warsongfocus" key="1950" name="Veteran of the Third War" tier="4">
-        <rank description="Increases your total Strength by 2%, your Stamina by 1%, and your expertise by 2." lvl="1"/>
-        <rank description="Increases your total Strength by 4%, your Stamina by 2%, and your expertise by 4." lvl="2"/>
-        <rank description="Increases your total Strength by 6%, your Stamina by 3%, and your expertise by 6." lvl="3"/>
+      <talent column="2" icon="spell_misc_warsongfocus" key="1950" name="百戰精兵" tier="4">
+        <rank description="使你的總力量提高2%，耐力提高1%，熟練技能提高2點。" lvl="1"/>
+        <rank description="使你的總力量提高4%，耐力提高2%，熟練技能提高4點。" lvl="2"/>
+        <rank description="使你的總力量提高6%，耐力提高3%，熟練技能提高6點。" lvl="3"/>
       </talent>
-      <talent column="3" icon="ability_hunter_rapidkilling" key="1949" name="Mark of Blood" tier="4">
-        <rank description="Place a Mark of Blood on an enemy.  Whenever the marked enemy deals damage to a target, that target is healed for 4% of its maximum health.  Lasts for 20 sec or up to 20 hits." lvl="1"/>
+      <talent column="3" icon="ability_hunter_rapidkilling" key="1949" name="血魄印記" tier="4">
+        <rank description="在敵人身上施放一個血魄印記。當被標記的敵人對目標造成傷害時，該目標將被治療生命力上限的4%。此印記最多可持續20秒或直到命中20次為止。" lvl="1"/>
         <spell castTime="0" cooldown="180000" maxRange="30">
           <power cost="1" type="blood"/>
         </spell>
       </talent>
-      <talent column="1" icon="ability_backstab" key="1944" name="Bloody Vengeance" requires="1943" tier="5">
-        <rank description="Gives you a 1% bonus to physical damage you deal for 30 sec after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to 3 times." lvl="1"/>
-        <rank description="Gives you a 2% bonus to physical damage you deal for 30 sec after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to 3 times." lvl="2"/>
-        <rank description="Gives you a 3% bonus to physical damage you deal for 30 sec after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to 3 times." lvl="3"/>
+      <talent column="1" icon="ability_backstab" key="1944" name="血腥復仇" requires="1943" tier="5">
+        <rank description="使你的武器攻擊、法術或技能造成致命一擊之後，可獲得1%的物理傷害加成，持續30秒。此效果最多可堆疊3次。" lvl="1"/>
+        <rank description="使你的武器攻擊、法術或技能造成致命一擊之後，可獲得2%的物理傷害加成，持續30秒。此效果最多可堆疊3次。" lvl="2"/>
+        <rank description="使你的武器攻擊、法術或技能造成致命一擊之後，可獲得3%的物理傷害加成，持續30秒。此效果最多可堆疊3次。" lvl="3"/>
       </talent>
-      <talent column="2" icon="ability_warrior_intensifyrage" key="2105" name="Abomination's Might" tier="5">
-        <rank description="Increases the attack power by 5% of party and raid members within 100 yards.  Also increases your total Strength by 1%." lvl="1"/>
-        <rank description="Increases the attack power by 10% of party and raid members within 100 yards.  Also increases your total Strength by 2%." lvl="2"/>
+      <talent column="2" icon="ability_warrior_intensifyrage" key="2105" name="兇惡之力" tier="5">
+        <rank description="使你的總力量提高1%。此外，你的血魄打擊和碎心打擊有25%的機率，而你的死亡打擊和滅寂有50%的機率提高0碼範圍內小隊與團隊成員10%的攻擊強度，持續10秒。" lvl="1"/>
+        <rank description="使你的總力量提高2%。此外，你的血魄打擊和碎心打擊有50%的機率，而你的死亡打擊和滅寂有100%的機率提高0碼範圍內小隊與團隊成員10%的攻擊強度，持續10秒。" lvl="2"/>
       </talent>
-      <talent column="0" icon="spell_shadow_soulleech" key="1960" name="Bloodworms" tier="6">
-        <rank description="Your weapon hits have a 3% chance to cause the target to spawn 2-4 Bloodworms.  Bloodworms attack your enemies, healing you as they do damage for 20 sec or until killed." lvl="1"/>
-        <rank description="Your weapon hits have a 6% chance to cause the target to spawn 2-4 Bloodworms.  Bloodworms attack your enemies, healing you as they do damage for 20 sec or until killed." lvl="2"/>
-        <rank description="Your weapon hits have a 9% chance to cause the target to spawn 2-4 Bloodworms.  Bloodworms attack your enemies, healing you as they do damage for 20 sec or until killed." lvl="3"/>
+      <talent column="0" icon="spell_shadow_soulleech" key="1960" name="血蟲" tier="6">
+        <rank description="你的武器擊中目標時有3%的機率從對方的身上生出2-4隻血蟲。血蟲將攻擊你的敵人，並對你造成等同於其傷害量的治療效果，牠們可持續20秒或直到被殺掉為止。" lvl="1"/>
+        <rank description="你的武器擊中目標時有6%的機率從對方的身上生出2-4隻血蟲。血蟲將攻擊你的敵人，並對你造成等同於其傷害量的治療效果，牠們可持續20秒或直到被殺掉為止。" lvl="2"/>
+        <rank description="你的武器擊中目標時有9%的機率從對方的身上生出2-4隻血蟲。血蟲將攻擊你的敵人，並對你造成等同於其傷害量的治療效果，牠們可持續20秒或直到被殺掉為止。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_deathknight_bladedarmor" key="1954" name="Hysteria" tier="6">
-        <rank description="Induces a friendly unit into a killing frenzy for 30 sec.  The target is Enraged, which increases their physical damage by 20%, but causes them to lose health equal to 1% of their maximum health every second." lvl="1"/>
+      <talent column="1" icon="spell_deathknight_bladedarmor" key="1954" name="狂血術" tier="6">
+        <rank description="誘導一名友方單位進入嗜殺的狂亂狀態，持續30秒。目標將陷入狂怒之中，使其造成的物理傷害提高20%，但每秒損失生命力上限的1%。" lvl="1"/>
         <spell castTime="0" cooldown="180000" maxRange="30"/>
       </talent>
-      <talent column="2" icon="spell_deathknight_bloodpresence" key="1936" name="Improved Blood Presence" tier="6">
-        <rank description="While in Frost Presence or Unholy Presence, you retain 2% healing from Blood Presence, and healing done to you is increased by 5% in Blood Presence." lvl="1"/>
-        <rank description="While in Frost Presence or Unholy Presence, you retain 4% healing from Blood Presence, and healing done to you is increased by 10% in Blood Presence." lvl="2"/>
+      <talent column="2" icon="spell_deathknight_bloodpresence" key="1936" name="強化血魄領域" tier="6">
+        <rank description="當你處於冰霜領域或穢邪領域時，你仍可獲得血魄領域2%的治療效果，並且當你處於血魄領域時受到的治療效果將提高5%。" lvl="1"/>
+        <rank description="當你處於冰霜領域或穢邪領域時，你仍可獲得血魄領域4%的治療效果，並且當你處於血魄領域時受到的治療效果將提高10%。" lvl="2"/>
       </talent>
-      <talent column="0" icon="spell_deathknight_butcher2" key="2259" name="Improved Death Strike" tier="7">
-        <rank description="Increases the damage of your Death Strike by 15%, increases its critical strike chance by 3%, and increases the healing granted by 25%." lvl="1"/>
-        <rank description="Increases the damage of your Death Strike by 30%, increases its critical strike chance by 6%, and increases the healing granted by 50%." lvl="2"/>
+      <talent column="0" icon="spell_deathknight_butcher2" key="2259" name="強化死亡打擊" tier="7">
+        <rank description="使你死亡打擊的傷害提高15%，致命一擊機率提高3%，且提供的治療效果提高25%。" lvl="1"/>
+        <rank description="使你死亡打擊的傷害提高30%，致命一擊機率提高6%，且提供的治療效果提高50%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_shadow_painspike" key="1955" name="Sudden Doom" tier="7">
-        <rank description="Your Blood Strikes and Heart Strikes have a 5% chance to launch a free Death Coil at your target." lvl="1"/>
-        <rank description="Your Blood Strikes and Heart Strikes have a 10% chance to launch a free Death Coil at your target." lvl="2"/>
-        <rank description="Your Blood Strikes and Heart Strikes have a 15% chance to launch a free Death Coil at your target." lvl="3"/>
+      <talent column="1" icon="spell_shadow_painspike" key="1955" name="厄運驟臨" tier="7">
+        <rank description="Y你的血魄打擊和碎心打擊有5%的機率對你的當前目標施放一發死亡纏繞。" lvl="1"/>
+        <rank description="你的血魄打擊和碎心打擊有10%的機率對你的當前目標施放一發死亡纏繞。" lvl="2"/>
+        <rank description="你的血魄打擊和碎心打擊有15%的機率對你的當前目標施放一發死亡纏繞。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_shadow_lifedrain" key="2019" name="Vampiric Blood" tier="7">
-        <rank description="Temporarily grants the Death Knight 15% of maximum health and increases the amount of health generated through spells and effects by 35% for 10 sec.  After the effect expires, the health is lost." lvl="1"/>
+      <talent column="2" icon="spell_shadow_lifedrain" key="2019" name="血族之裔" tier="7">
+        <rank description="暫時性地令死亡騎士的生命力上限提高15%，並使其從法術與效果所獲得的生命力提高35%，持續10秒。當此效果解除之後，這些生命力會被扣除。" lvl="1"/>
         <spell castTime="0" cooldown="60000">
           <power cost="1" type="blood"/>
         </spell>
       </talent>
-      <talent column="0" icon="ability_creature_cursed_02" key="1959" name="Will of the Necropolis" tier="8">
-        <rank description="Damage that would take you below 35% health or taken while you are at 35% health is reduced by 5%." lvl="1"/>
-        <rank description="Damage that would take you below 35% health or taken while you are at 35% health is reduced by 10%." lvl="2"/>
-        <rank description="Damage that would take you below 35% health or taken while you are at 35% health is reduced by 15%." lvl="3"/>
+      <talent column="0" icon="ability_creature_cursed_02" key="1959" name="亡域意志" tier="8">
+        <rank description="任何會使你的生命力降低至35%以下的攻擊，或者當你的生命力處於35%時，受到的傷害降低5%。此效果每15秒只能發動一次，少於你5%生命力的傷害無法觸發此效果。" lvl="1"/>
+        <rank description="任何會使你的生命力降低至35%以下的攻擊，或者當你的生命力處於35%時，受到的傷害降低10%。此效果每15秒只能發動一次，少於你5%生命力的傷害無法觸發此效果。" lvl="2"/>
+        <rank description="任何會使你的生命力降低至35%以下的攻擊，或者當你的生命力處於35%時，受到的傷害降低15%。此效果每15秒只能發動一次，少於你5%生命力的傷害無法觸發此效果。" lvl="3"/>
       </talent>
-      <talent column="1" icon="inv_weapon_shortblade_40" key="1957" name="Heart Strike" tier="8">
-        <rank description="Instantly strike the target and his nearest ally, causing 50% weapon damage plus 125 on the primary target, and 25% weapon damage plus 63 on the secondary target.  Each target takes 10% additional damage for each of your diseases active on that target." lvl="1"/>
+      <talent column="1" icon="inv_weapon_shortblade_40" key="1957" name="碎心打擊" tier="8">
+        <rank description="立即打擊目標與其周圍最靠近的盟友，對主要目標造成50%的武器傷害再加上125點傷害，對次要目標造成25%的武器傷害再加上63點傷害。目標身上每個由你引起的疾病效果可使此攻擊額外造成10%的傷害，同時移動速度降低50%，持續10秒。" lvl="1"/>
         <spell castTime="0" maxRange="5">
           <power cost="1" type="blood"/>
         </spell>
       </talent>
-      <talent column="2" icon="spell_deathknight_classicon" key="1958" name="Might of Mograine" tier="8">
-        <rank description="Increases the critical strike damage bonus of your Blood Boil, Blood Strike, Death Strike, and Heart Strike abilities by 15%." lvl="1"/>
-        <rank description="Increases the critical strike damage bonus of your Blood Boil, Blood Strike, Death Strike, and Heart Strike abilities by 30%." lvl="2"/>
-        <rank description="Increases the critical strike damage bonus of your Blood Boil, Blood Strike, Death Strike, and Heart Strike abilities by 45%." lvl="3"/>
+      <talent column="2" icon="spell_deathknight_classicon" key="1958" name="莫格萊尼之力" tier="8">
+        <rank description="使你沸血術、血魄打擊、死亡打擊和碎心打擊技能的致命一擊傷害加成提高15%。" lvl="1"/>
+        <rank description="使你沸血術、血魄打擊、死亡打擊和碎心打擊技能的致命一擊傷害加成提高30%。" lvl="2"/>
+        <rank description="使你沸血術、血魄打擊、死亡打擊和碎心打擊技能的致命一擊傷害加成提高45%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_nature_reincarnation" key="2034" name="Blood Gorged" tier="9">
-        <rank description="When you are above 75% health, you deal 2% more damage.  In addition, your attacks ignore up to 2% of your opponent's armor at all times." lvl="1"/>
-        <rank description="When you are above 75% health, you deal 4% more damage.  In addition, your attacks ignore up to 4% of your opponent's armor at all times." lvl="2"/>
-        <rank description="When you are above 75% health, you deal 6% more damage.  In addition, your attacks ignore up to 6% of your opponent's armor at all times." lvl="3"/>
-        <rank description="When you are above 75% health, you deal 8% more damage.  In addition, your attacks ignore up to 8% of your opponent's armor at all times." lvl="4"/>
-        <rank description="When you are above 75% health, you deal 10% more damage.  In addition, your attacks ignore up to 10% of your opponent's armor at all times." lvl="5"/>
+      <talent column="1" icon="spell_nature_reincarnation" key="2034" name="血魄暴噬" tier="9">
+        <rank description="你的攻擊無視對手2%的護甲值。當你的生命力高於75%時，可額外造成2%的傷害。" lvl="1"/>
+        <rank description="你的攻擊無視對手4%的護甲值。當你的生命力高於75%時，可額外造成4%的傷害。" lvl="2"/>
+        <rank description="你的攻擊無視對手6%的護甲值。當你的生命力高於75%時，可額外造成6%的傷害。" lvl="3"/>
+        <rank description="你的攻擊無視對手8%的護甲值。當你的生命力高於75%時，可額外造成8%的傷害。" lvl="4"/>
+        <rank description="你的攻擊無視對手10%的護甲值。當你的生命力高於75%時，可額外造成10%的傷害。" lvl="5"/>
       </talent>
-      <talent column="1" icon="inv_sword_07" key="1961" name="Dancing Rune Weapon" tier="10">
-        <rank description="Summons a second rune weapon that fights on its own for 12 sec, doing the same attacks as the Death Knight but for 50% reduced damage." lvl="1"/>
+      <talent column="1" icon="inv_sword_07" key="1961" name="符文武器幻舞" tier="10">
+        <rank description="召喚第二把符文武器。這把符文武器將獨立戰鬥並採取與死亡騎士相同的攻擊，但僅能造成低於死亡騎士50%的傷害，持續12秒。" lvl="1"/>
         <spell castTime="0" cooldown="90000" maxRange="30">
           <power cost="60" type="runic"/>
         </spell>
       </talent>
     </tree>
-    <tree bgImage="DeathKnightUnholy" icon="spell_deathknight_unholypresence" key="Unholy" name="Unholy" order="2">
-      <talent column="0" icon="spell_deathknight_plaguestrike" key="2082" name="Vicious Strikes" tier="0">
-        <rank description="Increases the critical strike chance by 3% and critical strike damage bonus by 15% of your Plague Strike and Scourge Strike." lvl="1"/>
-        <rank description="Increases the critical strike chance by 6% and critical strike damage bonus by 30% of your Plague Strike and Scourge Strike." lvl="2"/>
+    <tree bgImage="DeathKnightUnholy" icon="spell_deathknight_unholypresence" key="Unholy" name="邪惡" order="2">
+      <talent column="0" icon="spell_deathknight_plaguestrike" key="2082" name="兇惡打擊" tier="0">
+        <rank description="使你的瘟疫打擊和天譴打擊的致命一擊機率提高3%，致命一擊傷害加成提高15%。" lvl="1"/>
+        <rank description="使你的瘟疫打擊和天譴打擊的致命一擊機率提高6%，致命一擊傷害加成提高30%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_shadow_burningspirit" key="1932" name="Virulence" tier="0">
-        <rank description="Increases your chance to hit with your spells by 1% and reduces the chance that your damage over time diseases can be cured by 10%." lvl="1"/>
-        <rank description="Increases your chance to hit with your spells by 2% and reduces the chance that your damage over time diseases can be cured by 20%." lvl="2"/>
-        <rank description="Increases your chance to hit with your spells by 3% and reduces the chance that your damage over time diseases can be cured by 30%." lvl="3"/>
+      <talent column="1" icon="spell_shadow_burningspirit" key="1932" name="惡疾" tier="0">
+        <rank description="使你法術的命中機率提高1%，並且令你的持續傷害疾病被治癒的機率降低10%。" lvl="1"/>
+        <rank description="使你法術的命中機率提高2%，並且令你的持續傷害疾病被治癒的機率降低20%。" lvl="2"/>
+        <rank description="使你法術的命中機率提高3%，並且令你的持續傷害疾病被治癒的機率降低30%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_nature_mirrorimage" key="2218" name="Anticipation" tier="0">
-        <rank description="Increases your Dodge chance by 1%." lvl="1"/>
-        <rank description="Increases your Dodge chance by 2%." lvl="2"/>
-        <rank description="Increases your Dodge chance by 3%." lvl="3"/>
-        <rank description="Increases your Dodge chance by 4%." lvl="4"/>
-        <rank description="Increases your Dodge chance by 5%." lvl="5"/>
+      <talent column="2" icon="spell_nature_mirrorimage" key="2218" name="預知" tier="0">
+        <rank description="使你的閃躲機率提高1%。" lvl="1"/>
+        <rank description="使你的閃躲機率提高2%。" lvl="2"/>
+        <rank description="使你的閃躲機率提高3%。" lvl="3"/>
+        <rank description="使你的閃躲機率提高4%。" lvl="4"/>
+        <rank description="使你的閃躲機率提高5%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="spell_shadow_shadowwordpain" key="1963" name="Epidemic" tier="1">
-        <rank description="Increases the duration of Blood Plague and Frost Fever by 3 sec." lvl="1"/>
-        <rank description="Increases the duration of Blood Plague and Frost Fever by 6 sec." lvl="2"/>
+      <talent column="0" icon="spell_shadow_shadowwordpain" key="1963" name="疫源" tier="1">
+        <rank description="使你的血魄瘟疫和冰霜熱疫持續時間延長3秒。" lvl="1"/>
+        <rank description="使你的血魄瘟疫和冰霜熱疫持續時間延長6秒。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_shadow_deathanddecay" key="1933" name="Morbidity" tier="1">
-        <rank description="Increases the damage and healing of Death Coil by 5% and reduces the cooldown on Death and Decay by 5 sec." lvl="1"/>
-        <rank description="Increases the damage and healing of Death Coil by 10% and reduces the cooldown on Death and Decay by 10 sec." lvl="2"/>
-        <rank description="Increases the damage and healing of Death Coil by 15% and reduces the cooldown on Death and Decay by 15 sec." lvl="3"/>
+      <talent column="1" icon="spell_shadow_deathanddecay" key="1933" name="病態" tier="1">
+        <rank description="使你死亡纏繞造成的傷害與治療效果提高5%，死亡凋零的冷卻時間縮短5秒。" lvl="1"/>
+        <rank description="使你死亡纏繞造成的傷害與治療效果提高10%，死亡凋零的冷卻時間縮短10秒。" lvl="2"/>
+        <rank description="使你死亡纏繞造成的傷害與治療效果提高15%，死亡凋零的冷卻時間縮短15秒。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_deathknight_strangulate" key="2025" name="Unholy Command" tier="1">
-        <rank description="Reduces the cooldown of your Death Grip ability by 5 sec." lvl="1"/>
-        <rank description="Reduces the cooldown of your Death Grip ability by 10 sec." lvl="2"/>
+      <talent column="2" icon="spell_deathknight_strangulate" key="2025" name="穢邪命令" tier="1">
+        <rank description="使你死亡之握的冷卻時間縮短5秒。" lvl="1"/>
+        <rank description="使你死亡之握的冷卻時間縮短10秒。" lvl="2"/>
       </talent>
-      <talent column="3" icon="spell_deathknight_gnaw_ghoul" key="1934" name="Ravenous Dead" tier="1">
-        <rank description="Increases your total Strength by 1% and the contribution your Ghouls get from your Strength and Stamina by 20%." lvl="1"/>
-        <rank description="Increases your total Strength by 2% and the contribution your Ghouls get from your Strength and Stamina by 40%." lvl="2"/>
-        <rank description="Increases your total Strength by 3% and the contribution your Ghouls get from your Strength and Stamina by 60%" lvl="3"/>
+      <talent column="3" icon="spell_deathknight_gnaw_ghoul" key="1934" name="嗜肉死者" tier="1">
+        <rank description="使你的總力量提高1%，並且讓你的食屍鬼從主人身上獲得力量和耐力加成的比例提高20%。" lvl="1"/>
+        <rank description="使你的總力量提高2%，並且讓你的食屍鬼從主人身上獲得力量和耐力加成的比例提高40%。" lvl="2"/>
+        <rank description="使你的總力量提高3%，並且讓你的食屍鬼從主人身上獲得力量和耐力加成的比例提高60%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_shadow_plaguecloud" key="2008" name="Outbreak" tier="2">
-        <rank description="Increases the damage of Plague Strike by 10% and Scourge Strike by 7%." lvl="1"/>
-        <rank description="Increases the damage of Plague Strike by 20% and Scourge Strike by 13%." lvl="2"/>
-        <rank description="Increases the damage of Plague Strike by 30% and Scourge Strike by 20%." lvl="3"/>
+      <talent column="0" icon="spell_shadow_plaguecloud" key="2008" name="疫病爆發" tier="2">
+        <rank description="使你瘟疫打擊的傷害提高10%，天譴打擊的傷害提高7%。" lvl="1"/>
+        <rank description="使你瘟疫打擊的傷害提高20%，天譴打擊的傷害提高13%。" lvl="2"/>
+        <rank description="使你瘟疫打擊的傷害提高30%，天譴打擊的傷害提高20%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="inv_weapon_shortblade_60" key="2047" name="Necrosis" tier="2">
-        <rank description="Your auto attacks deal an additional 4% Shadow damage." lvl="1"/>
-        <rank description="Your auto attacks deal an additional 8% Shadow damage." lvl="2"/>
-        <rank description="Your auto attacks deal an additional 12% Shadow damage." lvl="3"/>
-        <rank description="Your auto attacks deal an additional 16% Shadow damage." lvl="4"/>
-        <rank description="Your auto attacks deal an additional 20% Shadow damage." lvl="5"/>
+      <talent column="1" icon="inv_weapon_shortblade_60" key="2047" name="死亡之疽" tier="2">
+        <rank description="你的自動攻擊可額外造成4%的暗影傷害。" lvl="1"/>
+        <rank description="你的自動攻擊可額外造成8%的暗影傷害。" lvl="2"/>
+        <rank description="你的自動攻擊可額外造成12%的暗影傷害。" lvl="3"/>
+        <rank description="你的自動攻擊可額外造成16%的暗影傷害。" lvl="4"/>
+        <rank description="你的自動攻擊可額外造成20%的暗影傷害。" lvl="5"/>
       </talent>
-      <talent column="2" icon="ability_creature_disease_02" key="1985" name="Corpse Explosion" tier="2">
-        <rank description="Cause a corpse to explode for 166 Shadow damage to all enemies within 10 yards.  Will use a nearby corpse if the target is not a corpse.  Does not affect mechanical or elemental corpses." lvl="1"/>
+      <talent column="2" icon="ability_creature_disease_02" key="1985" name="屍爆術" tier="2">
+        <rank description="使一具屍體爆炸，對0碼範圍內的所有敵人造成166點暗影傷害。若選定的目標不是屍體時，則會使用附近的一具屍體。無法使用於機械或元素類的屍體。" lvl="1"/>
         <spell castTime="0" cooldown="5000" maxRange="30">
           <power cost="40" type="runic"/>
         </spell>
       </talent>
-      <talent column="1" icon="spell_deathknight_summondeathcharger" key="2039" name="On a Pale Horse" tier="3">
-        <rank description="You become as hard to stop as death itself.  The duration of all Stun and Fear effects used against you is reduced by 10%, and your mounted speed is increased by 10%.  This does not stack with other movement speed increasing effects." lvl="1"/>
-        <rank description="You become as hard to stop as death itself.  The duration of all Stun and Fear effects used against you is reduced by 20%, and your mounted speed is increased by 20%.  This does not stack with other movement speed increasing effects." lvl="2"/>
+      <talent column="1" icon="spell_deathknight_summondeathcharger" key="2039" name="骸馬騎術" tier="3">
+        <rank description="你變成死亡的化身，難以被阻擋。你受到的所有昏迷和恐懼效果持續時間縮短10%，並且騎乘速度提高10%。此效果無法與其他提升移動速度的效果堆疊。" lvl="1"/>
+        <rank description="你變成死亡的化身，難以被阻擋。你受到的所有昏迷和恐懼效果持續時間縮短20%，並且騎乘速度提高20%。此效果無法與其他提升移動速度的效果堆疊。" lvl="2"/>
       </talent>
-      <talent column="2" icon="ability_criticalstrike" key="2004" name="Blood-Caked Blade" tier="3">
-        <rank description="Your auto attacks have a 10% chance to cause a Blood-Caked Strike, which hits for 25% weapon damage plus 12.5% for each of your diseases on the target." lvl="1"/>
-        <rank description="Your auto attacks have a 20% chance to cause a Blood-Caked Strike, which hits for 25% weapon damage plus 12.5% for each of your diseases on the target." lvl="2"/>
-        <rank description="Your auto attacks have a 30% chance to cause a Blood-Caked Strike, which hits for 25% weapon damage plus 12.5% for each of your diseases on the target." lvl="3"/>
+      <talent column="2" icon="ability_criticalstrike" key="2004" name="凝血之刃" tier="3">
+        <rank description="你的自動攻擊有10%的機率造成凝血打擊的效果，對敵人造成25%武器傷害再加上目標身上每個由你引起的疾病效果均可額外造成12.5%的武器傷害。" lvl="1"/>
+        <rank description="你的自動攻擊有20%的機率造成凝血打擊的效果，對敵人造成25%武器傷害再加上目標身上每個由你引起的疾病效果均可額外造成12.5%的武器傷害。" lvl="2"/>
+        <rank description="你的自動攻擊有30%的機率造成凝血打擊的效果，對敵人造成25%武器傷害再加上目標身上每個由你引起的疾病效果均可額外造成12.5%的武器傷害。" lvl="3"/>
       </talent>
-      <talent column="3" icon="spell_deathknight_armyofthedead" key="2225" name="Night of the Dead" tier="3">
-        <rank description="Reduces the cooldown on Raise Dead by 45 sec and the cooldown on Army of the Dead by 2 min.  Also reduces the damage your pet takes from creature area of effect attacks by 45%." lvl="1"/>
-        <rank description="Reduces the cooldown on Raise Dead by 90 sec and the cooldown on Army of the Dead by 4 min.  Also reduces the damage your pet takes from creature area of effect attacks by 90%." lvl="2"/>
+      <talent column="3" icon="spell_deathknight_armyofthedead" key="2225" name="死亡之夜" tier="3">
+        <rank description="使你死者復生的冷卻時間縮短45秒，亡靈大軍的冷卻時間縮短2分鐘，同時令你寵物受到生物所施放的範圍攻擊傷害降低45%。" lvl="1"/>
+        <rank description="使你死者復生的冷卻時間縮短90秒，亡靈大軍的冷卻時間縮短4分鐘，同時令你寵物受到生物所施放的範圍攻擊傷害降低90%。" lvl="2"/>
       </talent>
-      <talent column="0" icon="spell_shadow_contagion" key="1996" name="Unholy Blight" tier="4">
-        <rank description="Causes the victims of your Death Coil to be surrounded by a vile swarm of unholy insects, taking 10% of the damage done by the Death Coil over 10 sec, and preventing any diseases on the victim from being dispelled." lvl="1"/>
+      <talent column="0" icon="spell_shadow_contagion" key="1996" name="穢邪荒疫" tier="4">
+        <rank description="使死亡纏繞所擊中的目標圍繞著污穢的穢邪蟲群，在10秒內受到相當於死亡纏繞造成的10%傷害。" lvl="1"/>
       </talent>
-      <talent column="1" icon="spell_shadow_shadowandflame" key="2005" name="Impurity" tier="4">
-        <rank description="The attack power bonus of your spells is increased by 4%." lvl="1"/>
-        <rank description="The attack power bonus of your spells is increased by 8%." lvl="2"/>
-        <rank description="The attack power bonus of your spells is increased by 12%." lvl="3"/>
-        <rank description="The attack power bonus of your spells is increased by 16%." lvl="4"/>
-        <rank description="Your spells receive an additional 20% benefit from your attack power." lvl="5"/>
+      <talent column="1" icon="spell_shadow_shadowandflame" key="2005" name="不潔" tier="4">
+        <rank description="使你攻擊強度對法術的加成提高4%。" lvl="1"/>
+        <rank description="使你攻擊強度對法術的加成提高8%。" lvl="2"/>
+        <rank description="使你攻擊強度對法術的加成提高12%。" lvl="3"/>
+        <rank description="使你攻擊強度對法術的加成提高16%。" lvl="4"/>
+        <rank description="使你攻擊強度對法術的加成提高20%。" lvl="5"/>
       </talent>
-      <talent column="2" icon="spell_shadow_shadesofdarkness" key="2011" name="Dirge" tier="4">
-        <rank description="Your Death Strike, Plague Strike and Scourge Strike generate 2.5 additional runic power." lvl="1"/>
-        <rank description="Your Death Strike, Plague Strike and Scourge Strike generate 5 additional runic power." lvl="2"/>
+      <talent column="2" icon="spell_shadow_shadesofdarkness" key="2011" name="輓歌" tier="4">
+        <rank description="你的死亡打擊、瘟疫打擊和天譴打擊可額外產生2.5點符能。" lvl="1"/>
+        <rank description="你的死亡打擊、瘟疫打擊和天譴打擊可額外產生5點符能。" lvl="2"/>
       </talent>
-      <talent column="0" icon="spell_shadow_shadowfiend" key="2226" name="Desecration" tier="5">
-        <rank description="Your Plague Strikes and Scourge Strikes cause the Desecrated Ground effect.  Targets in the area are slowed by 25% by the grasping arms of the dead while standing on the unholy ground.  Lasts 20 sec." lvl="1"/>
-        <rank description="Your Plague Strikes and Scourge Strikes cause the Desecrated Ground effect.  Targets in the area are slowed by 50% by the grasping arms of the dead while standing on the unholy ground.  Lasts 20 sec." lvl="2"/>
+      <talent column="0" icon="spell_shadow_shadowfiend" key="2226" name="褻瀆" tier="5">
+        <rank description="你的瘟疫打擊和天譴打擊可發動褻瀆之地的效果。區域內的所有目標皆會受到亡者之臂的糾纏，移動速度降低25%，持續20秒。" lvl="1"/>
+        <rank description="你的瘟疫打擊和天譴打擊可發動褻瀆之地的效果。區域內的所有目標皆會受到亡者之臂的糾纏，移動速度降低50%，持續20秒。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_shadow_antimagicshell" key="2009" name="Magic Suppression" tier="5">
-        <rank description="You take 2% less damage from all magic.  In addition, your Anti-Magic Shell absorbs an additional 8% of spell damage." lvl="1"/>
-        <rank description="You take 4% less damage from all magic.  In addition, your Anti-Magic Shell absorbs an additional 16% of spell damage." lvl="2"/>
-        <rank description="You take 6% less damage from all magic.  In addition, your Anti-Magic Shell absorbs an additional 25% of spell damage." lvl="3"/>
+      <talent column="1" icon="spell_shadow_antimagicshell" key="2009" name="壓制魔法" tier="5">
+        <rank description="你受到的所有魔法傷害降低2%。此外，你的反魔法護罩可額外吸收8%的法術傷害。" lvl="1"/>
+        <rank description="你受到的所有魔法傷害降低4%。此外，你的反魔法護罩可額外吸收16%的法術傷害。" lvl="2"/>
+        <rank description="你受到的所有魔法傷害降低6%。此外，你的反魔法護罩可額外吸收25%的法術傷害。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_shadow_shadetruesight" key="2001" name="Reaping" tier="5">
-        <rank description="Whenever you hit with Blood Strike or Pestilence there is a 33% chance that the Blood Rune becomes a Death Rune when it activates.  Death Runes count as a Blood, Frost or Unholy Rune." lvl="1"/>
-        <rank description="Whenever you hit with Blood Strike or Pestilence there is a 66% chance that the Blood Rune becomes a Death Rune when it activates.  Death Runes count as a Blood, Frost or Unholy Rune." lvl="2"/>
-        <rank description="Whenever you hit with Blood Strike or Pestilence there is a 100% chance that the Blood Rune becomes a Death Rune when it activates.  Death Runes count as a Blood, Frost or Unholy Rune." lvl="3"/>
+      <talent column="2" icon="spell_shadow_shadetruesight" key="2001" name="穢聚" tier="5">
+        <rank description="當你的血魄打擊或瘟疫同化命中敵人時，有33%的機率使你的血魄符文在啟動時轉化成一個死亡符文。死亡符文可視為血魄、冰霜或者穢邪符文。" lvl="1"/>
+        <rank description="當你的血魄打擊或瘟疫同化命中敵人時，有66%的機率使你的血魄符文在啟動時轉化成一個死亡符文。死亡符文可視為血魄、冰霜或者穢邪符文。" lvl="2"/>
+        <rank description="當你的血魄打擊或瘟疫同化命中敵人時，有100%的機率使你的血魄符文在啟動時轉化成一個死亡符文。死亡符文可視為血魄、冰霜或者穢邪符文。" lvl="3"/>
       </talent>
-      <talent column="3" icon="spell_shadow_animatedead" key="1984" name="Master of Ghouls" requires="2225" tier="5">
-        <rank description="Reduces the cooldown on Raise Dead by 60 sec, and the Ghoul summoned by your Raise Dead spell is considered a pet under your control.  Unlike normal Death Knight Ghouls, your pet does not have a limited duration." lvl="1"/>
+      <talent column="3" icon="spell_shadow_animatedead" key="1984" name="食屍鬼大師" requires="2225" tier="5">
+        <rank description="使你死者復生的冷卻時間縮短60秒，並將死者復生召喚出來的食屍鬼視同為聽命於你的寵物。這與死亡騎士召喚出來的其他食屍鬼不同，此寵物沒有持續時間的限制。" lvl="1"/>
       </talent>
-      <talent column="0" icon="spell_shadow_unholyfrenzy" key="2285" name="Desolation" tier="6">
-        <rank description="Your Blood Strikes cause you to deal 1% additional damage with all attacks for the next 20 sec." lvl="1"/>
-        <rank description="Your Blood Strikes cause you to deal 2% additional damage with all attacks for the next 20 sec." lvl="2"/>
-        <rank description="Your Blood Strikes cause you to deal 3% additional damage with all attacks for the next 20 sec." lvl="3"/>
-        <rank description="Your Blood Strikes cause you to deal 4% additional damage with all attacks for the next 20 sec." lvl="4"/>
-        <rank description="Your Blood Strikes cause you to deal 5% additional damage with all attacks for the next 20 sec." lvl="5"/>
+      <talent column="0" icon="spell_shadow_unholyfrenzy" key="2285" name="荒寂" tier="6">
+        <rank description="你的血魄打擊可使你在後續20秒內的所有攻擊傷害提高1%。" lvl="1"/>
+        <rank description="Y你的血魄打擊可使你在後續20秒內的所有攻擊傷害提高2%。" lvl="2"/>
+        <rank description="你的血魄打擊可使你在後續20秒內的所有攻擊傷害提高3%。" lvl="3"/>
+        <rank description="你的血魄打擊可使你在後續20秒內的所有攻擊傷害提高4%。" lvl="4"/>
+        <rank description="你的血魄打擊可使你在後續20秒內的所有攻擊傷害提高5%。" lvl="5"/>
       </talent>
-      <talent column="1" icon="spell_deathknight_antimagiczone" key="2221" name="Anti-Magic Zone" requires="2009" tier="6">
-        <rank description="Places a large, stationary Anti-Magic Zone that reduces spell damage done to party or raid members inside it by 75%.  The Anti-Magic Zone lasts for 10 sec or until it absorbs 10052 spell damage." lvl="1"/>
+      <talent column="1" icon="spell_deathknight_antimagiczone" key="2221" name="反魔法力場" requires="2009" tier="6">
+        <rank description="在地面設下一座大型的反魔法力場護罩，使範圍內小隊和團隊成員受到的法術傷害降低75%。反魔法力場可持續10秒或直到10052點法術傷害為止。" lvl="1"/>
         <spell castTime="0" cooldown="120000">
           <power cost="1" type="unholy"/>
         </spell>
       </talent>
-      <talent column="2" icon="spell_deathknight_unholypresence" key="2013" name="Improved Unholy Presence" tier="6">
-        <rank description="While in Blood Presence or Frost Presence, you retain 8% increased movement speed from Unholy Presence, and your runes finish their cooldowns 5% faster in Unholy Presence." lvl="1"/>
-        <rank description="While in Blood Presence or Frost Presence, you retain 15% increased movement speed from Unholy Presence, and your runes finish their cooldowns 10% faster in Unholy Presence." lvl="2"/>
+      <talent column="2" icon="spell_deathknight_unholypresence" key="2013" name="強化穢邪領域" tier="6">
+        <rank description="當你處於血魄領域或冰霜領域時，你仍可獲得穢邪領域8%的移動速度，並且當你處於穢邪領域時符文恢復冷卻時間的速度將提高5%。" lvl="1"/>
+        <rank description="當你處於血魄領域或冰霜領域時，你仍可獲得穢邪領域15%的移動速度，並且當你處於穢邪領域時符文恢復冷卻時間的速度將提高10%。" lvl="2"/>
       </talent>
-      <talent column="3" icon="ability_ghoulfrenzy" key="2085" name="Ghoul Frenzy" requires="1984" tier="6">
-        <rank description="Grants your pet 25% haste for 30 sec and  heals it for 60% of its health over the duration." lvl="1"/>
+      <talent column="3" icon="ability_ghoulfrenzy" key="2085" name="食屍狂亂" requires="1984" tier="6">
+        <rank description="賦予你寵物25%加速，持續30秒，同時在持續時間內治療其60%的生命力。" lvl="1"/>
         <spell castTime="0" cooldown="10000" maxRange="45">
           <power cost="1" type="unholy"/>
         </spell>
       </talent>
-      <talent column="1" icon="spell_nature_nullifydisease" key="1962" name="Crypt Fever" tier="7">
-        <rank description="Your diseases also cause Crypt Fever, which increases disease damage taken by the target by 10%." lvl="1"/>
-        <rank description="Your diseases also cause Crypt Fever, which increases disease damage taken by the target by 20%." lvl="2"/>
-        <rank description="Your diseases also cause Crypt Fever, which increases disease damage taken by the target by 30%." lvl="3"/>
+      <talent column="1" icon="spell_nature_nullifydisease" key="1962" name="墓穴熱疫" tier="7">
+        <rank description="你的疾病可同時傳染墓穴熱疫，使目標受到的疾病傷害提高10%。" lvl="1"/>
+        <rank description="你的疾病可同時傳染墓穴熱疫，使目標受到的疾病傷害提高20%。" lvl="2"/>
+        <rank description="你的疾病可同時傳染墓穴熱疫，使目標受到的疾病傷害提高30%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="inv_chest_leather_13" key="2007" name="Bone Shield" tier="7">
-        <rank description="The Death Knight is surrounded by 3 whirling bones.  While at least 1 bone remains, she takes 20% less damage from all sources and deals 2% more damage with all attacks, spells and abilities.  Each damaging attack that lands consumes 1 bone.  Lasts 5 min." lvl="1"/>
+      <talent column="2" icon="inv_chest_leather_13" key="2007" name="骸骨之盾" tier="7">
+        <rank description="死亡騎士的身上圍繞著3根旋轉的骸骨。只要還有至少1根骸骨存在時，受到的所有類型傷害將降低20%，同時使你的所有攻擊、法術和技能額外造成2%傷害。每承受一次傷害性的攻擊將耗損1根骸骨，持續5分钟。" lvl="1"/>
         <spell castTime="0" cooldown="60000">
           <power cost="1" type="unholy"/>
         </spell>
       </talent>
-      <talent column="0" icon="spell_shadow_callofbone" key="2003" name="Wandering Plague" tier="8">
-        <rank description="When your diseases damage an enemy, there is a chance equal to your melee critical strike chance that they will cause 33% additional damage to the target and all enemies within 8 yards.  Ignores any target under the effect of a spell that is cancelled by taking damage." lvl="1"/>
-        <rank description="When your diseases damage an enemy, there is a chance equal to your melee critical strike chance that they will cause 66% additional damage to the target and all enemies within 8 yards.  Ignores any target under the effect of a spell that is cancelled by taking damage." lvl="2"/>
-        <rank description="When your diseases damage an enemy, there is a chance equal to your melee critical strike chance that they will cause 100% additional damage to the target and all enemies within 8 yards.  Ignores any target under the effect of a spell that is cancelled by taking damage." lvl="3"/>
+      <talent column="0" icon="spell_shadow_callofbone" key="2003" name="遊蕩瘟疫" tier="8">
+        <rank description="當你的疾病對敵人造成傷害時，有與你近戰攻擊造成致命一擊相同的機率對目標及其8碼範圍內的所有敵人同時造成33%的額外傷害。此效果不會作用於身上擁有受到傷害就會解除狀態的目標。" lvl="1"/>
+        <rank description="當你的疾病對敵人造成傷害時，有與你近戰攻擊造成致命一擊相同的機率對目標及其8碼範圍內的所有敵人同時造成66%的額外傷害。此效果不會作用於身上擁有受到傷害就會解除狀態的目標。" lvl="2"/>
+        <rank description="當你的疾病對敵人造成傷害時，有與你近戰攻擊造成致命一擊相同的機率對目標及其8碼範圍內的所有敵人同時造成100%的額外傷害。此效果不會作用於身上擁有受到傷害就會解除狀態的目標。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_creature_cursed_03" key="2043" name="Ebon Plaguebringer" requires="1962" tier="8">
-        <rank description="Your Crypt Fever morphs into Ebon Plague, which increases magic damage taken by 4% in addition to increasing disease damage taken.  Improves your critical strike chance with weapons and spells by 1% at all times." lvl="1"/>
-        <rank description="Your Crypt Fever morphs into Ebon Plague, which increases magic damage taken by 9% in addition to increasing disease damage taken.  Improves your critical strike chance with weapons and spells by 2% at all times." lvl="2"/>
-        <rank description="Your Crypt Fever morphs into Ebon Plague, which increases magic damage taken by 13% in addition to increasing disease damage taken.  Improves your critical strike chance with weapons and spells by 3% at all times." lvl="3"/>
+      <talent column="1" icon="ability_creature_cursed_03" key="2043" name="滅世黑疫" requires="1962" tier="8">
+        <rank description="你的武器攻擊和法術造成致命一擊的機率提高1%。此外，你的墓穴熱疫變成黑死瘟疫，除了使目標受到的疾病傷害提高之外，同時可使目標受到的魔法傷害提高4%。" lvl="1"/>
+        <rank description="你的武器攻擊和法術造成致命一擊的機率提高2%。此外，你的墓穴熱疫變成黑死瘟疫，除了使目標受到的疾病傷害提高之外，同時可使目標受到的魔法傷害提高9%。" lvl="2"/>
+        <rank description="你的武器攻擊和法術造成致命一擊的機率提高3%。此外，你的墓穴熱疫變成黑死瘟疫，除了使目標受到的疾病傷害提高之外，同時可使目標受到的魔法傷害提高13%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_deathknight_scourgestrike" key="2216" name="Scourge Strike" tier="8">
-        <rank description="An unholy strike that deals 70% of weapon damage as Physical damage plus 238.  In addition, for each of your diseases on your target, you deal an additional 12% of the Physical damage done as Shadow damage." lvl="1"/>
+      <talent column="2" icon="spell_deathknight_scourgestrike" key="2216" name="天譴打擊" tier="8">
+        <rank description="穢邪的攻擊對敵人造成相當於50%武器傷害的物理傷害再238點傷害。此外，目標身上每個由你引起的疾病效果可使此攻擊額外造成暗影傷害，數值相當於其造成的25%物理傷害。" lvl="1"/>
         <spell castTime="0" maxRange="5">
           <power cost="1" type="unholy"/>
           <power cost="1" type="frost"/>
         </spell>
       </talent>
-      <talent column="1" icon="inv_weapon_halberd14" key="2036" name="Rage of Rivendare" tier="9">
-        <rank description="Your spells and abilities deal 2% more damage to targets infected with Blood Plague.  Also increases your expertise by 1." lvl="1"/>
-        <rank description="Your spells and abilities deal 4% more damage to targets infected with Blood Plague.  Also increases your expertise by 2." lvl="2"/>
-        <rank description="Your spells and abilities deal 6% more damage to targets infected with Blood Plague.  Also increases your expertise by 3." lvl="3"/>
-        <rank description="Your spells and abilities deal 8% more damage to targets infected with Blood Plague.  Also increases your expertise by 4." lvl="4"/>
-        <rank description="Your spells and abilities deal 10% more damage to targets infected with Blood Plague.  Also increases your expertise by 5." lvl="5"/>
+      <talent column="1" icon="inv_weapon_halberd14" key="2036" name="瑞文戴爾之怒" tier="9">
+        <rank description="提高1點熟練技能。此外，你的法術和技能對感染血魄瘟疫的目標可額外造成2%傷害。" lvl="1"/>
+        <rank description="提高2點熟練技能。此外，你的法術和技能對感染血魄瘟疫的目標可額外造成4%傷害。" lvl="2"/>
+        <rank description="提高3點熟練技能。此外，你的法術和技能對感染血魄瘟疫的目標可額外造成6%傷害。" lvl="3"/>
+        <rank description="提高4點熟練技能。此外，你的法術和技能對感染血魄瘟疫的目標可額外造成8%傷害。" lvl="4"/>
+        <rank description="提高5點熟練技能。此外，你的法術和技能對感染血魄瘟疫的目標可額外造成10%傷害。" lvl="5"/>
       </talent>
-      <talent column="1" icon="ability_hunter_pet_bat" key="2000" name="Summon Gargoyle" tier="10">
-        <rank description="A Gargoyle flies into the area and bombards the target with Nature damage modified by the Death Knight's attack power.  Persists for 30 sec." lvl="1"/>
+      <talent column="1" icon="ability_hunter_pet_bat" key="2000" name="召喚石像鬼" tier="10">
+        <rank description="召喚石像鬼飛向目標所在的區域，不斷對目標造成隨死亡騎士攻擊強度而提高的自然傷害，持續30秒。" lvl="1"/>
         <spell castTime="0" cooldown="180000" maxRange="30">
           <power cost="60" type="runic"/>
         </spell>

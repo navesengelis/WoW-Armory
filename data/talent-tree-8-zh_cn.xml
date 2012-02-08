@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><page globalSearch="1" lang="en_gb" requestUrl="/talent-tree.xml">
+<?xml version="1.0" encoding="UTF-8"?><page globalSearch="1" lang="zh_cn" requestUrl="/talent-tree.xml">
   <talentTrees>
     <tree bgImage="MageFrost" icon="spell_frost_frostbolt02" key="Frost" name="冰霜" order="2">
       <talent column="0" icon="spell_frost_frostarmor" key="38" name="霜寒刺骨" tier="0">
