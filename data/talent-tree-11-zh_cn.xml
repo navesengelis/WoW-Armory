@@ -1,432 +1,433 @@
-<?xml version="1.0" encoding="UTF-8"?><page globalSearch="1" lang="en_gb" requestUrl="/talent-tree.xml">
+<?xml version="1.0" encoding="UTF-8"?><page globalSearch="1" lang="zh_cn" requestUrl="/talent-tree.xml">
   <talentTrees>
-    <tree bgImage="DruidBalance" icon="spell_nature_starfall" key="Balance" name="Balance" order="0">
-      <talent column="1" icon="spell_nature_abolishmagic" key="762" name="Starlight Wrath" tier="0">
-        <rank description="Reduces the cast time of your Wrath and Starfire spells by 0.1 sec." lvl="1"/>
-        <rank description="Reduces the cast time of your Wrath and Starfire spells by 0.2 sec." lvl="2"/>
-        <rank description="Reduces the cast time of your Wrath and Starfire spells by 0.3 sec." lvl="3"/>
-        <rank description="Reduces the cast time of your Wrath and Starfire spells by 0.4 sec." lvl="4"/>
-        <rank description="Reduces the cast time of your Wrath and Starfire spells by 0.5 sec." lvl="5"/>
+    <tree bgImage="DruidBalance" icon="spell_nature_starfall" key="Balance" name="平衡" order="0">
+      <talent column="1" icon="spell_nature_abolishmagic" key="762" name="強化憤怒" tier="0">
+        <rank description="使你憤怒和星火術的施法時間縮短0.1秒。" lvl="1"/>
+        <rank description="使你憤怒和星火術的施法時間縮短0.2秒。" lvl="2"/>
+        <rank description="使你憤怒和星火術的施法時間縮短0.3秒。" lvl="3"/>
+        <rank description="使你憤怒和星火術的施法時間縮短0.4秒。" lvl="4"/>
+        <rank description="使你憤怒和星火術的施法時間縮短0.5秒。" lvl="5"/>
       </talent>
-      <talent column="2" icon="spell_arcane_arcane03" key="2238" name="Genesis" tier="0">
-        <rank description="Increases the damage and healing done by your periodic spell damage and healing effects by 1%." lvl="1"/>
-        <rank description="Increases the damage and healing done by your periodic spell damage and healing effects by 2%." lvl="2"/>
-        <rank description="Increases the damage and healing done by your periodic spell damage and healing effects by 3%." lvl="3"/>
-        <rank description="Increases the damage and healing done by your periodic spell damage and healing effects by 4%." lvl="4"/>
-        <rank description="Increases the damage and healing done by your periodic spell damage and healing effects by 5%." lvl="5"/>
+      <talent column="2" icon="spell_arcane_arcane03" key="2238" name="生生不息" tier="0">
+        <rank description="使你的週期性法術造成的傷害和治療效果提高1%。" lvl="1"/>
+        <rank description="使你的週期性法術造成的傷害和治療效果提高2%。" lvl="2"/>
+        <rank description="使你的週期性法術造成的傷害和治療效果提高3%。" lvl="3"/>
+        <rank description="使你的週期性法術造成的傷害和治療效果提高4%。" lvl="4"/>
+        <rank description="使你的週期性法術造成的傷害和治療效果提高5%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="spell_nature_sentinal" key="783" name="Moonglow" tier="1">
-        <rank description="Reduces the Mana cost of your Moonfire, Starfire, Starfall, Wrath, Healing Touch, Nourish, Regrowth and Rejuvenation spells by 3%." lvl="1"/>
-        <rank description="Reduces the Mana cost of your Moonfire, Starfire, Starfall, Wrath, Healing Touch, Nourish, Regrowth and Rejuvenation spells by 6%." lvl="2"/>
-        <rank description="Reduces the Mana cost of your Moonfire, Starfire, Starfall, Wrath, Healing Touch, Nourish, Regrowth and Rejuvenation spells by 9%." lvl="3"/>
+      <talent column="0" icon="spell_nature_sentinal" key="783" name="月光" tier="1">
+        <rank description="使你月火術、星火術、星殞術、憤怒、治療之觸、滋補術、癒合和回春術所消耗的法力降低3%。" lvl="1"/>
+        <rank description="使你月火術、星火術、星殞術、憤怒、治療之觸、滋補術、癒合和回春術所消耗的法力降低6%。" lvl="2"/>
+        <rank description="使你月火術、星火術、星殞術、憤怒、治療之觸、滋補術、癒合和回春術所消耗的法力降低9%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="inv_staff_01" key="1822" name="Nature's Majesty" tier="1">
-        <rank description="Increases the critical strike chance of your Wrath, Starfire, Starfall, Nourish and Healing Touch spells by 2%." lvl="1"/>
-        <rank description="Increases the critical strike chance of your Wrath, Starfire, Starfall, Nourish and Healing Touch spells by 4%." lvl="2"/>
+      <talent column="1" icon="inv_staff_01" key="1822" name="自然威嚴" tier="1">
+        <rank description="使你憤怒、星火術、星殞術、滋補術和治療之觸造成致命一擊的機率提高2%。" lvl="1"/>
+        <rank description="使你憤怒、星火術、星殞術、滋補術和治療之觸造成致命一擊的機率提高4%。" lvl="2"/>
       </talent>
-      <talent column="3" icon="spell_nature_starfall" key="763" name="Improved Moonfire" tier="1">
-        <rank description="Increases the damage and critical strike chance of your Moonfire spell by 5%." lvl="1"/>
-        <rank description="Increases the damage and critical strike chance of your Moonfire spell by 10%." lvl="2"/>
+      <talent column="3" icon="spell_nature_starfall" key="763" name="強化月火術" tier="1">
+        <rank description="使你月火術所造成的傷害和致命一擊機率提高5%。" lvl="1"/>
+        <rank description="使你月火術所造成的傷害和致命一擊機率提高10%。" lvl="2"/>
       </talent>
-      <talent column="0" icon="spell_nature_thorns" key="782" name="Brambles" tier="2">
-        <rank description="Damage from your Thorns and Entangling Roots increased by 25% and damage done by your Treants increased by 5%. In addition, damage from your Treants and attacks done to you while you have Barkskin active have a 5% chance to daze the target for 3 sec." lvl="1"/>
-        <rank description="Damage from your Thorns and Entangling Roots increased by 50% and damage done by your Treants increased by 10%. In addition, damage from your Treants and attacks done to you while you have Barkskin active have a 10% chance to daze the target for 3 sec." lvl="2"/>
-        <rank description="Damage from your Thorns and Entangling Roots increased by 75% and damage done by your Treants increased by 15%. In addition, damage from your Treants and attacks done to you while you have Barkskin active have a 15% chance to daze the target for 3 sec." lvl="3"/>
+      <talent column="0" icon="spell_nature_thorns" key="782" name="刺藤" tier="2">
+        <rank description="使你的荊棘術、糾纏根鬚造成的傷害提高25%，樹人造成的傷害提高5%。此外，你的樹人對目標造成傷害以及當你在樹皮術啟動的狀態下受到攻擊時，有5%的機率使目標暈眩3秒。" lvl="1"/>
+        <rank description="使你的荊棘術、糾纏根鬚造成的傷害提高50%，樹人造成的傷害提高10%。此外，你的樹人對目標造成傷害以及當你在樹皮術啟動的狀態下受到攻擊時，有10%的機率使目標暈眩3秒。" lvl="2"/>
+        <rank description="使你的荊棘術、糾纏根鬚造成的傷害提高75%，樹人造成的傷害提高15%。此外，你的樹人對目標造成傷害以及當你在樹皮術啟動的狀態下受到攻擊時，有15%的機率使目標暈眩3秒。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_nature_naturesblessing" key="789" name="Nature's Grace" requires="1822" tier="2">
-        <rank description="All non-periodic spell criticals have a 33% chance to grace you with a blessing of nature, increasing your spell casting speed by 20% for 3 sec." lvl="1"/>
-        <rank description="All non-periodic spell criticals have a 66% chance to grace you with a blessing of nature, increasing your spell casting speed by 20% for 3 sec." lvl="2"/>
-        <rank description="All non-periodic spell criticals have a 100% chance to grace you with a blessing of nature, increasing your spell casting speed by 20% for 3 sec." lvl="3"/>
+      <talent column="1" icon="spell_nature_naturesblessing" key="789" name="自然之賜" requires="1822" tier="2">
+        <rank description="你的任何非週期性法術造成致命一擊後有33%的機率獲得自然的賜福，使你的施法速度提高20%，持續3秒。" lvl="1"/>
+        <rank description="你的任何非週期性法術造成致命一擊後有66%的機率獲得自然的賜福，使你的施法速度提高20%，持續3秒。" lvl="2"/>
+        <rank description="你的任何非週期性法術造成致命一擊後有100%的機率獲得自然的賜福，使你的施法速度提高20%，持續3秒。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_nature_natureguardian" key="2240" name="Nature's Splendor" requires="1822" tier="2">
-        <rank description="Increases the duration of your Moonfire and Rejuvenation spells by 3 sec, your Regrowth spell by 6 sec, and your Insect Swarm and Lifebloom spells by 2 sec." lvl="1"/>
+      <talent column="2" icon="spell_nature_natureguardian" key="2240" name="自然光采" requires="1822" tier="2">
+        <rank description="使你的月火術和回春術的持續時間延長3秒，癒合的持續時間延長6秒，蟲群和生命之花的持續時間延長2秒。" lvl="1"/>
       </talent>
-      <talent column="3" icon="spell_nature_naturetouchgrow" key="764" name="Nature's Reach" tier="2">
-        <rank description="Increases the range of your Balance spells and Faerie Fire (Feral) ability by 10%, and reduces the threat generated by your Balance spells by 15%." lvl="1"/>
-        <rank description="Increases the range of your Balance spells and Faerie Fire (Feral) ability by 20%, and reduces the threat generated by your Balance spells by 30%." lvl="2"/>
+      <talent column="3" icon="spell_nature_naturetouchgrow" key="764" name="自然延伸 tier="2">
+        <rank description="I使你平衡系法術和精靈之火(野性)的射程延長10%，並使你平衡系法術造成的威脅值降低15%。" lvl="1"/>
+        <rank description="使你平衡系法術和精靈之火(野性)的射程延長20%，並使你平衡系法術造成的威脅值降低30%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_nature_purge" key="792" name="Vengeance" tier="3">
-        <rank description="Increases the critical strike damage bonus of your Starfire, Starfall, Moonfire, and Wrath spells by 20%." lvl="1"/>
-        <rank description="Increases the critical strike damage bonus of your Starfire, Starfall, Moonfire, and Wrath spells by 40%." lvl="2"/>
-        <rank description="Increases the critical strike damage bonus of your Starfire, Starfall, Moonfire, and Wrath spells by 60%." lvl="3"/>
-        <rank description="Increases the critical strike damage bonus of your Starfire, Starfall, Moonfire, and Wrath spells by 80%." lvl="4"/>
-        <rank description="Increases the critical strike damage bonus of your Starfire, Starfall, Moonfire, and Wrath spells by 100%." lvl="5"/>
+      <talent column="1" icon="spell_nature_purge" key="792" name="復仇" tier="3">
+        <rank description="使你星火術、星殞術、月火術和憤怒法術的致命一擊傷害加成提高20%。" lvl="1"/>
+        <rank description="使你星火術、星殞術、月火術和憤怒法術的致命一擊傷害加成提高40%。" lvl="2"/>
+        <rank description="使你星火術、星殞術、月火術和憤怒法術的致命一擊傷害加成提高60%。" lvl="3"/>
+        <rank description="使你星火術、星殞術、月火術和憤怒法術的致命一擊傷害加成提高80%。" lvl="4"/>
+        <rank description="使你星火術、星殞術、月火術和憤怒法術的致命一擊傷害加成提高100%。" lvl="5"/>
       </talent>
-      <talent column="2" icon="spell_arcane_starfire" key="784" name="Celestial Focus" tier="3">
-        <rank description="Reduces the pushback suffered from damaging attacks while casting Starfire, Hibernate and Hurricane by 23% and increases your total spell haste by 1%." lvl="1"/>
-        <rank description="Reduces the pushback suffered from damaging attacks while casting Starfire, Hibernate and Hurricane by 46% and increases your total spell haste by 2%." lvl="2"/>
-        <rank description="Reduces the pushback suffered from damaging attacks while casting Starfire, Hibernate and Hurricane by 70% and increases your total spell haste by 3%." lvl="3"/>
+      <talent column="2" icon="spell_arcane_starfire" key="784" name="星空專注" tier="3">
+        <rank description="當你施放星火術、休眠和颶風時，因受到傷害性攻擊而損失的施法時間縮短23%，並且使你的總法術加速提高1%。" lvl="1"/>
+        <rank description="當你施放星火術、休眠和颶風時，因受到傷害性攻擊而損失的施法時間縮短46%，並且使你的總法術加速提高2%。" lvl="2"/>
+        <rank description="當你施放星火術、休眠和颶風時，因受到傷害性攻擊而損失的施法時間縮短70%，並且使你的總法術加速提高3%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="ability_druid_lunarguidance" key="1782" name="Lunar Guidance" tier="4">
-        <rank description="Increases your spell power by 4% of your total Intellect." lvl="1"/>
-        <rank description="Increases your spell power by 8% of your total Intellect." lvl="2"/>
-        <rank description="Increases your spell power by 12% of your total Intellect." lvl="3"/>
+      <talent column="0" icon="ability_druid_lunarguidance" key="1782" name="月神引導" tier="4">
+        <rank description="使你的法術能量提高相當於你總智力的4%。" lvl="1"/>
+        <rank description="使你的法術能量提高相當於你總智力的8%。" lvl="2"/>
+        <rank description="使你的法術能量提高相當於你總智力的12%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_nature_insectswarm" key="788" name="Insect Swarm" tier="4">
-        <rank description="The enemy target is swarmed by insects, decreasing their chance to hit by 3% and causing 144 Nature damage over 12 sec." lvl="1"/>
+      <talent column="1" icon="spell_nature_insectswarm" key="788" name="蟲群" tier="4">
+        <rank description="敵人被飛蟲圍繞，攻擊命中率降低3%，在12秒內受到總計點自然傷害。" lvl="1"/>
         <spell castTime="0" maxRange="30">
           <power cost="8" type="mana"/>
         </spell>
       </talent>
-      <talent column="2" icon="spell_nature_insectswarm" key="2239" name="Improved Insect Swarm" requires="788" tier="4">
-        <rank description="Increases your damage done by your Wrath spell to targets afflicted by your Insect Swarm by 1%, and increases the critical strike chance of your Starfire spell by 1% on targets afflicted by your Moonfire spell." lvl="1"/>
-        <rank description="Increases your damage done by your Wrath spell to targets afflicted by your Insect Swarm by 2%, and increases the critical strike chance of your Starfire spell by 2% on targets afflicted by your Moonfire spell." lvl="2"/>
-        <rank description="Increases your damage done by your Wrath spell to targets afflicted by your Insect Swarm by 3%, and increases the critical strike chance of your Starfire spell by 3% on targets afflicted by your Moonfire spell." lvl="3"/>
+      <talent column="2" icon="spell_nature_insectswarm" key="2239" name="強化蟲群" requires="788" tier="4">
+        <rank description="使你的憤怒法術對受你蟲群影響的目標造成的傷害提高1%，並使你的星火術法術對受你月火術影響的目標造成致命一擊的機率提高1%。" lvl="1"/>
+        <rank description="使你的憤怒法術對受你蟲群影響的目標造成的傷害提高2%，並使你的星火術法術對受你月火術影響的目標造成致命一擊的機率提高2%。" lvl="2"/>
+        <rank description="使你的憤怒法術對受你蟲群影響的目標造成的傷害提高3%，並使你的星火術法術對受你月火術影響的目標造成致命一擊的機率提高3%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="ability_druid_dreamstate" key="1784" name="Dreamstate" tier="5">
-        <rank description="Regenerate mana equal to 4% of your Intellect every 5 sec, even while casting." lvl="1"/>
-        <rank description="Regenerate mana equal to 7% of your Intellect every 5 sec, even while casting." lvl="2"/>
-        <rank description="Regenerate mana equal to 10% of your Intellect every 5 sec, even while casting." lvl="3"/>
+      <talent column="0" icon="ability_druid_dreamstate" key="1784" name="夢境" tier="5">
+        <rank description="每5秒恢復相當於你智力4%的法力，此效果在施法時同樣有效。" lvl="1"/>
+        <rank description="每5秒恢復相當於你智力7%的法力，此效果在施法時同樣有效。" lvl="2"/>
+        <rank description="每5秒恢復相當於你智力10%的法力，此效果在施法時同樣有效。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_nature_moonglow" key="790" name="Moonfury" tier="5">
-        <rank description="Increases the damage done by your Starfire, Moonfire and Wrath spells by 3%." lvl="1"/>
-        <rank description="Increases the damage done by your Starfire, Moonfire and Wrath spells by 6%." lvl="2"/>
-        <rank description="Increases the damage done by your Starfire, Moonfire and Wrath spells by 10%." lvl="3"/>
+      <talent column="1" icon="spell_nature_moonglow" key="790" name="月怒" tier="5">
+        <rank description="使你星火術、月火術和憤怒所造成的傷害提高3%。" lvl="1"/>
+        <rank description="使你星火術、月火術和憤怒所造成的傷害提高6%。" lvl="2"/>
+        <rank description="使你星火術、月火術和憤怒所造成的傷害提高10%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="ability_druid_balanceofpower" key="1783" name="Balance of Power" tier="5">
-        <rank description="Increases your chance to hit with all spells by 2% and reduces your damage taken from all spells by 3%." lvl="1"/>
-        <rank description="Increases your chance to hit with all spells by 4% and reduces your damage taken from all spells by 6%." lvl="2"/>
+      <talent column="2" icon="ability_druid_balanceofpower" key="1783" name="魔力之衡" tier="5">
+        <rank description="使你所有法術的命中機率提高2%，並且受到的所有法術傷害降低3%。" lvl="1"/>
+        <rank description="使你所有法術的命中機率提高4%，並且受到的所有法術傷害降低6%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_nature_forceofnature" key="793" name="Moonkin Form" tier="6">
-        <rank description="Shapeshift into Moonkin Form.  While in this form the armor contribution from items is increased by 370%, damage taken while stunned is reduced by 15%, and all party and raid members within 100 yards have their spell critical chance increased by 5%.  Single target spell critical strikes in this form have a chance to instantly regenerate 2% of your total mana.  The Moonkin can not cast healing or resurrection spells while shapeshifted.&lt;br/&gt;&lt;br/&gt;The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects." lvl="1"/>
+      <talent column="1" icon="spell_nature_forceofnature" key="793" name="梟獸形態" tier="6">
+        <rank description="德魯伊變身為梟獸形態。在此形態下，由裝備獲得的護甲值提高370%，在昏迷時受到的傷害降低15%，並使半徑0碼範圍內所有小隊和團隊成員的法術致命一擊機率提高5%。在此形態下單體法術的致命一擊有一定的機率立即恢復相當於你2%的總法力。梟獸形態下無法施放治療和復活的法術。&lt;br/&gt;&lt;br/&gt;變身可以解除施法者身上的所有變形和移動限制效果。" lvl="1"/>
         <spell castTime="0">
           <power cost="13" type="mana"/>
         </spell>
       </talent>
-      <talent column="2" icon="ability_druid_improvedmoonkinform" key="1912" name="Improved Moonkin Form" requires="793" tier="6">
-        <rank description="Your Moonkin Aura also causes affected targets to gain 1% haste and you to gain 10% of your spirit as additional spell damage." lvl="1"/>
-        <rank description="Your Moonkin Aura also causes affected targets to gain 2% haste and you to gain 20% of your spirit as additional spell damage." lvl="2"/>
-        <rank description="Your Moonkin Aura also causes affected targets to gain 3% haste and you to gain 30% of your spirit as additional spell damage." lvl="3"/>
+      <talent column="2" icon="ability_druid_improvedmoonkinform" key="1912" name="強化梟獸形態" requires="793" tier="6">
+        <rank description="你的梟獸光環可同時使受影響的目標獲得1%的加速效果，並且使你獲得相當於10%精神的法術傷害。" lvl="1"/>
+        <rank description="你的梟獸光環可同時使受影響的目標獲得2%的加速效果，並且使你獲得相當於20%精神的法術傷害。" lvl="2"/>
+        <rank description="Y你的梟獸光環可同時使受影響的目標獲得3%的加速效果，並且使你獲得相當於30%精神的法術傷害。" lvl="3"/>
       </talent>
-      <talent column="3" icon="spell_nature_faeriefire" key="1785" name="Improved Faerie Fire" tier="6">
-        <rank description="Your Faerie Fire spell also increases the chance the target will be hit by spell attacks by 1%, and increases the critical strike chance of your damage spells by 1% on targets afflicted by Faerie Fire." lvl="1"/>
-        <rank description="Your Faerie Fire spell also increases the chance the target will be hit by spell attacks by 2%, and increases the critical strike chance of your damage spells by 2% on targets afflicted by Faerie Fire." lvl="2"/>
-        <rank description="Your Faerie Fire spell also increases the chance the target will be hit by spell attacks by 3%, and increases the critical strike chance of your damage spells by 3% on targets afflicted by Faerie Fire." lvl="3"/>
+      <talent column="3" icon="spell_nature_faeriefire" key="1785" name="強化精靈之火" tier="6">
+        <rank description="你的精靈之火法術可同時令目標被法術攻擊命中的機率提高1%，並使你的傷害法術對受精靈之火影響的目標造成的致命一擊機率提高1%。" lvl="1"/>
+        <rank description="你的精靈之火法術可同時令目標被法術攻擊命中的機率提高2%，並使你的傷害法術對受精靈之火影響的目標造成的致命一擊機率提高2%。" lvl="2"/>
+        <rank description="你的精靈之火法術可同時令目標被法術攻擊命中的機率提高3%，並使你的傷害法術對受精靈之火影響的目標造成的致命一擊機率提高3%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="ability_druid_owlkinfrenzy" key="1913" name="Owlkin Frenzy" requires="793" tier="7">
-        <rank description="Attacks done to you while in Moonkin form have a 5% chance to cause you to go into a Frenzy, increasing your damage by 10%, cause you to be immune to pushback while casting Balance spells and restore 2% base mana every 2 sec. Lasts 10 sec." lvl="1"/>
-        <rank description="Attacks done to you while in Moonkin form have a 10% chance to cause you to go into a Frenzy, increasing your damage by 10%, cause you to be immune to pushback while casting Balance spells and restore 2% base mana every 2 sec. Lasts 10 sec." lvl="2"/>
-        <rank description="Attacks done to you while in Moonkin form have a 15% chance to cause you to go into a Frenzy, increasing your damage by 10%, cause you to be immune to pushback while casting Balance spells and restore 2% base mana every 2 sec. Lasts 10 sec." lvl="3"/>
+      <talent column="0" icon="ability_druid_owlkinfrenzy" key="1913" name="梟化狂亂" requires="793" tier="7">
+        <rank description="使你在梟獸形態下受到攻擊時，有5%的機率進入狂亂狀態，使你造成的傷害提高10%，並使你施放平衡系法術時免疫因受到傷害性攻擊而損失施法時間，同時每2秒恢復2%的基礎法力，持續10秒。" lvl="1"/>
+        <rank description="使你在梟獸形態下受到攻擊時，有10%的機率進入狂亂狀態，使你造成的傷害提高10%，並使你施放平衡系法術時免疫因受到傷害性攻擊而損失施法時間，同時每2秒恢復2%的基礎法力，持續10秒。" lvl="2"/>
+        <rank description="使你在梟獸形態下受到攻擊時，有15%的機率進入狂亂狀態，使你造成的傷害提高10%，並使你施放平衡系法術時免疫因受到傷害性攻擊而損失施法時間，同時每2秒恢復2%的基礎法力，持續10秒。" lvl="3"/>
       </talent>
-      <talent column="2" icon="ability_druid_twilightswrath" key="1786" name="Wrath of Cenarius" tier="7">
-        <rank description="Your Starfire spell gains an additional 4% and your Wrath gains an additional 2% of your bonus damage effects." lvl="1"/>
-        <rank description="Your Starfire spell gains an additional 8% and your Wrath gains an additional 4% of your bonus damage effects." lvl="2"/>
-        <rank description="Your Starfire spell gains an additional 12% and your Wrath gains an additional 6% of your bonus damage effects." lvl="3"/>
-        <rank description="Your Starfire spell gains an additional 16% and your Wrath gains an additional 8% of your bonus damage effects." lvl="4"/>
-        <rank description="Your Starfire spell gains an additional 20% and your Wrath gains an additional 10% of your bonus damage effects." lvl="5"/>
+      <talent column="2" icon="ability_druid_twilightswrath" key="1786" name="塞納留斯之怒" tier="7">
+        <rank description="你的星火術可從你的法術傷害加成額外獲得4%的效果，同時你的憤怒可從你的法術傷害加成額外獲得2%的效果。" lvl="1"/>
+        <rank description="你的星火術可從你的法術傷害加成額外獲得8%的效果，同時你的憤怒可從你的法術傷害加成額外獲得4%的效果。" lvl="2"/>
+        <rank description="你的星火術可從你的法術傷害加成額外獲得12%的效果，同時你的憤怒可從你的法術傷害加成額外獲得6%的效果。" lvl="3"/>
+        <rank description="你的星火術可從你的法術傷害加成額外獲得16%的效果，同時你的憤怒可從你的法術傷害加成額外獲得8%的效果。" lvl="4"/>
+        <rank description="你的星火術可從你的法術傷害加成額外獲得20%的效果，同時你的憤怒可從你的法術傷害加成額外獲得10%的效果。" lvl="5"/>
       </talent>
-      <talent column="0" icon="ability_druid_eclipse" key="1924" name="Eclipse" tier="8">
-        <rank description="When you critically hit with Starfire, you have a 33% chance of increasing damage done by Wrath by 40%. When you critically hit with Wrath, you have a 20% chance of increasing your critical strike chance with Starfire by 40%. Each effect lasts 15 sec and each has a separate 30 sec cooldown.  Both effects cannot occur simultaneously." lvl="1"/>
-        <rank description="When you critically hit with Starfire, you have a 66% chance of increasing damage done by Wrath by 40%. When you critically hit with Wrath, you have a 40% chance of increasing your critical strike chance with Starfire by 40%. Each effect lasts 15 sec and each has a separate 30 sec cooldown.  Both effects cannot occur simultaneously." lvl="2"/>
-        <rank description="When you critically hit with Starfire, you have a 100% chance of increasing damage done by Wrath by 40%. When you critically hit with Wrath, you have a 60% chance of increasing your critical strike chance with Starfire by 40%. Each effect lasts 15 sec and each has a separate 30 sec cooldown.  Both effects cannot occur simultaneously." lvl="3"/>
+      <talent column="0" icon="ability_druid_eclipse" key="1924" name="蝕星蔽月" tier="8">
+        <rank description="當你的星火術造成致命一擊時，你有33%的機率使憤怒造成的傷害提高40%。當你的憤怒造成致命一擊時，你有19.8%的機率使你的星火術造成致命一擊的機率提高40%。每個效果可持續15秒，並且各自擁有獨立的30秒冷卻時間，但兩種效果不會同時觸發。" lvl="1"/>
+        <rank description="當你的星火術造成致命一擊時，你有66%的機率使憤怒造成的傷害提高40%。當你的憤怒造成致命一擊時，你有39.6%的機率使你的星火術造成致命一擊的機率提高40%。每個效果可持續15秒，並且各自擁有獨立的30秒冷卻時間，但兩種效果不會同時觸發。" lvl="2"/>
+        <rank description="當你的星火術造成致命一擊時，你有100%的機率使憤怒造成的傷害提高40%。當你的憤怒造成致命一擊時，你有60%的機率使你的星火術造成致命一擊的機率提高40%。每個效果可持續15秒，並且各自擁有獨立的30秒冷卻時間，但兩種效果不會同時觸發。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_druid_typhoon" key="1923" name="Typhoon" requires="793" tier="8">
-        <rank description="You summon a violent Typhoon that does 400 Nature damage when in contact with hostile targets, knocking them back and dazing them for 6 sec." lvl="1"/>
+      <talent column="1" icon="ability_druid_typhoon" key="1923" name="颱風" requires="793" tier="8">
+        <rank description="你召喚一個猛烈的颱風，被颱風襲擊的敵方目標將受到400點自然傷害且被擊退，同時暈眩6秒。" lvl="1"/>
         <spell castTime="0" cooldown="20000" maxRange="30">
           <power cost="25" type="mana"/>
         </spell>
       </talent>
-      <talent column="2" icon="ability_druid_forceofnature" key="1787" name="Force of Nature" tier="8">
-        <rank description="Summons 3 treants to attack enemy targets for 30 sec." lvl="1"/>
+      <talent column="2" icon="ability_druid_forceofnature" key="1787" name="自然之力" tier="8">
+        <rank description="召喚3個樹人來攻擊目標敵人，持續30秒。" lvl="1"/>
         <spell castTime="0" cooldown="180000" maxRange="30">
           <power cost="12" type="mana"/>
         </spell>
       </talent>
-      <talent column="3" icon="ability_druid_galewinds" key="1925" name="Gale Winds" tier="8">
-        <rank description="Increases damage done by your Hurricane and Typhoon spells by 15%, and increases the range of your Cyclone spell by 2 yards." lvl="1"/>
-        <rank description="Increases damage done by your Hurricane and Typhoon spells by 30%, and increases the range of your Cyclone spell by 4 yards." lvl="2"/>
+      <talent column="3" icon="ability_druid_galewinds" key="1925" name="極速強風" tier="8">
+        <rank description="使你的颶風和颱風法術造成的傷害提高15%，並使你的颶風術施法距離延長2碼。" lvl="1"/>
+        <rank description="使你的颶風和颱風法術造成的傷害提高30%，並使你的颶風術施法距離延長4碼。" lvl="2"/>
       </talent>
-      <talent column="1" icon="ability_druid_earthandsky" key="1928" name="Earth and Moon" tier="9">
-        <rank description="Your Wrath and Starfire spells have a 100% chance to apply the Earth and Moon effect, which increases spell damage taken by 4% for 12 sec.  Also increases your spell damage by 2%." lvl="1"/>
-        <rank description="Your Wrath and Starfire spells have a 100% chance to  apply the Earth and Moon effect, which increases spell damage taken by 9% for 12 sec.  Also increases your spell damage by 4%." lvl="2"/>
-        <rank description="Your Wrath and Starfire spells have a 100% chance to apply the Earth and Moon effect, which increases spell damage taken by 13% for 12 sec.  Also increases your spell damage by 6%." lvl="3"/>
+      <talent column="1" icon="ability_druid_earthandsky" key="1928" name="大地新月" tier="9">
+        <rank description="使你法術造成的傷害提高1%。此外，你的憤怒和星火術有100%的機率對目標造成大地新月的效果，此效果可使目標受到的法術傷害提高4%，持續12秒。" lvl="1"/>
+        <rank description="使你法術造成的傷害提高2%。此外，你的憤怒和星火術有100%的機率對目標造成大地新月的效果，此效果可使目標受到的法術傷害提高9%，持續12秒。" lvl="2"/>
+        <rank description="使你法術造成的傷害提高3%。此外，你的憤怒和星火術有100%的機率對目標造成大地新月的效果，此效果可使目標受到的法術傷害提高13%，持續12秒。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_druid_starfall" key="1926" name="Starfall" tier="10">
-        <rank description="You summon a flurry of stars from the sky on all targets within 30 yards of the caster, each dealing 145 to 167 Arcane damage. Also causes 26 Arcane damage to all other enemies within 5 yards of the enemy target. Maximum 20 stars. Lasts 10 sec.  Shapeshifting into an animal form or mounting cancels the effect. Any effect which causes you to lose control of your character will suppress the starfall effect." lvl="1"/>
+      <talent column="1" icon="ability_druid_starfall" key="1926" name="星殞術" tier="10">
+        <rank description="你從空中召喚一陣星雨落在施法者周圍0碼範圍內的所有目標身上，每顆墜落的星體可造成111到129點秘法傷害，並對其周圍0碼範圍內的所有敵人造成20點秘法傷害。最多可召喚20顆星體，持續10秒。變身為動物形態或者騎乘坐騎將取消此效果。任何使你喪失角色控制權的效果將抑止星殞術的效果。 lvl="1"/>
         <spell castTime="0" cooldown="90000">
           <power cost="35" type="mana"/>
         </spell>
       </talent>
     </tree>
-    <tree bgImage="DruidFeralCombat" icon="ability_racial_bearform" key="FeralCombat" name="Feral Combat" order="1">
-      <talent column="1" icon="ability_hunter_pet_hyena" key="796" name="Ferocity" tier="0">
-        <rank description="Reduces the cost of your Maul, Swipe, Claw, Rake and Mangle abilities by 1 Rage or Energy." lvl="1"/>
-        <rank description="Reduces the cost of your Maul, Swipe, Claw, Rake and Mangle abilities by 2 Rage or Energy." lvl="2"/>
-        <rank description="Reduces the cost of your Maul, Swipe, Claw, Rake and Mangle abilities by 3 Rage or Energy." lvl="3"/>
-        <rank description="Reduces the cost of your Maul, Swipe, Claw, Rake and Mangle abilities by 4 Rage or Energy." lvl="4"/>
-        <rank description="Reduces the cost of your Maul, Swipe, Claw, Rake and Mangle abilities by 5 Rage or Energy." lvl="5"/>
+    <tree bgImage="DruidFeralCombat" icon="ability_racial_bearform" key="FeralCombat" name="野性戰鬥" order="1">
+      <talent column="1" icon="ability_hunter_pet_hyena" key="796" name="兇暴" tier="0">
+        <rank description="使你槌擊、揮擊、爪擊、掃擊和割碎技能所消耗的怒氣或能量降低1點。" lvl="1"/>
+        <rank description="使你槌擊、揮擊、爪擊、掃擊和割碎技能所消耗的怒氣或能量降低2點。" lvl="2"/>
+        <rank description="使你槌擊、揮擊、爪擊、掃擊和割碎技能所消耗的怒氣或能量降低3點。" lvl="3"/>
+        <rank description="使你槌擊、揮擊、爪擊、掃擊和割碎技能所消耗的怒氣或能量降低4點。" lvl="4"/>
+        <rank description="使你槌擊、揮擊、爪擊、掃擊和割碎技能所消耗的怒氣或能量降低5點。" lvl="5"/>
       </talent>
-      <talent column="2" icon="ability_druid_demoralizingroar" key="795" name="Feral Aggression" tier="0">
-        <rank description="Increases the attack power reduction of your Demoralizing Roar by 8% and the damage caused by your Ferocious Bite by 3%." lvl="1"/>
-        <rank description="Increases the attack power reduction of your Demoralizing Roar by 16% and the damage caused by your Ferocious Bite by 6%." lvl="2"/>
-        <rank description="Increases the attack power reduction of your Demoralizing Roar by 24% and the damage caused by your Ferocious Bite by 9%." lvl="3"/>
-        <rank description="Increases the attack power reduction of your Demoralizing Roar by 32% and the damage caused by your Ferocious Bite by 12%." lvl="4"/>
-        <rank description="Increases the attack power reduction of your Demoralizing Roar by 40% and the damage caused by your Ferocious Bite by 15%." lvl="5"/>
+      <talent column="2" icon="ability_druid_demoralizingroar" key="795" name="野性侵略" tier="0">
+        <rank description="使你挫志咆哮的攻擊強度減弱效果提高8%，並使凶猛撕咬所造成的傷害提高3%。" lvl="1"/>
+        <rank description="使你挫志咆哮的攻擊強度減弱效果提高16%，並使凶猛撕咬所造成的傷害提高6%。" lvl="2"/>
+        <rank description="使你挫志咆哮的攻擊強度減弱效果提高24%，並使凶猛撕咬所造成的傷害提高9%。" lvl="3"/>
+        <rank description="使你挫志咆哮的攻擊強度減弱效果提高32%，並使凶猛撕咬所造成的傷害提高12%。" lvl="4"/>
+        <rank description="使你挫志咆哮的攻擊強度減弱效果提高40%，並使凶猛撕咬所造成的傷害提高15%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="ability_ambush" key="799" name="Feral Instinct" tier="1">
-        <rank description="Increases the damage done by your Swipe ability by 10% and reduces the chance enemies have to detect you while Prowling." lvl="1"/>
-        <rank description="Increases the damage done by your Swipe ability by 20% and reduces the chance enemies have to detect you while Prowling." lvl="2"/>
-        <rank description="Increases the damage done by your Swipe ability by 30% and reduces the chance enemies have to detect you while Prowling." lvl="3"/>
+      <talent column="0" icon="ability_ambush" key="799" name="野性本能" tier="1">
+        <rank description="使你揮擊技能造成的傷害提高10%，並在你潛行時降低敵人偵測到你的機率。" lvl="1"/>
+        <rank description="使你揮擊技能造成的傷害提高20%，並在你潛行時降低敵人偵測到你的機率。" lvl="2"/>
+        <rank description="使你揮擊技能造成的傷害提高30%，並在你潛行時降低敵人偵測到你的機率。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_druid_ravage" key="805" name="Savage Fury" tier="1">
-        <rank description="Increases the damage caused by your Claw, Rake, Mangle (Cat), Mangle (Bear), and Maul abilities by 10%." lvl="1"/>
-        <rank description="Increases the damage caused by your Claw, Rake, Mangle (Cat), Mangle (Bear), and Maul abilities by 20%." lvl="2"/>
+      <talent column="1" icon="ability_druid_ravage" key="805" name="野蠻暴怒" tier="1">
+        <rank description="使你爪擊、掃擊、割碎(獵豹形態)、割碎(熊形態)，以及槌擊技能造成的傷害提高10%。" lvl="1"/>
+        <rank description="使你爪擊、掃擊、割碎(獵豹形態)、割碎(熊形態)，以及槌擊技能造成的傷害提高20%。" lvl="2"/>
       </talent>
-      <talent column="2" icon="inv_misc_pelt_bear_03" key="794" name="Thick Hide" tier="1">
-        <rank description="Increases your Armor contribution from cloth and leather items by 4%." lvl="1"/>
-        <rank description="Increases your Armor contribution from cloth and leather items by 7%." lvl="2"/>
-        <rank description="Increases your Armor contribution from cloth and leather items by 10%." lvl="3"/>
+      <talent column="2" icon="inv_misc_pelt_bear_03" key="794" name="厚皮" tier="1">
+        <rank description="使你從布甲和皮甲裝備獲得的護甲值提高4%。" lvl="1"/>
+        <rank description="使你從布甲和皮甲裝備獲得的護甲值提高7%。" lvl="2"/>
+        <rank description="使你從布甲和皮甲裝備獲得的護甲值提高10%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_nature_spiritwolf" key="807" name="Feral Swiftness" tier="2">
-        <rank description="Increases your movement speed by 15% in Cat Form and increases your chance to dodge while in Cat Form, Bear Form and Dire Bear Form by 2%." lvl="1"/>
-        <rank description="Increases your movement speed by 30% in Cat Form and increases your chance to dodge while in Cat Form, Bear Form and Dire Bear Form by 4%." lvl="2"/>
+      <talent column="0" icon="spell_nature_spiritwolf" key="807" name="野性迅捷" tier="2">
+        <rank description="你在獵豹形態下的移動速度提高15%，並使你在獵豹形態、熊形態或巨熊形態下的閃躲機率提高2%。" lvl="1"/>
+        <rank description="你在獵豹形態下的移動速度提高30%，並使你在獵豹形態、熊形態或巨熊形態下的閃躲機率提高4%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="ability_druid_tigersroar" key="1162" name="Survival Instincts" tier="2">
-        <rank description="When activated, this ability temporarily grants you 30% of your maximum health for 20 sec while in Bear Form, Cat Form, or Dire Bear Form.  After the effect expires, the health is lost." lvl="1"/>
+      <talent column="1" icon="ability_druid_tigersroar" key="1162" name="求生本能" tier="2">
+        <rank description="啟動時，此技能使你在熊形態、獵豹形態或巨熊形態的生命力上限暫時增加30%，持續20秒。在效果解除之後，這些生命力會被扣除。" lvl="1"/>
       </talent>
-      <talent column="2" icon="inv_misc_monsterclaw_04" key="798" name="Sharpened Claws" tier="2">
-        <rank description="Increases your critical strike chance while in Bear, Dire Bear or Cat Form by 2%." lvl="1"/>
-        <rank description="Increases your critical strike chance while in Bear, Dire Bear or Cat Form by 4%." lvl="2"/>
-        <rank description="Increases your critical strike chance while in Bear, Dire Bear or Cat Form by 6%." lvl="3"/>
+      <talent column="2" icon="inv_misc_monsterclaw_04" key="798" name="鋒利獸爪" tier="2">
+        <rank description="使你在獵豹、熊或巨熊形態下的致命一擊機率提高2%。" lvl="1"/>
+        <rank description="使你在獵豹、熊或巨熊形態下的致命一擊機率提高4%。" lvl="2"/>
+        <rank description="使你在獵豹、熊或巨熊形態下的致命一擊機率提高6%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_shadow_vampiricaura" key="802" name="Shredding Attacks" tier="3">
-        <rank description="Reduces the energy cost of your Shred ability by 9 and the rage cost of your Lacerate ability by 1." lvl="1"/>
-        <rank description="Reduces the energy cost of your Shred ability by 18 and the rage cost of your Lacerate ability by 2." lvl="2"/>
+      <talent column="0" icon="spell_shadow_vampiricaura" key="802" name="撕碎攻擊" tier="3">
+        <rank description="使你的撕碎技能所消耗的能量減少9點，並使割裂技能所消耗的怒氣減少1點。" lvl="1"/>
+        <rank description="使你的撕碎技能所消耗的能量減少18點，並使割裂技能所消耗的怒氣減少2點。" lvl="2"/>
       </talent>
-      <talent column="1" icon="ability_hunter_pet_cat" key="803" name="Predatory Strikes" tier="3">
-        <rank description="Increases your melee attack power in Cat, Bear and Dire Bear Forms by 50% of your level and 7% of any attack power on your equipped weapon.  In addition, your finishing moves have a 7% chance per combo point to make your next Nature spell with a base casting time less than 10 sec. become an instant cast spell." lvl="1"/>
-        <rank description="Increases your melee attack power in Cat, Bear and Dire Bear Forms by 100% of your level and 14% of any attack power on your equipped weapon.  In addition, your finishing moves have a 13% chance per combo point to make your next Nature spell with a base casting time less than 10 sec. become an instant cast spell." lvl="2"/>
-        <rank description="Increases your melee attack power in Cat, Bear and Dire Bear Forms by 150% of your level and 20% of any attack power on your equipped weapon.  In addition, your finishing moves have a 20% chance per combo point to make your next Nature spell with a base casting time less than 10 sec. become an instant cast spell." lvl="3"/>
+      <talent column="1" icon="ability_hunter_pet_cat" key="803" name="猛獸攻擊" tier="3">
+        <rank description="使你在獵豹、熊和巨熊形態下的近戰攻擊強度提高，其數值相當於你目前等級的50%再加上你目前裝備武器上7%的攻擊強度。此外，你的終結技可提供每個連擊點數7%的機率讓你的下一個基礎施法時間低於10秒的自然系法術變成瞬發。" lvl="1"/>
+        <rank description="使你在獵豹、熊和巨熊形態下的近戰攻擊強度提高，其數值相當於你目前等級的100%再加上你目前裝備武器上14%的攻擊強度。此外，你的終結技可提供每個連擊點數13%的機率讓你的下一個基礎施法時間低於10秒的自然系法術變成瞬發。" lvl="2"/>
+        <rank description="使你在獵豹、熊和巨熊形態下的近戰攻擊強度提高，其數值相當於你目前等級的150%再加上你目前裝備武器上20%的攻擊強度。此外，你的終結技可提供每個連擊點數20%的機率讓你的下一個基礎施法時間低於10秒的自然系法術變成瞬發。" lvl="3"/>
       </talent>
-      <talent column="2" icon="ability_racial_cannibalize" key="801" name="Primal Fury" requires="798" tier="3">
-        <rank description="Gives you a 50% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form and your critical strikes from Cat Form abilities that add combo points  have a 50% chance to add an additional combo point." lvl="1"/>
-        <rank description="Gives you a 100% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form and your critical strikes from Cat Form abilities that add combo points  have a 100% chance to add an additional combo point." lvl="2"/>
+      <talent column="2" icon="ability_racial_cannibalize" key="801" name="原始狂怒" requires="798" tier="3">
+        <rank description="使你在熊和巨熊形態下對目標造成致命一擊後，有50%的機率額外獲得5點怒氣，而在獵豹形態時可增加連擊點數的技能造成致命一擊後有50%的機率再獲取一個額外的連擊點數。" lvl="1"/>
+        <rank description="使你在熊和巨熊形態下對目標造成致命一擊後，有100%的機率額外獲得5點怒氣，而在獵豹形態時可增加連擊點數的技能造成致命一擊後有100%的機率再獲取一個額外的連擊點數。" lvl="2"/>
       </talent>
-      <talent column="3" icon="ability_druid_primalprecision" key="1914" name="Primal Precision" requires="798" tier="3">
-        <rank description="Increases your expertise by 5, and you are refunded 40% of the energy cost of a finishing move if it fails to land." lvl="1"/>
-        <rank description="Increases your expertise by 10, and you are refunded 80% of the energy cost of a finishing move if it fails to land." lvl="2"/>
+      <talent column="3" icon="ability_druid_primalprecision" key="1914" name="原始精準" requires="798" tier="3">
+        <rank description="使你的熟練技能提高5點，並且當你的終結技未命中時，可獲得相當於該終結技40%的能量消耗作為補償。" lvl="1"/>
+        <rank description="使你的熟練技能提高10點，並且當你的終結技未命中時，可獲得相當於該終結技80%的能量消耗作為補償。" lvl="2"/>
       </talent>
-      <talent column="0" icon="ability_druid_bash" key="797" name="Brutal Impact" tier="4">
-        <rank description="Increases the stun duration of your Bash and Pounce abilities by 0.5 sec and decreases the cooldown of Bash by 15 sec." lvl="1"/>
-        <rank description="Increases the stun duration of your Bash and Pounce abilities by 1 sec and decreases the cooldown of Bash by 30 sec." lvl="2"/>
+      <talent column="0" icon="ability_druid_bash" key="797" name="野蠻衝撞" tier="4">
+        <rank description="使你重擊跟突襲的昏迷效果持續時間延長0.5秒，重擊的冷卻時間縮短15秒。" lvl="1"/>
+        <rank description="使你重擊跟突襲的昏迷效果持續時間延長1秒，重擊的冷卻時間縮短30秒。" lvl="2"/>
       </talent>
-      <talent column="2" icon="ability_hunter_pet_bear" key="804" name="Feral Charge" tier="4">
-        <rank description="Teaches Feral Charge (Bear) and Feral Charge (Cat).&lt;br/&gt;&lt;br/&gt;Feral Charge (Bear) - Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec. This ability can be used in Bear Form and Dire Bear Form. 15 second cooldown.&lt;br/&gt;&lt;br/&gt;Feral Charge (Cat) - Causes you to leap behind an enemy, dazing them for 3 sec. 30 second cooldown." lvl="1"/>
+      <talent column="2" icon="ability_hunter_pet_bear" key="804" name="野性衝鋒" tier="4">
+        <rank description="教你學會野性衝鋒(熊形態)和野性衝鋒(獵豹形態)。&lt;br/&gt;&lt;br/&gt;野性衝鋒(熊形態) - 向目標衝鋒使其無法移動，並中斷施放中的法術，持續4秒。此技能只能在熊形態和巨熊形態下使用。15秒冷卻時間。&lt;br/&gt;&lt;br/&gt;野性衝鋒(獵豹形態) - 令你躍向敵人的後方，使其暈眩3秒。30秒冷卻時間。" lvl="1"/>
       </talent>
-      <talent column="3" icon="ability_druid_healinginstincts" key="1792" name="Nurturing Instinct" tier="4">
-        <rank description="Increases your healing spells by up to 35% of your Agility, and increases healing done to you by 10% while in Cat form." lvl="1"/>
-        <rank description="Increases your healing spells by up to 70% of your Agility, and increases healing done to you by 20% while in Cat form." lvl="2"/>
+      <talent column="3" icon="ability_druid_healinginstincts" key="1792" name="培育天性" tier="4">
+        <rank description="你治療法術的治療效果提高相當於35%的敏捷值，並使你在獵豹形態下受到的治療效果提高10%。" lvl="1"/>
+        <rank description="使你治療法術的治療效果提高相當於70%的敏捷值，並使你在獵豹形態下受到的治療效果提高20%。" lvl="2"/>
       </talent>
-      <talent column="0" icon="ability_bullrush" key="2242" name="Natural Reaction" tier="5">
-        <rank description="Increases your dodge while in Bear Form or Dire Bear Form by 2%, and you regenerate 1 rage every time you dodge while in Bear Form or Dire Bear Form." lvl="1"/>
-        <rank description="Increases your dodge while in Bear Form or Dire Bear Form by 4%, and you regenerate 2 rage every time you dodge while in Bear Form or Dire Bear Form." lvl="2"/>
-        <rank description="Increases your dodge while in Bear Form or Dire Bear Form by 6%, and you regenerate 3 rage every time you dodge while in Bear Form or Dire Bear Form." lvl="3"/>
+      <talent column="0" icon="ability_bullrush" key="2242" name="自然反應" tier="5">
+        <rank description="提高你在熊形態或巨熊形態下的閃躲機率2%，並且在熊形態或巨熊形態下每次閃躲可使你產生1點怒氣。" lvl="1"/>
+        <rank description="提高你在熊形態或巨熊形態下的閃躲機率4%，並且在熊形態或巨熊形態下每次閃躲可使你產生2點怒氣。" lvl="2"/>
+        <rank description="提高你在熊形態或巨熊形態下的閃躲機率6%，並且在熊形態或巨熊形態下每次閃躲可使你產生3點怒氣。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_holy_blessingofagility" key="808" name="Heart of the Wild" requires="803" tier="5">
-        <rank description="Increases your Intellect by 4%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 2% and while in Cat Form your attack power is increased by 2%." lvl="1"/>
-        <rank description="Increases your Intellect by 8%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your attack power is increased by 4%." lvl="2"/>
-        <rank description="Increases your Intellect by 12%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 6% and while in Cat Form your attack power is increased by 6%." lvl="3"/>
-        <rank description="Increases your Intellect by 16%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 8% and while in Cat Form your attack power is increased by 8%." lvl="4"/>
-        <rank description="Increases your Intellect by 20%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 10% and while in Cat Form your attack power is increased by 10%." lvl="5"/>
+      <talent column="1" icon="spell_holy_blessingofagility" key="808" name="野性之心" requires="803" tier="5">
+        <rank description="使你的智力提高4%。另外，在熊或巨熊形態下，你的耐力提高2%，而在獵豹形態下，你的攻擊強度提高2%。" lvl="1"/>
+        <rank description="使你的智力提高8%。另外，在熊或巨熊形態下，你的耐力提高4%，而在獵豹形態下，你的攻擊強度提高4%。" lvl="2"/>
+        <rank description="使你的智力提高12%。另外，在熊或巨熊形態下，你的耐力提高6%，而在獵豹形態下，你的攻擊強度提高6%。" lvl="3"/>
+        <rank description="使你的智力提高16%。另外，在熊或巨熊形態下，你的耐力提高8%，而在獵豹形態下，你的攻擊強度提高8%。" lvl="4"/>
+        <rank description="使你的智力提高20%。另外，在熊或巨熊形態下，你的耐力提高10%，而在獵豹形態下，你的攻擊強度提高10%。" lvl="5"/>
       </talent>
-      <talent column="2" icon="ability_druid_enrage" key="1794" name="Survival of the Fittest" tier="5">
-        <rank description="Increases all attributes by 2%, reduces the chance you'll be critically hit by melee attacks by 2%, and increases your armor contribution from cloth and leather items in Bear Form and Dire Bear Form by 11%." lvl="1"/>
-        <rank description="Increases all attributes by 4%, reduces the chance you'll be critically hit by melee attacks by 4%, and increases your armor contribution from cloth and leather items in Bear Form and Dire Bear Form by 22%." lvl="2"/>
-        <rank description="Increases all attributes by 6%, reduces the chance you'll be critically hit by melee attacks by 6%, and increases your armor contribution from cloth and leather items in Bear Form and Dire Bear Form by 33%." lvl="3"/>
+      <talent column="2" icon="ability_druid_enrage" key="1794" name="適者生存" tier="5">
+        <rank description="所有屬性提高2%，並使你受到近戰攻擊的致命一擊機率降低2%，同時令你在熊形態和巨熊形態下從布甲和皮甲裝備獲得的護甲值提高11%。" lvl="1"/>
+        <rank description="所有屬性提高4%，並使你受到近戰攻擊的致命一擊機率降低4%，同時令你在熊形態和巨熊形態下從布甲和皮甲裝備獲得的護甲值提高22%。" lvl="2"/>
+        <rank description="所有屬性提高6%，並使你受到近戰攻擊的致命一擊機率降低6%，同時令你在熊形態和巨熊形態下從布甲和皮甲裝備獲得的護甲值提高33%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_nature_unyeildingstamina" key="809" name="Leader of the Pack" tier="6">
-        <rank description="While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party and raid members within 100 yards by 5%." lvl="1"/>
+      <talent column="1" icon="spell_nature_unyeildingstamina" key="809" name="獸群領袖" tier="6">
+        <rank description="在獵豹、熊或巨熊形態下，使半徑0碼範圍內所有小隊與團隊成員的遠程和近戰攻擊造成致命一擊的機率提高5%。" lvl="1"/>
       </talent>
-      <talent column="2" icon="spell_nature_unyeildingstamina" key="1798" name="Improved Leader of the Pack" requires="809" tier="6">
-        <rank description="Your Leader of the Pack ability also causes affected targets to heal themselves for 2% of their total health when they critically hit with a melee or ranged attack.  The healing effect cannot occur more than once every 6 sec.  In addition, you gain 4% of your maximum mana when you benefit from this heal." lvl="1"/>
-        <rank description="Your Leader of the Pack ability also causes affected targets to heal themselves for 4% of their total health when they critically hit with a melee or ranged attack.  The healing effect cannot occur more than once every 6 sec.  In addition, you gain 8% of your maximum mana when you benefit from this heal." lvl="2"/>
+      <talent column="2" icon="spell_nature_unyeildingstamina" key="1798" name="強化獸群領袖" requires="809" tier="6">
+        <rank description="使你的獸群領袖同時能讓隊友在近戰或遠程攻擊造成致命一擊時恢復他們總生命力的2%。此治療效果每6秒只能發動一次。此外，此治療效果發動時可使你獲得總法力的4%。" lvl="1"/>
+        <rank description="使你的獸群領袖同時能讓隊友在近戰或遠程攻擊造成致命一擊時恢復他們總生命力的4%。此治療效果每6秒只能發動一次。此外，此治療效果發動時可使你獲得總法力的8%。" lvl="2"/>
       </talent>
-      <talent column="3" icon="ability_druid_primaltenacity" key="1793" name="Primal Tenacity" tier="6">
-        <rank description="Reduces the duration of fear effects by 10%, reduces all damage taken while stunned by 10% while in Cat Form." lvl="1"/>
-        <rank description="Reduces the duration of fear effects by 20%, reduces all damage taken while stunned by 20% while in Cat Form." lvl="2"/>
-        <rank description="Reduces the duration of fear effects by 30%, reduces all damage taken while stunned by 30% while in Cat Form." lvl="3"/>
+      <talent column="3" icon="ability_druid_primaltenacity" key="1793" name="原始堅毅" tier="6">
+        <rank description="使你受到的恐懼效果持續時間縮短10%，在獵豹形態下昏迷時受到的所有傷害降低10%。" lvl="1"/>
+        <rank description="使你受到的恐懼效果持續時間縮短20%，在獵豹形態下昏迷時受到的所有傷害降低20%。" lvl="2"/>
+        <rank description="使你受到的恐懼效果持續時間縮短30%，在獵豹形態下昏迷時受到的所有傷害降低30%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="ability_druid_challangingroar" key="2241" name="Protector of the Pack" requires="809" tier="7">
-        <rank description="Increases your attack power by 2% and reduces the damage you take by 4%, while in Bear or Dire Bear Form." lvl="1"/>
-        <rank description="Increases your attack power by 4% and reduces the damage you take by 8%, while in Bear or Dire Bear Form." lvl="2"/>
-        <rank description="Increases your attack power by 6% and reduces the damage you take by 12%, while in Bear or Dire Bear Form." lvl="3"/>
+      <talent column="0" icon="ability_druid_challangingroar" key="2241" name="獸群守護者" requires="809" tier="7">
+        <rank description="使你在熊形態和巨熊形態下的攻擊強度提高2%，並且受到的傷害降低4%。" lvl="1"/>
+        <rank description="使你在熊形態和巨熊形態下的攻擊強度提高4%，並且受到的傷害降低8%。" lvl="2"/>
+        <rank description="使你在熊形態和巨熊形態下的攻擊強度提高6%，並且受到的傷害降低12%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="ability_druid_predatoryinstincts" key="1795" name="Predatory Instincts" tier="7">
-        <rank description="While in Cat Form increases your damage from melee critical strikes by 3% and reduces the damage taken from area of effect attacks by 10%." lvl="1"/>
-        <rank description="While in Cat Form increases your damage from melee critical strikes by 7% and reduces the damage taken from area of effect attacks by 20%." lvl="2"/>
-        <rank description="While in Cat Form increases your damage from melee critical strikes by 10% and reduces the damage taken from area of effect attacks by 30%." lvl="3"/>
+      <talent column="2" icon="ability_druid_predatoryinstincts" key="1795" name="猛獸天性" tier="7">
+        <rank description="在獵豹形態下近戰攻擊造成的致命一擊傷害提高3%，且受到範圍性攻擊效果的傷害降低10%。" lvl="1"/>
+        <rank description="在獵豹形態下近戰攻擊造成的致命一擊傷害提高7%，且受到範圍性攻擊效果的傷害降低20%。" lvl="2"/>
+        <rank description="在獵豹形態下近戰攻擊造成的致命一擊傷害提高10%，且受到範圍性攻擊效果的傷害降低30%。" lvl="3"/>
       </talent>
-      <talent column="3" icon="ability_druid_infectedwound" key="1919" name="Infected Wounds" tier="7">
-        <rank description="Your Shred, Maul, and Mangle attacks cause an Infected Wound in the target. The Infected Wound reduces the movement speed of the target by 16% and the attack speed by 6%. Lasts 12 sec." lvl="1"/>
-        <rank description="Your Shred, Maul, and Mangle attacks cause an Infected Wound in the target. The Infected Wound reduces the movement speed of the target by 34% and the attack speed by 14%. Lasts 12 sec." lvl="2"/>
-        <rank description="Your Shred, Maul, and Mangle attacks cause an Infected Wound in the target. The Infected Wound reduces the movement speed of the target by 50% and the attack speed by 20%. Lasts 12 sec." lvl="3"/>
+      <talent column="3" icon="ability_druid_infectedwound" key="1919" name="感染之傷" tier="7">
+        <rank description="你的撕碎、槌擊和割碎攻擊使目標受到感染之傷，令其移動速度降低16%，攻擊速度降低6%，持續12秒。" lvl="1"/>
+        <rank description="你的撕碎、槌擊和割碎攻擊會使目標受到感染之傷，令其移動速度降低34%，攻擊速度降低14%，持續12秒。" lvl="2"/>
+        <rank description="你的撕碎、槌擊和割碎攻擊會使目標受到感染之傷，令其移動速度降低50%，攻擊速度降低20%，持續12秒。" lvl="3"/>
       </talent>
-      <talent column="0" icon="ability_druid_kingofthejungle" key="1921" name="King of the Jungle" tier="8">
-        <rank description="While using your Enrage ability in Bear Form or Dire Bear Form, your damage is increased by 5%, and your Tiger's Fury ability also instantly restores 20 energy.  In addition, the mana cost of Bear Form, Cat Form, and Dire Bear Form is reduced by 20%." lvl="1"/>
-        <rank description="While using your Enrage ability in Bear Form or Dire Bear Form, your damage is increased by 10%, and your Tiger's Fury ability also instantly restores 40 energy.  In addition, the mana cost of Bear Form, Cat Form, and Dire Bear Form is reduced by 40%." lvl="2"/>
-        <rank description="While using your Enrage ability in Bear Form or Dire Bear Form, your damage is increased by 15%, and your Tiger's Fury ability also instantly restores 60 energy.  In addition, the mana cost of Bear Form, Cat Form, and Dire Bear Form is reduced by 60%." lvl="3"/>
+      <talent column="0" icon="ability_druid_kingofthejungle" key="1921" name="叢林之王" tier="8">
+        <rank description="當你在熊形態和巨熊形態使用狂怒技能時，你造成的傷害提高5%，並且你的猛虎之怒技能可以立即恢復20點能量。此外，熊形態、獵豹形態和巨熊形態的法力消耗降低20%。" lvl="1"/>
+        <rank description="當你在熊形態和巨熊形態使用狂怒技能時，你造成的傷害提高10%，並且你的猛虎之怒技能可以立即恢復40點能量。此外，熊形態、獵豹形態和巨熊形態的法力消耗降低40%。" lvl="2"/>
+        <rank description="當你在熊形態和巨熊形態使用狂怒技能時，你造成的傷害提高15%，並且你的猛虎之怒技能可以立即恢復60點能量。此外，熊形態、獵豹形態和巨熊形態的法力消耗降低60%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_druid_mangle2" key="1796" name="Mangle" requires="809" tier="8">
-        <rank description="Mangle the target, inflicting damage and causing the target to take additional damage from bleed effects for 1 min.  This ability can be used in Cat Form or Dire Bear Form." lvl="1"/>
+      <talent column="1" icon="ability_druid_mangle2" key="1796" name="割碎" requires="809" tier="8">
+        <rank description="割碎目標造成傷害，同時使目標受到流血效果時承受額外的傷害，持續12秒。此技能只能在獵豹形態或者巨熊形態下使用。" lvl="1"/>
       </talent>
-      <talent column="2" icon="ability_druid_mangle2" key="1920" name="Improved Mangle" requires="1796" tier="8">
-        <rank description="Reduces the cooldown of your Mangle (Bear) ability by 0.5 sec., and reduces the energy cost of your Mangle (Cat) ability by 2." lvl="1"/>
-        <rank description="Reduces the cooldown of your Mangle (Bear) ability by 1.0 sec., and reduces the energy cost of your Mangle (Cat) ability by 4." lvl="2"/>
-        <rank description="Reduces the cooldown of your Mangle (Bear) ability by 1.5 sec., and reduces the energy cost of your Mangle (Cat) ability by 6." lvl="3"/>
+      <talent column="2" icon="ability_druid_mangle2" key="1920" name="強化割碎" requires="1796" tier="8">
+        <rank description="使你的割碎(熊形態)的技能冷卻時間縮短0.5秒，割碎(獵豹形態)技能的能量消耗降低2點。" lvl="1"/>
+        <rank description="使你的割碎(熊形態)的技能冷卻時間縮短1秒，割碎(獵豹形態)技能的能量消耗降低4點。" lvl="2"/>
+        <rank description="使你的割碎(熊形態)的技能冷卻時間縮短1.5秒，割碎(獵豹形態)技能的能量消耗降低6點。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_druid_primalagression" key="1918" name="Rend and Tear" tier="9">
-        <rank description="Increases damage done by your Maul and Shred attacks on bleeding targets by 4%, and increases the critical strike chance of your Ferocious Bite ability on bleeding targets by 5%." lvl="1"/>
-        <rank description="Increases damage done by your Maul and Shred attacks on bleeding targets by 8%, and increases the critical strike chance of your Ferocious Bite ability on bleeding targets by 10%." lvl="2"/>
-        <rank description="Increases damage done by your Maul and Shred attacks on bleeding targets by 12%, and increases the critical strike chance of your Ferocious Bite ability on bleeding targets by 15%." lvl="3"/>
-        <rank description="Increases damage done by your Maul and Shred attacks on bleeding targets by 16%, and increases the critical strike chance of your Ferocious Bite ability on bleeding targets by 20%." lvl="4"/>
-        <rank description="Increases damage done by your Maul and Shred attacks on bleeding targets by 20%, and increases the critical strike chance of your Ferocious Bite ability on bleeding targets by 25%." lvl="5"/>
+      <talent column="1" icon="ability_druid_primalagression" key="1918" name="碎裂撕扯" tier="9">
+        <rank description="使你的槌擊和撕碎技能對流血目標造成的傷害提高4%，並使你的兇猛撕咬對流血目標的致命一擊機率提高5%。" lvl="1"/>
+        <rank description="使你的槌擊和撕碎技能對流血目標造成的傷害提高8%，並使你的兇猛撕咬對流血目標的致命一擊機率提高10%。" lvl="2"/>
+        <rank description="使你的槌擊和撕碎技能對流血目標造成的傷害提高12%，並使你的兇猛撕咬對流血目標的致命一擊機率提高15%。" lvl="3"/>
+        <rank description="使你的槌擊和撕碎技能對流血目標造成的傷害提高16%，並使你的兇猛撕咬對流血目標的致命一擊機率提高20%。" lvl="4"/>
+        <rank description="使你的槌擊和撕碎技能對流血目標造成的傷害提高20%，並使你的兇猛撕咬對流血目標的致命一擊機率提高25%。" lvl="5"/>
       </talent>
-      <talent column="2" icon="ability_druid_rake" key="2266" name="Primal Gore" requires="1918" tier="9">
-        <rank description="Grants the periodic damage from your Lacerate and Rip abilities the ability to critically hit." lvl="1"/>
+      <talent column="2" icon="ability_druid_rake" key="2266" name="原始淌血" requires="1918" tier="9">
+        <rank description="使你割裂和撕扯技能的週期性傷害可造成致命一擊。" lvl="1"/>
       </talent>
-      <talent column="1" icon="ability_druid_berserk" key="1927" name="Berserk" tier="10">
-        <rank description="When activated, this ability causes your Mangle (Bear) ability to hit up to 3 targets and have no cooldown, and reduces the energy cost of all your Cat Form abilities by 50%.  Lasts 15 sec.  You cannot use Tiger's Fury while Berserk is active. &lt;br/&gt;&lt;br/&gt;Clears the effect of Fear and makes you immune to Fear for the duration." lvl="1"/>
+      <talent column="1" icon="ability_druid_berserk" key="1927" name="狂暴" tier="10">
+        <rank description="啟動之後，此技能使你的割碎(熊形態)技能可擊中最多3名目標且不具冷卻時間，並且使你所有獵豹形態技能的能量消耗降低50%。此技能可持續15秒。無法在啟動狂暴後使用猛虎之怒。&lt;br/&gt;&lt;br/&gt;狂暴可立即解除恐懼效果，並使你在持續時間內免疫恐懼。" lvl="1"/>
         <spell castTime="0" cooldown="180000"/>
       </talent>
     </tree>
-    <tree bgImage="DruidRestoration" icon="spell_nature_healingtouch" key="Restoration" name="Restoration" order="2">
-      <talent column="0" icon="spell_nature_regeneration" key="821" name="Improved Mark of the Wild" tier="0">
-        <rank description="Increases the effects of your Mark of the Wild and Gift of the Wild spells by 20%, and increases all of your total attributes by 1%." lvl="1"/>
-        <rank description="Increases the effects of your Mark of the Wild and Gift of the Wild spells by 40%, and increases all of your total attributes by 2%." lvl="2"/>
+    <tree bgImage="DruidRestoration" icon="spell_nature_healingtouch" key="Restoration" name="恢復" order="2">
+      <talent column="0" icon="spell_nature_regeneration" key="821" name="強化野性印記" tier="0">
+        <rank description="使你野性印記和野性賜福的效果提高20%，並且所有屬性提高1%。" lvl="1"/>
+        <rank description="使你野性印記和野性賜福的效果提高40%，並且所有屬性提高2%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_nature_healingwavegreater" key="823" name="Nature's Focus" tier="0">
-        <rank description="Reduces the pushback suffered from damaging attacks  while casting Healing Touch, Wrath, Entangling Roots, Cyclone, Nourish, Regrowth and Tranquility by 23%." lvl="1"/>
-        <rank description="Reduces the pushback suffered from damaging attacks  while casting Healing Touch, Wrath, Entangling Roots, Cyclone, Nourish, Regrowth and Tranquility by 46%." lvl="2"/>
-        <rank description="Reduces the pushback suffered from damaging attacks  while casting Healing Touch, Wrath, Entangling Roots, Cyclone, Nourish, Regrowth and Tranquility by 70%." lvl="3"/>
+      <talent column="1" icon="spell_nature_healingwavegreater" key="823" name="自然集中" tier="0">
+        <rank description="使你在施放治療之觸、憤怒、糾纏根鬚、颶風術、滋補術、癒合和寧靜時，因受到傷害性攻擊而損失的施法時間縮短23%。" lvl="1"/>
+        <rank description="使你在施放治療之觸、憤怒、糾纏根鬚、颶風術、滋補術、癒合和寧靜時，因受到傷害性攻擊而損失的施法時間縮短46%。" lvl="2"/>
+        <rank description="使你在施放治療之觸、憤怒、糾纏根鬚、颶風術、滋補術、癒合和寧靜時，因受到傷害性攻擊而損失的施法時間縮短70%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_holy_blessingofstamina" key="822" name="Furor" tier="0">
-        <rank description="Gives you 20% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form, and you keep up to 20 of your Energy when you shapeshift into Cat Form, and increases your total Intellect while in Moonkin form by 2%." lvl="1"/>
-        <rank description="Gives you 40% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form, and you keep up to 40 of your Energy when you shapeshift into Cat Form, and increases your total Intellect while in Moonkin form by 4%." lvl="2"/>
-        <rank description="Gives you 60% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form, and you keep up to 60 of your Energy when you shapeshift into Cat Form, and increases your total Intellect while in Moonkin form by 6%." lvl="3"/>
-        <rank description="Gives you 80% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form, and you keep up to 80 of your Energy when you shapeshift into Cat Form, and increases your total Intellect while in Moonkin form by 8%." lvl="4"/>
-        <rank description="Gives you 100% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form, and you keep up to 100 of your Energy when you shapeshift into Cat Form, and increases your total Intellect while in Moonkin form by 10%." lvl="5"/>
+      <talent column="2" icon="spell_holy_blessingofstamina" key="822" name="激怒" tier="0">
+        <rank description="使你有20%的機率在變身為熊形態和巨熊形態時獲得10點怒氣，變身為獵豹形態時可維持最多20點能量。此外，使你在梟獸狀態下的總智力提高2%。" lvl="1"/>
+        <rank description="使你有40%的機率在變身為熊形態和巨熊形態時獲得10點怒氣，變身為獵豹形態時可維持最多40點能量。此外，使你在梟獸狀態下的總智力提高4%。" lvl="2"/>
+        <rank description="使你有60%的機率在變身為熊形態和巨熊形態時獲得10點怒氣，變身為獵豹形態時可維持最多60點能量。此外，使你在梟獸狀態下的總智力提高6%。" lvl="3"/>
+        <rank description="使你有80%的機率在變身為熊形態和巨熊形態時獲得10點怒氣，變身為獵豹形態時可維持最多80點能量。此外，使你在梟獸狀態下的總智力提高8%。" lvl="4"/>
+        <rank description="使你有100%的機率在變身為熊形態和巨熊形態時獲得10點怒氣，變身為獵豹形態時可維持最多100點能量。此外，使你在梟獸狀態下的總智力提高10%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="spell_nature_healingtouch" key="824" name="Naturalist" tier="1">
-        <rank description="Reduces the cast time of your Healing Touch spell by 0.1 sec and increases the damage you deal with physical attacks in all forms by 2%." lvl="1"/>
-        <rank description="Reduces the cast time of your Healing Touch spell by 0.2 sec and increases the damage you deal with physical attacks in all forms by 4%." lvl="2"/>
-        <rank description="Reduces the cast time of your Healing Touch spell by 0.3 sec and increases the damage you deal with physical attacks in all forms by 6%." lvl="3"/>
-        <rank description="Reduces the cast time of your Healing Touch spell by 0.4 sec and increases the damage you deal with physical attacks in all forms by 8%." lvl="4"/>
-        <rank description="Reduces the cast time of your Healing Touch spell by 0.5 sec and increases the damage you deal with physical attacks in all forms by 10%." lvl="5"/>
+      <talent column="0" icon="spell_nature_healingtouch" key="824" name="強化治療之觸" tier="1">
+        <rank description="使你治療之觸的施法時間縮短0.1秒，並使你在所有形態下造成的物理傷害增加2%。" lvl="1"/>
+        <rank description="使你治療之觸的施法時間縮短0.2秒，並使你在所有形態下造成的物理傷害增加4%。" lvl="2"/>
+        <rank description="使你治療之觸的施法時間縮短0.3秒，並使你在所有形態下造成的物理傷害增加6%。" lvl="3"/>
+        <rank description="使你治療之觸的施法時間縮短0.4秒，並使你在所有形態下造成的物理傷害增加8%。" lvl="4"/>
+        <rank description="使你治療之觸的施法時間縮短0.5秒，並使你在所有形態下造成的物理傷害增加10%。" lvl="5"/>
       </talent>
-      <talent column="1" icon="ability_eyeoftheowl" key="841" name="Subtlety" tier="1">
-        <rank description="Reduces the threat generated by your restoration spells by 10% and reduces the chance your helpful spells, Moonfire, and Insect Swarm will be dispelled by 10%." lvl="1"/>
-        <rank description="Reduces the threat generated by your restoration spells by 20% and reduces the chance your helpful spells, Moonfire, and Insect Swarm will be dispelled by 20%." lvl="2"/>
-        <rank description="Reduces the threat generated by your restoration spells by 30% and reduces the chance your helpful spells, Moonfire, and Insect Swarm will be dispelled by 30%." lvl="3"/>
+      <talent column="1" icon="ability_eyeoftheowl" key="841" name="微妙" tier="1">
+        <rank description="使你恢復系法術產生的威脅值降低10%，並且令你的助益法術、月火術以及蟲群被驅散的機率降低10%。" lvl="1"/>
+        <rank description="使你恢復系法術產生的威脅值降低20%，並且令你的助益法術、月火術以及蟲群被驅散的機率降低20%。" lvl="2"/>
+        <rank description="使你恢復系法術產生的威脅值降低30%，並且令你的助益法術、月火術以及蟲群被驅散的機率降低30%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_nature_wispsplode" key="826" name="Natural Shapeshifter" tier="1">
-        <rank description="Reduces the mana cost of all shapeshifting by 10%." lvl="1"/>
-        <rank description="Reduces the mana cost of all shapeshifting by 20%." lvl="2"/>
-        <rank description="Reduces the mana cost of all shapeshifting by 30%." lvl="3"/>
+      <talent column="2" icon="spell_nature_wispsplode" key="826" name="自然變形" tier="1">
+        <rank description="使你所有變身法術所消耗的法力降低10%。" lvl="1"/>
+        <rank description="使你所有變身法術所消耗的法力降低20%。" lvl="2"/>
+        <rank description="使你所有變身法術所消耗的法力降低30%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_frost_windwalkon" key="829" name="Intensity" tier="2">
-        <rank description="Allows 17% of your Mana regeneration to continue while casting and causes your Enrage ability to instantly generate 4 rage." lvl="1"/>
-        <rank description="Allows 33% of your Mana regeneration to continue while casting and causes your Enrage ability to instantly generate 7 rage." lvl="2"/>
-        <rank description="Allows 50% of your Mana regeneration to continue while casting and causes your Enrage ability to instantly generate 10 rage." lvl="3"/>
+      <talent column="0" icon="spell_frost_windwalkon" key="829" name="激化" tier="2">
+        <rank description="
+			'使你在施法時仍保持17%的法力恢復速度，並使你的狂怒技能立即產生4點怒氣。" lvl="1"/>
+        <rank description="使你在施法時仍保持33%的法力恢復速度，並使你的狂怒技能立即產生7點怒氣。" lvl="2"/>
+        <rank description="使你在施法時仍保持50%的法力恢復速度，並使你的狂怒技能立即產生10點怒氣。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_nature_crystalball" key="827" name="Omen of Clarity" tier="2">
-        <rank description="Each of the Druid's damage, healing spells and auto attacks has a chance of causing the caster to enter a Clearcasting state.  The Clearcasting state reduces the Mana, Rage or Energy cost of your next damage, healing spell or offensive ability by 100%." lvl="1"/>
+      <talent column="1" icon="spell_nature_crystalball" key="827" name="清晰預兆" tier="2">
+        <rank description="德魯伊施放的每個傷害和治療法術，以及自動攻擊均有一定的機率使其進入節能施法狀態。該狀態可以讓你的下一個傷害法術、治療法術或攻擊技能所消耗的法力、怒氣或能量降低100%。" lvl="1"/>
       </talent>
-      <talent column="2" icon="ability_druid_mastershapeshifter" key="1915" name="Master Shapeshifter" requires="826" tier="2">
-        <rank description="Grants an effect which lasts while the Druid is within the respective shapeshift form.&lt;br/&gt;&lt;br/&gt;Bear Form - Increases physical damage by 2%.&lt;br/&gt;&lt;br/&gt;Cat Form - Increases critical strike chance by 2%.&lt;br/&gt;&lt;br/&gt;Moonkin Form - Increases spell damage by 2%.&lt;br/&gt;&lt;br/&gt;Tree of Life Form - Increases healing by 2%." lvl="1"/>
-        <rank description="Grants an effect which lasts while the Druid is within the respective shapeshift form.&lt;br/&gt;&lt;br/&gt;Bear Form - Increases physical damage by 4%.&lt;br/&gt;&lt;br/&gt;Cat Form - Increases critical strike chance by 4%.&lt;br/&gt;&lt;br/&gt;Moonkin Form - Increases spell damage by 4%.&lt;br/&gt;&lt;br/&gt;Tree of Life Form - Increases healing by 4%." lvl="2"/>
+      <talent column="2" icon="ability_druid_mastershapeshifter" key="1915" name="變身大師" requires="826" tier="2">
+        <rank description="使德魯伊處於變身後的各種形態時，皆獲得一種獨特的效果。&lt;br/&gt;&lt;br/&gt;熊形態 - 物理傷害提高2%。&lt;br/&gt;&lt;br/&gt;獵豹形態 - 致命一擊機率提高2%。&lt;br/&gt;&lt;br/&gt;梟獸形態 - 法術傷害提高2%。&lt;br/&gt;&lt;br/&gt;生命之樹形態 - 治療效果提高2%。" lvl="1"/>
+        <rank description="使德魯伊處於變身後的各種形態時，皆獲得一種獨特的效果。&lt;br/&gt;&lt;br/&gt;熊形態 - 物理傷害提高4%。&lt;br/&gt;&lt;br/&gt;獵豹形態 - 致命一擊機率提高4%。&lt;br/&gt;&lt;br/&gt;梟獸形態 - 法術傷害提高4%。&lt;br/&gt;&lt;br/&gt;生命之樹形態 - 治療效果提高4%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_holy_elunesgrace" key="843" name="Tranquil Spirit" tier="3">
-        <rank description="Reduces the mana cost of your Healing Touch, Nourish and Tranquility spells by 2%." lvl="1"/>
-        <rank description="Reduces the mana cost of your Healing Touch, Nourish and Tranquility spells by 4%." lvl="2"/>
-        <rank description="Reduces the mana cost of your Healing Touch, Nourish and Tranquility spells by 6%." lvl="3"/>
-        <rank description="Reduces the mana cost of your Healing Touch, Nourish and Tranquility spells by 8%." lvl="4"/>
-        <rank description="Reduces the mana cost of your Healing Touch, Nourish and Tranquility spells by 10%." lvl="5"/>
+      <talent column="1" icon="spell_holy_elunesgrace" key="843" name="寧靜之魂" tier="3">
+        <rank description="使你治療之觸、滋補術和寧靜所消耗的法力降低2%。" lvl="1"/>
+        <rank description="使你治療之觸、滋補術和寧靜所消耗的法力降低4%。" lvl="2"/>
+        <rank description="使你治療之觸、滋補術和寧靜所消耗的法力降低6%。" lvl="3"/>
+        <rank description="使你治療之觸、滋補術和寧靜所消耗的法力降低8%。" lvl="4"/>
+        <rank description="使你治療之觸、滋補術和寧靜所消耗的法力降低10%。" lvl="5"/>
       </talent>
-      <talent column="2" icon="spell_nature_rejuvenation" key="830" name="Improved Rejuvenation" tier="3">
-        <rank description="Increases the effect of your Rejuvenation spell by 5%." lvl="1"/>
-        <rank description="Increases the effect of your Rejuvenation spell by 10%." lvl="2"/>
-        <rank description="Increases the effect of your Rejuvenation spell by 15%." lvl="3"/>
+      <talent column="2" icon="spell_nature_rejuvenation" key="830" name="強化回春術" tier="3">
+        <rank description="使你回春術的效果提高5%。" lvl="1"/>
+        <rank description="使你回春術的效果提高10%。" lvl="2"/>
+        <rank description="使你回春術的效果提高15%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_nature_ravenform" key="831" name="Nature's Swiftness" requires="829" tier="4">
-        <rank description="When activated, your next Nature spell with a base casting time less than 10 sec. becomes an instant cast spell." lvl="1"/>
+      <talent column="0" icon="spell_nature_ravenform" key="831" name="自然迅捷" requires="829" tier="4">
+        <rank description="啟動之後，你的下一個基礎施法時間低於10秒的自然法術將成為瞬發法術。" lvl="1"/>
         <spell castTime="0" cooldown="180000"/>
       </talent>
-      <talent column="1" icon="spell_nature_protectionformnature" key="828" name="Gift of Nature" tier="4">
-        <rank description="Increases the effect of all healing spells by 2%." lvl="1"/>
-        <rank description="Increases the effect of all healing spells by 4%." lvl="2"/>
-        <rank description="Increases the effect of all healing spells by 6%." lvl="3"/>
-        <rank description="Increases the effect of all healing spells by 8%." lvl="4"/>
-        <rank description="Increases the effect of all healing spells by 10%." lvl="5"/>
+      <talent column="1" icon="spell_nature_protectionformnature" key="828" name="自然賜福" tier="4">
+        <rank description="使你所有治療法術的效果提高2%。" lvl="1"/>
+        <rank description="使你所有治療法術的效果提高4%。" lvl="2"/>
+        <rank description="使你所有治療法術的效果提高6%。" lvl="3"/>
+        <rank description="使你所有治療法術的效果提高8%。" lvl="4"/>
+        <rank description="使你所有治療法術的效果提高10%。" lvl="5"/>
       </talent>
-      <talent column="3" icon="spell_nature_tranquility" key="842" name="Improved Tranquility" tier="4">
-        <rank description="Reduces threat caused by Tranquility by 50%, and reduces the cooldown by 30%." lvl="1"/>
-        <rank description="Reduces threat caused by Tranquility by 100%, and reduces the cooldown by 60%." lvl="2"/>
+      <talent column="3" icon="spell_nature_tranquility" key="842" name="強化寧靜" tier="4">
+        <rank description="使你寧靜法術造成的威脅值降低50%，並使其冷卻時間縮短30%。" lvl="1"/>
+        <rank description="使你寧靜法術造成的威脅值降低100%，並使其冷卻時間縮短60%。" lvl="2"/>
       </talent>
-      <talent column="0" icon="ability_druid_empoweredtouch" key="1788" name="Empowered Touch" tier="5">
-        <rank description="Your Healing Touch spell gains an additional 20% and your Nourish spell gains an additional 10% of your bonus healing effects." lvl="1"/>
-        <rank description="Your Healing Touch spell gains an additional 40% and your Nourish spell gains an additional 20% of your bonus healing effects." lvl="2"/>
+      <talent column="0" icon="ability_druid_empoweredtouch" key="1788" name="強力之觸" tier="5">
+        <rank description="你的治療之觸可從你的治療加成中獲得額外20%的效果，滋補術可從你的治療加成中獲得額外10%的效果。" lvl="1"/>
+        <rank description="你的治療之觸可從你的治療加成中獲得額外40%的效果，滋補術可從你的治療加成中獲得額外20%的效果。" lvl="2"/>
       </talent>
-      <talent column="2" icon="spell_nature_resistnature" key="825" name="Nature's Bounty" requires="830" tier="5">
-        <rank description="Increases the critical effect chance of your Regrowth and Nourish spells by 5%." lvl="1"/>
-        <rank description="Increases the critical effect chance of your Regrowth and Nourish spells by 10%." lvl="2"/>
-        <rank description="Increases the critical effect chance of your Regrowth and Nourish spells by 15%." lvl="3"/>
-        <rank description="Increases the critical effect chance of your Regrowth and Nourish spells by 20%." lvl="4"/>
-        <rank description="Increases the critical effect chance of your Regrowth and Nourish spells by 25%." lvl="5"/>
+      <talent column="2" icon="spell_nature_resistnature" key="825" name="自然禮賜" requires="830" tier="5">
+        <rank description="使你癒合以及滋補術產生極效治療效果的機率提高5%。" lvl="1"/>
+        <rank description="使你癒合以及滋補術產生極效治療效果的機率提高10%。" lvl="2"/>
+        <rank description="使你癒合以及滋補術產生極效治療效果的機率提高15%。" lvl="3"/>
+        <rank description="使你癒合以及滋補術產生極效治療效果的機率提高20%。" lvl="4"/>
+        <rank description="使你癒合以及滋補術產生極效治療效果的機率提高25%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="spell_nature_giftofthewaterspirit" key="1797" name="Living Spirit" tier="6">
-        <rank description="Increases your total Spirit by 5%." lvl="1"/>
-        <rank description="Increases your total Spirit by 10%." lvl="2"/>
-        <rank description="Increases your total Spirit by 15%." lvl="3"/>
+      <talent column="0" icon="spell_nature_giftofthewaterspirit" key="1797" name="活化精神" tier="6">
+        <rank description="使你的總精神提高5%。" lvl="1"/>
+        <rank description="使你的總精神提高10%。" lvl="2"/>
+        <rank description="使你的總精神提高15%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="inv_relics_idolofrejuvenation" key="844" name="Swiftmend" requires="828" tier="6">
-        <rank description="Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth." lvl="1"/>
+      <talent column="1" icon="inv_relics_idolofrejuvenation" key="844" name="迅癒" requires="828" tier="6">
+        <rank description="吸收友方目標身上的回春術或癒合效果，並對其立即恢復所吸收的回春術在12秒內或癒合在18秒內所能治療的生命力。" lvl="1"/>
         <spell castTime="0" cooldown="15000" maxRange="40">
           <power cost="16" type="mana"/>
         </spell>
       </talent>
-      <talent column="2" icon="ability_druid_naturalperfection" key="1790" name="Natural Perfection" tier="6">
-        <rank description="Your critical strike chance with all spells is increased by 1% and critical strikes against you give you the Natural Perfection effect reducing all damage taken by 2%.  Stacks up to 3 times.  Lasts 8 sec." lvl="1"/>
-        <rank description="Your critical strike chance with all spells is increased by 2% and critical strikes against you give you the Natural Perfection effect reducing all damage taken by 3%.  Stacks up to 3 times.  Lasts 8 sec." lvl="2"/>
-        <rank description="Your critical strike chance with all spells is increased by 3% and critical strikes against you give you the Natural Perfection effect reducing all damage taken by 4%.  Stacks up to 3 times.  Lasts 8 sec." lvl="3"/>
+      <talent column="2" icon="ability_druid_naturalperfection" key="1790" name="自然完美" tier="6">
+        <rank description="使你的所有法術造成致命一擊的機率提高1%，並在你受到致命一擊時獲得自然完美的效果，使你受到的所有傷害降低2%。此效果最多可堆疊3次，持續8秒。" lvl="1"/>
+        <rank description="使你的所有法術造成致命一擊的機率提高2%，並在你受到致命一擊時獲得自然完美的效果，使你受到的所有傷害降低3%。此效果最多可堆疊3次，持續8秒。" lvl="2"/>
+        <rank description="使你的所有法術造成致命一擊的機率提高3%，並在你受到致命一擊時獲得自然完美的效果，使你受到的所有傷害降低4%。此效果最多可堆疊3次，持續8秒。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_druid_empoweredrejuvination" key="1789" name="Empowered Rejuvenation" tier="7">
-        <rank description="The bonus healing effects of your healing over time spells is increased by 4%." lvl="1"/>
-        <rank description="The bonus healing effects of your healing over time spells is increased by 8%." lvl="2"/>
-        <rank description="The bonus healing effects of your healing over time spells is increased by 12%." lvl="3"/>
-        <rank description="The bonus healing effects of your healing over time spells is increased by 16%." lvl="4"/>
-        <rank description="The bonus healing effects of your healing over time spells is increased by 20%." lvl="5"/>
+      <talent column="1" icon="ability_druid_empoweredrejuvination" key="1789" name="強力回春術" tier="7">
+        <rank description="使你持續性治療法術的治療加成效果提高4%。" lvl="1"/>
+        <rank description="使你持續性治療法術的治療加成效果提高8%。." lvl="2"/>
+        <rank description="使你持續性治療法術的治療加成效果提高12%。" lvl="3"/>
+        <rank description="使你持續性治療法術的治療加成效果提高16%。" lvl="4"/>
+        <rank description="使你持續性治療法術的治療加成效果提高20%。" lvl="5"/>
       </talent>
-      <talent column="2" icon="ability_druid_giftoftheearthmother" key="1922" name="Living Seed" tier="7">
-        <rank description="When you critically heal your target with Swiftmend, Regrowth, Nourish or Healing Touch spell you have a 33% chance to plant a Living Seed on the target for 30% of the amount healed. The Living Seed will bloom when the target is next attacked. Lasts 15 sec." lvl="1"/>
-        <rank description="When you critically heal your target with Swiftmend, Regrowth, Nourish or Healing Touch spell you have a 66% chance to plant a Living Seed on the target for 30% of the amount healed. The Living Seed will bloom when the target is next attacked. Lasts 15 sec." lvl="2"/>
-        <rank description="When you critically heal your target with Swiftmend, Regrowth, Nourish or Healing Touch spell you have a 100% chance to plant a Living Seed on the target for 30% of the amount healed. The Living Seed will bloom when the target is next attacked. Lasts 15 sec." lvl="3"/>
+      <talent column="2" icon="ability_druid_giftoftheearthmother" key="1922" name="生命種子" tier="7">
+        <rank description="當你的迅癒、癒合、滋補術或治療之觸法術造成極效治療效果時，有33%的機率在目標身上種下相當於該法術30%治療量的生命種子。當目標下一次受到攻擊時，生命種子將會綻放治療的能量。生命種子可持續15秒。" lvl="1"/>
+        <rank description="當你的迅癒、癒合、滋補術或治療之觸法術造成極效治療效果時，有66%的機率在目標身上種下相當於該法術30%治療量的生命種子。當目標下一次受到攻擊時，生命種子將會綻放治療的能量。生命種子可持續15秒。" lvl="2"/>
+        <rank description="當你的迅癒、癒合、滋補術或治療之觸法術造成極效治療效果時，有100%的機率在目標身上種下相當於該法術30%治療量的生命種子。當目標下一次受到攻擊時，生命種子將會綻放治療的能量。生命種子可持續15秒。" lvl="3"/>
       </talent>
-      <talent column="0" icon="ability_druid_replenish" key="1929" name="Revitalize" tier="8">
-        <rank description="Your Rejuvenation and Wild Growth spells have a 5% chance to restore 8 Energy, 4 Rage, 1% Mana or 16 Runic Power per tick." lvl="1"/>
-        <rank description="Your Rejuvenation and Wild Growth spells have a 10% chance to restore 8 Energy, 4 Rage, 1% Mana or 16 Runic Power per tick." lvl="2"/>
-        <rank description="Your Rejuvenation and Wild Growth spells have a 15% chance to restore 8 Energy, 4 Rage, 1% Mana or 16 Runic Power per tick." lvl="3"/>
+      <talent column="0" icon="ability_druid_replenish" key="1929" name="滋育" tier="8">
+        <rank description="你的回春術和野性痊癒每次作用時有5%的機率恢復8點能量、4點怒氣、1%法力或者16點符能。" lvl="1"/>
+        <rank description="你的回春術和野性痊癒每次作用時有10%的機率恢復8點能量、4點怒氣、1%法力或者16點符能。" lvl="2"/>
+        <rank description="你的回春術和野性痊癒每次作用時有15%的機率恢復8點能量、4點怒氣、1%法力或者16點符能。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_druid_treeoflife" key="1791" name="Tree of Life" requires="1789" tier="8">
-        <rank description="Reduces the mana cost of your healing over time spells by 20% and grants the ability to shapeshift into the Tree of Life. While in this form you increase healing received by 6% for all party and raid members within 100 yards, and you can only cast Restoration spells in addition to Innervate, Barkskin, Nature's Grasp and Thorns spells.&lt;br/&gt;&lt;br/&gt;The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects." lvl="1"/>
+      <talent column="1" icon="ability_druid_treeoflife" key="1791" name="生命之樹" requires="1789" tier="8">
+        <rank description="使你週期性治療法術的法力消耗降低20%，並獲得變身為生命之樹的能力。當你保持在這個形態時，所有0碼範圍內的小隊和團隊成員受到的治療效果將提高6%，並且你只能施放啟動、樹皮術、自然之握、荊棘術和恢復系的法術。&lt;br/&gt;&lt;br/&gt;變身可以解除施法者身上的所有變形和移動限制效果。" lvl="1"/>
       </talent>
-      <talent column="2" icon="ability_druid_improvedtreeform" key="1930" name="Improved Tree of Life" requires="1791" tier="8">
-        <rank description="Increases your armor contribution from items while in Tree of Life Form by 67%, and increases your healing spell power by 5% of your spirit while in Tree of Life Form." lvl="1"/>
-        <rank description="Increases your armor contribution from items while in Tree of Life Form by 133%, and increases your healing spell power by 10% of your spirit while in Tree of Life Form." lvl="2"/>
-        <rank description="Increases your armor contribution from items while in Tree of Life Form by 200%, and increases your healing spell power by 15% of your spirit while in Tree of Life Form." lvl="3"/>
+      <talent column="2" icon="ability_druid_improvedtreeform" key="1930" name="強化生命之樹" requires="1791" tier="8">
+        <rank description="使你在生命之樹形態下從裝備獲得的護甲值提高67%，治療法術能量提高相當於你5%的精神。" lvl="1"/>
+        <rank description="使你在生命之樹形態下從裝備獲得的護甲值提高133%，治療法術能量提高相當於你10%的精神。" lvl="2"/>
+        <rank description="使你在生命之樹形態下從裝備獲得的護甲值提高200%，治療法術能量提高相當於你15%的精神。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_nature_stoneclawtotem" key="2264" name="Improved Barkskin" tier="9">
-        <rank description="Grants 80% additional armor contribution from cloth and leather items while in Travel Form or while not shapeshifted, increases the damage reduction granted by your Barkskin spell by 5% and reduces the chance your Barkskin is dispelled by 35%." lvl="1"/>
-        <rank description="Grants 160% additional armor contribution from cloth and leather items while in Travel Form or while not shapeshifted, increases the damage reduction granted by your Barkskin spell by 10% and reduces the chance your Barkskin is dispelled by 70%." lvl="2"/>
+      <talent column="0" icon="spell_nature_stoneclawtotem" key="2264" name="強化樹皮術" tier="9">
+        <rank description="使你在旅行形態和未變身狀態下從布甲與皮甲獲得的護甲值提高80%，樹皮術所提供的減傷值提高5%，並且樹皮術被驅散的機率降低35%。" lvl="1"/>
+        <rank description="使你在旅行形態和未變身狀態下從布甲與皮甲獲得的護甲值提高160%，樹皮術所提供的減傷值提高10%，並且樹皮術被驅散的機率降低70%。" lvl="2"/>
       </talent>
-      <talent column="2" icon="ability_druid_manatree" key="1916" name="Gift of the Earthmother" tier="9">
-        <rank description="Increases your total spell haste by 2% and reduces the base cooldown of your Lifebloom spell by 2%." lvl="1"/>
-        <rank description="Increases your total spell haste by 4% and reduces the base cooldown of your Lifebloom spell by 4%." lvl="2"/>
-        <rank description="Increases your total spell haste by 6% and reduces the base cooldown of your Lifebloom spell by 6%." lvl="3"/>
-        <rank description="Increases your total spell haste by 8% and reduces the base cooldown of your Lifebloom spell by 8%." lvl="4"/>
-        <rank description="Increases your total spell haste by 10% and reduces the base cooldown of your Lifebloom spell by 10%." lvl="5"/>
+      <talent column="2" icon="ability_druid_manatree" key="1916" name="大地之母賜福" tier="9">
+        <rank description="使你的總法術加速提高2%，生命之花的基礎冷卻時間縮短2%。" lvl="1"/>
+        <rank description="使你的總法術加速提高4%，生命之花的基礎冷卻時間縮短4%。" lvl="2"/>
+        <rank description="使你的總法術加速提高6%，生命之花的基礎冷卻時間縮短6%。" lvl="3"/>
+        <rank description="使你的總法術加速提高8%，生命之花的基礎冷卻時間縮短8%。" lvl="4"/>
+        <rank description="使你的總法術加速提高10%，生命之花的基礎冷卻時間縮短10%。" lvl="5"/>
       </talent>
-      <talent column="1" icon="ability_druid_flourish" key="1917" name="Wild Growth" requires="1791" tier="10">
-        <rank description="Heals up to 5 friendly party or raid members within 15 yards of the target for 686 over 7 sec. The amount healed is applied quickly at first, and slows down as the Wild Growth reaches its full duration." lvl="1"/>
+      <talent column="1" icon="ability_druid_flourish" key="1917" name="野性痊癒" requires="1791" tier="10">
+        <rank description="治療目標周圍0碼範圍內最多5名友方小隊或團隊成員，使其在7秒內恢復點生命力。野性痊癒的恢復速度在起步時最快，並且隨時間而減緩，直到結束為止。" lvl="1"/>
         <spell castTime="0" cooldown="6000" maxRange="40">
           <power cost="23" type="mana"/>
         </spell>

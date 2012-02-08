@@ -1,415 +1,415 @@
-<?xml version="1.0" encoding="UTF-8"?><page globalSearch="1" lang="en_gb" requestUrl="/talent-tree.xml">
+<?xml version="1.0" encoding="UTF-8"?><page globalSearch="1" lang="zh_cn" requestUrl="/talent-tree.xml">
   <talentTrees>
-    <tree bgImage="WarlockDestruction" icon="spell_shadow_rainoffire" key="Destruction" name="Destruction" order="2">
-      <talent column="1" icon="spell_shadow_shadowbolt" key="944" name="Improved Shadow Bolt" tier="0">
-        <rank description="Increases the damage done by your Shadow Bolt spell by 2%, and your Shadow Bolt has a 20% chance to cause your target to be vulnerable to spell damage, increasing spell critical strike chance against that target by 5%. Effect lasts 30 sec." lvl="1"/>
-        <rank description="Increases the damage done by your Shadow Bolt spell by 4%, and your Shadow Bolt has a 40% chance to cause your target to be vulnerable to spell damage, increasing spell critical strike chance against that target by 5%. Effect lasts 30 sec." lvl="2"/>
-        <rank description="Increases the damage done by your Shadow Bolt spell by 6%, and your Shadow Bolt has a 60% chance to cause your target to be vulnerable to spell damage, increasing spell critical strike chance against that target by 5%. Effect lasts 30 sec." lvl="3"/>
-        <rank description="Increases the damage done by your Shadow Bolt spell by 8%, and your Shadow Bolt has a 80% chance to cause your target to be vulnerable to spell damage, increasing spell critical strike chance against that target by 5%. Effect lasts 30 sec." lvl="4"/>
-        <rank description="Increases the damage done by your Shadow Bolt spell by 10%, and your Shadow Bolt has a 100% chance to cause your target to be vulnerable to spell damage, increasing spell critical strike chance against that target by 5%. Effect lasts 30 sec." lvl="5"/>
+    <tree bgImage="WarlockDestruction" icon="spell_shadow_rainoffire" key="Destruction" name="毀滅" order="2">
+      <talent column="1" icon="spell_shadow_shadowbolt" key="944" name="強化暗影箭" tier="0">
+        <rank description="暗影箭造成的傷害提高2%，並且你的暗影箭有20%的機率讓目標受到法術傷害時更為脆弱，使其受到法術的致命一擊機率提高5%。此效果可持續30秒。" lvl="1"/>
+        <rank description="暗影箭造成的傷害提高4%，並且你的暗影箭有40%的機率讓目標受到法術傷害時更為脆弱，使其受到法術的致命一擊機率提高5%。此效果可持續30秒。" lvl="2"/>
+        <rank description="暗影箭造成的傷害提高6%，並且你的暗影箭有60%的機率讓目標受到法術傷害時更為脆弱，使其受到法術的致命一擊機率提高5%。此效果可持續30秒。" lvl="3"/>
+        <rank description="暗影箭造成的傷害提高8%，並且你的暗影箭有80%的機率讓目標受到法術傷害時更為脆弱，使其受到法術的致命一擊機率提高5%。此效果可持續30秒。" lvl="4"/>
+        <rank description="暗影箭造成的傷害提高10%，並且你的暗影箭有100%的機率讓目標受到法術傷害時更為脆弱，使其受到法術的致命一擊機率提高5%。此效果可持續30秒。" lvl="5"/>
       </talent>
-      <talent column="2" icon="spell_shadow_deathpact" key="943" name="Bane" tier="0">
-        <rank description="Reduces the casting time of your Shadow Bolt. Chaos Bolt and Immolate spells by 0.1 sec and your Soul Fire spell by 0.4 sec." lvl="1"/>
-        <rank description="Reduces the casting time of your Shadow Bolt. Chaos Bolt and Immolate spells by 0.2 sec and your Soul Fire spell by 0.8 sec." lvl="2"/>
-        <rank description="Reduces the casting time of your Shadow Bolt. Chaos Bolt and Immolate spells by 0.3 sec and your Soul Fire spell by 1.2 sec." lvl="3"/>
-        <rank description="Reduces the casting time of your Shadow Bolt. Chaos Bolt and Immolate spells by 0.4 sec and your Soul Fire spell by 1.6 sec." lvl="4"/>
-        <rank description="Reduces the casting time of your Shadow Bolt. Chaos Bolt and Immolate spells by 0.5 sec and your Soul Fire spell by 2 sec." lvl="5"/>
+      <talent column="2" icon="spell_shadow_deathpact" key="943" name="災禍" tier="0">
+        <rank description="使你暗影箭、混沌箭和獻祭的施法時間縮短0.1秒，靈魂之火的施法時間縮短0.4秒。" lvl="1"/>
+        <rank description="使你暗影箭、混沌箭和獻祭的施法時間縮短0.2秒，靈魂之火的施法時間縮短0.8秒。" lvl="2"/>
+        <rank description="使你暗影箭、混沌箭和獻祭的施法時間縮短0.3秒，靈魂之火的施法時間縮短1.2秒。" lvl="3"/>
+        <rank description="使你暗影箭、混沌箭和獻祭的施法時間縮短0.4秒，靈魂之火的施法時間縮短1.6秒。" lvl="4"/>
+        <rank description="使你暗影箭、混沌箭和獻祭的施法時間縮短0.4秒，靈魂之火的施法時間縮短2秒。" lvl="5"/>
       </talent>
-      <talent column="0" icon="spell_fire_fire" key="982" name="Aftermath" tier="1">
-        <rank description="Increases the periodic damage done by your Immolate by 3%, and your Conflagrate has a 50% chance to daze the target for 5 sec." lvl="1"/>
-        <rank description="Increases the periodic damage done by your Immolate by 6%, and your Conflagrate has a 100% chance to daze the target for 5 sec." lvl="2"/>
+      <talent column="0" icon="spell_fire_fire" key="982" name="清算" tier="1">
+        <rank description="使你獻祭造成的週期性傷害提高3%，並且焚燒有50%的機率令目標暈眩5秒。" lvl="1"/>
+        <rank description="使你獻祭造成的週期性傷害提高6%，並且焚燒有100%的機率令目標暈眩5秒。" lvl="2"/>
       </talent>
-      <talent column="1" icon="ability_mage_moltenarmor" key="1887" name="Molten Skin" tier="1">
-        <rank description="Reduces all damage taken by 2%." lvl="1"/>
-        <rank description="Reduces all damage taken by 4%." lvl="2"/>
-        <rank description="Reduces all damage taken by 6%." lvl="3"/>
+      <talent column="1" icon="ability_mage_moltenarmor" key="1887" name="熔火之膚" tier="1">
+        <rank description="受到的所有傷害降低2%。" lvl="1"/>
+        <rank description="受到的所有傷害降低4%。" lvl="2"/>
+        <rank description="受到的所有傷害降低6%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_fire_windsofwoe" key="941" name="Cataclysm" tier="1">
-        <rank description="Reduces the Mana cost of your Destruction spells by 4%." lvl="1"/>
-        <rank description="Reduces the Mana cost of your Destruction spells by 7%." lvl="2"/>
-        <rank description="Reduces the Mana cost of your Destruction spells by 10%." lvl="3"/>
+      <talent column="2" icon="spell_fire_windsofwoe" key="941" name="災變" tier="1">
+        <rank description="使你毀滅系法術的法力消耗降低4%。" lvl="1"/>
+        <rank description="使你毀滅系法術的法力消耗降低7%。" lvl="2"/>
+        <rank description="使你毀滅系法術的法力消耗降低10%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_fire_firebolt" key="983" name="Demonic Power" tier="2">
-        <rank description="Reduces the cooldown of your Succubus' Lash of Pain spell by 3 sec. and reduces the casting time of your Imp's Firebolt spell by 0.25 sec." lvl="1"/>
-        <rank description="Reduces the cooldown of your Succubus' Lash of Pain spell by 6 sec. and reduces the casting time of your Imp's Firebolt spell by 0.50 sec." lvl="2"/>
+      <talent column="0" icon="spell_fire_firebolt" key="983" name="惡魔之能" tier="2">
+        <rank description="使魅魔劇痛鞭笞的冷卻時間縮短3秒，小鬼火焰箭的施法時間縮短0.25秒。" lvl="1"/>
+        <rank description="使魅魔劇痛鞭笞的冷卻時間縮短6秒，小鬼火焰箭的施法時間縮短0.5秒。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_shadow_scourgebuild" key="963" name="Shadowburn" tier="2">
-        <rank description="Instantly blasts the target for 87 to 99 Shadow damage.  If the target dies within 5 sec of Shadowburn, and yields experience or honor, the caster gains a Soul Shard." lvl="1"/>
+      <talent column="1" icon="spell_shadow_scourgebuild" key="963" name="暗影灼燒" tier="2">
+        <rank description="立即使用暗影能量衝擊目標，對其造成87到99點暗影傷害。如果目標被暗影灼燒後5秒內死亡，且施法者因此獲得經驗值或榮譽值，則施法者獲得一塊靈魂裂片。" lvl="1"/>
         <spell castTime="0" cooldown="15000" maxRange="20">
           <power cost="20" type="mana"/>
         </spell>
       </talent>
-      <talent column="2" icon="spell_shadow_shadowwordpain" key="967" name="Ruin" tier="2">
-        <rank description="Increases the critical strike damage bonus of your Destruction spells and your Imp's Firebolt spell by 20%." lvl="1"/>
-        <rank description="Increases the critical strike damage bonus of your Destruction spells and your Imp's Firebolt spell by 40%." lvl="2"/>
-        <rank description="Increases the critical strike damage bonus of your Destruction spells and your Imp's Firebolt spell by 60%." lvl="3"/>
-        <rank description="Increases the critical strike damage bonus of your Destruction spells and your Imp's Firebolt spell by 80%." lvl="4"/>
-        <rank description="Increases the critical strike damage bonus of your Destruction spells and your Imp's Firebolt spell by 100%." lvl="5"/>
+      <talent column="2" icon="spell_shadow_shadowwordpain" key="967" name="毀滅" tier="2">
+        <rank description="使你毀滅系法術以及小鬼火焰箭的致命一擊傷害加成提高20%。" lvl="1"/>
+        <rank description="使你毀滅系法術以及小鬼火焰箭的致命一擊傷害加成提高40%。" lvl="2"/>
+        <rank description="使你毀滅系法術以及小鬼火焰箭的致命一擊傷害加成提高60%。" lvl="3"/>
+        <rank description="使你毀滅系法術以及小鬼火焰箭的致命一擊傷害加成提高80%。" lvl="4"/>
+        <rank description="使你毀滅系法術以及小鬼火焰箭的致命一擊傷害加成提高100%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="spell_fire_lavaspawn" key="985" name="Intensity" tier="3">
-        <rank description="Reduces the pushback suffered from damaging attacks while casting or channeling any Destruction spell by 35%." lvl="1"/>
-        <rank description="Reduces the pushback suffered from damaging attacks  while casting or channeling any Destruction spell by 70%." lvl="2"/>
+      <talent column="0" icon="spell_fire_lavaspawn" key="985" name="激化" tier="3">
+        <rank description="使你在施放或引導毀滅系法術時，因受到傷害性攻擊而損失的施法時間縮短35%。" lvl="1"/>
+        <rank description="使你在施放或引導毀滅系法術時，因受到傷害性攻擊而損失的施法時間縮短70%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_shadow_corpseexplode" key="964" name="Destructive Reach" tier="3">
-        <rank description="Increases the range of your Destruction spells by 10% and reduces threat caused by Destruction spells by 10%." lvl="1"/>
-        <rank description="Increases the range of your Destruction spells by 20% and reduces threat caused by Destruction spells by 20%." lvl="2"/>
+      <talent column="1" icon="spell_shadow_corpseexplode" key="964" name="毀滅延伸" tier="3">
+        <rank description="使你毀滅系法術的射程延長10%，並且產生的威脅值降低10%。" lvl="1"/>
+        <rank description="使你毀滅系法術的射程延長20%，並且產生的威脅值降低20%。" lvl="2"/>
       </talent>
-      <talent column="3" icon="spell_fire_soulburn" key="965" name="Improved Searing Pain" tier="3">
-        <rank description="Increases the critical strike chance of your Searing Pain spell by 4%." lvl="1"/>
-        <rank description="Increases the critical strike chance of your Searing Pain spell by 7%." lvl="2"/>
-        <rank description="Increases the critical strike chance of your Searing Pain spell by 10%." lvl="3"/>
+      <talent column="3" icon="spell_fire_soulburn" key="965" name="強化灼熱之痛" tier="3">
+        <rank description="使你灼熱之痛造成致命一擊的機率提高4%。" lvl="1"/>
+        <rank description="使你灼熱之痛造成致命一擊的機率提高7%。" lvl="2"/>
+        <rank description="使你灼熱之痛造成致命一擊的機率提高10%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_fire_playingwithfire" key="1817" name="Backlash" requires="985" tier="4">
-        <rank description="Increases your critical strike chance with spells by an additional 1% and gives you a 8% chance when hit by a physical attack to reduce the cast time of your next Shadow Bolt or Incinerate spell by 100%.  This effect lasts 8 sec and will not occur more than once every 8 seconds." lvl="1"/>
-        <rank description="Increases your critical strike chance with spells by an additional 2% and gives you a 16% chance when hit by a physical attack to reduce the cast time of your next Shadow Bolt or Incinerate spell by 100%.  This effect lasts 8 sec and will not occur more than once every 8 seconds." lvl="2"/>
-        <rank description="Increases your critical strike chance with spells by an additional 3% and gives you a 25% chance when hit by a physical attack to reduce the cast time of your next Shadow Bolt or Incinerate spell by 100%.  This effect lasts 8 sec and will not occur more than once every 8 seconds." lvl="3"/>
+      <talent column="0" icon="spell_fire_playingwithfire" key="1817" name="反衝" requires="985" tier="4">
+        <rank description="使你法術造成致命一擊的機率額外提高1%，並賦予你8%的機率在被物理攻擊命中後使你的下一個暗影箭或燒盡的施法時間縮短100%。此效果可持續8秒，並且無法在8秒內再次啟動。" lvl="1"/>
+        <rank description="使你法術造成致命一擊的機率額外提高2%，並賦予你16%的機率在被物理攻擊命中後使你的下一個暗影箭或燒盡的施法時間縮短100%。此效果可持續8秒，並且無法在8秒內再次啟動。" lvl="2"/>
+        <rank description="使你法術造成致命一擊的機率額外提高3%，並賦予你25%的機率在被物理攻擊命中後使你的下一個暗影箭或燒盡的施法時間縮短100%。此效果可持續8秒，並且無法在8秒內再次啟動。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_fire_immolation" key="961" name="Improved Immolate" tier="4">
-        <rank description="Increases the damage done by your Immolate spell by 10%." lvl="1"/>
-        <rank description="Increases the damage done by your Immolate spell by 20%." lvl="2"/>
-        <rank description="Increases the damage done by your Immolate spell by 30%." lvl="3"/>
+      <talent column="1" icon="spell_fire_immolation" key="961" name="強化獻祭" tier="4">
+        <rank description="使你獻祭法術造成的傷害提高10%。" lvl="1"/>
+        <rank description="使你獻祭法術造成的傷害提高20%。" lvl="2"/>
+        <rank description="使你獻祭法術造成的傷害提高30%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_fire_flameshock" key="981" name="Devastation" requires="967" tier="4">
-        <rank description="Increases the critical strike chance of your Destruction spells by 5%." lvl="1"/>
+      <talent column="2" icon="spell_fire_flameshock" key="981" name="破壞" requires="967" tier="4">
+        <rank description="使你毀滅系法術造成致命一擊的機率提高5%。" lvl="1"/>
       </talent>
-      <talent column="0" icon="spell_shadow_netherprotection" key="1679" name="Nether Protection" tier="5">
-        <rank description="After being hit with a spell, you have a 10% chance to gain Nether Protection, reducing all damage by that spell school by 30% for 8 sec." lvl="1"/>
-        <rank description="After being hit with a spell, you have a 20% chance to gain Nether Protection, reducing all damage by that spell school by 30% for 8 sec." lvl="2"/>
-        <rank description="After being hit with a spell, you have a 30% chance to gain Nether Protection, reducing all damage by that spell school by 30% for 8 sec." lvl="3"/>
+      <talent column="0" icon="spell_shadow_netherprotection" key="1679" name="虛空保護" tier="5">
+        <rank description="在被法術擊中之後，你有10%的機率獲得虛空保護，使你受到該系法術的傷害降低30%，持續8秒。" lvl="1"/>
+        <rank description="在被法術擊中之後，你有20%的機率獲得虛空保護，使你受到該系法術的傷害降低30%，持續8秒。" lvl="2"/>
+        <rank description="在被法術擊中之後，你有30%的機率獲得虛空保護，使你受到該系法術的傷害降低30%，持續8秒。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_fire_selfdestruct" key="966" name="Emberstorm" tier="5">
-        <rank description="Increases the damage done by your Fire spells by 3% and reduces the cast time of your Incinerate spell by 0.05 sec." lvl="1"/>
-        <rank description="Increases the damage done by your Fire spells by 6% and reduces the cast time of your Incinerate spell by 0.10 sec." lvl="2"/>
-        <rank description="Increases the damage done by your Fire spells by 9% and reduces the cast time of your Incinerate spell by 0.15 sec." lvl="3"/>
-        <rank description="Increases the damage done by your Fire spells by 12% and reduces the cast time of your Incinerate spell by 0.20 sec." lvl="4"/>
-        <rank description="Increases the damage done by your Fire spells by 15% and reduces the cast time of your Incinerate spell by 0.25 sec." lvl="5"/>
+      <talent column="2" icon="spell_fire_selfdestruct" key="966" name="餘燼風暴" tier="5">
+        <rank description="使你火焰法術造成的傷害提高3%，燒盡法術的施法時間縮短0.05秒。" lvl="1"/>
+        <rank description="使你火焰法術造成的傷害提高6%，燒盡法術的施法時間縮短0.1秒。" lvl="2"/>
+        <rank description="使你火焰法術造成的傷害提高9%，燒盡法術的施法時間縮短0.15秒。" lvl="3"/>
+        <rank description="使你火焰法術造成的傷害提高12%，燒盡法術的施法時間縮短0.2秒。" lvl="4"/>
+        <rank description="使你火焰法術造成的傷害提高15%，燒盡法術的施法時間縮短0.25秒。" lvl="5"/>
       </talent>
-      <talent column="1" icon="spell_fire_fireball" key="968" name="Conflagrate" requires="961" tier="6">
-        <rank description="Consumes an Immolate or Shadowflame effect on the enemy target to instantly deal damage equal to 60% of your Immolate or Shadowflame, and causes an additional 40% damage over 6 sec." lvl="1"/>
+      <talent column="1" icon="spell_fire_fireball" key="968" name="焚燒" requires="961" tier="6">
+        <rank description="]消耗一個敵方目標身上的獻祭或暗影之焰效果，立即對其造成相當於你獻祭或暗影之焰的60%傷害，同時在6秒內額外造成相當於其20%的傷害。" lvl="1"/>
         <spell castTime="0" cooldown="10000" maxRange="30">
           <power cost="16" type="mana"/>
         </spell>
       </talent>
-      <talent column="2" icon="spell_shadow_soulleech_3" key="1678" name="Soul Leech" tier="6">
-        <rank description="Gives your Shadow Bolt, Shadowburn, Chaos Bolt, Soul Fire, Incinerate, Searing Pain and Conflagrate spells a 10% chance to return health equal to 20% of the damage caused." lvl="1"/>
-        <rank description="Gives your Shadow Bolt, Shadowburn, Chaos Bolt, Soul Fire, Incinerate, Searing Pain and Conflagrate spells a 20% chance to return health equal to 20% of the damage caused." lvl="2"/>
-        <rank description="Gives your Shadow Bolt, Shadowburn, Chaos Bolt, Soul Fire, Incinerate, Searing Pain and Conflagrate spells a 30% chance to return health equal to 20% of the damage caused." lvl="3"/>
+      <talent column="2" icon="spell_shadow_soulleech_3" key="1678" name="靈魂汲取" tier="6">
+        <rank description="使你的暗影箭、暗影灼燒、混沌箭、靈魂之火、燒盡、灼熱之痛及焚燒法術有10%的機率恢復相當於所造成20%傷害的生命力。" lvl="1"/>
+        <rank description="使你的暗影箭、暗影灼燒、混沌箭、靈魂之火、燒盡、灼熱之痛及焚燒法術有20%的機率恢復相當於所造成20%傷害的生命力。" lvl="2"/>
+        <rank description="使你的暗影箭、暗影灼燒、混沌箭、靈魂之火、燒盡、灼熱之痛及焚燒法術有30%的機率恢復相當於所造成20%傷害的生命力。" lvl="3"/>
       </talent>
-      <talent column="3" icon="spell_fire_volcano" key="986" name="Pyroclasm" tier="6">
-        <rank description="When you critically strike with Searing Pain or Conflagrate, your Fire and Shadow spell damage is increased by 2% for 10 sec." lvl="1"/>
-        <rank description="When you critically strike with Searing Pain or Conflagrate, your Fire and Shadow spell damage is increased by 4% for 10 sec." lvl="2"/>
-        <rank description="When you critically strike with Searing Pain or Conflagrate, your Fire and Shadow spell damage is increased by 6% for 10 sec." lvl="3"/>
+      <talent column="3" icon="spell_fire_volcano" key="986" name="火焰衝撞" tier="6">
+        <rank description="當你的灼熱之痛或焚燒造成致命一擊時，你的火焰和暗影法術傷害可提高2%，持續10秒。" lvl="1"/>
+        <rank description="當你的灼熱之痛或焚燒造成致命一擊時，你的火焰和暗影法術傷害可提高4%，持續10秒。" lvl="2"/>
+        <rank description="當你的灼熱之痛或焚燒造成致命一擊時，你的火焰和暗影法術傷害可提高6%，持續10秒。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_shadow_shadowandflame" key="1677" name="Shadow and Flame" tier="7">
-        <rank description="Your Shadow Bolt, Shadowburn, Chaos Bolt and Incinerate spells gain an additional 4% of your bonus spell damage effects." lvl="1"/>
-        <rank description="Your Shadow Bolt, Shadowburn, Chaos Bolt and Incinerate spells gain an additional 8% of your bonus spell damage effects." lvl="2"/>
-        <rank description="Your Shadow Bolt, Shadowburn, Chaos Bolt and Incinerate spells gain an additional 12% of your bonus spell damage effects." lvl="3"/>
-        <rank description="Your Shadow Bolt, Shadowburn, Chaos Bolt and Incinerate spells gain an additional 16% of your bonus spell damage effects." lvl="4"/>
-        <rank description="Your Shadow Bolt, Shadowburn, Chaos Bolt and Incinerate spells gain an additional 20% of your bonus spell damage effects." lvl="5"/>
+      <talent column="1" icon="spell_shadow_shadowandflame" key="1677" name="暗影與火焰" tier="7">
+        <rank description="你的暗影箭、暗影灼燒、混沌箭和燒盡法術從你的法術傷害加成效果中獲得額外4%的效果。" lvl="1"/>
+        <rank description="你的暗影箭、暗影灼燒、混沌箭和燒盡法術從你的法術傷害加成效果中獲得額外8%的效果。" lvl="2"/>
+        <rank description="你的暗影箭、暗影灼燒、混沌箭和燒盡法術從你的法術傷害加成效果中獲得額外12%的效果。" lvl="3"/>
+        <rank description="你的暗影箭、暗影灼燒、混沌箭和燒盡法術從你的法術傷害加成效果中獲得額外16%的效果。" lvl="4"/>
+        <rank description="你的暗影箭、暗影灼燒、混沌箭和燒盡法術從你的法術傷害加成效果中獲得額外20%的效果。" lvl="5"/>
       </talent>
-      <talent column="2" icon="ability_warlock_improvedsoulleech" key="1889" name="Improved Soul Leech" requires="1678" tier="7">
-        <rank description="Your Soul Leech effect also restores mana to you and your summoned demon equal to 1% of maximum mana, and has a 50% chance to grant up to 10 party or raid members mana regeneration equal to 1% of maximum mana per 5 sec. Lasts for 15 sec." lvl="1"/>
-        <rank description="Your Soul Leech effect also restores mana to you and your summoned demon equal to 2% of maximum mana, and has a 100% chance to grant up to 10 party or raid members mana regeneration equal to 1% of maximum mana per 5 sec. Lasts for 15 sec." lvl="2"/>
+      <talent column="2" icon="ability_warlock_improvedsoulleech" key="1889" name="強化靈魂汲取" requires="1678" tier="7">
+        <rank description="你的靈魂汲取效果可同時使你和你召喚的惡魔恢復相當於法力上限1%的法力，並且有50%的機率提供最多10名小隊或團隊成員每5秒相當於法力上限1%的法力恢復速度，持續15秒。" lvl="1"/>
+        <rank description="你的靈魂汲取效果可同時使你和你召喚的惡魔恢復相當於法力上限2%的法力，並且有100%的機率提供最多10名小隊或團隊成員每5秒相當於法力上限1%的法力恢復速度，持續15秒。" lvl="2"/>
       </talent>
-      <talent column="0" icon="ability_warlock_backdraft" key="1888" name="Backdraft" requires="968" tier="8">
-        <rank description="When you cast Conflagrate, the cast time and global cooldown of your next three Destruction spells is reduced by 10%. Lasts 15 sec." lvl="1"/>
-        <rank description="When you cast Conflagrate, the cast time and global cooldown of your next three Destruction spells is reduced by 20%. Lasts 15 sec." lvl="2"/>
-        <rank description="When you cast Conflagrate, the cast time and global cooldown of your next three Destruction spells is reduced by 30%. Lasts 15 sec." lvl="3"/>
+      <talent column="0" icon="ability_warlock_backdraft" key="1888" name="爆燃" requires="968" tier="8">
+        <rank description="當你施放焚燒時，你的下三個毀滅系法術的施法時間和共用冷卻時間縮短10%，持續15秒。" lvl="1"/>
+        <rank description="當你施放焚燒時，你的下三個毀滅系法術的施法時間和共用冷卻時間縮短20%，持續15秒。" lvl="2"/>
+        <rank description="當你施放焚燒時，你的下三個毀滅系法術的施法時間和共用冷卻時間縮短30%，持續15秒。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_shadow_shadowfury" key="1676" name="Shadowfury" tier="8">
-        <rank description="Shadowfury is unleashed, causing 343 to 407 Shadow damage and stunning all enemies within 8 yds for 3 sec." lvl="1"/>
+      <talent column="1" icon="spell_shadow_shadowfury" key="1676" name="暗影之怒" tier="8">
+        <rank description="釋放暗影之怒，造成343到407點暗影傷害並使半徑8碼範圍內的所有敵人昏迷，持續3秒。" lvl="1"/>
         <spell castTime="0" cooldown="20000" maxRange="30">
           <power cost="27" type="mana"/>
         </spell>
       </talent>
-      <talent column="2" icon="ability_warlock_empoweredimp" key="2045" name="Empowered Imp" tier="8">
-        <rank description="Increases the damage done by your Imp by 10%, and all critical hits done by your Imp have a 33% chance to increase your spell critical hit chance for your next spell by 100%. This effect lasts 8 sec." lvl="1"/>
-        <rank description="Increases the damage done by your Imp by 20%, and all critical hits done by your Imp have a 66% chance to increase your spell critical hit chance for your next spell by 100%. This effect lasts 8 sec." lvl="2"/>
-        <rank description="Increases the damage done by your Imp by 30%, and all critical hits done by your Imp have a 100% chance to increase your spell critical hit chance for your next spell by 100%. This effect lasts 8 sec." lvl="3"/>
+      <talent column="2" icon="ability_warlock_empoweredimp" key="2045" name="強力小鬼" tier="8">
+        <rank description="使你小鬼造成的傷害提高5%，並在造成致命一擊時有33%的機率使你下一個法術的致命一擊機率提高100%。此效果可持續8秒。" lvl="1"/>
+        <rank description="使你小鬼造成的傷害提高10%，並在造成致命一擊時有66%的機率使你下一個法術的致命一擊機率提高100%。此效果可持續8秒。" lvl="2"/>
+        <rank description="使你小鬼造成的傷害提高15%，並在造成致命一擊時有100%的機率使你下一個法術的致命一擊機率提高100%。此效果可持續8秒。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_warlock_fireandbrimstone" key="1890" name="Fire and Brimstone" tier="9">
-        <rank description="Increases the damage done by your Incinerate and Chaos Bolt spells to targets afflicted by your Immolate by 2%, and the critical strike chance of your Conflagrate spell is increased by 5%." lvl="1"/>
-        <rank description="Increases the damage done by your Incinerate and Chaos Bolt spells to targets afflicted by your Immolate by 4%, and the critical strike chance of your Conflagrate spell is increased by 10%." lvl="2"/>
-        <rank description="Increases the damage done by your Incinerate and Chaos Bolt spells to targets afflicted by your Immolate by 6%, and the critical strike chance of your Conflagrate spell is increased by 15%." lvl="3"/>
-        <rank description="Increases the damage done by your Incinerate and Chaos Bolt spells to targets afflicted by your Immolate by 8%, and the critical strike chance of your Conflagrate spell is increased by 20%." lvl="4"/>
-        <rank description="Increases the damage done by your Incinerate and Chaos Bolt spells to targets afflicted by your Immolate by 10%, and the critical strike chance of your Conflagrate spell is increased by 25%." lvl="5"/>
+      <talent column="1" icon="ability_warlock_fireandbrimstone" key="1890" name="硫磺與火焰" tier="9">
+        <rank description="使你的燒盡和混沌箭法術對受你獻祭法術影響的目標所造成的傷害提高2%，並且提高焚燒的致命一擊機率5%。" lvl="1"/>
+        <rank description="使你的燒盡和混沌箭法術對受你獻祭法術影響的目標所造成的傷害提高4%，並且提高焚燒的致命一擊機率10%。" lvl="2"/>
+        <rank description="使你的燒盡和混沌箭法術對受你獻祭法術影響的目標所造成的傷害提高6%，並且提高焚燒的致命一擊機率15%。" lvl="3"/>
+        <rank description="使你的燒盡和混沌箭法術對受你獻祭法術影響的目標所造成的傷害提高8%，並且提高焚燒的致命一擊機率20%。" lvl="4"/>
+        <rank description="使你的燒盡和混沌箭法術對受你獻祭法術影響的目標所造成的傷害提高10%，並且提高焚燒的致命一擊機率25%。" lvl="5"/>
       </talent>
-      <talent column="1" icon="ability_warlock_chaosbolt" key="1891" name="Chaos Bolt" tier="10">
-        <rank description="Sends a bolt of chaotic fire at the enemy, dealing 837 to 1061 Fire damage. Chaos Bolt cannot be resisted, and pierces through all absorption effects." lvl="1"/>
+      <talent column="1" icon="ability_warlock_chaosbolt" key="1891" name="混沌箭" tier="10">
+        <rank description="對敵人射出一發混沌火焰之箭，造成837到1061點火焰傷害。混沌箭無法被抵抗，並且可以穿透所有吸收傷害的效果。" lvl="1"/>
         <spell castTime="2500" cooldown="12000" maxRange="30">
           <power cost="7" type="mana"/>
         </spell>
       </talent>
     </tree>
-    <tree bgImage="WarlockSummoning" icon="spell_shadow_metamorphosis" key="Demonology" name="Demonology" order="1">
-      <talent column="0" icon="inv_stone_04" key="1221" name="Improved Healthstone" tier="0">
-        <rank description="Increases the amount of Health restored by your Healthstone by 10%." lvl="1"/>
-        <rank description="Increases the amount of Health restored by your Healthstone by 20%." lvl="2"/>
+    <tree bgImage="WarlockSummoning" icon="spell_shadow_metamorphosis" key="Demonology" name="惡魔學識" order="1">
+      <talent column="0" icon="inv_stone_04" key="1221" name="強化治療石" tier="0">
+        <rank description="使你治療石所恢復的生命力增加10%。" lvl="1"/>
+        <rank description="使你治療石所恢復的生命力增加20%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_shadow_summonimp" key="1222" name="Improved Imp" tier="0">
-        <rank description="Increases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by 10%." lvl="1"/>
-        <rank description="Increases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by 20%." lvl="2"/>
-        <rank description="Increases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by 30%." lvl="3"/>
+      <talent column="1" icon="spell_shadow_summonimp" key="1222" name="強化小鬼" tier="0">
+        <rank description="使小鬼火焰箭、火焰之盾和血之契印的效果提高10%。" lvl="1"/>
+        <rank description="使小鬼火焰箭、火焰之盾和血之契印的效果提高20%。" lvl="2"/>
+        <rank description="使小鬼火焰箭、火焰之盾和血之契印的效果提高30%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_shadow_metamorphosis" key="1223" name="Demonic Embrace" tier="0">
-        <rank description="Increases your total Stamina by 4%." lvl="1"/>
-        <rank description="Increases your total Stamina by 7%." lvl="2"/>
-        <rank description="Increases your total Stamina by 10%." lvl="3"/>
+      <talent column="2" icon="spell_shadow_metamorphosis" key="1223" name="惡魔之擁" tier="0">
+        <rank description="提高你的總耐力4%。" lvl="1"/>
+        <rank description="提高你的總耐力7%。" lvl="2"/>
+        <rank description="提高你的總耐力10%。" lvl="3"/>
       </talent>
-      <talent column="3" icon="spell_shadow_felmending" key="1883" name="Fel Synergy" tier="0">
-        <rank description="You have a 50% chance to heal your pet for 15% of the amount of spell damage done by you." lvl="1"/>
-        <rank description="You have a 100% chance to heal your pet for 15% of the amount of spell damage done by you." lvl="2"/>
+      <talent column="3" icon="spell_shadow_felmending" key="1883" name="惡魔協調" tier="0">
+        <rank description="你有50%的機率將你造成的15%法術傷害轉而治療你的寵物。" lvl="1"/>
+        <rank description="你有100%的機率將你造成的15%法術傷害轉而治療你的寵物。" lvl="2"/>
       </talent>
-      <talent column="0" icon="spell_shadow_lifedrain" key="1224" name="Improved Health Funnel" tier="1">
-        <rank description="Increases the amount of Health transferred by your Health Funnel spell by 10% and reduces the health cost by 10%. In addition, your summoned Demon takes 15% less damage while under the effect of your Health Funnel." lvl="1"/>
-        <rank description="Increases the amount of Health transferred by your Health Funnel spell by 20% and reduces the health cost by 20%. In addition, your summoned Demon takes 30% less damage while under the effect of your Health Funnel." lvl="2"/>
+      <talent column="0" icon="spell_shadow_lifedrain" key="1224" name="強化生命通道" tier="1">
+        <rank description="使你生命通道法術所傳送的生命力提高10%，並且消耗的生命力降低10%。此外，你召喚的惡魔在生命通道的影響下所受到的傷害降低15%。" lvl="1"/>
+        <rank description="使你生命通道法術所傳送的生命力提高20%，並且消耗的生命力降低20%。此外，你召喚的惡魔在生命通道的影響下所受到的傷害降低30%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_shadow_summonvoidwalker" key="1225" name="Demonic Brutality" tier="1">
-        <rank description="Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by 10%, and increases the attack power bonus on your Felguard's Demonic Frenzy effect by 1%." lvl="1"/>
-        <rank description="Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by 20%, and increases the attack power bonus on your Felguard's Demonic Frenzy effect by 2%." lvl="2"/>
-        <rank description="Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by 30%, and increases the attack power bonus on your Felguard's Demonic Frenzy effect by 3%." lvl="3"/>
+      <talent column="1" icon="spell_shadow_summonvoidwalker" key="1225" name="魔性暴虐" tier="1">
+        <rank description="使你虛無行者的折磨、吞噬暗影、犧牲和受難法術的效果提高10%，並使你惡魔守衛的惡魔狂亂攻擊強度加成提高1%。" lvl="1"/>
+        <rank description="使你虛無行者的折磨、吞噬暗影、犧牲和受難法術的效果提高20%，並使你惡魔守衛的惡魔狂亂攻擊強度加成提高2%。" lvl="2"/>
+        <rank description="使你虛無行者的折磨、吞噬暗影、犧牲和受難法術的效果提高30%，並使你惡魔守衛的惡魔狂亂攻擊強度加成提高3%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_holy_magicalsentry" key="1242" name="Fel Vitality" tier="1">
-        <rank description="Increases the Stamina and Intellect of your Imp, Voidwalker, Succubus, Felhunter and Felguard by 5% and increases your maximum health and mana by 1%." lvl="1"/>
-        <rank description="Increases the Stamina and Intellect of your Imp, Voidwalker, Succubus, Felhunter and Felguard by 10% and increases your maximum health and mana by 2%." lvl="2"/>
-        <rank description="Increases the Stamina and Intellect of your Imp, Voidwalker, Succubus, Felhunter and Felguard by 15% and increases your maximum health and mana by 3%." lvl="3"/>
+      <talent column="2" icon="spell_holy_magicalsentry" key="1242" name="惡魔活力" tier="1">
+        <rank description="使你小鬼、虛無行者、魅魔、惡魔獵犬和惡魔守衛的耐力及智力增加5%，並使你的生命力和法力上限提高1%。" lvl="1"/>
+        <rank description="使你小鬼、虛無行者、魅魔、惡魔獵犬和惡魔守衛的耐力及智力增加10%，並使你的生命力和法力上限提高2%。" lvl="2"/>
+        <rank description="使你小鬼、虛無行者、魅魔、惡魔獵犬和惡魔守衛的耐力及智力增加15%，並使你的生命力和法力上限提高3%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_shadow_summonsuccubus" key="1243" name="Improved Succubus" tier="2">
-        <rank description="Reduces the cast time of your Succubus' Seduction by 22%, and increases the duration of your Succubus' Seduction and Lesser Invisibility spells by 10%." lvl="1"/>
-        <rank description="Reduces the cast time of your Succubus' Seduction by 44%, and increases the duration of your Succubus' Seduction and Lesser Invisibility spells by 20%." lvl="2"/>
-        <rank description="Reduces the cast time of your Succubus' Seduction by 66%, and increases the duration of your Succubus' Seduction and Lesser Invisibility spells by 30%." lvl="3"/>
+      <talent column="0" icon="spell_shadow_summonsuccubus" key="1243" name="強化魅魔" tier="2">
+        <rank description="使你魅魔的誘惑施法時間縮短22%，並使魅魔的誘惑和次級隱形術持續時間延長10%。" lvl="1"/>
+        <rank description="使你魅魔的誘惑施法時間縮短44%，並使魅魔的誘惑和次級隱形術持續時間延長20%。" lvl="2"/>
+        <rank description="使你魅魔的誘惑施法時間縮短66%，並使魅魔的誘惑和次級隱形術持續時間延長30%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_shadow_gathershadows" key="1282" name="Soul Link" tier="2">
-        <rank description="When active, 20% of all damage taken by the caster is taken by your Imp, Voidwalker, Succubus, Felhunter, Felguard, or enslaved demon instead.  That damage cannot be prevented. Lasts as long as the demon is active and controlled." lvl="1"/>
+      <talent column="1" icon="spell_shadow_gathershadows" key="1282" name="靈魂鏈結" tier="2">
+        <rank description="啟動之後，施法者承受的傷害有20%改由你的小鬼、虛無行者、魅魔、惡魔獵犬、惡魔守衛或者奴役中的惡魔來承擔。只要惡魔保持啟動且受控制的狀態，此傷害分攤的效果將不受其他因素所影響。" lvl="1"/>
         <spell castTime="0" maxRange="100">
           <power cost="16" type="mana"/>
         </spell>
       </talent>
-      <talent column="2" icon="spell_nature_removecurse" key="1226" name="Fel Domination" tier="2">
-        <rank description="Your next Imp, Voidwalker, Succubus, Felhunter or Felguard Summon spell has its casting time reduced by 5.5 sec and its Mana cost reduced by 50%." lvl="1"/>
+      <talent column="2" icon="spell_nature_removecurse" key="1226" name="惡魔支配" tier="2">
+        <rank description="你的下一個召喚小鬼、虛無行者、魅魔、惡魔獵犬和惡魔守衛的法術施法時間縮短5.5秒，法力消耗減少50%。" lvl="1"/>
         <spell castTime="0" cooldown="180000"/>
       </talent>
-      <talent column="3" icon="spell_shadow_ragingscream" key="1671" name="Demonic Aegis" tier="2">
-        <rank description="Increases the effectiveness of your Demon Armor and Fel Armor spells by 10%." lvl="1"/>
-        <rank description="Increases the effectiveness of your Demon Armor and Fel Armor spells by 20%." lvl="2"/>
-        <rank description="Increases the effectiveness of your Demon Armor and Fel Armor spells by 30%." lvl="3"/>
+      <talent column="3" icon="spell_shadow_ragingscream" key="1671" name="惡魔庇護" tier="2">
+        <rank description="使你惡魔護甲和魔化護甲的效果提高10%。" lvl="1"/>
+        <rank description="使你惡魔護甲和魔化護甲的效果提高20%。" lvl="2"/>
+        <rank description="使你惡魔護甲和魔化護甲的效果提高30%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_shadow_shadowworddominate" key="1262" name="Unholy Power" requires="1282" tier="3">
-        <rank description="Increases the damage done by your Voidwalker, Succubus, Felhunter and Felguard's melee attacks and your Imp's Firebolt by 4%." lvl="1"/>
-        <rank description="Increases the damage done by your Voidwalker, Succubus, Felhunter and Felguard's melee attacks and your Imp's Firebolt by 8%." lvl="2"/>
-        <rank description="Increases the damage done by your Voidwalker, Succubus, Felhunter and Felguard's melee attacks and your Imp's Firebolt by 12%." lvl="3"/>
-        <rank description="Increases the damage done by your Voidwalker, Succubus, Felhunter and Felguard's melee attacks and your Imp's Firebolt by 16%." lvl="4"/>
-        <rank description="Increases the damage done by your Voidwalker, Succubus, Felhunter and Felguard's melee attacks and your Imp's Firebolt by 20%." lvl="5"/>
+      <talent column="1" icon="spell_shadow_shadowworddominate" key="1262" name="邪惡強化" requires="1282" tier="3">
+        <rank description="使你的虛無行者、魅魔、惡魔獵犬和惡魔守衛的近戰攻擊，以及小鬼火焰箭所造成的傷害提高4%。" lvl="1"/>
+        <rank description="使你的虛無行者、魅魔、惡魔獵犬和惡魔守衛的近戰攻擊，以及小鬼火焰箭所造成的傷害提高8%。" lvl="2"/>
+        <rank description="使你的虛無行者、魅魔、惡魔獵犬和惡魔守衛的近戰攻擊，以及小鬼火焰箭所造成的傷害提高12%。" lvl="3"/>
+        <rank description="使你的虛無行者、魅魔、惡魔獵犬和惡魔守衛的近戰攻擊，以及小鬼火焰箭所造成的傷害提高16%。" lvl="4"/>
+        <rank description="使你的虛無行者、魅魔、惡魔獵犬和惡魔守衛的近戰攻擊，以及小鬼火焰箭所造成的傷害提高20%。" lvl="5"/>
       </talent>
-      <talent column="2" icon="spell_shadow_impphaseshift" key="1227" name="Master Summoner" requires="1226" tier="3">
-        <rank description="Reduces the casting time of your Imp, Voidwalker, Succubus, Felhunter and Fel Guard Summoning spells by 2 sec and the Mana cost by 20%." lvl="1"/>
-        <rank description="Reduces the casting time of your Imp, Voidwalker, Succubus, Felhunter and Fel Guard Summoning spells by 4 sec and the Mana cost by 40%." lvl="2"/>
+      <talent column="2" icon="spell_shadow_impphaseshift" key="1227" name="召喚大師" requires="1226" tier="3">
+        <rank description="使你召喚小鬼、虛無行者、魅魔、惡魔獵犬和惡魔守衛的施法時間縮短2秒，法力消耗降低20%。" lvl="1"/>
+        <rank description="使你召喚小鬼、虛無行者、魅魔、惡魔獵犬和惡魔守衛的施法時間縮短4秒，法力消耗降低40%。" lvl="2"/>
       </talent>
-      <talent column="0" icon="spell_shadow_manafeed" key="1281" name="Mana Feed" requires="1262" tier="4">
-        <rank description="When you gain mana from Drain Mana or Life Tap spells, your summoned demon gains 100% of the mana you gain." lvl="1"/>
+      <talent column="0" icon="spell_shadow_manafeed" key="1281" name="法力餵食" requires="1262" tier="4">
+        <rank description="當你從吸取法力或生命分流獲得法力時，你召喚的惡魔將得到相當於你獲得100%的法力。" lvl="1"/>
       </talent>
-      <talent column="2" icon="inv_ammo_firetar" key="1261" name="Master Conjuror" tier="4">
-        <rank description="Increases the combat ratings gained from your conjured Firestone and Spellstone by 150%." lvl="1"/>
-        <rank description="Increases the combat ratings gained from your conjured Firestone and Spellstone by 300%." lvl="2"/>
+      <talent column="2" icon="inv_ammo_firetar" key="1261" name="魔石專精" tier="4">
+        <rank description="使你召喚的火焰石和法術石所提供的戰鬥屬性等級提高150%。" lvl="1"/>
+        <rank description="使你召喚的火焰石和法術石所提供的戰鬥屬性等級提高300%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_shadow_shadowpact" key="1244" name="Master Demonologist" requires="1262" tier="5">
-        <rank description="Grants both the Warlock and the summoned demon an effect as long as that demon is active.&lt;br/&gt;&lt;br/&gt;Imp - Increases your Fire damage by 1%, and increases the critical effect chance of your Fire spells by 1%.&lt;br/&gt;&lt;br/&gt;Voidwalker - Reduces Physical damage taken by 2%.&lt;br/&gt;&lt;br/&gt;Succubus - Increases your Shadow damage by 1%, and increases the critical effect chance of your Shadow spells by 1%.&lt;br/&gt;&lt;br/&gt;Felhunter - Reduces all spell damage taken by 2%.&lt;br/&gt;&lt;br/&gt;Felguard - Increases all damage done by 1%, and reduces all damage taken by 1%." lvl="1"/>
-        <rank description="Grants both the Warlock and the summoned demon an effect as long as that demon is active.&lt;br/&gt;&lt;br/&gt;Imp - Increases your Fire damage by 2%, and increases the critical effect chance of your Fire spells by 2%.&lt;br/&gt;&lt;br/&gt;Voidwalker - Reduces Physical damage taken by 4%.&lt;br/&gt;&lt;br/&gt;Succubus - Increases your Shadow damage by 2%, and increases the critical effect chance of your Shadow spells by 2%.&lt;br/&gt;&lt;br/&gt;Felhunter - Reduces all spell damage taken by 4%.&lt;br/&gt;&lt;br/&gt;Felguard - Increases all damage done by 2%, and reduces all damage taken by 2%." lvl="2"/>
-        <rank description="Grants both the Warlock and the summoned demon an effect as long as that demon is active.&lt;br/&gt;&lt;br/&gt;Imp - Increases your Fire damage by 3%, and increases the critical effect chance of your Fire spells by 3%.&lt;br/&gt;&lt;br/&gt;Voidwalker - Reduces Physical damage taken by 6%.&lt;br/&gt;&lt;br/&gt;Succubus - Increases your Shadow damage by 3%, and increases the critical effect chance of your Shadow spells by 3%.&lt;br/&gt;&lt;br/&gt;Felhunter - Reduces all spell damage taken by 6%.&lt;br/&gt;&lt;br/&gt;Felguard - Increases all damage done by 3%, and reduces all damage taken by 3%." lvl="3"/>
-        <rank description="Grants both the Warlock and the summoned demon an effect as long as that demon is active.&lt;br/&gt;&lt;br/&gt;Imp - Increases your Fire damage by 4%, and increases the critical effect chance of your Fire spells by 4%.&lt;br/&gt;&lt;br/&gt;Voidwalker - Reduces Physical damage taken by 8%.&lt;br/&gt;&lt;br/&gt;Succubus - Increases your Shadow damage by 4%, and increases the critical effect chance of your Shadow spells by 4%.&lt;br/&gt;&lt;br/&gt;Felhunter - Reduces all spell damage taken by 8%.&lt;br/&gt;&lt;br/&gt;Felguard - Increases all damage done by 4%, and reduces all damage taken by 4%." lvl="4"/>
-        <rank description="Grants both the Warlock and the summoned demon an effect as long as that demon is active.&lt;br/&gt;&lt;br/&gt;Imp - Increases your Fire damage by 5%, and increases the critical effect chance of your Fire spells by 5%.&lt;br/&gt;&lt;br/&gt;Voidwalker - Reduces Physical damage taken by 10%.&lt;br/&gt;&lt;br/&gt;Succubus - Increases your Shadow damage by 5%, and increases the critical effect chance of your Shadow spells by 5%.&lt;br/&gt;&lt;br/&gt;Felhunter - Reduces all spell damage taken by 10%.&lt;br/&gt;&lt;br/&gt;Felguard - Increases all damage done by 5%, and reduces all damage taken by 5%." lvl="5"/>
+      <talent column="1" icon="spell_shadow_shadowpact" key="1244" name="惡魔學識大師" requires="1262" tier="5">
+        <rank description="使術士和其召喚的惡魔均獲得一個特殊效果，只要該惡魔處於啟動狀態就不會消失。&lt;br/&gt;&lt;br/&gt;小鬼 - 使你的火焰傷害提高1%，並使你的火焰法術造成致命一擊的機率提高1%。&lt;br/&gt;&lt;br/&gt;虛無行者 - 受到的物理傷害降低2%。&lt;br/&gt;&lt;br/&gt;魅魔 - 使你的暗影傷害提高1%，並使你的暗影法術造成致命一擊的機率提高1%。&lt;br/&gt;&lt;br/&gt;惡魔獵犬 - 受到的所有法術傷害降低2%。&lt;br/&gt;&lt;br/&gt;惡魔守衛 - 造成的所有傷害提高1%，受到的所有傷害降低1%。" lvl="1"/>
+        <rank description="使術士和其召喚的惡魔均獲得一個特殊效果，只要該惡魔處於啟動狀態就不會消失。&lt;br/&gt;&lt;br/&gt;小鬼 - 使你的火焰傷害提高2%，並使你的火焰法術造成致命一擊的機率提高2%。&lt;br/&gt;&lt;br/&gt;虛無行者 - 受到的物理傷害降低4%。&lt;br/&gt;&lt;br/&gt;魅魔 - 使你的暗影傷害提高2%，並使你的暗影法術造成致命一擊的機率提高2%。&lt;br/&gt;&lt;br/&gt;惡魔獵犬 - 受到的所有法術傷害降低4%。&lt;br/&gt;&lt;br/&gt;惡魔守衛 - 造成的所有傷害提高2%，受到的所有傷害降低2%。" lvl="2"/>
+        <rank description="使術士和其召喚的惡魔均獲得一個特殊效果，只要該惡魔處於啟動狀態就不會消失。&lt;br/&gt;&lt;br/&gt;小鬼 - 使你的火焰傷害提高3%，並使你的火焰法術造成致命一擊的機率提高3%。&lt;br/&gt;&lt;br/&gt;虛無行者 - 受到的物理傷害降低6%。&lt;br/&gt;&lt;br/&gt;魅魔 - 使你的暗影傷害提高3%，並使你的暗影法術造成致命一擊的機率提高3%。&lt;br/&gt;&lt;br/&gt;惡魔獵犬 - 受到的所有法術傷害降低6%。&lt;br/&gt;&lt;br/&gt;惡魔守衛 - 造成的所有傷害提高3%，受到的所有傷害降低3%。" lvl="3"/>
+        <rank description="使術士和其召喚的惡魔均獲得一個特殊效果，只要該惡魔處於啟動狀態就不會消失。&lt;br/&gt;&lt;br/&gt;小鬼 - 使你的火焰傷害提高4%，並使你的火焰法術造成致命一擊的機率提高4%。&lt;br/&gt;&lt;br/&gt;虛無行者 - 受到的物理傷害降低8%。&lt;br/&gt;&lt;br/&gt;魅魔 - 使你的暗影傷害提高4%，並使你的暗影法術造成致命一擊的機率提高4%。&lt;br/&gt;&lt;br/&gt;惡魔獵犬 - 受到的所有法術傷害降低8%。&lt;br/&gt;&lt;br/&gt;惡魔守衛 - 造成的所有傷害提高4%，受到的所有傷害降低4%。" lvl="4"/>
+        <rank description="使術士和其召喚的惡魔均獲得一個特殊效果，只要該惡魔處於啟動狀態就不會消失。&lt;br/&gt;&lt;br/&gt;小鬼 - 使你的火焰傷害提高5%，並使你的火焰法術造成致命一擊的機率提高5%。&lt;br/&gt;&lt;br/&gt;虛無行者 - 受到的物理傷害降低10%。&lt;br/&gt;&lt;br/&gt;魅魔 - 使你的暗影傷害提高5%，並使你的暗影法術造成致命一擊的機率提高5%。&lt;br/&gt;&lt;br/&gt;惡魔獵犬 - 受到的所有法術傷害降低10%。&lt;br/&gt;&lt;br/&gt;惡魔守衛 - 造成的所有傷害提高5%，受到的所有傷害降低5%。" lvl="5"/>
       </talent>
-      <talent column="2" icon="ability_warlock_moltencore" key="1283" name="Molten Core" tier="5">
-        <rank description="Increases the duration of your Immolate by 3 sec, and you have a 4% chance to gain the Molten Core effect when your Corruption deals damage. The Molten Core effect empowers your next 3 Incinerate or Soul Fire spells cast within 15 sec.&lt;br/&gt;&lt;br/&gt;Incinerate - Increases damage done by 6% and reduces cast time by 10%.&lt;br/&gt;&lt;br/&gt;Soul Fire - Increases damage done by 6% and increases critical strike chance by 5%." lvl="1"/>
-        <rank description="Increases the duration of your Immolate by 6 sec, and you have a 8% chance to gain the Molten Core effect when your Corruption deals damage. The Molten Core effect empowers your next 3 Incinerate or Soul Fire spells cast within 15 sec.&lt;br/&gt;&lt;br/&gt;Incinerate - Increases damage done by 12% and reduces cast time by 20%.&lt;br/&gt;&lt;br/&gt;Soul Fire - Increases damage done by 12% and increases critical strike chance by 10%." lvl="2"/>
-        <rank description="Increases the duration of your Immolate by 9 sec, and you have a 12% chance to gain the Molten Core effect when your Corruption deals damage. The Molten Core effect empowers your next 3 Incinerate or Soul Fire spells cast within 15 sec.&lt;br/&gt;&lt;br/&gt;Incinerate - Increases damage done by 18% and reduces cast time by 30%.&lt;br/&gt;&lt;br/&gt;Soul Fire - Increases damage done by 18% and increases critical strike chance by 15%." lvl="3"/>
+      <talent column="2" icon="ability_warlock_moltencore" key="1283" name="熔火之心" tier="5">
+        <rank description="使你獻祭的持續時間延長3秒，同時當你的腐蝕術造成傷害時有4%的機率獲得熔火之心效果。熔火之心可強化你在15秒內施放的的下3個燒盡或靈魂之火法術。&lt;br/&gt;&lt;br/&gt;燒盡 - 造成的傷害提高6%，施法時間縮短10%。&lt;br/&gt;&lt;br/&gt;靈魂之火 - 造成的傷害提高6%，致命一擊機率提高5%。" lvl="1"/>
+        <rank description="使你獻祭的持續時間延長6秒，同時當你的腐蝕術造成傷害時有8%的機率獲得熔火之心效果。熔火之心可強化你在15秒內施放的的下3個燒盡或靈魂之火法術。&lt;br/&gt;&lt;br/&gt;燒盡 - 造成的傷害提高12%，施法時間縮短20%。&lt;br/&gt;&lt;br/&gt;靈魂之火 - 造成的傷害提高12%，致命一擊機率提高10%。" lvl="2"/>
+        <rank description="使你獻祭的持續時間延長9秒，同時當你的腐蝕術造成傷害時有12%的機率獲得熔火之心效果。熔火之心可強化你在15秒內施放的的下3個燒盡或靈魂之火法術。&lt;br/&gt;&lt;br/&gt;燒盡 - 造成的傷害提高18%，施法時間縮短30%。&lt;br/&gt;&lt;br/&gt;靈魂之火 - 造成的傷害提高18%，致命一擊機率提高15%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_shadow_demonicfortitude" key="1680" name="Demonic Resilience" tier="6">
-        <rank description="Reduces the chance you'll be critically hit by melee and spells by 1% and reduces all damage your summoned demon takes by 5%." lvl="1"/>
-        <rank description="Reduces the chance you'll be critically hit by melee and spells by 2% and reduces all damage your summoned demon takes by 10%." lvl="2"/>
-        <rank description="Reduces the chance you'll be critically hit by melee and spells by 3% and reduces all damage your summoned demon takes by 15%." lvl="3"/>
+      <talent column="0" icon="spell_shadow_demonicfortitude" key="1680" name="惡魔韌性" tier="6">
+        <rank description="使你被近戰攻擊和法術命中時造成致命一擊的機率降低1%，並使你召喚的惡魔受到的傷害降低5%。" lvl="1"/>
+        <rank description="使你被近戰攻擊和法術命中時造成致命一擊的機率降低2%，並使你召喚的惡魔受到的傷害降低10%。" lvl="2"/>
+        <rank description="使你被近戰攻擊和法術命中時造成致命一擊的機率降低3%，並使你召喚的惡魔受到的傷害降低15%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_warlock_demonicempowerment" key="1880" name="Demonic Empowerment" requires="1244" tier="6">
-        <rank description="Grants the Warlock's summoned demon Empowerment.&lt;br/&gt;&lt;br/&gt;Imp - Increases the Imp's spell critical strike chance by 20% for 30 sec.&lt;br/&gt;&lt;br/&gt;Voidwalker - Increases the Voidwalker's health by 20%, and its threat generated from spells and attacks by 20% for 20 sec.&lt;br/&gt;&lt;br/&gt;Succubus - Instantly vanishes, causing the Succubus to go into an improved Invisibility state. The vanish effect removes all stuns, snares and movement impairing effects from the Succubus.&lt;br/&gt;&lt;br/&gt;Felhunter - Dispels all magical effects from the Felhunter.&lt;br/&gt;&lt;br/&gt;Felguard - Increases the Felguard's attack speed by 20% and breaks all stun, snare and movement impairing effects and makes your Felguard immune to them for 15 sec." lvl="1"/>
+      <talent column="1" icon="ability_warlock_demonicempowerment" key="1880" name="魔性活化" requires="1244" tier="6">
+        <rank description="強化術士召喚的惡魔。&lt;br/&gt;&lt;br/&gt;小鬼 - 提高小鬼的法術致命一擊機率20%，持續30秒。&lt;br/&gt;&lt;br/&gt;虛無行者 - 提高虛無行者的生命力20%，並使其法術和攻擊造成的威脅值提高20%，持續20秒。&lt;br/&gt;&lt;br/&gt;魅魔 - 立即消失，使魅魔進入強化隱形的狀態。此消失的效果可移除魅魔身上所有昏迷、緩速和限制移動的效果。&lt;br/&gt;&lt;br/&gt;惡魔獵犬 - 驅散惡魔獵犬身上所有的魔法效果。&lt;br/&gt;&lt;br/&gt;惡魔守衛 - 提高惡魔守衛的攻擊速度20%，移除所有昏迷、緩速和限制移動的效果，並且在15秒內免疫這些效果。" lvl="1"/>
         <spell castTime="0" cooldown="60000" maxRange="100">
           <power cost="6" type="mana"/>
         </spell>
       </talent>
-      <talent column="2" icon="spell_shadow_improvedvampiricembrace" key="1263" name="Demonic Knowledge" tier="6">
-        <rank description="Increases your spell damage by an amount equal to 4% of the total of your active demon's Stamina plus Intellect." lvl="1"/>
-        <rank description="Increases your spell damage by an amount equal to 8% of the total of your active demon's Stamina plus Intellect." lvl="2"/>
-        <rank description="Increases your spell damage by an amount equal to 12% of the total of your active demon's Stamina plus Intellect." lvl="3"/>
+      <talent column="2" icon="spell_shadow_improvedvampiricembrace" key="1263" name="惡魔知識" tier="6">
+        <rank description="使你的法術傷害提高相當於你目前寵物的耐力加上智力的4%。" lvl="1"/>
+        <rank description="使你的法術傷害提高相當於你目前寵物的耐力加上智力的8%。" lvl="2"/>
+        <rank description="使你的法術傷害提高相當於你目前寵物的耐力加上智力的12%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_shadow_demonictactics" key="1673" name="Demonic Tactics" tier="7">
-        <rank description="Increases melee and spell critical strike chance for you and your summoned demon by 2%." lvl="1"/>
-        <rank description="Increases melee and spell critical strike chance for you and your summoned demon by 4%." lvl="2"/>
-        <rank description="Increases melee and spell critical strike chance for you and your summoned demon by 6%." lvl="3"/>
-        <rank description="Increases melee and spell critical strike chance for you and your summoned demon by 8%." lvl="4"/>
-        <rank description="Increases melee and spell critical strike chance for you and your summoned demon by 10%." lvl="5"/>
+      <talent column="1" icon="spell_shadow_demonictactics" key="1673" name="惡魔策略" tier="7">
+        <rank description="同時提高你和你召喚的惡魔所造成的近戰攻擊以及法術致命一擊機率2%。" lvl="1"/>
+        <rank description="同時提高你和你召喚的惡魔所造成的近戰攻擊以及法術致命一擊機率4%。" lvl="2"/>
+        <rank description="同時提高你和你召喚的惡魔所造成的近戰攻擊以及法術致命一擊機率6%。" lvl="3"/>
+        <rank description="同時提高你和你召喚的惡魔所造成的近戰攻擊以及法術致命一擊機率8%。" lvl="4"/>
+        <rank description="同時提高你和你召喚的惡魔所造成的近戰攻擊以及法術致命一擊機率10%。" lvl="5"/>
       </talent>
-      <talent column="2" icon="spell_fire_fireball02" key="2261" name="Decimation" tier="7">
-        <rank description="When you Shadowbolt, Incinerate or Soul Fire a target that is at or below 35% health, the cast time of Soul Fire spell is reduced by 20% for 10 sec. Soul Fires cast under the effect of Decimation cost no shard." lvl="1"/>
-        <rank description="When you Shadowbolt, Incinerate or Soul Fire a target that is at or below 35% health, the cast time of your Soul Fire spell is reduced by 40% for 10 sec. Soul Fires cast under the effect of Decimation cost no shard." lvl="2"/>
+      <talent column="2" icon="spell_fire_fireball02" key="2261" name="屠虐" tier="7">
+        <rank description="當你的暗影箭、燒盡或靈魂之火命中生命力處於35%或以下的目標時，你的靈魂之火施法時間將縮短20%，持續10秒。在屠虐效果影響下所施放的靈魂之火不會消耗靈魂裂片。" lvl="1"/>
+        <rank description="當你的暗影箭、燒盡或靈魂之火命中生命力處於35%或以下的目標時，你的靈魂之火施法時間將縮短40%，持續10秒。在屠虐效果影響下所施放的靈魂之火不會消耗靈魂裂片。" lvl="2"/>
       </talent>
-      <talent column="0" icon="ability_warlock_improveddemonictactics" key="1882" name="Improved Demonic Tactics" requires="1673" tier="8">
-        <rank description="Increases your summoned demon's critical strike chance equal to 10% of your critical strike chance." lvl="1"/>
-        <rank description="Increases your summoned demon's critical strike chance equal to 20% of your critical strike chance." lvl="2"/>
-        <rank description="Increases your summoned demon's critical strike chance equal to 30% of your critical strike chance." lvl="3"/>
+      <talent column="0" icon="ability_warlock_improveddemonictactics" key="1882" name="強化惡魔策略" requires="1673" tier="8">
+        <rank description="使你召喚的惡魔造成致命一擊的機率提高，其數值相當於你造成致命一擊機率的10%。" lvl="1"/>
+        <rank description="使你召喚的惡魔造成致命一擊的機率提高，其數值相當於你造成致命一擊機率的20%。" lvl="2"/>
+        <rank description="使你召喚的惡魔造成致命一擊的機率提高，其數值相當於你造成致命一擊機率的30%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_shadow_summonfelguard" key="1672" name="Summon Felguard" tier="8">
-        <rank description="Summons a Felguard under the command of the Warlock." lvl="1"/>
+      <talent column="1" icon="spell_shadow_summonfelguard" key="1672" name="召喚惡魔守衛'" tier="8">
+        <rank description="召喚一個惡魔守衛為術士作戰。" lvl="1"/>
         <spell castTime="10000">
           <power cost="80" type="mana"/>
         </spell>
       </talent>
-      <talent column="2" icon="spell_shadow_demonicempathy" key="1884" name="Nemesis" tier="8">
-        <rank description="Reduces the cooldown of your Demonic Empowerment, Metamorphosis, and Fel Domination spells by 10%." lvl="1"/>
-        <rank description="Reduces the cooldown of your Demonic Empowerment, Metamorphosis, and Fel Domination spells by 20%." lvl="2"/>
-        <rank description="Reduces the cooldown of your Demonic Empowerment, Metamorphosis, and Fel Domination spells by 30%." lvl="3"/>
+      <talent column="2" icon="spell_shadow_demonicempathy" key="1884" name="劫難" tier="8">
+        <rank description="使你魔性活化、惡魔化身和惡魔支配的冷卻時間縮短10%。" lvl="1"/>
+        <rank description="使你魔性活化、惡魔化身和惡魔支配的冷卻時間縮短20%。" lvl="2"/>
+        <rank description="使你魔性活化、惡魔化身和惡魔支配的冷卻時間縮短30%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_shadow_demonicpact" key="1885" name="Demonic Pact" tier="9">
-        <rank description="Increases your spell damage by 2%, and your pet's criticals apply the Demonic Pact effect to your party or raid members. Demonic Pact increases spell power by 2% of your Spell Damage for 45 sec. This effect has a 20 sec cooldown. Does not work on Enslaved demons." lvl="1"/>
-        <rank description="Increases your spell damage by 4%, and your pet's criticals apply the Demonic Pact effect to your party or raid members. Demonic Pact increases spell power by 4% of your Spell Damage for 45 sec. This effect has a 20 sec cooldown. Does not work on Enslaved demons." lvl="2"/>
-        <rank description="Increases your spell damage by 6%, and your pet's criticals apply the Demonic Pact effect to your party or raid members. Demonic Pact increases spell power by 6% of your Spell Damage for 45 sec. This effect has a 20 sec cooldown. Does not work on Enslaved demons." lvl="3"/>
-        <rank description="Increases your spell damage by 8%, and your pet's criticals apply the Demonic Pact effect to your party or raid members. Demonic Pact increases spell power by 8% of your Spell Damage for 45 sec. This effect has a 20 sec cooldown. Does not work on Enslaved demons." lvl="4"/>
-        <rank description="Increases your spell damage by 10%, and your pet's criticals apply the Demonic Pact effect to your party or raid members. Demonic Pact increases spell power by 10% of your Spell Damage for 45 sec. This effect has a 20 sec cooldown. Does not work on Enslaved demons." lvl="5"/>
+      <talent column="1" icon="spell_shadow_demonicpact" key="1885" name="惡魔契印" tier="9">
+        <rank description="使你的法術能量提高1%，同時你寵物造成的致命一擊將會使你的小隊和團隊成員獲得惡魔契印的效果。惡魔契印可提高相當於你2%法術傷害的法術能量，持續12秒。奴役的惡魔無法發動此效果。" lvl="1"/>
+        <rank description="使你的法術能量提高2%，同時你寵物造成的致命一擊將會使你的小隊和團隊成員獲得惡魔契印的效果。惡魔契印可提高相當於你4%法術傷害的法術能量，持續12秒。奴役的惡魔無法發動此效果。" lvl="2"/>
+        <rank description="使你的法術能量提高3%，同時你寵物造成的致命一擊將會使你的小隊和團隊成員獲得惡魔契印的效果。惡魔契印可提高相當於你6%法術傷害的法術能量，持續12秒。奴役的惡魔無法發動此效果。" lvl="3"/>
+        <rank description="使你的法術能量提高4%，同時你寵物造成的致命一擊將會使你的小隊和團隊成員獲得惡魔契印的效果。惡魔契印可提高相當於你8%法術傷害的法術能量，持續12秒。奴役的惡魔無法發動此效果。" lvl="4"/>
+        <rank description="使你的法術能量提高5%，同時你寵物造成的致命一擊將會使你的小隊和團隊成員獲得惡魔契印的效果。惡魔契印可提高相當於你10%法術傷害的法術能量，持續12秒。奴役的惡魔無法發動此效果。" lvl="5"/>
       </talent>
-      <talent column="1" icon="spell_shadow_demonform" key="1886" name="Metamorphosis" tier="10">
-        <rank description="You transform into a Demon for 30 sec.  This form increases your armor by 600%, damage by 20%, reduces the chance you'll be critically hit by melee attacks by 6% and reduces the duration of stun and snare effects by 50%.  You gain some unique demon abilities in addition to your normal abilities. 3 minute cooldown." lvl="1"/>
+      <talent column="1" icon="spell_shadow_demonform" key="1886" name="惡魔化身" tier="10">
+        <rank description="你變身為惡魔，持續30秒。在此形態下你的護甲值提高600%，造成的傷害提高20%，受到近戰攻擊致命一擊的機率降低6%，並且使你受到的昏迷和緩速效果持續時間縮短50%。你可額外獲得特殊的惡魔技能。冷卻時間為3分鐘。'" lvl="1"/>
       </talent>
     </tree>
-    <tree bgImage="WarlockCurses" icon="spell_shadow_deathcoil" key="Affliction" name="Affliction" order="0">
-      <talent column="0" icon="spell_shadow_curseofsargeras" key="1284" name="Improved Curse of Agony" tier="0">
-        <rank description="Increases the damage done by your Curse of Agony by 5%." lvl="1"/>
-        <rank description="Increases the damage done by your Curse of Agony by 10%." lvl="2"/>
+   	<tree bgImage="WarlockCurses" icon="spell_shadow_deathcoil" key="Affliction" name="痛苦" order="0">
+      <talent column="0" icon="spell_shadow_curseofsargeras" key="1284" name="強化痛苦詛咒" tier="0">
+        <rank description="使你痛苦詛咒所造成的傷害提高5%。" lvl="1"/>
+        <rank description="使你痛苦詛咒所造成的傷害提高10%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_shadow_unsummonbuilding" key="1005" name="Suppression" tier="0">
-        <rank description="Increases your chance to hit with spells by 1%, and reduces the mana cost of your Affliction spells by 2%." lvl="1"/>
-        <rank description="Increases your chance to hit with spells by 2%, and reduces the mana cost of your Affliction spells by 4%." lvl="2"/>
-        <rank description="Increases your chance to hit with spells by 3%, and reduces the mana cost of your Affliction spells by 6%." lvl="3"/>
+      <talent column="1" icon="spell_shadow_unsummonbuilding" key="1005" name="鎮壓" tier="0">
+        <rank description="使你法術的命中機率提高1%，並且痛苦系法術消耗的法力降低2%。" lvl="1"/>
+        <rank description="使你法術的命中機率提高2%，並且痛苦系法術消耗的法力降低4%。" lvl="2"/>
+        <rank description="使你法術的命中機率提高3%，並且痛苦系法術消耗的法力降低6%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_shadow_abominationexplosion" key="1003" name="Improved Corruption" tier="0">
-        <rank description="Increases the damage done by your Corruption by 2%, and increases the critical strike chance of your Seed of Corruption by 1%." lvl="1"/>
-        <rank description="Increases the damage done by your Corruption by 4%, and increases the critical strike chance of your Seed of Corruption by 2%." lvl="2"/>
-        <rank description="Increases the damage done by your Corruption by 6%, and increases the critical strike chance of your Seed of Corruption by 3%." lvl="3"/>
-        <rank description="Increases the damage done by your Corruption by 8%, and increases the critical strike chance of your Seed of Corruption by 4%." lvl="4"/>
-        <rank description="Increases the damage done by your Corruption by 10%, and increases the critical strike chance of your Seed of Corruption by 5%." lvl="5"/>
+      <talent column="2" icon="spell_shadow_abominationexplosion" key="1003" name="強化腐蝕術" tier="0">
+        <rank description="使你腐蝕術造成的傷害提高2%，並且腐蝕種子造成致命一擊的機率提高1%。" lvl="1"/>
+        <rank description="使你腐蝕術造成的傷害提高4%，並且腐蝕種子造成致命一擊的機率提高2%。" lvl="2"/>
+        <rank description="使你腐蝕術造成的傷害提高6%，並且腐蝕種子造成致命一擊的機率提高3%。" lvl="3"/>
+        <rank description="使你腐蝕術造成的傷害提高6%，並且腐蝕種子造成致命一擊的機率提高4%。" lvl="4"/>
+        <rank description="使你腐蝕術造成的傷害提高6%，並且腐蝕種子造成致命一擊的機率提高5%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="spell_shadow_curseofmannoroth" key="1006" name="Improved Curse of Weakness" tier="1">
-        <rank description="Increases the amount of attack power reduced by your Curse of Weakness by 10%." lvl="1"/>
-        <rank description="Increases the amount of attack power reduced by your Curse of Weakness by 20%." lvl="2"/>
+      <talent column="0" icon="spell_shadow_curseofmannoroth" key="1006" name="強化虛弱詛咒" tier="1">
+        <rank description="使你虛弱詛咒降低的攻擊強度提高10%。" lvl="1"/>
+        <rank description="使你虛弱詛咒降低的攻擊強度提高20%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_shadow_haunting" key="1101" name="Improved Drain Soul" tier="1">
-        <rank description="Returns 7% of your maximum mana if the target is killed by you while you drain its soul.  In addition, your Affliction spells generate 10% less threat." lvl="1"/>
-        <rank description="Returns 15% of your maximum mana if the target is killed by you while you drain its soul.  In addition, your Affliction spells generate 20% less threat." lvl="2"/>
+      <talent column="1" icon="spell_shadow_haunting" key="1101" name="強化吸取靈魂" tier="1">
+        <rank description="若目標死於你的吸取靈魂過程中，你將獲得法力上限7%的法力。此外，你的痛苦系法術所產生的威脅值降低10%。" lvl="1"/>
+        <rank description="若目標死於你的吸取靈魂過程中，你將獲得法力上限15%的法力。此外，你的痛苦系法術所產生的威脅值降低20%。" lvl="2"/>
       </talent>
-      <talent column="2" icon="spell_shadow_burningspirit" key="1007" name="Improved Life Tap" tier="1">
-        <rank description="Increases the amount of Mana awarded by your Life Tap spell by 10%." lvl="1"/>
-        <rank description="Increases the amount of Mana awarded by your Life Tap spell by 20%." lvl="2"/>
+      <talent column="2" icon="spell_shadow_burningspirit" key="1007" name="強化生命分流" tier="1">
+        <rank description="使你生命分流法術所轉化的法力提高10%。" lvl="1"/>
+        <rank description="使你生命分流法術所轉化的法力提高20%。" lvl="2"/>
       </talent>
-      <talent column="3" icon="spell_shadow_lifedrain02" key="1004" name="Soul Siphon" tier="1">
-        <rank description="Increases the amount drained by your Drain Life and Drain Soul spells by an additional 3% for each of your Affliction effects on the target, up to a maximum of 9% additional effect." lvl="1"/>
-        <rank description="Increases the amount drained by your Drain Life and Drain Soul spells by an additional 6% for each of your Affliction effects on the target, up to a maximum of 18% additional effect." lvl="2"/>
+      <talent column="3" icon="spell_shadow_lifedrain02" key="1004" name="靈魂虹吸" tier="1">
+        <rank description="目標身上每一個由你所施放的痛苦系法術均會使你的吸取生命和吸取靈魂法術所吸取的數值額外提高3%，額外提高的效果上限為9%。" lvl="1"/>
+        <rank description="目標身上每一個由你所施放的痛苦系法術均會使你的吸取生命和吸取靈魂法術所吸取的數值額外提高6%，額外提高的效果上限為18%。" lvl="2"/>
       </talent>
-      <talent column="0" icon="spell_shadow_possession" key="2205" name="Improved Fear" tier="2">
-        <rank description="Causes your Fear spell to inflict a Nightmare on the target when the fear effect ends. The Nightmare effect reduces the target's movement speed by 15% for 5 sec." lvl="1"/>
-        <rank description="Causes your Fear spell to inflict a Nightmare on the target when the fear effect ends. The Nightmare effect reduces the target's movement speed by 30% for 5 sec." lvl="2"/>
+      <talent column="0" icon="spell_shadow_possession" key="2205" name="強化恐懼術" tier="2">
+        <rank description="使你的恐懼術效果結束時，對目標造成夢魘的效果。此效果可降低目標15%的移動速度，持續5秒。" lvl="1"/>
+        <rank description="使你的恐懼術效果結束時，對目標造成夢魘的效果。此效果可降低目標30%的移動速度，持續5秒。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_shadow_fingerofdeath" key="1001" name="Fel Concentration" tier="2">
-        <rank description="Reduces the pushback suffered from damaging attacks  while casting Drain Life, Drain Mana, Drain Soul, Unstable Affliction, and Haunt by 23%." lvl="1"/>
-        <rank description="Reduces the pushback suffered from damaging attacks  while casting Drain Life, Drain Mana, Drain Soul, Unstable Affliction, and Haunt spells by 46%." lvl="2"/>
-        <rank description="Reduces the pushback suffered from damaging attacks  while casting Drain Life, Drain Mana, Drain Soul,  Unstable Affliction, and Haunt spells by 70%." lvl="3"/>
+      <talent column="1" icon="spell_shadow_fingerofdeath" key="1001" name="惡魔專注" tier="2">
+        <rank description="使你在施放吸取生命、吸取法力、吸取靈魂、痛苦動盪和蝕魂術時，因受到傷害性攻擊而損失的施法時間縮短23%。" lvl="1"/>
+        <rank description="使你在施放吸取生命、吸取法力、吸取靈魂、痛苦動盪和蝕魂術時，因受到傷害性攻擊而損失的施法時間縮短46%。" lvl="2"/>
+        <rank description="使你在施放吸取生命、吸取法力、吸取靈魂、痛苦動盪和蝕魂術時，因受到傷害性攻擊而損失的施法時間縮短70%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_shadow_contagion" key="1061" name="Amplify Curse" tier="2">
-        <rank description="Reduces the global cooldown of your Curses by 0.5 sec." lvl="1"/>
+      <talent column="2" icon="spell_shadow_contagion" key="1061" name="詛咒增幅" tier="2">
+        <rank description="使你詛咒的共用冷卻時間縮短0.5秒。" lvl="1"/>
       </talent>
-      <talent column="0" icon="spell_shadow_callofbone" key="1021" name="Grim Reach" tier="3">
-        <rank description="Increases the range of your Affliction spells by 10%." lvl="1"/>
-        <rank description="Increases the range of your Affliction spells by 20%." lvl="2"/>
+      <talent column="0" icon="spell_shadow_callofbone" key="1021" name="無情延伸" tier="3">
+        <rank description="使你痛苦系法術的射程延長10%。" lvl="1"/>
+        <rank description="使你痛苦系法術的射程延長20%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_shadow_twilight" key="1002" name="Nightfall" tier="3">
-        <rank description="Gives your Corruption and Drain Life spells a 2% chance to cause you to enter a Shadow Trance state after damaging the opponent.  The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%." lvl="1"/>
-        <rank description="Gives your Corruption and Drain Life spells a 4% chance to cause you to enter a Shadow Trance state after damaging the opponent.  The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%." lvl="2"/>
+      <talent column="1" icon="spell_shadow_twilight" key="1002" name="夜暮" tier="3">
+        <rank description="使你腐蝕術和吸取生命法術有2%的機率在對敵人造成傷害之後令你進入暗影冥思狀態。暗影冥思狀態令你下一個暗影箭法術的施法時間縮短100%。" lvl="1"/>
+        <rank description="使你腐蝕術和吸取生命法術有4%的機率在對敵人造成傷害之後令你進入暗影冥思狀態。暗影冥思狀態令你下一個暗影箭法術的施法時間縮短100%。" lvl="2"/>
       </talent>
-      <talent column="3" icon="spell_shadow_abominationexplosion" key="1764" name="Empowered Corruption" tier="3">
-        <rank description="Increases the damage of your Corruption spell by an amount equal to 12% of your spell power." lvl="1"/>
-        <rank description="Increases the damage of your Corruption spell by an amount equal to 24% of your spell power." lvl="2"/>
-        <rank description="Increases the damage of your Corruption spell by an amount equal to 36% of your spell power." lvl="3"/>
+      <talent column="3" icon="spell_shadow_abominationexplosion" key="1764" name="強力腐蝕術" tier="3">
+        <rank description="使你的腐蝕術傷害提高相當於你12%的法術能量。" lvl="1"/>
+        <rank description="使你的腐蝕術傷害提高相當於你24%的法術能量。" lvl="2"/>
+        <rank description="使你的腐蝕術傷害提高相當於你36%的法術能量。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_shadow_shadowembrace" key="1763" name="Shadow Embrace" tier="4">
-        <rank description="Your Shadow Bolt and Haunt spells apply the Shadow Embrace effect, increasing all shadow periodic damage dealt to the target by you by 1%, and reduces all periodic healing done to the target by 2%. Lasts for 12 sec. Stacks up to 3  times." lvl="1"/>
-        <rank description="Your Shadow Bolt and Haunt spells apply the Shadow Embrace effect, increasing all shadow periodic damage dealt to the target by you by 2%, and reduces all periodic healing done to the target by 4%. Lasts for 12 sec. Stacks up to 3 times." lvl="2"/>
-        <rank description="Your Shadow Bolt and Haunt spells apply the Shadow Embrace effect, increasing all shadow periodic damage dealt to the target by you by 3%, and reduces all periodic healing done to the target by 6%. Lasts for 12 sec. Stacks up to 3 times." lvl="3"/>
-        <rank description="Your Shadow Bolt and Haunt spells apply the Shadow Embrace effect, increasing all shadow periodic damage dealt to the target by you by 4%, and reduces all periodic healing done to the target by 8%. Lasts for 12 sec. Stacks up to 3 times." lvl="4"/>
-        <rank description="Your Shadow Bolt and Haunt spells apply the Shadow Embrace effect, increasing all shadow periodic damage dealt to the target by you by 5%, and reduces all periodic healing done to the target by 10%. Lasts for 12 sec. Stacks up to 3 times." lvl="5"/>
+      <talent column="0" icon="spell_shadow_shadowembrace" key="1763" name="暗影之擁" tier="4">
+        <rank description="你的暗影箭和蝕魂術將造成暗影之擁的效果，令目標受到你所造成的所有暗影週期性傷害提高1%，並使目標受到的所有週期性治療效果降低3%，持續12秒。最多可堆疊2次。" lvl="1"/>
+        <rank description="你的暗影箭和蝕魂術將造成暗影之擁的效果，令目標受到你所造成的所有暗影週期性傷害提高2%，並使目標受到的所有週期性治療效果降低6%，持續12秒。最多可堆疊2次。" lvl="2"/>
+        <rank description="你的暗影箭和蝕魂術將造成暗影之擁的效果，令目標受到你所造成的所有暗影週期性傷害提高3%，並使目標受到的所有週期性治療效果降低9%，持續12秒。最多可堆疊2次。" lvl="3"/>
+        <rank description="你的暗影箭和蝕魂術將造成暗影之擁的效果，令目標受到你所造成的所有暗影週期性傷害提高4%，並使目標受到的所有週期性治療效果降低12%，持續12秒。最多可堆疊2次。" lvl="4"/>
+        <rank description="你的暗影箭和蝕魂術將造成暗影之擁的效果，令目標受到你所造成的所有暗影週期性傷害提高5%，並使目標受到的所有週期性治療效果降低15%，持續12秒。最多可堆疊2次。" lvl="5"/>
       </talent>
-      <talent column="1" icon="spell_shadow_requiem" key="1041" name="Siphon Life" tier="4">
-        <rank description="When you deal damage with your Corruption spell, you are instantly healed for 40% of the damage done. In addition, the damage done by your Corruption, Seed of Corruption and Unstable Affliction damage over time effects is increased by 5%." lvl="1"/>
+      <talent column="1" icon="spell_shadow_requiem" key="1041" name="生命虹吸" tier="4">
+        <rank description="當你的腐蝕術造成傷害時，你可立即恢復相當於其傷害值40%的生命力。此外，你的腐蝕術、腐蝕種子和痛苦動盪造成的持續傷害提高5%。" lvl="1"/>
       </talent>
-      <talent column="2" icon="spell_shadow_grimward" key="1081" name="Curse of Exhaustion" requires="1061" tier="4">
-        <rank description="Reduces the target's movement speed by 30% for 12 sec.  Only one Curse per Warlock can be active on any one target." lvl="1"/>
+      <talent column="2" icon="spell_shadow_grimward" key="1081" name="疲勞詛咒" requires="1061" tier="4">
+        <rank description="使目標的移動速度降低30%，持續12秒。每個術士只能對一個目標施加一種詛咒。" lvl="1"/>
         <spell castTime="0" maxRange="30">
           <power cost="6" type="mana"/>
         </spell>
       </talent>
-      <talent column="0" icon="spell_shadow_summonfelhunter" key="1873" name="Improved Felhunter" tier="5">
-        <rank description="Your Felhunter regains 4% of its maximum mana each time it hits with its Shadow Bite ability and the cooldown on that ability is reduced by 2 sec.  In addition, increases the effect of your Felhunter's Fel Intelligence by 5%." lvl="1"/>
-        <rank description="Your Felhunter regains 8% of its maximum mana each time it hits with its Shadow Bite ability and the cooldown on that ability is reduced by 4 sec.  In addition, increases the effect of your Felhunter's Fel Intelligence by 10%." lvl="2"/>
+      <talent column="0" icon="spell_shadow_summonfelhunter" key="1873" name="強化惡魔獵犬" tier="5">
+        <rank description="當你惡魔獵犬的暗影撕咬擊中敵人時可獲得法力上限8%的法力，並且此技能的冷卻時間縮短2秒。此外，惡魔獵犬的惡魔智力效果提高5%。" lvl="1"/>
+        <rank description="當你惡魔獵犬的暗影撕咬擊中敵人時可獲得法力上限8%的法力，並且此技能的冷卻時間縮短4秒。此外，惡魔獵犬的惡魔智力效果提高10%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_shadow_shadetruesight" key="1042" name="Shadow Mastery" requires="1041" tier="5">
-        <rank description="Increases the damage dealt or life drained by your Shadow spells and your Felhunter's Shadow Bite ability by 3%." lvl="1"/>
-        <rank description="Increases the damage dealt or life drained by your Shadow spells and your Felhunter's Shadow Bite ability by 6%." lvl="2"/>
-        <rank description="Increases the damage dealt or life drained by your Shadow spells and your Felhunter's Shadow Bite ability by 9%." lvl="3"/>
-        <rank description="Increases the damage dealt or life drained by your Shadow spells and your Felhunter's Shadow Bite ability by 12%." lvl="4"/>
-        <rank description="Increases the damage dealt or life drained by your Shadow spells and your Felhunter's Shadow Bite ability by 15%." lvl="5"/>
+      <talent column="1" icon="spell_shadow_shadetruesight" key="1042" name="精通暗影" requires="1041" tier="5">
+        <rank description="使你暗影法術造成的傷害或吸取的生命力，以及惡魔獵犬的暗影撕咬傷害提高3%。" lvl="1"/>
+        <rank description="使你暗影法術造成的傷害或吸取的生命力，以及惡魔獵犬的暗影撕咬傷害提高6%。" lvl="2"/>
+        <rank description="使你暗影法術造成的傷害或吸取的生命力，以及惡魔獵犬的暗影撕咬傷害提高9%。" lvl="3"/>
+        <rank description="使你暗影法術造成的傷害或吸取的生命力，以及惡魔獵犬的暗影撕咬傷害提高12%。" lvl="4"/>
+        <rank description="使你暗影法術造成的傷害或吸取的生命力，以及惡魔獵犬的暗影撕咬傷害提高15%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="ability_warlock_eradication" key="1878" name="Eradication" tier="6">
-        <rank description="When you deal damage with Corruption, you have 6% chance to increase your spell casting speed by 6% for 10 sec." lvl="1"/>
-        <rank description="When you deal damage with Corruption, you have 6% chance to increase your spell casting speed by 12% for 10 sec." lvl="2"/>
-        <rank description="When you deal damage with Corruption, you have 6% chance to increase your spell casting speed by 20% for 10 sec." lvl="3"/>
+      <talent column="0" icon="ability_warlock_eradication" key="1878" name="滅絕" tier="6">
+        <rank description="你的腐蝕術每次造成傷害時，有6%的機率使你的施法速度提高6%，持續10秒。" lvl="1"/>
+        <rank description="你的腐蝕術每次造成傷害時，有6%的機率使你的施法速度提高12%，持續10秒。" lvl="2"/>
+        <rank description="你的腐蝕術每次造成傷害時，有6%的機率使你的施法速度提高20%，持續10秒。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_shadow_painfulafflictions" key="1669" name="Contagion" tier="6">
-        <rank description="Increases the damage of Curse of Agony, Corruption and Seed of Corruption by 1% and reduces the chance your helpful Affliction spells and damage over time effects will be dispelled by an additional 6%." lvl="1"/>
-        <rank description="Increases the damage of Curse of Agony, Corruption and Seed of Corruption by 2% and reduces the chance your helpful Affliction spells and damage over time effects  will be dispelled by an additional 12%." lvl="2"/>
-        <rank description="Increases the damage of Curse of Agony, Corruption and Seed of Corruption by 3% and reduces the chance your helpful Affliction spells and damage over time effects  will be dispelled by an additional 18%." lvl="3"/>
-        <rank description="Increases the damage of Curse of Agony, Corruption and Seed of Corruption by 4% and reduces the chance your helpful Affliction spells and damage over time effects  will be dispelled by an additional 24%." lvl="4"/>
-        <rank description="Increases the damage of Curse of Agony, Corruption and Seed of Corruption by 5% and reduces the chance your helpful Affliction spells and damage over time effects  will be dispelled by an additional 30%." lvl="5"/>
+      <talent column="1" icon="spell_shadow_painfulafflictions" key="1669" name="傳染" tier="6">
+        <rank description="使你痛苦詛咒、腐蝕術和腐蝕種子的傷害提高1%，並且令你痛苦系的助益法術和持續傷害的法術效果被驅散的機率降低6%。" lvl="1"/>
+        <rank description="使你痛苦詛咒、腐蝕術和腐蝕種子的傷害提高2%，並且令你痛苦系的助益法術和持續傷害的法術效果被驅散的機率降低12%。" lvl="2"/>
+        <rank description="使你痛苦詛咒、腐蝕術和腐蝕種子的傷害提高3%，並且令你痛苦系的助益法術和持續傷害的法術效果被驅散的機率降低18%。" lvl="3"/>
+        <rank description="使你痛苦詛咒、腐蝕術和腐蝕種子的傷害提高4%，並且令你痛苦系的助益法術和持續傷害的法術效果被驅散的機率降低24%。" lvl="4"/>
+        <rank description="使你痛苦詛咒、腐蝕術和腐蝕種子的傷害提高5%，並且令你痛苦系的助益法術和持續傷害的法術效果被驅散的機率降低30%。" lvl="5"/>
       </talent>
-      <talent column="2" icon="spell_shadow_darkritual" key="1022" name="Dark Pact" tier="6">
-        <rank description="Drains 305 of your summoned demon's Mana, returning 100% to you." lvl="1"/>
+      <talent column="2" icon="spell_shadow_darkritual" key="1022" name="黑暗契約" tier="6">
+        <rank description="從你召喚的惡魔身上抽取305點法力，並使你恢復其100%的法力值。" lvl="1"/>
       </talent>
-      <talent column="0" icon="spell_shadow_deathscream" key="1668" name="Improved Howl of Terror" tier="7">
-        <rank description="Reduces the casting time of your Howl of Terror spell by 0.8 sec." lvl="1"/>
-        <rank description="Reduces the casting time of your Howl of Terror spell by 1.5 sec." lvl="2"/>
+      <talent column="0" icon="spell_shadow_deathscream" key="1668" name="強化恐懼嚎叫" tier="7">
+        <rank description="使你恐懼嚎叫法術的施法時間縮短0.8秒。" lvl="1"/>
+        <rank description="使你恐懼嚎叫法術的施法時間縮短1.5秒。" lvl="2"/>
       </talent>
-      <talent column="2" icon="spell_shadow_curseofachimonde" key="1667" name="Malediction" tier="7">
-        <rank description="Increases your spell damage by 1%, and increases the periodic critical strike chance of your Corruption and Unstable Affliction spells by 3%." lvl="1"/>
-        <rank description="Increases your spell damage by 2%, and increases the periodic critical strike chance of your Corruption and Unstable Affliction spells by 6%." lvl="2"/>
-        <rank description="Increases your spell damage by 3%, and increases the periodic critical strike chance of your Corruption and Unstable Affliction spells by 9%." lvl="3"/>
+      <talent column="2" icon="spell_shadow_curseofachimonde" key="1667" name="憎惡" tier="7">
+        <rank description="使你的法術傷害提高1%，並且腐蝕術和痛苦動盪造成致命一擊的機率提高3%。" lvl="1"/>
+        <rank description="使你的法術傷害提高2%，並且腐蝕術和痛苦動盪造成致命一擊的機率提高6%。" lvl="2"/>
+        <rank description="使你的法術傷害提高3%，並且腐蝕術和痛苦動盪造成致命一擊的機率提高9%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_shadow_deathsembrace" key="1875" name="Death's Embrace" tier="8">
-        <rank description="Increases the amount drained by your Drain Life by 10% while your health is at or below 20% health, and increases the damage done by your Shadow spells by 4% when your target is at or below 35% health." lvl="1"/>
-        <rank description="Increases the amount drained by your Drain Life by 20% while your health is at or below 20% health, and increases the damage done by your Shadow spells by 8% when your target is at or below 35% health." lvl="2"/>
-        <rank description="Increases the amount drained by your Drain Life by 30% while your health is at or below 20% health, and increases the damage done by your Shadow spells by 12% when your target is at or below 35% health." lvl="3"/>
+      <talent column="0" icon="spell_shadow_deathsembrace" key="1875" name="死亡之擁" tier="8">
+        <rank description="當你的生命力處於20%或以下時，你的吸取生命所吸收的生命力提高10%。當你的目標生命力處於35%或以下時，你的暗影法術所造成的傷害提高4%。" lvl="1"/>
+        <rank description="當你的生命力處於20%或以下時，你的吸取生命所吸收的生命力提高20%。當你的目標生命力處於35%或以下時，你的暗影法術所造成的傷害提高8%。" lvl="2"/>
+        <rank description="當你的生命力處於20%或以下時，你的吸取生命所吸收的生命力提高30%。當你的目標生命力處於35%或以下時，你的暗影法術所造成的傷害提高12%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_shadow_unstableaffliction_3" key="1670" name="Unstable Affliction" requires="1669" tier="8">
-        <rank description="Shadow energy slowly destroys the target, causing 550 damage over 15 sec.  In addition, if the Unstable Affliction is dispelled it will cause 990 damage to the dispeller and silence them for 5 sec. Only one Unstable Affliction or Immolate per Warlock can be active on any one target." lvl="1"/>
+      <talent column="1" icon="spell_shadow_unstableaffliction_3" key="1670" name="痛苦動盪" requires="1669" tier="8">
+        <rank description="暗影能量緩慢傷害目標，在15秒內造成點傷害。另外，如果痛苦動盪被驅散，將對驅散法術者造成990點傷害，並使他們沉默5秒。" lvl="1"/>
         <spell castTime="1500" maxRange="30">
           <power cost="15" type="mana"/>
         </spell>
       </talent>
-      <talent column="2" icon="spell_shadow_unstableaffliction_2" key="2245" name="Pandemic" requires="1670" tier="8">
-        <rank description="Grants the periodic damage from your Corruption and Unstable Affliction spells the ability to critically hit for 100% increased damage, and increases the critical strike damage bonus of your Haunt spell by 100%." lvl="1"/>
+      <talent column="2" icon="spell_shadow_unstableaffliction_2" key="2245" name="惡化" requires="1670" tier="8">
+        <rank description="賦予你腐蝕術和痛苦動盪的週期性傷害造成致命一擊的能力，可額外造成100%的傷害，並且使你蝕魂術的致命一擊傷害加成提高100%。" lvl="1"/>
       </talent>
-      <talent column="1" icon="ability_warlock_everlastingaffliction" key="1876" name="Everlasting Affliction" tier="9">
-        <rank description="Your Corruption and Unstable Affliction spells gain an additional 1% of your bonus spell damage, and your Drain Life, Drain Soul, Shadow Bolt, and Haunt spells have a 20% chance to reset the duration of your Corruption spell on the target." lvl="1"/>
-        <rank description="Your Corruption and Unstable Affliction spells gain an additional 2% of your bonus spell damage, and your Drain Life, Drain Soul, Shadow Bolt, and Haunt spells have a 40% chance to reset the duration of your Corruption spell on the target." lvl="2"/>
-        <rank description="Your Corruption and Unstable Affliction spells gain an additional 3% of your bonus spell damage, and your Drain Life, Drain Soul, Shadow Bolt, and Haunt spells have a 60% chance to reset the duration of your Corruption spell on the target." lvl="3"/>
-        <rank description="Your Corruption and Unstable Affliction spells gain an additional 4% of your bonus spell damage, and your Drain Life, Drain Soul, Shadow Bolt, and Haunt spells have a 80% chance to reset the duration of your Corruption spell on the target." lvl="4"/>
-        <rank description="Your Corruption and Unstable Affliction spells gain an additional 5% of your bonus spell damage, and your Drain Life, Drain Soul, Shadow Bolt, and Haunt spells have a 100% chance to reset the duration of your Corruption spell on the target." lvl="5"/>
+      <talent column="1" icon="ability_warlock_everlastingaffliction" key="1876" name="無間痛苦" tier="9">
+        <rank description="你的腐蝕術和痛苦動盪可從你的法術傷害加成中額外獲得1%的加成，同時你的吸取生命和蝕魂術有20%的機率使你在目標身上的腐蝕術持續時間重新計算。" lvl="1"/>
+        <rank description="你的腐蝕術和痛苦動盪可從你的法術傷害加成中額外獲得2%的加成，同時你的吸取生命和蝕魂術有40%的機率使你在目標身上的腐蝕術持續時間重新計算。" lvl="2"/>
+        <rank description="你的腐蝕術和痛苦動盪可從你的法術傷害加成中額外獲得3%的加成，同時你的吸取生命和蝕魂術有60%的機率使你在目標身上的腐蝕術持續時間重新計算。" lvl="3"/>
+        <rank description="Y你的腐蝕術和痛苦動盪可從你的法術傷害加成中額外獲得4%的加成，同時你的吸取生命和蝕魂術有80%的機率使你在目標身上的腐蝕術持續時間重新計算。" lvl="4"/>
+        <rank description="你的腐蝕術和痛苦動盪可從你的法術傷害加成中額外獲得5%的加成，同時你的吸取生命和蝕魂術有100%的機率使你在目標身上的腐蝕術持續時間重新計算。" lvl="5"/>
       </talent>
-      <talent column="1" icon="ability_warlock_haunt" key="2041" name="Haunt" tier="10">
-        <rank description="You send a ghostly soul into the target, dealing 405 to 473 Shadow damage and increasing all damage done by your Shadow damage-over-time effects on the target by 20% for 12 sec. When the Haunt spell ends or is dispelled, the soul returns to you, healing you for 100% of the damage it did to the target." lvl="1"/>
+      <talent column="1" icon="ability_warlock_haunt" key="2041" name="蝕魂術" tier="10">
+        <rank description="指使一個鬼魅之魂入侵目標體內，造成405到473點暗影傷害並且使你在目標身上的週期性暗影傷害效果提高20%，持續12秒。當蝕魂術結束或者被驅散時，該靈魂會回到你身上並治療你相當於其對目標造成100%的傷害。" lvl="1"/>
         <spell castTime="1500" cooldown="8000" maxRange="30">
           <power cost="12" type="mana"/>
         </spell>

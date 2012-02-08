@@ -1,427 +1,427 @@
-<?xml version="1.0" encoding="UTF-8"?><page globalSearch="1" lang="en_gb" requestUrl="/talent-tree.xml">
+<?xml version="1.0" encoding="UTF-8"?><page globalSearch="1" lang="zh_cn" requestUrl="/talent-tree.xml">
   <talentTrees>
-    <tree bgImage="HunterSurvival" icon="ability_hunter_swiftstrike" key="Survival" name="Survival" order="2">
-      <talent column="0" icon="ability_hunter_improvedtracking" key="1623" name="Improved Tracking" tier="0">
-        <rank description="While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids and Undead, all damage done to those types by the Hunter is increased by 1%." lvl="1"/>
-        <rank description="While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids and Undead, all damage done to those types by the Hunter is increased by 2%." lvl="2"/>
-        <rank description="While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids and Undead, all damage done to those types by the Hunter is increased by 3%." lvl="3"/>
-        <rank description="While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids and Undead, all damage done to those types by the Hunter is increased by 4%." lvl="4"/>
-        <rank description="While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids and Undead, all damage done to those types by the Hunter is increased by 5%." lvl="5"/>
+    <tree bgImage="HunterSurvival" icon="ability_hunter_swiftstrike" key="Survival" name="生存" order="2">
+      <talent column="0" icon="ability_hunter_improvedtracking" key="1623" name="強化追蹤" tier="0">
+        <rank description="當你追蹤野獸、惡魔、龍類、元素生物、巨人、人型生物和不死生物時，你對該類型生物造成的所有傷害提高1%。" lvl="1"/>
+        <rank description="當你追蹤野獸、惡魔、龍類、元素生物、巨人、人型生物和不死生物時，你對該類型生物造成的所有傷害提高2%。" lvl="2"/>
+        <rank description="當你追蹤野獸、惡魔、龍類、元素生物、巨人、人型生物和不死生物時，你對該類型生物造成的所有傷害提高3%。" lvl="3"/>
+        <rank description="當你追蹤野獸、惡魔、龍類、元素生物、巨人、人型生物和不死生物時，你對該類型生物造成的所有傷害提高4%。" lvl="4"/>
+        <rank description="當你追蹤野獸、惡魔、龍類、元素生物、巨人、人型生物和不死生物時，你對該類型生物造成的所有傷害提高5%。" lvl="5"/>
       </talent>
-      <talent column="1" icon="ability_townwatch" key="1820" name="Hawk Eye" tier="0">
-        <rank description="Increases the range of your ranged weapons by 2 yards." lvl="1"/>
-        <rank description="Increases the range of your ranged weapons by 4 yards." lvl="2"/>
-        <rank description="Increases the range of your ranged weapons by 6 yards." lvl="3"/>
+      <talent column="1" icon="ability_townwatch" key="1820" name="鷹眼" tier="0">
+        <rank description="使你遠程武器的射程延長2碼。" lvl="1"/>
+        <rank description="使你遠程武器的射程延長4碼。" lvl="2"/>
+        <rank description="使你遠程武器的射程延長6碼。" lvl="3"/>
       </talent>
-      <talent column="2" icon="ability_racial_bloodrage" key="1621" name="Savage Strikes" tier="0">
-        <rank description="Increases the critical strike chance of Raptor Strike, Mongoose Bite and Counterattack by 10%." lvl="1"/>
-        <rank description="Increases the critical strike chance of Raptor Strike, Mongoose Bite and Counterattack by 20%." lvl="2"/>
+      <talent column="2" icon="ability_racial_bloodrage" key="1621" name="猛烈強擊" tier="0">
+        <rank description="使你猛禽一擊、貓鼬撕咬和反擊的致命一擊機率提高10%。" lvl="1"/>
+        <rank description="使你猛禽一擊、貓鼬撕咬和反擊的致命一擊機率提高20%。" lvl="2"/>
       </talent>
-      <talent column="0" icon="ability_kick" key="1310" name="Surefooted" tier="1">
-        <rank description="Reduces the duration of movement impairing effects by 10%." lvl="1"/>
-        <rank description="Reduces the duration of movement impairing effects by 20%." lvl="2"/>
-        <rank description="Reduces the duration of movement impairing effects by 30%." lvl="3"/>
+      <talent column="0" icon="ability_kick" key="1310" name="穩固" tier="1">
+        <rank description="使你受到移動限制效果的持續時間縮短10%。" lvl="1"/>
+        <rank description="使你受到移動限制效果的持續時間縮短20%。" lvl="2"/>
+        <rank description="使你受到移動限制效果的持續時間縮短30%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_nature_stranglevines" key="1304" name="Entrapment" tier="1">
-        <rank description="When your Frost Trap or Snake Trap are triggered you entrap all afflicted targets, preventing them from moving for 2 sec." lvl="1"/>
-        <rank description="When your Frost Trap or Snake Trap are triggered you entrap all afflicted targets, preventing them from moving for 3 sec." lvl="2"/>
-        <rank description="When your Frost Trap or Snake Trap are triggered you entrap all afflicted targets, preventing them from moving for 4 sec." lvl="3"/>
+      <talent column="1" icon="spell_nature_stranglevines" key="1304" name="誘捕" tier="1">
+        <rank description="當你的冰霜陷阱或毒蛇陷阱觸發時，可困住所有受影響的目標，令其無法移動，持續2秒。" lvl="1"/>
+        <rank description="當你的冰霜陷阱或毒蛇陷阱觸發時，可困住所有受影響的目標，令其無法移動，持續3秒。" lvl="2"/>
+        <rank description="當你的冰霜陷阱或毒蛇陷阱觸發時，可困住所有受影響的目標，令其無法移動，持續4秒。" lvl="3"/>
       </talent>
-      <talent column="2" icon="ability_ensnare" key="1305" name="Trap Mastery" tier="1">
-        <rank description="Frost Trap and Freezing Trap - Increases the duration by 10%.&lt;br/&gt;&lt;br/&gt;Immolation Trap, Explosive Trap and Black Arrow - Increases the periodic damage done by 10%.&lt;br/&gt;&lt;br/&gt;Snake Trap - Increases the number of snakes summoned by 2." lvl="1"/>
-        <rank description="Frost Trap and Freezing Trap - Increases the duration by 20%.&lt;br/&gt;&lt;br/&gt;Immolation Trap, Explosive Trap and Black Arrow - Increases the periodic damage done by 20%.&lt;br/&gt;&lt;br/&gt;Snake Trap - Increases the number of snakes summoned by 4." lvl="2"/>
-        <rank description="Frost Trap and Freezing Trap - Increases the duration by 30%.&lt;br/&gt;&lt;br/&gt;Immolation Trap, Explosive Trap and Black Arrow - Increases the periodic damage done by 30%.&lt;br/&gt;&lt;br/&gt;Snake Trap - Increases the number of snakes summoned by 6." lvl="3"/>
+      <talent column="2" icon="ability_ensnare" key="1305" name="精通陷阱" tier="1">
+        <rank description="冰霜陷阱和冰凍陷阱 - 持續時間延長10%。&lt;br/&gt;&lt;br/&gt;獻祭陷阱、爆炸陷阱和黑蝕箭 - 週期性傷害提高10%。&lt;br/&gt;&lt;br/&gt;毒蛇陷阱 - 可召喚的毒蛇數量增加2條。" lvl="1"/>
+        <rank description="冰霜陷阱和冰凍陷阱 - 持續時間延長20%。&lt;br/&gt;&lt;br/&gt;獻祭陷阱、爆炸陷阱和黑蝕箭 - 週期性傷害提高20%。&lt;br/&gt;&lt;br/&gt;毒蛇陷阱 - 可召喚的毒蛇數量增加4條。" lvl="2"/>
+        <rank description="冰霜陷阱和冰凍陷阱 - 持續時間延長30%。&lt;br/&gt;&lt;br/&gt;獻祭陷阱、爆炸陷阱和黑蝕箭 - 週期性傷害提高30%。&lt;br/&gt;&lt;br/&gt;毒蛇陷阱 - 可召喚的毒蛇數量增加6條。" lvl="3"/>
       </talent>
-      <talent column="3" icon="ability_hunter_survivalinstincts" key="1810" name="Survival Instincts" tier="1">
-        <rank description="Reduces all damage taken by 2% and increases the critical strike chance of your Arcane Shot, Steady Shot, and Explosive Shot by 2%." lvl="1"/>
-        <rank description="Reduces all damage taken by 4% and increases the critical strike chance of your Arcane Shot, Steady Shot, and Explosive Shot by 4%." lvl="2"/>
+      <talent column="3" icon="ability_hunter_survivalinstincts" key="1810" name="求生本能" tier="1">
+        <rank description="受到的所有傷害降低2%，同時使你的秘法射擊、穩固射擊和爆裂射擊造成致命一擊的機率提高2%。" lvl="1"/>
+        <rank description="受到的所有傷害降低4%，同時使你的秘法射擊、穩固射擊和爆裂射擊造成致命一擊的機率提高4%。" lvl="2"/>
       </talent>
-      <talent column="0" icon="spell_shadow_twilight" key="1622" name="Survivalist" tier="2">
-        <rank description="Increases your Stamina by 2%." lvl="1"/>
-        <rank description="Increases your Stamina by 4%." lvl="2"/>
-        <rank description="Increases your Stamina by 6%." lvl="3"/>
-        <rank description="Increases your Stamina by 8%." lvl="4"/>
-        <rank description="Increases your Stamina by 10%." lvl="5"/>
+      <talent column="0" icon="spell_shadow_twilight" key="1622" name="生存專家" tier="2">
+        <rank description="提高2%耐力。" lvl="1"/>
+        <rank description="提高4%耐力。" lvl="2"/>
+        <rank description="提高6%耐力。" lvl="3"/>
+        <rank description="提高8%耐力。" lvl="4"/>
+        <rank description="提高10%耐力。" lvl="5"/>
       </talent>
-      <talent column="1" icon="ability_golemstormbolt" key="1814" name="Scatter Shot" tier="2">
-        <rank description="A short-range shot that deals 50% weapon damage and disorients the target for 4 sec.  Any damage caused will remove the effect.  Turns off your attack when used." lvl="1"/>
+      <talent column="1" icon="ability_golemstormbolt" key="1814" name="驅散射擊" tier="2">
+        <rank description="短程射擊，對目標造成50%的武器傷害，並使其困惑4秒。任何傷害都會移除該效果。使用時會停止你的攻擊。" lvl="1"/>
         <spell castTime="0" cooldown="30000" maxRange="15">
           <power cost="8" type="mana"/>
         </spell>
       </talent>
-      <talent column="2" icon="ability_parry" key="1311" name="Deflection" tier="2">
-        <rank description="Increases your chance to parry by 1%, and reduces the duration of all Disarm effects used against you by 16%.  This does not stack with other Disarm duration reducing effects." lvl="1"/>
-        <rank description="Increases your chance to parry by 2%, and reduces the duration of all Disarm effects used against you by 25%.  This does not stack with other Disarm duration reducing effects." lvl="2"/>
-        <rank description="Increases your chance to parry by 3%, and reduces the duration of all Disarm effects used against you by 50%.  This does not stack with other Disarm duration reducing effects." lvl="3"/>
+      <talent column="2" icon="ability_parry" key="1311" name="偏斜" tier="2">
+        <rank description="使你的招架機率提高1%，並使你受到的所有繳械效果持續時間縮短16%。此效果無法與其它縮短繳械持續時間的效果堆疊。" lvl="1"/>
+        <rank description="使你的招架機率提高2%，並使你受到的所有繳械效果持續時間縮短25%。此效果無法與其它縮短繳械持續時間的效果堆疊。" lvl="2"/>
+        <rank description="使你的招架機率提高3%，並使你受到的所有繳械效果持續時間縮短50%。此效果無法與其它縮短繳械持續時間的效果堆疊。" lvl="3"/>
       </talent>
-      <talent column="3" icon="ability_rogue_feigndeath" key="1309" name="Survival Tactics" tier="2">
-        <rank description="Reduces the chance your Feign Death ability and all trap spells will be resisted by 2%, and reduces the cooldown of your Disengage ability by 2 sec." lvl="1"/>
-        <rank description="Reduces the chance your Feign Death ability and all trap spells will be resisted by 4%, and reduces the cooldown of your Disengage ability by 4 sec." lvl="2"/>
+      <talent column="3" icon="ability_rogue_feigndeath" key="1309" name="求生戰術" tier="2">
+        <rank description="使你假死技能和所有陷阱法術被抵抗的機率降低2%，並縮短脫逃技能的冷卻時間2秒。" lvl="1"/>
+        <rank description="使你假死技能和所有陷阱法術被抵抗的機率降低4%，並縮短脫逃技能的冷卻時間4秒。" lvl="2"/>
       </talent>
-      <talent column="1" icon="inv_misc_bomb_05" key="2229" name="T.N.T." tier="3">
-        <rank description="Increases the damage done by your Explosive Shot,  Explosive Trap, Black Arrow and Immolation Trap by 2%." lvl="1"/>
-        <rank description="Increases the damage done by your Explosive Shot,  Explosive Trap, Black Arrow and Immolation Trap by 4%." lvl="2"/>
-        <rank description="Increases the damage done by your Explosive Shot,  Explosive Trap, Black Arrow and Immolation Trap by 6%." lvl="3"/>
+      <talent column="1" icon="inv_misc_bomb_05" key="2229" name="黃色炸藥" tier="3">
+        <rank description="使你爆裂射擊、爆炸陷阱、黑蝕箭和獻祭陷阱造成的傷害提高2%。" lvl="1"/>
+        <rank description="使你爆裂射擊、爆炸陷阱、黑蝕箭和獻祭陷阱造成的傷害提高4%。" lvl="2"/>
+        <rank description="使你爆裂射擊、爆炸陷阱、黑蝕箭和獻祭陷阱造成的傷害提高6%。" lvl="3"/>
       </talent>
-      <talent column="3" icon="ability_hunter_lockandload" key="1306" name="Lock and Load" tier="3">
-        <rank description="You have a 33% chance when you trap a target with Freezing Trap, Freezing Arrow or Frost Trap and a 2% chance when you deal periodic damage with your Immolation Trap, Explosive Trap or Black Arrow to cause your next 2 Arcane Shot or Explosive Shot spells to trigger no cooldown, cost no mana and consume no ammo. This effect has a 22 sec cooldown." lvl="1"/>
-        <rank description="You have a 66% chance when you trap a target with Freezing Trap, Freezing Arrow or Frost Trap and a 4% chance when you deal periodic damage with your Immolation Trap, Explosive Trap or Black Arrow to cause your next 2 Arcane Shot or Explosive Shot spells to trigger no cooldown, cost no mana and consume no ammo. This effect has a 22 sec cooldown." lvl="2"/>
-        <rank description="You have a 100% chance when you trap a target with Freezing Trap, Freezing Arrow or Frost Trap and a 6% chance when you deal periodic damage with your Immolation Trap, Explosive Trap or Black Arrow to cause your next 2 Arcane Shot or Explosive Shot spells to trigger no cooldown, cost no mana and consume no ammo. This effect has a 22 sec cooldown." lvl="3"/>
+      <talent column="3" icon="ability_hunter_lockandload" key="1306" name="蓄勢待發" tier="3">
+        <rank description="當敵人落入你的冰凍陷阱、冰凍之箭或冰霜陷阱時有33%的機率，以及當你的獻祭陷阱、爆炸陷阱或黑蝕箭對敵人造成週期性傷害時有2%的機率讓你下2發秘法射擊或爆裂射擊不觸發冷卻時間，不消耗法力，並且不耗費彈藥。此效果擁有22秒的冷卻時間。" lvl="1"/>
+        <rank description="當敵人落入你的冰凍陷阱、冰凍之箭或冰霜陷阱時有66%的機率，以及當你的獻祭陷阱、爆炸陷阱或黑蝕箭對敵人造成週期性傷害時有4%的機率讓你下2發秘法射擊或爆裂射擊不觸發冷卻時間，不消耗法力，並且不耗費彈藥。此效果擁有22秒的冷卻時間。" lvl="2"/>
+        <rank description="當敵人落入你的冰凍陷阱、冰凍之箭或冰霜陷阱時有100%的機率，以及當你的獻祭陷阱、爆炸陷阱或黑蝕箭對敵人造成週期性傷害時有6%的機率讓你下2發秘法射擊或爆裂射擊不觸發冷卻時間，不消耗法力，並且不耗費彈藥。此效果擁有22秒的冷卻時間。" lvl="3"/>
       </talent>
-      <talent column="0" icon="ability_hunter_huntervswild" key="2228" name="Hunter vs. Wild" requires="1622" tier="4">
-        <rank description="Increases you and your pet's attack power and ranged attack power equal to 10% of your total Stamina." lvl="1"/>
-        <rank description="Increases you and your pet's attack power and ranged attack power equal to 20% of your total Stamina." lvl="2"/>
-        <rank description="Increases you and your pet's attack power and ranged attack power equal to 30% of your total Stamina." lvl="3"/>
+      <talent column="0" icon="ability_hunter_huntervswild" key="2228" name="荒野遊俠" requires="1622" tier="4">
+        <rank description="使你與寵物的攻擊強度和遠程攻擊強度提高相當於你總耐力的10%。" lvl="1"/>
+        <rank description="使你與寵物的攻擊強度和遠程攻擊強度提高相當於你總耐力的20%。" lvl="2"/>
+        <rank description="使你與寵物的攻擊強度和遠程攻擊強度提高相當於你總耐力的30%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_holy_blessingofstamina" key="1321" name="Killer Instinct" tier="4">
-        <rank description="Increases your critical strike chance with all attacks by 1%." lvl="1"/>
-        <rank description="Increases your critical strike chance with all attacks by 2%." lvl="2"/>
-        <rank description="Increases your critical strike chance with all attacks by 3%." lvl="3"/>
+      <talent column="1" icon="spell_holy_blessingofstamina" key="1321" name="使你所有攻擊造成致命一擊的機率提高1%。" tier="4">
+        <rank description="使你所有攻擊造成致命一擊的機率提高1%。" lvl="1"/>
+        <rank description="使你所有攻擊造成致命一擊的機率提高2%。" lvl="2"/>
+        <rank description="使你所有攻擊造成致命一擊的機率提高3%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="ability_warrior_challange" key="1312" name="Counterattack" requires="1311" tier="4">
-        <rank description="A strike that becomes active after parrying an opponent's attack.  This attack deals 53 damage and immobilizes the target for 5 sec.  Counterattack cannot be blocked, dodged, or parried." lvl="1"/>
+      <talent column="2" icon="ability_warrior_challange" key="1312" name="反擊" requires="1311" tier="4">
+        <rank description="在招架敵人的攻擊之後可以使用的技能，對敵人造53點傷害，並使其無法移動，持續5秒。反擊無法被格擋、閃躲或招架。" lvl="1"/>
         <spell castTime="0" cooldown="5000" maxRange="5">
           <power cost="3" type="mana"/>
         </spell>
       </talent>
-      <talent column="0" icon="spell_nature_invisibilty" key="1303" name="Lightning Reflexes" tier="5">
-        <rank description="Increases your Agility by 3%." lvl="1"/>
-        <rank description="Increases your Agility by 6%." lvl="2"/>
-        <rank description="Increases your Agility by 9%." lvl="3"/>
-        <rank description="Increases your Agility by 12%." lvl="4"/>
-        <rank description="Increases your Agility by 15%." lvl="5"/>
+      <talent column="0" icon="spell_nature_invisibilty" key="1303" name="閃電反射" tier="5">
+        <rank description="提高3%敏捷。" lvl="1"/>
+        <rank description="提高6%敏捷。" lvl="2"/>
+        <rank description="提高9%敏捷。" lvl="3"/>
+        <rank description="提高12%敏捷。" lvl="4"/>
+        <rank description="提高15%敏捷。" lvl="5"/>
       </talent>
-      <talent column="2" icon="ability_hunter_resourcefulness" key="1809" name="Resourcefulness" tier="5">
-        <rank description="Reduces the mana cost of all traps, melee abilities and Black Arrow by 20% and reduces the cooldown of all traps and Black Arrow by 2 sec." lvl="1"/>
-        <rank description="Reduces the mana cost of all traps, melee abilities and Black Arrow by 40% and reduces the cooldown of all traps and Black Arrow by 4 sec." lvl="2"/>
-        <rank description="Reduces the mana cost of all traps, melee abilities and Black Arrow by 60% and reduces the cooldown of all traps and Black Arrow by 6 sec." lvl="3"/>
+      <talent column="2" icon="ability_hunter_resourcefulness" key="1809" name="足智多謀" tier="5">
+        <rank description="使所有陷阱、近戰攻擊和黑蝕箭技能所消耗的法力降低20%，並使所有陷阱和黑蝕箭的冷卻時間縮短2秒。" lvl="1"/>
+        <rank description="使所有陷阱、近戰攻擊和黑蝕箭技能所消耗的法力降低40%，並使所有陷阱和黑蝕箭的冷卻時間縮短4秒。" lvl="2"/>
+        <rank description="使所有陷阱、近戰攻擊和黑蝕箭技能所消耗的法力降低60%，並使所有陷阱和黑蝕箭的冷卻時間縮短6秒。" lvl="3"/>
       </talent>
-      <talent column="0" icon="ability_rogue_findweakness" key="1812" name="Expose Weakness" requires="1303" tier="6">
-        <rank description="Your ranged criticals have a 33% chance to grant you Expose Weakness. Expose Weakness increases your attack power by 25% of your Agility for 7 sec." lvl="1"/>
-        <rank description="Your ranged criticals have a 66% chance to grant you Expose Weakness. Expose Weakness increases your attack power by 25% of your Agility for 7 sec." lvl="2"/>
-        <rank description="Your ranged criticals have a 100% chance to grant you Expose Weakness. Expose Weakness increases your attack power by 25% of your Agility for 7 sec." lvl="3"/>
+      <talent column="0" icon="ability_rogue_findweakness" key="1812" name="弱點識破" requires="1303" tier="6">
+        <rank description="你的遠程致命一擊有33%的機率獲得弱點識破的效果。弱點識破可使你的攻擊強度提高相當於你25%的敏捷值，持續7秒。" lvl="1"/>
+        <rank description="你的遠程致命一擊有66%的機率獲得弱點識破的效果。弱點識破可使你的攻擊強度提高相當於你25%的敏捷值，持續7秒。" lvl="2"/>
+        <rank description="你的遠程致命一擊有100%的機率獲得弱點識破的效果。弱點識破可使你的攻擊強度提高相當於你25%的敏捷值，持續7秒。" lvl="3"/>
       </talent>
-      <talent column="1" icon="inv_spear_02" key="1325" name="Wyvern Sting" requires="1321" tier="6">
-        <rank description="A stinging shot that puts the target to sleep for 30 sec.  Any damage will cancel the effect.  When the target wakes up, the Sting causes 300 Nature damage over 6 sec.  Only one Sting per Hunter can be active on the target at a time." lvl="1"/>
+      <talent column="1" icon="inv_spear_02" key="1325" name="翼龍釘刺" requires="1321" tier="6">
+        <rank description="釘刺目標，使其沉睡30秒。任何傷害都會取消沉睡效果。當目標醒來時，釘刺會在6秒內對其造成點自然傷害。每個獵人在同一時間內只能對一個目標使用一種釘刺。" lvl="1"/>
         <spell castTime="0" cooldown="60000" maxRange="35" minRange="5">
           <power cost="8" type="mana"/>
         </spell>
       </talent>
-      <talent column="2" icon="ability_hunter_thrillofthehunt" key="1811" name="Thrill of the Hunt" tier="6">
-        <rank description="Gives you a 33% chance to regain 40% of the mana cost of any shot when it critically hits." lvl="1"/>
-        <rank description="Gives you a 66% chance to regain 40% of the mana cost of any shot when it critically hits." lvl="2"/>
-        <rank description="Gives you a 100% chance to regain 40% of the mana cost of any shot when it critically hits." lvl="3"/>
+      <talent column="2" icon="ability_hunter_thrillofthehunt" key="1811" name="追獵回饋" tier="6">
+        <rank description="當你的射擊技能造成致命一擊時，有33%的機率獲得該射擊技能40%的法力。" lvl="1"/>
+        <rank description="當你的射擊技能造成致命一擊時，有66%的機率獲得該射擊技能40%的法力。" lvl="2"/>
+        <rank description="當你的射擊技能造成致命一擊時，有100%的機率獲得該射擊技能40%的法力。" lvl="3"/>
       </talent>
-      <talent column="0" icon="ability_hunter_mastertactitian" key="1813" name="Master Tactician" tier="7">
-        <rank description="Your successful ranged attacks have a 10% chance to increase your critical strike chance with all attacks by 2% for 8 sec." lvl="1"/>
-        <rank description="Your successful ranged attacks have a 10% chance to increase your critical strike chance with all attacks by 4% for 8 sec." lvl="2"/>
-        <rank description="Your successful ranged attacks have a 10% chance to increase your critical strike chance with all attacks by 6% for 8 sec." lvl="3"/>
-        <rank description="Your successful ranged attacks have a 10% chance to increase your critical strike chance with all attacks by 8% for 8 sec." lvl="4"/>
-        <rank description="Your successful ranged attacks have a 10% chance to increase your critical strike chance with all attacks by 10% for 8 sec." lvl="5"/>
+      <talent column="0" icon="ability_hunter_mastertactitian" key="1813" name="戰術大師" tier="7">
+        <rank description="你的遠程攻擊成功擊中後有10%的機率提高所有攻擊的致命一擊機率2%，持續8秒。" lvl="1"/>
+        <rank description="你的遠程攻擊成功擊中後有10%的機率提高所有攻擊的致命一擊機率4%，持續8秒。" lvl="2"/>
+        <rank description="你的遠程攻擊成功擊中後有10%的機率提高所有攻擊的致命一擊機率6%，持續8秒。" lvl="3"/>
+        <rank description="你的遠程攻擊成功擊中後有10%的機率提高所有攻擊的致命一擊機率8%，持續8秒。" lvl="4"/>
+        <rank description="你的遠程攻擊成功擊中後有10%的機率提高所有攻擊的致命一擊機率10%，持續8秒。" lvl="5"/>
       </talent>
-      <talent column="1" icon="ability_hunter_potentvenom" key="2141" name="Noxious Stings" requires="1325" tier="7">
-        <rank description="If Wyvern Sting is dispelled, the dispeller is also afflicted by Wyvern Sting lasting 16% of the duration remaining, and increases all damage done by you on targets afflicted by your Serpent Sting by 1%." lvl="1"/>
-        <rank description="If Wyvern Sting is dispelled, the dispeller is also afflicted by Wyvern Sting lasting 25% of the duration remaining, and increases all damage done by you on targets afflicted by your Serpent Sting by 2%." lvl="2"/>
-        <rank description="If Wyvern Sting is dispelled, the dispeller is also afflicted by Wyvern Sting lasting 50% of the duration remaining, and increases all damage done by you on targets afflicted by your Serpent Sting by 3%." lvl="3"/>
+      <talent column="1" icon="ability_hunter_potentvenom" key="2141" name="毒液釘刺'" requires="1325" tier="7">
+        <rank description="當翼龍釘刺被驅散時，驅散者也會受到16%剩餘的翼龍釘刺持續時間影響，並使你對受到你毒蛇釘刺影響目標造成的傷害提高1%。" lvl="1"/>
+        <rank description="當翼龍釘刺被驅散時，驅散者也會受到25%剩餘的翼龍釘刺持續時間影響，並使你對受到你毒蛇釘刺影響目標造成的傷害提高2%。" lvl="2"/>
+        <rank description="當翼龍釘刺被驅散時，驅散者也會受到50%剩餘的翼龍釘刺持續時間影響，並使你對受到你毒蛇釘刺影響目標造成的傷害提高3%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="ability_hunter_pointofnoescape" key="2142" name="Point of No Escape" tier="8">
-        <rank description="Increases the critical strike chance of all of your attacks on targets affected by your Frost Trap, Freezing Trap and Freezing Arrow by 3%." lvl="1"/>
-        <rank description="Increases the critical strike chance of all of your attacks on targets affected by your Frost Trap, Freezing Trap and Freezing Arrow by 6%." lvl="2"/>
+      <talent column="0" icon="ability_hunter_pointofnoescape" key="2142" name="無處可逃" tier="8">
+        <rank description="使你的所有攻擊對受你冰霜陷阱、冰凍陷阱和冰凍之箭影響的目標造成致命一擊的機率提高3%。" lvl="1"/>
+        <rank description="使你的所有攻擊對受你冰霜陷阱、冰凍陷阱和冰凍之箭影響的目標造成致命一擊的機率提高6%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_shadow_painspike" key="1322" name="Black Arrow" tier="8">
-        <rank description="Fires a Black Arrow at the target, increasing all damage done by you to the target by 6% and dealing 786 Shadow damage over 15 sec. Black Arrow shares a cooldown with Trap spells." lvl="1"/>
+      <talent column="1" icon="spell_shadow_painspike" key="1322" name="黑蝕箭" tier="8">
+        <rank description="向目標射出一支黑蝕箭，使你對該目標造成的傷害提高6%，並且在15秒內786點暗影傷害。黑蝕箭與陷阱法術共用相同的冷卻時間。" lvl="1"/>
         <spell castTime="0" cooldown="30000" maxRange="35" minRange="5">
           <power cost="6" type="mana"/>
         </spell>
       </talent>
-      <talent column="3" icon="ability_hunter_longshots" key="2143" name="Sniper Training" tier="8">
-        <rank description="Increases the critical strike chance of your Kill Shot ability by 5%, and while standing still for 6 sec, you gain Sniper Training increasing the damage done by your Steady Shot, Aimed Shot, Black Arrow and Explosive Shot by 2% for 15 sec." lvl="1"/>
-        <rank description="Increases the critical strike chance of your Kill Shot ability by 10%, and while standing still for 6 sec, you gain Sniper Training increasing the damage done by your Steady Shot, Aimed Shot, Black Arrow and Explosive Shot by 4% for 15 sec." lvl="2"/>
-        <rank description="Increases the critical strike chance of your Kill Shot ability by 15%, and while standing still for 6 sec, you gain Sniper Training increasing the damage done by your Steady Shot, Aimed Shot, Black Arrow and Explosive Shot by 6% for 15 sec." lvl="3"/>
+      <talent column="3" icon="ability_hunter_longshots" key="2143" name="狙擊訓練" tier="8">
+        <rank description="使你擊殺射擊造成致命一擊的機率提高5%，並且當你原地佇立6秒時可獲得狙擊訓練的效果，使你的穩固射擊、瞄準射擊、黑蝕箭和爆裂射擊造成的傷害提高2%，持續15秒。" lvl="1"/>
+        <rank description="使你擊殺射擊造成致命一擊的機率提高10%，並且當你原地佇立6秒時可獲得狙擊訓練的效果，使你的穩固射擊、瞄準射擊、黑蝕箭和爆裂射擊造成的傷害提高4%，持續15秒。" lvl="2"/>
+        <rank description="使你擊殺射擊造成致命一擊的機率提高15%，並且當你原地佇立6秒時可獲得狙擊訓練的效果，使你的穩固射擊、瞄準射擊、黑蝕箭和爆裂射擊造成的傷害提高6%，持續15秒。" lvl="3"/>
       </talent>
-      <talent column="2" icon="ability_hunter_huntingparty" key="2144" name="Hunting Party" requires="1811" tier="9">
-        <rank description="Increases your total Agility by an additional 1%, and your Arcane Shot, Explosive Shot and Steady Shot critical strikes have a 33% chance to grant up to 10 party or raid members mana regeneration equal to 1% of the maximum mana per 5 sec. Lasts for 15 sec." lvl="1"/>
-        <rank description="Increases your total Agility by an additional 2%, and your Arcane Shot, Explosive Shot and Steady Shot critical strikes have a 66% chance to grant up to 10 party or raid members mana regeneration equal to 1% of the maximum mana per 5 sec. Lasts for 15 sec." lvl="2"/>
-        <rank description="Increases your total Agility by an additional 3%, and your Arcane Shot, Explosive Shot and Steady Shot critical strikes have a 100% chance to grant up to 10 party or raid members mana regeneration equal to 1% of the maximum mana per 5 sec. Lasts for 15 sec." lvl="3"/>
+      <talent column="2" icon="ability_hunter_huntingparty" key="2144" name="狩獵團隊" requires="1811" tier="9">
+        <rank description="使你的敏捷額外提高1%，並且你的秘法射擊、爆裂射擊和穩固射擊造成致命一擊時，有33%的機率提供最多10名小隊或團隊成員每5秒恢復法力上限1%的恢復速度，持續15秒。" lvl="1"/>
+        <rank description="使你的敏捷額外提高2%，並且你的秘法射擊、爆裂射擊和穩固射擊造成致命一擊時，有66%的機率提供最多10名小隊或團隊成員每5秒恢復法力上限1%的恢復速度，持續15秒。" lvl="2"/>
+        <rank description="使你的敏捷額外提高3%，並且你的秘法射擊、爆裂射擊和穩固射擊造成致命一擊時，有100%的機率提供最多10名小隊或團隊成員每5秒恢復法力上限1%的恢復速度，持續15秒。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_hunter_explosiveshot" key="2145" name="Explosive Shot" requires="1322" tier="10">
-        <rank description="You fire an explosive charge into the enemy target, dealing 146-174 Fire damage. The charge will blast the target every second for an additional 2 sec." lvl="1"/>
+      <talent column="1" icon="ability_hunter_explosiveshot" key="2145" name="爆裂射擊" requires="1322" tier="10">
+        <rank description="你對目標射出爆裂物，造成146-174 點火焰傷害。此爆裂物每秒持續對該目標造成額外的爆裂傷害，持續2秒。" lvl="1"/>
         <spell castTime="0" cooldown="6000" maxRange="35" minRange="5">
           <power cost="7" type="mana"/>
         </spell>
       </talent>
     </tree>
-    <tree bgImage="HunterBeastMastery" icon="ability_hunter_beasttaming" key="BeastMastery" name="Beast Mastery" order="0">
-      <talent column="1" icon="spell_nature_ravenform" key="1382" name="Improved Aspect of the Hawk" tier="0">
-        <rank description="While Aspect of the Hawk or Dragonhawk is active, all normal ranged attacks have a 10% chance of increasing ranged attack speed by 3% for 12 sec." lvl="1"/>
-        <rank description="While Aspect of the Hawk or Dragonhawk is active, all normal ranged attacks have a 10% chance of increasing ranged attack speed by 6% for 12 sec." lvl="2"/>
-        <rank description="While Aspect of the Hawk or Dragonhawk is active, all normal ranged attacks have a 10% chance of increasing ranged attack speed by 9% for 12 sec." lvl="3"/>
-        <rank description="While Aspect of the Hawk or Dragonhawk is active, all normal ranged attacks have a 10% chance of increasing ranged attack speed by 12% for 12 sec." lvl="4"/>
-        <rank description="While Aspect of the Hawk or Dragonhawk is active, all normal ranged attacks have a 10% chance of increasing ranged attack speed by 15% for 12 sec." lvl="5"/>
+    <tree bgImage="HunterBeastMastery" icon="ability_hunter_beasttaming" key="BeastMastery" name="野獸控制" order="0">
+      <talent column="1" icon="spell_nature_ravenform" key="1382" name="強化雄鷹守護" tier="0">
+        <rank description="你的雄鷹守護和龍鷹守護作用期間，所有普通的遠程攻擊有10%的機率使你的遠程攻擊速度提高3%，持續12秒。" lvl="1"/>
+        <rank description="你的雄鷹守護和龍鷹守護作用期間，所有普通的遠程攻擊有10%的機率使你的遠程攻擊速度提高6%，持續12秒。" lvl="2"/>
+        <rank description="你的雄鷹守護和龍鷹守護作用期間，所有普通的遠程攻擊有10%的機率使你的遠程攻擊速度提高9%，持續12秒。" lvl="3"/>
+        <rank description="你的雄鷹守護和龍鷹守護作用期間，所有普通的遠程攻擊有10%的機率使你的遠程攻擊速度提高12%，持續12秒。" lvl="4"/>
+        <rank description="你的雄鷹守護和龍鷹守護作用期間，所有普通的遠程攻擊有10%的機率使你的遠程攻擊速度提高15%，持續12秒。" lvl="5"/>
       </talent>
-      <talent column="2" icon="spell_nature_reincarnation" key="1389" name="Endurance Training" tier="0">
-        <rank description="Increases the health of your pet by 2% and your total health by 1%." lvl="1"/>
-        <rank description="Increases the health of your pet by 4% and your total health by 2%." lvl="2"/>
-        <rank description="Increases the health of your pet by 6% and your total health by 3%." lvl="3"/>
-        <rank description="Increases the health of your pet by 8% and your total health by 4%." lvl="4"/>
-        <rank description="Increases the health of your pet by 10% and your total health by 5%." lvl="5"/>
+      <talent column="2" icon="spell_nature_reincarnation" key="1389" name="耐久訓練" tier="0">
+        <rank description="使你寵物的生命力提高2%，並使你的總生命力提高1%。" lvl="1"/>
+        <rank description="使你寵物的生命力提高2%，並使你的總生命力提高2%。" lvl="2"/>
+        <rank description="使你寵物的生命力提高2%，並使你的總生命力提高3%。" lvl="3"/>
+        <rank description="使你寵物的生命力提高2%，並使你的總生命力提高4%。" lvl="4"/>
+        <rank description="使你寵物的生命力提高2%，並使你的總生命力提高5%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="ability_hunter_silenthunter" key="1624" name="Focused Fire" tier="1">
-        <rank description="All damage caused by you is increased by 1% while your pet is active and the critical strike chance of your pet's special abilities is increased by 10% while Kill Command is active." lvl="1"/>
-        <rank description="All damage caused by you is increased by 2% while your pet is active and the critical strike chance of your pet's special abilities is increased by 20% while Kill Command is active." lvl="2"/>
+      <talent column="0" icon="ability_hunter_silenthunter" key="1624" name="專注攻擊" tier="1">
+        <rank description="當你的寵物處於活動狀態時，你所造成的所有傷害提高1%，並且當你的擊殺命令處於啟動狀態時，寵物的特殊技能致命一擊機率提高10%。" lvl="1"/>
+        <rank description="當你的寵物處於活動狀態時，你所造成的所有傷害提高2%，並且當你的擊殺命令處於啟動狀態時，寵物的特殊技能致命一擊機率提高20%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="ability_hunter_aspectofthemonkey" key="1381" name="Improved Aspect of the Monkey" tier="1">
-        <rank description="Increases the Dodge bonus of your Aspect of the Monkey and Aspect of the Dragonhawk by 2%." lvl="1"/>
-        <rank description="Increases the Dodge bonus of your Aspect of the Monkey and Aspect of the Dragonhawk by 4%." lvl="2"/>
-        <rank description="Increases the Dodge bonus of your Aspect of the Monkey and Aspect of the Dragonhawk by 6%." lvl="3"/>
+      <talent column="1" icon="ability_hunter_aspectofthemonkey" key="1381" name="強化靈猴守護" tier="1">
+        <rank description="使你靈猴守護和龍鷹守護所賦予的閃躲加成額外提高2%。" lvl="1"/>
+        <rank description="使你靈猴守護和龍鷹守護所賦予的閃躲加成額外提高4%。" lvl="2"/>
+        <rank description="使你靈猴守護和龍鷹守護所賦予的閃躲加成額外提高6%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="inv_misc_pelt_bear_03" key="1395" name="Thick Hide" tier="1">
-        <rank description="Increases the armor rating of your pets by 7% and your armor contribution from items by 4%." lvl="1"/>
-        <rank description="Increases the armor rating of your pets by 14% and your armor contribution from items by 7%." lvl="2"/>
-        <rank description="Increases the armor rating of your pets by 20% and your armor contribution from items by 10%." lvl="3"/>
+      <talent column="2" icon="inv_misc_pelt_bear_03" key="1395" name="厚皮" tier="1">
+        <rank description="使你寵物的護甲值提高7%，並使你從裝備獲得的護甲值提高4%。" lvl="1"/>
+        <rank description="使你寵物的護甲值提高14%，並使你從裝備獲得的護甲值提高7%。" lvl="2"/>
+        <rank description="使你寵物的護甲值提高20%，並使你從裝備獲得的護甲值提高10%。" lvl="3"/>
       </talent>
-      <talent column="3" icon="ability_hunter_beastsoothe" key="1625" name="Improved Revive Pet" tier="1">
-        <rank description="Revive Pet's casting time is reduced by 3 sec, mana cost is reduced by 20%, and increases the health your pet returns with by an additional 15%." lvl="1"/>
-        <rank description="Revive Pet's casting time is reduced by 6 sec, mana cost is reduced by 40%, and increases the health your pet returns with by an additional 30%." lvl="2"/>
+      <talent column="3" icon="ability_hunter_beastsoothe" key="1625" name="強化復活寵物" tier="1">
+        <rank description="使你復活寵物法術的施法時間縮短3秒，法力消耗降低20%，寵物復活後的生命力提高15%。" lvl="1"/>
+        <rank description="使你復活寵物法術的施法時間縮短6秒，法力消耗降低40%，寵物復活後的生命力提高30%。" lvl="2"/>
       </talent>
-      <talent column="0" icon="ability_mount_jungletiger" key="1384" name="Pathfinding" tier="2">
-        <rank description="Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 4%, and increases your speed while mounted by 5%. The mounted movement speed increase does not stack with other effects." lvl="1"/>
-        <rank description="Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 8%, and increases your speed while mounted by 10%. The mounted movement speed increase does not stack with other effects." lvl="2"/>
+      <talent column="0" icon="ability_mount_jungletiger" key="1384" name="尋路" tier="2">
+        <rank description="使你獵豹守護和豹群守護的速度加成效果提高4%，並提高你的騎乘速度5%，此效果無法與其它提高騎乘速度的效果堆疊。" lvl="1"/>
+        <rank description="使你獵豹守護和豹群守護的速度加成效果提高8%，並提高你的騎乘速度10%，此效果無法與其它提高騎乘速度的效果堆疊。" lvl="2"/>
       </talent>
-      <talent column="1" icon="ability_hunter_aspectmastery" key="2138" name="Aspect Mastery" tier="2">
-        <rank description="Aspect of the Viper - Reduces the damage penalty by 10%.&lt;br/&gt;&lt;br/&gt;Aspect of the Monkey - Reduces the damage done to you while active by 5%.&lt;br/&gt;&lt;br/&gt;Aspect of the Hawk - Increases the attack power bonus by 30%.&lt;br/&gt;&lt;br/&gt;Aspect of the Dragonhawk - Combines the bonuses from Aspect of the Monkey and Hawk." lvl="1"/>
+      <talent column="1" icon="ability_hunter_aspectmastery" key="2138" name="精通守護" tier="2">
+        <rank description="蝮蛇守護 - 傷害懲罰減少10%。&lt;br/&gt;&lt;br/&gt;靈猴守護 - 啟動狀態下受到的傷害降低5%。&lt;br/&gt;&lt;br/&gt;雄鷹守護 - 攻擊強度加成提高30%。&lt;br/&gt;&lt;br/&gt;龍鷹守護 - 同時擁有靈猴守護和雄鷹守護的加成效果。" lvl="1"/>
       </talent>
-      <talent column="2" icon="ability_bullrush" key="1396" name="Unleashed Fury" tier="2">
-        <rank description="Increases the damage done by your pets by 3%." lvl="1"/>
-        <rank description="Increases the damage done by your pets by 6%." lvl="2"/>
-        <rank description="Increases the damage done by your pets by 9%." lvl="3"/>
-        <rank description="Increases the damage done by your pets by 12%." lvl="4"/>
-        <rank description="Increases the damage done by your pets by 15%." lvl="5"/>
+      <talent column="2" icon="ability_bullrush" key="1396" name="狂怒釋放" tier="2">
+        <rank description="使你寵物所造成的傷害提高3%。" lvl="1"/>
+        <rank description="使你寵物所造成的傷害提高6%。" lvl="2"/>
+        <rank description="使你寵物所造成的傷害提高9%。" lvl="3"/>
+        <rank description="使你寵物所造成的傷害提高12%。" lvl="4"/>
+        <rank description="使你寵物所造成的傷害提高15%。" lvl="5"/>
       </talent>
-      <talent column="1" icon="ability_hunter_mendpet" key="1385" name="Improved Mend Pet" tier="3">
-        <rank description="Reduces the mana cost of your Mend Pet spell by 10% and gives the Mend Pet spell a 25% chance of cleansing 1 Curse, Disease, Magic or Poison effect from the pet each tick." lvl="1"/>
-        <rank description="Reduces the mana cost of your Mend Pet spell by 20% and gives the Mend Pet spell a 50% chance of cleansing 1 Curse, Disease, Magic or Poison effect from the pet each tick." lvl="2"/>
+      <talent column="1" icon="ability_hunter_mendpet" key="1385" name="強化治療寵物" tier="3">
+        <rank description="使你治療寵物技能的法力消耗降低10%並且在每次作用時都有25%的機率移除寵物身上1個詛咒、疾病、 魔法或中毒效果。" lvl="1"/>
+        <rank description="使你治療寵物技能的法力消耗降低20%並且在每次作用時都有50%的機率移除寵物身上1個詛咒、疾病、 魔法或中毒效果。" lvl="2"/>
       </talent>
-      <talent column="2" icon="inv_misc_monsterclaw_04" key="1393" name="Ferocity" tier="3">
-        <rank description="Increases the critical strike chance of your pet by 2%." lvl="1"/>
-        <rank description="Increases the critical strike chance of your pet by 4%." lvl="2"/>
-        <rank description="Increases the critical strike chance of your pet by 6%." lvl="3"/>
-        <rank description="Increases the critical strike chance of your pet by 8%." lvl="4"/>
-        <rank description="Increases the critical strike chance of your pet by 10%." lvl="5"/>
+      <talent column="2" icon="inv_misc_monsterclaw_04" key="1393" name="兇暴" tier="3">
+        <rank description="使你寵物造成致命一擊的機率提高2%。" lvl="1"/>
+        <rank description="使你寵物造成致命一擊的機率提高4%。" lvl="2"/>
+        <rank description="使你寵物造成致命一擊的機率提高6%。" lvl="3"/>
+        <rank description="使你寵物造成致命一擊的機率提高8%。" lvl="4"/>
+        <rank description="使你寵物造成致命一擊的機率提高10%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="ability_druid_demoralizingroar" key="1388" name="Spirit Bond" tier="4">
-        <rank description="While your pet is active, you and your pet will regenerate 1% of total health every 10 sec., and increases healing done to you and your pet by 5%." lvl="1"/>
-        <rank description="While your pet is active, you and your pet will regenerate 2% of total health every 10 sec., and increases healing done to you and your pet by 10%." lvl="2"/>
+      <talent column="0" icon="ability_druid_demoralizingroar" key="1388" name="靈魂聯結" tier="4">
+        <rank description="只要你的寵物處於活動狀態，你與你的寵物都會每10秒恢復1%的生命力，並提高你與你的寵物受到的治療效果5%。" lvl="1"/>
+        <rank description="只要你的寵物處於活動狀態，你與你的寵物都會每10秒恢復2%的生命力，並提高你與你的寵物受到的治療效果10%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="ability_devour" key="1387" name="Intimidation" tier="4">
-        <rank description="Command your pet to intimidate the target, causing a high amount of threat and stunning the target for 3 sec. Lasts 15 sec." lvl="1"/>
+      <talent column="1" icon="ability_devour" key="1387" name="脅迫" tier="4">
+        <rank description="命令你的寵物對目標進行脅迫，造成大量的威脅值，並使目標昏迷3秒，持續15秒。" lvl="1"/>
         <spell castTime="0" cooldown="60000" maxRange="100">
           <power cost="8" type="mana"/>
         </spell>
       </talent>
-      <talent column="3" icon="spell_nature_abolishmagic" key="1390" name="Bestial Discipline" tier="4">
-        <rank description="Increases the Focus regeneration of your pets by 50%." lvl="1"/>
-        <rank description="Increases the Focus regeneration of your pets by 100%." lvl="2"/>
+      <talent column="3" icon="spell_nature_abolishmagic" key="1390" name="野獸戒律" tier="4">
+        <rank description="使你寵物的集中值恢復速度提高50%。" lvl="1"/>
+        <rank description="使你寵物的集中值恢復速度提高100%。" lvl="2"/>
       </talent>
-      <talent column="0" icon="ability_hunter_animalhandler" key="1799" name="Animal Handler" tier="5">
-        <rank description="Increases your pet's attack power by 5%, and increases the duration of your Master's Call effect by 3 sec." lvl="1"/>
-        <rank description="Increases your pet's attack power by 10%, and increases the duration of your Master's Call effect by 6 sec." lvl="2"/>
+      <talent column="0" icon="ability_hunter_animalhandler" key="1799" name="動物管理者" tier="5">
+        <rank description="使你寵物的攻擊強度提高5%，並延長主人的呼喚持續時間3秒。" lvl="1"/>
+        <rank description="使你寵物的攻擊強度提高10%，並延長主人的呼喚持續時間6秒。" lvl="2"/>
       </talent>
-      <talent column="2" icon="inv_misc_monsterclaw_03" key="1397" name="Frenzy" requires="1393" tier="5">
-        <rank description="Gives your pet a 20% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike." lvl="1"/>
-        <rank description="Gives your pet a 40% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike." lvl="2"/>
-        <rank description="Gives your pet a 60% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike." lvl="3"/>
-        <rank description="Gives your pet a 80% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike." lvl="4"/>
-        <rank description="Gives your pet a 100% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike." lvl="5"/>
+      <talent column="2" icon="inv_misc_monsterclaw_03" key="1397" name="狂亂" requires="1393" tier="5">
+        <rank description="使你寵物有20%的機率在對敵人造成致命一擊後獲得攻擊速度提高30%的效果，持續8秒。" lvl="1"/>
+        <rank description="使你寵物有40%的機率在對敵人造成致命一擊後獲得攻擊速度提高30%的效果，持續8秒。" lvl="2"/>
+        <rank description="使你寵物有60%的機率在對敵人造成致命一擊後獲得攻擊速度提高30%的效果，持續8秒。" lvl="3"/>
+        <rank description="使你寵物有80%的機率在對敵人造成致命一擊後獲得攻擊速度提高30%的效果，持續8秒。" lvl="4"/>
+        <rank description="使你寵物有100%的機率在對敵人造成致命一擊後獲得攻擊速度提高30%的效果，持續8秒。" lvl="5"/>
       </talent>
-      <talent column="0" icon="ability_hunter_ferociousinspiration" key="1800" name="Ferocious Inspiration" tier="6">
-        <rank description="All party and raid members have all damage increased by 1% within 100 yards of your pet. In addition, increases the damage dealt by Arcane Shot and Steady Shot by 3%." lvl="1"/>
-        <rank description="All party and raid members have all damage increased by 2% within 100 yards of your pet. In addition, increases the damage dealt by Arcane Shot and Steady Shot by 6%." lvl="2"/>
-        <rank description="All party and raid members have all damage increased by 3% within 100 yards of your pet. In addition, increases the damage dealt by Arcane Shot and Steady Shot by 9%." lvl="3"/>
+      <talent column="0" icon="ability_hunter_ferociousinspiration" key="1800" name="兇性鼓舞" tier="6">
+        <rank description="當你的寵物造成致命一擊時，所有隊伍和團隊成員造成的所有傷害提高1%，持續10秒。此外，秘法射擊造成的傷害提高3%。" lvl="1"/>
+        <rank description="當你的寵物造成致命一擊時，所有隊伍和團隊成員造成的所有傷害提高2%，持續10秒。此外，秘法射擊造成的傷害提高6%。" lvl="2"/>
+        <rank description="當你的寵物造成致命一擊時，所有隊伍和團隊成員造成的所有傷害提高3%，持續10秒。此外，秘法射擊造成的傷害提高9%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_druid_ferociousbite" key="1386" name="Bestial Wrath" requires="1387" tier="6">
-        <rank description="Send your pet into a rage causing 50% additional damage for 10 sec.  While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed." lvl="1"/>
+      <talent column="1" icon="ability_druid_ferociousbite" key="1386" name="狂野怒火" requires="1387" tier="6">
+        <rank description="使你的寵物進入憤怒狀態，對目標造成的傷害提高50%，持續10秒。在這種狀態下，寵物不會有任何憐憫、自責或恐懼，也無法停止下來，除非被殺死。" lvl="1"/>
         <spell castTime="0" cooldown="120000" maxRange="100">
           <power cost="10" type="mana"/>
         </spell>
       </talent>
-      <talent column="2" icon="ability_hunter_catlikereflexes" key="1801" name="Catlike Reflexes" tier="6">
-        <rank description="Increases your chance to dodge by 1% and your pet's chance to dodge by an additional 3%. In addition, reduces the cooldown of your Kill Command ability by 10 sec." lvl="1"/>
-        <rank description="Increases your chance to dodge by 2% and your pet's chance to dodge by an additional 6%. In addition, reduces the cooldown of your Kill Command ability by 20 sec." lvl="2"/>
-        <rank description="Increases your chance to dodge by 3% and your pet's chance to dodge by an additional 9%. In addition, reduces the cooldown of your Kill Command ability by 30 sec." lvl="3"/>
+      <talent column="2" icon="ability_hunter_catlikereflexes" key="1801" name="靈敏反射" tier="6">
+        <rank description="使你的閃躲機率提高1%，寵物的閃躲機率額外提高3%。此外，擊殺命令的冷卻時間縮短10秒。" lvl="1"/>
+        <rank description="使你的閃躲機率提高2%，寵物的閃躲機率額外提高6%。此外，擊殺命令的冷卻時間縮短20秒。" lvl="2"/>
+        <rank description="使你的閃躲機率提高3%，寵物的閃躲機率額外提高9%。此外，擊殺命令的冷卻時間縮短30秒。" lvl="3"/>
       </talent>
-      <talent column="0" icon="ability_hunter_invigeration" key="2136" name="Invigoration" requires="1800" tier="7">
-        <rank description="When your pet scores a critical hit with a special ability, you have a 50% chance to instantly regenerate 1% mana." lvl="1"/>
-        <rank description="When your pet scores a critical hit with a special ability, you have a 100% chance to instantly regenerate 1% mana." lvl="2"/>
+      <talent column="0" icon="ability_hunter_invigeration" key="2136" name="精神鼓舞" requires="1800" tier="7">
+        <rank description="每當你寵物的特殊技能造成致命一擊時，可使你有50%的機率立即恢復1%法力。" lvl="1"/>
+        <rank description="每當你寵物的特殊技能造成致命一擊時，可使你有100%的機率立即恢復1%法力。" lvl="2"/>
       </talent>
-      <talent column="2" icon="ability_hunter_serpentswiftness" key="1802" name="Serpent's Swiftness" tier="7">
-        <rank description="Increases ranged combat attack speed by 4% and your pet's melee attack speed by 4%." lvl="1"/>
-        <rank description="Increases ranged combat attack speed by 8% and your pet's melee attack speed by 8%." lvl="2"/>
-        <rank description="Increases ranged combat attack speed by 12% and your pet's melee attack speed by 12%." lvl="3"/>
-        <rank description="Increases ranged combat attack speed by 16% and your pet's melee attack speed by 16%." lvl="4"/>
-        <rank description="Increases ranged combat attack speed by 20% and your pet's melee attack speed by 20%." lvl="5"/>
+      <talent column="2" icon="ability_hunter_serpentswiftness" key="1802" name="毒蛇迅捷" tier="7">
+        <rank description="提高4%遠程攻擊速度，並使你寵物的近戰攻擊速度提高4%。" lvl="1"/>
+        <rank description="提高8%遠程攻擊速度，並使你寵物的近戰攻擊速度提高8%。" lvl="2"/>
+        <rank description="提高12%遠程攻擊速度，並使你寵物的近戰攻擊速度提高12%。" lvl="3"/>
+        <rank description="提高16%遠程攻擊速度，並使你寵物的近戰攻擊速度提高16%。" lvl="4"/>
+        <rank description="提高20%遠程攻擊速度，並使你寵物的近戰攻擊速度提高20%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="ability_hunter_longevity" key="2140" name="Longevity" tier="8">
-        <rank description="Reduces the cooldown of your Bestial Wrath, Intimidation and Pet Special Abilities by 10%." lvl="1"/>
-        <rank description="Reduces the cooldown of your Bestial Wrath, Intimidation and Pet Special Abilities by 20%." lvl="2"/>
-        <rank description="Reduces the cooldown of your Bestial Wrath, Intimidation and Pet Special Abilities by 30%." lvl="3"/>
+      <talent column="0" icon="ability_hunter_longevity" key="2140" name="歷久彌新" tier="8">
+        <rank description="使你的狂野怒火、脅迫和寵物特殊技能的冷卻時間縮短10%。" lvl="1"/>
+        <rank description="使你的狂野怒火、脅迫和寵物特殊技能的冷卻時間縮短20%。" lvl="2"/>
+        <rank description="使你的狂野怒火、脅迫和寵物特殊技能的冷卻時間縮短30%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_hunter_beastwithin" key="1803" name="The Beast Within" requires="1386" tier="8">
-        <rank description="Increases all damage you deal by 10% and while your pet is under the effects of Bestial Wrath, you also go into a rage causing 10% additional damage and reducing mana costs of all spells by 50% for 10 sec.  While enraged, you do not feel pity or remorse or fear and you cannot be stopped unless killed." lvl="1"/>
+      <talent column="1" icon="ability_hunter_beastwithin" key="1803" name="獸心" requires="1386" tier="8">
+        <rank description="使你造成的所有傷害提高10%，當你的寵物在進入狂野怒火狀態後，你也同時進入狂怒狀態並獲得10%額外的傷害加成，並且所有法術的法力消耗減少50%，持續10秒。在這種狀態下，你將不會有任何憐憫、自責或恐懼，也無法停止下來，除非被殺死。" lvl="1"/>
       </talent>
-      <talent column="2" icon="ability_hunter_cobrastrikes" key="2137" name="Cobra Strikes" requires="1802" tier="8">
-        <rank description="You have a 20% chance when you critically hit with Arcane Shot, Steady Shot or Kill Shot to cause your pet's next 2 special attacks to critically hit." lvl="1"/>
-        <rank description="You have a 40% chance when you critically hit with Arcane Shot, Steady Shot or Kill Shot to cause your pet's next 2 special attacks to critically hit." lvl="2"/>
-        <rank description="You have a 60% chance when you critically hit with Arcane Shot, Steady Shot or Kill Shot to cause your pet's next 2 special attacks to critically hit." lvl="3"/>
+      <talent column="2" icon="ability_hunter_cobrastrikes" key="2137" name="眼鏡蛇之擊" requires="1802" tier="8">
+        <rank description="當你的秘法射擊、穩固射擊或擊殺射擊造成致命一擊時，有20%的機率使你寵物的下2次特殊攻擊造成致命一擊。" lvl="1"/>
+        <rank description="當你的秘法射擊、穩固射擊或擊殺射擊造成致命一擊時，有40%的機率使你寵物的下2次特殊攻擊造成致命一擊。" lvl="2"/>
+        <rank description="當你的秘法射擊、穩固射擊或擊殺射擊造成致命一擊時，有60%的機率使你寵物的下2次特殊攻擊造成致命一擊。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_hunter_separationanxiety" key="2227" name="Kindred Spirits" tier="9">
-        <rank description="Increases your pet's damage by 4% and you and your pet's movement speed by 2% while your pet is active. This does not stack with other movement speed increasing effects." lvl="1"/>
-        <rank description="Increases your pet's damage by 8% and you and your pet's movement speed by 4% while your pet is active. This does not stack with other movement speed increasing effects." lvl="2"/>
-        <rank description="Increases your pet's damage by 12% and you and your pet's movement speed by 6% while your pet is active. This does not stack with other movement speed increasing effects." lvl="3"/>
-        <rank description="Increases your pet's damage by 16% and you and your pet's movement speed by 8% while your pet is active. This does not stack with other movement speed increasing effects." lvl="4"/>
-        <rank description="Increases your pet's damage by 20% and you and your pet's movement speed by 10% while your pet is active. This does not stack with other movement speed increasing effects." lvl="5"/>
+      <talent column="1" icon="ability_hunter_separationanxiety" key="2227" name="血系相連" tier="9">
+        <rank description="當你的寵物處於活動狀態時，寵物造成的傷害提高4%，並且使你和寵物的移動速度提高2%。此效果無法與其它提高移動速度的效果堆疊。" lvl="1"/>
+        <rank description="當你的寵物處於活動狀態時，寵物造成的傷害提高8%，並且使你和寵物的移動速度提高4%。此效果無法與其它提高移動速度的效果堆疊。" lvl="2"/>
+        <rank description="當你的寵物處於活動狀態時，寵物造成的傷害提高12%，並且使你和寵物的移動速度提高6%。此效果無法與其它提高移動速度的效果堆疊。" lvl="3"/>
+        <rank description="當你的寵物處於活動狀態時，寵物造成的傷害提高16%，並且使你和寵物的移動速度提高8%。此效果無法與其它提高移動速度的效果堆疊。" lvl="4"/>
+        <rank description="當你的寵物處於活動狀態時，寵物造成的傷害提高20%，並且使你和寵物的移動速度提高10%。此效果無法與其它提高移動速度的效果堆疊。" lvl="5"/>
       </talent>
-      <talent column="1" icon="ability_hunter_beastmastery" key="2139" name="Beast Mastery" tier="10">
-        <rank description="You master the art of Beast training, teaching you the ability to tame Exotic pets and increasing your total amount of Pet Skill Points by 4." lvl="1"/>
+      <talent column="1" icon="ability_hunter_beastmastery" key="2139" name="精通野獸" tier="10">
+        <rank description="你精通於訓練野獸，使你獲得馴服奇特寵物的技能，並使你的寵物訓練點數提高4點。" lvl="1"/>
       </talent>
     </tree>
-    <tree bgImage="HunterMarksmanship" icon="ability_marksmanship" key="Marksmanship" name="Marksmanship" order="1">
-      <talent column="0" icon="spell_frost_stun" key="1341" name="Improved Concussive Shot" tier="0">
-        <rank description="Increases the duration of your Concussive Shot's daze effect by 1 sec." lvl="1"/>
-        <rank description="Increases the duration of your Concussive Shot's daze effect by 2 sec." lvl="2"/>
+    <tree bgImage="HunterMarksmanship" icon="ability_marksmanship" key="Marksmanship" name="射擊" order="1">
+      <talent column="0" icon="spell_frost_stun" key="1341" name="強化震盪射擊" tier="0">
+        <rank description="使你震盪射擊的暈眩效果持續時間延長1秒。" lvl="1"/>
+        <rank description="使你震盪射擊的暈眩效果持續時間延長2秒。" lvl="2"/>
       </talent>
-      <talent column="1" icon="ability_hunter_focusedaim" key="2197" name="Focused Aim" tier="0">
-        <rank description="Reduces the pushback suffered from damaging attacks while casting Steady Shot by 23%, and increases your chance to hit by 1%." lvl="1"/>
-        <rank description="Reduces the pushback suffered from damaging attacks while casting Steady Shot by 46%, and increases your chance to hit by 2%." lvl="2"/>
-        <rank description="Reduces the pushback suffered from damaging attacks while casting Steady Shot by 70%, and increases your chance to hit by 3%." lvl="3"/>
+      <talent column="1" icon="ability_hunter_focusedaim" key="2197" name="專注瞄準" tier="0">
+        <rank description="使你施放穩固射擊時，因受到傷害性攻擊而損失的施法時間縮短23%，並提高你的命中率1%。" lvl="1"/>
+        <rank description="使你施放穩固射擊時，因受到傷害性攻擊而損失的施法時間縮短46%，並提高你的命中率2%。" lvl="2"/>
+        <rank description="使你施放穩固射擊時，因受到傷害性攻擊而損失的施法時間縮短70%，並提高你的命中率3%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="ability_searingarrow" key="1344" name="Lethal Shots" tier="0">
-        <rank description="Increases your critical strike chance with ranged weapons by 1%." lvl="1"/>
-        <rank description="Increases your critical strike chance with ranged weapons by 2%." lvl="2"/>
-        <rank description="Increases your critical strike chance with ranged weapons by 3%." lvl="3"/>
-        <rank description="Increases your critical strike chance with ranged weapons by 4%." lvl="4"/>
-        <rank description="Increases your critical strike chance with ranged weapons by 5%." lvl="5"/>
+      <talent column="2" icon="ability_searingarrow" key="1344" name="奪命射擊" tier="0">
+        <rank description="使你遠程武器造成致命一擊的機率提高1%。" lvl="1"/>
+        <rank description="使你遠程武器造成致命一擊的機率提高2%。" lvl="2"/>
+        <rank description="使你遠程武器造成致命一擊的機率提高3%。" lvl="3"/>
+        <rank description="使你遠程武器造成致命一擊的機率提高4%。" lvl="4"/>
+        <rank description="使你遠程武器造成致命一擊的機率提高5%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="ability_hunter_zenarchery" key="1806" name="Careful Aim" tier="1">
-        <rank description="Increases your ranged attack power by an amount equal to 33% of your total Intellect." lvl="1"/>
-        <rank description="Increases your ranged attack power by an amount equal to 66% of your total Intellect." lvl="2"/>
-        <rank description="Increases your ranged attack power by an amount equal to 100% of your total Intellect." lvl="3"/>
+      <talent column="0" icon="ability_hunter_zenarchery" key="1806" name="仔細瞄準" tier="1">
+        <rank description="使你的遠程攻擊強度提高相當於你總智力的33%。" lvl="1"/>
+        <rank description="使你的遠程攻擊強度提高相當於你總智力的66%。" lvl="2"/>
+        <rank description="使你的遠程攻擊強度提高相當於你總智力的100%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_hunter_snipershot" key="1343" name="Improved Hunter's Mark" tier="1">
-        <rank description="Increases the bonus attack power granted by your Hunter's Mark ability by 10%, and reduces the mana cost of your Hunter's Mark ability by 33%." lvl="1"/>
-        <rank description="Increases the bonus attack power granted by your Hunter's Mark ability by 20%, and reduces the mana cost of your Hunter's Mark ability by 66%." lvl="2"/>
-        <rank description="Increases the bonus attack power granted by your Hunter's Mark ability by 30%, and reduces the mana cost of your Hunter's Mark ability by 100%." lvl="3"/>
+      <talent column="1" icon="ability_hunter_snipershot" key="1343" name="強化獵人印記" tier="1">
+        <rank description="使你獵人印記技能提供的攻擊強度加成提高10%，法力消耗降低33%。" lvl="1"/>
+        <rank description="使你獵人印記技能提供的攻擊強度加成提高10%，法力消耗降低66%。" lvl="2"/>
+        <rank description="使你獵人印記技能提供的攻擊強度加成提高10%，法力消耗降低100%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="ability_piercedamage" key="1349" name="Mortal Shots" tier="1">
-        <rank description="Increases the critical strike damage bonus of your ranged abilities by 6%." lvl="1"/>
-        <rank description="Increases the critical strike damage bonus of your ranged abilities by 12%." lvl="2"/>
-        <rank description="Increases the critical strike damage bonus of your ranged abilities by 18%." lvl="3"/>
-        <rank description="Increases the critical strike damage bonus of your ranged abilities by 24%." lvl="4"/>
-        <rank description="Increases the critical strike damage bonus of your ranged abilities by 30%." lvl="5"/>
+      <talent column="2" icon="ability_piercedamage" key="1349" name="致死射擊" tier="1">
+        <rank description="使你遠程攻擊技能的致命一擊傷害加成提高6%。" lvl="1"/>
+        <rank description="使你遠程攻擊技能的致命一擊傷害加成提高12%。" lvl="2"/>
+        <rank description="使你遠程攻擊技能的致命一擊傷害加成提高18%。" lvl="3"/>
+        <rank description="使你遠程攻擊技能的致命一擊傷害加成提高24%。" lvl="4"/>
+        <rank description="使你遠程攻擊技能的致命一擊傷害加成提高30%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="ability_hunter_goforthethroat" key="1818" name="Go for the Throat" tier="2">
-        <rank description="Your ranged critical hits cause your pet to generate 25 Focus." lvl="1"/>
-        <rank description="Your ranged critical hits cause your pet to generate 50 Focus." lvl="2"/>
+      <talent column="0" icon="ability_hunter_goforthethroat" key="1818" name="穿喉" tier="2">
+        <rank description="你的遠程攻擊造成致命一擊後使你的寵物產生25點集中值。" lvl="1"/>
+        <rank description="你的遠程攻擊造成致命一擊後使你的寵物產生50點集中值。" lvl="2"/>
       </talent>
-      <talent column="1" icon="ability_impalingbolt" key="1346" name="Improved Arcane Shot" tier="2">
-        <rank description="Increases the damage done by your Arcane Shot by 5%." lvl="1"/>
-        <rank description="Increases the damage done by your Arcane Shot by 10%." lvl="2"/>
-        <rank description="Increases the damage done by your Arcane Shot by 15%." lvl="3"/>
+      <talent column="1" icon="ability_impalingbolt" key="1346" name="強化秘法射擊" tier="2">
+        <rank description="使你秘法射擊造成的傷害提高5%。" lvl="1"/>
+        <rank description="使你秘法射擊造成的傷害提高10%。" lvl="2"/>
+        <rank description="使你秘法射擊造成的傷害提高15%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="inv_spear_07" key="1345" name="Aimed Shot" requires="1349" tier="2">
-        <rank description="An aimed shot that increases ranged damage by 5 and reduces healing done to that target by 50%.  Lasts 10 sec." lvl="1"/>
+      <talent column="2" icon="inv_spear_07" key="1345" name="瞄準射擊" requires="1349" tier="2">
+        <rank description="一個瞄準目標的射擊，使遠程傷害提高5點，並使目標受到的治療效果降低50%，持續10秒。" lvl="1"/>
         <spell castTime="0" cooldown="10000" maxRange="35" minRange="5">
           <power cost="8" type="mana"/>
         </spell>
       </talent>
-      <talent column="3" icon="ability_hunter_rapidkilling" key="1819" name="Rapid Killing" tier="2">
-        <rank description="Reduces the cooldown of your Rapid Fire ability by 1 min.  In addition, after killing an opponent that yields experience or honor, your next Aimed Shot, Arcane Shot or Chimera Shot causes 10% additional damage.  Lasts 20 sec." lvl="1"/>
-        <rank description="Reduces the cooldown of your Rapid Fire ability by 2 min.  In addition, after killing an opponent that yields experience or honor, your next Aimed Shot, Arcane Shot or Chimera Shot causes 20% additional damage.  Lasts 20 sec." lvl="2"/>
+      <talent column="3" icon="ability_hunter_rapidkilling" key="1819" name="急速殺戮" tier="2">
+        <rank description="使你急速射擊技能的冷卻時間縮短1分鐘。另外，在你殺死一個敵人並得到經驗或榮譽值後，你的下一個瞄準射擊、秘法射擊或奇美拉射擊將造成10%額外的傷害。持續20秒。" lvl="1"/>
+        <rank description="使你急速射擊技能的冷卻時間縮短2分鐘。另外，在你殺死一個敵人並得到經驗或榮譽值後，你的下一個瞄準射擊、秘法射擊或奇美拉射擊將造成20%額外的傷害。持續20秒。" lvl="2"/>
       </talent>
-      <talent column="1" icon="ability_hunter_quickshot" key="1348" name="Improved Stings" tier="3">
-        <rank description="Increases the damage done by your Serpent Sting and Wyvern Sting by 10% and the mana drained by your Viper Sting by 10%.  In addition, reduces the chance your Sting damage over time effects will be dispelled by 10%." lvl="1"/>
-        <rank description="Increases the damage done by your Serpent Sting and Wyvern Sting by 20% and the mana drained by your Viper Sting by 20%.  In addition, reduces the chance your Sting damage over time effects will be dispelled by 20%." lvl="2"/>
-        <rank description="Increases the damage done by your Serpent Sting and Wyvern Sting by 30% and the mana drained by your Viper Sting by 30%.  In addition, reduces the chance your Sting damage over time effects will be dispelled by 30%." lvl="3"/>
+      <talent column="1" icon="ability_hunter_quickshot" key="1348" name="強化釘刺" tier="3">
+        <rank description="使你的毒蛇釘刺和翼龍釘刺造成的傷害提高10%，並使你的蝮蛇釘刺抽取的法力增加10%。此外，令你釘刺的持續傷害效果被驅散的機率降低10%。" lvl="1"/>
+        <rank description="使你的毒蛇釘刺和翼龍釘刺造成的傷害提高20%，並使你的蝮蛇釘刺抽取的法力增加20%。此外，令你釘刺的持續傷害效果被驅散的機率降低20%。" lvl="2"/>
+        <rank description="使你的毒蛇釘刺和翼龍釘刺造成的傷害提高30%，並使你的蝮蛇釘刺抽取的法力增加30%。此外，令你釘刺的持續傷害效果被驅散的機率降低30%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_frost_wizardmark" key="1342" name="Efficiency" tier="3">
-        <rank description="Reduces the Mana cost of your Shots and Stings by 3%." lvl="1"/>
-        <rank description="Reduces the Mana cost of your Shots and Stings by 6%." lvl="2"/>
-        <rank description="Reduces the Mana cost of your Shots and Stings by 9%." lvl="3"/>
-        <rank description="Reduces the Mana cost of your Shots and Stings by 12%." lvl="4"/>
-        <rank description="Reduces the Mana cost of your Shots and Stings by 15%." lvl="5"/>
+      <talent column="2" icon="spell_frost_wizardmark" key="1342" name="效率" tier="3">
+        <rank description="使你施放射擊和釘刺技能所消耗的法力降低3%。" lvl="1"/>
+        <rank description="使你施放射擊和釘刺技能所消耗的法力降低6%。" lvl="2"/>
+        <rank description="使你施放射擊和釘刺技能所消耗的法力降低9%。" lvl="3"/>
+        <rank description="使你施放射擊和釘刺技能所消耗的法力降低12%。" lvl="4"/>
+        <rank description="使你施放射擊和釘刺技能所消耗的法力降低15%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="spell_arcane_starfire" key="1351" name="Concussive Barrage" tier="4">
-        <rank description="Your successful Chimera Shot and Multi-Shot attacks have a 50% chance to Daze the target for 4 sec." lvl="1"/>
-        <rank description="Your successful Chimera Shot and Multi-Shot attacks have a 100% chance to Daze the target for 4 sec." lvl="2"/>
+      <talent column="0" icon="spell_arcane_starfire" key="1351" name="震盪狙擊" tier="4">
+        <rank description="你的奇美拉射擊和多重射擊命中時有50%的機率使目標暈眩4秒。" lvl="1"/>
+        <rank description="你的奇美拉射擊和多重射擊命中時有100%的機率使目標暈眩4秒。" lvl="2"/>
       </talent>
-      <talent column="1" icon="ability_hunter_readiness" key="1353" name="Readiness" tier="4">
-        <rank description="When activated, this ability immediately finishes the cooldown on your other Hunter abilities except Bestial Wrath." lvl="1"/>
+      <talent column="1" icon="ability_hunter_readiness" key="1353" name="準備就緒" tier="4">
+        <rank description="啟動之後，這項技能立即結束你其他獵人技能的冷卻時間，除了狂野怒火之外。" lvl="1"/>
         <spell castTime="0" cooldown="180000"/>
       </talent>
-      <talent column="2" icon="ability_upgrademoonglaive" key="1347" name="Barrage" tier="4">
-        <rank description="Increases the damage done by your Multi-Shot, Aimed Shot, and Volley spells by 4%." lvl="1"/>
-        <rank description="Increases the damage done by your Multi-Shot, Aimed Shot, and Volley spells by 8%." lvl="2"/>
-        <rank description="Increases the damage done by your Multi-Shot, Aimed Shot, and Volley spells by 12%." lvl="3"/>
+      <talent column="2" icon="ability_upgrademoonglaive" key="1347" name="彈幕" tier="4">
+        <rank description="使你多重射擊、瞄準射擊和亂射法術所造成的傷害提高4%。" lvl="1"/>
+        <rank description="使你多重射擊、瞄準射擊和亂射法術所造成的傷害提高8%。" lvl="2"/>
+        <rank description="使你多重射擊、瞄準射擊和亂射法術所造成的傷害提高12%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="ability_hunter_combatexperience" key="1804" name="Combat Experience" tier="5">
-        <rank description="Increases your total Agility and Intellect by 2%." lvl="1"/>
-        <rank description="Increases your total Agility and Intellect by 4%." lvl="2"/>
+      <talent column="0" icon="ability_hunter_combatexperience" key="1804" name="作戰經驗" tier="5">
+        <rank description="使你的總敏捷和總智力提高2%。" lvl="1"/>
+        <rank description="使你的總敏捷和總智力提高4%。" lvl="2"/>
       </talent>
-      <talent column="3" icon="inv_weapon_rifle_06" key="1362" name="Ranged Weapon Specialization" tier="5">
-        <rank description="Increases the damage you deal with ranged weapons by 1%." lvl="1"/>
-        <rank description="Increases the damage you deal with ranged weapons by 3%." lvl="2"/>
-        <rank description="Increases the damage you deal with ranged weapons by 5%." lvl="3"/>
+      <talent column="3" icon="inv_weapon_rifle_06" key="1362" name="遠程武器專精" tier="5">
+        <rank description="使你遠程武器所造成的傷害提高1%。" lvl="1"/>
+        <rank description="使你遠程武器所造成的傷害提高3%。" lvl="2"/>
+        <rank description="使你遠程武器所造成的傷害提高5%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="ability_hunter_piercingshots" key="2130" name="Piercing Shots" tier="6">
-        <rank description="Your critical Aimed, Steady and Chimera Shots cause the target to bleed for 10% of the damage dealt over 8 sec." lvl="1"/>
-        <rank description="Your critical Aimed, Steady and Chimera Shots cause the target to bleed for 20% of the damage dealt over 8 sec." lvl="2"/>
-        <rank description="Your critical Aimed, Steady and Chimera Shots cause the target to bleed for 30% of the damage dealt over 8 sec." lvl="3"/>
+      <talent column="0" icon="ability_hunter_piercingshots" key="2130" name="穿透射擊" tier="6">
+        <rank description="你的瞄準射擊、穩固射擊和奇美拉射擊造成致命一擊時，將使目標因流血而在8秒內受到其造成的10%傷害。" lvl="1"/>
+        <rank description="你的瞄準射擊、穩固射擊和奇美拉射擊造成致命一擊時，將使目標因流血而在8秒內受到其造成的20%傷害。" lvl="2"/>
+        <rank description="你的瞄準射擊、穩固射擊和奇美拉射擊造成致命一擊時，將使目標因流血而在8秒內受到其造成的30%傷害。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_trueshot" key="1361" name="Trueshot Aura" requires="1353" tier="6">
-        <rank description="Increases the attack power of party and raid members within 100 yards by 10%.  Lasts until cancelled." lvl="1"/>
+      <talent column="1" icon="ability_trueshot" key="1361" name="強擊光環" requires="1353" tier="6">
+        <rank description="使半徑100碼範圍內小隊與團隊成員的攻擊強度提高10%。" lvl="1"/>
         <spell castTime="0"/>
       </talent>
-      <talent column="2" icon="ability_upgrademoonglaive" key="1821" name="Improved Barrage" requires="1347" tier="6">
-        <rank description="Increases the critical strike chance of your Multi-Shot and Aimed Shot abilities by 4% and reduces the pushback suffered from damaging attacks while channeling Volley by 33%." lvl="1"/>
-        <rank description="Increases the critical strike chance of your Multi-Shot and Aimed Shot abilities by 8% and reduces the pushback suffered from damaging attacks while channeling Volley by 66%." lvl="2"/>
-        <rank description="Increases the critical strike chance of your Multi-Shot and Aimed Shot abilities by 12% and reduces the pushback suffered from damaging attacks while channeling Volley by 100%." lvl="3"/>
+      <talent column="2" icon="ability_upgrademoonglaive" key="1821" name="強化彈幕" requires="1347" tier="6">
+        <rank description="使你多重射擊和瞄準射擊造成致命一擊的機率提高4%，並使你在引導亂射時因受到傷害性攻擊而損失的施法時間縮短33%。" lvl="1"/>
+        <rank description="使你多重射擊和瞄準射擊造成致命一擊的機率提高4%，並使你在引導亂射時因受到傷害性攻擊而損失的施法時間縮短66%。" lvl="2"/>
+        <rank description="使你多重射擊和瞄準射擊造成致命一擊的機率提高4%，並使你在引導亂射時因受到傷害性攻擊而損失的施法時間縮短100%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_hunter_mastermarksman" key="1807" name="Master Marksman" tier="7">
-        <rank description="Increases your critical strike chance by 1%, and reduces the Mana cost of your Steady Shot, Aimed Shot, and Chimera Shot by 5%." lvl="1"/>
-        <rank description="Increases your critical strike chance by 2%, and reduces the Mana cost of your Steady Shot, Aimed Shot, and Chimera Shot by 10%." lvl="2"/>
-        <rank description="Increases your critical strike chance by 3%, and reduces the Mana cost of your Steady Shot, Aimed Shot, and Chimera Shot by 15%." lvl="3"/>
-        <rank description="Increases your critical strike chance by 4%, and reduces the Mana cost of your Steady Shot, Aimed Shot, and Chimera Shot by 20%." lvl="4"/>
-        <rank description="Increases your critical strike chance by 5%, and reduces the Mana cost of your Steady Shot, Aimed Shot, and Chimera Shot by 25%." lvl="5"/>
+      <talent column="1" icon="ability_hunter_mastermarksman" key="1807" name="狙擊大師" tier="7">
+        <rank description="你的致命一擊機率提高1%，穩固射擊、瞄準射擊和奇美拉射擊的法力消耗降低5%。" lvl="1"/>
+        <rank description="你的致命一擊機率提高1%，穩固射擊、瞄準射擊和奇美拉射擊的法力消耗降低10%。" lvl="2"/>
+        <rank description="你的致命一擊機率提高1%，穩固射擊、瞄準射擊和奇美拉射擊的法力消耗降低15%。" lvl="3"/>
+        <rank description="你的致命一擊機率提高1%，穩固射擊、瞄準射擊和奇美拉射擊的法力消耗降低20%。" lvl="4"/>
+        <rank description="你的致命一擊機率提高1%，穩固射擊、瞄準射擊和奇美拉射擊的法力消耗降低25%。" lvl="5"/>
       </talent>
-      <talent column="2" icon="ability_hunter_rapidregeneration" key="2131" name="Rapid Recuperation" tier="7">
-        <rank description="You gain 2% of your mana every 3 sec while under the effect of Rapid Fire, and you gain 1% of your mana every 2 sec for 6 sec when you gain Rapid Killing." lvl="1"/>
-        <rank description="You gain 4% of your mana every 3 sec while under the effect of Rapid Fire, and you gain 2% of your mana every 2 sec for 6 sec when you gain Rapid Killing." lvl="2"/>
+      <talent column="2" icon="ability_hunter_rapidregeneration" key="2131" name="急速回能" tier="7">
+        <rank description="使你在急速射擊的效果下每3秒可獲得2%法力，在急速殺戮效果下每2秒可獲得1%法力，持續6秒。" lvl="1"/>
+        <rank description="使你在急速射擊的效果下每3秒可獲得4%法力，在急速殺戮效果下每2秒可獲得2%法力，持續6秒。" lvl="2"/>
       </talent>
-      <talent column="0" icon="ability_hunter_wildquiver" key="2132" name="Wild Quiver" tier="8">
-        <rank description="You have a 4% chance to shoot an additional shot when doing damage with your auto shot, dealing 80% weapon nature damage. Wild Quiver consumes no ammo." lvl="1"/>
-        <rank description="You have a 8% chance to shoot an additional shot when doing damage with your auto shot, dealing 80% weapon nature damage. Wild Quiver consumes no ammo." lvl="2"/>
-        <rank description="You have a 12% chance to shoot an additional shot when doing damage with your auto shot, dealing 80% weapon nature damage. Wild Quiver consumes no ammo." lvl="3"/>
+      <talent column="0" icon="ability_hunter_wildquiver" key="2132" name="狂野箭袋" tier="8">
+        <rank description="你的自動射擊造成傷害時，有4%的機率額外射出一發射擊，造成相當於80%武器傷害的自然傷害。狂野箭袋發動時不會消耗你的彈藥。" lvl="1"/>
+        <rank description="你的自動射擊造成傷害時，有8%的機率額外射出一發射擊，造成相當於80%武器傷害的自然傷害。狂野箭袋發動時不會消耗你的彈藥。" lvl="2"/>
+        <rank description="你的自動射擊造成傷害時，有12%的機率額外射出一發射擊，造成相當於80%武器傷害的自然傷害。狂野箭袋發動時不會消耗你的彈藥。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_theblackarrow" key="1808" name="Silencing Shot" requires="1807" tier="8">
-        <rank description="A shot that deals 50% weapon damage and Silences the target for 3 sec.  Non-player victim spellcasting is also interrupted for 3 sec." lvl="1"/>
+      <talent column="1" icon="ability_theblackarrow" key="1808" name="沉默射擊" requires="1807" tier="8">
+        <rank description="對目標造成50%的武器傷害並使目標沉默3秒。非玩家目標的施法將同時被中斷，持續3秒。" lvl="1"/>
         <spell castTime="0" cooldown="20000" maxRange="35" minRange="5">
           <power cost="6" type="mana"/>
         </spell>
       </talent>
-      <talent column="2" icon="ability_hunter_improvedsteadyshot" key="2133" name="Improved Steady Shot" tier="8">
-        <rank description="Your Steady Shot hits have a 5% chance to increase the damage done by your next Aimed Shot, Arcane Shot or Chimera Shot by 15%, and reduce the mana cost of your next Aimed Shot, Arcane Shot or Chimera Shot by 20%." lvl="1"/>
-        <rank description="Your Steady Shot hits have a 10% chance to increase the damage done by your next Aimed Shot, Arcane Shot or Chimera Shot by 15%, and reduce the mana cost of your next Aimed Shot, Arcane Shot or Chimera Shot by 20%." lvl="2"/>
-        <rank description="Your Steady Shot hits have a 15% chance to increase the damage done by your next Aimed Shot, Arcane Shot or Chimera Shot by 15%, and reduce the mana cost of your next Aimed Shot, Arcane Shot or Chimera Shot by 20%." lvl="3"/>
+      <talent column="2" icon="ability_hunter_improvedsteadyshot" key="2133" name="強化穩固射擊" tier="8">
+        <rank description="你的穩固射擊有5%的機率使你的下一個瞄準射擊、秘法射擊或奇美拉射擊造成的傷害提高15%，並使你的下一個瞄準射擊、秘法射擊或奇美拉射擊消耗的法力減少20%。" lvl="1"/>
+        <rank description="你的穩固射擊有10%的機率使你的下一個瞄準射擊、秘法射擊或奇美拉射擊造成的傷害提高15%，並使你的下一個瞄準射擊、秘法射擊或奇美拉射擊消耗的法力減少20%。" lvl="2"/>
+        <rank description="你的穩固射擊有15%的機率使你的下一個瞄準射擊、秘法射擊或奇美拉射擊造成的傷害提高15%，並使你的下一個瞄準射擊、秘法射擊或奇美拉射擊消耗的法力減少20%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_hunter_assassinate" key="2134" name="Marked for Death" tier="9">
-        <rank description="Increases your damage done by your shots and the damage done by your pet's special abilities by 1% on marked targets, and increases the critical strike damage bonus of your Aimed Shot, Arcane Shot, Steady Shot, Kill Shot and Chimera Shot by 2%." lvl="1"/>
-        <rank description="Increases your damage done by your shots and the damage done by your pet's special abilities by 2% on marked targets, and increases the critical strike damage bonus of your Aimed Shot, Arcane Shot, Steady Shot, Kill Shot and Chimera Shot by 4%." lvl="2"/>
-        <rank description="Increases your damage done by your shots and the damage done by your pet's special abilities by 3% on marked targets, and increases the critical strike damage bonus of your Aimed Shot, Arcane Shot, Steady Shot, Kill Shot and Chimera Shot by 6%." lvl="3"/>
-        <rank description="Increases your damage done by your shots and the damage done by your pet's special abilities by 4% on marked targets, and increases the critical strike damage bonus of your Aimed Shot, Arcane Shot, Steady Shot, Kill Shot and Chimera Shot by 8%." lvl="4"/>
-        <rank description="Increases your damage done by your shots and the damage done by your pet's special abilities by 5% on marked targets, and increases the critical strike damage bonus of your Aimed Shot, Arcane Shot, Steady Shot, Kill Shot and Chimera Shot by 10%." lvl="5"/>
+      <talent column="1" icon="ability_hunter_assassinate" key="2134" name="死亡標記" tier="9">
+        <rank description="你的射擊和寵物特殊技能對被標記目標造成的傷害提高1%，並且使你的瞄準射擊、秘法射擊、穩固射擊、擊殺射擊和奇美拉射擊對被標記目標造成的致命一擊傷害加成提高2%。" lvl="1"/>
+        <rank description="你的射擊和寵物特殊技能對被標記目標造成的傷害提高1%，並且使你的瞄準射擊、秘法射擊、穩固射擊、擊殺射擊和奇美拉射擊對被標記目標造成的致命一擊傷害加成提高4%。" lvl="2"/>
+        <rank description="你的射擊和寵物特殊技能對被標記目標造成的傷害提高1%，並且使你的瞄準射擊、秘法射擊、穩固射擊、擊殺射擊和奇美拉射擊對被標記目標造成的致命一擊傷害加成提高6%。" lvl="3"/>
+        <rank description="你的射擊和寵物特殊技能對被標記目標造成的傷害提高1%，並且使你的瞄準射擊、秘法射擊、穩固射擊、擊殺射擊和奇美拉射擊對被標記目標造成的致命一擊傷害加成提高8%。" lvl="4"/>
+        <rank description="你的射擊和寵物特殊技能對被標記目標造成的傷害提高1%，並且使你的瞄準射擊、秘法射擊、穩固射擊、擊殺射擊和奇美拉射擊對被標記目標造成的致命一擊傷害加成提高10%。" lvl="5"/>
       </talent>
-      <talent column="1" icon="ability_hunter_chimerashot2" key="2135" name="Chimera Shot" tier="10">
-        <rank description="You deal 125% weapon damage, refreshing the current Sting on your target and triggering an effect:&lt;br/&gt;&lt;br/&gt;Serpent Sting - Instantly deals 40% of the damage done by your Serpent Sting.&lt;br/&gt;&lt;br/&gt;Viper Sting - Instantly restores mana to you equal to 60% of the total amount drained by your Viper Sting.&lt;br/&gt;&lt;br/&gt;Scorpid Sting - Attempts to Disarm the target for 10 sec. This effect cannot occur more than once per 1 minute." lvl="1"/>
+      <talent column="1" icon="ability_hunter_chimerashot2" key="2135" name="奇美拉射擊" tier="10">
+        <rank description="你對目標造成125%的武器傷害，重置目標身上的釘刺效果並觸發另一種效果:&lt;br/&gt;&lt;br/&gt;毒蛇釘刺 - 立即造成毒蛇釘刺40%的傷害。&lt;br/&gt;&lt;br/&gt;蝮蛇釘刺 - 使你立即恢復相當於蝮蛇釘刺可抽取的60%法力值。&lt;br/&gt;&lt;br/&gt;毒蠍釘刺 - 試著令目標繳械，持續10秒。此效果1分鐘內只能發動一次。" lvl="1"/>
         <spell castTime="0" cooldown="10000" maxRange="35" minRange="5">
           <power cost="12" type="mana"/>
         </spell>

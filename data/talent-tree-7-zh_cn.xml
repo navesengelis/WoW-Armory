@@ -1,414 +1,414 @@
-<?xml version="1.0" encoding="UTF-8"?><page globalSearch="1" lang="en_gb" requestUrl="/talent-tree.xml">
+<?xml version="1.0" encoding="UTF-8"?><page globalSearch="1" lang="zh_cn" requestUrl="/talent-tree.xml">
   <talentTrees>
-    <tree bgImage="ShamanEnhancement" icon="spell_nature_lightningshield" key="Enhancement" name="Enhancement" order="1">
-      <talent column="0" icon="spell_nature_earthbindtotem" key="610" name="Enhancing Totems" tier="0">
-        <rank description="Increases the effect of your Strength of Earth and Flametongue Totems by 5%." lvl="1"/>
-        <rank description="Increases the effect of your Strength of Earth and Flametongue Totems by 10%." lvl="2"/>
-        <rank description="Increases the effect of your Strength of Earth and Flametongue Totems by 15%." lvl="3"/>
+    <tree bgImage="ShamanEnhancement" icon="spell_nature_lightningshield" key="Enhancement" name="增強" order="1">
+      <talent column="0" icon="spell_nature_earthbindtotem" key="610" name="圖騰增效" tier="0">
+        <rank description="使你大地之力圖騰和火舌圖騰的效果提高5%。" lvl="1"/>
+        <rank description="使你大地之力圖騰和火舌圖騰的效果提高10%。" lvl="2"/>
+        <rank description="使你大地之力圖騰和火舌圖騰的效果提高15%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_nature_stoneclawtotem" key="2101" name="Earth's Grasp" tier="0">
-        <rank description="Increases the health of your Stoneclaw Totem by 25% and the radius of your Earthbind Totem by 10%, and reduces the cooldown of both totems by 15%." lvl="1"/>
-        <rank description="Increases the health of your Stoneclaw Totem by 50% and the radius of your Earthbind Totem by 20%, and reduces the cooldown of both totems by 30%." lvl="2"/>
+      <talent column="1" icon="spell_nature_stoneclawtotem" key="2101" name="大地之握" tier="0">
+        <rank description="使你石爪圖騰的生命力提高25%，地縛圖騰的有效範圍擴展10%，同時冷卻時間均縮短15%。" lvl="1"/>
+        <rank description="使你石爪圖騰的生命力提高50%，地縛圖騰的有效範圍擴展20%，同時冷卻時間均縮短30%。" lvl="2"/>
       </talent>
-      <talent column="2" icon="spell_shadow_grimward" key="614" name="Ancestral Knowledge" tier="0">
-        <rank description="Increases your Intellect by 2%." lvl="1"/>
-        <rank description="Increases your Intellect by 4%." lvl="2"/>
-        <rank description="Increases your Intellect by 6%." lvl="3"/>
-        <rank description="Increases your Intellect by 8%." lvl="4"/>
-        <rank description="Increases your Intellect by 10%." lvl="5"/>
+      <talent column="2" icon="spell_shadow_grimward" key="614" name="先祖知識" tier="0">
+        <rank description="使你的智力提高2%。" lvl="1"/>
+        <rank description="使你的智力提高4%。" lvl="2"/>
+        <rank description="使你的智力提高6%。" lvl="3"/>
+        <rank description="使你的智力提高8%。" lvl="4"/>
+        <rank description="使你的智力提高10%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="spell_nature_stoneskintotem" key="609" name="Guardian Totems" tier="1">
-        <rank description="Increases the amount of armor increased by your Stoneskin Totem by 10% and reduces the cooldown of your Grounding Totem by 1 sec." lvl="1"/>
-        <rank description="Increases the amount of armor increased by your Stoneskin Totem by 20% and reduces the cooldown of your Grounding Totem by 2 sec." lvl="2"/>
+      <talent column="0" icon="spell_nature_stoneskintotem" key="609" name="圖騰守護" tier="1">
+        <rank description="使你石甲圖騰所增加的護甲值提高10%，並使根基圖騰的冷卻時間縮短1秒。" lvl="1"/>
+        <rank description="使你石甲圖騰所增加的護甲值提高20%，並使根基圖騰的冷卻時間縮短2秒。" lvl="2"/>
       </talent>
-      <talent column="1" icon="ability_thunderbolt" key="613" name="Thundering Strikes" tier="1">
-        <rank description="Improves your chance to get a critical strike with all spells and attacks by 1%." lvl="1"/>
-        <rank description="Improves your chance to get a critical strike with all spells and attacks by 2%." lvl="2"/>
-        <rank description="Improves your chance to get a critical strike with all spells and attacks by 3%." lvl="3"/>
-        <rank description="Improves your chance to get a critical strike with all spells and attacks by 4%." lvl="4"/>
-        <rank description="Improves your chance to get a critical strike with all spells and attacks by 5%." lvl="5"/>
+      <talent column="1" icon="ability_thunderbolt" key="613" name="雷鳴猛擊" tier="1">
+        <rank description="使你的所有攻擊和法術造成致命一擊的機率提高1%。" lvl="1"/>
+        <rank description="使你的所有攻擊和法術造成致命一擊的機率提高2%。" lvl="2"/>
+        <rank description="使你的所有攻擊和法術造成致命一擊的機率提高3%。" lvl="3"/>
+        <rank description="使你的所有攻擊和法術造成致命一擊的機率提高4%。" lvl="4"/>
+        <rank description="使你的所有攻擊和法術造成致命一擊的機率提高5%。" lvl="5"/>
       </talent>
-      <talent column="2" icon="spell_nature_spiritwolf" key="605" name="Improved Ghost Wolf" tier="1">
-        <rank description="Reduces the cast time of your Ghost Wolf spell by 1 sec." lvl="1"/>
-        <rank description="Reduces the cast time of your Ghost Wolf spell by 2 sec." lvl="2"/>
+      <talent column="2" icon="spell_nature_spiritwolf" key="605" name="強化鬼魂之狼" tier="1">
+        <rank description="使你鬼魂之狼法術的施法時間縮短1秒。" lvl="1"/>
+        <rank description="使你鬼魂之狼法術的施法時間縮短2秒。" lvl="2"/>
       </talent>
-      <talent column="3" icon="spell_nature_lightningshield" key="607" name="Improved Shields" tier="1">
-        <rank description="Increases the damage done by your Lightning Shield orbs by 5%, increases the amount of mana gained from your Water Shield orbs by 5% and increases the amount of healing done by your Earth Shield orbs by 5%." lvl="1"/>
-        <rank description="Increases the damage done by your Lightning Shield orbs by 10%, increases the amount of mana gained from your Water Shield orbs by 10% and increases the amount of healing done by your Earth Shield orbs by 10%." lvl="2"/>
-        <rank description="Increases the damage done by your Lightning Shield orbs by 15%, increases the amount of mana gained from your Water Shield orbs by 15% and increases the amount of healing done by your Earth Shield orbs by 15%." lvl="3"/>
+      <talent column="3" icon="spell_nature_lightningshield" key="607" name="強化護盾" tier="1">
+        <rank description="使你閃電之盾的閃電球傷害提高5%，水之盾的水球恢復的法力值提高5%，大地之盾恢復的生命值提高5%。" lvl="1"/>
+        <rank description="使你閃電之盾的閃電球傷害提高10%，水之盾的水球恢復的法力值提高10%，大地之盾恢復的生命值提高10%。" lvl="2"/>
+        <rank description="使你閃電之盾的閃電球傷害提高15%，水之盾的水球恢復的法力值提高15%，大地之盾恢復的生命值提高15%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_fire_flametounge" key="611" name="Elemental Weapons" tier="2">
-        <rank description="Increases the damage caused by your Windfury Weapon effect by 13%  increases the spell damage on your Flametongue Weapon by 10% and increases the bonus healing on your Earthliving Weapon by 10%." lvl="1"/>
-        <rank description="Increases the damage caused by your Windfury Weapon effect by 27%  increases the spell damage on your Flametongue Weapon by 20% and increases the bonus healing on your Earthliving Weapon by 20%." lvl="2"/>
-        <rank description="Increases the damage caused by your Windfury Weapon effect by 40%  increases the spell damage on your Flametongue Weapon by 30% and increases the bonus healing on your Earthliving Weapon by 30%." lvl="3"/>
+      <talent column="0" icon="spell_fire_flametounge" key="611" name="元素武器" tier="2">
+        <rank description="使你風怒武器效果造成的傷害提高13%，並使火舌武器提供的法術傷害提高10%，大地生命武器提供的治療加成提高10%。" lvl="1"/>
+        <rank description="使你風怒武器效果造成的傷害提高27%，並使火舌武器提供的法術傷害提高20%，大地生命武器提供的治療加成提高20%。" lvl="2"/>
+        <rank description="使你風怒武器效果造成的傷害提高40%，並使火舌武器提供的法術傷害提高30%，大地生命武器提供的治療加成提高30%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_nature_elementalabsorption" key="617" name="Shamanistic Focus" tier="2">
-        <rank description="Reduces the mana cost of your Shock spells by 45%." lvl="1"/>
+      <talent column="2" icon="spell_nature_elementalabsorption" key="617" name="薩滿之凝" tier="2">
+        <rank description="使你震擊法術的法力消耗降低45%。" lvl="1"/>
       </talent>
-      <talent column="3" icon="spell_nature_mirrorimage" key="601" name="Anticipation" tier="2">
-        <rank description="Increases your chance to dodge by an additional 1%, and reduces the duration of all Disarm effects used against you by 16%. This does not stack with other Disarm duration reducing effects." lvl="1"/>
-        <rank description="Increases your chance to dodge by an additional 2%, and reduces the duration of all Disarm effects used against you by 25%. This does not stack with other Disarm duration reducing effects." lvl="2"/>
-        <rank description="Increases your chance to dodge by an additional 3%, and reduces the duration of all Disarm effects used against you by 50%. This does not stack with other Disarm duration reducing effects." lvl="3"/>
+      <talent column="3" icon="spell_nature_mirrorimage" key="601" name="預知" tier="2">
+        <rank description="使你的閃躲機率額外提高1%，並且受到的所有繳械持續時間縮短16%。無法與其他縮短繳械持續時間的效果疊加。" lvl="1"/>
+        <rank description="使你的閃躲機率額外提高2%，並且受到的所有繳械持續時間縮短25%。無法與其他縮短繳械持續時間的效果疊加。" lvl="2"/>
+        <rank description="使你的閃躲機率額外提高3%，並且受到的所有繳械持續時間縮短50%。無法與其他縮短繳械持續時間的效果疊加。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_ghoulfrenzy" key="602" name="Flurry" requires="613" tier="3">
-        <rank description="Increases your attack speed by 6% for your next 3 swings after dealing a critical strike." lvl="1"/>
-        <rank description="Increases your attack speed by 12% for your next 3 swings after dealing a critical strike." lvl="2"/>
-        <rank description="Increases your attack speed by 18% for your next 3 swings after dealing a critical strike." lvl="3"/>
-        <rank description="Increases your attack speed by 24% for your next 3 swings after dealing a critical strike." lvl="4"/>
-        <rank description="Increases your attack speed by 30% for your next 3 swings after dealing a critical strike." lvl="5"/>
+      <talent column="1" icon="ability_ghoulfrenzy" key="602" name="亂舞" requires="613" tier="3">
+        <rank description="在你的近戰攻擊造成致命一擊之後，使你下3次近戰攻擊的速度提高5%。" lvl="1"/>
+        <rank description="在你的近戰攻擊造成致命一擊之後，使你下3次近戰攻擊的速度提高10%。" lvl="2"/>
+        <rank description="在你的近戰攻擊造成致命一擊之後，使你下3次近戰攻擊的速度提高15%。" lvl="3"/>
+        <rank description="在你的近戰攻擊造成致命一擊之後，使你下3次近戰攻擊的速度提高20%。" lvl="4"/>
+        <rank description="在你的近戰攻擊造成致命一擊之後，使你下3次近戰攻擊的速度提高25%。" lvl="5"/>
       </talent>
-      <talent column="2" icon="spell_holy_devotion" key="615" name="Toughness" tier="3">
-        <rank description="Increases your Stamina by 2%, and reduces the duration of movement slowing effects on you by 6%." lvl="1"/>
-        <rank description="Increases your Stamina by 4%, and reduces the duration of movement slowing effects on you by 12%." lvl="2"/>
-        <rank description="Increases your Stamina by 6%, and reduces the duration of movement slowing effects on you by 18%." lvl="3"/>
-        <rank description="Increases your Stamina by 8%, and reduces the duration of movement slowing effects on you by 24%." lvl="4"/>
-        <rank description="Increases your Stamina by 10%, and reduces the duration of movement slowing effects on you by 30%." lvl="5"/>
+      <talent column="2" icon="spell_holy_devotion" key="615" name="堅韌" tier="3">
+        <rank description="使你的耐力提高2%，並使你受到降低移動速度效果的持續時間縮短6%。" lvl="1"/>
+        <rank description="使你的耐力提高4%，並使你受到降低移動速度效果的持續時間縮短12%。" lvl="2"/>
+        <rank description="使你的耐力提高6%，並使你受到降低移動速度效果的持續時間縮短18%。" lvl="3"/>
+        <rank description="使你的耐力提高8%，並使你受到降低移動速度效果的持續時間縮短24%。" lvl="4"/>
+        <rank description="使你的耐力提高10%，並使你受到降低移動速度效果的持續時間縮短30%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="spell_nature_windfury" key="1647" name="Improved Windfury Totem" tier="4">
-        <rank description="Increases the melee haste granted by your Windfury totem by 2%." lvl="1"/>
-        <rank description="Increases the melee haste granted by your Windfury totem by 4%." lvl="2"/>
+      <talent column="0" icon="spell_nature_windfury" key="1647" name="強化風怒圖騰" tier="4">
+        <rank description="使你風怒圖騰提供的近戰加速提高2%。" lvl="1"/>
+        <rank description="使你風怒圖騰提供的近戰加速提高4%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="ability_parry" key="616" name="Spirit Weapons" tier="4">
-        <rank description="Gives a chance to parry enemy melee attacks and reduces all threat generated by 30%." lvl="1"/>
+      <talent column="1" icon="ability_parry" key="616" name="魂化武器" tier="4">
+        <rank description="賦予你一定的機率招架敵人的近戰攻擊，並降低所有產生的威脅值30%。" lvl="1"/>
       </talent>
-      <talent column="2" icon="spell_nature_bloodlust" key="2083" name="Mental Dexterity" tier="4">
-        <rank description="Increases your Attack Power by 33% of your Intellect." lvl="1"/>
-        <rank description="Increases your Attack Power by 66% of your Intellect." lvl="2"/>
-        <rank description="Increases your Attack Power by 100% of your Intellect." lvl="3"/>
+      <talent column="2" icon="spell_nature_bloodlust" key="2083" name="心靈迅敏" tier="4">
+        <rank description="使你的攻擊強度提高相當於33%的智力。" lvl="1"/>
+        <rank description="使你的攻擊強度提高相當於66%的智力。" lvl="2"/>
+        <rank description="使你的攻擊強度提高相當於100%的智力。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_nature_unleashedrage" key="1689" name="Unleashed Rage" tier="5">
-        <rank description="Increases your expertise by 3, and increases all party and raid members' attack power by 4% while within 100 yards of the Shaman." lvl="1"/>
-        <rank description="Increases your expertise by 6, and increases all party and raid members' attack power by 7% while within 100 yards of the Shaman." lvl="2"/>
-        <rank description="Increases your expertise by 9, and increases all party and raid members' attack power by 10% while within 100 yards of the Shaman." lvl="3"/>
+      <talent column="0" icon="spell_nature_unleashedrage" key="1689" name="怒不可抑" tier="5">
+        <rank description="使你的熟練等級提高3點，並且當你的近戰攻擊造成致命一擊時，可令半徑100碼內所有小隊和團隊成員的攻擊強度提高4%，持續10秒。" lvl="1"/>
+        <rank description="使你的熟練等級提高6點，並且當你的近戰攻擊造成致命一擊時，可令半徑100碼內所有小隊和團隊成員的攻擊強度提高7%，持續10秒。" lvl="2"/>
+        <rank description="使你的熟練等級提高9點，並且當你的近戰攻擊造成致命一擊時，可令半徑100碼內所有小隊和團隊成員的攻擊強度提高10%，持續10秒。" lvl="3"/>
       </talent>
-      <talent column="2" icon="ability_hunter_swiftstrike" key="1643" name="Weapon Mastery" tier="5">
-        <rank description="Increases the damage you deal with all weapons by 4%." lvl="1"/>
-        <rank description="Increases the damage you deal with all weapons by 7%." lvl="2"/>
-        <rank description="Increases the damage you deal with all weapons by 10%." lvl="3"/>
+      <talent column="2" icon="ability_hunter_swiftstrike" key="1643" name="精通武器" tier="5">
+        <rank description="使你所有武器所造成的傷害提高4%。" lvl="1"/>
+        <rank description="使你所有武器所造成的傷害提高7%。" lvl="2"/>
+        <rank description="使你所有武器所造成的傷害提高10%。" lvl="3"/>
       </talent>
-      <talent column="3" icon="spell_fire_bluecano" key="2263" name="Frozen Power" tier="5">
-        <rank description="Increases the damage done by your Lightning Bolt, Chain Lightning, Lava Lash and Shock spells by 5% on targets afflicted by your Frostbrand Attack effect, and your Frost Shock has a 50% chance to root the target in ice for 5 sec. when used on targets at or further than 15 yards from you." lvl="1"/>
-        <rank description="Increases the damage done by your Lightning Bolt, Chain Lightning, Lava Lash and Shock spells by 10% on targets afflicted by your Frostbrand Attack effect, and your Frost Shock has a 100% chance to root the target in ice for 5 sec. when used on targets at or further than 15 yards from you." lvl="2"/>
+      <talent column="3" icon="spell_fire_bluecano" key="2263" name="冰凍之力" tier="5">
+        <rank description="使你的閃電箭、閃電鏈、熔岩暴擊和震擊法術對受你冰封武器影響的目標所造成的傷害提高5%，並且你的冰霜震擊使用於距離15碼或更遠的目標時，有50%的機率令目標定身在寒冰之中，持續5秒。" lvl="1"/>
+        <rank description="使你的閃電箭、閃電鏈、熔岩暴擊和震擊法術對受你冰封武器影響的目標所造成的傷害提高10%，並且你的冰霜震擊使用於距離15碼或更遠的目標時，有100%的機率令目標定身在寒冰之中，持續5秒。" lvl="2"/>
       </talent>
-      <talent column="0" icon="ability_dualwieldspecialization" key="1692" name="Dual Wield Specialization" requires="1690" tier="6">
-        <rank description="Increases your chance to hit while dual wielding by an additional 2%." lvl="1"/>
-        <rank description="Increases your chance to hit while dual wielding by an additional 4%." lvl="2"/>
-        <rank description="Increases your chance to hit while dual wielding by an additional 6%." lvl="3"/>
+      <talent column="0" icon="ability_dualwieldspecialization" key="1692" name="雙武器專精" requires="1690" tier="6">
+        <rank description="使你在手持雙武器攻擊時的命中率額外提高2%。" lvl="1"/>
+        <rank description="使你在手持雙武器攻擊時的命中率額外提高4%。" lvl="2"/>
+        <rank description="使你在手持雙武器攻擊時的命中率額外提高6%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_dualwield" key="1690" name="Dual Wield" requires="616" tier="6">
-        <rank description="Allows one-hand and off-hand weapons to be equipped in the off-hand." lvl="1"/>
+      <talent column="1" icon="ability_dualwield" key="1690" name="雙武器" requires="616" tier="6">
+        <rank description="可以在副手上裝備單手和副手武器。" lvl="1"/>
       </talent>
-      <talent column="2" icon="ability_shaman_stormstrike" key="901" name="Stormstrike" tier="6">
-        <rank description="Instantly attack with both weapons.  In addition, the next 4 sources of Nature damage dealt to the target from the Shaman are increased by 20%. Lasts 12 sec." lvl="1"/>
+      <talent column="2" icon="ability_shaman_stormstrike" key="901" name="風暴打擊" tier="6">
+        <rank description="立即揮動主、副手武器攻擊敵人，同時使你對目標造成的下4次自然傷害提高20%，持續12秒。" lvl="1"/>
         <spell castTime="0" cooldown="8000" maxRange="5">
           <power cost="8" type="mana"/>
         </spell>
       </talent>
-      <talent column="0" icon="spell_shaman_staticshock" key="2055" name="Static Shock" tier="7">
-        <rank description="You have a 2% chance to hit your target with a Lightning Shield orb charge when you deal damage with melee attacks and abilities, and your Lightning Shield gains 2 additional charges." lvl="1"/>
-        <rank description="You have a 4% chance to hit your target with a Lightning Shield orb charge when you deal damage with melee attacks and abilities, and your Lightning Shield gains 4 additional charges." lvl="2"/>
-        <rank description="You have a 6% chance to hit your target with a Lightning Shield orb charge when you deal damage with melee attacks and abilities, and your Lightning Shield gains 6 additional charges." lvl="3"/>
+      <talent column="0" icon="spell_shaman_staticshock" key="2055" name="靜電震擊" tier="7">
+        <rank description="使你閃電之盾的閃電球數量提高2顆，並且當你對目標造成近戰或技能傷害時，有2%的機率令閃電之盾的一顆閃電球擊中目標。" lvl="1"/>
+        <rank description="使你閃電之盾的閃電球數量提高4顆，並且當你對目標造成近戰或技能傷害時，有4%的機率令閃電之盾的一顆閃電球擊中目標。" lvl="2"/>
+        <rank description="使你閃電之盾的閃電球數量提高6顆，並且當你對目標造成近戰或技能傷害時，有6%的機率令閃電之盾的一顆閃電球擊中目標。" lvl="3"/>
       </talent>
-      <talent column="1" icon="ability_shaman_lavalash" key="2249" name="Lava Lash" requires="1690" tier="7">
-        <rank description="You charge your off-hand weapon with lava, instantly dealing 100% off-hand Weapon damage. Damage is increased by 25% if your off-hand weapon is enchanted with Flametongue." lvl="1"/>
+      <talent column="1" icon="ability_shaman_lavalash" key="2249" name="熔岩暴擊" requires="1690" tier="7">
+        <rank description="你以熔岩的能量強化你的副手武器，立即對目標造成100%副手武器傷害。若你的副手武器附帶火舌武器效果時，此傷害提高25%。" lvl="1"/>
         <spell castTime="0" cooldown="6000" maxRange="5">
           <power cost="4" type="mana"/>
         </spell>
       </talent>
-      <talent column="2" icon="spell_shaman_improvedstormstrike" key="2054" name="Improved Stormstrike" requires="901" tier="7">
-        <rank description="When you Stormstrike, you have a 50% chance to immediately grant you 20% of your base mana." lvl="1"/>
-        <rank description="When you Stormstrike, you have a 100% chance to immediately grant you 20% of your base mana." lvl="2"/>
+      <talent column="2" icon="spell_shaman_improvedstormstrike" key="2054" name="強化風暴打擊" requires="901" tier="7">
+        <rank description="當你使用風暴打擊時，有50%的機率立即獲得你基本法力的20%。" lvl="1"/>
+        <rank description="當你使用風暴打擊時，有100%的機率立即獲得你基本法力的20%。" lvl="2"/>
       </talent>
-      <talent column="0" icon="spell_nature_mentalquickness" key="1691" name="Mental Quickness" tier="8">
-        <rank description="Reduces the mana cost of your instant cast Shaman spells by 2% and increases your spell power by an amount equal to 10% of your attack power." lvl="1"/>
-        <rank description="Reduces the mana cost of your instant cast Shaman spells by 4% and increases your spell power by an amount equal to 20% of your attack power." lvl="2"/>
-        <rank description="Reduces the mana cost of your instant cast Shaman spells by 6% and increases your spell power by an amount equal to 30% of your attack power." lvl="3"/>
+      <talent column="0" icon="spell_nature_mentalquickness" key="1691" name="思想迅捷" tier="8">
+        <rank description="使你薩滿瞬發法術消耗的法力降低2%，同時使你的法術能量提高相當於10%的攻擊強度。" lvl="1"/>
+        <rank description="使你薩滿瞬發法術消耗的法力降低4%，同時使你的法術能量提高相當於20%的攻擊強度。" lvl="2"/>
+        <rank description="使你薩滿瞬發法術消耗的法力降低6%，同時使你的法術能量提高相當於30%的攻擊強度。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_nature_shamanrage" key="1693" name="Shamanistic Rage" tier="8">
-        <rank description="Reduces all damage taken by 30% and gives your successful melee attacks a chance to regenerate mana equal to 15% of your attack power. This spell is usable while stunned. Lasts 15 sec." lvl="1"/>
+      <talent column="1" icon="spell_nature_shamanrage" key="1693" name="薩滿之怒" tier="8">
+        <rank description="使你受到的所有傷害降低30%並且在近戰攻擊命中目標後有一定機率恢復相當於你攻擊強度15%的法力。此法術可以在昏迷狀態下使用，持續15秒。" lvl="1"/>
         <spell castTime="0" cooldown="60000"/>
       </talent>
-      <talent column="2" icon="spell_nature_earthelemental_totem" key="2056" name="Earthen Power" tier="8">
-        <rank description="Your Earthbind Totem's pulses have a 50% chance to also remove all snare effects from you and nearby friendly targets, and your Earth Shock reduces enemy attack speed by an additional 5%." lvl="1"/>
-        <rank description="Your Earthbind Totem's pulses have a 100% chance to also remove all snare effects from you and nearby friendly targets, and your Earth Shock reduces enemy attack speed by an additional 10%." lvl="2"/>
+      <talent column="2" icon="spell_nature_earthelemental_totem" key="2056" name="地靈之力" tier="8">
+        <rank description="你的地縛圖騰每次發動時有50%的機率可同時移除你和周圍友方目標所有的緩速效果，並且你的大地震擊可額外降低敵人5%的攻擊速度。" lvl="1"/>
+        <rank description="你的地縛圖騰每次發動時有100%的機率可同時移除你和周圍友方目標所有的緩速效果，並且你的大地震擊可額外降低敵人10%的攻擊速度。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_shaman_maelstromweapon" key="2057" name="Maelstrom Weapon" tier="9">
-        <rank description="When you deal damage with a melee weapon, you have a chance to reduce the cast time of your next Lightning Bolt, Chain Lightning, Lesser Healing Wave, Healing Wave, Chain Heal, or Hex spell by 20%. Stacks up to 5 times. Lasts 30 sec." lvl="1"/>
-        <rank description="When you deal damage with a melee weapon, you have a chance (higher than rank 1) to reduce the cast time of your next Lightning Bolt, Chain Lightning, Lesser Healing Wave, Healing Wave, Chain Heal, or Hex spell by 20%. Stacks up to 5 times. Lasts 30 sec." lvl="2"/>
-        <rank description="When you deal damage with a melee weapon, you have a chance (higher than rank 2) to reduce the cast time of your next Lightning Bolt, Chain Lightning, Lesser Healing Wave, Healing Wave, Chain Heal, or Hex spell by 20%. Stacks up to 5 times. Lasts 30 sec." lvl="3"/>
-        <rank description="When you deal damage with a melee weapon, you have a chance (higher than rank 3) to reduce the cast time of your next Lightning Bolt, Chain Lightning, Lesser Healing Wave, Healing Wave, Chain Heal, or Hex spell by 20%. Stacks up to 5 times. Lasts 30 sec." lvl="4"/>
-        <rank description="When you deal damage with a melee weapon, you have a chance (higher than rank 4) to reduce the cast time of your next Lightning Bolt, Chain Lightning, Lesser Healing Wave, Healing Wave, Chain Heal, or Hex spell by 20%. Stacks up to 5 times. Lasts 30 sec." lvl="5"/>
+      <talent column="1" icon="spell_shaman_maelstromweapon" key="2057" name="氣漩武器" tier="9">
+        <rank description="當你的近戰武器造成傷害時，你有一定的機率使你的下一個閃電箭、閃電鏈、次級治療波、治療波、治療鍊或妖術的施法時間縮短20%。此效果最多可堆疊5次，持續30秒。" lvl="1"/>
+        <rank description="當你的近戰武器造成傷害時，你有一定的機率(高於等級1)，使你的下一個閃電箭、閃電鏈、次級治療波、治療波、治療鍊或妖術的施法時間縮短20%。此效果最多可堆疊5次，持續30秒。" lvl="2"/>
+        <rank description="當你的近戰武器造成傷害時，你有一定的機率(高於等級2)，使你的下一個閃電箭、閃電鏈、次級治療波、治療波、治療鍊或妖術的施法時間縮短20%。此效果最多可堆疊5次，持續30秒。" lvl="3"/>
+        <rank description="當你的近戰武器造成傷害時，你有一定的機率(高於等級3)，使你的下一個閃電箭、閃電鏈、次級治療波、治療波、治療鍊或妖術的施法時間縮短20%。此效果最多可堆疊5次，持續30秒。" lvl="4"/>
+        <rank description="當你的近戰武器造成傷害時，你有一定的機率(高於等級4)，使你的下一個閃電箭、閃電鏈、次級治療波、治療波、治療鍊或妖術的施法時間縮短20%。此效果最多可堆疊5次，持續30秒。" lvl="5"/>
       </talent>
-      <talent column="1" icon="spell_shaman_feralspirit" key="2058" name="Feral Spirit" tier="10">
-        <rank description="Summons two Spirit Wolves under the command of the Shaman, lasting 45 sec." lvl="1"/>
+      <talent column="1" icon="spell_shaman_feralspirit" key="2058" name="野性之魂" tier="10">
+        <rank description="召喚兩隻聽從薩滿號令的幽靈狼，持續45秒。" lvl="1"/>
         <spell castTime="0" cooldown="180000" maxRange="30">
           <power cost="12" type="mana"/>
         </spell>
       </talent>
     </tree>
-    <tree bgImage="ShamanElementalCombat" icon="spell_nature_lightning" key="Elemental" name="Elemental" order="0">
-      <talent column="1" icon="spell_nature_wispsplode" key="564" name="Convection" tier="0">
-        <rank description="Reduces the mana cost of your Shock, Lightning Bolt, Chain Lightning, Lava Burst, and Wind Shear spells by 2%." lvl="1"/>
-        <rank description="Reduces the mana cost of your Shock, Lightning Bolt, Chain Lightning, Lava Burst, and Wind Shear spells by 4%." lvl="2"/>
-        <rank description="Reduces the mana cost of your Shock, Lightning Bolt, Chain Lightning, Lava Burst, and Wind Shear spells by 6%." lvl="3"/>
-        <rank description="Reduces the mana cost of your Shock, Lightning Bolt, Chain Lightning, Lava Burst, and Wind Shear spells by 8%." lvl="4"/>
-        <rank description="Reduces the mana cost of your Shock, Lightning Bolt, Chain Lightning, Lava Burst, and Wind Shear spells by 10%." lvl="5"/>
+    <tree bgImage="ShamanElementalCombat" icon="spell_nature_lightning" key="元素" name="Elemental" order="0">
+      <talent column="1" icon="spell_nature_wispsplode" key="564" name="傳導" tier="0">
+        <rank description="使你的震擊法術、閃電箭、閃電鏈、熔岩爆發和削風術的法力消耗減少2%。" lvl="1"/>
+        <rank description="使你的震擊法術、閃電箭、閃電鏈、熔岩爆發和削風術的法力消耗減少4%。" lvl="2"/>
+        <rank description="使你的震擊法術、閃電箭、閃電鏈、熔岩爆發和削風術的法力消耗減少6%。" lvl="3"/>
+        <rank description="使你的震擊法術、閃電箭、閃電鏈、熔岩爆發和削風術的法力消耗減少8%。" lvl="4"/>
+        <rank description="使你的震擊法術、閃電箭、閃電鏈、熔岩爆發和削風術的法力消耗減少10%。" lvl="5"/>
       </talent>
-      <talent column="2" icon="spell_fire_fireball" key="563" name="Concussion" tier="0">
-        <rank description="Increases the damage done by your Lightning Bolt, Chain Lightning, Thunderstorm, Lava Burst and Shock spells by 1%." lvl="1"/>
-        <rank description="Increases the damage done by your Lightning Bolt, Chain Lightning, Thunderstorm, Lava Burst and Shock spells by 2%." lvl="2"/>
-        <rank description="Increases the damage done by your Lightning Bolt, Chain Lightning, Thunderstorm, Lava Burst and Shock spells by 3%." lvl="3"/>
-        <rank description="Increases the damage done by your Lightning Bolt, Chain Lightning, Thunderstorm, Lava Burst and Shock spells by 4%." lvl="4"/>
-        <rank description="Increases the damage done by your Lightning Bolt, Chain Lightning, Thunderstorm, Lava Burst and Shock spells by 5%." lvl="5"/>
+      <talent column="2" icon="spell_fire_fireball" key="563" name="震盪" tier="0">
+        <rank description="使你的閃電箭、閃電鏈、雷霆風暴、熔岩爆發和震擊法術造成的傷害提高1%。" lvl="1"/>
+        <rank description="使你的閃電箭、閃電鏈、雷霆風暴、熔岩爆發和震擊法術造成的傷害提高2%。" lvl="2"/>
+        <rank description="使你的閃電箭、閃電鏈、雷霆風暴、熔岩爆發和震擊法術造成的傷害提高3%。" lvl="3"/>
+        <rank description="使你的閃電箭、閃電鏈、雷霆風暴、熔岩爆發和震擊法術造成的傷害提高4%。" lvl="4"/>
+        <rank description="使你的閃電箭、閃電鏈、雷霆風暴、熔岩爆發和震擊法術造成的傷害提高5%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="spell_fire_immolation" key="561" name="Call of Flame" tier="1">
-        <rank description="Increases the damage done by your Fire Totems and Fire Nova by 5%, and damage done by your Lava Burst spell by 2%." lvl="1"/>
-        <rank description="Increases the damage done by your Fire Totems and Fire Nova by 10%, and damage done by your Lava Burst spell by 4%." lvl="2"/>
-        <rank description="Increases the damage done by your Fire Totems and Fire Nova by 15%, and damage done by your Lava Burst spell by 6%." lvl="3"/>
+      <talent column="0" icon="spell_fire_immolation" key="561" name="烈焰呼喚" tier="1">
+        <rank description="使你火焰圖騰與火焰新星造成的傷害提高5%，熔岩爆發法術造成的傷害提高2%。" lvl="1"/>
+        <rank description="使你火焰圖騰與火焰新星造成的傷害提高10%，熔岩爆發法術造成的傷害提高4%。" lvl="2"/>
+        <rank description="使你火焰圖騰與火焰新星造成的傷害提高15%，熔岩爆發法術造成的傷害提高6%。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_nature_spiritarmor" key="1640" name="Elemental Warding" tier="1">
-        <rank description="Reduces all damage taken by 2%." lvl="1"/>
-        <rank description="Reduces all damage taken by 4%." lvl="2"/>
-        <rank description="Reduces all damage taken by 6%." lvl="3"/>
+      <talent column="1" icon="spell_nature_spiritarmor" key="1640" name="元素結界" tier="1">
+        <rank description="受到的所有傷害降低2%。" lvl="1"/>
+        <rank description="受到的所有傷害降低4%。" lvl="2"/>
+        <rank description="受到的所有傷害降低6%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_fire_elementaldevastation" key="1645" name="Elemental Devastation" tier="1">
-        <rank description="Your non-periodic offensive spell crits will increase your chance to get a critical strike with melee attacks by 3% for 10 sec." lvl="1"/>
-        <rank description="Your non-periodic offensive spell crits will increase your chance to get a critical strike with melee attacks by 6% for 10 sec." lvl="2"/>
-        <rank description="Your non-periodic offensive spell crits will increase your chance to get a critical strike with melee attacks by 9% for 10 sec." lvl="3"/>
+      <talent column="2" icon="spell_fire_elementaldevastation" key="1645" name="元素破壞" tier="1">
+        <rank description="你的非週期性攻擊法術造成致命一擊後，將使你的近戰攻擊造成致命一擊的機率提高3%，持續10秒。" lvl="1"/>
+        <rank description="你的非週期性攻擊法術造成致命一擊後，將使你的近戰攻擊造成致命一擊的機率提高6%，持續10秒。" lvl="2"/>
+        <rank description="你的非週期性攻擊法術造成致命一擊後，將使你的近戰攻擊造成致命一擊的機率提高9%，持續10秒。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_frost_frostward" key="575" name="Reverberation" tier="2">
-        <rank description="Reduces the cooldown of your Shock spells and Wind Shear by 0.2 sec." lvl="1"/>
-        <rank description="Reduces the cooldown of your Shock spells and Wind Shear by 0.4 sec." lvl="2"/>
-        <rank description="Reduces the cooldown of your Shock spells and Wind Shear by 0.6 sec." lvl="3"/>
-        <rank description="Reduces the cooldown of your Shock and Wind Shear spells by 0.8 sec." lvl="4"/>
-        <rank description="Reduces the cooldown of your Shock and Wind Shear spells by 1 sec." lvl="5"/>
+      <talent column="0" icon="spell_frost_frostward" key="575" name="迴響" tier="2">
+        <rank description="使你震擊法術和削風術的冷卻時間縮短0.2秒。" lvl="1"/>
+        <rank description="使你震擊法術和削風術的冷卻時間縮短0.4秒。" lvl="2"/>
+        <rank description="使你震擊法術和削風術的冷卻時間縮短0.6秒。" lvl="3"/>
+        <rank description="使你震擊法術和削風術的冷卻時間縮短0.8秒。" lvl="4"/>
+        <rank description="使你震擊法術和削風術的冷卻時間縮短1秒。" lvl="5"/>
       </talent>
-      <talent column="1" icon="spell_shadow_manaburn" key="574" name="Elemental Focus" tier="2">
-        <rank description="After landing a non-periodic critical strike with a Fire, Frost, or Nature damage spell, you enter a Clearcasting state.  The Clearcasting state reduces the mana cost of your next 2 damage or healing spells by 40%." lvl="1"/>
+      <talent column="1" icon="spell_shadow_manaburn" key="574" name="元素集中" tier="2">
+        <rank description="使你火焰、冰霜或自然系的非週期性傷害法術造成致命一擊之後進入節能施法狀態。這個狀態可以使你的下2個傷害或治療法術的法力消耗減少40%。" lvl="1"/>
       </talent>
-      <talent column="2" icon="spell_fire_volcano" key="565" name="Elemental Fury" tier="2">
-        <rank description="Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 20%." lvl="1"/>
-        <rank description="Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 40%." lvl="2"/>
-        <rank description="Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 60%." lvl="3"/>
-        <rank description="Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 80%." lvl="4"/>
-        <rank description="Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 100%." lvl="5"/>
+      <talent column="2" icon="spell_fire_volcano" key="565" name="元素之怒" tier="2">
+        <rank description="使你的灼熱和熔岩圖騰，以及火焰、冰霜和自然法術的致命一擊傷害加成提高20%。" lvl="1"/>
+        <rank description="使你的灼熱和熔岩圖騰，以及火焰、冰霜和自然法術的致命一擊傷害加成提高40%。" lvl="2"/>
+        <rank description="使你的灼熱和熔岩圖騰，以及火焰、冰霜和自然法術的致命一擊傷害加成提高60%。" lvl="3"/>
+        <rank description="使你的灼熱和熔岩圖騰，以及火焰、冰霜和自然法術的致命一擊傷害加成提高80%。" lvl="4"/>
+        <rank description="使你的灼熱和熔岩圖騰，以及火焰、冰霜和自然法術的致命一擊傷害加成提高100%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="spell_fire_sealoffire" key="567" name="Improved Fire Nova" tier="3">
-        <rank description="Increases the damage done by your Fire Nova by 10% and reduces the cooldown by 2 sec." lvl="1"/>
-        <rank description="Increases the damage done by your Fire Nova by 20% and reduces the cooldown by 4 sec." lvl="2"/>
+      <talent column="0" icon="spell_fire_sealoffire" key="567" name="強化火焰新星" tier="3">
+        <rank description="使你火焰新星造成的傷害提高10%，冷卻時間縮短2秒。" lvl="1"/>
+        <rank description="使你火焰新星造成的傷害提高20%，冷卻時間縮短4秒。" lvl="2"/>
       </talent>
-      <talent column="3" icon="spell_shadow_soulleech_2" key="1642" name="Eye of the Storm" tier="3">
-        <rank description="Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, Lava Burst and Hex spells by 23%." lvl="1"/>
-        <rank description="Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, Lava Burst and Hex spells by 46%." lvl="2"/>
-        <rank description="Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, Lava Burst and Hex spells by 70%." lvl="3"/>
+      <talent column="3" icon="spell_shadow_soulleech_2" key="1642" name="暴風之眼" tier="3">
+        <rank description="使你施放閃電箭、閃電鏈、熔岩爆發和妖術時，因受到傷害性攻擊而損失的施法時間縮短23%。" lvl="1"/>
+        <rank description="使你施放閃電箭、閃電鏈、熔岩爆發和妖術時，因受到傷害性攻擊而損失的施法時間縮短46%。" lvl="2"/>
+        <rank description="使你施放閃電箭、閃電鏈、熔岩爆發和妖術時，因受到傷害性攻擊而損失的施法時間縮短70%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_nature_stormreach" key="1641" name="Elemental Reach" tier="4">
-        <rank description="Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 3 yards, increases the radius of your Thunderstorm spell by 10%, and increases the range of your Flame Shock by 7 yards." lvl="1"/>
-        <rank description="Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 6 yards, increases the radius of your Thunderstorm spell by 20%, and increases the range of your Flame Shock by 15 yards." lvl="2"/>
+      <talent column="0" icon="spell_nature_stormreach" key="1641" name="元素延伸" tier="4">
+        <rank description="使你閃電箭、閃電鏈、火焰新星和熔岩爆發的施法距離延長3碼，同時雷霆風暴範圍的擴大10%，並且烈焰震擊的施法距離延長7碼。" lvl="1"/>
+        <rank description="使你閃電箭、閃電鏈、火焰新星和熔岩爆發的施法距離延長6碼，同時雷霆風暴範圍的擴大20%，並且烈焰震擊的施法距離延長15碼。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_nature_callstorm" key="562" name="Call of Thunder" requires="574" tier="4">
-        <rank description="Increases the critical strike chance of your Lightning Bolt, Chain Lightning and Thunderstorm spells by an additional 5%." lvl="1"/>
+      <talent column="1" icon="spell_nature_callstorm" key="562" name="雷霆呼喚" requires="574" tier="4">
+        <rank description="使你閃電箭、閃電鏈和雷霆風暴法術造成致命一擊的機率額外提高5%。" lvl="1"/>
       </talent>
-      <talent column="3" icon="spell_nature_unrelentingstorm" key="1682" name="Unrelenting Storm" tier="4">
-        <rank description="Regenerate mana equal to 4% of your Intellect every 5 sec, even while casting." lvl="1"/>
-        <rank description="Regenerate mana equal to 8% of your Intellect every 5 sec, even while casting." lvl="2"/>
-        <rank description="Regenerate mana equal to 12% of your Intellect every 5 sec, even while casting." lvl="3"/>
+      <talent column="3" icon="spell_nature_unrelentingstorm" key="1682" name="無情的風暴" tier="4">
+        <rank description="每5秒恢復相當於你智力4%的法力，此效果在施法時同樣有效。" lvl="1"/>
+        <rank description="每5秒恢復相當於你智力8%的法力，此效果在施法時同樣有效。" lvl="2"/>
+        <rank description="每5秒恢復相當於你智力12%的法力，此效果在施法時同樣有效" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_nature_elementalprecision_1" key="1685" name="Elemental Precision" tier="5">
-        <rank description="Increases your chance to hit with Fire, Frost and Nature spells by 1% and reduces the threat caused by Fire, Frost and Nature spells by 10%." lvl="1"/>
-        <rank description="Increases your chance to hit with Fire, Frost and Nature spells by 2% and reduces the threat caused by Fire, Frost and Nature spells by 20%." lvl="2"/>
-        <rank description="Increases your chance to hit with Fire, Frost and Nature spells by 3% and reduces the threat caused by Fire, Frost and Nature spells by 30%." lvl="3"/>
+      <talent column="0" icon="spell_nature_elementalprecision_1" key="1685" name="元素準確" tier="5">
+        <rank description="使你的火焰、冰霜和自然法術命中的機率提高1%，並使火焰、冰霜和自然法術所造成的威脅值降低10%。" lvl="1"/>
+        <rank description="使你的火焰、冰霜和自然法術命中的機率提高2%，並使火焰、冰霜和自然法術所造成的威脅值降低20%。" lvl="2"/>
+        <rank description="使你的火焰、冰霜和自然法術命中的機率提高3%，並使火焰、冰霜和自然法術所造成的威脅值降低30%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_lightning_lightningbolt01" key="721" name="Lightning Mastery" requires="565" tier="5">
-        <rank description="Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.1 sec." lvl="1"/>
-        <rank description="Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.2 sec." lvl="2"/>
-        <rank description="Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.3 sec." lvl="3"/>
-        <rank description="Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.4 sec." lvl="4"/>
-        <rank description="Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.5 sec." lvl="5"/>
+      <talent column="2" icon="spell_lightning_lightningbolt01" key="721" name="精通閃電" requires="565" tier="5">
+        <rank description="使你閃電箭、閃電鏈和熔岩爆發的施法時間縮短0.1秒。" lvl="1"/>
+        <rank description="使你閃電箭、閃電鏈和熔岩爆發的施法時間縮短0.2秒。" lvl="2"/>
+        <rank description="使你閃電箭、閃電鏈和熔岩爆發的施法時間縮短0.3秒。" lvl="3"/>
+        <rank description="使你閃電箭、閃電鏈和熔岩爆發的施法時間縮短0.4秒。" lvl="4"/>
+        <rank description="使你閃電箭、閃電鏈和熔岩爆發的施法時間縮短0.5秒。" lvl="5"/>
       </talent>
-      <talent column="1" icon="spell_nature_wispheal" key="573" name="Elemental Mastery" requires="562" tier="6">
-        <rank description="When activated, your next Lightning Bolt, Chain Lightning or Lava Burst spell becomes an instant cast spell. In addition, you gain 15% spell haste for 15 sec. Elemental Mastery shares a cooldown with Nature's Swiftness." lvl="1"/>
+      <talent column="1" icon="spell_nature_wispheal" key="573" name="精通元素" requires="562" tier="6">
+        <rank description="啟動之後，你的下一發閃電箭、閃電鏈或熔岩爆發變成瞬發法術。此外，你將獲得15%的法術加速，持續15秒。精通元素與自然迅捷共用相同的冷卻時間。" lvl="1"/>
       </talent>
-      <talent column="2" icon="spell_shaman_stormearthfire" key="2052" name="Storm, Earth and Fire" tier="6">
-        <rank description="Reduces the cooldown of your Chain Lightning spell by .75 sec, your Earthbind Totem also has a 33% chance to root targets for 5 sec when cast and the periodic damage done by your Flame Shock is increased by 20%." lvl="1"/>
-        <rank description="Reduces the cooldown of your Chain Lightning spell by 1.5 sec, your Earthbind Totem also has a 66% chance to root targets for 5 sec when cast and the periodic damage done by your Flame Shock is increased by 40%." lvl="2"/>
-        <rank description="Reduces the cooldown of your Chain Lightning spell by 2.5 sec, your Earthbind Totem also has a 100% chance to root targets for 5 sec when cast and the periodic damage done by your Flame Shock is increased by 60%." lvl="3"/>
+      <talent column="2" icon="spell_shaman_stormearthfire" key="2052" name="地火風暴" tier="6">
+        <rank description="使你的閃電鏈冷卻時間縮短0.75秒，地縛圖騰所施放的效果有33%的機率使目標定身5秒，並且烈焰震擊造成的週期性傷害提高20%。" lvl="1"/>
+        <rank description="使你的閃電鏈冷卻時間縮短1.5秒，地縛圖騰所施放的效果有66%的機率使目標定身5秒，並且烈焰震擊造成的週期性傷害提高40%。" lvl="2"/>
+        <rank description="使你的閃電鏈冷卻時間縮短2.5秒，地縛圖騰所施放的效果有100%的機率使目標定身5秒，並且烈焰震擊造成的週期性傷害提高60%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_fire_blueflamering" key="2262" name="Booming Echoes" tier="7">
-        <rank description="Reduces the cooldown of your Flame Shock and Frost Shock spells by an additional 1 sec., and increases the direct damage done by your Flame Shock and Frost Shock spells by an additional 10%." lvl="1"/>
-        <rank description="Reduces the cooldown of your Flame Shock and Frost Shock spells by an additional 2 sec., and increases the direct damage done by your Flame Shock and Frost Shock spells by an additional 20%." lvl="2"/>
+      <talent column="0" icon="spell_fire_blueflamering" key="2262" name="震音返響" tier="7">
+        <rank description="使你烈焰震擊和冰霜震擊的冷卻時間額外縮短1秒，並使你烈焰震擊和冰霜震擊的直接傷害額外提高10%。" lvl="1"/>
+        <rank description="使你烈焰震擊和冰霜震擊的冷卻時間額外縮短2秒，並使你烈焰震擊和冰霜震擊的直接傷害額外提高20%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_shaman_elementaloath" key="2049" name="Elemental Oath" requires="573" tier="7">
-        <rank description="While Clearcasting from Elemental Focus is active, you deal 5% more spell damage. In addition, party and raid members within 100 yards receive a 3% bonus to their spell critical strike chance." lvl="1"/>
-        <rank description="While Clearcasting from Elemental Focus is active, you deal 10% more spell damage. In addition, party and raid members within 100 yards receive a 5% bonus to their spell critical strike chance." lvl="2"/>
+      <talent column="1" icon="spell_shaman_elementaloath" key="2049" name="元素之誓" requires="573" tier="7">
+        <rank description="你的非週期性法術造成致命一擊時，可賦予100碼範圍內小隊或團隊成員元素之誓的效果，使其法術致命一擊機率提高3%。此外，當元素集中的節能施法處於啟動狀態時，你可額外造成5%的法術傷害。此技能可持續15秒。" lvl="1"/>
+        <rank description="你的非週期性法術造成致命一擊時，可賦予100碼範圍內小隊或團隊成員元素之誓的效果，使其法術致命一擊機率提高5%。此外，當元素集中的節能施法處於啟動狀態時，你可額外造成10%的法術傷害。此技能可持續15秒。" lvl="2"/>
       </talent>
-      <talent column="2" icon="spell_nature_lightningoverload" key="1686" name="Lightning Overload" tier="7">
-        <rank description="Gives your Lightning Bolt and Chain Lightning spells a 11% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat." lvl="1"/>
-        <rank description="Gives your Lightning Bolt and Chain Lightning spells a 22% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat." lvl="2"/>
-        <rank description="Gives your Lightning Bolt and Chain Lightning spells a 33% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat." lvl="3"/>
+      <talent column="2" icon="spell_nature_lightningoverload" key="1686" name="閃電超載" tier="7">
+        <rank description="使你閃電箭和閃電鏈有11%的機率對同一目標發射第二發同樣的法術，不消耗任何法力也不造成威脅值，但傷害值減半。" lvl="1"/>
+        <rank description="使你閃電箭和閃電鏈有22%的機率對同一目標發射第二發同樣的法術，不消耗任何法力也不造成威脅值，但傷害值減半。" lvl="2"/>
+        <rank description="使你閃電箭和閃電鏈有33%的機率對同一目標發射第二發同樣的法術，不消耗任何法力也不造成威脅值，但傷害值減半。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_shaman_astralshift" key="2050" name="Astral Shift" tier="8">
-        <rank description="When stunned, feared or silenced you  shift into the Astral Plane reducing all damage taken by 10% for the duration of the stun, fear or silence effect." lvl="1"/>
-        <rank description="When stunned, feared or silenced you  shift into the Astral Plane reducing all damage taken by 20% for the duration of the stun, fear or silence effect." lvl="2"/>
-        <rank description="When stunned, feared or silenced you shift into the Astral Plane reducing all damage taken by 30% for the duration of the stun, fear or silence effect." lvl="3"/>
+      <talent column="0" icon="spell_shaman_astralshift" key="2050" name="星界轉移" tier="8">
+        <rank description="受到昏迷、恐懼或沉默時，你的形體將轉移至星界，使你受到的所有傷害降低10%，持續至昏迷、恐懼或沉默效果結束為止。" lvl="1"/>
+        <rank description="受到昏迷、恐懼或沉默時，你的形體將轉移至星界，使你受到的所有傷害降低20%，持續至昏迷、恐懼或沉默效果結束為止。" lvl="2"/>
+        <rank description="受到昏迷、恐懼或沉默時，你的形體將轉移至星界，使你受到的所有傷害降低30%，持續至昏迷、恐懼或沉默效果結束為止。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_fire_totemofwrath" key="1687" name="Totem of Wrath" tier="8">
-        <rank description="Summons a Totem of Wrath with 5 health at the feet of the caster.  The totem increases spell power by 100 for all party and raid members, and increases the critical strike chance of all attacks by 3% against all enemies within 40 yards.  Lasts 5 min." lvl="1"/>
+      <talent column="1" icon="spell_fire_totemofwrath" key="1687" name="憤怒圖騰" tier="8">
+        <rank description="在施法者身邊召喚一根5點生命力的憤怒圖騰。此圖騰可提高所有小隊與團隊成員100點法術能量，並使0碼範圍內的所有敵人受到攻擊的致命一擊機率提高3%，持續5分钟。" lvl="1"/>
         <spell castTime="0">
           <power cost="5" type="mana"/>
         </spell>
       </talent>
-      <talent column="2" icon="spell_shaman_lavaflow" key="2051" name="Lava Flows" tier="8">
-        <rank description="Increases the critical strike damage bonus of your Lava Burst spell by an additional 6%, and when your Flame Shock is dispelled your spell casting speed is increased by 10% for 6 sec." lvl="1"/>
-        <rank description="Increases the critical strike damage bonus of your Lava Burst spell by an additional 12%, and when your Flame Shock is dispelled your spell casting speed is increased by 20% for 6 sec." lvl="2"/>
-        <rank description="Increases the critical strike damage bonus of your Lava Burst spell by an additional 24%, and when your Flame Shock is dispelled your spell casting speed is increased by 30% for 6 sec." lvl="3"/>
+      <talent column="2" icon="spell_shaman_lavaflow" key="2051" name="熔岩奔流" tier="8">
+        <rank description="使你熔岩爆發的致命一擊傷害加成額外提高6%，並且當你的烈焰震擊被驅散時，你的施法速度將提高10%，持續6秒。" lvl="1"/>
+        <rank description="使你熔岩爆發的致命一擊傷害加成額外提高12%，並且當你的烈焰震擊被驅散時，你的施法速度將提高20%，持續6秒。" lvl="2"/>
+        <rank description="使你熔岩爆發的致命一擊傷害加成額外提高24%，並且當你的烈焰震擊被驅散時，你的施法速度將提高30%，持續6秒。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_unused2" key="2252" name="Shamanism" tier="9">
-        <rank description="Your Lightning Bolt and Chain Lightning spells gain an additional 4% and your Lava Burst gains an additional 5% of your bonus damage effects." lvl="1"/>
-        <rank description="Your Lightning Bolt and Chain Lightning spells gain an additional 8% and your Lava Burst gains an additional 10% of your bonus damage effects." lvl="2"/>
-        <rank description="Your Lightning Bolt and Chain Lightning spells gain an additional 12% and your Lava Burst gains an additional 15% of your bonus damage effects." lvl="3"/>
-        <rank description="Your Lightning Bolt and Chain Lightning spells gain an additional 16% and your Lava Burst gains an additional 20% of your bonus damage effects." lvl="4"/>
-        <rank description="Your Lightning Bolt and Chain Lightning spells gain an additional 20% and your Lava Burst gains an additional 25% of your bonus damage effects." lvl="5"/>
+      <talent column="1" icon="spell_unused2" key="2252" name="薩滿之道" tier="9">
+        <rank description="你的閃電箭和閃電鏈可從你的傷害加成效果中額外獲得3%的效果，熔岩爆發可從你的傷害加成效果中額外獲得4%的效果。" lvl="1"/>
+        <rank description="你的閃電箭和閃電鏈可從你的傷害加成效果中額外獲得6%的效果，熔岩爆發可從你的傷害加成效果中額外獲得8%的效果。" lvl="2"/>
+        <rank description="你的閃電箭和閃電鏈可從你的傷害加成效果中額外獲得9%的效果，熔岩爆發可從你的傷害加成效果中額外獲得12%的效果。" lvl="3"/>
+        <rank description="你的閃電箭和閃電鏈可從你的傷害加成效果中額外獲得12%的效果，熔岩爆發可從你的傷害加成效果中額外獲得16%的效果。" lvl="4"/>
+        <rank description="你的閃電箭和閃電鏈可從你的傷害加成效果中額外獲得15%的效果，熔岩爆發可從你的傷害加成效果中額外獲得20%的效果。" lvl="5"/>
       </talent>
-      <talent column="1" icon="spell_shaman_thunderstorm" key="2053" name="Thunderstorm" tier="10">
-        <rank description="You call down a bolt of lightning, energizing you and damaging nearby enemies within 10 yards. Restores 8% mana to you and deals 551 to 629 Nature damage to all nearby enemies, knocking them back 20 yards. This spell is usable while stunned." lvl="1"/>
+      <talent column="1" icon="spell_shaman_thunderstorm" key="2053" name="雷霆風暴" tier="10">
+        <rank description="你呼喚一道閃電，使你獲得充能的效果並且對0碼範圍內的敵人造成傷害。你將恢復8%法力，同時對周圍所有敵人造成551到629點自然傷害，並將其擊退20碼。此法術可以在昏迷狀態下使用。" lvl="1"/>
       </talent>
     </tree>
-    <tree bgImage="ShamanRestoration" icon="spell_nature_magicimmunity" key="Restoration" name="Restoration" order="2">
-      <talent column="1" icon="spell_nature_magicimmunity" key="586" name="Improved Healing Wave" tier="0">
-        <rank description="Reduces the casting time of your Healing Wave spell by 0.1 sec." lvl="1"/>
-        <rank description="Reduces the casting time of your Healing Wave spell by 0.2 sec." lvl="2"/>
-        <rank description="Reduces the casting time of your Healing Wave spell by 0.3 sec." lvl="3"/>
-        <rank description="Reduces the casting time of your Healing Wave spell by 0.4 sec." lvl="4"/>
-        <rank description="Reduces the casting time of your Healing Wave spell by 0.5 sec." lvl="5"/>
+    <tree bgImage="ShamanRestoration" icon="spell_nature_magicimmunity" key="Restoration" name="恢復" order="2">
+      <talent column="1" icon="spell_nature_magicimmunity" key="586" name="強化治療波" tier="0">
+        <rank description="使你治療波的施法時間縮短0.1秒。" lvl="1"/>
+        <rank description="使你治療波的施法時間縮短0.2秒。" lvl="2"/>
+        <rank description="使你治療波的施法時間縮短0.3秒。" lvl="3"/>
+        <rank description="使你治療波的施法時間縮短0.4秒。" lvl="4"/>
+        <rank description="使你治療波的施法時間縮短0.5秒。" lvl="5"/>
       </talent>
-      <talent column="2" icon="spell_nature_moonglow" key="595" name="Totemic Focus" tier="0">
-        <rank description="Reduces the mana cost of your totems by 5%." lvl="1"/>
-        <rank description="Reduces the mana cost of your totems by 10%." lvl="2"/>
-        <rank description="Reduces the mana cost of your totems by 15%." lvl="3"/>
-        <rank description="Reduces the mana cost of your totems by 20%." lvl="4"/>
-        <rank description="Reduces the mana cost of your totems by 25%." lvl="5"/>
+      <talent column="2" icon="spell_nature_moonglow" key="595" name="圖騰集中" tier="0">
+        <rank description="使你施放圖騰所消耗的法力降低5%。" lvl="1"/>
+        <rank description="使你施放圖騰所消耗的法力降低10%。" lvl="2"/>
+        <rank description="使你施放圖騰所消耗的法力降低15%。" lvl="3"/>
+        <rank description="使你施放圖騰所消耗的法力降低20%。" lvl="4"/>
+        <rank description="使你施放圖騰所消耗的法力降低25%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="spell_nature_reincarnation" key="589" name="Improved Reincarnation" tier="1">
-        <rank description="Reduces the cooldown of your Reincarnation spell by 7 min and increases the amount of health and mana recovered when reincarnating by an additional 10%." lvl="1"/>
-        <rank description="Reduces the cooldown of your Reincarnation spell by 15 min and increases the amount of health and mana recovered when reincarnating by an additional 20%." lvl="2"/>
+      <talent column="0" icon="spell_nature_reincarnation" key="589" name="強化復生" tier="1">
+        <rank description="使你復生法術的冷卻時間縮短7分鐘，並且復生後獲得的生命力和法力額外提高10%。" lvl="1"/>
+        <rank description="使你復生法術的冷卻時間縮短15分鐘，並且復生後獲得的生命力和法力額外提高20%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_nature_healingtouch" key="1646" name="Healing Grace" tier="1">
-        <rank description="Reduces the threat generated by your healing spells by 5% and reduces the chance your helpful spells and damage over time effects will be dispelled by 10%." lvl="1"/>
-        <rank description="Reduces the threat generated by your healing spells by 10% and reduces the chance your helpful spells and damage over time effects will be dispelled by 20%." lvl="2"/>
-        <rank description="Reduces the threat generated by your healing spells by 15% and reduces the chance your helpful spells and damage over time effects will be dispelled by 30%." lvl="3"/>
+      <talent column="1" icon="spell_nature_healingtouch" key="1646" name="治療恩典" tier="1">
+        <rank description="使你的治療法術所產生的威脅值降低5%，並且令你的助益法術和持續傷害的法術效果被驅散的機率降低10%。" lvl="1"/>
+        <rank description="使你的治療法術所產生的威脅值降低10%，並且令你的助益法術和持續傷害的法術效果被驅散的機率降低20%。" lvl="2"/>
+        <rank description="使你的治療法術所產生的威脅值降低15%，並且令你的助益法術和持續傷害的法術效果被驅散的機率降低30%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_frost_manarecharge" key="593" name="Tidal Focus" tier="1">
-        <rank description="Reduces the mana cost of your healing spells by 1%." lvl="1"/>
-        <rank description="Reduces the mana cost of your healing spells by 2%." lvl="2"/>
-        <rank description="Reduces the mana cost of your healing spells by 3%." lvl="3"/>
-        <rank description="Reduces the mana cost of your healing spells by 4%." lvl="4"/>
-        <rank description="Reduces the mana cost of your healing spells by 5%." lvl="5"/>
+      <talent column="2" icon="spell_frost_manarecharge" key="593" name="潮汐集中" tier="1">
+        <rank description="使你的治療法術所消耗的法力減少1%。" lvl="1"/>
+        <rank description="使你的治療法術所消耗的法力減少2%。" lvl="2"/>
+        <rank description="使你的治療法術所消耗的法力減少3%。" lvl="3"/>
+        <rank description="使你的治療法術所消耗的法力減少4%。" lvl="4"/>
+        <rank description="使你的治療法術所消耗的法力減少5%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="ability_shaman_watershield" key="583" name="Improved Water Shield" tier="2">
-        <rank description="You have a 33% chance to instantly gain mana as if you consumed a Water Shield Orb when you gain a critical effect from your Healing Wave or Riptide spells, a 20% chance when you gain a critical effect from your Lesser Healing Wave spell, and a 10% chance when you gain a critical effect from your Chain Heal spell." lvl="1"/>
-        <rank description="You have a 66% chance to instantly gain mana as if you consumed a Water Shield Orb when you gain a critical effect from your Healing Wave or Riptide spells, a 40% chance when you gain a critical effect from your Lesser Healing Wave spell, and a 20% chance when you gain a critical effect from your Chain Heal spell." lvl="2"/>
-        <rank description="You have a 100% chance to instantly gain mana as if you consumed a Water Shield Orb when you gain a critical effect from your Healing Wave or Riptide spells, a 60% chance when you gain a critical effect from your Lesser Healing Wave spell, and a 30% chance when you gain a critical effect from your Chain Heal spell." lvl="3"/>
+      <talent column="0" icon="ability_shaman_watershield" key="583" name="強化水之盾" tier="2">
+        <rank description="當你的治療波或激流造成極效治療效果時，有33%的機率立即恢復相當於水之盾一顆水球的法力。當你的次級治療波造成極效治療效果時，有19.8%的機率，並且當你的治療鍊造成極效治療效果時，有9.9%的機率立即恢復相當於水之盾一顆水球的法力。" lvl="1"/>
+        <rank description="當你的治療波或激流造成極效治療效果時，有66%的機率立即恢復相當於水之盾一顆水球的法力。當你的次級治療波造成極效治療效果時，有39.6%的機率，並且當你的治療鍊造成極效治療效果時，有19.8%的機率立即恢復相當於水之盾一顆水球的法力。" lvl="2"/>
+        <rank description="當你的治療波或激流造成極效治療效果時，有100%的機率立即恢復相當於水之盾一顆水球的法力。當你的次級治療波造成極效治療效果時，有60%的機率，並且當你的治療鍊造成極效治療效果時，有30%的機率立即恢復相當於水之盾一顆水球的法力。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_nature_healingwavelesser" key="587" name="Healing Focus" tier="2">
-        <rank description="Reduces the pushback suffered from damaging attacks while casting any Shaman healing spell by 23%." lvl="1"/>
-        <rank description="Reduces the pushback suffered from damaging attacks while casting any Shaman healing spell by 46%." lvl="2"/>
-        <rank description="Reduces the pushback suffered from damaging attacks while casting any Shaman healing spell by 70%." lvl="3"/>
+      <talent column="1" icon="spell_nature_healingwavelesser" key="587" name="專注治療" tier="2">
+        <rank description="使你施放薩滿的治療法術時，因受到傷害性攻擊而損失的施法時間縮短23%。." lvl="1"/>
+        <rank description="使你施放薩滿的治療法術時，因受到傷害性攻擊而損失的施法時間縮短46%。" lvl="2"/>
+        <rank description="使你施放薩滿的治療法術時，因受到傷害性攻擊而損失的施法時間縮短70%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_frost_frostbolt" key="582" name="Tidal Force" tier="2">
-        <rank description="Increases the critical effect chance of your Healing Wave, Lesser Healing Wave and Chain Heal by 60%. Each critical heal reduces the chance by 20%. Lasts 20 sec." lvl="1"/>
+      <talent column="2" icon="spell_frost_frostbolt" key="582" name="潮汐之力" tier="2">
+        <rank description="使你的治療波、次級治療波和治療鍊產生極效治療效果的機率提高60%。每造成一次極效治療效果之後，此機率降低20%，持續20秒。" lvl="1"/>
         <spell castTime="0" cooldown="180000"/>
       </talent>
-      <talent column="3" icon="spell_nature_undyingstrength" key="581" name="Ancestral Healing" tier="2">
-        <rank description="Reduces your target's physical damage taken by 3% for 15 sec after getting a critical effect from one of your healing spells." lvl="1"/>
-        <rank description="Reduces your target's physical damage taken by 7% for 15 sec after getting a critical effect from one of your healing spells." lvl="2"/>
-        <rank description="Reduces your target's physical damage taken by 10% for 15 sec after getting a critical effect from one of your healing spells." lvl="3"/>
+      <talent column="3" icon="spell_nature_undyingstrength" key="581" name="先祖治療" tier="2">
+        <rank description="當你的治療法術造成極效治療效果時，目標受到的物理傷害將降低3%，持續15秒。" lvl="1"/>
+        <rank description="當你的治療法術造成極效治療效果時，目標受到的物理傷害將降低7%，持續15秒。" lvl="2"/>
+        <rank description="當你的治療法術造成極效治療效果時，目標受到的物理傷害將降低10%，持續15秒。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_nature_manaregentotem" key="588" name="Restorative Totems" tier="3">
-        <rank description="Increases the effect of your Mana Spring Totem by 7%, and increases the amount healed by your Healing Stream Totem by 15%." lvl="1"/>
-        <rank description="Increases the effect of your Mana Spring Totem by 12%, and increases the amount healed by your Healing Stream Totem by 30%." lvl="2"/>
-        <rank description="Increases the effect of your Mana Spring Totem by 20%, and increases the amount healed by your Healing Stream Totem by 45%." lvl="3"/>
+      <talent column="1" icon="spell_nature_manaregentotem" key="588" name="強化恢復系圖騰" tier="3">
+        <rank description="使你法力之泉圖騰的效果提高7%，治療之泉圖騰的治療量提高15%。" lvl="1"/>
+        <rank description="使你法力之泉圖騰的效果提高12%，治療之泉圖騰的治療量提高30%。" lvl="2"/>
+        <rank description="使你法力之泉圖騰的效果提高20%，治療之泉圖騰的治療量提高45%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_nature_tranquility" key="594" name="Tidal Mastery" tier="3">
-        <rank description="Increases the critical effect chance of your healing and lightning spells by 1%." lvl="1"/>
-        <rank description="Increases the critical effect chance of your healing and lightning spells by 2%." lvl="2"/>
-        <rank description="Increases the critical effect chance of your healing and lightning spells by 3%." lvl="3"/>
-        <rank description="Increases the critical effect chance of your healing and lightning spells by 4%." lvl="4"/>
-        <rank description="Increases the critical effect chance of your healing and lightning spells by 5%." lvl="5"/>
+      <talent column="2" icon="spell_nature_tranquility" key="594" name="精通潮汐" tier="3">
+        <rank description="使你治療法術的極效治療和閃電法術的致命一擊機率提高1%。" lvl="1"/>
+        <rank description="使你治療法術的極效治療和閃電法術的致命一擊機率提高2%。" lvl="2"/>
+        <rank description="使你治療法術的極效治療和閃電法術的致命一擊機率提高3%。" lvl="3"/>
+        <rank description="使你治療法術的極效治療和閃電法術的致命一擊機率提高4%。" lvl="4"/>
+        <rank description="使你治療法術的極效治療和閃電法術的致命一擊機率提高5%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="spell_nature_healingway" key="1648" name="Healing Way" tier="4">
-        <rank description="Increases the amount healed by your Healing Wave spell by 8%." lvl="1"/>
-        <rank description="Increases the amount healed by your Healing Wave spell by 16%." lvl="2"/>
-        <rank description="Increases the amount healed by your Healing Wave spell by 25%." lvl="3"/>
+      <talent column="0" icon="spell_nature_healingway" key="1648" name="治療之路" tier="4">
+        <rank description="使你治療波的治療量提高8%。" lvl="1"/>
+        <rank description="使你治療波的治療量提高16%。" lvl="2"/>
+        <rank description="使你治療波的治療量提高25%。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_nature_ravenform" key="591" name="Nature's Swiftness" tier="4">
-        <rank description="When activated, your next Nature spell with a base casting time less than 10 sec. becomes an instant cast spell. Nature's Swiftness shares a cooldown with Elemental Mastery." lvl="1"/>
+      <talent column="2" icon="spell_nature_ravenform" key="591" name="自然迅捷" tier="4">
+        <rank description="啟動之後，你的下一個基礎施法時間低於10秒的自然法術將成為瞬發法術。自然迅捷與精通元素共用相同的冷卻時間。." lvl="1"/>
       </talent>
-      <talent column="3" icon="spell_nature_focusedmind" key="1695" name="Focused Mind" tier="4">
-        <rank description="Reduces the duration of any Silence or Interrupt effects used against the Shaman by 10%. This effect does not stack with other similar effects." lvl="1"/>
-        <rank description="Reduces the duration of any Silence or Interrupt effects used against the Shaman by 20%. This effect does not stack with other similar effects." lvl="2"/>
-        <rank description="Reduces the duration of any Silence or Interrupt effects used against the Shaman by 30%. This effect does not stack with other similar effects." lvl="3"/>
+      <talent column="3" icon="spell_nature_focusedmind" key="1695" name="精神專注" tier="4">
+        <rank description="使薩滿受到沉默和中斷施法技能的持續時間縮短10%。此效果無法與其他同類的效果堆疊。" lvl="1"/>
+        <rank description="使薩滿受到沉默和中斷施法技能的持續時間縮短20%。此效果無法與其他同類的效果堆疊。" lvl="2"/>
+        <rank description="使薩滿受到沉默和中斷施法技能的持續時間縮短30%。此效果無法與其他同類的效果堆疊。" lvl="3"/>
       </talent>
-      <talent column="2" icon="spell_frost_wizardmark" key="592" name="Purification" tier="5">
-        <rank description="Increases the effectiveness of your healing spells by 2%." lvl="1"/>
-        <rank description="Increases the effectiveness of your healing spells by 4%." lvl="2"/>
-        <rank description="Increases the effectiveness of your healing spells by 6%." lvl="3"/>
-        <rank description="Increases the effectiveness of your healing spells by 8%." lvl="4"/>
-        <rank description="Increases the effectiveness of your healing spells by 10%." lvl="5"/>
+      <talent column="2" icon="spell_frost_wizardmark" key="592" name="淨化" tier="5">
+        <rank description="使你治療法術的效果提高2%。" lvl="1"/>
+        <rank description="使你治療法術的效果提高4%。" lvl="2"/>
+        <rank description="使你治療法術的效果提高6%。" lvl="3"/>
+        <rank description="使你治療法術的效果提高8%。" lvl="4"/>
+        <rank description="使你治療法術的效果提高10%。" lvl="5"/>
       </talent>
-      <talent column="0" icon="spell_nature_natureguardian" key="1699" name="Nature's Guardian" tier="6">
-        <rank description="Whenever a damaging attack brings you below 30% health, your maximum health is increased by 3% for 10 sec and your threat level towards the attacker is reduced.  30 second cooldown." lvl="1"/>
-        <rank description="Whenever a damaging attack brings you below 30% health, your maximum health is increased by 6% for 10 sec and your threat level towards the attacker is reduced.  30 second cooldown." lvl="2"/>
-        <rank description="Whenever a damaging attack brings you below 30% health, your maximum health is increased by 9% for 10 sec and your threat level towards the attacker is reduced.  30 second cooldown." lvl="3"/>
-        <rank description="Whenever a damaging attack brings you below 30% health, your maximum health is increased by 12% for 10 sec and your threat level towards the attacker is reduced.  30 second cooldown." lvl="4"/>
-        <rank description="Whenever a damaging attack brings you below 30% health, your maximum health is increased by 15% for 10 sec and your threat level towards the attacker is reduced.  30 second cooldown." lvl="5"/>
+      <talent column="0" icon="spell_nature_natureguardian" key="1699" name="自然守護者" tier="6">
+        <rank description="每當你的生命力因受到傷害性的攻擊而降低至30%以下時，你的生命力上限將提高3%，持續10秒，同時你對攻擊者的威脅等級也將跟著降低。30秒冷卻時間。" lvl="1"/>
+        <rank description="每當你的生命力因受到傷害性的攻擊而降低至30%以下時，你的生命力上限將提高6%，持續10秒，同時你對攻擊者的威脅等級也將跟著降低。30秒冷卻時間。" lvl="2"/>
+        <rank description="每當你的生命力因受到傷害性的攻擊而降低至30%以下時，你的生命力上限將提高9%，持續10秒，同時你對攻擊者的威脅等級也將跟著降低。30秒冷卻時間。" lvl="3"/>
+        <rank description="每當你的生命力因受到傷害性的攻擊而降低至30%以下時，你的生命力上限將提高12%，持續10秒，同時你對攻擊者的威脅等級也將跟著降低。30秒冷卻時間。" lvl="4"/>
+        <rank description="每當你的生命力因受到傷害性的攻擊而降低至30%以下時，你的生命力上限將提高15%，持續10秒，同時你對攻擊者的威脅等級也將跟著降低。30秒冷卻時間。" lvl="5"/>
       </talent>
-      <talent column="1" icon="spell_frost_summonwaterelemental" key="590" name="Mana Tide Totem" requires="588" tier="6">
-        <rank description="Summons a Mana Tide Totem with 10% of the caster's health at the feet of the caster for 12 sec that restores 6% of total mana every 3 seconds to group members within 30 yards." lvl="1"/>
+      <talent column="1" icon="spell_frost_summonwaterelemental" key="590" name="法力之潮圖騰" requires="588" tier="6">
+        <rank description="在施法者身邊召喚出一個相當於施法者10%生命力的法力之潮圖騰，持續12秒。它可以為半徑30碼範圍內的小隊成員每3秒恢復總法力的6%。" lvl="1"/>
       </talent>
-      <talent column="2" icon="ability_shaman_cleansespirit" key="2084" name="Cleanse Spirit" requires="592" tier="6">
-        <rank description="Cleanse the spirit of a friendly target, removing 1 poison effect, 1 disease effect, and 1 curse effect." lvl="1"/>
+      <talent column="2" icon="ability_shaman_cleansespirit" key="2084" name="淨化靈魂" requires="592" tier="6">
+        <rank description="淨化一名友方目標的靈魂，移除1個中毒效果、1個疾病效果，及1個詛咒效果。" lvl="1"/>
         <spell castTime="0" maxRange="40">
           <power cost="7" type="mana"/>
         </spell>
       </talent>
-      <talent column="0" icon="spell_shaman_blessingofeternals" key="2060" name="Blessing of the Eternals" tier="7">
-        <rank description="Increases the critical effect chance of your spells by 2%, and increases the chance to apply the Earthliving heal over time effect on the target by 40% when they are at or under 35% total health." lvl="1"/>
-        <rank description="Increases the critical effect chance of your spells by 4%, and increases the chance to apply the Earthliving heal over time effect on the target by 80% when they are at or under 35% total health." lvl="2"/>
+      <talent column="0" icon="spell_shaman_blessingofeternals" key="2060" name="永恆祝福" tier="7">
+        <rank description="使你法術的致命一擊機率提高2%，並讓你對生命力處於35%或以下的目標發動大地生命週期性治療效果的機率提高40%。" lvl="1"/>
+        <rank description="使你法術的致命一擊機率提高4%，並讓你對生命力處於35%或以下的目標發動大地生命週期性治療效果的機率提高80%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_nature_healingwavegreater" key="1697" name="Improved Chain Heal" tier="7">
-        <rank description="Increases the amount healed by your Chain Heal spell by 10%." lvl="1"/>
-        <rank description="Increases the amount healed by your Chain Heal spell by 20%." lvl="2"/>
+      <talent column="1" icon="spell_nature_healingwavegreater" key="1697" name="強化治療鍊" tier="7">
+        <rank description="使你治療鍊的治療效果提高10%。" lvl="1"/>
+        <rank description="使你治療鍊的治療效果提高20%。" lvl="2"/>
       </talent>
-      <talent column="2" icon="spell_nature_natureblessing" key="1696" name="Nature's Blessing" tier="7">
-        <rank description="Increases your healing by an amount equal to 5% of your Intellect." lvl="1"/>
-        <rank description="Increases your healing by an amount equal to 10% of your Intellect." lvl="2"/>
-        <rank description="Increases your healing by an amount equal to 15% of your Intellect." lvl="3"/>
+      <talent column="2" icon="spell_nature_natureblessing" key="1696" name="自然祝福" tier="7">
+        <rank description="使你的法術治療效果提高相當於你總智力的5%。" lvl="1"/>
+        <rank description="使你的法術治療效果提高相當於你總智力的10%。" lvl="2"/>
+        <rank description="使你的法術治療效果提高相當於你總智力的15%。" lvl="3"/>
       </talent>
-      <talent column="0" icon="spell_shaman_ancestralawakening" key="2061" name="Ancestral Awakening" tier="8">
-        <rank description="When you critically heal with your Healing Wave, Lesser Healing Wave or Riptide you summon an Ancestral spirit to aid you, instantly healing the lowest percentage health friendly party or raid target within 40 yards for 10% of the amount healed." lvl="1"/>
-        <rank description="When you critically heal with your Healing Wave, Lesser Healing Wave or Riptide you summon an Ancestral spirit to aid you, instantly healing the lowest percentage health friendly party or raid target within 40 yards for 20% of the amount healed." lvl="2"/>
-        <rank description="When you critically heal with your Healing Wave, Lesser Healing Wave or Riptide you summon an Ancestral spirit to aid you, instantly healing the lowest percentage health friendly party or raid target within 40 yards for 30% of the amount healed." lvl="3"/>
+      <talent column="0" icon="spell_shaman_ancestralawakening" key="2061" name="先祖復甦" tier="8">
+        <rank description="當你的治療波、次級治療波或激流造成極效治療效果時，將召喚先祖之魂來協助你，立即治療40碼範圍內生命力以百分比而言最低的友方小隊或團隊成員，其治療量相當於該治療效果10%的生命力。" lvl="1"/>
+        <rank description="當你的治療波、次級治療波或激流造成極效治療效果時，將召喚先祖之魂來協助你，立即治療40碼範圍內生命力以百分比而言最低的友方小隊或團隊成員，其治療量相當於該治療效果20%的生命力。" lvl="2"/>
+        <rank description="當你的治療波、次級治療波或激流造成極效治療效果時，將召喚先祖之魂來協助你，立即治療40碼範圍內生命力以百分比而言最低的友方小隊或團隊成員，其治療量相當於該治療效果30%的生命力。" lvl="3"/>
       </talent>
-      <talent column="1" icon="spell_nature_skinofearth" key="1698" name="Earth Shield" tier="8">
-        <rank description="Protects the target with an earthen shield, reducing casting or channeling time lost when damaged by 30%  and causing attacks to heal the shielded target for 150.  This effect can only occur once every few seconds.  6 charges.  Lasts 10 min.  Earth Shield can only be placed on one target at a time and only one Elemental Shield can be active on a target at a time." lvl="1"/>
+      <talent column="1" icon="spell_nature_skinofearth" key="1698" name="大地之盾" tier="8">
+        <rank description="以大地護盾保護一個目標，使被保護者因受傷而損失的施法或引導時間縮短30%，並在受到攻擊時恢復受保護的目標150點生命力。此效果每幾秒只能發動一次。總共可使用6次。持續10分钟。同一時間內只能對一個目標施放大地護盾，而且同一目標身上只能擁有一種元素護盾。" lvl="1"/>
         <spell castTime="0" maxRange="40">
           <power cost="15" type="mana"/>
         </spell>
       </talent>
-      <talent column="2" icon="spell_nature_skinofearth" key="2059" name="Improved Earth Shield" requires="1698" tier="8">
-        <rank description="Increases the amount of charges for your Earth Shield by 1, and increases the healing done by your Earth Shield by 5%." lvl="1"/>
-        <rank description="Increases the amount of charges for your Earth Shield by 2, and increases the healing done by your Earth Shield by 10%." lvl="2"/>
+      <talent column="2" icon="spell_nature_skinofearth" key="2059" name="強化大地之盾" requires="1698" tier="8">
+        <rank description="使你大地之盾的作用次數提高1次，造成的治療效果提高5%。" lvl="1"/>
+        <rank description="使你大地之盾的作用次數提高2次，造成的治療效果提高10%。" lvl="2"/>
       </talent>
-      <talent column="1" icon="spell_shaman_tidalwaves" key="2063" name="Tidal Waves" tier="9">
-        <rank description="When you cast Chain Heal or Riptide, you have a 20% chance to lower the cast time of your Healing Wave spell by 30% and increase the critical effect chance of your Lesser Healing Wave spell by 25%, until two such spells have been cast. In addition, your Healing Wave gains an additional 4% of your bonus healing effects and your Lesser Healing Wave gains an additional 2% of your bonus healing effects." lvl="1"/>
-        <rank description="When you cast Chain Heal or Riptide, you have a 40% chance to lower the cast time of your Healing Wave spell by 30% and increase the critical effect chance of your Lesser Healing Wave spell by 25%, until two such spells have been cast. In addition, your Healing Wave gains an additional 8% of your bonus healing effects and your Lesser Healing Wave gains an additional 4% of your bonus healing effects." lvl="2"/>
-        <rank description="When you cast Chain Heal or Riptide, you have a 60% chance to lower the cast time of your Healing Wave spell by 30% and increase the critical effect chance of your Lesser Healing Wave spell by 25%, until two such spells have been cast. In addition, your Healing Wave gains an additional 12% of your bonus healing effects and your Lesser Healing Wave gains an additional 6% of your bonus healing effects." lvl="3"/>
-        <rank description="When you cast Chain Heal or Riptide, you have a 80% chance to lower the cast time of your Healing Wave spell by 30% and increase the critical effect chance of your Lesser Healing Wave spell by 25%, until two such spells have been cast. In addition, your Healing Wave gains an additional 16% of your bonus healing effects and your Lesser Healing Wave gains an additional 8% of your bonus healing effects." lvl="4"/>
-        <rank description="When you cast Chain Heal or Riptide, you have a 100% chance to lower the cast time of your Healing Wave spell by 30% and increase the critical effect chance of your Lesser Healing Wave spell by 25%, until two such spells have been cast. In addition, your Healing Wave gains an additional 20% of your bonus healing effects and your Lesser Healing Wave gains an additional 10% of your bonus healing effects." lvl="5"/>
+      <talent column="1" icon="spell_shaman_tidalwaves" key="2063" name="治療之潮" tier="9">
+        <rank description="你有20%的機率在施放治療鍊或激流之後，使你的治療波施法時間縮短30%，並且次級治療波造成極效治療效果的機率提高25%，直到你同時施放過這兩種法術為止。此外，你的治療波可從你的治療加成中額外獲得4%的效果，並且你的次級治療波可從你的治療加成中額外獲得2%的效果。" lvl="1"/>
+        <rank description="你有40%的機率在施放治療鍊或激流之後，使你的治療波施法時間縮短30%，並且次級治療波造成極效治療效果的機率提高25%，直到你同時施放過這兩種法術為止。此外，你的治療波可從你的治療加成中額外獲得8%的效果，並且你的次級治療波可從你的治療加成中額外獲得4%的效果。" lvl="2"/>
+        <rank description="你有60%的機率在施放治療鍊或激流之後，使你的治療波施法時間縮短30%，並且次級治療波造成極效治療效果的機率提高25%，直到你同時施放過這兩種法術為止。此外，你的治療波可從你的治療加成中額外獲得12%的效果，並且你的次級治療波可從你的治療加成中額外獲得6%的效果。" lvl="3"/>
+        <rank description="你有80%的機率在施放治療鍊或激流之後，使你的治療波施法時間縮短30%，並且次級治療波造成極效治療效果的機率提高25%，直到你同時施放過這兩種法術為止。此外，你的治療波可從你的治療加成中額外獲得16%的效果，並且你的次級治療波可從你的治療加成中額外獲得8%的效果。" lvl="4"/>
+        <rank description="你有100%的機率在施放治療鍊或激流之後，使你的治療波施法時間縮短30%，並且次級治療波造成極效治療效果的機率提高25%，直到你同時施放過這兩種法術為止。此外，你的治療波可從你的治療加成中額外獲得20%的效果，並且你的次級治療波可從你的治療加成中額外獲得10%的效果。" lvl="5"/>
       </talent>
-      <talent column="1" icon="spell_nature_riptide" key="2064" name="Riptide" tier="10">
-        <rank description="Heals a friendly target for 639 to 691 and another 665 over 15 sec.  Your next Chain Heal cast on that primary target within 15 sec will consume the healing over time effect and increase the amount of the Chain Heal by 25%." lvl="1"/>
+      <talent column="1" icon="spell_nature_riptide" key="2064" name="激流" tier="10">
+        <rank description="治療一名友方目標639到691點生命力，並且在15秒內額外治療點生命力。你在接下來的15秒內對該目標施放的治療鍊將消耗其額外的週期性治療效果，並提高治療鍊25%的治療量。" lvl="1"/>
         <spell castTime="0" cooldown="6000" maxRange="40">
           <power cost="18" type="mana"/>
         </spell>
