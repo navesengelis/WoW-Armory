@@ -38,7 +38,7 @@ INSTALLATION STEPS:
 
 安装步骤：
 1. 创建新的MySQL数据库（比如`armory`），编码格式为utf8_general_ci；
-2. 接压缩 sql/wowarmory_release_r{LATEST_REVISION}.sql.7z 至任意文件夹；//TODO SQL更新版待处理
+2. 解压缩 sql/wowarmory_release_r{LATEST_REVISION}.sql.7z 至任意文件夹；
 3. 将SQL文件导入`armory`数据库。
 4. 修改 includes/classes/configuration.php文件
 		Character 数据库连接：$ArmoryConfig['multiRealm'][1]['*_characters']
@@ -46,7 +46,8 @@ INSTALLATION STEPS:
 5. 解压缩wow-icons.zip到网站目录下
 6. 解压缩htaccess.zip,
     修改 .htaccess 文件（如果不是网站更目录请修改）：RewriteBase /Armory/  #这一行为英雄榜的访问地址，不含域名
-7. 
+7. 将sql/updates下比{LATEST_REVISION}更新的版本SQL文件导入至'armory'数据库；
+	[汉化]将'armory_*_cn.7z'解压缩，连同目录下其他'armory_*_cn.sql'等SQL文件悉数导入至'armory'数据库完成汉化。
 8. 启用3D人物显示模块，解压缩models.zip至网站目录下
 9. 为了更好地使用所有功能，请使用tools里的文件给服务器端打上代码补丁：
 	tools/{SERVER}/wowarmory_patch.patch
