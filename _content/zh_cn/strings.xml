@@ -1501,7 +1501,7 @@
 		<str id="talents.spelltype.rage">
       <param1/> 怒气</str>
 		<str id="talents.spelltype.runic">
-      <param1/> Runenmacht</str>
+      <param1/> 符能</str>
 		<str id="talents.spelltype.blood">
       <param1/> 血魄符文</str>
 		<str id="talents.spelltype.unholy">
