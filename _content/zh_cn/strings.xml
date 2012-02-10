@@ -941,9 +941,9 @@
 
 		<str id="race-class">种族/职业</str>
 
-		<str id="percentagecolon">Percentage: </str>
-		<str id="totalgamescolon">Total Games Played This Season: </str>
-		<str id="totalopponentscolon">Total Unique Opponents: </str>
+		<str id="percentagecolon">百分比: </str>
+		<str id="totalgamescolon">本赛季总共参与的比赛: </str>
+		<str id="totalopponentscolon">对手统计: </str>
 
 	</general>
 
@@ -972,27 +972,27 @@
 	<arena>
 		<str id="arena-teams">竞技场队伍</str>
 		<str id="select-battlegroup">选择一个战场群</str>
-		<str id="select-team-type">Select Team Type</str>
-		<str id="battlegroup">Battlegroup</str>
-		<str id="arena">Arena</str>
+		<str id="select-team-type">选择队伍类型</str>
+		<str id="battlegroup">战场群</str>
+		<str id="arena">竞技场</str>
 		<str id="arena-ladders">竞技场排名</str>
 		<str id="team-profiles">队伍信息</str>
-		<str id="arena-reports">Arena Reports</str>
+		<str id="arena-reports">竞技场报告</str>
 		<str id="team-profile">队伍信息</str>
 		<str id="match-history">比赛记录</str>
-		<str id="match-report">Match Report</str>
+		<str id="match-report">比赛报告</str>
 		<str id="opponent">对手名字</str>
-		<str id="ratingchange">Rating Change</str>
-		<str id="newrating">New Rating</str>
-		<str id="date">Date</str>
+		<str id="ratingchange">等级变化</str>
+		<str id="newrating">新等级</str>
+		<str id="date">日期</str>
 		<str id="through"> through </str>
 		<str id="current">current</str>
 		<str id="resultsPerPage">每页显示记录数</str>
 		<str id="to"> to </str>
 		<str id="time">Time</str>
-		<str id="findMatch">Locate match on graph</str>
-		<str id="goToMatchReport">Go to match report page</str>
-		<str id="deletedTeam">This team has been deleted</str>
+		<str id="findMatch">在图表中显示该场比赛</str>
+		<str id="goToMatchReport">进入比赛报告页面</str>
+		<str id="deletedTeam">该队伍已经解散</str>
 		<str id="opponent-history">对手统计</str>
 		<str id="totalgames">总共进行过的比赛次数</str>
 		<str id="totalgames.short">场次</str>
@@ -1006,29 +1006,29 @@
 		<str id="overallchange">排名提升 Δ</str> <!-- Net Δ  -->
 		<str id="overallchange.tooltip">排名的总体变化</str>
 
-		<str id="seasonbefore">Season </str>
-		<str id="seasonafter"/>
+		<str id="seasonbefore">第 </str>
+		<str id="seasonafter"> 赛季</str>
 
-		<str id="realmcolon">Realm:</str>
-		<str id="battlegroupcolon">Battlegroup:</str>
-		<str id="killingblows">Killing Blows</str>
-		<str id="killingblows.short">KB</str>
+		<str id="realmcolon">服务器:</str>
+		<str id="battlegroupcolon">战场群:</str>
+		<str id="killingblows">击杀数</str>
+		<str id="killingblows.short">击杀</str>
 
-		<str id="dmgin">Damage received during match</str>
-		<str id="dmgin.short">Dmg In</str>
-		<str id="dmgout">Damage done during match</str>
-		<str id="dmgout.short">Dmg Out</str>
-		<str id="healout">Healing done during match</str>
-		<str id="healout.short">Healing Out</str>
-		<str id="healin">Healing received during match</str>
-		<str id="healin.short">Healing In</str>
+		<str id="dmgin">比赛中承受的伤害</str>
+		<str id="dmgin.short">承受伤害</str>
+		<str id="dmgout">比赛中的伤害输出</str>
+		<str id="dmgout.short">伤害输出</str>
+		<str id="healout">比赛中的治疗输出</str>
+		<str id="healout.short">治疗输出</str>
+		<str id="healin">比赛中接受的治疗</str>
+		<str id="healin.short">接受治疗</str>
 		<str id="lastweek">上周</str>
 		<str id="team-name">队伍名字</str>
 		<str id="error.nodata">该页面没有数据。</str>
 		<str id="team-type">队伍类型</str>
 		<str id="team-members">队伍成员: </str>
 		<str id="teammembers">队伍成员</str>
-		<str id="viewmatchhistory">View match history against this team</str>
+		<str id="viewmatchhistory">查看与之竞技的队伍</str>
 
 		<legend>
 			<str id="arenaladder.title">Arena Icon Legend</str>
@@ -1082,8 +1082,8 @@
 		<str id="datecolon">日期:</str>
 		<str id="opponentcolon">对手:</str>
 		<str id="gamesdisplayed">当前显示的比赛:</str>
-		<str id="netchange.selection.short">Rating Δ in selection:</str>
-		<str id="netchange.selection">Rating change in selection</str>
+		<str id="netchange.selection.short">等级变化：</str>
+		<str id="netchange.selection">选中项等级变化</str>
 		<str id="of">of</str>
 		<str id="averagechange">
       <param-html1/>/每场平均.</str>
@@ -1092,15 +1092,15 @@
 		<str id="versuspt1"/>
 		<str id="versuspt2"> 竞技场 </str>
 		<str id="defeats">击败</str>
-		<str id="match-report">Spielstatistik</str>
+		<str id="match-report">比赛报告</str>
 		<str id="matchhistorygraphfor">比赛历史记录</str>
-		<str id="matchhistoryfilters">Match History Filters</str>
-		<str id="opponenthistoryfiltersfor">Opponent History Filters</str>
-		<str id="matchstatistics">Match Statistics</str>
+		<str id="matchhistoryfilters">比赛记录过滤器</str>
+		<str id="opponenthistoryfiltersfor">竞技对手过滤器</str>
+		<str id="matchstatistics">比赛统计</str>
 
-		<str id="clearmatchhighlight">Clear Match Highlight</str>
-		<str id="viewrecentgames">View Recent Games</str>
-		<str id="viewcompleteseason">View Complete Season</str>
+		<str id="clearmatchhighlight">清除比赛高亮显示</str>
+		<str id="viewrecentgames">查看最近的比赛</str>
+		<str id="viewcompleteseason">查看历史赛季</str>
 
 		<str id="matchlength">比赛时长: </str>
 		<str id="minutes"> 分钟 </str>
