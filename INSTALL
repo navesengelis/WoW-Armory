@@ -4,31 +4,25 @@ How to install WoW Armory
 
 SYSTEM REQUIREMENTS:
 1. Apache HTTP Server with mod_rewrite
-2. PHP 5 (PHP 6 is not supported) with XMLWriter package installed and enabled
+2. PHP 5 or higher with XMLWriter package installed and enabled (XMLWriter is installed and enabled by default since PHP 5.1.2)
 3. MySQL 5 Server or higher
 
 INSTALLATION STEPS:
-1. Create new MySQL database (`armory`, for expample) with utf8_general_ci encoding;
-2. Unzip sql/wowarmory_release_r{LATEST_REVISION}.sql.7z to any folder;
-3. Upload unpacked wowarmory_release_r{LATEST_REVISION}.sql and wowarmory_spell_release_r{LATEST_REVISION}.sql into `armory` database.
-4. Rename includes/classes/configuration.php.default to configuration.php and edit this file (read comments).
+1. Go to the sql folder and upload armory.sql (Will automatically create the database `armory`).
+2. Rename includes/classes/configuration.php.default to configuration.php and edit this file (read comments).
    Characters DB configs are stored in
        $ArmoryConfig['multiRealm'][1]['*_characters']
    And World DB configs are stored in
        $ArmoryConfig['multiRealm'][1]['*_mangos']
    You should edit these values according with your MySQL configs (user/password/dbname).
-5. Downloads icons archive from "Downloads" on GitHub.com and unpack it to "wow-icons/_images/"
-6. Unzip htaccess.zip archive and place unpacked .htaccess file to root site dir for correct scripts work.
-7. If there are some sql updates in 'sql/updates' dir (rev. {LATEST_REVISION} or higher), you need to upload it to DB too.
-8. For 3D Viewer installation info read 3DViewer_info.txt
-9. For full work you need to patch MaNGOS core with tools/{SERVER}/wowarmory_patch.patch
-   and your characters DB with provided SQL update (characters.sql - in the same folder).
-10. If you use UNIX system, you need to manage access rights to allow script write data to 'cache' folder.
-11. If you have diffirent servers (MaNGOS and Trinity Core):
-    Open 'includes/classes/configuration.php' and edit $ArmoryConfig['multiRealm'][{REALM_ID}]['type'] to 'trinity' or 'mangos'.
+3. Downloads the icons archive from: http://www.mediafire.com/download.php?2newd68vnz847pv and unpack it to "wow-icons/_images/"
+4. For 3D Viewer installation info read 3DViewer_info.txt
+5. For full work you need to patch MaNGOS/Trinity core with the appropriate patch file found in the patch folder
+   and to update your characters DB with the provided SQL update (characters.sql - in the same folder).
+6. If you use a UNIX system, you need to manage access rights to allow script write data to 'cache' folder.
 	
 ========================
-Как установить Оружейную
+Как установить Оружейную (Needs updating)
 ========================
 
 СИСТЕМНЫЕ ТРЕБОВАНИЯ:
@@ -47,7 +41,7 @@ INSTALLATION STEPS:
    Параметры подключения к игровой базе (мир) находятся в:
        $ArmoryConfig['multiRealm'][1]['*_mangos']
    Вы должны изменить значения этих параметров согласно вашим настройкам MySQL (пользователь/пароль/имя базы) 
-5. Скачайте архив иконок из раздела "Downloads" на GitHub.com и распакуйте в папку "wow-icons/_images/"
+5. Скачайте архив иконок из раздела "Downloads" на GitHub.com и распакуйте в папку "wow-icons/_images/" (http://www.mediafire.com/download.php?2newd68vnz847pv)
 6. Распакуйте архив htaccess.zip и поместите распакованный файл .htaccess в корень сайта для правильной работы скриптов.
 7. Если в папке 'sql/updates' присутствуют обновления для базы (ревизии {ПОСЛЕДНЯЯ_РЕВИЗИЯ} и выше), вам будет необходимо так же залить их базу. 
 8. Как установить и настроить 3D просмотрщик читайте в файле 3DViewer_info.txt

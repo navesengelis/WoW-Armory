@@ -1,10 +1,10 @@
-Last updated: Jan-08-2011
+﻿Last updated: Jan-14-2013
 
 Attention!
-Currently 3D Viewer is not completed full - there's no saving character poses, full screen mode
+Currently 3D Viewer is not yet fully completed - there's no saving character poses, full screen mode
 and some other features.
 
-For correct work, you need to download an archive with textures (~206 MB).
+To work correctly, you need to download an archive with the model textures (~297 MB compressed).
 
 All files from archive must be unpacked to the 'models' folder. The unpacked files are approximately 465 megabytes.
 Directory tree:
@@ -18,19 +18,19 @@ Directory tree:
                 |- texturecomponents
          |- spells
 
-If you have some troubles, report on forum:
-http://getmangos.com/community/topic/12096/world-of-warcraft-armory/
+If you find a bug, please report them here:
+https://github.com/Takenbacon/wowarmory/issues?state=open
 
-Direct link to 3D Viewer Models:
-http://armory.shadez.mobi/files/3dviewer_textures_448.7z
+Download link for 3D Viewer Models:
+http://uploading.com/files/8acm6582/models.rar/
 
------------------------
+----------------------- (Needs updating)
 
 Внимание!
 На данный момент 3D Viewer не завершен полностью - отсутствует сохранение позы персонажа, поддержка проигрывания в полном экране
 и некоторые другие возможности.
 
-Для корректной работы необходимо скачать архив с текстурами (~206 мегабайт).
+Для корректной работы необходимо скачать архив с текстурами (~297 мегабайт).
 
 Все файлы из архива должны быть распакованы в папку 'models'. Распакованные файлы занимают примерно 465 мегабайт.
 Структура папок:
@@ -43,8 +43,8 @@ http://armory.shadez.mobi/files/3dviewer_textures_448.7z
                 |- objectcomponents
                 |- texturecomponents
          |- spells
-Если у вас возникли какие-либо затруднения, пишите на форум:
-http://getmangos.com/community/topic/12096/world-of-warcraft-armory/
+Если у вас возникли какие-либо затруднения:
+https://github.com/Takenbacon/wowarmory/issues?state=open
 
 Прямая ссылка на модели 3D просмотрщика:
-http://www.megaupload.com/?d=FNT1F64V
+http://uploading.com/files/8acm6582/models.rar/
