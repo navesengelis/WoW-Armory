@@ -75,6 +75,12 @@ Class Characters {
      * Player money amount
      **/
     private $money;
+
+    /**
+     * Players last updated date
+     */
+    private $lastUpdated;
+
     
     /**
      * Player model display info
@@ -432,7 +438,9 @@ Class Characters {
         }
         if($this->load_options['load_data'] == true) {
             // Character data required for character-sheet.xml page only.
-            $this->char_data = $this->db->selectCell("SELECT `data` FROM `armory_character_stats` WHERE `guid` = %d LIMIT 1", $player_data['guid']);
+            $char_data = $this->db->selectRow("SELECT `data`, `save_date` FROM `armory_character_stats` WHERE `guid` = %d LIMIT 1", $player_data['guid']);
+            $this->lastUpdated = $char_data['save_date'];
+            $this->char_data = $char_data['data'];
             if(!$this->char_data) {
                 Armory::Log()->writeError('%s : player %d (%s) has no data in `armory_character_stats` table (SQL update to Characters DB was not applied? / Character was not saved in game? / Server core was not patched?)', __METHOD__, $player_data['guid'], $player_data['name']);
                 unset($player_data);
@@ -799,6 +807,14 @@ Class Characters {
     public function GetMoney() {
         return $this->money;
     }
+
+    /**
+     * Returns last updated date
+     */
+    public function GetLastUpdated() {
+        return date("F j, Y", $this->lastUpdated);
+    }
+
     
     public function GetAchievementMgr() {
         if(!is_object($this->m_achievementMgr)) {
@@ -827,7 +843,7 @@ Class Characters {
             'genderId'     => $this->gender,
             'guildName'    => ($this->guild_id > 0) ? $this->guild_name : null,
             'guildUrl'     => ($this->guild_id > 0) ? sprintf('r=%s&gn=%s', urlencode($this->GetRealmName()), urlencode($this->guild_name)) : null,
-            'lastModified' => null,
+            'lastModified' => $this->GetLastUpdated(),
             'level'        => $this->level,
             'name'         => $this->name,
             'points'       => $this->GetAchievementMgr()->GetAchievementPoints(),
