@@ -23,7 +23,7 @@
  **/
 
 if(!defined('__ARMORY__')) {
-    die('Direct access to this file not allowed!');
+    die('Direct access to this file is not allowed!');
 }
 
 ###############################################
@@ -131,7 +131,7 @@ $ArmoryConfig['mysql']['charset_realmd']  = 'UTF8';
 #
 #    configVersion
 #        Configuration file version. This option must not be changed (only by commits)!
-#        Default: DDMMYYYYNN (day, month, year, changes count)
+#        Default: (changes count)
 #
 #    checkVersionType
 #        Armory errors reporting style (wrong database version, config version mismatch, etc.)
@@ -151,7 +151,7 @@ $ArmoryConfig['settings']['defaultLocale']    = 'en_gb';
 $ArmoryConfig['settings']['maintenance']      = false;
 $ArmoryConfig['settings']['useDebug']         = true;
 $ArmoryConfig['settings']['logLevel']         = 2;
-$ArmoryConfig['settings']['configVersion']    = '2001201101';
+$ArmoryConfig['settings']['configVersion']    = 1;
 $ArmoryConfig['settings']['checkVersionType'] = 'show';
 
 ##############################################################################################

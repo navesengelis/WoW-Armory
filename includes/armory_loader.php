@@ -23,7 +23,7 @@
  **/
 
 if(!defined('__ARMORY__')) {
-    die('Direct access to this file not allowed!');
+    die('Direct access to this file not is allowed!');
 }
 session_start();
 // Detect armory directory
@@ -71,15 +71,6 @@ if(!defined('SKIP_DB')) {
             }
             die($errorDBVersion);
         }
-    }
-}
-/* Check revision */
-if(!defined('ARMORY_REVISION')) {
-    if(isset(Armory::$armoryconfig['checkVersionType']) && Armory::$armoryconfig['checkVersionType'] == 'log') {
-        Armory::Log()->writeError('ArmoryChecker : unable to detect Armroy revision!');
-    }
-    else {
-        die('<b>Revision error:</b> unable to detect Armory revision!');
     }
 }
 /* Check config version */
@@ -255,13 +246,5 @@ if(!@include(__ARMORYDIRECTORY__ . '/includes/classes/class.xmlhandler.php')) {
 $xml = new XMLHandler(Armory::GetLocale());
 if(!defined('RSS_FEED')) {
     $xml->StartXML();
-}
-// Do not remove this
-if(isset($_GET['_DISPLAYVERSION_'])) {
-    $xml->XMLWriter()->startElement('ARMORY_REVISION');
-    $xml->XMLWriter()->text(ARMORY_REVISION);
-    $xml->XMLWriter()->endElement(); //ARMORY_REVISION
-    header('Content-type: text/xml');
-    die($xml->StopXML());
 }
 ?>

@@ -23,7 +23,7 @@
  **/
 
 if(!defined('__ARMORY__')) {
-    die('Direct access to this file not allowed!');
+    die('Direct access to this file is not allowed!');
 }
 
 /** Database Query Types **/
@@ -39,18 +39,18 @@ Class ArmoryDatabaseHandler {
     private $connectionLink = false;
     private $databaseInfo = array();
     private $connected = false;
-    
+
     /** Queries counter **/
     private $queryCount = 0;
     private $queryTimeGeneration = 0.0;
     private $armory_prefix = null;
-    
+
     /** Error messages **/
     private $errmsg = null;
     private $errno = 0;
     private $server_version = null;
     private $disableNextError = false;
-    
+
     /**
      * Connect to DB
      * @category Armory Database Handler
@@ -94,7 +94,7 @@ Class ArmoryDatabaseHandler {
         $this->connected = true;
         return true;
     }
-    
+
     /**
      * Returns current database info
      * @category Armory Database Handler
@@ -105,7 +105,7 @@ Class ArmoryDatabaseHandler {
     public function GetDatabaseInfo($info) {
         return (isset($this->databaseInfo[$info])) ? $this->databaseInfo[$info] : false;
     }
-    
+
     /**
      * Tests conection link
      * @category Armory Database Handler
@@ -115,7 +115,7 @@ Class ArmoryDatabaseHandler {
     public function TestLink() {
         return $this->connected;
     }
-    
+
     /**
      * Execute SQL query
      * @category Armory Database Handler
@@ -192,7 +192,7 @@ Class ArmoryDatabaseHandler {
         $this->queryTimeGeneration += $queryTime;
         return $result;
     }
-    
+
     private function _prepareQuery($funcArgs, $numArgs, $query_type) {
         // funcArgs[0] - SQL query text (with placeholders)
         if($query_type != SQL_RAW_QUERY) {
@@ -215,43 +215,43 @@ Class ArmoryDatabaseHandler {
         }
         return $this->_query($safe_sql, $query_type);
     }
-    
+
     public function selectCell($query) {
         $funcArgs = func_get_args();
         $numArgs = func_num_args();
         return $this->_prepareQuery($funcArgs, $numArgs, SINGLE_CELL);
     }
-    
+
     public function selectRow($query) {
         $funcArgs = func_get_args();
         $numArgs = func_num_args();
         return $this->_prepareQuery($funcArgs, $numArgs, SINGLE_ROW);
     }
-    
+
     public function select($query) {
         $funcArgs = func_get_args();
         $numArgs = func_num_args();
         return $this->_prepareQuery($funcArgs, $numArgs, MULTIPLY_ROW);
     }
-    
+
     public function query($query) {
         $funcArgs = func_get_args();
         $numArgs = func_num_args();
         return $this->_prepareQuery($funcArgs, $numArgs, SQL_QUERY);
     }
-    
+
     public function RawQuery($query) {
         $funcArgs = func_get_args();
         $numArgs = func_num_args();
         return $this->_prepareQuery($funcArgs, $numArgs, SQL_RAW_QUERY);
     }
-    
+
     public function selectObject($query) {
         $funcArgs = func_get_args();
         $numArgs = func_num_args();
         return $this->_prepareQuery($funcArgs, $numArgs, OBJECT_QUERY);
     }
-    
+
     /**
      * Converts array values to string format (for IN(%s) cases)
      * @category Armory Database Handler
@@ -279,48 +279,48 @@ Class ArmoryDatabaseHandler {
         }
         return $returnString;
     }
-    
+
     public function __destruct() {
         @mysql_close($this->connectionLink);
         $this->DropLastErrors();
         $this->DropCounters();
         return true;
     }
-    
+
     public function GetServerVersion() {
         return $this->server_version;
     }
-    
+
     public function GetLastErrorMessage() {
         return $this->errmsg;
     }
-    
+
     public function GetLastErrorNum() {
         return $this->errno;
     }
-    
+
     private function DropLastErrors() {
         $this->DropLastErrorMessage();
         $this->DropLastErrorNumber();
     }
-    
+
     public function DropLastErrorMessage() {
         $this->errmsg = null;
     }
-    
+
     public function DropLastErrorNumber() {
         $this->errno = 0;
     }
-    
+
     private function DropCounters() {
         $this->queryCount = 0;
         $this->queryTimeGeneration = 0.0;
     }
-    
+
     public function GetStatistics() {
         return array('queryCount' => $this->queryCount, 'queryTimeGeneration' => $this->queryTimeGeneration);
     }
-    
+
     /**
      * Allows to skip next MySQL error (do not add it to debug log) - spam preventing.
      * @category Armory Database Handler

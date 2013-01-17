@@ -31,8 +31,7 @@ if(isset($_GET['clearLog'])) {
 if(isset($ArmoryConfig) && is_array($ArmoryConfig) && $ArmoryConfig['settings']['useDebug'] === true) {
     @include('../../includes/revision_nr.php');
     echo '<html><head><title>WoWArmory Debug Log</title></head><body><a href="?clearLog">Clear log</a><br /><hr />';
-    echo sprintf("<strong>Armory revision:</strong> %d<br />
-    <strong>DB Version:</strong> %s<br />
+    echo sprintf("<strong>DB Version:</strong> %s<br />
     Configuration values are:<br />
     <strong>ArmoryConfig['settings']['configVersion']</strong> = %s<br />
     <strong>ArmoryConfig['settings']['useCache']</strong> = %s<br />
@@ -43,7 +42,6 @@ if(isset($ArmoryConfig) && is_array($ArmoryConfig) && $ArmoryConfig['settings'][
     <strong>ArmoryConfig['settings']['useDebug']</strong> = %s<br />
     <strong>ArmoryConfig['settings']['logLevel']</strong> = %d<br /><br /><strong>Mulitrealm info:</strong> <br />
     ",
-    ARMORY_REVISION,
     DB_VERSION,
     $ArmoryConfig['settings']['configVersion'],
     ($ArmoryConfig['settings']['useCache'] == true) ? 'true' : 'false',
@@ -52,7 +50,7 @@ if(isset($ArmoryConfig) && is_array($ArmoryConfig) && $ArmoryConfig['settings'][
     $ArmoryConfig['settings']['minGmLevelToShow'],
     $ArmoryConfig['settings']['defaultLocale'],
     ($ArmoryConfig['settings']['useDebug'] == true) ? 'true' : 'false',
-    $ArmoryConfig['settings']['logLevel']    
+    $ArmoryConfig['settings']['logLevel']
     );
     if(is_array($ArmoryConfig['multiRealm'])) {
         foreach($ArmoryConfig['multiRealm'] as $realm_info) {
