@@ -150,7 +150,8 @@
                         
 				<!-- spec switcher -->
 				<xsl:if test="count(talents/talentGroup) = '2'">
-					<xsl:attribute name="class">talentGlyphHeaderMultiSpec</xsl:attribute>
+				    <!-- @TODO: Why does this prevent chrome from displaying talent tree? -->
+					<!-- <xsl:attribute name="class">talentGlyphHeaderMultiSpec</xsl:attribute> -->
 					<div class="talentSpecSwitchHolder">
 						<table class="talentSpecSwitch">
 							<tr>
