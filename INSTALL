@@ -18,7 +18,7 @@ INSTALLATION STEPS:
 3. Downloads the icons archive from: http://www.mediafire.com/download.php?2newd68vnz847pv and unpack it to "wow-icons/_images/"
 4. For 3D Viewer installation info read 3DViewer_info.txt
 5. For full work you need to patch MaNGOS/Trinity core with the appropriate patch file found in the patch folder
-   and to update your characters DB with the provided SQL update (characters.sql - in the same folder).
+   and to update your characters DB with the provided SQL update (characters.sql - in the patch folder).
 6. If you use a UNIX system, you need to manage access rights to allow script write data to 'cache' folder.
 	
 ========================
