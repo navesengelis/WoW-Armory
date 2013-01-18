@@ -540,12 +540,29 @@ Class SearchMgr {
         }
         foreach(Armory::$realmData as $realm_info) {
             $db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
-            $current_realm = $db->select("
-            SELECT `arena_team`.`name`, `arena_team`.`type` AS `size`, `arena_team_stats`.`rating`, `characters`.`race`
-                FROM `arena_team` AS `arena_team`
-                    LEFT JOIN `arena_team_stats` AS `arena_team_stats` ON `arena_team`.`arenateamid`=`arena_team_stats`.`arenateamid`
-                    LEFT JOIN `characters` AS `characters` ON `arena_team`.`captainguid`=`characters`.`guid`
-                        WHERE `arena_team`.`name` LIKE '%s' LIMIT 200", '%'.$this->searchQuery.'%');
+            switch ($realm_info['type'])
+            {
+                case SERVER_TRINITY:
+                    {
+                        $current_realm = $db->select("
+                                SELECT `arena_team`.`name`, `arena_team`.`type` AS `size`, `arena_team_stats`.`rating`, `characters`.`race`
+                                FROM `arena_team` AS `arena_team`
+                                LEFT JOIN `arena_team` AS `arena_team_stats` ON `arena_team`.`arenateamid`=`arena_team_stats`.`arenateamid`
+                                LEFT JOIN `characters` AS `characters` ON `arena_team`.`captainguid`=`characters`.`guid`
+                                WHERE `arena_team`.`name` LIKE '%s' LIMIT 200", '%'.$this->searchQuery.'%');
+                    }
+                    break;
+                case SERVER_MANGOS:
+                    {
+                        $current_realm = $db->select("
+                                SELECT `arena_team`.`name`, `arena_team`.`type` AS `size`, `arena_team_stats`.`rating`, `characters`.`race`
+                                FROM `arena_team` AS `arena_team`
+                                LEFT JOIN `arena_team_stats` AS `arena_team_stats` ON `arena_team`.`arenateamid`=`arena_team_stats`.`arenateamid`
+                                LEFT JOIN `characters` AS `characters` ON `arena_team`.`captainguid`=`characters`.`guid`
+                                WHERE `arena_team`.`name` LIKE '%s' LIMIT 200", '%'.$this->searchQuery.'%');
+                    }
+                    break;
+            }
             if(!$current_realm) {
                 continue;
             }
