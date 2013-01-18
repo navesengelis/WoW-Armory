@@ -1069,6 +1069,7 @@ Class Characters {
             case 'relic':
             case 'sigil':
             case 'gun':
+            case 'thrown':
                 return $this->equipmentCache[35];
                 break;
             case 'tabard':
