@@ -94,7 +94,7 @@ elseif(CONFIG_VERSION != Armory::$armoryconfig['configVersion']) {
 }
 error_reporting(E_ALL);
 /* Check maintenance */
-if(Armory::$armoryconfig['maintenance'] == true && !defined('MAINTENANCE_PAGE') && !defined('ADMIN_PAGE')) {
+if(Armory::$armoryconfig['maintenance'] == true && !defined('MAINTENANCE_PAGE')) {
     header('Location: maintenance.xml');
     exit;
 }
@@ -225,19 +225,6 @@ if(defined('load_item_class')) {
         die('<b>Error:</b> unable to load Item class!');
     }
     // Do not create class instance here. It should be created in Characters or Items classes.
-}
-if(defined('ADMIN_PAGE')) {
-    if(!@include(__ARMORYDIRECTORY__ . '/includes/classes/class.template.php')) {
-        die('<b>Error:</b> unable to load template class!');
-    }
-    if(!@include(__ARMORYDIRECTORY__ . '/includes/classes/class.admin.php')) {
-        die('<b>Error:</b> unable to load template class!');
-    }
-    // Re-build account data from cookie.
-    Admin::InitializeAdmin();
-    // Load locale
-    Template::LoadLocale( isset($_SESSION['admin_locale']) ? $_SESSION['admin_locale'] : 'en');
-    // Do not create instances of these classes: they are using static methods.
 }
 // Start XML parser
 if(!@include(__ARMORYDIRECTORY__ . '/includes/classes/class.xmlhandler.php')) {
