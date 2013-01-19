@@ -637,11 +637,12 @@ Class SearchMgr {
         $count_results_currrent_realm = 0; // Current realm results
         $db = null; // Temporary handler
         $countRealmData = count(Armory::$realmData);
+        $search = ucfirst(strtolower($this->searchQuery));
         if($num == true) {
             foreach(Armory::$realmData as $realm_info) {
                 $count_results_currrent_realm = 0;
                 $db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
-                $characters_data[] = $db->select("SELECT `guid`, `level`, `account` FROM `characters` WHERE `name`='%s' AND `level` >= %d LIMIT 200", $this->searchQuery, Armory::$armoryconfig['minlevel']);
+                $characters_data[] = $db->select("SELECT `guid`, `level`, `account` FROM `characters` WHERE `name`='%s' AND `level` >= %d LIMIT 200", $search, Armory::$armoryconfig['minlevel']);
             }
             for($ii = 0; $ii < $countRealmData; $ii++) {
                 $count_result_chars = count($characters_data[$ii]);
