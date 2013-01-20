@@ -740,7 +740,7 @@ Class Utils {
                         'level' => 0,
                         'raceId' => $char['race'],
                         'realm' => Armory::$currentRealmInfo['name'],
-                        'name' => $char['charname'],
+                        'name' => utf8_encode($char['charname']),
                         'url' => sprintf('cn=%s&r=%s', urlencode($char['charname']), urlencode(Armory::$currentRealmInfo['name']))
                     );
                 }
@@ -759,7 +759,7 @@ Class Utils {
                     'level' => 0,
                     'raceId' => $achievement['race'],
                     'realm' => Armory::$currentRealmInfo['name'],
-                    'name' => $achievement['charname'],
+                    'name' => utf8_encode($achievement['charname']),
                     'url' => sprintf('cn=%s&r=%s', urlencode($achievement['charname']), urlencode(Armory::$currentRealmInfo['name']))
                 );
             }
