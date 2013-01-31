@@ -36,6 +36,15 @@ $ArmoryConfig['settings']   = array();
 $ArmoryConfig['multiRealm'] = array();
 
 ##############################################################################################
+# Global MySQL settings
+#    DbExtension
+#        The extension PHP uses to connect to MySQL. (MySQL_ or MySQLi_)
+#        Default: mysql
+##############################################################################################
+
+$ArmoryConfig['mysql']['DbExtension'] = 'mysql';
+
+##############################################################################################
 # MySQL Database Configuration
 #    $ArmoryConfig['mysql']['host_*']
 #    $ArmoryConfig['mysql']['user_*']
@@ -53,12 +62,14 @@ $ArmoryConfig['multiRealm'] = array();
 $ArmoryConfig['mysql']['host_armory']     = 'localhost';
 $ArmoryConfig['mysql']['user_armory']     = 'root';
 $ArmoryConfig['mysql']['pass_armory']     = '';
+$ArmoryConfig['mysql']['port_armory']     = 3306;
 $ArmoryConfig['mysql']['name_armory']     = 'wowarmory';
 $ArmoryConfig['mysql']['charset_armory']  = 'UTF8';
 
 $ArmoryConfig['mysql']['host_realmd']     = 'localhost';
 $ArmoryConfig['mysql']['user_realmd']     = 'root';
 $ArmoryConfig['mysql']['pass_realmd']     = '';
+$ArmoryConfig['mysql']['port_realmd']     = 3306;
 $ArmoryConfig['mysql']['name_realmd']     = 'realmd';
 $ArmoryConfig['mysql']['charset_realmd']  = 'UTF8';
 
@@ -151,7 +162,7 @@ $ArmoryConfig['settings']['defaultLocale']    = 'en_gb';
 $ArmoryConfig['settings']['maintenance']      = false;
 $ArmoryConfig['settings']['useDebug']         = true;
 $ArmoryConfig['settings']['logLevel']         = 2;
-$ArmoryConfig['settings']['configVersion']    = 1;
+$ArmoryConfig['settings']['configVersion']    = 2;
 $ArmoryConfig['settings']['checkVersionType'] = 'show';
 
 ##############################################################################################
@@ -192,11 +203,13 @@ $ArmoryConfig['multiRealm'][1]['type']               = SERVER_MANGOS;
 $ArmoryConfig['multiRealm'][1]['host_characters']    = 'localhost';
 $ArmoryConfig['multiRealm'][1]['user_characters']    = 'root';
 $ArmoryConfig['multiRealm'][1]['pass_characters']    = '';
+$ArmoryConfig['multiRealm'][1]['port_characters']    = 3306;
 $ArmoryConfig['multiRealm'][1]['name_characters']    = 'characters';
 $ArmoryConfig['multiRealm'][1]['charset_characters'] = 'UTF8';
 $ArmoryConfig['multiRealm'][1]['host_world']         = 'localhost';
 $ArmoryConfig['multiRealm'][1]['user_world']         = 'root';
 $ArmoryConfig['multiRealm'][1]['pass_world']         = '';
+$ArmoryConfig['multiRealm'][1]['port_world']         = 3306;
 $ArmoryConfig['multiRealm'][1]['name_world']         = 'mangos';
 $ArmoryConfig['multiRealm'][1]['charset_world']      = 'UTF8';
 
@@ -206,11 +219,13 @@ $ArmoryConfig['multiRealm'][2]['type']               = SERVER_TRINITY;
 $ArmoryConfig['multiRealm'][2]['host_characters']    = 'localhost';
 $ArmoryConfig['multiRealm'][2]['user_characters']    = 'root';
 $ArmoryConfig['multiRealm'][2]['pass_characters']    = '';
+$ArmoryConfig['multiRealm'][2]['port_characters']    = 3306;
 $ArmoryConfig['multiRealm'][2]['name_characters']    = 'characters_trinity';
 $ArmoryConfig['multiRealm'][2]['charset_characters'] = 'UTF8';
 $ArmoryConfig['multiRealm'][2]['host_world']         = 'localhost';
 $ArmoryConfig['multiRealm'][2]['user_world']         = 'root';
 $ArmoryConfig['multiRealm'][2]['pass_world']         = '';
+$ArmoryConfig['multiRealm'][2]['port_world']         = 3306;
 $ArmoryConfig['multiRealm'][2]['name_world']         = 'trinity_world';
 $ArmoryConfig['multiRealm'][2]['charset_world']      = 'UTF8';
 

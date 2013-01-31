@@ -373,7 +373,7 @@ Class Characters {
             return false;
         }
         $realm_info = Armory::$realmData[$realmId];
-        $this->db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
+        $this->db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
         if(!$this->db || !$this->db->TestLink()) {
             Armory::Log()->writeError('%s : unable to connect to MySQL server (error: %s; realmId: %d). Check your configs.', __METHOD__, mysql_error(), $realmId);
             return false;

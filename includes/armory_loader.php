@@ -22,9 +22,9 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  **/
 
-if(!defined('__ARMORY__')) {
+if (!defined('__ARMORY__'))
     die('Direct access to this file not is allowed!');
-}
+
 session_start();
 // Detect armory directory
 define('__ARMORYDIRECTORY__', dirname(dirname(__FILE__)));
