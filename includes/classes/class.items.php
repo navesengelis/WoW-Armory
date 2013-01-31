@@ -27,22 +27,22 @@ if(!defined('__ARMORY__')) {
 }
 
 Class Items {
-    
+
     /**
      * Not used now
      **/
     public $itemId;
-    
+
     /**
      * $charGuid used by item-tooltip.php (enchantments, sockets & item durability for current character)
      **/
     public $charGuid;
-    
+
     /**
      * ItemDisplayInfo holder
      **/
     private $itemDisplayInfo = array();
-    
+
     /**
      * Checks is item exists in DB
      * @category Items class
@@ -56,7 +56,7 @@ Class Items {
         }
         return false;
     }
-    
+
     /**
      * Returns item name according with defined locale (ru_ru, en_gb, etc.)
      * @category Items class
@@ -79,7 +79,7 @@ Class Items {
         }
         return false;
     }
-    
+
     /**
      * Returns item icon
      * @category Items class
@@ -95,7 +95,7 @@ Class Items {
         $itemIcon = Armory::$aDB->selectCell("SELECT `icon` FROM `ARMORYDBPREFIX_icons` WHERE `displayid`=%d LIMIT 1", $displayId);
         return strtolower($itemIcon);
     }
-    
+
     /**
      * Returns item description (if isset) according with defined locale (ru_ru or en_gb)
      * @category Items class
@@ -118,7 +118,7 @@ Class Items {
         }
         return false;
     }
-    
+
     /**
      * Returns available races string (if mask > 0)
      * @category Items class
@@ -152,7 +152,7 @@ Class Items {
 		}
 		return $rMask;
     }
-    
+
     /**
      * Returns available classes string (if mask > 0)
      * @category Items class
@@ -186,7 +186,7 @@ Class Items {
 		}
 		return $rMask;
 	}
-    
+
     /**
      * Returns item source string (vendor, drop, chest loot, etc.)
      * @category Items class
@@ -229,8 +229,8 @@ Class Items {
         $questLoot = Armory::$wDB->selectCell("
 		SELECT `entry`
 		  FROM `quest_template`
-		      WHERE `RewChoiceItemId1` = %d OR `RewChoiceItemId2` = %d OR `RewChoiceItemId3` = %d OR 
-		          `RewChoiceItemId4` = %d OR `RewChoiceItemId5` = %d OR `RewChoiceItemId6` = %d LIMIT 1", $item, $item, $item, 
+		      WHERE `RewChoiceItemId1` = %d OR `RewChoiceItemId2` = %d OR `RewChoiceItemId3` = %d OR
+		          `RewChoiceItemId4` = %d OR `RewChoiceItemId5` = %d OR `RewChoiceItemId6` = %d LIMIT 1", $item, $item, $item,
 		$item, $item, $item);
         if($questLoot) {
             return array('value' => 'sourceType.questReward');
@@ -241,7 +241,7 @@ Class Items {
         }
         return array('value' => 'sourceType.none');
     }
-    
+
     /**
      * Return itemset bonus spell(s) info
      * @category Items class
@@ -274,13 +274,13 @@ Class Items {
                 $itemSetBonuses[$threshold]['desc'] = self::SpellReplace($spell_tmp, Utils::ValidateSpellText($spell_tmp['Description_' . $tmp_locale]));
                 $itemSetBonuses[$threshold]['desc'] = str_replace('&quot;', '"', $itemSetBonuses[$threshold]['desc']);
                 $itemSetBonuses[$threshold]['threshold'] = $threshold;
-                
+
             }
 	   }
        sort($itemSetBonuses); // Correct display itemset bonuses
 	   return $itemSetBonuses;
     }
-    
+
     /**
      * Return array with loot info: dropped by, contained in, disenchating to, reagent for, etc.
      * @category Items class
@@ -369,7 +369,7 @@ Class Items {
                 $QuestLoot = Armory::$wDB->select("
                 SELECT `entry` AS `id`, `Title` AS `name`, `QuestLevel` AS `level`, `MinLevel` AS `reqMinLevel`, `SuggestedPlayers` AS `suggestedPartySize`
                     FROM `quest_template`
-                        WHERE `RewChoiceItemId1` = %d OR `RewChoiceItemId2` = %d OR `RewChoiceItemId3` = %d OR 
+                        WHERE `RewChoiceItemId1` = %d OR `RewChoiceItemId2` = %d OR `RewChoiceItemId3` = %d OR
                             `RewChoiceItemId4` = %d OR `RewChoiceItemId5` = %d OR `RewChoiceItemId6` = %d", $item, $item, $item, $item, $item, $item);
                 if(!is_array($QuestLoot)) {
                     return false;
@@ -453,7 +453,7 @@ Class Items {
                 if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'ru_ru') {
                     $CraftLoot = Armory::$aDB->select("
                     SELECT `Reagent_1`, `Reagent_2`, `Reagent_3`, `Reagent_4`, `Reagent_5`, `Reagent_6`, `Reagent_7`, `Reagent_8`,
-                        `ReagentCount_1`, `ReagentCount_2`, `ReagentCount_3`, `ReagentCount_4`, `ReagentCount_5`, `ReagentCount_6`, 
+                        `ReagentCount_1`, `ReagentCount_2`, `ReagentCount_3`, `ReagentCount_4`, `ReagentCount_5`, `ReagentCount_6`,
                         `ReagentCount_7`, `ReagentCount_8`, `EffectItemType_1`, `EffectItemType_2`, `EffectItemType_3`,
                         `SpellName_%s` AS `SpellName`, `SpellIconID`
                         FROM `ARMORYDBPREFIX_spell`
@@ -462,7 +462,7 @@ Class Items {
                 else {
                     $CraftLoot = Armory::$aDB->select("
                     SELECT `Reagent_1`, `Reagent_2`, `Reagent_3`, `Reagent_4`, `Reagent_5`, `Reagent_6`, `Reagent_7`, `Reagent_8`,
-                        `ReagentCount_1`, `ReagentCount_2`, `ReagentCount_3`, `ReagentCount_4`, `ReagentCount_5`, `ReagentCount_6`, 
+                        `ReagentCount_1`, `ReagentCount_2`, `ReagentCount_3`, `ReagentCount_4`, `ReagentCount_5`, `ReagentCount_6`,
                         `ReagentCount_7`, `ReagentCount_8`, `EffectItemType_1`, `EffectItemType_2`, `EffectItemType_3`,
                         `SpellName_en_gb` AS `SpellName`, `SpellIconID`
                         FROM `ARMORYDBPREFIX_spell`
@@ -477,7 +477,7 @@ Class Items {
                         'spell'   => array(),
                         'item'    => array(),
                         'reagent' => array()
-                    );                  
+                    );
                     $lootTable[$i]['spell']['name'] = $craftItem['SpellName'];
                     for($o = 1; $o < 9; $o++) {
                         if($craftItem['Reagent_'.$o] > 0) {
@@ -564,7 +564,7 @@ Class Items {
                 if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'ru_ru') {
                     $ReagentLoot = Armory::$aDB->select("
                     SELECT `Reagent_1`, `Reagent_2`, `Reagent_3`, `Reagent_4`, `Reagent_5`, `Reagent_6`, `Reagent_7`, `Reagent_8`,
-                        `ReagentCount_1`, `ReagentCount_2`, `ReagentCount_3`, `ReagentCount_4`, `ReagentCount_5`, `ReagentCount_6`, 
+                        `ReagentCount_1`, `ReagentCount_2`, `ReagentCount_3`, `ReagentCount_4`, `ReagentCount_5`, `ReagentCount_6`,
                         `ReagentCount_7`, `ReagentCount_8`, `EffectItemType_1`, `EffectItemType_2`, `EffectItemType_3`,
                         `SpellName_%s` AS `SpellName`, `SpellIconID`
                     FROM `ARMORYDBPREFIX_spell`
@@ -574,7 +574,7 @@ Class Items {
                 else {
                     $ReagentLoot = Armory::$aDB->select("
                     SELECT `Reagent_1`, `Reagent_2`, `Reagent_3`, `Reagent_4`, `Reagent_5`, `Reagent_6`, `Reagent_7`, `Reagent_8`,
-                        `ReagentCount_1`, `ReagentCount_2`, `ReagentCount_3`, `ReagentCount_4`, `ReagentCount_5`, `ReagentCount_6`, 
+                        `ReagentCount_1`, `ReagentCount_2`, `ReagentCount_3`, `ReagentCount_4`, `ReagentCount_5`, `ReagentCount_6`,
                         `ReagentCount_7`, `ReagentCount_8`, `EffectItemType_1`, `EffectItemType_2`, `EffectItemType_3`,
                         `SpellName_en_gb` AS `SpellName`, `SpellIconID`
                     FROM `ARMORYDBPREFIX_spell`
@@ -625,7 +625,7 @@ Class Items {
                 $type = false;
                 if($itemProperty['RandomProperty'] > 0) {
                     $itemPropertyId = $itemProperty['RandomProperty'];
-                    $type = 'property'; 
+                    $type = 'property';
                 }
                 elseif($itemProperty['RandomSuffix'] > 0) {
                     $itemPropertyId = $itemProperty['RandomSuffix'];
@@ -694,7 +694,7 @@ Class Items {
         }
         return $lootTable;
     }
-    
+
     /**
      * Some item info
      * @category Items class
@@ -724,7 +724,7 @@ Class Items {
         }
         return $info;
     }
-    
+
     /**
      * Returns array with socket info (gem icon, enchant string, enchant id, item id)
      * @category Items class
@@ -735,7 +735,7 @@ Class Items {
      * @param    int $item_guid = 0
      * @param    object $db = null
      * @return   array
-     **/ 
+     **/
     public function GetItemSocketInfo($guid, $item, $socketNum, $item_guid = 0, $serverType = -1) {
         $data = array();
         if($serverType == -1) {
@@ -750,14 +750,14 @@ Class Items {
                 );
                 if($item_guid == 0) {
                     $socketInfo = Armory::$cDB->selectCell("
-                    SELECT CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(`data`, ' ', %d), ' ', '-1') AS UNSIGNED)  
-                        FROM `item_instance` 
+                    SELECT CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(`data`, ' ', %d), ' ', '-1') AS UNSIGNED)
+                        FROM `item_instance`
                             WHERE `owner_guid`=%d AND CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(`data`, ' ', 4), ' ', '-1') AS UNSIGNED) = %d", $socketfield[$socketNum], $guid, $item);
                 }
                 else {
                     $socketInfo = Armory::$cDB->selectCell("
-                    SELECT CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(`data`, ' ', %d), ' ', '-1') AS UNSIGNED)  
-                        FROM `item_instance` 
+                    SELECT CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(`data`, ' ', %d), ' ', '-1') AS UNSIGNED)
+                        FROM `item_instance`
                             WHERE `owner_guid`=%d AND `guid`=%d", $socketfield[$socketNum], $guid, $item_guid);
                 }
                 break;
@@ -794,7 +794,7 @@ Class Items {
         }
         return false;
     }
-    
+
     /**
      * Returns max/current item durability by item guid
      * @category Items class
@@ -820,7 +820,7 @@ Class Items {
         }
         return $durability;
     }
-    
+
     /**
      * Returns field ($field) value from `item_instance`.`data` field for current item guid (NOT char guid!)
      * @category Items class
@@ -846,14 +846,14 @@ Class Items {
         }
         else {
             $qData = $db->selectCell("
-            SELECT CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(`data`, ' ', %d), ' ', '-1') AS UNSIGNED)  
-                FROM `item_instance` 
+            SELECT CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(`data`, ' ', %d), ' ', '-1') AS UNSIGNED)
+                FROM `item_instance`
                     WHERE `owner_guid`=%d AND CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(`data`, ' ', 4), ' ', '-1') AS UNSIGNED) = %d", $dataField, $owner_guid, $itemid);
         }
         unset($db);
         return $qData;
     }
-    
+
     /**
      * Spell Description handler
      * @author   DiSlord aka Chestr
@@ -933,7 +933,7 @@ Class Items {
         $str = preg_replace_callback("/\[.+[+\-\/*\d]\]/", array($this, 'MyReplace'), $str);
         return $str;
     }
-    
+
     /**
      * Spell Description handler
      * @author   DiSlord aka Chestr
@@ -966,7 +966,7 @@ Class Items {
         $t1 = $spell['EffectAmplitude_1'] ? $spell['EffectAmplitude_1'] / 1000 : 5;
         $t2 = $spell['EffectAmplitude_1'] ? $spell['EffectAmplitude_2'] / 1000 : 5;
         $t3 = $spell['EffectAmplitude_1'] ? $spell['EffectAmplitude_3'] / 1000 : 5;
-        
+
         // Points per tick
         $o1 = @intval($s1 * $d / $t1);
         $o2 = @intval($s2 * $d / $t2);
@@ -1014,7 +1014,7 @@ Class Items {
         $spellData['z']  = "<home>";
         return $spellData;
     }
-    
+
     /**
      * Replaces square brackets with NULL text
      * @author   DiSlord aka Chestr
@@ -1029,7 +1029,7 @@ Class Items {
         return intval($text);
     }
     // End of CSWOWD functions
-    
+
     /**
      * Returns instance name (according with current locale) where for boss $key
      * @category Items class
@@ -1040,7 +1040,7 @@ Class Items {
     public function GetItemSourceByKey($key) {
         return Armory::$aDB->selectCell("SELECT `name_%s` FROM `ARMORYDBPREFIX_instance_template` WHERE `id` IN (SELECT `instance_id` FROM `ARMORYDBPREFIX_instance_data` WHERE `key`='%s')", Armory::GetLocale(), $key);
     }
-    
+
     /**
      * Returns item source with area name, boss name, drop rate and area URL
      * @category Items class
@@ -1144,7 +1144,7 @@ Class Items {
         $instance_data['value'] = 'sourceType.creatureDrop';
         return $instance_data;
     }
-    
+
     /**
      * Checks is item is unique in boss's loot table
      * @category Items class
@@ -1159,7 +1159,7 @@ Class Items {
         }
         return true;
     }
-    
+
     /**
      * Returns model data for $displayId.
      * If $itemid > 0 then $displayId will be loaded from DB
@@ -1192,11 +1192,11 @@ Class Items {
         }
         return false;
     }
-    
+
     public function FreeItemDisplayInfo() {
         $this->itemDisplayInfo = array();
     }
-    
+
     /**
      * Returns item equivalent for opposite faction
      * FactionIDs are:
@@ -1227,7 +1227,7 @@ Class Items {
         }
         return false;
     }
-    
+
     /**
      * Returns item subclass/class text string
      * If $tooltip == true, then function will return subclass name only.
@@ -1254,7 +1254,7 @@ Class Items {
         }
         return Armory::$aDB->selectRow("SELECT `subclass_name_%s` AS `subclass_name`, `key` FROM `ARMORYDBPREFIX_itemsubclass` WHERE `class`=%d AND `subclass`=%d", Armory::GetLocale(), $itemclassInfo['class'], $itemclassInfo['subclass']);
     }
-    
+
     /**
      * Checks if personal arena rating required for sale current item (and returns required rating if exists)
      * @category Items class
@@ -1276,7 +1276,7 @@ Class Items {
         }
         return false;
     }
-    
+
     /**
      * Loads neccessary item data from DB (for item-info.xml page)
      * @category Items class
@@ -1295,7 +1295,7 @@ Class Items {
         }
         return $itemData;
     }
-    
+
     /**
      * Returns suffix for texture file name
      * @category Items class
@@ -1316,7 +1316,7 @@ Class Items {
         }
         return '_u.png';
     }
-    
+
     /**
      * Generates random enchantments for $item_entry and $item_guid (if provided)
      * @category Items class
@@ -1423,7 +1423,7 @@ Class Items {
         }
         return $return_data;
     }
-    
+
     /**
      * Returns random properties points for itemId
      * @author   DiSlord aka Chestr
@@ -1506,7 +1506,7 @@ Class Items {
         }
         return Armory::$aDB->selectCell("SELECT `%s` FROM `ARMORYDBPREFIX_randompropertypoints` WHERE `itemlevel`=%d", $field, $itemLevel);
     }
-    
+
     /**
      * Returns bonus template name for XSLT (by statTypeID)
      * @category Items class
@@ -1573,7 +1573,7 @@ Class Items {
                 break;
             case 25:
                 $bonus_template = 'bonusCritTakenMeleeRating';
-                break;                
+                break;
             case 26:
                 $bonus_template = 'bonusCritTakenRangedRating';
                 break;
@@ -1639,7 +1639,7 @@ Class Items {
         }
         return $bonus_template;
     }
-    
+
     /**
      * Public access to self::CreateAdditionalItemTooltip() method
      *  - $parent: used for items that created by spells (displays under patterns/recipes, etc.)
@@ -1658,7 +1658,7 @@ Class Items {
         }
         return self::CreateAdditionalItemTooltip($itemID, $xml, $characters, $parent, $comparison);
     }
-    
+
     /**
      * Create item tooltip with provided options
      *  - $parent: used for items that created by spells (displays under patterns/recipes, etc.)
@@ -2164,7 +2164,7 @@ Class Items {
             $xml->XMLWriter()->text($spellName);
             $xml->XMLWriter()->endElement(); //requiredAbility
         }
-        if($proto->RequiredReputationFaction > 0 && $factionName = Armory::$aDB->selectCell("SELECT `name_%s` FROM `ARMORYDBPREFIX_faction` WHERE `id`=%d", Armory::GetLocale(), $proto->RequiredReputationFaction)) {    
+        if($proto->RequiredReputationFaction > 0 && $factionName = Armory::$aDB->selectCell("SELECT `name_%s` FROM `ARMORYDBPREFIX_faction` WHERE `id`=%d", Armory::GetLocale(), $proto->RequiredReputationFaction)) {
             if(Utils::IsWriteRaw()) {
                 $xml->XMLWriter()->writeRaw('<requiredFaction');
                 $xml->XMLWriter()->writeRaw(' name="' . $factionName . '"');
@@ -2285,7 +2285,7 @@ Class Items {
             }
             $xml->XMLWriter()->endElement(); //setData
         }
-        
+
         $xml->XMLWriter()->startElement('spellData');
         $spellData = 0;
         $spellInfo = false;
@@ -2393,14 +2393,14 @@ Class Items {
                     $xml->XMLWriter()->writeRaw('<itemSource');
                     foreach($itemSource as $source_key => $source_value) {
                         $xml->XMLWriter()->writeRaw(' ' . $source_key . '="' . $source_value . '"');
-                    }    
+                    }
                     $xml->XMLWriter()->writeRaw('/>'); //itemSource
                 }
                 else {
                     $xml->XMLWriter()->startElement('itemSource');
                     foreach($itemSource as $source_key => $source_value) {
                         $xml->XMLWriter()->writeAttribute($source_key, $source_value);
-                    }    
+                    }
                     $xml->XMLWriter()->endElement(); //itemSource
                 }
             }
@@ -2411,7 +2411,7 @@ Class Items {
             }
         }
     }
-    
+
     /**
      * Returns reagents info for crafted item (itemID)
      * @category Items class
@@ -2441,7 +2441,7 @@ Class Items {
         }
         return $data;
     }
-    
+
     /**
      * Returns item slot ID by InventoryType
      * @category Items class
@@ -2539,7 +2539,7 @@ Class Items {
         }
         return array('slot_id' => $slot_id, 'slotname' => $slotname);
     }
-    
+
     /**
      * Checks is item sold by vendor
      * @category Items class
@@ -2550,7 +2550,7 @@ Class Items {
     public function IsVendorItem($itemID) {
         return Armory::$wDB->selectCell("SELECT 1 FROM `npc_vendor` WHERE `item`=%d LIMIT 1", $itemID);
     }
-    
+
     public function GenerateEnchantmentSpellData($spellID) {
         if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'ru_ru') {
             $tmp_locale = Armory::GetLocale();
@@ -2574,7 +2574,7 @@ Class Items {
         );
         return $data;
     }
-    
+
     /**
      * Returns typeID or subtypeID for provided data
      * @category Items class
@@ -2594,7 +2594,7 @@ Class Items {
         }
         return $info;
     }
-    
+
     /**
      * Returns item stats that can be useful for different class types (tank, melee, caster, etc.)
      * @category Items class
@@ -2645,7 +2645,7 @@ Class Items {
         }
         return $query;
     }
-    
+
     /**
      * Returns InventoryType ID by slot name ('head', for example)
      * @category Items class
@@ -2715,7 +2715,7 @@ Class Items {
         }
         return $slot_id;
     }
-    
+
     /**
      * Returns item stats by OptName
      * @category Items class
@@ -2848,7 +2848,7 @@ Class Items {
         }
         return $data;
     }
-    
+
     /**
      * Generates SQL query part (stat_typeX)
      * @category Items class
@@ -2870,7 +2870,7 @@ Class Items {
         $query .= ')';
         return $query;
     }
-    
+
     /**
      * Returns multiplier for SSV mask
      * @category Items class
@@ -2905,7 +2905,7 @@ Class Items {
         }
         return 0;
     }
-    
+
     /**
      * Returns armor mod for SSV mask
      * @category Items class
@@ -2946,7 +2946,7 @@ Class Items {
         }
         return 0;
     }
-    
+
     /**
      * Returns DPS mod for SSV mask
      * @category Items class
@@ -2981,7 +2981,7 @@ Class Items {
         }
         return 0;
     }
-    
+
     /**
      * Returns Spell Bonus for SSV mask
      * @category Items class
@@ -2999,7 +2999,7 @@ Class Items {
         }
         return 0;
     }
-    
+
     /**
      * Returns feral bonus for SSV mask
      * @category Items class
@@ -3017,7 +3017,7 @@ Class Items {
         }
         return 0;
     }
-    
+
     /**
      * Returns item entry from DB
      * @category Items class
@@ -3028,7 +3028,7 @@ Class Items {
     public function GetItemEntryByGUID($item_guid) {
         return Armory::$cDB->selectCell("SELECT `item_template` FROM `character_inventory` WHERE `item`=%d", $item_guid);
     }
-    
+
     /**
      * Returns item GUID from DB
      * @category Items class
@@ -3048,7 +3048,7 @@ Class Items {
         }
         return 0;
     }
-    
+
     public function IsGemMatchesSocketColor($gem_color, $socket_color) {
         if($socket_color == $gem_color) {
             return true;
@@ -3070,7 +3070,7 @@ Class Items {
             return false;
         }
     }
-    
+
     public function GetSocketColorString($color) {
         $string = null;
         switch($color) {
@@ -3089,7 +3089,7 @@ Class Items {
         }
         return $string;
     }
-    
+
     private function IsMultiplyItemSet($itemSetID) {
         if($itemSetID >= 843 && $itemSetID != 881 && $itemSetID != 882) {
             return true;
@@ -3100,7 +3100,7 @@ Class Items {
         }
         return false;
     }
-    
+
     public function GetItemIdByName($name) {
         $name = Utils::escape(urldecode($name));
         return Armory::$wDB->selectCell("SELECT `entry` FROM `item_template` WHERE `name` = '%s' LIMIT 1", $name);

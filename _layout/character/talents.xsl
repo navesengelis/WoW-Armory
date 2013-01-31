@@ -16,8 +16,8 @@
 					<div class="parchment-content">
 						<div class="list">
 							<div class="player-side notab">
-								<div class="info-pane">									
-									<xsl:call-template name="errorSection" />									
+								<div class="info-pane">
+									<xsl:call-template name="errorSection" />
 								</div>
 							</div>
 						</div>

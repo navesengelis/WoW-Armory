@@ -259,7 +259,7 @@ if($factionFlags > 0) {
             $xml->XMLWriter()->writeAttribute($eq_key, $eq_value);
         }
         $xml->XMLWriter()->endElement();  //item
-    }    
+    }
     $xml->XMLWriter()->endElement(); //translationFor
 }
 /* Random properties */

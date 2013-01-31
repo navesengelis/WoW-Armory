@@ -83,7 +83,7 @@ else {
         $xml->XMLWriter()->endElement(); //family
     }
     $xml->XMLWriter()->endElement(); //petTalentTab
-    
+
     $xml->XMLWriter()->startElement('petTalentTab');
     $xml->XMLWriter()->writeAttribute('key', 'Tenacity');
     $xml->XMLWriter()->writeAttribute('name', Armory::$aDB->selectCell("SELECT `name_".Armory::GetLocale()."` FROM `ARMORYDBPREFIX_petcalc` WHERE `id` < 0 AND `key`='tenacity'"));
@@ -97,7 +97,7 @@ else {
         $xml->XMLWriter()->endElement(); //family
     }
     $xml->XMLWriter()->endElement(); //petTalentTab
-    
+
     $xml->XMLWriter()->startElement('petTalentTab');
     $xml->XMLWriter()->writeAttribute('key', 'Ferocity');
     $xml->XMLWriter()->writeAttribute('name', Armory::$aDB->selectCell("SELECT `name_".Armory::GetLocale()."` FROM `ARMORYDBPREFIX_petcalc` WHERE `id` < 0 AND `key`='ferocity'"));

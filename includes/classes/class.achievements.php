@@ -34,37 +34,37 @@ Class Achievements {
      * @access   public
      **/
     public $guid = 0;
-    
+
     /**
      * Character achievement points
      * @category Achievements class
      * @access   public
      **/
     public $pts = 0;
-    
+
     /**
      * Achievement ID
      * @category Achievements class
      * @access   public
      **/
     public $achId = -1;
-    
+
     /**
      * Character achievements count
      * @category Achievements class
      * @access   private
      **/
     private $m_count = 0;
-    
+
     private $b_isInitialized = false;
-    
+
     private $db = null;
-    
+
     private $achievements_storage = array();
     private $achievements_progress_storage = array();
     private $achievements_id = array();
     private $latest_achievements = array();
-    
+
     /**
      * Creates Achievement class instance
      * @category Achievements class
@@ -86,7 +86,7 @@ Class Achievements {
         $this->m_count = 0;
         $this->pts     = 0;
         $this->guid = $player_guid;
-        
+
         $this->LoadAchievements();
         $this->GenerateAchievements();
         $this->CalculateAchievementPoints();
@@ -94,7 +94,7 @@ Class Achievements {
         $this->b_isInitialized = true;
         return true;
     }
-    
+
     /**
      * Returns achievement points for current character
      * @category Achievements class
@@ -108,7 +108,7 @@ Class Achievements {
         }
         return $this->pts;
     }
-    
+
     /**
      * Returns completed achievements count
      * @category Achievements class
@@ -122,7 +122,7 @@ Class Achievements {
         }
         return $this->m_count;
     }
-    
+
     /**
      * Calculate total character achievement points
      * @category Achievements class
@@ -137,7 +137,7 @@ Class Achievements {
         $this->pts = Armory::$aDB->selectCell("SELECT SUM(`points`) FROM `ARMORYDBPREFIX_achievement` WHERE `id` IN (%s)", $this->achievements_id);
         return $this->pts;
     }
-    
+
     /**
      * Returns number of character completed achievements.
      * @category Achievements class
@@ -152,7 +152,7 @@ Class Achievements {
         $this->m_count = count($this->achievements_storage);
         return $this->m_count;
     }
-    
+
     /**
      * Returns summary data for completed achievements in selected category.
      * @category Achievements class
@@ -243,7 +243,7 @@ Class Achievements {
         }
         return $achievement_data;
     }
-        
+
     /**
      * Returns array with 5 latest completed achievements. Requires $this->guid!
      * @category Achievements class
@@ -265,7 +265,7 @@ Class Achievements {
         }
         return $achievements;
     }
-    
+
     /**
      * Returns achievement date.
      * @category Achievements class
@@ -291,7 +291,7 @@ Class Achievements {
         }
         return date('d/m/Y', $this->achievements_storage[$achId]['date']); // Hack (Can't find the reason why achievement date is not displaying. Working on it.)
     }
-    
+
     /**
      * Generates achievements categories tree
      * @category Achievements class
@@ -326,7 +326,7 @@ Class Achievements {
         }
         return $root_tree;
     }
-    
+
     /**
      * Generates statistics categories tree
      * @category Achievements class
@@ -336,9 +336,9 @@ Class Achievements {
     public function BuildStatisticsCategoriesTree() {
         return $this->BuildCategoriesTree(true);
     }
-    
+
     /**
-     * Returns basic achievement info (name, description, points). 
+     * Returns basic achievement info (name, description, points).
      * $achievementData must be in array format: array('achievement' => ACHIEVEMENT_ID, 'date' => TIMESTAMP_DATE)
      * @category Achievements class
      * @access   public
@@ -361,7 +361,7 @@ Class Achievements {
         $achievementinfo['dateCompleted'] = date('Y-m-d\TH:i:s:+01:00', $achievementData['date']);
         return $achievementinfo;
     }
-    
+
     /**
      * Checks is achievement with $achId ID completed by current player
      * @category Achievements class
@@ -376,7 +376,7 @@ Class Achievements {
         }
         return isset($this->achievements_storage[$achId]);
     }
-    
+
     /**
      * Checks is achievement $achId exists in DB
      * @category Achievements class
@@ -387,7 +387,7 @@ Class Achievements {
     public function IsAchievementExists($achId) {
         return (bool) Armory::$aDB->selectCell("SELECT 1 FROM `ARMORYDBPREFIX_achievement` WHERE `id`=%d LIMIT 1", $achId);
     }
-    
+
     /**
      * Generates achievement page
      * @category Achievements class
@@ -478,7 +478,7 @@ Class Achievements {
         }
         return $return_data;
     }
-    
+
     /**
      * Builds criterias table for current (this->achId) achievement
      * @category Achievements class
@@ -533,7 +533,7 @@ Class Achievements {
         }
         return $achievement_criteria;
     }
-    
+
     /**
      * Returns criteria ($criteria_id) data
      * @category Achievements class
@@ -551,7 +551,7 @@ Class Achievements {
         }
         return $this->achievements_progress_storage[$criteria_id];
     }
-    
+
     /**
      * Generates statistics page
      * @category Achievements class
@@ -582,7 +582,7 @@ Class Achievements {
         }
         return $return_data;
     }
-    
+
     public function GetSummaryDataForStatisticsPage() {
         if(!$this->guid) {
             Armory::Log()->writeError('%s : player guid not defined!');
@@ -600,7 +600,7 @@ Class Achievements {
         }
         return $data;
     }
-    
+
     /**
      * Returns criteria value for current achievement (this->achId)
      * @category Achievements class
@@ -631,7 +631,7 @@ Class Achievements {
         }
         return ($tmp_criteria['counter'] == 0) ? '--' : $tmp_criteria['counter'];
     }
-    
+
     /**
      * Generates Feats of Strength list for achievements comparison.
      * @category Achievements class
@@ -653,13 +653,13 @@ Class Achievements {
         }
         return $pages;
     }
-    
+
     private function LoadAchievements() {
         $this->achievements_storage = $this->db->select("SELECT * FROM `character_achievement` WHERE `guid` = %d ORDER BY `date` DESC", $this->guid);
         $this->achievements_progress_storage = $this->db->select("SELECT * FROM `character_achievement_progress` WHERE `guid` = %d", $this->guid);
         return true;
     }
-    
+
     private function GenerateAchievements() {
         if(!is_array($this->achievements_storage)) {
             Armory::Log()->writeError('%s : unable to generate achievements ID: achievements storage is empty!', __METHOD__);
@@ -685,7 +685,7 @@ Class Achievements {
         unset($ach_storage, $criterias_storage);
         return true;
     }
-    
+
     private function GetCompletedAchievements($ids) {
         $completed = array();
         foreach($ids as $id) {

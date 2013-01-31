@@ -48,7 +48,7 @@ if($isRealm) {
     $xml->XMLWriter()->writeAttribute('realm', $realmName);
     // Get achievements
     $achievement_firsts = $utils->GetRealmFirsts();
-    
+
     if(is_array($achievement_firsts)) {
         foreach($achievement_firsts as $achievement_info) {
             $xml->XMLWriter()->startElement('achievement');

@@ -27,36 +27,36 @@ if(!defined('__ARMORY__')) {
 }
 
 Class Armory {
-    
+
     /** Armory database handler **/
     public static $aDB = null;
-    
+
     /** Character database hanlder **/
     public static $cDB = null;
-    
+
     /** Realm/accounts database handler **/
     public static $rDB = null;
-    
+
     /** Mangos/world database handler **/
     public static $wDB = null;
-    
+
     /** MySQL connection configs **/
     public static $mysqlconfig = array();
-    
+
     /** Armory configs **/
     public static $armoryconfig = array();
-    
+
     /** Current armory locale (ru_ru or en_gb) **/
     public static $_locale = null;
-    
+
     /** Locale (0 - en_gb, 2 - fr_fr, 3 - de_de, etc.)**/
     public static $_loc = null;
-    
+
     /** Links for multirealm info **/
     public static $realmData;
     public static $connectionData;
     public static $currentRealmInfo;
-    
+
     /** Debug handler **/
     private static $debugHandler;
 
@@ -148,7 +148,7 @@ Class Armory {
                 break;
         }
     }
-    
+
     /**
      * Checks browser language from HTTP_ACCEPT_LANGUAGE
      * @category Armory class
@@ -177,7 +177,7 @@ Class Armory {
         }
         return null;
     }
-    
+
     /**
      * Returns debug log handler
      * @category Armory class
@@ -187,7 +187,7 @@ Class Armory {
     public static function Log() {
         return self::$debugHandler;
     }
-    
+
     /**
      * Returns current locale (en_gb/ru_ru/fr_fr, etc.)
      * @category Armory class
@@ -207,7 +207,7 @@ Class Armory {
         }
         return self::$_locale;
     }
-    
+
     /**
      * Returns locale ID (0 for en_gb, etc.)
      * @category Armory class
@@ -217,7 +217,7 @@ Class Armory {
     public static function GetLoc() {
         return self::$_loc;
     }
-    
+
     /**
      * Sets locale
      * @category Armory class
@@ -229,7 +229,7 @@ Class Armory {
         self::$_loc    = $locale_id;
         return true;
     }
-    
+
     public static function FindRealm($realm_name) {
         $realm_name = urldecode($realm_name);
         foreach(self::$realmData as $realm) {

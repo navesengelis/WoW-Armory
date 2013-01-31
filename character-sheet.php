@@ -181,7 +181,7 @@ if($talent_data && is_array($talent_data)) {
             'treeOne' => $talent_data['points'][$i][$characters->GetTalentTab(0)],
             'treeTwo' => $talent_data['points'][$i][$characters->GetTalentTab(1)],
             'treeThree' => $talent_data['points'][$i][$characters->GetTalentTab(2)]
-        );    
+        );
         if($activeSpec == $i) {
             $talent_spec[$i]['active'] = 1;
         }

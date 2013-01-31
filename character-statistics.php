@@ -100,7 +100,7 @@ if($isCharacter && Armory::$armoryconfig['useCache'] == true && !isset($_GET['sk
         exit;
     }
 }
-if($achievement_category > 0) {    
+if($achievement_category > 0) {
     $xml->XMLWriter()->startElement('category');
     $pages = false;
     if(is_array($comparison)) {
@@ -217,7 +217,7 @@ if($utils->IsWriteRaw()) {
                 }
             }
             $xml->XMLWriter()->writeRaw('/>');
-            
+
         }
     }
     else {

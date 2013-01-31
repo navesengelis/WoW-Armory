@@ -30,7 +30,7 @@ if(!defined('__ARMORY__')) {
  * This class used in item tooltips.
  **/
 Class ItemPrototype {
-    
+
     public $entry;
     public $class;
     public $subclass;
@@ -170,16 +170,16 @@ Class ItemPrototype {
     public $minMoneyLoot;
     public $maxMoneyLoot;
     public $ExtraFlags;
-    
+
     public $ItemStat = array();
     public $Damage = array();
     public $Spells = array();
     public $Socket = array();
-    
+
     private $loaded  = false;
     private $m_guid  = 0;
     private $m_owner = 0;
-    
+
     public function LoadItem($item_entry, $itemGuid = 0, $ownerGuid = 0) {
         $item_row = Armory::$wDB->selectRow("SELECT * FROM `item_template` WHERE `entry` = '%d' LIMIT 1", $item_entry);
         if(!$item_row) {
@@ -196,7 +196,7 @@ Class ItemPrototype {
             $this->{$field} = $value;
         }
         // Create arrays
-        
+
         // Item mods
         for($i = 0; $i < MAX_ITEM_PROTO_STATS+1; $i++) {
             $key = $i+1;
@@ -221,9 +221,9 @@ Class ItemPrototype {
             $key = $i+1;
             if(isset($this->{'spellid_' . $key})) {
                 $this->Spells[$i] = array(
-                    'spellid'          => $this->{'spellid_'               . $key}, 
-                    'trigger'          => $this->{'spelltrigger_'          . $key}, 
-                    'charges'          => $this->{'spellcharges_'          . $key}, 
+                    'spellid'          => $this->{'spellid_'               . $key},
+                    'trigger'          => $this->{'spelltrigger_'          . $key},
+                    'charges'          => $this->{'spellcharges_'          . $key},
                     'ppmRate'          => $this->{'spellppmRate_'          . $key},
                     'cooldown'         => $this->{'spellcooldown_'         . $key},
                     'category'         => $this->{'spellcategory_'         . $key},
@@ -246,7 +246,7 @@ Class ItemPrototype {
         $this->loaded  = true;
         return true;
     }
-    
+
     public function IsCorrect() {
         if($this->entry > 0 && $this->loaded == true) {
             // Do not check item GUID and owner GUID here.
@@ -254,7 +254,7 @@ Class ItemPrototype {
         }
         return false;
     }
-    
+
     /* Helpers (not used now; from MaNGOS core) */
     public function getFeralBonus($extraDPS = 0) {
         if($this->class == ITEM_CLASS_WEAPON && (1 << $this->subclass) & 0x02A5F3) {
@@ -266,7 +266,7 @@ Class ItemPrototype {
         }
         return 0;
     }
-    
+
     public function getDPS() {
         if($this->delay == 0) {
             return 0;
@@ -277,7 +277,7 @@ Class ItemPrototype {
         }
         return $temp * 500 / $this->delay;
     }
-    
+
     // Not used now.
     public function GetItemQualityColor() {
         $colors_array = array(
