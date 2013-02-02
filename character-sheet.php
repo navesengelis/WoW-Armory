@@ -397,6 +397,9 @@ foreach($gear_array as $gear) {
     if($item_info && is_array($item_info)) {
         $xml->XMLWriter()->startElement('item');
         foreach($item_info as $iteminfo_key => $iteminfo_value) {
+            if (is_array($iteminfo_value))
+                continue;
+
             $xml->XMLWriter()->writeAttribute($iteminfo_key, $iteminfo_value);
         }
         $xml->XMLWriter()->endElement(); //item
