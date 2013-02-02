@@ -1059,10 +1059,10 @@ Class Characters {
                 break;
             case 'mainhand':
             case 'stave':
-                return $this->equipmentCache[31];
+                return $this->equipmentCache[31] & 0x0000FFFF;
                 break;
             case 'offhand':
-                return $this->equipmentCache[33];
+                return $this->equipmentCache[33] & 0x0000FFFF;
                 break;
             case 'relic':
             case 'sigil':
