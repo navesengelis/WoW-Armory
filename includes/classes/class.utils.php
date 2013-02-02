@@ -1722,7 +1722,7 @@ Class Utils {
             19 => 'tabard',
             20 => 'chest',
             21 => 'mainhand',
-            22 => null,
+            22 => 'offhand',
             23 => 'offhand',
             24 => null,
             25 => 'thrown',
