@@ -4,7 +4,7 @@ How to install WoW Armory
 
 SYSTEM REQUIREMENTS:
 1. Apache HTTP Server with mod_rewrite
-2. PHP 5 or higher with XMLWriter package installed and enabled (XMLWriter is installed and enabled by default since PHP 5.1.2)
+2. PHP 5.3 or higher with XMLWriter package installed and enabled (XMLWriter is installed and enabled by default since PHP 5.1.2)
 3. MySQL 5 Server or higher
 
 INSTALLATION STEPS:

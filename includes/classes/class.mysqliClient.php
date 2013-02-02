@@ -1,5 +1,5 @@
 <?php
-class mysqlClient extends mainDb
+class mysqliClient extends mainDb
 {
     public function __construct($host, $user, $password, $port, $dbName, $charset = null, $prefix = null)
     {
@@ -8,13 +8,14 @@ class mysqlClient extends mainDb
 
     public function Connect($host, $user, $password, $port, $dbName, $charset, $prefix)
     {
-        $this->connectionLink = mysql_connect($host . ':' . $port, $user, $password, true);
-        if (!$this->connectionLink)
+        $this->connectionLink = new mysqli($host, $user, $password, $dbName, $port);
+
+        if ($this->connectionLink->connect_error)
         {
-            die(sprintf('%s : unable to connect to MySQL Server (host: "%s", dbName: "%s"). Error: %s. Check your configs.', __METHOD__, $host, $dbName, mysql_error($this->connectionLink) ? mysql_error($this->connectionLink) : 'none'));
+            die(sprintf('%s : unable to connect to MySQL Server (host: "%s", dbName: "%s"). Error: %s. Check your configs.', __METHOD__, $host, $dbName, $this->connectionLink->connect_error ? $this->connectionLink->connect_error : 'none'));
             return false;
         }
-        $this->dbLink = mysql_select_db($dbName, $this->connectionLink);
+        $this->dbLink = $this->connectionLink->select_db($dbName);
         if (!$this->dbLink)
         {
             die(sprintf('%s : unable to switch to database "%s"!', __METHOD__, $dbName));
@@ -32,11 +33,11 @@ class mysqlClient extends mainDb
         $make_array = array();
         $query_start = microtime(true);
         $this->queryCount++;
-        $performed_query = mysql_query($safe_sql, $this->connectionLink);
+        $performed_query = $this->connectionLink->query($safe_sql);
         if (!$performed_query)
         {
             if (!$this->disableNextError)
-                Armory::Log()->writeLog('%s : unable to execute SQL query (%s). MySQL error: %s', __METHOD__, $safe_sql, mysql_error($this->connectionLink) ? sprintf('"%s" (Error #%d)', mysql_error($this->connectionLink), mysql_errno($this->connectionLink)) : 'none');
+                Armory::Log()->writeLog('%s : unable to execute SQL query (%s). MySQL error: %s', __METHOD__, $safe_sql, $this->connectionLink->error ? sprintf('"%s" (Error #%d)', $this->connectionLink->error, $this->connectionLink->errno) : 'none');
             if ($this->disableNextError)
                 $this->disableNextError = false;
 
@@ -46,13 +47,17 @@ class mysqlClient extends mainDb
         switch ($queryType)
         {
             case QueryType::SINGLE_CELL:
-                if (mysql_num_rows($performed_query) == 1)
-                    $result = mysql_result($performed_query, 0);
+                if ($performed_query->num_rows == 1)
+                {
+                    $performed_query->data_seek(0);
+                    $row = $performed_query->fetch_row();
+                    return $row[0];
+                }
                 else
                     return null;
                 break;
             case QueryType::SINGLE_ROW:
-                $result = mysql_fetch_assoc($performed_query);
+                $result = $performed_query->fetch_assoc();
                 if (is_array($result))
                 {
                     foreach ($result as $rKey => $rValue)
@@ -65,7 +70,7 @@ class mysqlClient extends mainDb
                 break;
             case QueryType::MULTIPLY_ROW:
                 $result = array();
-                while ($_result = mysql_fetch_assoc($performed_query))
+                while ($_result = $performed_query->fetch_assoc())
                 {
                     if (is_array($_result))
                     {
@@ -82,7 +87,7 @@ class mysqlClient extends mainDb
                 break;
             case QueryType::OBJECT_QUERY:
                 $result = array();
-                while ($_result = mysql_fetch_object($performed_query))
+                while ($_result = $performed_query->fetch_object())
                     $result[] = $_result;
                 break;
             case QueryType::SQL_QUERY:
@@ -101,7 +106,7 @@ class mysqlClient extends mainDb
 
     protected function SanitizeString($string)
     {
-        return stripslashes(mysql_real_escape_string($string, $this->connectionLink));
+        return stripslashes($this->connectionLink->real_escape_string($string));
     }
 }
 ?>

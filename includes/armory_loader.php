@@ -26,6 +26,8 @@ if (!defined('__ARMORY__'))
     die('Direct access to this file not is allowed!');
 
 session_start();
+error_reporting(E_ALL);
+
 // Detect armory directory
 define('__ARMORYDIRECTORY__', dirname(dirname(__FILE__)));
 if(!defined('__ARMORYDIRECTORY__') || __ARMORYDIRECTORY__ == null) {
@@ -92,7 +94,6 @@ elseif(CONFIG_VERSION != Armory::$armoryconfig['configVersion']) {
         die($CfgError);
     }
 }
-error_reporting(E_ALL);
 /* Check maintenance */
 if(Armory::$armoryconfig['maintenance'] == true && !defined('MAINTENANCE_PAGE')) {
     header('Location: maintenance.xml');
