@@ -47,14 +47,9 @@ class mysqliClient extends mainDb
         switch ($queryType)
         {
             case QueryType::SINGLE_CELL:
-                if ($performed_query->num_rows == 1)
-                {
-                    $performed_query->data_seek(0);
-                    $row = $performed_query->fetch_row();
-                    return $row[0];
-                }
-                else
-                    return null;
+                $performed_query->data_seek(0);
+                $row = $performed_query->fetch_row();
+                $result = $row[0];
                 break;
             case QueryType::SINGLE_ROW:
                 $result = $performed_query->fetch_assoc();

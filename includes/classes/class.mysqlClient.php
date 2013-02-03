@@ -46,10 +46,8 @@ class mysqlClient extends mainDb
         switch ($queryType)
         {
             case QueryType::SINGLE_CELL:
-                if (mysql_num_rows($performed_query) == 1)
-                    $result = mysql_result($performed_query, 0);
-                else
-                    return null;
+                $row = mysql_fetch_row($performed_query);
+                $result = $row[0];
                 break;
             case QueryType::SINGLE_ROW:
                 $result = mysql_fetch_assoc($performed_query);
