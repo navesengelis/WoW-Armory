@@ -476,17 +476,20 @@ if($tmpid = $characters->GetCharacterEquip('boots')) {
         /**
          * Boot (leglower)
          **/
-        $subtexture_data['boot_ll'] = array(
-            'prefix' => 'item/texturecomponents/leglowertexture/',
-            'file'   => $items->GetItemModelData($displayId, 'visual_6', $tmpid),
-            'fileBackup' => $items->GetItemModelData($displayId, 'visual_6', $tmpid),
-            'h' => 0.25,
-            'w' => 0.5,
-            'x' => 0.5,
-            'y' => 0.625
-        );
-        $subtexture_data['boot_ll']['suffixFile'] = $items->GetModelSuffix($subtexture_data['boot_ll']['prefix'] . $subtexture_data['boot_ll']['file']);
-        $subtexture_data['boot_ll']['suffixFileBackup'] = $items->GetModelSuffix($subtexture_data['boot_ll']['prefix'] . $subtexture_data['boot_ll']['fileBackup']);
+        if (isset($subtexture_data['leg_ll'])) // Prevents boot textures going through robes
+        {
+            $subtexture_data['boot_ll'] = array(
+                'prefix' => 'item/texturecomponents/leglowertexture/',
+                'file'   => $items->GetItemModelData($displayId, 'visual_6', $tmpid),
+                'fileBackup' => $items->GetItemModelData($displayId, 'visual_6', $tmpid),
+                'h' => 0.25,
+                'w' => 0.5,
+                'x' => 0.5,
+                'y' => 0.625
+            );
+            $subtexture_data['boot_ll']['suffixFile'] = $items->GetModelSuffix($subtexture_data['boot_ll']['prefix'] . $subtexture_data['boot_ll']['file']);
+            $subtexture_data['boot_ll']['suffixFileBackup'] = $items->GetModelSuffix($subtexture_data['boot_ll']['prefix'] . $subtexture_data['boot_ll']['fileBackup']);
+        }
 
         /**
          * Boot (foot)
