@@ -400,41 +400,6 @@ if($tmpid = $characters->GetCharacterEquip('tabard')) {
     }
     unset($tmpid);
 }
-if($tmpid = $characters->GetCharacterEquip('belt')) {
-    $displayId = $items->GetItemInfo($tmpid, 'displayid');
-    if($items->GetItemModelData($displayId, 'visual_4', $tmpid)) {
-        /**
-         * Belt (torsolower)
-         **/
-        $subtexture_data['belt_tl'] = array(
-            'prefix' => 'item/texturecomponents/torsolowertexture/',
-            'file'   => $items->GetItemModelData($displayId, 'visual_4', $tmpid),
-            'fileBackup' => $items->GetItemModelData($displayId, 'visual_4', $tmpid),
-            'h' => 0.125,
-            'w' => 0.5,
-            'x' => 0.5,
-            'y' => 0.25
-        );
-        $subtexture_data['belt_tl']['suffixFile'] = $items->GetModelSuffix($subtexture_data['belt_tl']['prefix'] . $subtexture_data['belt_tl']['file']);
-        $subtexture_data['belt_tl']['suffixFileBackup'] = $items->GetModelSuffix($subtexture_data['belt_tl']['prefix'] . $subtexture_data['belt_tl']['fileBackup']);
-
-        /**
-         * Belt (legupper)
-         **/
-        $subtexture_data['belt_lu'] = array(
-            'prefix' => 'item/texturecomponents/leguppertexture/',
-            'file'   => $items->GetItemModelData($displayId, 'visual_5', $tmpid),
-            'fileBackup' => $items->GetItemModelData($displayId, 'visual_5', $tmpid),
-            'h' => 0.25,
-            'w' => 0.5,
-            'x' => 0.5,
-            'y' => 0.375
-        );
-        $subtexture_data['belt_lu']['suffixFile'] = $items->GetModelSuffix($subtexture_data['belt_lu']['prefix'] . $subtexture_data['belt_lu']['file']);
-        $subtexture_data['belt_lu']['suffixFileBackup'] = $items->GetModelSuffix($subtexture_data['belt_lu']['prefix'] . $subtexture_data['belt_lu']['fileBackup']);
-    }
-    unset($tmpid);
-}
 if($tmpid = $characters->GetCharacterEquip('legs')) {
     $displayId = $items->GetItemInfo($tmpid, 'displayid');
     if($items->GetItemModelData($displayId, 'visual_5', $tmpid) && (!isset($subtexture_data['chest_lu']) || !isset($subtexture_data['chest_lu']['file']) || $subtexture_data['chest_lu']['file'] === false || $subtexture_data['chest_lu']['file'] === null) ) {
@@ -467,6 +432,41 @@ if($tmpid = $characters->GetCharacterEquip('legs')) {
         );
         $subtexture_data['leg_ll']['suffixFile'] = $items->GetModelSuffix($subtexture_data['leg_ll']['prefix'] . $subtexture_data['leg_ll']['file']);
         $subtexture_data['leg_ll']['suffixFileBackup'] = $items->GetModelSuffix($subtexture_data['leg_ll']['prefix'] . $subtexture_data['leg_ll']['fileBackup']);
+    }
+    unset($tmpid);
+}
+if($tmpid = $characters->GetCharacterEquip('belt')) {
+    $displayId = $items->GetItemInfo($tmpid, 'displayid');
+    if($items->GetItemModelData($displayId, null, $tmpid)) {
+        /**
+         * Belt (torsolower)
+         **/
+        $subtexture_data['belt_tl'] = array(
+                'prefix' => 'item/texturecomponents/torsolowertexture/',
+                'file'   => $items->GetItemModelData($displayId, 'visual_4', $tmpid),
+                'fileBackup' => $items->GetItemModelData($displayId, 'visual_4', $tmpid),
+                'h' => 0.125,
+                'w' => 0.5,
+                'x' => 0.5,
+                'y' => 0.25
+        );
+        $subtexture_data['belt_tl']['suffixFile'] = $items->GetModelSuffix($subtexture_data['belt_tl']['prefix'] . $subtexture_data['belt_tl']['file']);
+        $subtexture_data['belt_tl']['suffixFileBackup'] = $items->GetModelSuffix($subtexture_data['belt_tl']['prefix'] . $subtexture_data['belt_tl']['fileBackup']);
+
+        /**
+         * Belt (legupper)
+         **/
+        $subtexture_data['belt_lu'] = array(
+                'prefix' => 'item/texturecomponents/leguppertexture/',
+                'file'   => $items->GetItemModelData($displayId, 'visual_5', $tmpid),
+                'fileBackup' => $items->GetItemModelData($displayId, 'visual_5', $tmpid),
+                'h' => 0.25,
+                'w' => 0.5,
+                'x' => 0.5,
+                'y' => 0.375
+        );
+        $subtexture_data['belt_lu']['suffixFile'] = $items->GetModelSuffix($subtexture_data['belt_lu']['prefix'] . $subtexture_data['belt_lu']['file']);
+        $subtexture_data['belt_lu']['suffixFileBackup'] = $items->GetModelSuffix($subtexture_data['belt_lu']['prefix'] . $subtexture_data['belt_lu']['fileBackup']);
     }
     unset($tmpid);
 }
