@@ -73,9 +73,9 @@ Class Armory {
             die('<b>Error</b>: unable to load configuration file!');
         if (!require(__ARMORYDIRECTORY__ . '/includes/classes/class.debug.php'))
             die('<b>Error</b>: unable to load debug class!');
-        if (!require(__ARMORYDIRECTORY__ . '/includes/classes/class.databaseHandler.php'))
+        if (!require(__ARMORYDIRECTORY__ . '/includes/classes/mysql/class.databaseHandler.php'))
             die('<b>Error</b>: unable to load database abstract class!');
-        if (!require(__ARMORYDIRECTORY__ . '/includes/classes/class.' . $ArmoryConfig['mysql']['DbExtension'] . 'Client.php'))
+        if (!require(__ARMORYDIRECTORY__ . '/includes/classes/mysql/class.' . $ArmoryConfig['mysql']['DbExtension'] . 'Client.php'))
             die('<b>Error</b>: unable to load mysql client class! (Unable to load: class.' . $ArmoryConfig['mysql']['DbExtension'] . 'Client.php');
 
         self::$mysqlconfig  = $ArmoryConfig['mysql'];
