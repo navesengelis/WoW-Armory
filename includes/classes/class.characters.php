@@ -2658,8 +2658,8 @@ Class Characters {
                 $sort = 'today';
                 $diff = time() - $event_date;
                 if(Armory::GetLocale() == 'ru_ru') {
-                    $periods = array('Ñ�ÐµÐº.', 'Ð¼Ð¸Ð½.', 'Ñ‡.');
-                    $ago_str = 'Ð½Ð°Ð·Ð°Ð´';
+                    $periods = array('сек.', 'мин.', 'ч.');
+                    $ago_str = 'назад';
                 }
                 else {
                     $periods = array('seconds', 'minutes', 'hours');

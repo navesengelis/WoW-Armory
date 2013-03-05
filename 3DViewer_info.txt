@@ -1,4 +1,4 @@
-﻿Last updated: Jan-14-2013
+﻿Last updated: Mar-5-2013
 
 Attention!
 Currently 3D Viewer is not yet fully completed - there's no saving character poses, full screen mode
@@ -22,29 +22,4 @@ If you find a bug, please report them here:
 https://github.com/Takenbacon/wowarmory/issues?state=open
 
 Download link for 3D Viewer Models:
-http://uploading.com/files/8acm6582/models.rar/
-
------------------------ (Needs updating)
-
-Внимание!
-На данный момент 3D Viewer не завершен полностью - отсутствует сохранение позы персонажа, поддержка проигрывания в полном экране
-и некоторые другие возможности.
-
-Для корректной работы необходимо скачать архив с текстурами (~297 мегабайт).
-
-Все файлы из архива должны быть распакованы в папку 'models'. Распакованные файлы занимают примерно 465 мегабайт.
-Структура папок:
- - models
-         |- bgs
-         |- character
-         |- flash
-         |- images
-         |- item
-                |- objectcomponents
-                |- texturecomponents
-         |- spells
-Если у вас возникли какие-либо затруднения:
-https://github.com/Takenbacon/wowarmory/issues?state=open
-
-Прямая ссылка на модели 3D просмотрщика:
 http://uploading.com/files/8acm6582/models.rar/
