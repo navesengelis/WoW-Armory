@@ -1,6 +1,6 @@
-From 7cd1a7596b5fcbe4808700ba0f314a0318caca28 Mon Sep 17 00:00:00 2001
+From 2ee283b9f881773bdc34ced971c95b353c993a4f Mon Sep 17 00:00:00 2001
 From: takenbacon <revoke@darkblizz.org>
-Date: Fri, 22 Feb 2013 16:45:23 -0800
+Date: Sat, 30 Mar 2013 13:23:12 -0700
 Subject: [PATCH] Updated Armory Patch
 
 ---
@@ -8,12 +8,12 @@ Subject: [PATCH] Updated Armory Patch
  src/server/game/Battlegrounds/Battleground.cpp     | 47 +++++++++++++
  src/server/game/Battlegrounds/Battleground.h       | 10 ++-
  src/server/game/Entities/Item/Item.cpp             |  7 ++
- src/server/game/Entities/Player/Player.cpp         | 78 ++++++++++++++++++++++
+ src/server/game/Entities/Player/Player.cpp         | 81 ++++++++++++++++++++++
  src/server/game/Entities/Player/Player.h           | 24 +++++++
- src/server/game/Entities/Unit/Unit.cpp             | 15 +++++
+ src/server/game/Entities/Unit/Unit.cpp             | 15 ++++
  .../Database/Implementation/CharacterDatabase.cpp  |  2 +
  .../Database/Implementation/CharacterDatabase.h    |  2 +
- 9 files changed, 185 insertions(+), 1 deletion(-)
+ 9 files changed, 188 insertions(+), 1 deletion(-)
 
 diff --git a/src/server/game/Achievements/AchievementMgr.cpp b/src/server/game/Achievements/AchievementMgr.cpp
 index 1de9c78..3738af7 100644
@@ -139,7 +139,7 @@ index 5dd7260..a028dcd 100644
  }
  
 diff --git a/src/server/game/Entities/Player/Player.cpp b/src/server/game/Entities/Player/Player.cpp
-index c7c88ae..1f6012e 100644
+index c7c88ae..c8df361 100644
 --- a/src/server/game/Entities/Player/Player.cpp
 +++ b/src/server/game/Entities/Player/Player.cpp
 @@ -4954,6 +4954,14 @@ void Player::DeleteFromDB(uint64 playerguid, uint32 accountId, bool updateRealmC
@@ -167,25 +167,28 @@ index c7c88ae..1f6012e 100644
      // overwrite possible wrong/corrupted guid
      SetUInt64Value(OBJECT_FIELD_GUID, MAKE_NEW_GUID(guid, 0, HIGHGUID_PLAYER));
  
-@@ -18963,6 +18974,32 @@ void Player::SaveToDB(bool create /*=false*/)
+@@ -18963,6 +18974,35 @@ void Player::SaveToDB(bool create /*=false*/)
  
      CharacterDatabase.CommitTransaction(trans);
  
 +    /* World of Warcraft Armory */
 +    // Place this code AFTER CharacterDatabase.CommitTransaction(); to avoid some character saving errors.
 +    // Wowarmory feeds
-+    std::ostringstream sWowarmory;
-+    sWowarmory << "INSERT IGNORE INTO character_feed_log (guid,type,data,date,counter,difficulty,item_guid,item_quality) VALUES ";
-+    for (WowarmoryFeeds::iterator iter = m_wowarmory_feeds.begin(); iter < m_wowarmory_feeds.end(); ++iter)
++    if (!m_wowarmory_feeds.empty())
 +    {
-+        //                      guid                    type                        data                    date                            counter                   difficulty                        item_guid                      item_quality
-+        sWowarmory << "(" << (*iter).guid << ", " << (*iter).type << ", " << (*iter).data << ", " << uint64((*iter).date) << ", " << (*iter).counter << ", " << uint32((*iter).difficulty) << ", " << (*iter).item_guid << ", " << (*iter).item_quality <<  ")";
-+        if (iter != m_wowarmory_feeds.end()-1)
-+            sWowarmory << ",";
++        std::ostringstream sWowarmory;
++        sWowarmory << "INSERT IGNORE INTO character_feed_log (guid,type,data,date,counter,difficulty,item_guid,item_quality) VALUES ";
++        for (WowarmoryFeeds::iterator iter = m_wowarmory_feeds.begin(); iter < m_wowarmory_feeds.end(); ++iter)
++        {
++            //                      guid                    type                        data                    date                            counter                   difficulty                        item_guid                      item_quality
++            sWowarmory << "(" << (*iter).guid << ", " << (*iter).type << ", " << (*iter).data << ", " << uint64((*iter).date) << ", " << (*iter).counter << ", " << uint32((*iter).difficulty) << ", " << (*iter).item_guid << ", " << (*iter).item_quality <<  ")";
++            if (iter != m_wowarmory_feeds.end()-1)
++                sWowarmory << ",";
++        }
++        CharacterDatabase.PExecute(sWowarmory.str().c_str());
++        // Clear old saved feeds from storage - they are not required for server core.
++        InitWowarmoryFeeds();
 +    }
-+    CharacterDatabase.PExecute(sWowarmory.str().c_str());
-+    // Clear old saved feeds from storage - they are not required for server core.
-+    InitWowarmoryFeeds();
 +    // Character stats
 +    std::ostringstream ps;
 +    time_t t = time(NULL);
@@ -200,7 +203,7 @@ index c7c88ae..1f6012e 100644
      // save pet (hunter pet level and experience and all type pets health/mana).
      if (Pet* pet = GetPet())
          pet->SavePetToDB(PET_SAVE_AS_CURRENT);
-@@ -25858,3 +25895,44 @@ Pet* Player::SummonPet(uint32 entry, float x, float y, float z, float ang, PetTy
+@@ -25858,3 +25898,44 @@ Pet* Player::SummonPet(uint32 entry, float x, float y, float z, float ang, PetTy
  
      return pet;
  }
