@@ -660,7 +660,7 @@ Class SearchMgr {
             if(!$db) {
                 continue;
             }
-            $current_realm = $db->select("SELECT `guid`, `name`, `class` AS `classId`, `gender` AS `genderId`, `race` AS `raceId`, `level`, `account` FROM `characters` WHERE `name` = '%s'", $this->searchQuery);
+            $current_realm = $db->select("SELECT `guid`, `name`, `class` AS `classId`, `gender` AS `genderId`, `race` AS `raceId`, `level`, `account` FROM `characters` WHERE `name` = '%s'", $search);
             if(!$current_realm) {
                 continue;
             }
