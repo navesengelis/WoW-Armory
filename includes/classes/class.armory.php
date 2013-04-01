@@ -62,6 +62,9 @@ Class Armory {
 
     public static $dbClass;
 
+    /** Cache **/
+    public static $cache;
+
     /**
      * Initialize database handlers, debug handler, sets up sql/site configs
      * @category Armory class

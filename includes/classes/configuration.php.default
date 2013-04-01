@@ -146,6 +146,10 @@ $ArmoryConfig['mysql']['DbExtension']     = 'mysql';
 #      Default: false (Disabled)
 #               true (Enabled)
 #
+#   cachePrefix
+#      Cache value prefix
+#      Default: armory
+#
 ##############################################################################################
 
 $ArmoryConfig['settings']['useNews']          = false;
@@ -162,6 +166,7 @@ $ArmoryConfig['settings']['useDebug']         = true;
 $ArmoryConfig['settings']['logLevel']         = 2;
 $ArmoryConfig['settings']['checkVersionType'] = 'show';
 $ArmoryConfig['settings']['useApc']           = false;
+$ArmoryConfig['settings']['cachePrefix']      = 'armory';
 
 ##############################################################################################
 # Multirealms configuration
@@ -235,6 +240,6 @@ $ArmoryConfig['multiRealm'][2]['charset_world']      = 'UTF8';
 #
 ##############################################################################################
 
-$ArmoryConfig['settings']['configVersion'] = 3;
+$ArmoryConfig['settings']['configVersion'] = 4;
 
 ?>

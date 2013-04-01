@@ -53,15 +53,21 @@ Armory::InitializeArmory();
 if (!include(__ARMORYDIRECTORY__ . '/includes/interfaces/interface.cache.php'))
     die('<b>Error:</b> unable to load cache interface!');
 
+// We are forced to load APC cache, enabled or not
+if (!include(__ARMORYDIRECTORY__ . '/includes/classes/cache/cache.apc.php'))
+    die('<b>Error:</b> unable to load apc cache class!');
+
 if (Armory::$armoryconfig['useApc'] == true)
 {
-    if (!include(__ARMORYDIRECTORY__ . '/includes/classes/cache/cache.apc.php'))
-        die('<b>Error:</b> unable to load apc cache class!');
+    if (!include(__ARMORYDIRECTORY__ . '/includes/cache_config.php'))
+        die('<b>Error:</b> unable to load cache config!');
 
     // Make sure APC is installed
     if (!function_exists('apc_fetch'))
         die('<b>Error:</b> APC is enabled in configuation, but is not installed on php');
 }
+
+Armory::$cache = new ApcCache();
 
 /* Check DbVersion */
 if(!defined('SKIP_DB')) {
