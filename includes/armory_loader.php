@@ -26,7 +26,7 @@ if (!defined('__ARMORY__'))
     die('Direct access to this file not is allowed!');
 
 session_start();
-error_reporting(E_ALL);
+error_reporting(0);
 
 // Detect armory directory
 define('__ARMORYDIRECTORY__', dirname(dirname(__FILE__)));
