@@ -22,9 +22,8 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  **/
 
-if(!defined('__ARMORY__')) {
+if (!defined('__ARMORY__'))
     die('Direct access to this file not allowed!');
-}
 
 /* Classes */
 define('CLASS_WARRIOR', 0x01);

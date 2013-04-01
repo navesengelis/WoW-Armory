@@ -139,7 +139,12 @@ $ArmoryConfig['mysql']['DbExtension']     = 'mysql';
 #   checkVersionType
 #      Armory errors reporting style (wrong database version, config version mismatch, etc.)
 #      Default: show (Display all errors and exit script. Recommended)
-#               log  (Write errors to log (if enabled) and continue script work)    
+#               log  (Write errors to log (if enabled) and continue script work)
+#
+#   useApc
+#      Memory cache enabled/disabled (Requires APC to be installed!)
+#      Default: false (Disabled)
+#               true (Enabled)
 #
 ##############################################################################################
 
@@ -156,6 +161,7 @@ $ArmoryConfig['settings']['maintenance']      = false;
 $ArmoryConfig['settings']['useDebug']         = true;
 $ArmoryConfig['settings']['logLevel']         = 2;
 $ArmoryConfig['settings']['checkVersionType'] = 'show';
+$ArmoryConfig['settings']['useApc']           = false;
 
 ##############################################################################################
 # Multirealms configuration
@@ -229,6 +235,6 @@ $ArmoryConfig['multiRealm'][2]['charset_world']      = 'UTF8';
 #
 ##############################################################################################
 
-$ArmoryConfig['settings']['configVersion'] = 2;
+$ArmoryConfig['settings']['configVersion'] = 3;
 
 ?>

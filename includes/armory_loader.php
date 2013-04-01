@@ -49,6 +49,20 @@ if(!@include(__ARMORYDIRECTORY__ . '/includes/revision_nr.php')) {
 $_SESSION['last_url'] = str_replace('.php', '.xml', $_SERVER['PHP_SELF']) . '?' .str_replace('locale=', 'l=', $_SERVER['QUERY_STRING']);
 
 Armory::InitializeArmory();
+
+if (!include(__ARMORYDIRECTORY__ . '/includes/interfaces/interface.cache.php'))
+    die('<b>Error:</b> unable to load cache interface!');
+
+if (Armory::$armoryconfig['useApc'] == true)
+{
+    if (!include(__ARMORYDIRECTORY__ . '/includes/classes/cache/cache.apc.php'))
+        die('<b>Error:</b> unable to load apc cache class!');
+
+    // Make sure APC is installed
+    if (!function_exists('apc_fetch'))
+        die('<b>Error:</b> APC is enabled in configuation, but is not installed on php');
+}
+
 /* Check DbVersion */
 if(!defined('SKIP_DB')) {
     $dbVersion = Armory::$aDB->selectCell("SELECT `version` FROM `ARMORYDBPREFIX_db_version`");
