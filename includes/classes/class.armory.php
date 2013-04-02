@@ -22,12 +22,11 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  **/
 
-if(!defined('__ARMORY__')) {
+if (!defined('__ARMORY__'))
     die('Direct access to this file not allowed!');
-}
 
-Class Armory {
-
+Class Armory
+{
     /** Armory database handler **/
     public static $aDB = null;
 
@@ -71,7 +70,8 @@ Class Armory {
      * @access   public
      * @return   bool
      **/
-    public static function InitializeArmory() {
+    public static function InitializeArmory()
+    {
         if (!require(__ARMORYDIRECTORY__ . '/includes/classes/configuration.php'))
             die('<b>Error</b>: unable to load configuration file!');
         if (!require(__ARMORYDIRECTORY__ . '/includes/classes/class.debug.php'))
@@ -85,21 +85,25 @@ Class Armory {
         self::$armoryconfig = $ArmoryConfig['settings'];
         self::$debugHandler = new ArmoryDebug(array('useDebug' => self::$armoryconfig['useDebug'], 'logLevel' => self::$armoryconfig['logLevel']));
         self::$realmData    = $ArmoryConfig['multiRealm'];
-        if(!defined('SKIP_DB')) {
+        if (!defined('SKIP_DB'))
+        {
             self::$dbClass = self::$mysqlconfig['DbExtension'] . 'Client';
             self::$aDB = new self::$dbClass(self::$mysqlconfig['host_armory'], self::$mysqlconfig['user_armory'], self::$mysqlconfig['pass_armory'], self::$mysqlconfig['port_armory'], self::$mysqlconfig['name_armory'], self::$mysqlconfig['charset_armory'], self::$armoryconfig['db_prefix']);
             self::$rDB = new self::$dbClass(self::$mysqlconfig['host_realmd'], self::$mysqlconfig['user_realmd'], self::$mysqlconfig['pass_realmd'], self::$mysqlconfig['port_realmd'], self::$mysqlconfig['name_realmd'], self::$mysqlconfig['charset_realmd']);
-            if(isset($_GET['r'])) {
-                if(preg_match('/,/', $_GET['r'])) {
+            if (isset($_GET['r']))
+            {
+                if (preg_match('/,/', $_GET['r']))
+                {
                     // Achievements/statistics comparison cases
                     $rData = explode(',', $_GET['r']);
                     $realmName = urldecode($rData[0]);
                 }
-                else {
+                else
                     $realmName = urldecode($_GET['r']);
-                }
+
                 $realm_id = self::FindRealm($realmName);
-                if(isset(self::$realmData[$realm_id])) {
+                if (isset(self::$realmData[$realm_id]))
+                {
                     self::$connectionData = self::$realmData[$realm_id];
                     self::$cDB = new self::$dbClass(self::$connectionData['host_characters'], self::$connectionData['user_characters'], self::$connectionData['pass_characters'], self::$connectionData['port_characters'], self::$connectionData['name_characters'], self::$connectionData['charset_characters']);
                     self::$currentRealmInfo = array('name' => self::$connectionData['name'], 'id' => $realm_id, 'type' => self::$connectionData['type'], 'connected' => true);
@@ -107,29 +111,26 @@ Class Armory {
                 }
             }
             $realm_info = self::$realmData[1];
-            if(self::$cDB == null) {
+            if (self::$cDB == null)
                 self::$cDB = new self::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
-            }
-            if(self::$wDB == null) {
+            if (self::$wDB == null)
                 self::$wDB = new self::$dbClass($realm_info['host_world'], $realm_info['user_world'], $realm_info['pass_world'], $realm_info['port_world'], $realm_info['name_world'], $realm_info['charset_world']);
-            }
-            if(!self::$currentRealmInfo) {
+            if (!self::$currentRealmInfo)
                 self::$currentRealmInfo = array('name' => $realm_info['name'], 'id' => 1, 'type' => $realm_info['type'], 'connected' => true);
-            }
-            if(!self::$connectionData) {
+            if (!self::$connectionData)
                 self::$connectionData = $realm_info;
-            }
         }
-        if(isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
+        if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE']))
+        {
             $user_locale = strtolower(substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2));
-            if($user_locale && $http_locale = self::IsAllowedLocale($user_locale)) {
+            if ($user_locale && $http_locale = self::IsAllowedLocale($user_locale))
                 self::$_locale = (isset($_SESSION['armoryLocale'])) ? $_SESSION['armoryLocale'] : $http_locale;
-            }
         }
-        if(!self::$_locale) {
+        if (!self::$_locale)
             self::$_locale = (isset($_SESSION['armoryLocale'])) ? $_SESSION['armoryLocale'] : self::$armoryconfig['defaultLocale'];
-        }
-        switch(self::$_locale) {
+
+        switch (self::$_locale)
+        {
             case 'en_gb':
             case 'en_us':
                 self::$_loc = 0;
@@ -158,8 +159,10 @@ Class Armory {
      * @access   public
      * @return   string
      **/
-    private static function IsAllowedLocale($locale) {
-        switch($locale) {
+    private static function IsAllowedLocale($locale)
+    {
+        switch ($locale)
+        {
             case 'de':
                 return 'de_de';
                 break;
@@ -187,7 +190,8 @@ Class Armory {
      * @access   public
      * @return   object
      **/
-    public static function Log() {
+    public static function Log()
+    {
         return self::$debugHandler;
     }
 
@@ -197,17 +201,18 @@ Class Armory {
      * @access   public
      * @return   string
      **/
-    public static function GetLocale() {
-        if(self::$_locale == null) {
+    public static function GetLocale()
+    {
+        if (self::$_locale == null)
+        {
             self::Log()->writeLog('%s : locale not defined, return default locale', __METHOD__);
             return self::$armoryconfig['defaultLocale'];
         }
-        if(self::$_locale == 'en_us') {
+        if (self::$_locale == 'en_us')
             return 'en_gb'; // For DB compatibility
-        }
-        elseif(self::$_locale == 'es_mx') {
+        else if (self::$_locale == 'es_mx')
             return 'es_es'; // For DB compatibility
-        }
+
         return self::$_locale;
     }
 
@@ -217,7 +222,8 @@ Class Armory {
      * @access   public
      * @return   int
      **/
-    public static function GetLoc() {
+    public static function GetLoc()
+    {
         return self::$_loc;
     }
 
@@ -227,18 +233,20 @@ Class Armory {
      * @access   public
      * @return   bool
      **/
-    public static function SetLocale($locale, $locale_id) {
+    public static function SetLocale($locale, $locale_id)
+    {
         self::$_locale = $locale;
         self::$_loc    = $locale_id;
         return true;
     }
 
-    public static function FindRealm($realm_name) {
+    public static function FindRealm($realm_name)
+    {
         $realm_name = urldecode($realm_name);
-        foreach(self::$realmData as $realm) {
-            if($realm['name'] == $realm_name) {
+        foreach (self::$realmData as $realm)
+        {
+            if ($realm['name'] == $realm_name)
                 return $realm['id'];
-            }
         }
         return 0;
     }
