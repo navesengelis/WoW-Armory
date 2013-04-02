@@ -1118,7 +1118,7 @@ Class Utils {
                 'days', 'hours', 'min', 'sec'
             ),
             'ru_ru' => array(
-                'Ð´Ð½ÐµÐ¹', 'Ñ‡Ð°Ñ�Ð¾Ð²', 'Ð¼Ð¸Ð½', 'Ñ�ÐµÐº'
+                'дней', 'часов', 'мин', 'сек'
             )
         );
         if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'ru_ru') {
