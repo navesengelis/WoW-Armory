@@ -14,7 +14,7 @@ class ApcCache implements iCache
         if (Armory::$armoryconfig['useApc'] == false)
             return false;
 
-        return unserialize(md5(apc_fetch(Armory::$armoryconfig['cachePrefix'] . '_' . $key)));
+        return unserialize(apc_fetch(md5(Armory::$armoryconfig['cachePrefix'] . '_' . $key)));
     }
 
     public function exists($key)
