@@ -707,7 +707,7 @@ $animation_data = array(
     array('id' => 76,   'key' => 'kiss',               'weapons' => 'no'),
     array('id' => 77,   'key' => 'cry',                'weapons' => 'no'),
     array('id' => 84,   'key' => 'point',              'weapons' => 'no'),
-    array('id' => 113,  'key' => 'salute',             'weapons' => 'melee'),
+    array('id' => 113,  'key' => 'salute',             'weapons' => 'no'),
     array('id' => 185,  'key' => 'yes',                'weapons' => 'no'),
     array('id' => 186,  'key' => 'no',                 'weapons' => 'no'),
     array('id' => 195,  'key' => 'train',              'weapons' => 'no'),
