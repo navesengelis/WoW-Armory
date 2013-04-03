@@ -142,7 +142,7 @@ $ArmoryConfig['mysql']['DbExtension']     = 'mysql';
 #               log  (Write errors to log (if enabled) and continue script work)
 #
 #   useApc
-#      Memory cache enabled/disabled (Requires APC to be installed!)
+#      Memory cache enabled/disabled (Requires APC to be installed!) (STRONGLY recommended as it can significantly reduce load speed and server load)
 #      Default: false (Disabled)
 #               true (Enabled)
 #

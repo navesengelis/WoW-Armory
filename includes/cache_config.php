@@ -8,4 +8,9 @@
 # <= 1  = TTL (in seconds, time until value is purged from memory and needs to be refreshed)
 #
 ##############################################################################################
+
+$cacheConfig['rating']                 = 0;
+$cacheConfig['armory-strings']         = 0;
+$cacheConfig['race-model-data']        = 0;
+$cacheConfig['realm-firsts']           = 3600;
 ?>

@@ -64,6 +64,7 @@ if (Armory::$armoryconfig['useApc'] == true)
 }
 
 Armory::$cache = new ApcCache();
+Armory::$cacheconfig = $cacheConfig;
 
 /* Check DbVersion */
 $dbVersion = Armory::$aDB->selectCell("SELECT `version` FROM `ARMORYDBPREFIX_db_version`");

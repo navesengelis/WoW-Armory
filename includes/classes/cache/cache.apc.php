@@ -24,5 +24,13 @@ class ApcCache implements iCache
 
         return apc_exists(md5(Armory::$armoryconfig['cachePrefix'] . '_' . $key));
     }
+
+    public function isEnabled()
+    {
+        if (Armory::$armoryconfig['useApc'] == true)
+            return true;
+        else
+            return false;
+    }
 }
 ?>

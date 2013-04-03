@@ -563,7 +563,23 @@ Class Utils {
      * @param    int $level
      * @return   array
      **/
-    public function GetRating($level) {
+    public function GetRating($level)
+    {
+        if (Armory::$cache->exists('rating'))
+        {
+            $rating = Armory::$cache->fetch('rating');
+            return $rating[$level];
+        }
+        else if (Armory::$cache->isEnabled())
+        {
+            $all_rating = Armory::$aDB->select("SELECT * FROM `ARMORYDBPREFIX_rating`");
+            foreach ($all_rating as $data)
+                $new_rating[$data['level']] = $data;
+
+            Armory::$cache->store('rating', $new_rating, Armory::$cacheconfig['rating']);
+            return $new_rating[$level];
+        }
+
         return Armory::$aDB->selectRow("SELECT * FROM `ARMORYDBPREFIX_rating` WHERE `level`=%d", $level);
     }
 
@@ -653,6 +669,9 @@ Class Utils {
      * @return   array
      **/
     public function GetRealmFirsts() {
+        if (Armory::$cache->exists('realm-firsts'))
+            return Armory::$cache->fetch('realm-firsts');
+
         $achievements_data = Armory::$cDB->select("
         SELECT
         `character_achievement`.`achievement`,
@@ -764,6 +783,7 @@ Class Utils {
                 );
             }
         }
+        Armory::$cache->store('realm-firsts', $realm_firsts, Armory::$cacheconfig['realm-firsts']);
         return $realm_firsts;
     }
 
@@ -1224,7 +1244,31 @@ Class Utils {
      * @param    mixed $id
      * @return   string
      **/
+
     public function GetArmoryString($id) {
+        if (Armory::$cache->exists('armory-strings'))
+        {
+            $strings = Armory::$cache->fetch('armory-strings');
+            if (is_array($id))
+            {
+                foreach ($id as $stringId)
+                    $newString[] = $strings[$stringId]['string_' . Armory::GetLocale()];
+
+                return $newString;
+            }
+
+            return $strings[$id]['string_' . Armory::GetLocale()];
+        }
+        else if (Armory::$cache->isEnabled())
+        {
+            $strings = Armory::$aDB->select("SELECT * FROM `ARMORYDBPREFIX_string`");
+            foreach ($strings as $data)
+                $newStrings[$data['id']] = $data;
+
+            Armory::store('armory-strings', $newStrings, Armory::$cacheconfig['armory-strings']);
+            return $newStrings[$id]['string_' . Armory::GetLocale()];
+        }
+
         if(is_array($id)) {
             return Armory::$aDB->selectCell("SELECT `string_%s` FROM `ARMORYDBPREFIX_string` WHERE `id` IN (%s)", Armory::GetLocale(), $id);
         }
@@ -1353,6 +1397,25 @@ Class Utils {
      * @return   array
      **/
     public function RaceModelData($raceId) {
+        if (Armory::$cache->exists('race-model-data'))
+        {
+            $modelData = Armory::$cache->fetch('race-model-data');
+            return $modelData[$raceId];
+        }
+        else if (Armory::$cache->isEnabled())
+        {
+            $modelData = Armory::$aDB->select("SELECT `id`, `modeldata_1`, `modeldata_2` FROM `ARMORYDBPREFIX_races`");
+            foreach ($modelData as $data)
+            {
+                $id = $data['id'];
+                unset($data['id']);
+                $newModelData[$id] = $data;
+            }
+
+            Armory::$cache->store('race-model-data', $newModelData, Armory::$cacheconfig['race-model-data']);
+            return $newModelData[$raceId];
+        }
+
         return Armory::$aDB->selectRow("SELECT `modeldata_1`, `modeldata_2` FROM `ARMORYDBPREFIX_races` WHERE `id`=%d", $raceId);
     }
 

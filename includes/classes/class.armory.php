@@ -45,6 +45,9 @@ Class Armory
     /** Armory configs **/
     public static $armoryconfig = array();
 
+    /** Cache config **/
+    public static $cacheconfig  = array();
+
     /** Current armory locale (ru_ru or en_gb) **/
     public static $_locale = null;
 
