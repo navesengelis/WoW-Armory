@@ -911,7 +911,7 @@ Class SearchMgr {
                 if($this->get_array['subTp'] != 'all') {
                     $subType_info = Items::GetItemTypeInfo($this->get_array['subTp'], 'subtype');
                 }
-                elseif($this->get_array['subTp'] == 'all' && in_array($this->get_array['type'], array('mounts', 'minipets', 'misc', 'reagents'))) {
+                elseif($this->get_array['subTp'] == 'all' && in_array($this->get_array['type'], array('mounts', 'minipets', 'misc', 'reagents', 'smallpets'))) {
                     $subType_info = Items::GetItemTypeInfo($this->get_array['subTp'], 'subtype', $this->get_array['type']);
                 }
             }
