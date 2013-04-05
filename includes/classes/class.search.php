@@ -927,7 +927,7 @@ Class SearchMgr {
         }
         if(isset($this->get_array['usbleBy']) && $this->get_array['usbleBy'] > 0) {
             $sql .= sprintf(" (`item_template`.`AllowableClass`&%d) AND", Utils::GetClassBitMaskByClassId($this->get_array['usbleBy']));
-            if(isset($this->get_array['type'])) {
+            if(isset($this->get_array['type']) && $this->get_array['type'] != "glyphs") {
                 if(!isset($this->get_array['subTp']) || $this->get_array['subTp'] == 'all') {
                     $allowable_types = null;
                     switch($this->get_array['type']) {
