@@ -915,7 +915,7 @@ Class SearchMgr {
                     $subType_info = Items::GetItemTypeInfo($this->get_array['subTp'], 'subtype', $this->get_array['type']);
                 }
             }
-            elseif(in_array($this->get_array['type'], array('mounts', 'minipets', 'misc', 'reagents'))) {
+            elseif(in_array($this->get_array['type'], array('mounts', 'minipets', 'misc', 'reagents', 'smallpets'))) {
                 $subType_info = Items::GetItemTypeInfo('all', 'subtype', $this->get_array['type']);
             }
             if($type_info != -1 && $subType_info != -1)  {
