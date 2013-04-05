@@ -57,6 +57,10 @@ a.reset:hover{background-position:0 100%}
 .exportbutton a:link,.exportbutton a:hover,.exportbutton a:visited,.exportbutton a:active,.exportbutton span{font:bold 16px 'Trebuchet MS',Arial,Helvetica,sans-serif;color:#503512;text-decoration:none}
 .exportbutton span{padding-top:5px;height:32px;line-height:32px;display:block}
 .exportbutton a:hover{background:none}
+/* Items */
+/*...........................................................*/
+.item-title{background:url('../../../images/en_gb/title-itemsearch.gif') no-repeat 133px 5px}
+.pvprewards-header{background:url('../../../images/en_gb/header-pvprewards.jpg') no-repeat 0 0}
 /* Updates */
 /*...........................................................*/
 .ud-url{background:url('../../../images/en_gb/updates/armory4-url.jpg') no-repeat 50% 0;height:60px;position:relative;top:-10px;margin-bottom:-10px}
