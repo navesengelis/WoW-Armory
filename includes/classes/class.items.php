@@ -2312,7 +2312,12 @@ Class Items {
                         $tmp_locale = 'en_gb';
                     }
                 }
-                $spellInfo = $this->SpellReplace($spell_tmp, Utils::ValidateSpellText($spell_tmp['Description_' . $tmp_locale]));
+
+                if ($proto->class == ITEM_CLASS_GLYPH)
+                    $spellInfo = Armory::$aDB->selectCell("SELECT `description_%s` FROM `ARMORYDBPREFIX_glyphproperties` WHERE `id`='%d'", $tmp_locale, $spell_tmp['EffectMiscValue_1']);
+                if (!$spellInfo)
+                    $spellInfo = $this->SpellReplace($spell_tmp, Utils::ValidateSpellText($spell_tmp['Description_' . $tmp_locale]));
+
                 if($spellInfo) {
                     $spellData = 2;
                     $spellInfo = str_replace('&quot;', '"', $spellInfo);
