@@ -1426,7 +1426,7 @@ Class Utils {
      * @param    int $raceID
      * @return   int
      **/
-    public function GetFactionId($raceID) {
+    public static function GetFactionId($raceID) {
         // Get player factionID
         $horde_races    = array(RACE_ORC,     RACE_TROLL, RACE_TAUREN, RACE_UNDEAD, RACE_BLOODELF);
         $alliance_races = array(RACE_DRAENEI, RACE_DWARF, RACE_GNOME,  RACE_HUMAN,  RACE_NIGHTELF);
