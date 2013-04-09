@@ -1731,7 +1731,7 @@ Class Utils {
      * @param    int $slotId
      * @return   string
      **/
-    public function GetItemSlotTextBySlotId($slotId) {
+    public static function GetItemSlotTextBySlotId($slotId) {
         $slots_info = array(
             INV_HEAD => 'head',
             INV_NECK => 'neck',
