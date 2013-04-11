@@ -1547,7 +1547,7 @@ Class Utils {
      * @access   public
      * @retunr   bool
      **/
-    public function IsWriteRaw() {
+    public static function IsWriteRaw() {
         if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'en_us' || Armory::GetLocale() == 'ru_ru') {
             return false;
         }
