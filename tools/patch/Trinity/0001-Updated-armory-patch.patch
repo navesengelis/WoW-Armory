@@ -1,40 +1,41 @@
-From 2ee283b9f881773bdc34ced971c95b353c993a4f Mon Sep 17 00:00:00 2001
-From: takenbacon <revoke@darkblizz.org>
-Date: Sat, 30 Mar 2013 13:23:12 -0700
-Subject: [PATCH] Updated Armory Patch
+From b4764a31a23f04376039ccbf8f3a80c9743a5d77 Mon Sep 17 00:00:00 2001
+From: badtboy <wuqingyuan2001@gmail.com>
+Date: Sat, 15 Feb 2014 15:32:29 +0800
+Subject: [PATCH] [Armory] Patch to TrinityCore Server
 
 ---
  src/server/game/Achievements/AchievementMgr.cpp    |  1 +
- src/server/game/Battlegrounds/Battleground.cpp     | 47 +++++++++++++
+ src/server/game/Battlegrounds/Battleground.cpp     | 49 ++++++++++++-
  src/server/game/Battlegrounds/Battleground.h       | 10 ++-
  src/server/game/Entities/Item/Item.cpp             |  7 ++
- src/server/game/Entities/Player/Player.cpp         | 81 ++++++++++++++++++++++
+ src/server/game/Entities/Player/Player.cpp         | 84 +++++++++++++++++++++-
  src/server/game/Entities/Player/Player.h           | 24 +++++++
- src/server/game/Entities/Unit/Unit.cpp             | 15 ++++
- .../Database/Implementation/CharacterDatabase.cpp  |  2 +
- .../Database/Implementation/CharacterDatabase.h    |  2 +
- 9 files changed, 188 insertions(+), 1 deletion(-)
+ src/server/game/Entities/Unit/Unit.cpp             | 26 +++++--
+ .../Database/Implementation/CharacterDatabase.cpp  |  4 +-
+ .../Database/Implementation/CharacterDatabase.h    |  4 +-
+ 9 files changed, 198 insertions(+), 11 deletions(-)
 
 diff --git a/src/server/game/Achievements/AchievementMgr.cpp b/src/server/game/Achievements/AchievementMgr.cpp
-index 1de9c78..3738af7 100644
+index a99da40..ddfc1df 100644
 --- a/src/server/game/Achievements/AchievementMgr.cpp
 +++ b/src/server/game/Achievements/AchievementMgr.cpp
-@@ -2043,6 +2043,7 @@ void AchievementMgr::CompletedAchievement(AchievementEntry const* achievement)
+@@ -2051,6 +2051,7 @@ void AchievementMgr::CompletedAchievement(AchievementEntry const* achievement)
          achievement->ID, m_player->GetName().c_str(), m_player->GetGUIDLow());
  
      SendAchievementEarned(achievement);
-+    GetPlayer()->CreateWowarmoryFeed(1, achievement->ID, 0, 0);
++	GetPlayer()->CreateWowarmoryFeed(1, achievement->ID, 0, 0);
      CompletedAchievementData& ca = m_completedAchievements[achievement->ID];
      ca.date = time(NULL);
      ca.changed = true;
 diff --git a/src/server/game/Battlegrounds/Battleground.cpp b/src/server/game/Battlegrounds/Battleground.cpp
-index 264c2c3..088e502 100644
+index 3fcfab8..da56fac 100644
 --- a/src/server/game/Battlegrounds/Battleground.cpp
 +++ b/src/server/game/Battlegrounds/Battleground.cpp
-@@ -792,6 +792,45 @@ void Battleground::EndBattleground(uint32 winner)
+@@ -780,7 +780,46 @@ void Battleground::EndBattleground(uint32 winner)
                  SetArenaMatchmakerRating(GetOtherTeam(winner), loserMatchmakerRating + loserMatchmakerChange);
                  SetArenaTeamRatingChangeForTeam(winner, winnerChange);
                  SetArenaTeamRatingChangeForTeam(GetOtherTeam(winner), loserChange);
+-                TC_LOG_DEBUG("bg.arena", "Arena match Type: %u for Team1Id: %u - Team2Id: %u ended. WinnerTeamId: %u. Winner rating: +%d, Loser rating: %d", m_ArenaType, m_ArenaTeamIds[TEAM_ALLIANCE], m_ArenaTeamIds[TEAM_HORDE], winnerArenaTeam->GetId(), winnerChange, loserChange);
 +                /** World of Warcraft Armory **/
 +                uint32 maxChartID;
 +                QueryResult result = CharacterDatabase.PQuery("SELECT MAX(gameid) FROM armory_game_chart");
@@ -74,10 +75,11 @@ index 264c2c3..088e502 100644
 +                    CharacterDatabase.Execute(sql_query.str().c_str());
 +                }
 +                /** World of Warcraft Armory **/
-                 sLog->outDebug(LOG_FILTER_ARENAS, "Arena match Type: %u for Team1Id: %u - Team2Id: %u ended. WinnerTeamId: %u. Winner rating: +%d, Loser rating: %d", m_ArenaType, m_ArenaTeamIds[TEAM_ALLIANCE], m_ArenaTeamIds[TEAM_HORDE], winnerArenaTeam->GetId(), winnerChange, loserChange);
++				TC_LOG_DEBUG("bg.arena", "Arena match Type: %u for Team1Id: %u - Team2Id: %u ended. WinnerTeamId: %u. Winner rating: +%d, Loser rating: %d", m_ArenaType, m_ArenaTeamIds[TEAM_ALLIANCE], m_ArenaTeamIds[TEAM_HORDE], winnerArenaTeam->GetId(), winnerChange, loserChange);
                  if (sWorld->getBoolConfig(CONFIG_ARENA_LOG_EXTENDED_INFO))
                      for (Battleground::BattlegroundScoreMap::const_iterator itr = GetPlayerScoresBegin(); itr != GetPlayerScoresEnd(); ++itr)
-@@ -1390,6 +1429,14 @@ void Battleground::UpdatePlayerScore(Player* Source, uint32 type, uint32 value,
+                         if (Player* player = ObjectAccessor::FindPlayer(itr->first))
+@@ -1380,6 +1419,14 @@ void Battleground::UpdatePlayerScore(Player* Source, uint32 type, uint32 value,
          case SCORE_HEALING_DONE:                            // Healing Done
              itr->second->HealingDone += value;
              break;
@@ -90,13 +92,13 @@ index 264c2c3..088e502 100644
 +            break;
 +        /** World of Warcraft Armory **/
          default:
-             sLog->outError(LOG_FILTER_BATTLEGROUND, "Battleground::UpdatePlayerScore: unknown score type (%u) for BG (map: %u, instance id: %u)!",
+             TC_LOG_ERROR("bg.battleground", "Battleground::UpdatePlayerScore: unknown score type (%u) for BG (map: %u, instance id: %u)!",
                  type, m_MapId, m_InstanceID);
 diff --git a/src/server/game/Battlegrounds/Battleground.h b/src/server/game/Battlegrounds/Battleground.h
-index 8aba0ae..1b29cb3 100644
+index a866f09..d6a8027 100644
 --- a/src/server/game/Battlegrounds/Battleground.h
 +++ b/src/server/game/Battlegrounds/Battleground.h
-@@ -193,7 +193,11 @@ enum ScoreType
+@@ -194,7 +194,11 @@ enum ScoreType
      SCORE_SECONDARY_OBJECTIVES  = 17,
      //SOTA
      SCORE_DESTROYED_DEMOLISHER  = 18,
@@ -109,7 +111,7 @@ index 8aba0ae..1b29cb3 100644
  };
  
  enum ArenaType
-@@ -250,6 +254,10 @@ struct BattlegroundScore
+@@ -251,6 +255,10 @@ struct BattlegroundScore
      uint32 BonusHonor;
      uint32 DamageDone;
      uint32 HealingDone;
@@ -121,7 +123,7 @@ index 8aba0ae..1b29cb3 100644
  
  enum BGHonorMode
 diff --git a/src/server/game/Entities/Item/Item.cpp b/src/server/game/Entities/Item/Item.cpp
-index 5dd7260..a028dcd 100644
+index ee389ed..8792a77 100644
 --- a/src/server/game/Entities/Item/Item.cpp
 +++ b/src/server/game/Entities/Item/Item.cpp
 @@ -278,6 +278,13 @@ bool Item::Create(uint32 guidlow, uint32 itemid, Player const* owner)
@@ -139,13 +141,14 @@ index 5dd7260..a028dcd 100644
  }
  
 diff --git a/src/server/game/Entities/Player/Player.cpp b/src/server/game/Entities/Player/Player.cpp
-index c7c88ae..c8df361 100644
+index 09a0d03..125955d 100644
 --- a/src/server/game/Entities/Player/Player.cpp
 +++ b/src/server/game/Entities/Player/Player.cpp
-@@ -4954,6 +4954,14 @@ void Player::DeleteFromDB(uint64 playerguid, uint32 accountId, bool updateRealmC
+@@ -4982,6 +4982,14 @@ void Player::DeleteFromDB(uint64 playerguid, uint32 accountId, bool updateRealmC
+             stmt = CharacterDatabase.GetPreparedStatement(CHAR_DEL_CHAR_SKILLS);
              stmt->setUInt32(0, guid);
              trans->Append(stmt);
- 
++			
 +            stmt = CharacterDatabase.GetPreparedStatement(CHAR_DEL_ARMORY_STATS);
 +            stmt->setUInt32(0, guid);
 +            trans->Append(stmt);
@@ -153,24 +156,26 @@ index c7c88ae..c8df361 100644
 +            stmt = CharacterDatabase.GetPreparedStatement(CHAR_DEL_FEED_LOG);
 +            stmt->setUInt32(0, guid);
 +            trans->Append(stmt);
-+
+ 
              CharacterDatabase.CommitTransaction(trans);
              break;
-         }
-@@ -16783,6 +16791,9 @@ bool Player::LoadFromDB(uint32 guid, SQLQueryHolder *holder)
+@@ -17150,7 +17158,10 @@ bool Player::LoadFromDB(uint32 guid, SQLQueryHolder *holder)
+         CharacterDatabase.Execute(stmt);
          return false;
      }
- 
-+    // Cleanup old Wowarmory feeds
-+    InitWowarmoryFeeds();
-+
+-
++	
++	// Cleanup old Wowarmory feeds
++	InitWowarmoryFeeds();
++	
      // overwrite possible wrong/corrupted guid
      SetUInt64Value(OBJECT_FIELD_GUID, MAKE_NEW_GUID(guid, 0, HIGHGUID_PLAYER));
  
-@@ -18963,6 +18974,35 @@ void Player::SaveToDB(bool create /*=false*/)
+@@ -19388,6 +19399,35 @@ void Player::SaveToDB(bool create /*=false*/)
+         _SaveStats(trans);
  
      CharacterDatabase.CommitTransaction(trans);
- 
++	
 +    /* World of Warcraft Armory */
 +    // Place this code AFTER CharacterDatabase.CommitTransaction(); to avoid some character saving errors.
 +    // Wowarmory feeds
@@ -199,11 +204,10 @@ index c7c88ae..c8df361 100644
 +    ps << "', " << uint64(t) << ");";
 +    CharacterDatabase.PExecute(ps.str().c_str());
 +    /* World of Warcraft Armory */
-+
+ 
      // save pet (hunter pet level and experience and all type pets health/mana).
      if (Pet* pet = GetPet())
-         pet->SavePetToDB(PET_SAVE_AS_CURRENT);
-@@ -25858,3 +25898,44 @@ Pet* Player::SummonPet(uint32 entry, float x, float y, float z, float ang, PetTy
+@@ -26677,3 +26717,45 @@ Pet* Player::SummonPet(uint32 entry, float x, float y, float z, float ang, PetTy
  
      return pet;
  }
@@ -223,17 +227,18 @@ index c7c88ae..c8df361 100644
 +    */
 +    if (GetGUIDLow() == 0)
 +    {
-+        sLog->outError(LOG_FILTER_GENERAL, "[Wowarmory]: player is not initialized, unable to create log entry!");
++        
++        TC_LOG_ERROR("misc", "[Wowarmory]: player is not initialized, unable to create log entry!");
 +        return;
 +    }
 +    if (type <= 0 || type > 3)
 +    {
-+        sLog->outError(LOG_FILTER_GENERAL, "[Wowarmory]: unknown feed type: %d, ignore.", type);
++        TC_LOG_ERROR("misc", "[Wowarmory]: unknown feed type: %d, ignore.", type);
 +        return;
 +    }
 +    if (data == 0)
 +    {
-+        sLog->outError(LOG_FILTER_GENERAL, "[Wowarmory]: empty data (GUID: %u), ignore.", GetGUIDLow());
++        TC_LOG_ERROR("misc", "[Wowarmory]: empty data (GUID: %u), ignore.", GetGUIDLow());
 +        return;
 +    }
 +    WowarmoryFeedEntry feed;
@@ -245,14 +250,14 @@ index c7c88ae..c8df361 100644
 +    feed.item_quality = item_quality;
 +    feed.counter = 0;
 +    feed.date = time(NULL);
-+    sLog->outDebug(LOG_FILTER_GENERAL, "[Wowarmory]: create wowarmory feed (GUID: %u, type: %d, data: %u).", feed.guid, feed.type, feed.data);
++    TC_LOG_DEBUG("misc", "[Wowarmory]: create wowarmory feed (GUID: %u, type: %d, data: %u).", feed.guid, feed.type, feed.data);
 +    m_wowarmory_feeds.push_back(feed);
 +}
 diff --git a/src/server/game/Entities/Player/Player.h b/src/server/game/Entities/Player/Player.h
-index 362b6ac..10fd36b 100644
+index 2eb740f..aa03589 100644
 --- a/src/server/game/Entities/Player/Player.h
 +++ b/src/server/game/Entities/Player/Player.h
-@@ -1057,6 +1057,22 @@ private:
+@@ -1059,6 +1059,22 @@ private:
      bool _isPvP;
  };
  
@@ -275,7 +280,7 @@ index 362b6ac..10fd36b 100644
  class Player : public Unit, public GridObject<Player>
  {
      friend class WorldSession;
-@@ -2372,6 +2388,11 @@ class Player : public Unit, public GridObject<Player>
+@@ -2165,6 +2181,11 @@ class Player : public Unit, public GridObject<Player>
          void SendCinematicStart(uint32 CinematicSequenceId);
          void SendMovieStart(uint32 MovieId);
  
@@ -287,7 +292,7 @@ index 362b6ac..10fd36b 100644
          /*********************************************************/
          /***                 INSTANCE SYSTEM                   ***/
          /*********************************************************/
-@@ -2870,6 +2891,9 @@ class Player : public Unit, public GridObject<Player>
+@@ -2620,6 +2641,9 @@ class Player : public Unit, public GridObject<Player>
          uint32 m_timeSyncClient;
          uint32 m_timeSyncServer;
  
@@ -298,74 +303,86 @@ index 362b6ac..10fd36b 100644
          uint32 _pendingBindId;
          uint32 _pendingBindTimer;
 diff --git a/src/server/game/Entities/Unit/Unit.cpp b/src/server/game/Entities/Unit/Unit.cpp
-index fa7ef51..ed8e845 100644
+index 52565a2..b825f09 100644
 --- a/src/server/game/Entities/Unit/Unit.cpp
 +++ b/src/server/game/Entities/Unit/Unit.cpp
-@@ -685,8 +685,16 @@ uint32 Unit::DealDamage(Unit* victim, uint32 damage, CleanDamage const* cleanDam
+@@ -708,9 +708,16 @@ uint32 Unit::DealDamage(Unit* victim, uint32 damage, CleanDamage const* cleanDam
  
          // in bg, count dmg if victim is also a player
          if (victim->GetTypeId() == TYPEID_PLAYER)
+-            if (Battleground* bg = killer->GetBattleground())
+-                bg->UpdatePlayerScore(killer, SCORE_DAMAGE_DONE, damage);
+-
 +        {
-             if (Battleground* bg = killer->GetBattleground())
++		    if (Battleground* bg = killer->GetBattleground())
 +            {
-                 bg->UpdatePlayerScore(killer, SCORE_DAMAGE_DONE, damage);
++			    bg->UpdatePlayerScore(killer, SCORE_DAMAGE_DONE, damage);
 +                /** World of Warcraft Armory **/
 +                if (Battleground *bgV = ((Player*)victim)->GetBattleground())
 +                    bgV->UpdatePlayerScore(((Player*)victim), SCORE_DAMAGE_TAKEN, damage);
 +                /** World of Warcraft Armory **/
 +            }
 +        }
- 
          killer->UpdateAchievementCriteria(ACHIEVEMENT_CRITERIA_TYPE_DAMAGE_DONE, damage, 0, victim);
          killer->UpdateAchievementCriteria(ACHIEVEMENT_CRITERIA_TYPE_HIGHEST_HIT_DEALT, damage);
-@@ -9490,6 +9498,10 @@ int32 Unit::DealHeal(Unit* victim, uint32 addhealth)
+     }
+@@ -9604,7 +9611,11 @@ int32 Unit::DealHeal(Unit* victim, uint32 addhealth)
      {
          player->UpdateAchievementCriteria(ACHIEVEMENT_CRITERIA_TYPE_TOTAL_HEALING_RECEIVED, gain);
          player->UpdateAchievementCriteria(ACHIEVEMENT_CRITERIA_TYPE_HIGHEST_HEALING_RECEIVED, addhealth);
+-    }
 +        /** World of Warcraft Armory **/
 +        if (Battleground *bgV = victim->ToPlayer()->GetBattleground())
 +            bgV->UpdatePlayerScore((Player*)victim, SCORE_HEALING_TAKEN, gain);
 +        /** World of Warcraft Armory **/
-     }
++	}
  
      return gain;
-@@ -15143,7 +15155,10 @@ void Unit::Kill(Unit* victim, bool durabilityLoss)
+ }
+@@ -15339,8 +15350,11 @@ void Unit::Kill(Unit* victim, bool durabilityLoss)
                  if (instanceMap->IsRaidOrHeroicDungeon())
                  {
                      if (creature->GetCreatureTemplate()->flags_extra & CREATURE_FLAG_EXTRA_INSTANCE_BIND)
+-                        ((InstanceMap*)instanceMap)->PermBindAllPlayers(creditedPlayer);
+-                }
 +                    {
-                         ((InstanceMap*)instanceMap)->PermBindAllPlayers(creditedPlayer);
-+                        creditedPlayer->CreateWowarmoryFeed(3, creature->GetCreatureTemplate()->Entry, 0, 0);
-+                    }
-                 }
++					    ((InstanceMap*)instanceMap)->PermBindAllPlayers(creditedPlayer);
++						creditedPlayer->CreateWowarmoryFeed(3, creature->GetCreatureTemplate()->Entry, 0, 0);
++					}
++				}
                  else
                  {
+                     // the reset time is set but not added to the scheduler
 diff --git a/src/server/shared/Database/Implementation/CharacterDatabase.cpp b/src/server/shared/Database/Implementation/CharacterDatabase.cpp
-index f4da15a..aaa57f2 100644
+index aa7c2e9..908a164 100644
 --- a/src/server/shared/Database/Implementation/CharacterDatabase.cpp
 +++ b/src/server/shared/Database/Implementation/CharacterDatabase.cpp
-@@ -503,6 +503,8 @@ void CharacterDatabaseConnection::DoPrepareStatements()
+@@ -518,7 +518,9 @@ void CharacterDatabaseConnection::DoPrepareStatements()
      PrepareStatement(CHAR_DEL_CHAR_QUESTSTATUS_DAILY, "DELETE FROM character_queststatus_daily WHERE guid = ?", CONNECTION_ASYNC);
      PrepareStatement(CHAR_DEL_CHAR_TALENT, "DELETE FROM character_talent WHERE guid = ?", CONNECTION_ASYNC);
      PrepareStatement(CHAR_DEL_CHAR_SKILLS, "DELETE FROM character_skills WHERE guid = ?", CONNECTION_ASYNC);
+-    PrepareStatement(CHAR_UDP_CHAR_HONOR_POINTS, "UPDATE characters SET totalHonorPoints = ? WHERE guid = ?", CONNECTION_ASYNC);
 +    PrepareStatement(CHAR_DEL_ARMORY_STATS, "DELETE FROM armory_character_stats WHERE guid = ?", CONNECTION_ASYNC);
 +    PrepareStatement(CHAR_DEL_FEED_LOG, "DELETE FROM character_feed_log WHERE guid = ?", CONNECTION_ASYNC);
-     PrepareStatement(CHAR_UDP_CHAR_HONOR_POINTS, "UPDATE characters SET totalHonorPoints = ? WHERE guid = ?", CONNECTION_ASYNC);
++	PrepareStatement(CHAR_UDP_CHAR_HONOR_POINTS, "UPDATE characters SET totalHonorPoints = ? WHERE guid = ?", CONNECTION_ASYNC);
      PrepareStatement(CHAR_UDP_CHAR_ARENA_POINTS, "UPDATE characters SET arenaPoints = ? WHERE guid = ?", CONNECTION_ASYNC);
      PrepareStatement(CHAR_UDP_CHAR_MONEY, "UPDATE characters SET money = ? WHERE guid = ?", CONNECTION_ASYNC);
+     PrepareStatement(CHAR_INS_CHAR_ACTION, "INSERT INTO character_action (guid, spec, button, action, type) VALUES (?, ?, ?, ?, ?)", CONNECTION_ASYNC);
 diff --git a/src/server/shared/Database/Implementation/CharacterDatabase.h b/src/server/shared/Database/Implementation/CharacterDatabase.h
-index 4c5f5d2..38706c1 100644
+index 6768e4a..a7ef190 100644
 --- a/src/server/shared/Database/Implementation/CharacterDatabase.h
 +++ b/src/server/shared/Database/Implementation/CharacterDatabase.h
-@@ -443,6 +443,8 @@ enum CharacterDatabaseStatements
+@@ -454,7 +454,9 @@ enum CharacterDatabaseStatements
      CHAR_DEL_CHAR_QUESTSTATUS_DAILY,
      CHAR_DEL_CHAR_TALENT,
      CHAR_DEL_CHAR_SKILLS,
+-    CHAR_UDP_CHAR_HONOR_POINTS,
 +    CHAR_DEL_ARMORY_STATS,
-+    CHAR_DEL_FEED_LOG,
-     CHAR_UDP_CHAR_HONOR_POINTS,
++	CHAR_DEL_FEED_LOG,
++	CHAR_UDP_CHAR_HONOR_POINTS,
      CHAR_UDP_CHAR_ARENA_POINTS,
      CHAR_UDP_CHAR_MONEY,
+     CHAR_INS_CHAR_ACTION,
 -- 
-1.8.1.msysgit.1
+1.8.5.3
 
