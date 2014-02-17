@@ -142,6 +142,18 @@ foreach($guild_bags as $bag) {
     $xml->XMLWriter()->endElement(); //bag
 }
 $xml->XMLWriter()->endElement();    //bags
+$xml->XMLWriter()->startElement('banklogs');
+$bank_logs = $guilds->BuildGuildBankLogList();
+if(is_array($bank_logs)) {
+    foreach($bank_logs as $banklog) {
+        $xml->XMLWriter()->startElement('banklog');
+        foreach($banklog as $log_key => $log_value) {
+            $xml->XMLWriter()->writeAttribute($log_key, $log_value);
+        }
+        $xml->XMLWriter()->endElement(); //banklog
+    }
+}
+$xml->XMLWriter()->endElement();   	//banklogs 
 $xml->XMLWriter()->endElement();   //guildBank
 $xml->XMLWriter()->endElement();  //guildInfo
 $xml->XMLWriter()->endElement(); //page

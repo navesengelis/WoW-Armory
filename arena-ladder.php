@@ -93,13 +93,29 @@ if(isset($_GET['sf'])) {
                 $sort = '`arena_team`.`name`';
             }
             elseif($_GET['sf'] == 'sgw') {
-                $sort = '`arena_team`.`seasonWins`';
+                switch(Armory::$currentRealmInfo['type']) {
+                    default:
+                    case SERVER_MANGOS:
+                        $sort = '`arena_team_stats`.`wins2`';
+                        break;
+                    case SERVER_TRINITY:
+                        $sort = '`arena_team`.`weekWins`';
+                        break;
+                }
             }
             elseif($_GET['sf'] == 'sgl') {
                 $sort = 'lose'; // Unique sorting
             }
             else {
-                $sort = '`arena_team`.`' . $_GET['sf'] .'`';
+                switch(Armory::$currentRealmInfo['type']) {
+                    default:
+                    case SERVER_MANGOS:
+                        $sort = '`arena_team_stats`.`' . $_GET['sf'] .'`';
+                        break;
+                    case SERVER_TRINITY:
+                        $sort = '`arena_team`.`' . $_GET['sf'] .'`';
+                        break;
+                }
             }
             if(!isset($_GET['sd'])) {
                 $type = 'ASC';

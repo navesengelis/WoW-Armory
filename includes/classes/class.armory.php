@@ -145,9 +145,9 @@ Class Armory
                 self::$_loc = 3;
                 break;
             case 'zh_cn':
-            	self::$_loc = 4;
-            	break;
-            case 'es_es':
+				self::$_loc = 4;
+				break;
+			case 'es_es':
                 self::$_loc = 6;
                 break;
             case 'es_mx':
@@ -179,9 +179,9 @@ Class Armory
                 return 'es_es'; //es_mx?
                 break;
             case 'zh':
-            	return 'zh_cn';
-            	break;
-            case 'fr':
+				return 'zh_cn';
+				break;
+			case 'fr':
                 return 'fr_fr';
                 break;
             case 'ru':

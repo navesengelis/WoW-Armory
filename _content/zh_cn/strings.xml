@@ -713,7 +713,7 @@
 	</region>
 	<common>
 		<str id="the-wow-armory">魔兽世界英雄榜</str>
-		<str id="meta-description">魔兽世界英雄榜是一个巨大的搜索魔兽世界的信息数据库 - 直接从真实服务器上搜索。这是关于人物，竞技场队伍，公会，物品，声望奖励的最全面和最新的魔兽世界数据库。</str>
+		<str id="meta-description">魔兽世界英雄榜是一个巨大的搜索魔兽世界的信息数据库 - 直接从真实服务器上搜索。这是关于角色，竞技场队伍，公会，物品，声望奖励的最全面和最新的魔兽世界数据库。</str>
 		<str id="the-armory">英雄榜</str>
 		<str id="search-armory">搜索英雄榜</str>
 		<str id="error.selectCategory">请选择一个类别</str>
@@ -760,7 +760,7 @@
 
 		<str id="menu.armory">英雄榜</str>
 		<str id="menu.arenateams">竞技场队伍</str>
-		<str id="menu.characters">人物</str>
+		<str id="menu.characters">角色</str>
 		<str id="menu.guilds">公会</str>
 		<str id="menu.items">物品</str>
 		<str id="menu.arena">竞技场</str>
@@ -785,8 +785,8 @@
 		<str id="labels.site">魔兽世界</str>
 
 		<str id="pin.searchforandpin">To pin a profile, search for and find a character</str>
-		<str id="pin.enabledual">Dual Item Tooltips</str>
-		<str id="pin.dualdesc">With dual item tooltips enabled, mousing over an item will display a second tooltip of the item in your primary character\'s corresponding inventory slot.</str>
+		<str id="pin.enabledual">比较装备</str>
+		<str id="pin.dualdesc">启用\'装备比较\'功能后，当鼠标悬停在某件装备时将同时显示您主要角色相应位置上的装备。</str>
 		<str id="pin.unpin">unpin this character</str>
 
 		<str id="labels.privacy">隐私政策</str>
@@ -796,24 +796,24 @@
 		<str id="searchBox.search-the-armory">搜索英雄榜</str>
 
 		<str id="guild-search.label.enter-guild-name">请输入公会名字</str>
-		<str id="character-search.label.enter-character-name">请输入人物名字</str>
+		<str id="character-search.label.enter-character-name">请输入角色名字</str>
 		<str id="character-search.label.enter-team-name">请输入队伍名字</str>
 
 		<str id="armory.none">无</str>
-		<str id="user.select.character">选择人物</str>
-		<str id="user.bookmark.character">收藏人物</str>
-		<str id="user.bookmark.logintobookmark">Log in to bookmark this character</str>
+		<str id="user.select.character">选择角色</str>
+		<str id="user.bookmark.character">收藏角色</str>
+		<str id="user.bookmark.logintobookmark">登陆以收藏该角色</str>
 		<str id="user.bookmark.tooltip">You can bookmark up to 30 character profiles.</str>
 		<str id="user.bookmark.maxedtooltip">You can bookmark up to 30 character profiles. To access your bookmarks, use the options menu located on the upper right of the Armory window.</str>
 		<str id="user.bookmark.previous">更多</str>
 		<str id="user.bookmark.forward">返回</str>
-		<str id="user.change.character">主要人物</str>
+		<str id="user.change.character">主要角色</str>
 		<str id="user.change.bookmarks">主要收藏</str>
-		<str id="user.no.character">没有人物被选中</str>
-		<str id="user.manage.chars">管理人物</str>
+		<str id="user.no.character">没有角色被选中</str>
+		<str id="user.manage.chars">管理角色</str>
 		<str id="user.manage.settings">设置</str>
-		<str id="user.manage.more">其他人物</str>
-		<str id="user.manage.switch">选为默认人物</str>
+		<str id="user.manage.more">其他角色</str>
+		<str id="user.manage.switch">选为默认角色</str>
 		<str id="loading">载入...</str>
 		<str id="saving">保存...</str>
 		<str id="pose_saved">姿势已保存!</str>
@@ -824,41 +824,41 @@
 		<str id="charLevelStr">等级 <param1/> <param2/>-<param3/>
     </str>
     <!-- i.e. Level 80(param1) Dranei(param2) Paladin(param3)-->
-		<str id="character-name">人物名称</str>
+		<str id="character-name">角色名称</str>
 		<str id="character.health">生命值:</str>
 		<str id="character.rage">怒气值:</str>
 		<str id="character.energy">能量点:</str>
 		<str id="character.mana">法力值:</str>
 		<str id="character.runicpower">符文值:</str>
-		<str id="character-profile">人物信息</str>
-		<str id="character-profiles">人物信息</str>
+		<str id="character-profile">角色信息</str>
+		<str id="character-profiles">角色信息</str>
 		<str id="character-level">等级</str>
 		<str id="character-level-sheet">等级</str>
-		<str id="noteten">10级以下的人物不显示</str>
-		<str id="character.tip.primary">这个人物将作为您的主要人物，人物资料链接将会出现在英雄榜右上方。</str>
-		<str id="character.tip.secondary">这个人物将出现现主要人物下的收藏栏里。点击以设置成为您的主要人物。</str>
+		<str id="noteten">10级以下的角色不显示</str>
+		<str id="character.tip.primary">这个角色将作为您的主要角色，角色资料链接将会出现在英雄榜右上方。</str>
+		<str id="character.tip.secondary">这个角色将出现现主要角色下的收藏栏里。点击以设置成为您的主要角色。</str>
 	</character>
 	<character-select>
-		<str id="makePrimary">选作主要人物</str>
+		<str id="makePrimary">选作主要角色</str>
 		<str id="removeFromEasyAccess">从菜单中删除我的角色</str>
-		<str id="selectedCharacters">我的人物</str>
+		<str id="selectedCharacters">我的角色</str>
 		<str id="inactiveLicense">该许可证不是活跃的</str>
-		<str id="availableSlot">可用的人物档案</str>
+		<str id="availableSlot">可用的角色档案</str>
 		<str id="easyAccessLimit">The quick access character limit has been reached. Remove a character to add new ones.</str>
-		<str id="addToEasyAccess">Add to My Characters menu</str>
-		<str id="noCharsAvailable">This account has no characters available for selection. This may be because all the characters on this account are already selected.</str>
-		<str id="charSelection">人物选择</str>
+		<str id="addToEasyAccess">添加至我的角色</str>
+		<str id="noCharsAvailable">该账号没有其他角色可供选择，这可能是因为该账号所有的角色已被选中。</str>
+		<str id="charSelection">角色选择</str>
 		<str>
-      <h1>人物选择</h1>
+      <h1>角色选择</h1>
 		<p>This interface allows you to select up to <strong>three</strong> characters on this account to bookmark for easy access. If you have more than three eligible characters, you must first unselect a character before selecting a different one.</p>
 		<p>The characters you select will also receive alerts when any of them are invited to new calendar events.</p>
     </str>
-        <str id="primaryChar">主要人物</str>
+        <str id="primaryChar">主要角色</str>
 	</character-select>
 	<custom-rss>
-		<str id="activity">人物活动</str>
+		<str id="activity">活动</str>
 		<str id="facebook_link">前往 Facebook 英雄榜应用程序</str>
-		<str id="activity_desc">显示该人物的最近50个活动</str>
+		<str id="activity_desc">显示该角色的最近50个活动</str>
 		<str id="feedcustom">Character Feed Customization</str>
 		<str id="backtoprofile">« Back to default_chr's Profile</str>
 		<str id="feedoptions">Character Feed Options</str>	
@@ -915,11 +915,11 @@
 		<str id="guild-profiles">公会咨询</str>
 		<str id="members">成员</str>
 		<str id="totalmembers">所有成员</str>
-		<str id="member">成员</str>
+		<str id="member">个成员</str>
 		<str id="guildrank">公会阶级</str>
 		<str id="guild-rank">级别</str>
 		<str id="guild-leader">会长</str>
-		<str id="noteten">人物等级在10以下将不会显示</str>
+		<str id="noteten">在10级以下的角色将不会显示</str>
 		<str id="toomany">仅显示公会高级成员</str>
 		<str id="searchroster">搜索公会名单</str>
 	</guild>
@@ -988,8 +988,8 @@
 		<str id="through"> through </str>
 		<str id="current">current</str>
 		<str id="resultsPerPage">每页显示记录数</str>
-		<str id="to"> to </str>
-		<str id="time">Time</str>
+		<str id="to"> 至 </str>
+		<str id="time">时间</str>
 		<str id="findMatch">在图表中显示该场比赛</str>
 		<str id="goToMatchReport">进入比赛报告页面</str>
 		<str id="deletedTeam">该队伍已经解散</str>
@@ -1109,11 +1109,11 @@
 	</arenaReport>
 
     <unsorted>
-		<str id="armory.labels.character-name">人物名字</str>
+		<str id="armory.labels.character-name">角色名字</str>
 		<str id="armory.labels.team-profiles">队伍信息</str>
 		<str id="armory.labels.guild">公会</str>
 		<str id="armory.labels.guilds">公会</str>
-		<str id="armory.labels.characters">人物</str>
+		<str id="armory.labels.characters">角色</str>
 		<str id="armory.labels.guild-profile">公会咨询</str>
 		<str id="armory.labels.guild-profiles">公会信息</str>
 		<str id="armory.labels.realm">服务器</str>
@@ -1280,8 +1280,8 @@
 		<str id="armory.labels.5v5arena">5v5 竞技场</str>
 
 <!--tabs-->
-		<str id="armory.tabs.characterSheet">人物</str>
-		<str id="armory.tabs.profile">人物档案</str>
+		<str id="armory.tabs.characterSheet">角色</str>
+		<str id="armory.tabs.profile">角色档案</str>
 		<str id="armory.tabs.talents_and_glyphs">天赋及雕纹</str>
 		<str id="armory.tabs.feed">最新活动</str>
 		<str id="armory.tabs.reputation">声望</str>
@@ -1291,7 +1291,7 @@
 		<str id="armory.tabs.arenateams">竞技场队伍</str>
 		<str id="armory.tabs.achievements">成就</str>
 		<str id="armory.tabs.statistics">统计数据</str>
-		<str id="armory.tabs.characters">人物</str>
+		<str id="armory.tabs.characters">角色</str>
 		<str id="armory.tabs.guild">公会</str>
 		<str id="armory.tabs.guilds">公会</str>
 		<str id="armory.tabs.guildRoster">公会名单</str>
@@ -1433,8 +1433,8 @@
 		<str id="armory.team-info.team-rating">队伍等级</str>
 
 <!--character-search.xsl-->
-		<str id="armory.character-search.header.character-search">人物搜索</str>
-		<str id="armory.character-search.label.search-for-character">搜索人物档案</str>
+		<str id="armory.character-search.header.character-search">角色搜索</str>
+		<str id="armory.character-search.label.search-for-character">搜索角色档案</str>
 
 		<str id="armory.character-search.label.team-profile">队伍信息</str>
 		<str id="armory.team-search.team-search">队伍搜索</str>
@@ -1470,7 +1470,7 @@
 		<str id="armory.mini-search.label.maxlength.arena">12</str>
 
 <!--character-sheet-Base Stats-->
-		<str id="armory.character.refreshheader">无法获取人物数据</str>
+		<str id="armory.character.refreshheader">无法获取角色数据</str>
 
 		<str id="armory.character-sheet.ttip.loading">载入中...</str>
 
@@ -1509,7 +1509,7 @@
 		<str id="talents.spelltype.frost">
       <param1/> 冰霜符文</str>
 		<str id="notApplicable">不适用</str>
-		<str id="notApplicable.tooltip">这个人物没有双天赋专精。</str>
+		<str id="notApplicable.tooltip">这个角色没有双天赋专精。</str>
 		<str id="emptyGlyph">空</str>
 		<str id="activeSpecTxt">Aktiv</str>
 		<str id="unused">未使用</str>
@@ -1630,14 +1630,14 @@
 		<str id="armory.labels.horderewards">部落奖励</str>
 
 <!-- updates -->
-		<str id="armory.labels.updates">更新</str>
+		<str id="armory.labels.updates">动态更新</str>
 		<str id="armory.updates.learnmore">了解更多</str>
 
-		<str id="armory.updates.armoryupdates">英雄榜更新</str>
-		<str id="armory.updates.cache">** In order to see the latest additions to this page, you may need to clear your browser's cache. **</str>
+		<str id="armory.updates.armoryupdates">最近更新</str>
+		<str id="armory.updates.cache">** 为了看到最新增加的这个页面，你可能需要清除浏览器的缓存。 **</str>
 		<str id="armory.labels.close">关闭</str>
 		<str id="armory.labels.open">打开</str>
-		<str id="armory.labels.top">顶部</str>
+		<str id="armory.labels.top">回到顶部</str>
 
 		<str id="armory.search.relevance">相关</str>
 		<str id="armory.search.label.keywords">关键字: </str>
@@ -1647,7 +1647,7 @@
 		<str id="armory.search.normalSpace"> </str>
 		<str id="armory.search.label.noSearchResults">无搜索结果</str>
 		<str id="armory.search.label.noSearchResultsText">你的搜索无法进行，为了正确搜索，请确保:</str>
-		<str id="armory.search.label.search.categories">只能搜索英雄榜中已有的物品、阵营、人物、成就</str>
+		<str id="armory.search.label.search.categories">只能搜索英雄榜中已有的物品、阵营、角色、成就</str>
 		<str id="armory.search.label.search.name">只能搜索名字</str>
 		<str id="armory.search.label.search.return">返回英雄榜</str>
 	</unsorted>
@@ -1689,7 +1689,7 @@
 		<str id="armory.search.critRating">暴击等级</str>
 		<str id="armory.search.hitRating">命中等级</str>
 		<str id="armory.search.hasteRating">急速等级</str>
-		<str id="armory.search.ignoreArmor">无视护甲</str>
+		<str id="armory.search.ignoreArmor">护甲穿透</str>
 		<str id="armory.search.expertiseRating">熟练等级</str>
 
 		<str id="armory.search.spell">法术</str>
@@ -1698,7 +1698,7 @@
 		<str id="armory.search.spellPower">法术能量</str>
 		<str id="armory.search.spellCritRating">暴击等级</str>
 		<str id="armory.search.spellHitRating">命中等级</str>
-		<str id="armory.search.spellPenetration">穿透等级</str>
+		<str id="armory.search.spellPenetration">法术穿透</str>
 		<str id="armory.search.spellManaRegen">法力恢复</str>
 		<str id="armory.search.spellHasteRating">急速等级</str>
 		<str id="armory.search.spellDamageArcane">奥术伤害</str>
@@ -2294,7 +2294,7 @@
 		<str id="armory.character-reputation.group.ungrouped">查看列表</str>
 		<str id="armory.character-reputation.sort.faction">按名称排列</str>
 		<str id="armory.character-reputation.sort.reputation">按声望排列</str>
-		<str id="armory.character-reputation.noreputation">该人物还没获得任何阵营的声望。</str>
+		<str id="armory.character-reputation.noreputation">该角色还没获得任何阵营的声望。</str>
 	</factions>
 
 <!--item-tooltip.xsl-->
@@ -2681,8 +2681,8 @@
 
 		<role>
 			<str id="armory.item-search.tank">坦克</str>
-			<str id="armory.item-search.physicaldps">物理输出</str>
-			<str id="armory.item-search.casterdps">法系输出</str>
+			<str id="armory.item-search.physicaldps">物理DPS</str>
+			<str id="armory.item-search.casterdps">法系DPS</str>
 			<str id="armory.item-search.healer">治疗</str>
 		</role>
 	
@@ -2690,12 +2690,12 @@
 	<guildStats>
 		<str id="armory.guild-stats.minlvl">最低等级</str>
 		<str id="armory.guild-stats.maxlvl">最高等级</str>
-		<str id="armory.guild-stats.matching">符合搜索条件的人物</str>
-		<str id="armory.guild-stats.totalChars">公会总计人物</str>
+		<str id="armory.guild-stats.matching">符合搜索条件的角色</str>
+		<str id="armory.guild-stats.totalChars">公会总计角色</str>
 		<str id="armory.guild-stats.number">在等级不高于 </str>
-		<str id="armory.guild-stats.numberAfter"> 级的人物有</str>
+		<str id="armory.guild-stats.numberAfter"> 级的角色有</str>
 		<str id="armory.guild-stats.percentage">在等级不高于 </str>
-		<str id="armory.guild-stats.percentageAfter"> 级的人物占</str>
+		<str id="armory.guild-stats.percentageAfter"> 级的角色占</str>
 		<str id="armory.guild-stats.race.breakdown">按种族</str>
 		<str id="armory.guild-stats.class.breakdown">按职业</str>
 		<str id="armory.guild-stats.level.breakdown">按等级</str>
@@ -2848,7 +2848,7 @@
 		<str id="type">类别</str>
 		<str id="resetfilters">重置过滤器</str>
 		<str id="runfilters">开始搜索</str>
-		<str id="charnamec">人物名称: </str>
+		<str id="charnamec">角色名称: </str>
 		<str id="guildrankc">公会等级: </str>
 		<str id="origin">来源: </str>
 		<str id="ttype">交易类型: </str>
@@ -2875,27 +2875,27 @@
 		<str id="bankcontents">公会银行</str>
 		<str id="banklog">银行日志</str>
 		<str id="banklogresults">日志过滤器</str>
-		<str id="characterfilters">人物过滤器</str>
+		<str id="characterfilters">角色过滤器</str>
 		<str id="itemfilters">物品过滤器</str>
 		<str id="datefilters">日前过滤器</str>
 		<str id="transactionfilters">交易过滤器</str>
 		<str id="all">全部</str>
-		<str id="transaction.1">Deposit Item</str>
-		<str id="transaction.2">Withdraw Item</str>
-		<str id="transaction.3">Move Item</str>
-		<str id="transaction.4">Deposit Money</str>
-		<str id="transaction.5">Withdraw Money</str>
-		<str id="transaction.6">Repair</str>
-		<str id="transaction.7">Move Item</str>
-		<str id="transaction.8">Withdraw Money</str>
-		<str id="transaction.9">Guild Bank Tab Purchase</str>
-		<str id="deposititem">Deposit Item</str>
-		<str id="withdrawitem">Withdraw Item</str>
-		<str id="depositmoney">Deposit Money</str>
-		<str id="withdrawmoney">Withdraw Money</str>
-		<str id="buytab">Guild Bank Tab Purchase</str>
-		<str id="repair">Repair</str>
-		<str id="moveitem">Move Item</str>
+		<str id="transaction.1">存入物品</str>
+		<str id="transaction.2">取出物品</str>
+		<str id="transaction.3">移动</str>
+		<str id="transaction.4">存入</str>
+		<str id="transaction.5">提取</str>
+		<str id="transaction.6">修理</str>
+		<str id="transaction.7">移动</str>
+		<str id="transaction.8">提取</str>
+		<str id="transaction.9">购买公会仓库</str>
+		<str id="deposititem">存入物品</str>
+		<str id="withdrawitem">取出物品</str>
+		<str id="depositmoney">存入</str>
+		<str id="withdrawmoney">提取</str>
+		<str id="buytab">购买公会仓库</str>
+		<str id="repair">修理</str>
+		<str id="moveitem">移动</str>
 		<str id="banktabselect">bank tabs</str>
 		<str id="goldinbank">gold in bank</str>
 		<str id="contentsof">Contents of</str>
@@ -2904,8 +2904,8 @@
 		<str id="noaccess">Diese Gildenbank ist nicht verfügbar. Bitte stellt sicher, dass euer World of Warcraft-Account einen Charakter enthält, der Mitglied dieser Gilde ist, und dass euer Gildenrang euch Zugriff auf die Gildenbank erlaubt. Gildenbanken können wegen Inaktivität deaktiviert werden.</str>
 		<str id="guildmsgotd">公会今日信息:</str>
 		<str id="guildmsginfo">公会信息:</str>
-		<str id="showguildinfo">公会信息</str>
-		<str id="hideguildinfo">公会信息</str>
+		<str id="showguildinfo">显示公会信息</str>
+		<str id="hideguildinfo">隐藏公会信息</str>
 		<str id="name">名字:</str>
 		<str id="level">登记:</str>
 		<str id="race">种族:</str>
@@ -2965,8 +2965,8 @@
 		<str id="armory.login.forgotpassword.tooltip">您忘记了密码？&lt;br/&gt;点击这里找回密码。</str>
 		<str id="armory.login.welcome">欢迎</str>
 		<str id="armory.login.logged">您登陆为</str>
-		<str id="armory.login.mustlogin">登陆至英雄榜以在计算器中显示您主要人物的竞技场信息</str>
-		<str id="armory.login.nochars">此帐户没有人物角色</str>
+		<str id="armory.login.mustlogin">登陆至英雄榜以在计算器中显示您主要角色的竞技场信息</str>
+		<str id="armory.login.nochars">此帐户没有角色角色</str>
 		<str id="armory.login.loginbtn">登陆</str>
 		<str id="armory.login.login">登陆</str>
 		<str id="armory.login.cancel">取消</str>
@@ -2983,7 +2983,7 @@
 		<str id="armory.login.achievements">成就点</str>
 		<str id="armory.login.bookmark.remove">移除该收藏</str>
 		<str id="armory.login.bookmark.nobookmark">您还没有收藏</str>
-		<str id="armory.login.bookmark.nobookmark.desc">要收藏一个人物，搜索并点击收藏链接</str>
+		<str id="armory.login.bookmark.nobookmark.desc">要收藏一个角色，搜索并点击收藏链接</str>
 	</login>
 
 	<pvpSource>
@@ -3012,7 +3012,7 @@
 	</pvpSource>
 
     <characterSheet>
-		<str id="armory.character.refresh">由于长期未活动或者服务器连接失败，该人物角色无法获取</str>
+		<str id="armory.character.refresh">由于长期未活动或者服务器连接失败，该角色角色无法获取</str>
 		<str id="armory.character.talent-specialization">天赋</str>
 		<str id="armory.character.resistances">抗性:</str>
 		<str id="armory.character.professions-primary">商业技能</str>
@@ -3028,7 +3028,7 @@
 		<str id="armory.character-sheet.spell.display">法术</str>
 		<str id="armory.character-sheet.defenses.display">防御</str>
 
-		<str id="armory.character-sheet.prompt.levelTen">人物等级在10级以下的将不会显示</str>
+		<str id="armory.character-sheet.prompt.levelTen">在10级以下的角色将不会显示</str>
 		<str id="armory.character-sheet.currentLevel">当前等级</str>
 
 		<str id="armory.character-sheet.findupgrade">检索晋级物品</str>
@@ -3356,7 +3356,7 @@
 			<str id="eventUnlocksDescription">Your {0} instance unlocks at {1}.</str>
 			<str id="error">错误</str>
 			<str id="errorDescription">在日历中有些日程无法加载。\n\n请过几分钟再尝试一次。</str>
-			<str id="characterErrorDescription">出现在日历中的必需是最近活跃的人物角色，并且要求不低于10级。</str>
+			<str id="characterErrorDescription">出现在日历中的必需是最近活跃的角色角色，并且要求不低于10级。</str>
 		</dynamic>
 		<event-type>
 			<str>战场节日</str>
@@ -3468,13 +3468,13 @@
 		<str id="achv.solo">Solo</str>
 		<str id="achv.earned">获得</str>
 		<str id="achv.on">于</str>
-		<str id="compare.achievements">添加人物比较</str>
+		<str id="compare.achievements">添加角色比较</str>
 		<str id="compare.achievements.button">比较</str>
 				<str id="compare.max">You can compare up to <param1/> characters at one time. You must remove a character below before adding another.</str>
 		<str id="stats.latest">最近更新统计</str>
 		<str id="stats.latest.compare">
       <param1/>的最新更新统计</str>
-		<err id="notfound">人物 "<param1/>" 无法在服务器 "<param2/>上找到."</err>
+		<err id="notfound">角色 "<param1/>" 无法在服务器 "<param2/>上找到."</err>
 		<str id="totalcompleted">总计完成:</str>
 		<str id="solo">Solo</str>
 		<str id="date.format">{

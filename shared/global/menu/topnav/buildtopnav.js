@@ -94,16 +94,16 @@ break;
  
 case "zh_cn":
  	link1 = new Object();
-	link1.text = "魔兽世界官网"
-	link1.href = "http://www.wowchina.com/"
+	link1.text = "主页"
+	link1.href = "http://localhost/"
 
 	link2 = new Object();
 	link2.text = "英雄榜"
-	link2.href = "http://cn.wowarmory.com/"
+	link2.href = "http://localhost/Armory/"
 	
 	link3 = new Object();
 	link3.text = "官方论坛"
-	link3.href = "http://5151wow.gicp.net/bbs/"
+	link3.href = "http://bbs.wowchina.com/wow/forum_list.aspx?forum_id=1"
 	opt = false;
 break;
 

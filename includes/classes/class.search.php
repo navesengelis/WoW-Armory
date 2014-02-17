@@ -185,7 +185,7 @@ Class SearchMgr {
                 $_item_ids = Armory::$wDB->select("SELECT `entry` FROM `item_template` WHERE `name` LIKE '%s'", '%'.$this->searchQuery.'%');
             }
             else {
-                $_item_ids = Armory::$wDB->select("SELECT `entry` FROM `item_template` WHERE `name` LIKE '%s' OR `entry` IN (SELECT `entry` FROM `locales_item` WHERE `name_loc%d` LIKE '%s')", '%'.$this->searchQuery.'%', Armory::GetLoc(), '%' . $this->searchQuery.'%');
+                $_item_ids = Armory::$wDB->select("SELECT `entry` FROM `item_template` WHERE `name` LIKE '%s' OR `entry` IN (SELECT `entry` FROM `locales_item` WHERE `name_loc%d` LIKE '%s')", '%'.$this->searchQuery.'%', Armory::GetLoc(), '%%'.$this->searchQuery.'%%');
             }
             if(is_array($_item_ids)) {
                 $tmp_count_ids = count($_item_ids);
@@ -642,7 +642,7 @@ Class SearchMgr {
             foreach(Armory::$realmData as $realm_info) {
                 $count_results_currrent_realm = 0;
                 $db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
-                $characters_data[] = $db->select("SELECT `guid`, `level`, `account` FROM `characters` WHERE `name`='%s' AND `level` >= %d LIMIT 200", $search, Armory::$armoryconfig['minlevel']);
+                $characters_data[] = $db->select("SELECT `guid`, `level`, `account` FROM `characters` WHERE `name` LIKE '%s' AND `level` >= %d LIMIT 200", '%'.$search.'%', Armory::$armoryconfig['minlevel']);
             }
             for($ii = 0; $ii < $countRealmData; $ii++) {
                 $count_result_chars = count($characters_data[$ii]);
@@ -660,7 +660,7 @@ Class SearchMgr {
             if(!$db) {
                 continue;
             }
-            $current_realm = $db->select("SELECT `guid`, `name`, `class` AS `classId`, `gender` AS `genderId`, `race` AS `raceId`, `level`, `account` FROM `characters` WHERE `name` = '%s'", $search);
+            $current_realm = $db->select("SELECT `guid`, `name`, `class` AS `classId`, `gender` AS `genderId`, `race` AS `raceId`, `level`, `account` FROM `characters` WHERE `name` LIKE '%s'", '%'.$search.'%');
             if(!$current_realm) {
                 continue;
             }

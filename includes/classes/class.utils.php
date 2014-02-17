@@ -759,7 +759,7 @@ Class Utils {
                         'level' => 0,
                         'raceId' => $char['race'],
                         'realm' => Armory::$currentRealmInfo['name'],
-                        'name' => utf8_encode($char['charname']),
+                        'name' => $char['charname'],
                         'url' => sprintf('cn=%s&r=%s', urlencode($char['charname']), urlencode(Armory::$currentRealmInfo['name']))
                     );
                 }
@@ -778,7 +778,7 @@ Class Utils {
                     'level' => 0,
                     'raceId' => $achievement['race'],
                     'realm' => Armory::$currentRealmInfo['name'],
-                    'name' => utf8_encode($achievement['charname']),
+                    'name' => $achievement['charname'],
                     'url' => sprintf('cn=%s&r=%s', urlencode($achievement['charname']), urlencode(Armory::$currentRealmInfo['name']))
                 );
             }
@@ -1144,7 +1144,7 @@ Class Utils {
                 'дней', 'часов', 'мин', 'сек'
             )
         );
-        if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'zh_cn'|| Armory::GetLocale() == 'ru_ru') {
+        if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'zh_cn' || Armory::GetLocale() == 'ru_ru') {
             $preferLocale = $strings_array[Armory::GetLocale()];
         }
         else {
@@ -1472,7 +1472,7 @@ Class Utils {
                 'date' => time(),
                 'title_de_de' => null,
                 'title_zh_cn' => null,
-                'title_en_gb' => null,
+				'title_en_gb' => null,
                 'title_es_es' => null,
                 'title_fr_fr' => null,
                 'title_ru_ru' => null,
