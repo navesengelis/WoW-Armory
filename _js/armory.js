@@ -26,10 +26,10 @@ function initializeArmory(){
 	bindToolTips();
 
 	//ads are dead last so we don't wait for them
-	initializeAds();
+	//initializeAds();
 }
 
-function initializeAds()
+/*function initializeAds()
 {	//loadScript("http://ads1.msn.com/library/dap.js") 
 	//Does not callback when loaded, following commands error when loaded too soon
 
@@ -53,7 +53,7 @@ function initializeAds()
 
 	});
 
-}
+}*/
 
 
 //begin cookies section

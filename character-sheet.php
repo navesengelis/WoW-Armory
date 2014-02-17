@@ -181,7 +181,7 @@ if($talent_data && is_array($talent_data)) {
             'treeOne' => $talent_data['points'][$i][$characters->GetTalentTab(0)],
             'treeTwo' => $talent_data['points'][$i][$characters->GetTalentTab(1)],
             'treeThree' => $talent_data['points'][$i][$characters->GetTalentTab(2)]
-        );    
+        );
         if($activeSpec == $i) {
             $talent_spec[$i]['active'] = 1;
         }
@@ -397,6 +397,9 @@ foreach($gear_array as $gear) {
     if($item_info && is_array($item_info)) {
         $xml->XMLWriter()->startElement('item');
         foreach($item_info as $iteminfo_key => $iteminfo_value) {
+            if (is_array($iteminfo_value))
+                continue;
+
             $xml->XMLWriter()->writeAttribute($iteminfo_key, $iteminfo_value);
         }
         $xml->XMLWriter()->endElement(); //item

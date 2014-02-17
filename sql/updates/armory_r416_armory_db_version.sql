@@ -1,1 +1,0 @@
-UPDATE `armory_db_version` SET `version` = 'armory_r416';

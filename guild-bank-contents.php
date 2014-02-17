@@ -94,7 +94,7 @@ $guild_emblem = array(
 );
 $guild_header = array(
     'battleGroup'  => Armory::$armoryconfig['defaultBGName'],
-    'count'        => $guilds->CountGuildMembers(),
+    'members'        => $guilds->CountGuildMembers(),
     'faction'      => $guilds->GetGuildFaction(),
     'name'         => $guilds->GetGuildName(),
     'nameUrl'      => sprintf('r=%s&gn=%s', urlencode(Armory::$currentRealmInfo['name']), urlencode($guilds->GetGuildName())),

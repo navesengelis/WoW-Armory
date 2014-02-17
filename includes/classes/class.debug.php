@@ -23,13 +23,13 @@
  **/
 
 Class ArmoryDebug {
-    
+
     /**
      * Log config
      **/
     private $config;
     private $file = '';
-    
+
     /**
      * Initializes debugger
      **/
@@ -43,7 +43,7 @@ Class ArmoryDebug {
             $this->file = $file;
         }
     }
-    
+
     public function writeLog($logtext) {
         if($this->config['useDebug'] == false || $this->config['logLevel'] < 2) {
             return;
@@ -55,7 +55,7 @@ Class ArmoryDebug {
         self::__writeFile($debug_log);
         return;
     }
-    
+
     public function writeError($errorText) {
         if($this->config['useDebug'] == false) {
             return;
@@ -67,7 +67,7 @@ Class ArmoryDebug {
         self::__writeFile($error_log);
         return;
     }
-    
+
     public function writeSql($sqlText) {
         if($this->config['useDebug'] == false || $this->config['logLevel'] < 3) {
             return;
@@ -79,7 +79,7 @@ Class ArmoryDebug {
         self::__writeFile($error_log);
         return;
     }
-    
+
     private function AddStyle($type) {
         if($this->config['useDebug'] == false) {
             return;
@@ -97,7 +97,7 @@ Class ArmoryDebug {
         }
         return $log;
     }
-    
+
     private function __writeFile($data) {
         @file_put_contents($this->file, $data, FILE_APPEND);
     }

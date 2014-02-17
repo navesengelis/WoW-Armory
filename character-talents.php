@@ -114,7 +114,7 @@ $points = array();
 $talent_info = array();
 $current_tree = array();
 $glyphs = $characters->GetCharacterGlyphs();
-for($i = 0; $i < 2; $i++ ) {
+for($i = 0; $i < 2; $i++) {
     $current_tree[$i] = $utils->GetMaxArray($talent_points['points'][$i]);
     $talent_info[$i] = array(
         'treeOne'   => $talent_points['points'][$i][$characters->GetTalentTab(0)],
@@ -124,7 +124,7 @@ for($i = 0; $i < 2; $i++ ) {
     );
 }
 $xml->XMLWriter()->startElement('talents');
-for($i = 0; $i < 2;  $i++) {
+for($i = 0; $i < 2; $i++) {
     $xml->XMLWriter()->startElement('talentGroup');
     $xml->XMLWriter()->writeAttribute('active', ($i == $characters->GetActiveSpec()) ? 1 : 0);
     $xml->XMLWriter()->writeAttribute('group', $i+1);
@@ -142,10 +142,10 @@ for($i = 0; $i < 2;  $i++) {
             foreach($_glyph as $glyph_key => $glyph_value) {
                 $xml->XMLWriter()->writeAttribute($glyph_key, $glyph_value);
             }
-            $xml->XMLWriter()->endElement(); //glyphs    
+            $xml->XMLWriter()->endElement(); //glyphs
         }
     }
-    $xml->XMLWriter()->endElement();  //glyphs    
+    $xml->XMLWriter()->endElement();  //glyphs
     $xml->XMLWriter()->endElement(); //talentGroup
 }
 $xml->XMLWriter()->endElement();   //talents

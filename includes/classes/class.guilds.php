@@ -27,28 +27,28 @@ if(!defined('__ARMORY__')) {
 }
 
 Class Guilds {
-    
+
     /**
      * Player guid
      * @category Guilds class
      * @access   public
      **/
      public $guid = 0;
-     
+
      /**
       * Guild ID
       * @category Guilds class
       * @access   public
       **/
      private $guildId = 0;
-     
+
      /**
       * Guild name
       * @category Guilds class
       * @access   public
       **/
      private $guildName = null;
-     
+
      /**
       * Guild tabard style
       * @category Guilds class
@@ -60,30 +60,30 @@ Class Guilds {
      private $borderstyle = 0;
      private $bordercolor = 0;
      private $bgcolor = 0;
-     
+
      /**
       * Guild Leader GUID
       * @category Guilds class
       * @access   public
       **/
      public $guildleaderguid = 0;
-     
+
      /**
       * Guild faction
       * @category Guilds class
       * @access   public
       **/
      private $guildFaction = 0;
-     
+
      private $guildBankMoney = 0;
-     
+
      /**
       * Server type
       * @category Guilds class
       * @access   private
       **/
      private $m_server = null;
-     
+
      /**
       * Build guild info
       * @category Guilds class
@@ -112,7 +112,7 @@ Class Guilds {
         $this->SetGuildFaction();
         return true;
      }
-     
+
      /**
       * Initialize guild
       * @category Guilds class
@@ -140,39 +140,39 @@ Class Guilds {
         }
         return false;
      }
-     
+
      public function GetGuildName() {
         return $this->guildName;
      }
-     
+
      public function GetGuildID() {
         return $this->guildId;
      }
-     
+
      public function GetGuildFaction() {
         return $this->guildFaction;
      }
-     
+
      public function GetEmblemBGColor() {
         return $this->bgcolor;
      }
-     
+
      public function GetEmblemStyle() {
         return $this->emblemstyle;
      }
-     
+
      public function GetEmblemColor() {
         return $this->emblemcolor;
      }
-     
+
      public function GetBorderStyle() {
         return $this->borderstyle;
      }
-     
+
      public function GetBorderColor() {
         return $this->bordercolor;
      }
-     
+
      /**
       * Assign guild ID by player GUID
       * @category Guilds class
@@ -193,7 +193,7 @@ Class Guilds {
         }
         return false;
      }
-     
+
      /**
       * Return guild members count
       * @category Guilds class
@@ -207,7 +207,7 @@ Class Guilds {
         }
         return Armory::$cDB->selectCell("SELECT COUNT(`guid`) FROM `guild_member` WHERE `guildid`=%d", $this->guildId);
      }
-     
+
      /**
       * Assign guild faction by player faction ID
       * @category Guilds class
@@ -223,7 +223,7 @@ Class Guilds {
         $this->guildFaction = Utils::GetFactionId($race);
         return true;
      }
-     
+
      /**
       * Returns array with guild members list.
       * @category Guilds class
@@ -260,7 +260,7 @@ Class Guilds {
         }
         return $memberListTmp;
      }
-     
+
      /**
       * Returns array with guild members statistics
       * @category Guilds class
@@ -270,7 +270,7 @@ Class Guilds {
      public function BuildStatsList() {
         return Armory::$cDB->select("SELECT `race`, `class`, `level`, `gender` FROM `characters` uid` IN (SELECT `guid` FROM `guild_member` WHERE `guildid`=%d) AND `level`>=%d", $this->guildId, Armory::$armoryconfig['minlevel']);
      }
-     
+
      /**
       * Returns guild info and MOTD
       * @category Guilds class
@@ -284,7 +284,7 @@ Class Guilds {
         }
         return Armory::$cDB->selectRow("SELECT `info`, `motd` FROM `guild` WHERE `guildid`=%d", $this->guildId);
      }
-     
+
      /**
       * Returns guild bank tabs info (name, icon)
       * @category Guilds class
@@ -303,7 +303,7 @@ Class Guilds {
         }
         return $tabs;
      }
-     
+
      /**
       * Returns guild bank money
       * @category Guilds class
@@ -317,7 +317,7 @@ Class Guilds {
         }
         return $this->guildBankMoney;
      }
-     
+
      /**
       * Returns guild bank items
       * @category Guilds class
@@ -338,7 +338,7 @@ Class Guilds {
             $items_list[$i]['durability'] = (int) $tmp_durability['current'];
             $items_list[$i]['maxDurability'] = (int) $tmp_durability['max'];
             $items_list[$i]['icon'] = Items::GetItemIcon($items_list[$i]['id']);
-            $items_list[$i]['name'] = Items::GetItemName($items_list[$i]['id']);            
+            $items_list[$i]['name'] = Items::GetItemName($items_list[$i]['id']);
             $items_list[$i]['qi'] = Items::GetItemInfo($items_list[$i]['id'], 'quality');
             if($this->m_server == SERVER_MANGOS) {
                 $items_list[$i]['quantity'] = Items::GetItemDataField(ITEM_FIELD_STACK_COUNT, 0, 0, $items_list[$i]['seed']);
@@ -356,14 +356,14 @@ Class Guilds {
         }
         return $items_list;
      }
-     
+
      /**
       * Returns array with guild rank IDs.
       * @category Guilds class
       * @access   public
       * @return   array
       **/
-     
+
      public function GetGuildRanks() {
         if(!$this->guildId) {
             Armory::Log()->writeError('%s : guildId not defined', __METHOD__);
@@ -371,11 +371,11 @@ Class Guilds {
         }
         return Armory::$cDB->select("SELECT `rid` AS `id`, `rname` AS `name` FROM `guild_rank` WHERE `guildid`=%d", $this->guildId);
      }
-     
+
      /* DEVELOPMENT SECTION */
-     
+
      /*
-     
+
      public function IsAllowedToGuildBank($tab) {
         if(!isset($_SESSION['accountId'])) {
             return false;
@@ -399,11 +399,11 @@ Class Guilds {
         $rights = Armory::$cDB->selectCell("SELECT `rights` FROM `guild_rank` WHERE `guildid` = %d AND `rid`=%d LIMIT 1", $this->guildId, $rank);
         return ($this->GetBankRights($rank, $tab) & $rights) == $rights;
      }
-     
+
      public function GetBankRights($rank, $tab) {
         return Armory::$cDB->selectCell("SELECT `gbright` FROM `guild_bank_right` WHERE `guildid` = %d AND `TabId` = %d AND `rid` = %d LIMIT 1", $this->guildId, $tab, $rank);
      }
-     
+
      */
 }
 ?>

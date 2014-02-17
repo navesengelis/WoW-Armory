@@ -31,7 +31,7 @@ Class XMLHandler {
     private $region = 'cn';
     private $locale = 'zh_cn';
     private $attData = array();
-    
+
     public function XMLHandler($locale = null, $region = null) {
         $this->writer = new XMLWriter;
         $this->writer->openMemory();
@@ -43,7 +43,7 @@ Class XMLHandler {
         }
         return true;
     }
-    
+
     public function XMLWriter() {
         if($this->writer) {
             return $this->writer;
@@ -53,7 +53,7 @@ Class XMLHandler {
             return $this->writer;
         }
     }
-    
+
     /**
      * Create new XML document
      * Return: bool
@@ -61,7 +61,7 @@ Class XMLHandler {
     public function StartXML() {
         $this->writer->startDocument('1.0', 'UTF-8');
     }
-    
+
     /**
      * Load XSLT sheet
      * Return: bool
@@ -74,7 +74,7 @@ Class XMLHandler {
             $this->writer->writePI('xml-stylesheet', sprintf('type="text/xsl" href="%s"', $xslt_link));
         }
     }
-    
+
     /**
      * End current document and flush memory buffer
      * Return: bool
@@ -83,7 +83,7 @@ Class XMLHandler {
         $this->writer->endDocument();
         $this->writer->flush();
     }
-    
+
     /**
      * End current document, send memory buffer to caller and flush it
      * Return: bool
@@ -94,7 +94,7 @@ Class XMLHandler {
         $this->writer->flush();
         return $xml_output;
     }
-    
+
     /**
      * Flush memory buffer
      * Return: bool

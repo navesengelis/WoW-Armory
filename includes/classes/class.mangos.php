@@ -53,19 +53,19 @@ Class Mangos {
             case 1:
                 return SKILL_TWO_HANDED_AXE;
                 break;
-            case 2: 
+            case 2:
                 return SKILL_BOWS;
                 break;
-            case 3: 
+            case 3:
                 return SKILL_GUNS;
                 break;
-            case 4: 
+            case 4:
                 return SKILL_MACES;
                 break;
-            case 5: 
+            case 5:
                 return SKILL_TWO_HANDED_MACES;
                 break;
-            case 6: 
+            case 6:
                 return SKILL_POLEARMS;
                 break;
             case 7:
@@ -95,7 +95,7 @@ Class Mangos {
         }
         return SKILL_UNARMED;
     }
-    
+
     /**
      * Returns quest info by $infoType case
      * @category Mangos class
@@ -116,10 +116,10 @@ Class Mangos {
                         $info = Armory::$wDB->selectCell("SELECT `Title` FROM `quest_template` WHERE `Id`=%d", $quest);
                     }
                 }
-                break;            
+                break;
             case 'reqlevel':
 				$info = Armory::$wDB->selectCell("SELECT `MinLevel` FROM `quest_template` WHERE `entry`=%d", $quest);
-				break;				
+				break;
 			case 'map':
 				$quester = Armory::$wDB->selectCell("SELECT `id` FROM `creature_involvedrelation` WHERE `quest`=%d", $quest);
 				$mapID = Armory::$wDB->selectCell("SELECT `map` FROM `creature` WHERE `id`=%d", $quester);
@@ -131,7 +131,7 @@ Class Mangos {
         }
         return false;
     }
-    
+
     /**
      * Assign text value to int drop percent (drop > 51 = High, etc.)
      * @category Mangos class
@@ -162,7 +162,7 @@ Class Mangos {
             return 0;
         }
     }
-    
+
     /**
      * Returns game object info ($infoType)
      * @category Mangos class
@@ -184,7 +184,7 @@ Class Mangos {
                         $info = Armory::$wDB->selectCell("SELECT `name` FROM `gameobject_template` WHERE `entry`=%d", $entry);
                     }
                 }
-				break;            
+				break;
             case 'map':
 				$mapID = Armory::$wDB->selectCell("SELECT `map` FROM `gameobject` WHERE `id`=%d", $entry);
 				$info = Armory::$aDB->selectCell("SELECT `name_%s` FROM `ARMORYDBPREFIX_maps` WHERE `id`=%d", Armory::GetLocale(), $mapID);
@@ -205,7 +205,7 @@ Class Mangos {
 		}
         return $info;
     }
-    
+
     /**
      * Returns NPC name (according with current locale)
      * @category Mangos class
@@ -251,7 +251,7 @@ Class Mangos {
         Armory::Log()->writeError('%s : unable to find NPC name (id: %d, KillCredit1: %d, KillCredit2: %d)', __METHOD__, $npc, (isset($KillCredit['KillCredit1'])) ? $KillCredit['KillCredit1'] : 0, (isset($KillCredit['KillCredit2'])) ? $KillCredit['KillCredit2'] : 0);
         return false;
 	}
-    
+
     /**
      * Returns NPC info (infoType)
      * @category Mangos class
@@ -265,10 +265,10 @@ Class Mangos {
         switch($infoType) {
             case 'maxlevel':
 				$info = Armory::$wDB->selectCell("SELECT `maxlevel` FROM `creature_template` WHERE `entry`=%d", $npc);
-				break;	
+				break;
             case 'minlevel':
 				$info = Armory::$wDB->selectCell("SELECT `minlevel` FROM `creature_template` WHERE `entry`=%d", $npc);
-				break;				
+				break;
 			case 'map':
 				$mapID = Armory::$wDB->selectCell("SELECT `map` FROM `creature` WHERE `id`=%d LIMIT 1", $npc);
                 if(!$mapID) {
@@ -346,11 +346,11 @@ Class Mangos {
                         }
                     }
                 }
-                break;				
+                break;
 			case 'dungeonlevel':
                 $query = Armory::$wDB->selectRow("
 				SELECT `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`
-					FROM `creature_template` 
+					FROM `creature_template`
 						WHERE `entry`=%d AND `difficulty_entry_1` > 0 or `difficulty_entry_2` > 0 or `difficulty_entry_3` > 0", $npc);
                 if(!$query) {
                     // 10 Normal or 5 Normal
@@ -372,7 +372,7 @@ Class Mangos {
                     // 10 Normal or 5 Normal
                     return 0;
                 }
-                break;            
+                break;
             case 'instance_type':
                 $mapID = Armory::$wDB->selectCell("SELECT `map` FROM `creature` WHERE `id`=%d LIMIT 1", $npc);
                 $instanceInfo = Armory::$aDB->selectCell("SELECT MAX(`max_players`) FROM `ARMORYDBPREFIX_instances_difficulty` WHERE `mapID`=%d", $mapID);
@@ -384,8 +384,8 @@ Class Mangos {
                     // Raid
                     return 2;
                 }
-                break;				
-			case 'isBoss': 
+                break;
+			case 'isBoss':
                 $npc_data = Armory::$wDB->selectRow("SELECT `rank`, `KillCredit1`, `KillCredit2` FROM `creature_template` WHERE `entry`=%d LIMIT 1", $npc);
                 if($npc_data['rank'] == 3) {
                     return true;
@@ -439,7 +439,7 @@ Class Mangos {
 		}
         return false;
 	}
-    
+
     /**
      * Generates money value
      * @category Mangos class
@@ -455,7 +455,7 @@ Class Mangos {
         $getMoney['copper'] = floor($money);
         return $getMoney;
     }
-    
+
     /**
      * Returns extended cost info for $costId cost.
      * @category Mangos class
@@ -485,7 +485,7 @@ Class Mangos {
         }
         return $extended_cost;
     }
-    
+
     /**
      * Is PvP extended cost required?
      * @category Mangos class
@@ -500,7 +500,7 @@ Class Mangos {
         }
         return $costInfo;
     }
-    
+
     /**
      * Generates drop percent for $boss_id boss and $item_id item.
      * @author   DiSlord
@@ -551,7 +551,7 @@ Class Mangos {
         }
         return $percent;
     }
-    
+
     /**
      * Returns ExtendedCost for item $itemID
      * @category Mangos class

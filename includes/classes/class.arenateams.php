@@ -38,11 +38,11 @@ Class Arenateams {
     public $guid;
     private $gameid = false;
     private $m_server;
-    
+
     public function Arenateams() {
         $this->m_server = Armory::$currentRealmInfo['type'];
     }
-    
+
     /**
      * Builds team info
      * @category Arenateams class
@@ -82,7 +82,7 @@ Class Arenateams {
         $this->teamtype      = $arenaInfo['type'];
         self::GetTeamList();
     }
-    
+
     /**
      * Returns array with team info, member list and stats
      * @category Arenateams class
@@ -148,7 +148,7 @@ Class Arenateams {
         $arenateaminfo['data']['factionId'] = Utils::GetFactionId($arenateaminfo['members'][0]['raceId']);
         return $arenateaminfo;
     }
-    
+
     /**
      * Checks is arena team exists
      * @category Arenateams class
@@ -167,7 +167,7 @@ Class Arenateams {
             return Armory::$cDB->selectCell("SELECT 1 FROM `arena_team` WHERE `arenateamid`=%d LIMIT 1", $this->arenateamid);
         }
     }
-    
+
     /**
      * Generates and returns info about character's (this->guid) arena teams.
      * @category Arenateams class
@@ -192,7 +192,7 @@ Class Arenateams {
         }
         return $teams_result;
     }
-    
+
     /**
      * Generates arena team member list
      * @category Arenateams class
@@ -258,7 +258,7 @@ Class Arenateams {
         }
         return true;
     }
-    
+
     /**
      * Builds arena ladder list
      * @category Arenateams class
@@ -273,14 +273,8 @@ Class Arenateams {
         if($num == true) {
             $summary = 0;
             foreach(Armory::$realmData as $realm_info) {
-                $db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
-                switch($this->m_server) {
-            case SERVER_MANGOS:
+                $db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
                 $current_count = $db->selectCell("SELECT COUNT(`arena_team`.`arenateamid`) FROM `arena_team` AS `arena_team` LEFT JOIN `arena_team_stats` AS `arena_team_stats` ON `arena_team_stats`.`arenateamid` = `arena_team`.`arenateamid` WHERE `arena_team`.`type` = %d AND `arena_team_stats`.`rank` > 0", $type);
-            	break;
-            case TRINITY_SERVER:
-                $current_count = $db->selectCell("SELECT COUNT(`arena_team`.`arenateamid`) FROM `arena_team` AS `arena_team` WHERE `arena_team`.`type` = %d AND `arena_team`.`rank` > 0", $type);
-                break;
                 }
                 $summary += $current_count;
             }
@@ -289,7 +283,7 @@ Class Arenateams {
         $result_areanteams = array();
         $i = 0;
         foreach(Armory::$realmData as $realm_info) {
-            $db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
+            $db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
             if($order == 'lose') {
                 // Special sorting
                 switch($realm_info['type']) {
@@ -397,7 +391,7 @@ Class Arenateams {
         }
         return $result_areanteams;
     }
-    
+
     /**
      * Returns arena team emblem info.
      * @category Arenateams class
@@ -412,7 +406,7 @@ Class Arenateams {
         }
         if($db == null) {
             $arenaTeamEmblem = Armory::$cDB->selectRow("SELECT `BackgroundColor` AS `background`, `BorderColor` AS `borderColor`, `BorderStyle` AS `borderStyle`, `EmblemColor` AS `iconColor`, `EmblemStyle` AS `iconStyle` FROM `arena_team` WHERE `arenateamid`=%d", $teamId);
-            
+
             // Displaying correct Team Emblem
             // We have DECIMAL value here in DB (4294106805 e.g.)
             // We need to reduce it to 255 (4294106550)
@@ -421,7 +415,7 @@ Class Arenateams {
             // And somehow add '0x' substring to our HEX value (0xF2DDB6).
             // If I'm doing it wrong (and I'm totally sure that I'm doing it in wrong way),
             // please report on GitHub.com/Shadez/wowarmory/issues/
-            
+
             $arenaTeamEmblem['background'] = '0x' . substr(dechex($arenaTeamEmblem['background']-255), 2);
             $arenaTeamEmblem['borderColor'] = '0x' . substr(dechex($arenaTeamEmblem['borderColor']-255), 2);
             $arenaTeamEmblem['iconColor'] = '0x' . substr(dechex($arenaTeamEmblem['iconColor']-255), 2);
@@ -435,7 +429,7 @@ Class Arenateams {
             return $arenaTeamEmblem;
         }
     }
-    
+
     /**
      * Count all arena teams (by type) in all available realms.
      * @category Arenateams class
@@ -446,13 +440,13 @@ Class Arenateams {
     public function CountArenaTeams($type) {
         $summary = 0;
         foreach(Armory::$realmData as $realm_info) {
-            $db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
+            $db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
             $current_count = $db->selectCell("SELECT COUNT(`arenateamid`) FROM `arena_team` WHERE `type`=%d", $type);
             $summary += $current_count;
         }
         return $summary;
     }
-    
+
     /**
      * Returns number of pages (arena ladder)
      * @category Arenateams class
@@ -463,7 +457,7 @@ Class Arenateams {
     public function CountPageNum($type) {
         return round(self::CountArenaTeams($type) / 20);
     }
-    
+
     /**
      * Sets game id (arena chart)
      * @category Arenateams class
@@ -475,7 +469,7 @@ Class Arenateams {
         $this->gameid = $gameid;
         return true;
     }
-    
+
     /**
      * Returns game id (arena ladder)
      * @category Arenateams class
@@ -485,7 +479,7 @@ Class Arenateams {
     public function GetGameID() {
         return $this->gameid;
     }
-    
+
     /**
      * Generates game info (by ID (this->gameid))
      * @category Arenateams class
@@ -576,7 +570,7 @@ Class Arenateams {
         }
         return $chart_teams;
     }
-    
+
     /**
      * Checks is team exists
      * @category Arenateams class
@@ -587,7 +581,7 @@ Class Arenateams {
     public function TeamExists($teamId) {
         return Armory::$cDB->selectCell("SELECT 1 FROM `arena_team` WHERE `arenateamid`=%d LIMIT 1", $teamId);
     }
-    
+
     /**
      * Builds game list for current arena team
      * @category Arenateams class
@@ -647,7 +641,7 @@ Class Arenateams {
         }
         return $chart_data;
     }
-    
+
     /**
      * Build opponents list for current arena team
      * @category Arenateams class

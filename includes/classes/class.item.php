@@ -43,7 +43,7 @@ Class Item {
     private $m_values = false;
     private $tc_data  = false;
     private $tc_ench  = false;
-    
+
     /**
      * Class constructor
      * @category Item class
@@ -59,7 +59,7 @@ Class Item {
         $this->m_server = $serverType;
         return true;
     }
-    
+
     /**
      * Load item from characters database
      * @category Item class
@@ -119,7 +119,7 @@ Class Item {
         }
         return true;
     }
-    
+
     /**
      * @return bool
      **/
@@ -129,14 +129,14 @@ Class Item {
         }
         return false;
     }
-    
+
     /**
      * @return bool
      **/
     public function IsEquipped() {
         return $this->equipped;
     }
-    
+
     /**
      * Returns item GUID
      * @category Item class
@@ -146,7 +146,7 @@ Class Item {
     public function GetGUID() {
         return $this->m_guid;
     }
-    
+
     /**
      * @return object
      **/
@@ -161,28 +161,28 @@ Class Item {
         }
         return $this->m_proto;
     }
-    
+
     /**
      * @return int
      **/
     public function GetEntry() {
         return $this->entry;
     }
-    
+
     /**
      * @return int
      **/
     public function GetOwnerGUID() {
         return $this->m_owner;
     }
-    
+
     /**
      * @return object
      **/
     public function GetOwner() {
         return $this->GetOwnerGUID(); //PH
     }
-    
+
     /**
      * @return bool
      **/
@@ -195,7 +195,7 @@ Class Item {
         }
         return false;
     }
-    
+
     /**
      * @return int
      **/
@@ -208,7 +208,7 @@ Class Item {
         }
         return 0;
     }
-    
+
     /**
      * @return int
      **/
@@ -218,14 +218,14 @@ Class Item {
         }
         return 0;
     }
-    
+
     /**
      * @return int
      **/
     public function GetEnchantmentId() {
         return $this->m_ench;
     }
-    
+
     /**
      * @return array
      **/
@@ -271,28 +271,28 @@ Class Item {
         }
         return false;
     }
-    
+
     /**
      * @return int
      **/
     public function GetUInt32Value($index) {
         return (isset($this->m_values[$index])) ? $this->m_values[$index] : 0;
     }
-    
+
     /**
      * @return int
      **/
     public function GetSlot() {
         return $this->m_slot;
     }
-    
+
     /**
      * @return int
      **/
     public function GetBag() {
         return $this->m_bag;
     }
-    
+
     /**
      * @return int
      **/
@@ -329,7 +329,7 @@ Class Item {
                 break;
         }
     }
-    
+
     /**
      * @return int
      **/
@@ -343,7 +343,7 @@ Class Item {
         Armory::Log()->writeLog('%s : wrong server type', __METHOD__);
         return 0;
     }
-    
+
     /**
      * @return int
      **/
@@ -357,14 +357,14 @@ Class Item {
         Armory::Log()->writeLog('%s : wrong server type', __METHOD__);
         return 0;
     }
-    
+
     /**
      * @return array
      **/
     public function GetItemDurability() {
         return array('current' => $this->GetCurrentDurability(), 'max' => $this->GetMaxDurability());
     }
-    
+
     /**
      * @return array
      **/

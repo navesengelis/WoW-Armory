@@ -375,7 +375,7 @@ if($utils->IsWriteRaw()) {
                 }
             }
             $xml->XMLWriter()->writeRaw('/>');
-            
+
         }
     }
     else {
@@ -521,7 +521,7 @@ if($root_categories && is_array($root_categories)) {
             else {
                 $xml->XMLWriter()->writeRaw(' name="' . $category['name'] . '"');
             }
-            
+
             $xml->XMLWriter()->writeRaw('>');
             if(isset($category['child']) && is_array($category['child'])) {
                 foreach($category['child'] as $category_child) {

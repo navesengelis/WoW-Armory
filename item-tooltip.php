@@ -65,7 +65,7 @@ $xml->XMLWriter()->writeAttribute('requestUrl', 'item-tooltip.xml');
 $itemID = (int) $_GET['i'];
 if(!$items->IsItemExists($itemID)) {
     $xml->XMLWriter()->startElement('itemTooltips');
-    $xml->XMLWriter()->startElement('itemTooltip');        
+    $xml->XMLWriter()->startElement('itemTooltip');
     $xml->XMLWriter()->endElement();   //itemTooltip
     $xml->XMLWriter()->endElement();  //itemTooltips
     $xml->XMLWriter()->endElement(); //page

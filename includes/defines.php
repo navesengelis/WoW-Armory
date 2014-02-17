@@ -22,9 +22,8 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  **/
 
-if(!defined('__ARMORY__')) {
+if (!defined('__ARMORY__'))
     die('Direct access to this file not allowed!');
-}
 
 /* Classes */
 define('CLASS_WARRIOR', 0x01);
@@ -309,7 +308,7 @@ define('ACHIEVEMENT_FLAG_MAX_USED', 0x0010);
 define('ACHIEVEMENT_FLAG_REQ_COUNT', 0x0020);
 define('ACHIEVEMENT_FLAG_AVERANGE', 0x0040);
 define('ACHIEVEMENT_FLAG_BAR', 0x0080);
-define('ACHIEVEMENT_FLAG_REALM_FIRST_REACH', 0x0100); 
+define('ACHIEVEMENT_FLAG_REALM_FIRST_REACH', 0x0100);
 define('ACHIEVEMENT_FLAG_REALM_FIRST_KILL', 0x0200);
 define('ACHIEVEMENT_CRITERIA_FLAG_SHOW_PROGRESS_BAR', 0x00000001);
 define('ACHIEVEMENT_CRITERIA_FLAG_HIDE_CRITERIA', 0x00000002);

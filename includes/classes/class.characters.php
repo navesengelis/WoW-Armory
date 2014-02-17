@@ -27,35 +27,35 @@ if(!defined('__ARMORY__')) {
 }
 
 Class Characters {
-    
+
     /**
      * Player guid
      * @category Characters class
      * @access   private
      **/
     private $guid = false;
-    
+
     /**
      * Player name
      * @category Characters class
      * @access   private
      **/
     private $name = false;
-    
+
     /**
      * Player race id
      * @category Characters class
      * @access   private
      **/
     private $race = false;
-    
+
     /**
      * Player class id
      * @category Characters class
      * @access   private
      **/
     private $class = false;
-    
+
     /**
      * Player gender
      * (0 - male, 1 - female)
@@ -63,19 +63,24 @@ Class Characters {
      * @access   private
      **/
     private $gender = false;
-    
+
     /**
      * Player level
      * @category Characters class
      * @access   private
      **/
     private $level = false;
-    
+
     /**
      * Player money amount
      **/
     private $money;
-    
+
+    /**
+     * Players last updated date
+     */
+    private $lastUpdated;
+
     /**
      * Player model display info
      * @category Characters class
@@ -84,21 +89,21 @@ Class Characters {
     private $playerBytes = false;
     private $playerBytes2 = false;
     private $playerFlags = false;
-    
+
     /**
      * Player title ID
      * @category Characters class
      * @access   private
      **/
     private $chosenTitle = false;
-    
+
     /**
      * Player health value
      * @category Characters class
      * @access   private
      **/
     private $health = false;
-    
+
     /**
      * Player powers values
      * @category Characters class
@@ -107,7 +112,7 @@ Class Characters {
     private $power1 = false;
     private $power2 = false;
     private $power3 = false;
-    
+
     /**
      * Account ID
      * (currently not used)
@@ -115,14 +120,14 @@ Class Characters {
      * @access   private
      **/
     private $account = false;
-    
+
     /**
      * Talent specs count
      * @category Characters class
      * @access   private
      **/
     private $specCount = false;
-    
+
     /**
      * Active talent spec ID
      * (0 or 1)
@@ -138,7 +143,7 @@ Class Characters {
      * @access   private
      **/
     private $faction = false;
-    
+
     /**
      * Array with player stats constants
      * (depends on character level)
@@ -146,7 +151,7 @@ Class Characters {
      * @access   private
      **/
     private $rating = false;
-     
+
     /**
      * Player title data
      * (prefix, suffix, titleId)
@@ -154,113 +159,113 @@ Class Characters {
      * @access   private
      **/
     private $character_title = array('prefix' => null, 'suffix' => null, 'titleId' => null);
-    
+
     /**
      * Player guild ID
      * @category Characters class
      * @access   private
      **/
     private $guild_id = false;
-    
+
     /**
      * Player guild name
      * @category Characters class
      * @access   private
      **/
     private $guild_name = false;
-    
+
     /**
      * Player guild rank ID
      * @category Characters class
      * @access   private
      **/
     private $guild_rank_id = false;
-    
+
     /**
      * Player guild rank name
      * @category Characters class
      * @access   private
      **/
     private $guild_rank_name = false;
-    
+
     /**
      * $this->class text
      * @category Characters class
      * @access   private
      **/
     private $classText = false;
-    
+
     /**
      * $this->race text
      * @category Characters class
      * @access   private
      **/
     private $raceText = false;
-    
+
     /**
      * Equipped item IDs
      * @category Characters class
      * @access   private
      **/
     private $equipmentCache = false;
-    
+
     /**
      * Database handler
      * @category Characters class
      * @access   private
      **/
     private $db = null;
-    
+
     /**
      * Character realm name
      * @category Characters class
      * @access   private
      **/
     private $realmName = false;
-    
+
     /**
      * Character realm ID
      * @category Characters class
      * @access   private
      **/
     private $realmID = false;
-    
+
     /**
      * Achievement MGR
      * @category Characters class
      * @access   private
      **/
     private $m_achievementMgr = null;
-    
+
     /**
      * Equipped items storage
      * @category Characters class
      * @access   private
      **/
     private $m_items;
-    
+
     /**
      * Server type (SERVER_MANGOS or SERVER_TRINITY)
      * @category Characters class
      * @access   private
      **/
     private $m_server = null;
-    
+
     /**
      * Character feed data
      **/
     private $feed_data = array();
-    
+
     /**
      * Character data
      **/
     private $char_data = array();
-    
+
     /**
-     * 
+     *
      **/
     private $load_options = array();
-    
+
     public function Characters() {
         // Reset load options
         $this->load_options = array(
@@ -272,7 +277,7 @@ Class Characters {
         );
         return true;
     }
-    
+
     public function SetOptions($options) {
         if(!is_array($options)) {
             switch($options) {
@@ -298,7 +303,7 @@ Class Characters {
         }
         return true;
     }
-    
+
     private function IsCharacterFitsRequirements(&$player_data) {
         $gmLevel = 0;
         // Disable next SQL error
@@ -341,7 +346,7 @@ Class Characters {
         }
         return true;
     }
-    
+
     /**
      * Init character, load data from DB, checks for requirements, etc.
      * @category Characters class
@@ -367,7 +372,7 @@ Class Characters {
             return false;
         }
         $realm_info = Armory::$realmData[$realmId];
-        $this->db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
+        $this->db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
         if(!$this->db || !$this->db->TestLink()) {
             Armory::Log()->writeError('%s : unable to connect to MySQL server (error: %s; realmId: %d). Check your configs.', __METHOD__, mysql_error(), $realmId);
             return false;
@@ -432,7 +437,9 @@ Class Characters {
         }
         if($this->load_options['load_data'] == true) {
             // Character data required for character-sheet.xml page only.
-            $this->char_data = $this->db->selectCell("SELECT `data` FROM `armory_character_stats` WHERE `guid` = %d LIMIT 1", $player_data['guid']);
+            $char_data = $this->db->selectRow("SELECT `data`, `save_date` FROM `armory_character_stats` WHERE `guid` = %d LIMIT 1", $player_data['guid']);
+            $this->lastUpdated = $char_data['save_date'];
+            $this->char_data = $char_data['data'];
             if(!$this->char_data) {
                 Armory::Log()->writeError('%s : player %d (%s) has no data in `armory_character_stats` table (SQL update to Characters DB was not applied? / Character was not saved in game? / Server core was not patched?)', __METHOD__, $player_data['guid'], $player_data['name']);
                 unset($player_data);
@@ -497,7 +504,7 @@ Class Characters {
         unset($realm_info);
         return true;
     }
-    
+
     /**
      * Converts $this->equipmentCache from string to array
      * @category Characters class
@@ -523,7 +530,7 @@ Class Characters {
         }
         return true;
     }
-    
+
     /**
      * Constructs character title info
      * @category Characters class
@@ -557,7 +564,7 @@ Class Characters {
         $this->character_title['titleId'] = $this->chosenTitle;
         return true;
     }
-    
+
     private function HandleCharacterData() {
         if(!$this->char_data) {
             return false;
@@ -572,7 +579,7 @@ Class Characters {
         }
         return true;
     }
-    
+
     /**
      * Checks current player (loaded or not).
      * @category Characters class
@@ -585,7 +592,7 @@ Class Characters {
         }
         return true;
     }
-    
+
     /**
      * Returns player GUID
      * @category Characters class
@@ -595,7 +602,7 @@ Class Characters {
     public function GetGUID() {
         return $this->guid;
     }
-    
+
     /**
      * Returns player name
      * @category Characters class
@@ -605,7 +612,7 @@ Class Characters {
     public function GetName() {
         return $this->name;
     }
-    
+
     /**
      * Returns player class
      * @category Characters class
@@ -615,7 +622,7 @@ Class Characters {
     public function GetClass() {
         return $this->class;
     }
-    
+
     /**
      * Returns player race
      * @category Characters class
@@ -625,17 +632,17 @@ Class Characters {
     public function GetRace() {
         return $this->race;
     }
-    
+
     /**
      * Returns player level
      * @category Characters class
      * @access   public
      * @return   int
-     **/    
+     **/
     public function GetLevel() {
         return $this->level;
     }
-    
+
     /**
      * Returns player gender
      * @category Characters class
@@ -645,7 +652,7 @@ Class Characters {
     public function GetGender() {
         return $this->gender;
     }
-    
+
     /**
      * Returns player faction
      * @category Characters class
@@ -655,7 +662,7 @@ Class Characters {
     public function GetFaction() {
         return $this->faction;
     }
-    
+
     /**
      * Returns player account ID
      * @category Characters class
@@ -665,7 +672,7 @@ Class Characters {
     public function GetAccountID() {
         return $this->account;
     }
-    
+
     /**
      * Returns active talent spec ID
      * @category Characters class
@@ -675,7 +682,7 @@ Class Characters {
     public function GetActiveSpec() {
         return $this->activeSpec;
     }
-    
+
     /**
      * Returns talent specs count
      * @category Characters class
@@ -685,7 +692,7 @@ Class Characters {
     public function GetSpecCount() {
         return $this->specCount;
     }
-    
+
     /**
      * Returns array with player model info
      * @category Characters class
@@ -695,7 +702,7 @@ Class Characters {
     public function GetPlayerBytes() {
         return array('playerBytes' => $this->playerBytes, 'playerBytes2' => $this->playerBytes2, 'playerFlags' => $this->playerFlags);
     }
-    
+
     /**
      * Returns player guild name
      * @category Characters class
@@ -705,7 +712,7 @@ Class Characters {
     public function GetGuildName() {
         return $this->guild_name;
     }
-    
+
     /**
      * Returns player guild ID
      * @category Characters class
@@ -715,7 +722,7 @@ Class Characters {
     public function GetGuildID() {
         return $this->guild_id;
     }
-    
+
     /**
      * Returns array with chosen title info
      * @category Characters class
@@ -725,7 +732,7 @@ Class Characters {
     public function GetChosenTitleInfo() {
         return $this->character_title;
     }
-    
+
     /**
      * Returns text string for $this->class ID
      * @category Characters class
@@ -735,7 +742,7 @@ Class Characters {
     public function GetClassText() {
         return $this->classText;
     }
-    
+
     /**
      * Returns text string for $this->race ID
      * @category Characters class
@@ -745,7 +752,7 @@ Class Characters {
     public function GetRaceText() {
         return $this->raceText;
     }
-    
+
     /**
      * Returns character URL string (r=realmName&cn=CharName&gn=GuildName)
      * @category Characters class
@@ -759,7 +766,7 @@ Class Characters {
         }
         return $url;
     }
-    
+
     /**
      * Returns character realm name
      * @category Characters class
@@ -769,7 +776,7 @@ Class Characters {
     public function GetRealmName() {
         return $this->realmName;
     }
-    
+
     /**
      * Returns character realm ID
      * @category Characters class
@@ -779,7 +786,7 @@ Class Characters {
     public function GetRealmID() {
         return $this->realmID;
     }
-    
+
     /**
      * Returns server type
      * @category Characters class
@@ -789,7 +796,7 @@ Class Characters {
     public function GetServerType() {
         return $this->m_server;
     }
-    
+
     /**
      * Returns money amount
      * @category Characters class
@@ -799,7 +806,14 @@ Class Characters {
     public function GetMoney() {
         return $this->money;
     }
-    
+
+    /**
+     * Returns last updated date
+     */
+    public function GetLastUpdated() {
+        return date("F j, Y", $this->lastUpdated);
+    }
+
     public function GetAchievementMgr() {
         if(!is_object($this->m_achievementMgr)) {
             $this->m_achievementMgr = new Achievements();
@@ -807,12 +821,12 @@ Class Characters {
         }
         return $this->m_achievementMgr;
     }
-    
+
     /**
      * Generates character header (for XML output)
      * @category Characters class
      * @access   public
-     * @return   array 
+     * @return   array
      **/
     public function GetHeader() {
         $header = array(
@@ -827,7 +841,7 @@ Class Characters {
             'genderId'     => $this->gender,
             'guildName'    => ($this->guild_id > 0) ? $this->guild_name : null,
             'guildUrl'     => ($this->guild_id > 0) ? sprintf('r=%s&gn=%s', urlencode($this->GetRealmName()), urlencode($this->guild_name)) : null,
-            'lastModified' => date("d.m.Y H:i:s", time()),
+            'lastModified' => $this->GetLastUpdated(),
             'level'        => $this->level,
             'name'         => $this->name,
             'points'       => $this->GetAchievementMgr()->GetAchievementPoints(),
@@ -843,7 +857,7 @@ Class Characters {
         }
         return $header;
     }
-    
+
     /**
      * Returns array with additional energy bar data (mana for paladins, mages, warlocks & hunters, etc.)
      * @category Characters class
@@ -853,12 +867,12 @@ Class Characters {
     public function GetSecondBar() {
         if(!$this->class) {
             return false;
-        }        
+        }
         $mana   = 'm';
         $rage   = 'r';
         $energy = 'e';
         $runic  = 'p';
-        
+
         $switch = array(
             '1' => $rage,
             '2' => $mana,
@@ -904,7 +918,7 @@ Class Characters {
         }
         return $data;
     }
-    
+
     /**
      * Returns item ID from $slot (head, neck, shoulder, etc.). Requires $this->guid!
      * @category Character class
@@ -984,7 +998,7 @@ Class Characters {
 				break;
         }
     }
-    
+
     /**
      * Returns enchantment id of item contained in $slot slot. If $guid not provided, function will use $this->guid.
      * @category Character class
@@ -1045,14 +1059,15 @@ Class Characters {
                 break;
             case 'mainhand':
             case 'stave':
-                return $this->equipmentCache[31];
+                return $this->equipmentCache[31] & 0x0000FFFF;
                 break;
             case 'offhand':
-                return $this->equipmentCache[33];
+                return $this->equipmentCache[33] & 0x0000FFFF;
                 break;
             case 'relic':
             case 'sigil':
             case 'gun':
+            case 'thrown':
                 return $this->equipmentCache[35];
                 break;
             case 'tabard':
@@ -1064,7 +1079,7 @@ Class Characters {
                 break;
         }
     }
-    
+
     /**
      * Returns array with TalentTab IDs for current classID ($this->class)
      * @category Characters class
@@ -1099,7 +1114,7 @@ Class Characters {
         }
         return $tab_class;
     }
-    
+
     /**
      * Calculates and returns array with character talent specs. !Required $this->guid and $this->class!
      * Depends on $this->m_server value (SERVER_MANGOS or SERVER_TRINITY)
@@ -1179,7 +1194,7 @@ Class Characters {
         $talent_data = array('points' => $talent_points);
         return $talent_data;
     }
-    
+
     /**
      * Returns character talent build for all specs (2 if character has dual talent specialization)
      * @category Character class
@@ -1261,7 +1276,7 @@ Class Characters {
         }
         return $talent_data;
     }
-    
+
     /**
      * Returns array with glyph data for all specs
      * @category Character class
@@ -1343,7 +1358,7 @@ Class Characters {
         }
         return $data;
     }
-    
+
     /**
      * Returns talent tree name for selected class
      * @category Character class
@@ -1358,7 +1373,7 @@ Class Characters {
         }
 		return Armory::$aDB->selectCell("SELECT `name_%s` FROM `ARMORYDBPREFIX_talent_icons` WHERE `class`=%d AND `spec`=%d", Armory::GetLocale(), $this->class, $spec);
 	}
-    
+
     /**
      * Returns icon name for selected class & talent tree
      * @category Character class
@@ -1374,7 +1389,7 @@ Class Characters {
         }
         return Armory::$aDB->selectCell("SELECT `icon` FROM `ARMORYDBPREFIX_talent_icons` WHERE `class`=%d AND `spec`=%d LIMIT 1", $this->class, $tree);
     }
-    
+
     /**
      * Returns array with character professions (name, icon & current skill value)
      * @category Character class
@@ -1399,7 +1414,7 @@ Class Characters {
         }
         return $p;
     }
-    
+
     /**
      * Returns array with character reputation (faction name, description, value)
      * @category Character class
@@ -1483,7 +1498,7 @@ Class Characters {
             )
         );
         */
-        $repData = $this->db->select("SELECT `faction`, `standing`, `flags` FROM `character_reputation` WHERE `guid`=%d", $this->guid); 
+        $repData = $this->db->select("SELECT `faction`, `standing`, `flags` FROM `character_reputation` WHERE `guid`=%d", $this->guid);
         if(!$repData) {
             return false;
         }
@@ -1503,7 +1518,7 @@ Class Characters {
         }
         return $factionReputation;
     }
-    
+
     private function GetFactionCategories($faction) {
         $path = array();
         $in_process = true;
@@ -1519,7 +1534,7 @@ Class Characters {
         }
         return $path;
     }
-    
+
     /**
      * Returns value of $fieldNum field. Requires $this->guid or int $guid as second parameter!
      * @category Characters class
@@ -1538,7 +1553,7 @@ Class Characters {
         }
         return (isset($this->char_data[$fieldNum])) ? $this->char_data[$fieldNum] : 0;
     }
-    
+
     /**
      * Returns current health value
      * @category Character class
@@ -1548,7 +1563,7 @@ Class Characters {
     public function GetMaxHealth() {
         return $this->health;
     }
-    
+
     /**
      * Returns current mana value
      * @category Character class
@@ -1558,7 +1573,7 @@ Class Characters {
     public function GetMaxMana() {
         return $this->power1;
     }
-    
+
     /**
      * Returns current rage value
      * @category Character class
@@ -1568,7 +1583,7 @@ Class Characters {
     public function GetMaxRage() {
         return 100;
     }
-    
+
     /**
      * Returns current energy (for Rogues) or Runic power (for Death Knight) value
      * @category Character class
@@ -1615,7 +1630,7 @@ Class Characters {
         }
         return $maxPower;
     }
-    
+
     /**
      * Assigns $this->rating variable (or returns it if it was already assigned)
      * @category Character class
@@ -1631,7 +1646,7 @@ Class Characters {
             return $this->rating;
         }
     }
-    
+
     /**
      * Calls internal function to calculate character stat
      * @category Character class
@@ -1659,7 +1674,7 @@ Class Characters {
                 break;
             case 'armor':
                 return $this->GetCharacterArmor();
-                break;                
+                break;
             case 'mainHandDamage':
                 return $this->GetCharacterMainHandMeleeDamage();
                 break;
@@ -1749,7 +1764,7 @@ Class Characters {
                 break;
         }
     }
-    
+
     /**
      * Returns array with Strength value
      * @category Character class
@@ -1759,7 +1774,7 @@ Class Characters {
     private function GetCharacterStrength() {
         $tmp_stats = array();
         $tmp_stats['bonus_strenght'] = Utils::GetFloatValue($this->GetDataField(UNIT_FIELD_POSSTAT0), 0);
-        $tmp_stats['negative_strenght'] = Utils::GetFloatValue($this->GetDataField(UNIT_FIELD_NEGSTAT0), 0);        
+        $tmp_stats['negative_strenght'] = Utils::GetFloatValue($this->GetDataField(UNIT_FIELD_NEGSTAT0), 0);
         $tmp_stats['effective'] = $this->GetDataField(UNIT_FIELD_STAT0);
         $tmp_stats['attack'] = Utils::GetAttackPowerForStat(STAT_STRENGTH, $tmp_stats['effective'], $this->class);
         $tmp_stats['base'] = $tmp_stats['effective']-$tmp_stats['bonus_strenght'] - $tmp_stats['negative_strenght'];
@@ -1778,7 +1793,7 @@ Class Characters {
         unset($tmp_stats);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Agility value
      * @category Character class
@@ -1808,7 +1823,7 @@ Class Characters {
         unset($rating, $tmp_stats);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Stamina value
      * @category Character class
@@ -1837,7 +1852,7 @@ Class Characters {
         unset($tmp_stats);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Intellect value
      * @category Character class
@@ -1877,7 +1892,7 @@ Class Characters {
         unset($rating, $tmp_stats);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Spirit value
      * @category Character class
@@ -1898,7 +1913,7 @@ Class Characters {
         }
         $tmp_stats['more_spirit'] = $tmp_stats['effective'] - $tmp_stats['base_spirit'];
         $tmp_stats['healthRegen'] = floor($tmp_stats['base_spirit'] * $baseRatio[$this->class] + $tmp_stats['more_spirit'] * Utils::GetHRCoefficient($rating, $this->class));
-        
+
         if($this->IsManaUser()) {
             $intellect_tmp = $this->GetCharacterIntellect();
             $tmp_stats['manaRegen'] = sqrt($intellect_tmp['effective']) * $tmp_stats['effective'] * Utils::GetMRCoefficient($rating, $this->class);
@@ -1916,7 +1931,7 @@ Class Characters {
         unset($rating, $tmp_stats);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Armor value
      * @category Character class
@@ -1925,7 +1940,7 @@ Class Characters {
      **/
     private function GetCharacterArmor() {
         $tmp_stats = array();
-        $levelModifier = 0;        
+        $levelModifier = 0;
         $tmp_stats['effective'] = $this->GetDataField(UNIT_FIELD_RESISTANCES);
         $tmp_stats['bonus_armor'] = Utils::GetFloatValue($this->GetDataField(UNIT_FIELD_RESISTANCEBUFFMODSPOSITIVE), 0);
         $tmp_stats['negative_armor'] = Utils::GetFloatValue($this->GetDataField(UNIT_FIELD_RESISTANCEBUFFMODSNEGATIVE), 0);
@@ -1954,7 +1969,7 @@ Class Characters {
         unset($tmp_stats);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Expertise (MH melee) value
      * @category Character class
@@ -1980,7 +1995,7 @@ Class Characters {
         unset($tmp_stats, $rating);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Expertise (OH melee) value
      * @category Character class
@@ -1991,7 +2006,7 @@ Class Characters {
     private function GetCharacterOffHandMeleeSkill() {
         return array('value' => null, 'rating' => null);
     }
-    
+
     /**
      * Returns array with Main hand melee damage value
      * @category Character class
@@ -2018,7 +2033,7 @@ Class Characters {
         unset($tmp_stats);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Off hand melee damage value
      * @category Character class
@@ -2029,7 +2044,7 @@ Class Characters {
     private function GetCharacterOffHandMeleeDamage() {
         return array('speed' => 0, 'min' => 0, 'max'  => 0, 'percent' => 0, 'dps' => '0.0');
     }
-    
+
     /**
      * Returns array with Main hand melee haste value
      * @category Character class
@@ -2045,7 +2060,7 @@ Class Characters {
         unset($rating);
         return $tmp_stats;
     }
-    
+
     /**
      * Returns array with Off hand melee haste value
      * @category Character class
@@ -2056,7 +2071,7 @@ Class Characters {
     private function GetCharacterOffHandMeleeHaste() {
         return array('hastePercent' => 0, 'hasteRating' => 0, 'value' => 0);
     }
-    
+
     /**
      * Returns array with Attack power value
      * @category Character class
@@ -2084,7 +2099,7 @@ Class Characters {
         unset($tmp_stats);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Hit rating (melee) value
      * @category Character class
@@ -2101,7 +2116,7 @@ Class Characters {
         unset($rating);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Melee crit value
      * @category Character class
@@ -2117,7 +2132,7 @@ Class Characters {
         unset($rating);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Ranged Expertise value
      * @category Character class
@@ -2128,7 +2143,7 @@ Class Characters {
     private function GetCharacterRangedWeaponSkill() {
         return array('value' => -1, 'rating' => -1);
     }
-    
+
     /**
      * Returns array with Ranged weapon damage value
      * @category Character class
@@ -2164,7 +2179,7 @@ Class Characters {
         unset($tmp_stats, $rangedSkillID);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Ranged weapon haste value
      * @category Character class
@@ -2188,7 +2203,7 @@ Class Characters {
         unset($rating, $rangedSkillID);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Ranged Attack Power value
      * @category Character class
@@ -2197,7 +2212,7 @@ Class Characters {
      **/
     private function GetCharacterRangedAttackPower() {
         $player_stats = array();
-        $multipler =  Utils::GetFloatValue($this->GetDataField(UNIT_FIELD_RANGED_ATTACK_POWER_MULTIPLIER), 8);        
+        $multipler =  Utils::GetFloatValue($this->GetDataField(UNIT_FIELD_RANGED_ATTACK_POWER_MULTIPLIER), 8);
         if($multipler < 0) {
             $multipler = 0;
         }
@@ -2223,7 +2238,7 @@ Class Characters {
         $player_stats['petSpell'] = floor(Utils::ComputePetBonus(1, $stat, $this->class));
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Ranged Hit Rating value
      * @category Character class
@@ -2240,7 +2255,7 @@ Class Characters {
         unset($rating);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Ranged Crit value
      * @category Character class
@@ -2249,14 +2264,14 @@ Class Characters {
      **/
     private function GetCharacterRangedCritChance() {
         $player_stats = array();
-        $rating       = $this->SetRating();        
+        $rating       = $this->SetRating();
         $player_stats['percent'] =  Utils::GetFloatValue($this->GetDataField(PLAYER_RANGED_CRIT_PERCENTAGE), 2);
         $player_stats['rating'] = $this->GetDataField(PLAYER_FIELD_COMBAT_RATING_1 + 9);
         $player_stats['plusPercent'] = floor($player_stats['rating']/ Utils::GetRatingCoefficient($rating, 10));
         unset($rating);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Spell Power (damage) value
      * @category Character class
@@ -2288,7 +2303,7 @@ Class Characters {
         $tmp_stats['fromType'] = 0;
         return $tmp_stats;
     }
-    
+
     /**
      * Returns array with Spell Crit value
      * @category Character class
@@ -2310,14 +2325,14 @@ Class Characters {
         }
         $player_stats['holy']   = $spellCrit[1];
         $player_stats['fire']   = $spellCrit[2];
-        $player_stats['nature'] = $spellCrit[3]; 
+        $player_stats['nature'] = $spellCrit[3];
         $player_stats['frost']  = $spellCrit[4];
-        $player_stats['arcane'] = $spellCrit[5];       
+        $player_stats['arcane'] = $spellCrit[5];
         $player_stats['shadow'] = $spellCrit[6];
         unset($rating, $spellCrit, $player_stats['spell_crit_pct']);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Spell Hit value
      * @category Character class
@@ -2334,7 +2349,7 @@ Class Characters {
         unset($rating);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Spell Power (heal) value
      * @category Character class
@@ -2344,7 +2359,7 @@ Class Characters {
     private function GetCharacterSpellBonusHeal() {
         return array('value' => $this->GetDataField(PLAYER_FIELD_MOD_HEALING_DONE_POS));
     }
-    
+
     /**
      * Returns array with Spell Haste value
      * @category Character class
@@ -2359,7 +2374,7 @@ Class Characters {
         unset($rating);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Spell Penetration value
      * @category Character class
@@ -2370,7 +2385,7 @@ Class Characters {
     private function GetCharacterSpellPenetration() {
         return array('value' => 0);
     }
-    
+
     /**
      * Returns array with Mana Regeneration value
      * @category Character class
@@ -2385,7 +2400,7 @@ Class Characters {
         $player_stats['casting'] =  round(Utils::GetFloatValue($player_stats['casting'], 2) * 5, 2);
         return $player_stats;
     }
-    
+
     /**
      * Returns array with Defense value
      * @category Character class
@@ -2412,7 +2427,7 @@ Class Characters {
         unset($rating, $gskill, $tmp_stats['defense_rating_skill']);
         return $tmp_stats;
     }
-    
+
     /**
      * Returns array with Dodge value
      * @category Character class
@@ -2428,7 +2443,7 @@ Class Characters {
         unset($rating);
         return $tmp_stats;
     }
-    
+
     /**
      * Returns array with Parry value
      * @category Character class
@@ -2444,7 +2459,7 @@ Class Characters {
         unset($rating);
         return $tmp_stats;
     }
-    
+
     /**
      * Returns array with Block value
      * @category Character class
@@ -2459,7 +2474,7 @@ Class Characters {
         $tmp_stats['rating'] = $this->GetDataField(PLAYER_SHIELD_BLOCK);
         return $tmp_stats;
     }
-    
+
     /**
      * Returns array with Resilence value
      * @category Character class
@@ -2471,7 +2486,7 @@ Class Characters {
         $rating    = $this->SetRating();
         $tmp_stats['melee_resilence'] = $this->GetDataField(PLAYER_FIELD_CRIT_TAKEN_MELEE_RATING);
         $tmp_stats['ranged_resilence'] = $this->GetDataField(PLAYER_FIELD_CRIT_TAKEN_RANGED_RATING);
-        $tmp_stats['spell_resilence'] = $this->GetDataField(PLAYER_FIELD_CRIT_TAKEN_SPELL_RATING);        
+        $tmp_stats['spell_resilence'] = $this->GetDataField(PLAYER_FIELD_CRIT_TAKEN_SPELL_RATING);
         $tmp_stats['value'] = min($tmp_stats['melee_resilence'], $tmp_stats['ranged_resilence'], $tmp_stats['spell_resilence']);
         $tmp_stats['damagePercent'] = $tmp_stats['melee_resilence']/Utils::GetRatingCoefficient($rating, 15);
         $tmp_stats['ranged_resilence_pct'] = $tmp_stats['ranged_resilence']/Utils::GetRatingCoefficient($rating, 16);
@@ -2484,7 +2499,7 @@ Class Characters {
         unset($rating, $tmp_stats);
         return $player_stats;
     }
-    
+
     /**
      * Returns skill info for $skill. If $guid not provided, function will use $this->guid. Not used now.
      * @category Character class
@@ -2503,7 +2518,7 @@ Class Characters {
         }
         return $this->db->selectRow("SELECT * FROM `character_skill` WHERE `guid`=%d AND `skill`=%d", $guid, $skill);
     }
-    
+
     /**
      * Returns data for 2x2, 3x3 and 5x5 character arena teams (if exists).
      * If $check == true, function will return boolean type.
@@ -2520,7 +2535,7 @@ Class Characters {
         }
         $arenaTeamInfo = array();
         $tmp_info = $this->db->select(
-        "SELECT 
+        "SELECT
         `arena_team_member`.`arenateamid`,
         `arena_team_member`.`guid`,
         `arena_team_member`.`personal_rating`,
@@ -2571,7 +2586,7 @@ Class Characters {
             return $arenaTeamInfo;
         }
     }
-    
+
     /**
      * Loads character feed data from DB
      * @category Characters class
@@ -2595,7 +2610,7 @@ Class Characters {
         }
         return true;
     }
-    
+
     /**
      * Returns info about last character activity. Requires MaNGOS/Trinity core patch (tools/character_feed)!
      * bool $full used only in character-feed.php
@@ -2767,7 +2782,7 @@ Class Characters {
                         'date'   => $date_string,
                         'time'   => date('H:i:s', $event_date),
                         'id'     => $event_data,
-                        'points' => 0,                        
+                        'points' => 0,
                         'sort'   => $sort
                     );
                     $feed_data[$i]['title'] = sprintf('%s [%s] %d %s', $_strings[16], $achievement['name'], $event['counter'], $_strings[17]);
@@ -2783,7 +2798,7 @@ Class Characters {
         }
         return $feed_data;
     }
-    
+
     /**
      * Returns array with data for item placed in $slot['slot']
      * @category Character class
@@ -2861,7 +2876,7 @@ Class Characters {
         }
         return $item_info;
     }
-    
+
     /**
      * Checks is item with entry $itemID currently equipped on character.
      * @category Character class
@@ -2878,7 +2893,7 @@ Class Characters {
         }
         return false;
     }
-    
+
     /**
      * Returns currently equipped item's GUID (depends on $slot_id)
      * @category Character class
@@ -2957,7 +2972,7 @@ Class Characters {
                 break;
         }
     }
-    
+
     /**
      * Returns database handler instance
      * @category Characters class
@@ -2967,7 +2982,7 @@ Class Characters {
     public function GetDB() {
         return $this->db;
     }
-    
+
     /**
      * Returns array with player model scales according with player race
      * @category Characters class
@@ -3028,7 +3043,7 @@ Class Characters {
                 break;
         }
     }
-    
+
     /**
      * Checks for spell ID in character's spellbook
      * @category Characters class
@@ -3039,7 +3054,7 @@ Class Characters {
     public function HasSpell($spell_id) {
         return (bool) $this->db->selectCell("SELECT 1 FROM `character_spell` WHERE `spell`=%d AND `guid`=%d AND `active`=1 AND `disabled`=0 LIMIT 1", $spell_id, $this->guid);;
     }
-    
+
     /**
      * Checks for talent ID in active or all specs
      * @category Characters class
@@ -3085,7 +3100,7 @@ Class Characters {
                 return false;
                 break;
         }
-        
+
         if($active_spec) {
             if($rank == -1) {
                 $has = $this->db->selectCell($sql_data['activeSpec'][0], $this->guid, $this->activeSpec);
@@ -3114,7 +3129,7 @@ Class Characters {
         }
         return $has;
     }
-    
+
     /**
      * Returns talent rank by talent ID (if player has this talent)
      * @category Characters class
@@ -3126,7 +3141,7 @@ Class Characters {
     public function GetTalentRankByID($talent_id, $active_spec = true) {
         return $this->HasTalent($talent_id, $active_spec);
     }
-    
+
     /**
      * Returns skill value by skill ID (if player has this skill)
      * @category Characters class
@@ -3137,7 +3152,7 @@ Class Characters {
     public function GetSkillValue($skill) {
         return $this->db->selectCell("SELECT `value` FROM `character_skills` WHERE `guid`=%d AND `skill`=%d", $this->guid, $skill);
     }
-    
+
     /**
      * Returns reputation value with selected faction. If $returnAsRank == true, function will return reputation rank ID.
      * @category Characters class
@@ -3161,7 +3176,7 @@ Class Characters {
         }
         return $standing;
     }
-    
+
     /**
      * Load character inventory (equipped items only). Must be called from Characters::BuildCharacter() only!
      * @category Characters class
@@ -3191,7 +3206,7 @@ Class Characters {
         }
         return true;
     }
-    
+
     /**
      * Load equipped item from character_inventory (by SLOT ID)
      * @category Characters class
@@ -3224,7 +3239,7 @@ Class Characters {
         }
         return $inv;
     }
-    
+
     /**
      * Return Item by SlotID
      * Note: m_items must be initialized in Characters::BuildCharacter()!
@@ -3253,7 +3268,7 @@ Class Characters {
         }
         return $this->m_items[$slot];
     }
-    
+
     /**
      * Return item handler by item entry (from item storage)
      * Note: m_items must be initialized in Characters::BuildCharacter()!
@@ -3274,9 +3289,9 @@ Class Characters {
         }
         return false;
     }
-    
+
     /**** DEVELOPMENT SECTION ****/
-    
+
     /**
      * Checks if player has any active pet
      * @category Characters class
@@ -3289,7 +3304,7 @@ Class Characters {
         }
         return $this->db->selectCell("SELECT 1 FROM `character_pet` WHERE `owner` = %d AND `PetType` = 1", $this->GetGUID());
     }
-    
+
     /**
      * Checks if player mana user
      * @category Characters class
@@ -3302,7 +3317,7 @@ Class Characters {
         }
         return false;
     }
-    
+
     /**
      * Checks if player can has pet.
      * Note: self::CalculatePetTalents() must has internal check (CLASS_HUNTER)

@@ -16,8 +16,8 @@
 					<div class="parchment-content">
 						<div class="list">
 							<div class="player-side notab">
-								<div class="info-pane">									
-									<xsl:call-template name="errorSection" />									
+								<div class="info-pane">
+									<xsl:call-template name="errorSection" />
 								</div>
 							</div>
 						</div>
@@ -150,7 +150,8 @@
                         
 				<!-- spec switcher -->
 				<xsl:if test="count(talents/talentGroup) = '2'">
-					<xsl:attribute name="class">talentGlyphHeaderMultiSpec</xsl:attribute>
+				    <!-- @TODO: Why does this prevent chrome from displaying talent tree? -->
+					<!-- <xsl:attribute name="class">talentGlyphHeaderMultiSpec</xsl:attribute> -->
 					<div class="talentSpecSwitchHolder">
 						<table class="talentSpecSwitch">
 							<tr>

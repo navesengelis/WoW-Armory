@@ -28,15 +28,15 @@ Class SearchMgr {
     public $get_array;
     public $heirloom = false;
     public $itemSearchSkip = false;
-    
+
     public function SetSearchQuery($searchQuery) {
         $this->searchQuery = $searchQuery;
     }
-    
+
     public function GetSearchQuery() {
         return $this->searchQuery;
     }
-    
+
     public function PerformItemsSearch($count = false, $findUpgrade = false, $player_level = 80) {
         if($this->itemSearchSkip == true) {
             return false;
@@ -92,7 +92,7 @@ Class SearchMgr {
         }
         $result_data = array();
         $i = 0;
-        
+
         $icons_to_add = array();
         $names_to_add = array();
         $icons_holder = array();
@@ -118,7 +118,7 @@ Class SearchMgr {
             $names_holder[$name['entry']] = $name['name'];
         }
         unset($tmp_icons_holder, $tmp_names_holder, $names_to_add, $icons_to_add);
-        
+
         $item_source = self::GetItemSourceArray($items);
         foreach($items as $item) {
             $result_data[$i]['data'] = $item;
@@ -132,7 +132,7 @@ Class SearchMgr {
                 $result_data[$i]['data']['canAuction'] = 1;
             }
             unset($result_data[$i]['data']['flags'], $result_data[$i]['data']['duration'], $result_data[$i]['data']['bonding']);
-            
+
             if(!isset($names_holder[$item['id']])) {
                 $result_data[$i]['data']['name'] = Items::GetItemName($item['id']);
             }
@@ -163,7 +163,7 @@ Class SearchMgr {
         }
         return $result_data;
     }
-    
+
     public function PerformAdvancedItemsSearch($count = false) {
         if($this->itemSearchSkip == true) {
             return false;
@@ -266,7 +266,7 @@ Class SearchMgr {
                     $global_sql_query = $this->HandleItemFilters($item_id_string, $ex_cost_ids);
                 }
                 else {
-                    $allowedDungeon = true;     
+                    $allowedDungeon = true;
                     $instance_data = Utils::GetDungeonData($this->get_array['dungeon']);
                     if(!is_array($instance_data) || !isset($instance_data['difficulty'])) {
                         return false;
@@ -402,7 +402,7 @@ Class SearchMgr {
                         $vendors_id = $pvpVendorsId[$i]['item'];
                     }
                     if($i) {
-                        $string_vendors .= ', ' . $vendors_id; 
+                        $string_vendors .= ', ' . $vendors_id;
                     }
                     else {
                         $string_vendors .= $vendors_id;
@@ -425,7 +425,7 @@ Class SearchMgr {
         $exists_items = array();
         $source_items = self::GetItemSourceArray($items_query);
         $i = 0;
-        
+
         $icons_to_add = array();
         $names_to_add = array();
         $icons_holder = array();
@@ -451,7 +451,7 @@ Class SearchMgr {
             $names_holder[$name['entry']] = $name['name'];
         }
         unset($tmp_icons_holder, $tmp_names_holder, $names_to_add, $icons_to_add);
-        
+
         foreach($items_query as $item) {
             if(isset($exists_items[$item['id']])) {
                 continue; // Do not add the same items to result array
@@ -519,7 +519,7 @@ Class SearchMgr {
         }
         return $items_result;
     }
-    
+
     public function PerformArenaTeamsSearch($num = false) {
         if(!$this->searchQuery) {
             return false;
@@ -532,20 +532,37 @@ Class SearchMgr {
         if($num == true) {
             foreach(Armory::$realmData as $realm_info) {
                 $count_results_currrent_realm = 0;
-                $db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
+                $db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
                 $count_results_currrent_realm = $db->selectCell("SELECT COUNT(`arenateamid`) FROM `arena_team` WHERE `name` LIKE '%s' LIMIT 200", '%'.$this->searchQuery.'%');
                 $count_results = $count_results + $count_results_currrent_realm;
             }
             return $count_results;
         }
         foreach(Armory::$realmData as $realm_info) {
-            $db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
-            $current_realm = $db->select("
-            SELECT `arena_team`.`name`, `arena_team`.`type` AS `size`, `arena_team_stats`.`rating`, `characters`.`race`
-                FROM `arena_team` AS `arena_team`
-                    LEFT JOIN `arena_team_stats` AS `arena_team_stats` ON `arena_team`.`arenateamid`=`arena_team_stats`.`arenateamid`
-                    LEFT JOIN `characters` AS `characters` ON `arena_team`.`captainguid`=`characters`.`guid`
-                        WHERE `arena_team`.`name` LIKE '%s' LIMIT 200", '%'.$this->searchQuery.'%');
+            $db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
+            switch ($realm_info['type'])
+            {
+                case SERVER_TRINITY:
+                    {
+                        $current_realm = $db->select("
+                                SELECT `arena_team`.`name`, `arena_team`.`type` AS `size`, `arena_team_stats`.`rating`, `characters`.`race`
+                                FROM `arena_team` AS `arena_team`
+                                LEFT JOIN `arena_team` AS `arena_team_stats` ON `arena_team`.`arenateamid`=`arena_team_stats`.`arenateamid`
+                                LEFT JOIN `characters` AS `characters` ON `arena_team`.`captainguid`=`characters`.`guid`
+                                WHERE `arena_team`.`name` LIKE '%s' LIMIT 200", '%'.$this->searchQuery.'%');
+                    }
+                    break;
+                case SERVER_MANGOS:
+                    {
+                        $current_realm = $db->select("
+                                SELECT `arena_team`.`name`, `arena_team`.`type` AS `size`, `arena_team_stats`.`rating`, `characters`.`race`
+                                FROM `arena_team` AS `arena_team`
+                                LEFT JOIN `arena_team_stats` AS `arena_team_stats` ON `arena_team`.`arenateamid`=`arena_team_stats`.`arenateamid`
+                                LEFT JOIN `characters` AS `characters` ON `arena_team`.`captainguid`=`characters`.`guid`
+                                WHERE `arena_team`.`name` LIKE '%s' LIMIT 200", '%'.$this->searchQuery.'%');
+                    }
+                    break;
+            }
             if(!$current_realm) {
                 continue;
             }
@@ -566,7 +583,7 @@ Class SearchMgr {
         }
         return false;
     }
-    
+
     public function PerformGuildsSearch($num = false) {
         if(!$this->searchQuery) {
             return false;
@@ -579,14 +596,14 @@ Class SearchMgr {
         if($num == true) {
             foreach(Armory::$realmData as $realm_info) {
                 $count_results_currrent_realm = 0;
-                $db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
+                $db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
                 $count_results_currrent_realm = $db->selectCell("SELECT COUNT(`guildid`) FROM `guild` WHERE `name` LIKE '%s' LIMIT 200", '%'.$this->searchQuery.'%');
                 $count_results = $count_results + $count_results_currrent_realm;
             }
             return $count_results;
         }
         foreach(Armory::$realmData as $realm_info) {
-            $db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
+            $db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
             $current_realm = $db->select("SELECT `guild`.`name`, `characters`.`race` FROM `guild` AS `guild` LEFT JOIN `characters` AS `characters` ON `guild`.`leaderguid`=`characters`.`guid` WHERE `guild`.`name` LIKE '%s' LIMIT 200", '%'.$this->searchQuery.'%');
             if(!$current_realm) {
                 continue;
@@ -607,7 +624,7 @@ Class SearchMgr {
         }
         return false;
     }
-    
+
     public function PerformCharactersSearch($num = false) {
         if(!$this->searchQuery) {
             Armory::Log()->writeLog('%s : searchQuery not defined', __METHOD__);
@@ -620,11 +637,12 @@ Class SearchMgr {
         $count_results_currrent_realm = 0; // Current realm results
         $db = null; // Temporary handler
         $countRealmData = count(Armory::$realmData);
+        $search = ucfirst(strtolower($this->searchQuery));
         if($num == true) {
             foreach(Armory::$realmData as $realm_info) {
                 $count_results_currrent_realm = 0;
-                $db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
-                $characters_data[] = $db->select("SELECT `guid`, `level`, `account` FROM `characters` WHERE `name`='%s' AND `level` >= %d LIMIT 200", $this->searchQuery, Armory::$armoryconfig['minlevel']);
+                $db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
+                $characters_data[] = $db->select("SELECT `guid`, `level`, `account` FROM `characters` WHERE `name`='%s' AND `level` >= %d LIMIT 200", $search, Armory::$armoryconfig['minlevel']);
             }
             for($ii = 0; $ii < $countRealmData; $ii++) {
                 $count_result_chars = count($characters_data[$ii]);
@@ -638,11 +656,11 @@ Class SearchMgr {
         }
         $accounts_cache = array(); // For relevance calculation
         foreach(Armory::$realmData as $realm_info) {
-            $db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
+            $db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
             if(!$db) {
                 continue;
             }
-            $current_realm = $db->select("SELECT `guid`, `name`, `class` AS `classId`, `gender` AS `genderId`, `race` AS `raceId`, `level`, `account` FROM `characters` WHERE `name` = '%s'", $this->searchQuery);
+            $current_realm = $db->select("SELECT `guid`, `name`, `class` AS `classId`, `gender` AS `genderId`, `race` AS `raceId`, `level`, `account` FROM `characters` WHERE `name` = '%s'", $search);
             if(!$current_realm) {
                 continue;
             }
@@ -728,7 +746,7 @@ Class SearchMgr {
         }
         return false;
     }
-    
+
     public function IsExtendedCost() {
         if(!isset($this->get_array['dungeon'])) {
             Armory::Log()->writeError('%s is for `dungeon` cases only!', __METHOD__);
@@ -740,31 +758,31 @@ Class SearchMgr {
         }
         return false;
     }
-    
+
     public function MakeUniqueArray($array, $preserveKeys = false) {
-        // Unique Array for return  
-        $arrayRewrite = array();  
-        // Array with the md5 hashes  
-        $arrayHashes = array();  
+        // Unique Array for return
+        $arrayRewrite = array();
+        // Array with the md5 hashes
+        $arrayHashes = array();
         foreach($array as $key => $item) {
-            // Serialize the current element and create a md5 hash  
+            // Serialize the current element and create a md5 hash
             $hash = md5(serialize($item));
-            // If the md5 didn't come up yet, add the element to  
-            // to arrayRewrite, otherwise drop it  
+            // If the md5 didn't come up yet, add the element to
+            // to arrayRewrite, otherwise drop it
             if (!isset($arrayHashes[$hash])) {
-                // Save the current element hash  
-                $arrayHashes[$hash] = $hash;  
-                // Add element to the unique Array  
+                // Save the current element hash
+                $arrayHashes[$hash] = $hash;
+                // Add element to the unique Array
                 if ($preserveKeys) {
                     $arrayRewrite[$key] = $item;
-                } else {  
+                } else {
                     $arrayRewrite[] = $item;
                 }
             }
         }
-        return $arrayRewrite;  
+        return $arrayRewrite;
     }
-    
+
     private function IsCharacterAllowedForSearch($guid, $level, $account_id) {
         if($level < Armory::$armoryconfig['minlevel']) {
             return false;
@@ -780,7 +798,7 @@ Class SearchMgr {
         }
         return false;
     }
-    
+
     /**
      * Helper
      **/
@@ -803,7 +821,7 @@ Class SearchMgr {
             return true;
         }
     }
-    
+
     /**
      * Do all dirty work with search filters here
      * Can be called only from Search::PerformAdvancedItemsSearch()
@@ -837,14 +855,14 @@ Class SearchMgr {
         );
         // Parse
         $count = count($query_string);
-        $sql = "SELECT 
+        $sql = "SELECT
         `item_template`.`entry` AS `id`,
         `item_template`.`name`,
         `item_template`.`ItemLevel`,
-        `item_template`.`Quality` AS `rarity`, 
-        `item_template`.`displayid`, 
-        `item_template`.`bonding`, 
-        `item_template`.`flags`, 
+        `item_template`.`Quality` AS `rarity`,
+        `item_template`.`displayid`,
+        `item_template`.`bonding`,
+        `item_template`.`flags`,
         `item_template`.`duration`";
         if($this->get_array['source'] == 'dungeon' || $this->get_array['source'] == 'pvpAlliance' || $this->get_array['source'] == 'pvpHorde') {
             if(self::IsExtendedCost() == false && $this->get_array['source'] == 'dungeon') {
@@ -893,11 +911,11 @@ Class SearchMgr {
                 if($this->get_array['subTp'] != 'all') {
                     $subType_info = Items::GetItemTypeInfo($this->get_array['subTp'], 'subtype');
                 }
-                elseif($this->get_array['subTp'] == 'all' && in_array($this->get_array['type'], array('mounts', 'minipets', 'misc', 'reagents'))) {
+                elseif($this->get_array['subTp'] == 'all' && in_array($this->get_array['type'], array('mounts', 'minipets', 'misc', 'reagents', 'smallpets', 'enchP', 'enchT'))) {
                     $subType_info = Items::GetItemTypeInfo($this->get_array['subTp'], 'subtype', $this->get_array['type']);
                 }
             }
-            elseif(in_array($this->get_array['type'], array('mounts', 'minipets', 'misc', 'reagents'))) {
+            elseif(in_array($this->get_array['type'], array('mounts', 'minipets', 'misc', 'reagents', 'smallpets', 'enchP', 'enchT'))) {
                 $subType_info = Items::GetItemTypeInfo('all', 'subtype', $this->get_array['type']);
             }
             if($type_info != -1 && $subType_info != -1)  {
@@ -909,7 +927,7 @@ Class SearchMgr {
         }
         if(isset($this->get_array['usbleBy']) && $this->get_array['usbleBy'] > 0) {
             $sql .= sprintf(" (`item_template`.`AllowableClass`&%d) AND", Utils::GetClassBitMaskByClassId($this->get_array['usbleBy']));
-            if(isset($this->get_array['type'])) {
+            if(isset($this->get_array['type']) && $this->get_array['type'] != "glyphs") {
                 if(!isset($this->get_array['subTp']) || $this->get_array['subTp'] == 'all') {
                     $allowable_types = null;
                     switch($this->get_array['type']) {
@@ -1008,7 +1026,7 @@ Class SearchMgr {
         $sql = str_replace("WHERE ORDER BY", "ORDER BY", $sql);
         return $sql;
     }
-    
+
     /**
      * Returns array with item sources (for search results)
      * @category Search class

@@ -45,7 +45,7 @@ if(isset($_GET)) {
                 continue;
             }
             $realm_info = Armory::$realmData[$realm_id];
-            $db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
+            $db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
             if(!$db) {
                 // Error message will appear in ArmoryDatabaseHandler::ArmoryDatabaseHandler();
                 continue;

@@ -27,35 +27,35 @@ if(!defined('__ARMORY__')) {
 }
 
 Class Utils {
-    
+
     /**
      * Account ID
      * @category Utils class
      * @access   public
      **/
     public $accountId;
-    
+
     /**
      * Username
      * @category Utils class
      * @access   public
      **/
     public $username;
-    
+
     /**
      * Password
      * @category Utils class
      * @access   public
      **/
     public $password;
-    
+
     /**
      * Login-password hash (SHA1)
      * @category Utils class
      * @access   public
      **/
     public $shaHash;
-    
+
     /**
      * User authorization
      * @category Utils class
@@ -84,7 +84,7 @@ Class Utils {
             return true;
         }
     }
-    
+
     /**
      * Close session for current user
      * @category Utils class
@@ -97,7 +97,7 @@ Class Utils {
         unset($_SESSION['accountId']);
         return true;
     }
-    
+
     /**
      * Checks if account have any character that can browse guild bank.
      * @category Utils class
@@ -116,7 +116,7 @@ Class Utils {
             return false;
         }
         $realm_info = Armory::$realmData[$realmId];
-        $db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
+        $db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
         if(!$db) {
             return false;
         }
@@ -134,7 +134,7 @@ Class Utils {
         // Account have character in $guildId guild
         return true;
     }
-    
+
     /**
      * Is account have current character? :D
      * @category Utils class
@@ -152,7 +152,7 @@ Class Utils {
             return false;
         }
         $realm_info = Armory::$realmData[$realmId];
-        $db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
+        $db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
         if(!$db) {
             return false;
         }
@@ -163,7 +163,7 @@ Class Utils {
         // Account $_SESSION['accountId'] have character $guid on $realmId realm
         return true;
     }
-    
+
     /**
      * Counts all selected characters.
      * @category Utils class
@@ -176,7 +176,7 @@ Class Utils {
         }
         return Armory::$aDB->selectCell("SELECT COUNT(*) FROM `ARMORYDBPREFIX_login_characters` WHERE `account`=%d", $_SESSION['accountId']);
     }
-    
+
     /**
      * Counts all characters.
      * @category Utils class
@@ -189,14 +189,14 @@ Class Utils {
         }
         $count_all = 0;
         foreach(Armory::$realmData as $realm_info) {
-            $db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
+            $db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
             $current = $db->selectCell("SELECT COUNT(*) FROM `characters` WHERE `account`=%d", $_SESSION['accountId']);
             $count_all += $current;
         }
         unset($realm_info, $db);
         return $count_all;
     }
-    
+
     /**
      * Removes all characters from `armory_login_characters` table.
      * @category Utils class
@@ -211,7 +211,7 @@ Class Utils {
         Armory::$aDB->query("DELETE FROM `ARMORYDBPREFIX_login_characters` WHERE `account` = %d", $_SESSION['accountId']);
         return true;
     }
-    
+
     /**
      * Add character to `armory_login_characters` table.
      * @category Utils class
@@ -227,7 +227,7 @@ Class Utils {
         }
         return Armory::$aDB->query("INSERT INTO `ARMORYDBPREFIX_login_characters` VALUES (%d, %d, %d, '%s', %d, %d, %d, %d, %d, %d)", $char_data['account'], $count, $char_data['guid'], $char_data['name'], $char_data['class'], $char_data['race'], $char_data['gender'], $char_data['level'], $realm_id, $char_data['selected']);
     }
-    
+
     /**
      * Returns array with all characters.
      * @category Utils class
@@ -240,17 +240,17 @@ Class Utils {
         }
         $results = array();
         foreach(Armory::$realmData as $realm_info) {
-            $db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
+            $db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
             if(!$db) {
                 continue;
             }
             $chars_data = $db->select("
             SELECT
             `characters`.`guid`,
-            `characters`.`name`, 
-            `characters`.`class` AS `classId`, 
-            `characters`.`race` AS `raceId`, 
-            `characters`.`gender` AS `genderId`, 
+            `characters`.`name`,
+            `characters`.`class` AS `classId`,
+            `characters`.`race` AS `raceId`,
+            `characters`.`gender` AS `genderId`,
             `characters`.`level`,
             `guild_member`.`guildid` AS `guildId`,
             `guild`.`name` AS `guild`
@@ -300,7 +300,7 @@ Class Utils {
         Armory::Log()->writeLog('%s : unable to find any character for account %d', __METHOD__, $_SESSION['accountId']);
         return false;
     }
-    
+
     /**
      * Returns active (selected) character info
      * @category Utils class
@@ -318,7 +318,7 @@ Class Utils {
         $char_data['realmName'] = Armory::$realmData[$char_data['realm_id']]['name'];
         return $char_data;
     }
-    
+
     /**
      * Returns character GUID for $name@$realmId
      * @category Utils class
@@ -333,7 +333,7 @@ Class Utils {
         }
         return Armory::$aDB->selectCell("SELECT `guid` FROM `ARMORYDBPREFIX_login_characters` WHERE `name` = '%s' AND `realm_id` = %d AND `account` = %d LIMIT 1", $name, $realmId, $_SESSION['accountId']);
     }
-    
+
     public function SetNewPrimaryCharacter($guid, $realm_id) {
         if(!isset($_SESSION['accountId'])) {
             return false;
@@ -359,7 +359,7 @@ Class Utils {
         }
         return true;
     }
-    
+
     /**
      * Returns array with user bookmarks.
      * @category Utils class
@@ -386,7 +386,7 @@ Class Utils {
                 continue;
             }
             $realm_info = Armory::$realmData[$realm_id];
-            $db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
+            $db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
             if(!$db) {
                 continue;
             }
@@ -402,7 +402,7 @@ Class Utils {
         }
         return $result;
     }
-    
+
     /**
      * Creates new bookmark
      * @category Utils class
@@ -427,7 +427,7 @@ Class Utils {
             return false;
         }
         $realm_info = Armory::$realmData[$realm_id];
-        $db = new ArmoryDatabaseHandler($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
+        $db = new Armory::$dbClass($realm_info['host_characters'], $realm_info['user_characters'], $realm_info['pass_characters'], $realm_info['port_characters'], $realm_info['name_characters'], $realm_info['charset_characters']);
         if(!$db) {
             return false;
         }
@@ -439,7 +439,7 @@ Class Utils {
         Armory::$aDB->query("INSERT IGNORE INTO `ARMORYDBPREFIX_bookmarks` VALUES (%d, '%s', %d, %d, '%s', '%s')", $_SESSION['accountId'], $char_data['name'], $char_data['classId'], $char_data['level'], $realmName, $char_data['realmUrl']);
         return true;
     }
-    
+
     /**
      * Delete bookmark.
      * @category Utils class
@@ -455,7 +455,7 @@ Class Utils {
         Armory::$aDB->query("DELETE FROM `ARMORYDBPREFIX_bookmarks` WHERE `name`='%s' AND `realm`='%s' AND `account`='%d' LIMIT 1", $name, $realmName, $_SESSION['accountId']);
         return true;
     }
-    
+
     /**
      * Returns bookmarks count.
      * @category Utils class
@@ -472,7 +472,7 @@ Class Utils {
         }
         return $count;
     }
-    
+
     /**
      * Generates SHA1 hash.
      * @category Utils class
@@ -487,7 +487,7 @@ Class Utils {
         $this->shaHash = sha1(strtoupper($this->username).':'.strtoupper($this->password));
         return strtoupper($this->shaHash);
     }
-    
+
     /**
      * Calculates pet bonus for some stats.
      * @category Utils class
@@ -518,7 +518,7 @@ Class Utils {
         }
         return -1;
     }
-    
+
     /**
      * Returns float value.
      * @category Utils class
@@ -531,7 +531,7 @@ Class Utils {
         $txt = unpack('f', pack('L', $value));
         return round($txt[1], $num);
     }
-    
+
     /**
      * Returns rating coefficient for rating $id.
      * @category Utils class
@@ -555,7 +555,7 @@ Class Utils {
         }
         return $c;
     }
-    
+
     /**
      * Loads rating info from DB.
      * @category Utils class
@@ -563,10 +563,26 @@ Class Utils {
      * @param    int $level
      * @return   array
      **/
-    public function GetRating($level) {
+    public function GetRating($level)
+    {
+        if (Armory::$cache->exists('rating'))
+        {
+            $rating = Armory::$cache->fetch('rating');
+            return $rating[$level];
+        }
+        else if (Armory::$cache->isEnabled())
+        {
+            $all_rating = Armory::$aDB->select("SELECT * FROM `ARMORYDBPREFIX_rating`");
+            foreach ($all_rating as $data)
+                $new_rating[$data['level']] = $data;
+
+            Armory::$cache->store('rating', $new_rating, Armory::$cacheconfig['rating']);
+            return $new_rating[$level];
+        }
+
         return Armory::$aDB->selectRow("SELECT * FROM `ARMORYDBPREFIX_rating` WHERE `level`=%d", $level);
     }
-    
+
     /**
      * Add slashes to string.
      * @category Utils class
@@ -577,7 +593,7 @@ Class Utils {
     public function escape($string) {
         return !get_magic_quotes_gpc() ? addslashes($string) : $string;
     }
-    
+
     /**
      * Returns percent value.
      * @category Utils class
@@ -597,7 +613,7 @@ Class Utils {
 		}
 		return $progressPercent;
     }
-    
+
     /**
      * Returns max. array value index.
      * @category Utils class
@@ -613,7 +629,7 @@ Class Utils {
         $keys = array_keys($arr);
         $cnt = count($arr);
         $min = $max = $arr[$keys[0]];
-        $index_min=$index_max=0; 
+        $index_min=$index_max=0;
         for($i = 1; $i < $cnt; $i++) {
             if($arr[$keys[$i]]>$max) {
                 $index_max = $i;
@@ -622,7 +638,7 @@ Class Utils {
         }
         return $index_max;
     }
-    
+
     /**
      * Returns spell bonus damage.
      * @category Utils class
@@ -639,12 +655,12 @@ Class Utils {
         $field_done_pct = PLAYER_FIELD_MOD_DAMAGE_DONE_PCT + $school+1;
         $damage_done_pos = $db->selectCell("
         SELECT CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(`data`, ' ', %d), ' ', '-1') AS UNSIGNED)
-            FROM `armory_character_stats` 
+            FROM `armory_character_stats`
                 WHERE `guid`=%d", $field_done_pos, $guid);
         unset($db);
         return $damage_done_pos;
     }
-    
+
     /**
      * Returns array with Realm firsts achievements
      * @category Utils class
@@ -653,6 +669,9 @@ Class Utils {
      * @return   array
      **/
     public function GetRealmFirsts() {
+        if (Armory::$cache->exists('realm-firsts'))
+            return Armory::$cache->fetch('realm-firsts');
+
         $achievements_data = Armory::$cDB->select("
         SELECT
         `character_achievement`.`achievement`,
@@ -668,12 +687,12 @@ Class Utils {
         LEFT JOIN `characters` AS `characters` ON `characters`.`guid`=`character_achievement`.`guid`
         LEFT JOIN `guild_member` AS `guild_member` ON `guild_member`.`guid`=`character_achievement`.`guid`
         LEFT JOIN `guild` AS `guild` ON `guild`.`guildid`=`guild_member`.`guildid`
-        WHERE `character_achievement`.`achievement` IN 
+        WHERE `character_achievement`.`achievement` IN
         (
-            456,  457,  458,  459,  460,  461,  462,  463, 464, 465, 466, 467,  
-            1400, 1402, 1404, 1405, 1406, 1407, 1408, 1409, 
-            1410, 1411, 1412, 1413, 1414, 1415, 1416, 1417, 1418, 
-            1419, 1420, 1421, 1422, 1423, 1424, 1425, 1426, 1427, 
+            456,  457,  458,  459,  460,  461,  462,  463, 464, 465, 466, 467,
+            1400, 1402, 1404, 1405, 1406, 1407, 1408, 1409,
+            1410, 1411, 1412, 1413, 1414, 1415, 1416, 1417, 1418,
+            1419, 1420, 1421, 1422, 1423, 1424, 1425, 1426, 1427,
             1463, 3259, 3117, 4078, 4576
         )
         ORDER BY `character_achievement`.`date` DESC"); // 4.0.3 IDs
@@ -740,7 +759,7 @@ Class Utils {
                         'level' => 0,
                         'raceId' => $char['race'],
                         'realm' => Armory::$currentRealmInfo['name'],
-                        'name' => $char['charname'],
+                        'name' => utf8_encode($char['charname']),
                         'url' => sprintf('cn=%s&r=%s', urlencode($char['charname']), urlencode(Armory::$currentRealmInfo['name']))
                     );
                 }
@@ -759,14 +778,15 @@ Class Utils {
                     'level' => 0,
                     'raceId' => $achievement['race'],
                     'realm' => Armory::$currentRealmInfo['name'],
-                    'name' => $achievement['charname'],
+                    'name' => utf8_encode($achievement['charname']),
                     'url' => sprintf('cn=%s&r=%s', urlencode($achievement['charname']), urlencode(Armory::$currentRealmInfo['name']))
                 );
             }
         }
+        Armory::$cache->store('realm-firsts', $realm_firsts, Armory::$cacheconfig['realm-firsts']);
         return $realm_firsts;
     }
-    
+
     /**
      * Calculates attack power for different classes by stat mods
      * @category Utils class
@@ -808,7 +828,7 @@ Class Utils {
         }
         return $ap;
     }
-    
+
     /**
      * Calculates crit chance from agility stat.
      * @category Utils class
@@ -832,7 +852,7 @@ Class Utils {
             return -1;
         }
     }
-    
+
     /**
      * Calculates spell crit chance from intellect stat.
      * @category Utils class
@@ -853,7 +873,7 @@ Class Utils {
             return $base[$class-1] + $intellect*$rating[$ratingkey[11+$class]]*100;
         }
     }
-    
+
     /**
      * Calculates health regeneration coefficient.
      * @category Utils class
@@ -877,7 +897,7 @@ Class Utils {
         }
         return $c;
     }
-    
+
     /**
      * Calculates mana regenerating coefficient
      * @category Utils class
@@ -901,7 +921,7 @@ Class Utils {
         }
         return $c;
     }
-    
+
     /**
      * Returns Skill ID that required for Item $id
      * @category Utils class
@@ -940,7 +960,7 @@ Class Utils {
         }
         return SKILL_UNARMED;
     }
-    
+
     /**
      * Returns skill info for skill $id
      * @category Utils class
@@ -968,7 +988,7 @@ Class Utils {
         }
         return $skillInfo;
     }
-    
+
     /**
      * Generates cache ID (md5 hash)
      * @category Utils class
@@ -980,9 +1000,9 @@ Class Utils {
      * @return   string
      **/
     public function GenerateCacheId($page, $att1 = 0, $att2 = 0, $att3 = 0) {
-        return md5($page.':'.ARMORY_REVISION.':'.$att1.':'.$att2.':'.$att3.':'.Armory::GetLocale());
+        return md5($page.':'.$att1.':'.$att2.':'.$att3.':'.Armory::GetLocale());
     }
-    
+
     /**
      * Loads cache by $file_id hash (md5).
      * @category Utils class
@@ -1010,7 +1030,7 @@ Class Utils {
             $character_guid  = $data_explode[3];
             $cache_locale    = $data_explode[4];
             $file_expire = $cache_timestamp + Armory::$armoryconfig['cache_lifetime'];
-            if($file_expire < time() || $cache_revision != ARMORY_REVISION) {
+            if($file_expire < time()) {
                 self::DeleteCache($file_id, $file_dir); // Remove old cache
                 return false;
             }
@@ -1028,7 +1048,7 @@ Class Utils {
         }
         return false;
     }
-    
+
     /**
      * Delete cache by $file_id hash (md5) from $file_dir directory.
      * @category Utils class
@@ -1048,7 +1068,7 @@ Class Utils {
         }
         return;
     }
-    
+
     /**
      * Write data to cache.
      * @category Utils class
@@ -1078,7 +1098,7 @@ Class Utils {
         @fclose($cacheCache);
         return 0x01;
     }
-    
+
     /**
      * Generates cache data (creation date, revisions, etc.).
      * @category Utils class
@@ -1089,9 +1109,9 @@ Class Utils {
      * @return   string
      **/
     public function GenerateCacheData($nameOrItemID, $charGuid, $page = null) {
-        return sprintf('%d:%d:%s:%d:%s:%s', time(), ARMORY_REVISION, $nameOrItemID, $charGuid, $page, Armory::GetLocale());
+        return sprintf('%d:%d:%s:%d:%s:%s', time(), $nameOrItemID, $charGuid, $page, Armory::GetLocale());
     }
-    
+
     /**
      * Replace special symbols in $text.
      * @category Utils class
@@ -1104,7 +1124,7 @@ Class Utils {
         $values = array("`",'&quot;',"&lt;","&gt;","&gt;",""  ,"<br>", "<br />", "<br/>");
         return str_replace($letter, $values, $text);
     }
-    
+
     /**
      * Converts seconds to day/hour/minutes format.
      * @category Utils class
@@ -1154,7 +1174,7 @@ Class Utils {
         }
         return $text;
     }
-    
+
     /**
      * Returns spell radius.
      * @category Utils class
@@ -1219,7 +1239,7 @@ Class Utils {
         }
         return $radius[0] . ' - ' . $radius[2];
     }
-    
+
     /**
      * Returns string with ID #$id for Armory::GetLocale() locale from DB
      * @category Utils class
@@ -1227,13 +1247,37 @@ Class Utils {
      * @param    mixed $id
      * @return   string
      **/
+
     public function GetArmoryString($id) {
+        if (Armory::$cache->exists('armory-strings'))
+        {
+            $strings = Armory::$cache->fetch('armory-strings');
+            if (is_array($id))
+            {
+                foreach ($id as $stringId)
+                    $newString[] = $strings[$stringId]['string_' . Armory::GetLocale()];
+
+                return $newString;
+            }
+
+            return $strings[$id]['string_' . Armory::GetLocale()];
+        }
+        else if (Armory::$cache->isEnabled())
+        {
+            $strings = Armory::$aDB->select("SELECT * FROM `ARMORYDBPREFIX_string`");
+            foreach ($strings as $data)
+                $newStrings[$data['id']] = $data;
+
+            Armory::store('armory-strings', $newStrings, Armory::$cacheconfig['armory-strings']);
+            return $newStrings[$id]['string_' . Armory::GetLocale()];
+        }
+
         if(is_array($id)) {
             return Armory::$aDB->selectCell("SELECT `string_%s` FROM `ARMORYDBPREFIX_string` WHERE `id` IN (%s)", Armory::GetLocale(), $id);
         }
         return Armory::$aDB->selectCell("SELECT `string_%s` FROM `ARMORYDBPREFIX_string` WHERE `id`=%d", Armory::GetLocale(), $id);
     }
-    
+
     /**
      * Returns player class ID (by class name)
      * @category Utils class
@@ -1278,7 +1322,7 @@ Class Utils {
                 break;
         }
     }
-    
+
     /**
      * Returns instance ID from DB
      * @category Utils class
@@ -1289,7 +1333,7 @@ Class Utils {
     public function GetDungeonId($instance_key) {
         return Armory::$aDB->selectCell("SELECT `id` FROM `ARMORYDBPREFIX_instance_template` WHERE `key`='%s' LIMIT 1", $instance_key);
     }
-    
+
     /**
      * Returns dungeon data
      * @category Utils class
@@ -1300,7 +1344,7 @@ Class Utils {
     public function GetDungeonData($instance_key) {
         return Armory::$aDB->selectRow("SELECT `id`, `name_%s` AS `name`, `is_heroic`, `key`, `difficulty` FROM `ARMORYDBPREFIX_instance_template` WHERE `key`='%s'", Armory::GetLocale(), $instance_key);
     }
-    
+
     /**
      * Returns pet data for pet talent calculator
      * @category Utils class
@@ -1317,7 +1361,7 @@ Class Utils {
                 break;
         }
     }
-    
+
     /**
      * Checks for correct realm name
      * @category Utils class
@@ -1333,7 +1377,7 @@ Class Utils {
         Armory::Log()->writeError('%s : unable to find id for realm "%s".', __METHOD__, $rName);
         return false;
     }
-    
+
     /**
      * Returns realm ID
      * @category Utils class
@@ -1347,7 +1391,7 @@ Class Utils {
         }
         return self::IsRealm($rName);
     }
-    
+
     /**
      * Returns model data for race $raceId from DB (model Viewer)
      * @category Utils class
@@ -1356,9 +1400,28 @@ Class Utils {
      * @return   array
      **/
     public function RaceModelData($raceId) {
+        if (Armory::$cache->exists('race-model-data'))
+        {
+            $modelData = Armory::$cache->fetch('race-model-data');
+            return $modelData[$raceId];
+        }
+        else if (Armory::$cache->isEnabled())
+        {
+            $modelData = Armory::$aDB->select("SELECT `id`, `modeldata_1`, `modeldata_2` FROM `ARMORYDBPREFIX_races`");
+            foreach ($modelData as $data)
+            {
+                $id = $data['id'];
+                unset($data['id']);
+                $newModelData[$id] = $data;
+            }
+
+            Armory::$cache->store('race-model-data', $newModelData, Armory::$cacheconfig['race-model-data']);
+            return $newModelData[$raceId];
+        }
+
         return Armory::$aDB->selectRow("SELECT `modeldata_1`, `modeldata_2` FROM `ARMORYDBPREFIX_races` WHERE `id`=%d", $raceId);
     }
-    
+
     /**
      * Returns faction ID for $raceID
      * @category Utils class
@@ -1366,7 +1429,7 @@ Class Utils {
      * @param    int $raceID
      * @return   int
      **/
-    public function GetFactionId($raceID) {
+    public static function GetFactionId($raceID) {
         // Get player factionID
         $horde_races    = array(RACE_ORC,     RACE_TROLL, RACE_TAUREN, RACE_UNDEAD, RACE_BLOODELF);
         $alliance_races = array(RACE_DRAENEI, RACE_DWARF, RACE_GNOME,  RACE_HUMAN,  RACE_NIGHTELF);
@@ -1382,13 +1445,13 @@ Class Utils {
             return false;
         }
     }
-    
+
     /**
      * Returns array with latest news.
      * To add new item, you need to execute simple query to armory DB:
      * ===========
      * INSERT INTO `armory_news`
-     * (`date`,              `title_en_gb`, `title_*`,           `text_en_gb`, `text_*` `display`) 
+     * (`date`,              `title_en_gb`, `title_*`,           `text_en_gb`, `text_*` `display`)
      * VALUES
      * (UNIXTIMESTAMP_HERE, 'Title (ENGB)', 'Title (ANY Locale)', 'Text ENGB', 'Text (ANY Locale)', 1);
      * ==========
@@ -1400,7 +1463,7 @@ Class Utils {
      * @return   array
      **/
     public function GetArmoryNews($feed = false, $itemId = 0, $empty = false) {
-        if(Armory::$armoryconfig['useNews'] == false && !defined('ADMIN_PAGE')) {
+        if(Armory::$armoryconfig['useNews'] == false) {
             return false;
         }
         if($empty) {
@@ -1431,7 +1494,7 @@ Class Utils {
             }
             return $newsitem;
         }
-        $news = Armory::$aDB->select("SELECT `id`, `date`, `title_en_gb` AS `titleOriginal`, `title_%s` AS `titleLoc`, `text_en_gb` AS `textOriginal`, `text_%s` AS `textLoc` FROM `ARMORYDBPREFIX_news`%s ORDER BY `date` DESC", Armory::GetLocale(), Armory::GetLocale(), !defined('ADMIN_PAGE') ? ' WHERE `display`=1' : null);
+        $news = Armory::$aDB->select("SELECT `id`, `date`, `title_en_gb` AS `titleOriginal`, `title_%s` AS `titleLoc`, `text_en_gb` AS `textOriginal`, `text_%s` AS `textLoc` FROM `ARMORYDBPREFIX_news` WHERE `display`=1 ORDER BY `date` DESC", Armory::GetLocale(), Armory::GetLocale());
         if(!$news) {
             return false;
         }
@@ -1525,7 +1588,7 @@ Class Utils {
             return false;
         }
     }
-    
+
     /**
      * Returns true if script should use XMLWriter::WriteRaw() instead of special methods.
      * Required for fr/de/es locales.
@@ -1533,13 +1596,13 @@ Class Utils {
      * @access   public
      * @retunr   bool
      **/
-    public function IsWriteRaw() {
+    public static function IsWriteRaw() {
         if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'en_us' || Armory::GetLocale() == 'zh_cn' || Armory::GetLocale() == 'ru_ru') {
             return false;
         }
         return true;
     }
-    
+
     /**
      * Checks $_GET variable for multiply realms/names in it (for achievement/statistics comparison).
      * @category Utils class
@@ -1587,7 +1650,7 @@ Class Utils {
         }
         return $data;
     }
-    
+
     /**
      * Returns bit mask for class ID
      * @category Utils class
@@ -1631,7 +1694,7 @@ Class Utils {
         }
         return $mask;
     }
-    
+
     /**
      * Returns bit mask for race ID
      * @category Utils class
@@ -1675,7 +1738,7 @@ Class Utils {
         }
         return $mask;
     }
-    
+
     /**
      * Generate cache ID (md5 hash) for comparison cases (achievements/statistics).
      * @category Utils class
@@ -1690,7 +1753,7 @@ Class Utils {
         }
         return md5($characters);
     }
-    
+
     /**
      * Returns server type ID
      * @category Utils class
@@ -1709,7 +1772,7 @@ Class Utils {
         Armory::Log()->writeError('%s : unsupported server type ("%s")!', __METHOD__, $server);
         return UNK_SERVER;
     }
-    
+
     /**
      * Return slot name by slot ID
      * @category Utils class
@@ -1717,7 +1780,7 @@ Class Utils {
      * @param    int $slotId
      * @return   string
      **/
-    public function GetItemSlotTextBySlotId($slotId) {
+    public static function GetItemSlotTextBySlotId($slotId) {
         $slots_info = array(
             INV_HEAD => 'head',
             INV_NECK => 'neck',
@@ -1741,7 +1804,7 @@ Class Utils {
         );
         return (isset($slots_info[$slotId])) ? $slots_info[$slotId] : null;
     }
-    
+
     /**
      * Return slot name by inventory type
      * @category Utils class
@@ -1755,9 +1818,9 @@ Class Utils {
             2  => 'neck',
             3  => 'shoulder',
             4  => 'shirt',
-            5  => 'chest', 
-            6  => 'belt', 
-            7  => 'legs', 
+            5  => 'chest',
+            6  => 'belt',
+            7  => 'legs',
             8  => 'boots',
             9  => 'wrist',
             10 => 'gloves',
@@ -1766,12 +1829,12 @@ Class Utils {
             13 => 'mainhand',
             14 => 'offhand',
             15 => 'relic',
-            16 => 'back', 
+            16 => 'back',
             17 => 'stave',
             19 => 'tabard',
             20 => 'chest',
             21 => 'mainhand',
-            22 => null,
+            22 => 'offhand',
             23 => 'offhand',
             24 => null,
             25 => 'thrown',
@@ -1780,12 +1843,12 @@ Class Utils {
         );
         return (isset($slots_info[$invType])) ? $slots_info[$invType] : null;
     }
-    
+
     /**
      * Checks and fills missed and required $_GET variables.
      * @category Utils class
      * @access   public
-     * @return   bool 
+     * @return   bool
      **/
     public function CheckVariablesForPage() {
         $pageStr = $_SERVER['PHP_SELF'];
@@ -1833,7 +1896,7 @@ Class Utils {
         }
         return true;
     }
-    
+
     public function GetAllowableArmorTypesForClass($class, $search = false) {
         $allowable_armor_types = null;
         switch($class) {
@@ -1856,7 +1919,7 @@ Class Utils {
         }
         return $allowable_armor_types;
     }
-    
+
     public function GetAllowableWeaponTypesForClass($class, $search = false) {
         $allowable_weapon_types = null;
         switch($class) {
@@ -1867,7 +1930,7 @@ Class Utils {
                 $allowable_weapon_types = sprintf("%d, %d, %d, %d, %d, %d, %d", ITEM_SUBCLASS_WEAPON_AXE, ITEM_SUBCLASS_WEAPON_AXE2, ITEM_SUBCLASS_WEAPON_SWORD, ITEM_SUBCLASS_WEAPON_SWORD2, ITEM_SUBCLASS_WEAPON_MACE, ITEM_SUBCLASS_WEAPON_MACE2, ITEM_SUBCLASS_WEAPON_POLEARM);
                 break;
             case CLASS_HUNTER:
-                $allowable_weapon_types = sprintf("%d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d", ITEM_SUBCLASS_WEAPON_AXE2, ITEM_SUBCLASS_WEAPON_SWORD2, ITEM_SUBCLASS_WEAPON_THROWN, ITEM_SUBCLASS_WEAPON_STAFF, ITEM_SUBCLASS_WEAPON_POLEARM, ITEM_SUBCLASS_WEAPON_SWORD, ITEM_SUBCLASS_WEAPON_AXE, ITEM_SUBCLASS_WEAPON_GUN, ITEM_SUBCLASS_WEAPON_FIST, ITEM_SUBCLASS_WEAPON_BOW, ITEM_SUBCLASS_WEAPON_CROSSBOW);
+                $allowable_weapon_types = sprintf("%d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d", ITEM_SUBCLASS_WEAPON_AXE2, ITEM_SUBCLASS_WEAPON_SWORD2, ITEM_SUBCLASS_WEAPON_THROWN, ITEM_SUBCLASS_WEAPON_STAFF, ITEM_SUBCLASS_WEAPON_POLEARM, ITEM_SUBCLASS_WEAPON_SWORD, ITEM_SUBCLASS_WEAPON_AXE, ITEM_SUBCLASS_WEAPON_GUN, ITEM_SUBCLASS_WEAPON_FIST, ITEM_SUBCLASS_WEAPON_BOW, ITEM_SUBCLASS_WEAPON_CROSSBOW);
                 break;
             case CLASS_ROGUE:
                 $allowable_weapon_types = sprintf("%d, %d, %d, %d, %d, %d, %d, %d", ITEM_SUBCLASS_WEAPON_BOW, ITEM_SUBCLASS_WEAPON_CROSSBOW, ITEM_SUBCLASS_WEAPON_DAGGER, ITEM_SUBCLASS_WEAPON_FIST, ITEM_SUBCLASS_WEAPON_GUN, ITEM_SUBCLASS_WEAPON_AXE, ITEM_SUBCLASS_WEAPON_SWORD, ITEM_SUBCLASS_WEAPON_THROWN);
@@ -1893,7 +1956,7 @@ Class Utils {
         }
         return $allowable_weapon_types;
     }
-    
+
     public function CreateNewSession() {
         if(isset($_SESSION['armory_sid']) && $this->IsCorrectSession()) {
             return true;
@@ -1908,31 +1971,31 @@ Class Utils {
         $_SESSION['armory_shash'] = $session_hash;
         $_SESSION['armory_sid'] = $session_id;
     }
-    
+
     public function UpdateSession() {
         if(isset($_SESSION['armory_sid']) && $this->IsCorrectSession()) {
             return Armory::$aDB->query("UPDATE `ARMORYDBPREFIX_session` SET `active` = 1 WHERE `sid` = %d", $_SESSION['armory_sid']);
         }
         return true;
     }
-    
+
     public function GetSessionsCount() {
         // Drop old sessions before calculations
         Armory::$aDB->query("DELETE FROM `ARMORYDBPREFIX_session` WHERE `logintstamp` >= %d", ((60 * 15) + time()));
         return Armory::$aDB->selectCell("SELECT COUNT(*) FROM `ARMORYDBPREFIX_session` WHERE `active` = %d AND `is_admin` = 0", 1);
     }
-    
+
     public function GetNextSessionId() {
         return Armory::$aDB->selectCell("SELECT MAX(`sid`) FROM `ARMORYDBPREFIX_session`") + 1;
     }
-    
+
     public function IsCorrectSession() {
         if(!isset($_SESSION['armory_sid']) && !isset($_SESSION['armory_shash'])) {
             return false;
         }
         return (bool) Armory::$aDB->selectCell("SELECT `active` FROM `ARMORYDBPREFIX_session` WHERE `sid` = %d AND `shash` = '%s' AND `ip` = '%s'", $_SESSION['armory_sid'], $_SESSION['armory_shash'], $_SERVER['REMOTE_ADDR']);
     }
-    
+
     private function IsUserAdmin() {
         if(!isset($_SESSION['accountId'])) {
             return false;
@@ -1947,7 +2010,7 @@ Class Utils {
         }
         return false;
     }
-    
+
     public function UpdateVisitorsCount() {
         if(!isset($_COOKIE['armory_visited'])) {
             if(!Armory::$aDB->selectCell("SELECT 1 FROM `ARMORYDBPREFIX_visitors` WHERE `date` = %d", strtotime('TODAY'))) {
