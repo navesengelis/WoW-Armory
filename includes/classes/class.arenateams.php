@@ -504,8 +504,8 @@ Class Arenateams {
         `armory_game_chart`.`healingTaken`,
         `armory_game_chart`.`killingBlows`,
         `armory_game_chart`.`mapId`,
-        `armory_game_chart`.`start`,
-        `armory_game_chart`.`end`,
+        `armory_game_chart`.`start` as `matchLength`,
+        `armory_game_chart`.`date` as `end`,
         `characters`.`race` AS `raceId`,
         `characters`.`class` AS `classId`,
         `characters`.`gender` AS `genderId`,
@@ -525,12 +525,17 @@ Class Arenateams {
             Armory::Log()->writeError('%s : unable to get data from characters DB for gameID %d', __METHOD__, $this->gameid);
             return false;
         }
+		$game_info[0]['end'] = strtotime($game_info[0]['end'])*1000;
+		$game_info[0]['start'] = $game_info[0]['end'] - $game_info[0]['matchLength'];
         $chart_teams = array();
         $chart_teams['gameData'] = array(
             'battleGroup' => Armory::$armoryconfig['defaultBGName'],
             'id' => $this->gameid,
             'map' => Armory::$aDB->selectCell("SELECT `name_%s` FROM `ARMORYDBPREFIX_maps` WHERE `id`=%d LIMIT 1", Armory::GetLocale(), $game_info[0]['mapId']),
-            'matchLength' => $game_info[0]['end']-$game_info[0]['start'],
+            'start' => $game_info[0]['start'],
+			'matchStartTime' => $game_info[0]['start'],
+			'matchLength' => $game_info[0]['matchLength'],
+			'realmOffset' => 8*3600*1000,
             'teamSize' => $game_info[0]['type']
         );
         foreach($game_info as $team_member) {
@@ -607,19 +612,15 @@ Class Arenateams {
             $all_games[] = $game['gameid'];
         }
         $game_chart = Armory::$cDB->select("
-        SELECT
-        `armory_game_chart`.`gameid`,
-        `armory_game_chart`.`teamid`,
-        `armory_game_chart`.`start`,
-        `armory_game_chart`.`teamRating`,
-        `armory_game_chart`.`changeType`,
-        `armory_game_chart`.`ratingChange`,
-        `armory_game_chart`.`guid`,
-        `arena_team`.`name`,
-        `arena_team`.`type`
-        FROM `armory_game_chart` AS `armory_game_chart`
-        LEFT JOIN `arena_team` AS `arena_team` ON `arena_team`.`arenateamid`=`armory_game_chart`.`teamid`
-        WHERE `armory_game_chart`.`gameid` IN (%s) AND `armory_game_chart`.`teamid` <> %d", $all_games, $this->arenateamid);
+			SELECT
+			`gameid`, `teamid`, `start`, `date`, `guid`, `arena_team`.`name`, `arena_team`.`type`,
+			(SELECT b.`teamRating` FROM `armory_game_chart` b WHERE b.`gameid` = `armory_game_chart`.`gameid`  AND `teamid` = %d LIMIT 1) AS `teamRating`,
+			(SELECT b.`changeType` FROM `armory_game_chart` b WHERE b.`gameid` = `armory_game_chart`.`gameid`  AND `teamid` = %d LIMIT 1) AS `changeType`,
+			(SELECT b.`ratingChange` FROM `armory_game_chart` b WHERE b.`gameid` = `armory_game_chart`.`gameid`  AND `teamid` = %d LIMIT 1) AS `ratingChange`
+			FROM `armory_game_chart` AS `armory_game_chart`
+			LEFT JOIN `arena_team` AS `arena_team` ON `arena_team`.`arenateamid`=`armory_game_chart`.`teamid`
+			WHERE `armory_game_chart`.`gameid` IN (%s)  AND `armory_game_chart`.`teamid` <> %d;
+			", $this->arenateamid, $this->arenateamid, $this->arenateamid, $all_games, $this->arenateamid);
         if(!$game_chart) {
             Armory::Log()->writeError('%s : game_ids were fetched from DB, but script was unable to get data for these matches from characters DB (arenateamid:%d)', __METHOD__, $this->arenateamid);
             return false;
@@ -632,8 +633,9 @@ Class Arenateams {
                     'id' => $team['gameid'],
                     'ot' => $team['name'],
                     'r' => ($team['changeType'] == 1) ? $team['teamRating'] + $team['ratingChange'] : $team['teamRating']-$team['ratingChange'],
-                    'reamOffset' => 3600000, // hardcoded
-                    'st' => $team['start'], // needs to be fixed (change to timestamp)
+                    'realmOffset' => 8*3600*1000, // hardcoded
+					//'gtime' => strtotime($team['date'])*1000,
+					'st' => strtotime($team['date'])*1000 - $team['start'],
                     'teamUrl' => sprintf('r=%s&ts=%d&t=%s', urlencode(Armory::$currentRealmInfo['name']), $team['type'], urlencode($team['name']))
                 );
             }
@@ -687,7 +689,7 @@ Class Arenateams {
                     $exists = array();
                     foreach($rating_change as $rCh) {
                         if(!isset($exists[$rCh['gameid']])) {
-                            if($rCh['changeType'] == 2) {
+                            if($rCh['changeType'] == 1) {
                                 $rd += $rCh['ratingChange'];
                             }
                             else {
@@ -697,18 +699,19 @@ Class Arenateams {
                         }
                     }
                 }
-                $losses = Armory::$cDB->selectCell("SELECT COUNT(`gameid`) FROM `armory_game_chart` WHERE `changeType`=1 AND `teamid`='%d' AND `gameid` IN (%s)", $team['teamid'], $all_games);
+                $losses = Armory::$cDB->selectCell("SELECT COUNT(distinct(`gameid`)) FROM `armory_game_chart` WHERE `changeType`=1 AND `teamid`='%d' AND `gameid` IN (%s)", $team['teamid'], $all_games);
+				$wins = Armory::$cDB->selectCell("SELECT COUNT(distinct(`gameid`)) FROM `armory_game_chart` WHERE `changeType`=2 AND `teamid`='%d' AND `gameid` IN (%s)", $team['teamid'], $all_games);
                 $chart_data[$team['teamid']] = array(
                     'deleted'  => ($this->TeamExists($team['teamid'])) ? 'false' : 'true',
-                    'games'    => $team['countTeam'],
+                    'games'    => $losses + $wins,
                     'losses'   => $losses,
                     'rd'       => $rd,
                     'realm'    => Armory::$currentRealmInfo['name'],
                     'teamName' => $team['name'],
                     'teamUrl'  => sprintf("r=%s&ts=%d&t=%s", urlencode(Armory::$currentRealmInfo['name']), $team['type'], urlencode($team['name'])),
-                    'wins'     => $team['countTeam']-$losses
+                    'wins'     => $wins
                 );
-                $chart_data[$team['teamid']]['winPer'] = Utils::GetPercent($team['countTeam'], $chart_data[$team['teamid']]['wins']);
+                $chart_data[$team['teamid']]['winPer'] = Utils::GetPercent($chart_data[$team['teamid']]['games'], $chart_data[$team['teamid']]['wins']);
             }
         }
         return $chart_data;

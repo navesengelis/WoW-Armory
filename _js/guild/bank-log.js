@@ -1,5 +1,5 @@
 var guildInfoCont;
-var bankFilters;
+var logFilters;
 var filVals;
 var noSearchResults = "";
 
@@ -42,6 +42,11 @@ function initGuildBankLog(txtShowGuildInfo, txtHideGuildInfo, noSearchResultsTxt
 		if(searchTimer != null){ clearTimeout(searchTimer); }
 		searchTimer = setTimeout("runBankLogFilters()", 100);
 	});
+	
+	$(logFilters.charName).keyup(function() {
+ 		if(searchTimer != null){ clearTimeout(searchTimer); }
+ 		searchTimer = setTimeout("runBankLogFilters()", 100);
+ 	});
 }
 
 function toggleBankTab(clickedLink, whichTab, tabText, tabIcon){
@@ -60,21 +65,35 @@ function toggleBankTab(clickedLink, whichTab, tabText, tabIcon){
 function runBankLogFilters(){
 	
 	filVals = {
+ 		charName: 		$.trim($(logFilters.charName)[0].value).toLowerCase(),
+ 		charRank: 		$(logFilters.charRank)[0].value, 
 		transOrigin: 	$(logFilters.transOrigin)[0].value,
 		transType: 		$(logFilters.transType)[0].value,
 		transDest: 		$(logFilters.transDest)[0].value,
+		itemName: 		$.trim($(logFilters.itemName)[0].value).toLowerCase(),
 		itemQuality: 	$(logFilters.itemQuality)[0].value,	
 	}
 	
 	var newRows = [];
 	
-	if( (filVals.transOrigin == "-1") && (filVals.transType == "-1") && (filVals.transDest == "-1") && (filVals.itemQuality == "-1")  ){
+ 	if( (filVals.charName == "") && (filVals.charRank == "-1") && (filVals.transOrigin == "-1") && (filVals.transType == "-1") && (filVals.transDest == "-1") && (filVals.itemName == "") && (filVals.itemQuality == "-1")  ){
 		newRows = unfilteredTableRows;		
 	}else{
 		$(unfilteredTableRows).each(function(i){
 			
 			var currRow = $(this).children();
 			var numAdd = 0;
+			
+ 			//charName
+ 			if(filVals.charName != ""){
+ 				var currChar = $(currRow[0]).children()[0].innerHTML.toLowerCase();
+ 				if(currChar.indexOf(filVals.charName) != -1) numAdd++;
+ 			}else{ numAdd++ }
+ 			
+ 			//charRank
+ 			if(filVals.charRank != "-1"){
+ 				if($(currRow[1]).children()[0].innerHTML == filVals.charRank) numAdd++;
+ 			}else{ numAdd++ }
 			
 			//transOrigin
 			if(filVals.transOrigin != "-1"){
@@ -91,12 +110,18 @@ function runBankLogFilters(){
 				if($(currRow[4]).children()[0].innerHTML == filVals.transDest) numAdd++;
 			}else{ numAdd++ }
 			
+ 			//itemName
+ 			if(filVals.itemName != ""){
+ 				var currItem = $(currRow[5]).children()[1].innerHTML.toLowerCase();
+ 				if(currItem.indexOf(filVals.itemName) != -1) numAdd++;
+ 			}else{ numAdd++ }
+			
 			//itemQuality
 			if(filVals.itemQuality != "-1"){
 				if($(currRow[5]).children()[0].innerHTML == filVals.itemQuality) numAdd++;
 			}else{ numAdd++ }
 			
-			if(numAdd == 4){
+			if(numAdd == 7){
 				newRows.push($(this));
 			}			
 		});
@@ -137,6 +162,9 @@ function runBankLogFilters(){
 
 //reset the values
 function resetBankLogFilters(){
+	$(logFilters.charName)[0].value = "";
+ 	$(logFilters.itemName)[0].value = "";
+ 	$(logFilters.charRank)[0].value = "-1";
 	$(logFilters.transOrigin)[0].value = "-1";
 	$(logFilters.transType)[0].value = "-1";
 	$(logFilters.transDest)[0].value = "-1";

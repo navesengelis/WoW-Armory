@@ -21,8 +21,8 @@ function initializeArenaGame(startTime, matchLength, offset){
 	
 	$("#matchStartTime").html( new Date((startTime*1) + (offset*1)).asUTCTime());
 	
-	var matchMins = Math.floor(matchLength / 60);
-	var matchSecs = matchLength - (matchMins*60)
+ 	var matchMins = Math.floor(matchLength / 60);
+ 	var matchSecs = matchLength - (matchMins*60)
 
 	$("#matchLength").html(matchMins + " " + Date.minutes + " " + matchSecs + " " + Date.seconds);
 	

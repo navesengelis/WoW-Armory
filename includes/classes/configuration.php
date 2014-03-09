@@ -57,7 +57,7 @@ $ArmoryConfig['mysql']['host_armory']     = 'localhost';
 $ArmoryConfig['mysql']['user_armory']     = 'root';
 $ArmoryConfig['mysql']['pass_armory']     = '891127';
 $ArmoryConfig['mysql']['port_armory']     = 3306;
-$ArmoryConfig['mysql']['name_armory']     = 'armory2';
+$ArmoryConfig['mysql']['name_armory']     = 'armory';
 $ArmoryConfig['mysql']['charset_armory']  = 'UTF8';
 
 $ArmoryConfig['mysql']['host_realmd']     = 'localhost';
@@ -203,7 +203,7 @@ $ArmoryConfig['settings']['cachePrefix']      = 'armory';
 ##############################################################################################
 
 $ArmoryConfig['multiRealm'][1]['id']                 = 1;
-$ArmoryConfig['multiRealm'][1]['name']               = 'WLK仿官方';
+$ArmoryConfig['multiRealm'][1]['name']               = '洛萨';
 $ArmoryConfig['multiRealm'][1]['type']               = SERVER_TRINITY;
 $ArmoryConfig['multiRealm'][1]['host_characters']    = 'localhost';
 $ArmoryConfig['multiRealm'][1]['user_characters']    = 'trinity';

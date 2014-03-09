@@ -713,7 +713,7 @@
 	</region>
 	<common>
 		<str id="the-wow-armory">魔兽世界英雄榜</str>
-		<str id="meta-description">魔兽世界英雄榜是一个巨大的搜索魔兽世界的信息数据库 - 直接从真实服务器上搜索。这是关于角色，竞技场队伍，公会，物品，声望奖励的最全面和最新的魔兽世界数据库。</str>
+		<str id="meta-description">魔兽世界英雄榜是一个巨大的搜索魔兽世界的信息数据库 - 直接从真实服务器上搜索。这是关于角色，竞技场战队，公会，物品，声望奖励的最全面和最新的魔兽世界数据库。</str>
 		<str id="the-armory">英雄榜</str>
 		<str id="search-armory">搜索英雄榜</str>
 		<str id="error.selectCategory">请选择一个类别</str>
@@ -759,7 +759,7 @@
 		<str id="labels.selectlanguagecolon">选择语言:</str>
 
 		<str id="menu.armory">英雄榜</str>
-		<str id="menu.arenateams">竞技场队伍</str>
+		<str id="menu.arenateams">竞技场战队</str>
 		<str id="menu.characters">角色</str>
 		<str id="menu.guilds">公会</str>
 		<str id="menu.items">物品</str>
@@ -797,7 +797,7 @@
 
 		<str id="guild-search.label.enter-guild-name">请输入公会名字</str>
 		<str id="character-search.label.enter-character-name">请输入角色名字</str>
-		<str id="character-search.label.enter-team-name">请输入队伍名字</str>
+		<str id="character-search.label.enter-team-name">请输入战队名字</str>
 
 		<str id="armory.none">无</str>
 		<str id="user.select.character">选择角色</str>
@@ -970,15 +970,15 @@
 	</semicommon>
 
 	<arena>
-		<str id="arena-teams">竞技场队伍</str>
+		<str id="arena-teams">竞技场战队</str>
 		<str id="select-battlegroup">选择一个战场群</str>
-		<str id="select-team-type">选择队伍类型</str>
+		<str id="select-team-type">选择战队类型</str>
 		<str id="battlegroup">战场群</str>
 		<str id="arena">竞技场</str>
 		<str id="arena-ladders">竞技场排名</str>
-		<str id="team-profiles">队伍信息</str>
+		<str id="team-profiles">战队信息</str>
 		<str id="arena-reports">竞技场报告</str>
-		<str id="team-profile">队伍信息</str>
+		<str id="team-profile">战队信息</str>
 		<str id="match-history">比赛记录</str>
 		<str id="match-report">比赛报告</str>
 		<str id="opponent">对手名字</str>
@@ -992,19 +992,19 @@
 		<str id="time">时间</str>
 		<str id="findMatch">在图表中显示该场比赛</str>
 		<str id="goToMatchReport">进入比赛报告页面</str>
-		<str id="deletedTeam">该队伍已经解散</str>
+		<str id="deletedTeam">该战队已经解散</str>
 		<str id="opponent-history">对手统计</str>
 		<str id="totalgames">总共进行过的比赛次数</str>
 		<str id="totalgames.short">场次</str>
-		<str id="wins">胜利</str>
+		<str id="wins">胜场次数</str>
 		<str id="wins.short">胜</str>
-		<str id="losses">失败</str>
+		<str id="losses">败场次数</str>
 		<str id="losses.short">负</str>
 
-		<str id="winp">% 胜率</str>
+		<str id="winp">胜率 %</str>
 		<str id="avgchange">平均每场比赛变化</str>
-		<str id="overallchange">排名提升 Δ</str> <!-- Net Δ  -->
-		<str id="overallchange.tooltip">排名的总体变化</str>
+		<str id="overallchange">等级提升 Δ</str> <!-- Net Δ  -->
+		<str id="overallchange.tooltip">等级的总变化</str>
 
 		<str id="seasonbefore">第 </str>
 		<str id="seasonafter"> 赛季</str>
@@ -1023,12 +1023,12 @@
 		<str id="healin">比赛中接受的治疗</str>
 		<str id="healin.short">接受治疗</str>
 		<str id="lastweek">上周</str>
-		<str id="team-name">队伍名字</str>
+		<str id="team-name">战队名</str>
 		<str id="error.nodata">该页面没有数据。</str>
-		<str id="team-type">队伍类型</str>
-		<str id="team-members">队伍成员: </str>
-		<str id="teammembers">队伍成员</str>
-		<str id="viewmatchhistory">查看与之竞技的队伍</str>
+		<str id="team-type">战队类型</str>
+		<str id="team-members">战队成员: </str>
+		<str id="teammembers">战队成员</str>
+		<str id="viewmatchhistory">查看与之竞技的战队</str>
 
 		<legend>
 			<str id="arenaladder.title">Arena Icon Legend</str>
@@ -1047,9 +1047,9 @@
 			<str id="armory.arena-ladder-data.header.2v2">2V2竞技场排名结果</str>
 			<str id="armory.arena-ladder-data.header.3v3">3V3竞技场排名结果</str>
 			<str id="armory.arena-ladder-data.header.5v5">5V5竞技场排名结果</str>
-			<str id="armory.arena-ladder-data.tab.2v2">2v2竞技场队伍</str>
-			<str id="armory.arena-ladder-data.tab.3v3">3v3竞技场队伍</str>
-			<str id="armory.arena-ladder-data.tab.5v5">5v5竞技场队伍</str>
+			<str id="armory.arena-ladder-data.tab.2v2">2v2竞技场战队</str>
+			<str id="armory.arena-ladder-data.tab.3v3">3v3竞技场战队</str>
+			<str id="armory.arena-ladder-data.tab.5v5">5v5竞技场战队</str>
 			<str id="armory.arena-ladder-data.results1">显示结果</str>
 			<str id="armory.arena-ladder-data.all-realms">全部服务器</str>
 			<str id="armory.arena-ladder-data.1st">.</str>
@@ -1064,8 +1064,8 @@
 		<str id="reportHeader">
       <param1/>v<param1/> 竞技场比赛报告</str>
     <!-- string order, aka 5v5 Arena Match Report -->
-		<str id="viewTeamHistory">查看该队伍的比赛历史记录</str>
-		<str id="viewTeamProfile">查看队伍信息</str>
+		<str id="viewTeamHistory">查看该战队的比赛历史记录</str>
+		<str id="viewTeamProfile">查看战队信息</str>
 		<str id="gameInfo.map">地图:</str>
 		<str id="gameInfo.matchLength">用时:</str>
 		<str id="gameInfo.startTime">开始时间:</str>	
@@ -1087,7 +1087,7 @@
 		<str id="of">of</str>
 		<str id="averagechange">
       <param-html1/>/每场平均.</str>
-		<str id="nogames">在选中的赛季中，该支队伍没有进行过比赛。</str>
+		<str id="nogames">在选中的赛季中，该支战队没有进行过比赛。</str>
 		<str id="versus">v</str>
 		<str id="versuspt1"/>
 		<str id="versuspt2"> 竞技场 </str>
@@ -1110,7 +1110,7 @@
 
     <unsorted>
 		<str id="armory.labels.character-name">角色名字</str>
-		<str id="armory.labels.team-profiles">队伍信息</str>
+		<str id="armory.labels.team-profiles">战队信息</str>
 		<str id="armory.labels.guild">公会</str>
 		<str id="armory.labels.guilds">公会</str>
 		<str id="armory.labels.characters">角色</str>
@@ -1130,10 +1130,10 @@
 		<str id="armory.labels.lastweek">上周</str>
 		<str id="armory.labels.rank">排名</str>
 		<str id="armory.labels.ranks">排名</str>
-		<str id="armory.labels.team-rank">队伍排名</str>
-		<str id="armory.labels.team-name">队伍名字</str>
-		<str id="armory.labels.team-type">队伍类型</str>
-		<str id="armory.labels.team-members">队伍成员: </str>
+		<str id="armory.labels.team-rank">战队排名</str>
+		<str id="armory.labels.team-name">战队名字</str>
+		<str id="armory.labels.team-type">战队类型</str>
+		<str id="armory.labels.team-members">战队成员: </str>
 		<str id="armory.labels.members">公会名单</str>
 		<str id="armory.labels.guildrank">公会排名</str>
 		<str id="armory.labels.guild-rank">排名 </str>
@@ -1145,7 +1145,7 @@
 		<str id="armory.labels.item-results">搜索结果</str>
 		<str id="armory.labels.search">搜索</str>
 		<str id="armory.labels.browse">浏览</str>
-		<str id="armory.labels.arena-stats">竞技场队伍统计</str>
+		<str id="armory.labels.arena-stats">竞技场战队统计</str>
 		<str id="armory.labels.search-results">搜索结果</str>
 		<str id="armory.labels.advanced-filter">高级过滤器选项</str>
 		<str id="armory.labels.wow">World of Warcraft</str>
@@ -1174,14 +1174,14 @@
 		<str id="armory.labels.comingsoon">即将推出</str>
 		<str id="armory.labels.period">.</str>
 
-		<str id="armory.arenatab.2v2-arena-ladder">2v2-排名</str>
-		<str id="armory.arenatab.3v3-arena-ladder">3v3-排名</str>
-		<str id="armory.arenatab.5v5-arena-ladder">5v5-排名</str>
+		<str id="armory.arenatab.2v2-arena-ladder">2v2-天梯</str>
+		<str id="armory.arenatab.3v3-arena-ladder">3v3-天梯</str>
+		<str id="armory.arenatab.5v5-arena-ladder">5v5-天梯</str>
 		<str id="armory.arenatab.hof">名人堂</str>
 		<str id="armory.arenatab.arenaTournament">竞技场</str>
 		<str id="armory.arenatab.calc">竞技场计算器</str>
 
-		<str id="armory.arenatab.teamprofile">队伍信息</str>
+		<str id="armory.arenatab.teamprofile">战队信息</str>
 		<str id="armory.arenatab.matchhistory">比赛记录</str>
 		<str id="armory.arenatab.opponenthistory">对手统计</str>
 
@@ -1197,10 +1197,10 @@
 		<str id="armory.labels.winpercentage">胜率 %</str>
 		<str id="armory.labels.losses">战败</str>
 		<str id="armory.labels.played">Played</str>
-		<str id="armory.labels.twoteamstats">2v2 队伍统计</str>
-		<str id="armory.labels.threeteamstats">3v3 队伍统计</str>
-		<str id="armory.labels.fiveteamstats">5v5 队伍统计</str>
-		<str id="armory.labels.teamrating">队伍等级</str>
+		<str id="armory.labels.twoteamstats">2v2 战队统计</str>
+		<str id="armory.labels.threeteamstats">3v3 战队统计</str>
+		<str id="armory.labels.fiveteamstats">5v5 战队统计</str>
+		<str id="armory.labels.teamrating">等级</str>
 		<str id="armory.labels.personalrating">个人等级</str>
 		<str id="armory.labels.personalrating.short">个人等级</str>
 		<str id="armory.labels.personalratingcolon">个人等级: </str>
@@ -1209,14 +1209,14 @@
 		<str id="armory.labels.realm-name">服务器</str>
 		<str id="armory.labels.date-joined">参与日前</str>
 		<str id="armory.labels.level">等级</str>
-		<str id="armory.labels.games">场次</str>
-		<str id="armory.labels.win-loss">胜 - 负</str>
+		<str id="armory.labels.games">总场次</str>
+		<str id="armory.labels.win-loss">胜场 - 负场</str>
 		<str id="armory.labels.games-won">胜利</str>
 		<str id="armory.labels.thisweek">本周</str>
-		<str id="armory.labels.season">赛季</str>
+		<str id="armory.labels.season">本赛季</str>
 		<str id="armory.labels.qualifier">Qualifier</str>
 		<str id="armory.labels.games-woncolon">Games Won:</str>
-		<str id="armory.labels.noteam">无队伍</str>
+		<str id="armory.labels.noteam">无战队</str>
 		<str id="armory.labels.games-played">Games Played</str>
 		<str id="armory.labels.last-played">Last Played</str>
 		<str id="armory.labels.team-results">Team Search Results for</str>
@@ -1250,7 +1250,7 @@
 		<str id="armory.labels.header.pvp">PvP</str>
 		<str id="armory.labels.header.skills">技能</str>
 		<str id="armory.labels.header.talents">天赋</str>
-		<str id="armory.labels.header.arenateams">竞技场队伍</str>
+		<str id="armory.labels.header.arenateams">竞技场战队</str>
 		<str id="armory.labels.header.arena">竞技场</str>
 		<str id="armory.labels.header.guild">公会</str>
 		<str id="armory.labels.header.banklog">银行日志</str>
@@ -1271,7 +1271,7 @@
 		<str id="armory.labels.rankcolon">排名:</str>
 		<str id="armory.labels.standing">Standing</str>
 		<str id="armory.labels.standingcolon">Standing:</str>
-		<str id="armory.labels.teamnamecolon">队伍名字:</str>
+		<str id="armory.labels.teamnamecolon">战队名字:</str>
 
 		<str id="armory.labels.hks">Ehrenhafte Siege gesamt: </str>
 
@@ -1288,7 +1288,7 @@
 		<str id="armory.tabs.calendar">日程</str>
 		<str id="armory.tabs.skills">技能</str>
 		<str id="armory.tabs.talents">天赋</str>
-		<str id="armory.tabs.arenateams">竞技场队伍</str>
+		<str id="armory.tabs.arenateams">竞技场战队</str>
 		<str id="armory.tabs.achievements">成就</str>
 		<str id="armory.tabs.statistics">统计数据</str>
 		<str id="armory.tabs.characters">角色</str>
@@ -1408,17 +1408,17 @@
 		<str id="armory.select-battlegroup.link.battlegroupPage">http://www.wow-europe.com/en/info/basics/battlegroups.html</str>
 
 <!--select-team-type.xsl-->
-		<str id="armory.select-team-type.label.2v2team">2v2-队伍</str>
-		<str id="armory.select-team-type.label.3v3team">3v3-队伍</str>
-		<str id="armory.select-team-type.label.5v5team">5v5-队伍</str>
+		<str id="armory.select-team-type.label.2v2team">2v2-战队</str>
+		<str id="armory.select-team-type.label.3v3team">3v3-战队</str>
+		<str id="armory.select-team-type.label.5v5team">5v5-战队</str>
 
 <!--character-info.xsl-->
 		<str id="armory.character-info.header.character-profile">Character Profile</str>
 		<str id="armory.character-info.label.member-of">Member of</str>
 		<str id="armory.character-info.label.total-guild-members">Total Guild Members:</str>
-		<str id="armory.character-info.label.2v2team">2v2 竞技场队伍</str>
-		<str id="armory.character-info.label.3v3team">3v3 竞技场队伍</str>
-		<str id="armory.character-info.label.5v5team">5v5 竞技场队伍</str>
+		<str id="armory.character-info.label.2v2team">2v2 竞技场战队</str>
+		<str id="armory.character-info.label.3v3team">3v3 竞技场战队</str>
+		<str id="armory.character-info.label.5v5team">5v5 竞技场战队</str>
 		<str id="armory.character-info.teamPossessive"/>
 		<str id="armory.character-info.characterPossessive"/>
 		<str id="armory.character-info.statsBefore"></str>
@@ -1429,15 +1429,15 @@
 		<str id="armory.team-info.3v3">3v3</str>
 		<str id="armory.team-info.5v5">5v5</str>
 		<str id="armory.team-info.titleAfter"/>
-		<str id="armory.team-info.titleAfter"> 竞技场队伍统计</str>
-		<str id="armory.team-info.team-rating">队伍等级</str>
+		<str id="armory.team-info.titleAfter"> 竞技场战队统计</str>
+		<str id="armory.team-info.team-rating">等级</str>
 
 <!--character-search.xsl-->
 		<str id="armory.character-search.header.character-search">角色搜索</str>
 		<str id="armory.character-search.label.search-for-character">搜索角色档案</str>
 
-		<str id="armory.character-search.label.team-profile">队伍信息</str>
-		<str id="armory.team-search.team-search">队伍搜索</str>
+		<str id="armory.character-search.label.team-profile">战队信息</str>
+		<str id="armory.team-search.team-search">战队搜索</str>
 
 <!--guild-search.xsl-->
 		<str id="armory.guild-search.header.guild-search">Guild Search</str>
@@ -1622,7 +1622,7 @@
 		<str id="armory.labels.honorpoints">荣誉点数</str>
 		<str id="armory.labels.arenapoints">竞技场点数</str>
 
-		<str id="armory.items.relevance.percent">% 相关</str>
+		<str id="armory.items.relevance.percent">% 匹配</str>
 
 		<str id="armory.labels.factionrewards">声望奖励</str>
 		<str id="armory.labels.pvprewards">PvP 奖励</str>
@@ -1639,7 +1639,7 @@
 		<str id="armory.labels.open">打开</str>
 		<str id="armory.labels.top">回到顶部</str>
 
-		<str id="armory.search.relevance">相关</str>
+		<str id="armory.search.relevance">匹配</str>
 		<str id="armory.search.label.keywords">关键字: </str>
 		<str id="armory.search.label.category">分类: </str>
 		<str id="armory.search.openQuote">"</str>
@@ -1660,7 +1660,7 @@
 		<str id="armory.search.noresultsAfter"> - did not return any results.</str>
 		<str id="armory.search.type">Type</str>
 		<str id="armory.search.requiredLevel">Req Lvl</str>
-		<str id="armory.search.relevance">相关</str>
+		<str id="armory.search.relevance">匹配</str>
 		<str id="armory.search.label.keywords">Keywords: </str>
 		<str id="armory.search.label.category">Category: </str>
 		<str id="armory.search.oneResult">1 result for </str>
@@ -1835,10 +1835,10 @@
 		<str id="armory.item-search.complex.weapons">武器</str>
 		<str id="armory.item-search.complex.armor">护甲</str>
 
-		<str id="armory.search.paging">分页 <param-html1/> / <param-html2/>
+		<str id="armory.search.paging">第 <param-html1/> 页 共  <param-html2/> 页
     </str>
     <!-- for paging, param1-html is the page # box -->
-		<str id="armory.search.showing">显示: <param-html1/> / <param-html2/> 结果</str>
+		<str id="armory.search.showing">显示第 <param-html1/> 条到第 <param-html2/> 条结果</str>
     <!-- example: showing 0 of 0 results -->
 	</itemsOptions>
 
@@ -3073,8 +3073,8 @@
     </str>
 		<str id="title.about">竞技场等级和点数是如何计算的？</str>
 		<str id="penalty.title">惩罚:</str>
-		<str id="penalty.two">2v2竞技场队伍仅能获得同等级5v5竞技场队伍所获点数的<strong>76%</strong>。</str>
-		<str id="penalty.three">3v3竞技场队伍仅能获得同等级5v5竞技场队伍所获点数的<strong>88%</strong>。</str>
+		<str id="penalty.two">2v2竞技场战队仅能获得同等级5v5竞技场战队所获点数的<strong>76%</strong>。</str>
+		<str id="penalty.three">3v3竞技场战队仅能获得同等级5v5竞技场战队所获点数的<strong>88%</strong>。</str>
 		<str id="title.formulae">竞技场点数计算公式</str>
 		<str id="formula.ifrating">如果 <span class="ratingcolor">等级</span>
     </str>
@@ -3120,7 +3120,7 @@
       <i>Bookmark a profile</i> to auto-populate some of the fields in the calculator. Click <a href="character-search.xml">here</a> to search for a profile.</str>
 
 		<str id="disclaimer.stats">竞技场统计数据并不实时更新。<br/>
-并且只显示来自一个队伍的等级。</str>
+并且只显示来自一个战队的等级。</str>
 
 		<str id="twoVcolon">2v2:</str>
 		<str id="threeVcolon">3v3:</str>

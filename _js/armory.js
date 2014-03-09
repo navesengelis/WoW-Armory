@@ -922,7 +922,7 @@ function bindBookmarkMenu(sFromUrl, oTargetElement){
 	$(".rmBookmark").click(function(){
 			
 		//get the link that tells us what character we want to remove	
-		var removeBookmarkLink = $(this).prev().attr("href");		
+		var removeBookmarkLink = $(this).next().attr("href");		
 				
 		//remove the "/character-sheet.xml?" portion
 		removeBookmarkLink = removeBookmarkLink.substr(removeBookmarkLink.indexOf(".xml?")+5);	

@@ -370,10 +370,11 @@ Class Guilds {
 	     }
 		$log_list = Armory::$cDB->select("SELECT `LogGuid` AS `logId`, `TabId` AS `obag`, `EventType` AS `type`,
 		`DestTabId` AS `dbag`, (SELECT `name` FROM `characters` WHERE `guid`=`PlayerGuid`) AS `player`,	
+		(SELECT `guild_rank`.`rname` FROM `guild_rank` WHERE `guildid`=%d AND `rid`=`guild_member`.`rank`) AS `rname`,
 		`guild_member`.`rank`, `ItemOrMoney` AS `entry`, `ItemStackCount` AS `quantity`, `TimeStamp` AS `ts`
 		FROM `guild_bank_eventlog` AS `guild_bank_eventlog`
-		LEFT JOIN `guild_member` AS `guild_member` ON `guild_member`.`guid`=`guild_bank_eventlog`.`PlayerGuid` AND `guild_member`.`guildid`=%d 
-		WHERE `guild_bank_eventlog`.`guildid`=%d LIMIT 500", $this->guildId, $this->guildId);
+		LEFT JOIN `guild_member` AS `guild_member` ON `guild_member`.`guid`=`guild_bank_eventlog`.`PlayerGuid` AND `guild_member`.`guildid`=%d
+		WHERE `guild_bank_eventlog`.`guildid`=%d ORDER BY `ts` DESC LIMIT 500;", $this->guildId, $this->guildId, $this->guildId);
 		$count_logs = count($log_list);
 		for($i = 0; $i < $count_logs; $i++) {
 			$log_list[$i]['ts'] = date('Y-m-d H:i:s', $log_list[$i]['ts']);
@@ -429,7 +430,7 @@ Class Guilds {
 
      /* DEVELOPMENT SECTION */
 
-     /*
+     
 
      public function IsAllowedToGuildBank($tab) {
         if(!isset($_SESSION['accountId'])) {
@@ -459,6 +460,6 @@ Class Guilds {
         return Armory::$cDB->selectCell("SELECT `gbright` FROM `guild_bank_right` WHERE `guildid` = %d AND `TabId` = %d AND `rid` = %d LIMIT 1", $this->guildId, $tab, $rank);
      }
 
-     */
+     
 }
 ?>

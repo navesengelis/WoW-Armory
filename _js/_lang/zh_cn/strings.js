@@ -301,8 +301,8 @@ function dateLocalization(){
 	Date.timeformat = 'H:i:s';	
 	Date.dateTimeFormat = 'yyyy/mm/dd H:i:s'
 	
-	Date.seconds = "Sek";
-	Date.minutes = "Min";
+	Date.seconds = "秒";
+	Date.minutes = "分";
 	
 	$.dpText = {
 		TEXT_PREV_YEAR		:	'去年',
