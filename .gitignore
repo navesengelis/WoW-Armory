@@ -1,3 +1,5 @@
+# Add ignore files here
+.DS_Store
 
 .buildpath
 .project

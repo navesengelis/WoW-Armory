@@ -142,7 +142,13 @@ if (isset($_GET['locale']))
     $_SESSION['armoryLocaleId'] = Armory::GetLoc();
     switch ($tmp)
     {
-        case 'ru_ru':
+        case 'zh_cn':
+        case 'zhcn':
+        case 'zh':
+			$_SESSION['armoryLocale'] = 'zh_cn';
+            $_SESSION['armoryLocaleId'] = 4;
+            break;
+		case 'ru_ru':
         case 'ruru':
         case 'ru':
             $_SESSION['armoryLocale'] = 'ru_ru';

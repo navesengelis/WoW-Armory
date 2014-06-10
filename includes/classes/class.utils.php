@@ -420,7 +420,7 @@ Class Utils {
             return false;
         }
         $realm_id = Armory::FindRealm($realmName);
-        if(!$realm) {
+        if(!$realm_id) {
             return false;
         }
         elseif(!isset(Armory::$realmData[$realm_id])) {
@@ -759,7 +759,7 @@ Class Utils {
                         'level' => 0,
                         'raceId' => $char['race'],
                         'realm' => Armory::$currentRealmInfo['name'],
-                        'name' => utf8_encode($char['charname']),
+                        'name' => $char['charname'],
                         'url' => sprintf('cn=%s&r=%s', urlencode($char['charname']), urlencode(Armory::$currentRealmInfo['name']))
                     );
                 }
@@ -778,7 +778,7 @@ Class Utils {
                     'level' => 0,
                     'raceId' => $achievement['race'],
                     'realm' => Armory::$currentRealmInfo['name'],
-                    'name' => utf8_encode($achievement['charname']),
+                    'name' => $achievement['charname'],
                     'url' => sprintf('cn=%s&r=%s', urlencode($achievement['charname']), urlencode(Armory::$currentRealmInfo['name']))
                 );
             }
@@ -1137,11 +1137,14 @@ Class Utils {
             'en_gb' => array(
                 'days', 'hours', 'min', 'sec'
             ),
+            'zh_cn' => array(
+                '天', '小时', '分钟', '秒'
+            ),
             'ru_ru' => array(
                 'дней', 'часов', 'мин', 'сек'
             )
         );
-        if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'ru_ru') {
+        if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'zh_cn' || Armory::GetLocale() == 'ru_ru') {
             $preferLocale = $strings_array[Armory::GetLocale()];
         }
         else {
@@ -1468,11 +1471,13 @@ Class Utils {
                 'id' => Armory::$aDB->selectCell("SELECT MAX(`id`)+1 FROM `ARMORYDBPREFIX_news`"),
                 'date' => time(),
                 'title_de_de' => null,
-                'title_en_gb' => null,
+                'title_zh_cn' => null,
+				'title_en_gb' => null,
                 'title_es_es' => null,
                 'title_fr_fr' => null,
                 'title_ru_ru' => null,
                 'text_de_de' => null,
+				'text_zh_cn' => null,
                 'text_en_gb' => null,
                 'text_es_es' => null,
                 'text_fr_fr' => null,
@@ -1482,7 +1487,7 @@ Class Utils {
         }
         if($itemId > 0) {
             $newsitem = Armory::$aDB->selectRow("SELECT * FROM `ARMORYDBPREFIX_news` WHERE `id` = %d", $itemId);
-            $locales = array('de_de', 'en_gb', 'es_es', 'fr_fr', 'ru_ru');
+            $locales = array('de_de', 'zh_cn', 'en_gb', 'es_es', 'fr_fr', 'ru_ru');
             foreach($locales as $loc) {
                 $newsitem['title_' . $loc] = stripcslashes($newsitem['title_' . $loc]);
                 $newsitem['text_' . $loc] = stripcslashes($newsitem['text_' . $loc]);
@@ -1524,7 +1529,52 @@ Class Utils {
         }
         return false;
     }
-
+	
+    public function AddNewsItem($newsItem, $update = false) {
+        if(!is_array($newsItem)) {
+            Armory::Log()->writeError('%s : $newsItem must be an array (%s given.)!', __METHOD__, gettype($newsItem));
+            return 'error_array';
+        }
+        if($update) {
+            $sql_query = "UPDATE `ARMORYDBPREFIX_news` SET `date` = %d, 
+            `title_de_de` = '%s', `title_zh_cn` = '%s', `title_en_gb` = '%s', `title_es_es` = '%s', 
+			`title_fr_fr` = '%s', `title_ru_ru` = '%s', `text_de_de` = '%s', `text_zh_cn` = '%s',
+			`text_en_gb` = '%s', `text_es_es` = '%s', `text_fr_fr` = '%s', `text_ru_ru` = '%s', 
+            `display` = %d
+            WHERE `id` = %d";
+            $id = $newsItem['id'];
+        }
+        else {
+            $sql_query = "INSERT INTO `ARMORYDBPREFIX_news`
+            (`date`, `title_de_de`, `title_zh_cn`, `title_en_gb`, `title_es_es`, `title_fr_fr`, `title_ru_ru`,
+            `text_de_de`, `text_zh_cn`, `text_en_gb`, `text_es_es`, `text_fr_fr`, `text_ru_ru`, `id`)
+            VALUES (%d, '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %d, %d)";
+            $id = Armory::$aDB->selectCell("SELECT MAX(`id`)+1 FROM `ARMORYDBPREFIX_news`");
+        }
+        $newsItem['date'] = strtotime($newsItem['date']);
+        if(!Armory::$aDB->query($sql_query, 
+            $newsItem['date'],
+            $newsItem['title_de_de'],
+			$newsItem['title_zh_cn'],
+            $newsItem['title_en_gb'],
+            $newsItem['title_es_es'],
+            $newsItem['title_fr_fr'],
+            $newsItem['title_ru_ru'],
+            $newsItem['text_de_de'],
+			$newsItem['text_zh_cn'],
+            $newsItem['text_en_gb'],
+            $newsItem['text_es_es'],
+            $newsItem['text_fr_fr'],
+            $newsItem['text_ru_ru'],
+            isset($newsItem['display']) ? 1 : 0,
+            $id
+        )) {
+            return 'error_insert';
+        }
+        header('Location: ?action=news&subaction=added');
+        exit;
+    }
+    
     /**
      * Checks for active session & cookie for dual items tooltips
      * @category Utils class
@@ -1548,7 +1598,7 @@ Class Utils {
      * @retunr   bool
      **/
     public static function IsWriteRaw() {
-        if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'en_us' || Armory::GetLocale() == 'ru_ru') {
+        if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'zh_cn' || Armory::GetLocale() == 'en_us' || Armory::GetLocale() == 'ru_ru') {
             return false;
         }
         return true;

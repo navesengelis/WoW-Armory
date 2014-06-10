@@ -23,16 +23,32 @@
  **/
 
 define('__ARMORY__', true);
+define('load_characters_class', true);
+define('load_mangos_class', true);
+define('load_items_class', true);
+define('load_search_class', true);
 if(!@include('includes/armory_loader.php')) {
     die('<b>Fatal error:</b> unable to load system files.');
 }
+$advancedItemsSearch = false;
 header('Content-type: text/xml');
 // Load XSLT template
 $xml->LoadXSLT('items/search.xsl');
+$totalCount = 0;
 $xml->XMLWriter()->startElement('page');
 $xml->XMLWriter()->writeAttribute('globalSearch', 1);
 $xml->XMLWriter()->writeAttribute('lang', Armory::GetLocale());
 $xml->XMLWriter()->startElement('itemSearch');
+$selected = 'items';
+$xml->XMLWriter()->startElement('tabs');
+$xml->XMLWriter()->writeAttribute('count', 200);
+$xml->XMLWriter()->writeAttribute('selected', $selected);
+$xml->XMLWriter()->startElement('tab');
+$xml->XMLWriter()->writeAttribute('count', 200);
+$xml->XMLWriter()->writeAttribute('label', 'armory.tabs.items');
+$xml->XMLWriter()->writeAttribute('type', 'items');
+$xml->XMLWriter()->endElement(); //tab
+$xml->XMLWriter()->endElement(); //tabs
 $xml->XMLWriter()->startElement('related-info');
 $xml->XMLWriter()->endElement();   //related-info
 $xml->XMLWriter()->endElement();  //realmInfo

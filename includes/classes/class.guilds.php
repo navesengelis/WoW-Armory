@@ -330,8 +330,7 @@ Class Guilds {
             Armory::Log()->writeError('%s : guildId not defined', __METHOD__);
             return false;
         }
-        $items_list = Armory::$cDB->select("SELECT `item_entry` AS `id`, `item_guid` AS `seed`, `SlotId` AS `slot`, `TabId` AS `bag` FROM `guild_bank_item` WHERE `guildid`=%d", $this->guildId);
-        $count_items = count($items_list);
+        $items_list = Armory::$cDB->select("SELECT (SELECT `itemEntry` FROM `item_instance` WHERE `guid` = item_guid) AS `id`, `item_guid` AS `seed`, `SlotId` AS `slot`, `TabId` AS `bag` FROM `guild_bank_item` WHERE `guildid`=%d", $this->guildId);        $count_items = count($items_list);
         for($i = 0; $i < $count_items; $i++) {
             $item_data = Armory::$wDB->selectRow("SELECT `RandomProperty`, `RandomSuffix` FROM `item_template` WHERE `entry` = %d LIMIT 1", $items_list[$i]['id']);
             $tmp_durability = Items::GetItemDurabilityByItemGuid($items_list[$i]['seed'], $this->m_server);
@@ -356,6 +355,63 @@ Class Guilds {
         }
         return $items_list;
      }
+	 
+	/**
+	 * Returns guild bank logs
+	 * @category Guilds class
+	 * @category Guilds class
+	 * @access   public
+	 * @return   array
+	 **/
+	public function BuildGuildBankLogList() {
+	     if(!$this->guildId) {
+	         Armory::Log()->writeError('%s : guildId not defined', __METHOD__);
+	         return false;
+	     }
+		$log_list = Armory::$cDB->select("SELECT `LogGuid` AS `logId`, `TabId` AS `obag`, `EventType` AS `type`,
+		`DestTabId` AS `dbag`, (SELECT `name` FROM `characters` WHERE `guid`=`PlayerGuid`) AS `player`,	
+		(SELECT `guild_rank`.`rname` FROM `guild_rank` WHERE `guildid`=%d AND `rid`=`guild_member`.`rank`) AS `rname`,
+		`guild_member`.`rank`, `ItemOrMoney` AS `entry`, `ItemStackCount` AS `quantity`, `TimeStamp` AS `ts`
+		FROM `guild_bank_eventlog` AS `guild_bank_eventlog`
+		LEFT JOIN `guild_member` AS `guild_member` ON `guild_member`.`guid`=`guild_bank_eventlog`.`PlayerGuid` AND `guild_member`.`guildid`=%d
+		WHERE `guild_bank_eventlog`.`guildid`=%d ORDER BY `ts` DESC LIMIT 500;", $this->guildId, $this->guildId, $this->guildId);
+		$count_logs = count($log_list);
+		for($i = 0; $i < $count_logs; $i++) {
+			$log_list[$i]['ts'] = date('Y-m-d H:i:s', $log_list[$i]['ts']);
+			switch($log_list[$i]['type']) {
+				case 1: //deposit
+					$log_list[$i]['item'] = 1;
+					$log_list[$i]['dbag'] = $log_list[$i]['obag'];
+					$log_list[$i]['obag'] = '';
+					break;
+				case 2: //withdraw
+					$log_list[$i]['item'] = 1;
+					$log_list[$i]['dbag'] = '';
+					break;
+				case 3: //move
+				case 7: //move
+					$log_list[$i]['item'] = 1;
+					break;
+				case 4:
+				case 5:
+				case 6: //repair 
+				case 8:
+				case 9: //buytab
+				default:
+					$log_list[$i]['item'] = 0;
+					$log_list[$i]['dbag'] = '';
+					$log_list[$i]['obag'] = '';
+					$log_list[$i]['money'] = $log_list[$i]['entry'];
+					break;
+			}
+			if($log_list[$i]['item']) {
+				$log_list[$i]['icon'] = Items::GetItemIcon($log_list[$i]['entry']);
+	            $log_list[$i]['name'] = Items::GetItemName($log_list[$i]['entry']);
+	            $log_list[$i]['qi'] = Items::GetItemInfo($log_list[$i]['entry'], 'quality');
+			}
+		}
+		return $log_list;
+	}
 
      /**
       * Returns array with guild rank IDs.
@@ -374,7 +430,7 @@ Class Guilds {
 
      /* DEVELOPMENT SECTION */
 
-     /*
+     
 
      public function IsAllowedToGuildBank($tab) {
         if(!isset($_SESSION['accountId'])) {
@@ -404,6 +460,6 @@ Class Guilds {
         return Armory::$cDB->selectCell("SELECT `gbright` FROM `guild_bank_right` WHERE `guildid` = %d AND `TabId` = %d AND `rid` = %d LIMIT 1", $this->guildId, $tab, $rank);
      }
 
-     */
+     
 }
 ?>

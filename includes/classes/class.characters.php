@@ -989,6 +989,9 @@ Class Characters {
 			case 'relic':
 				return $this->equipmentCache[34];
 				break;
+			case 'thrown':
+				return $this->equipmentCache[35];
+				break;
 			case 'tabard':
 				return $this->equipmentCache[36];
 				break;
@@ -1315,7 +1318,7 @@ Class Characters {
         foreach($glyphs_data as $glyph) {
             switch($this->m_server) {
                 case SERVER_MANGOS:
-                    if(in_array(Armory::GetLocale(), array('ru_ru', 'en_gb'))) {
+                    if(in_array(Armory::GetLocale(), array('ru_ru', 'en_gb', 'zh_cn'))) {
                         $current_glyph = Armory::$aDB->selectRow("SELECT `name_%s` AS `name`, `description_%s` AS `effect`, `type` FROM `ARMORYDBPREFIX_glyphproperties` WHERE `id`=%d", Armory::GetLocale(), Armory::GetLocale(), $glyph['glyph']);
                     }
                     else {
@@ -2660,6 +2663,10 @@ Class Characters {
                 if(Armory::GetLocale() == 'ru_ru') {
                     $periods = array('сек.', 'мин.', 'ч.');
                     $ago_str = 'назад';
+                }
+                elseif(Armory::GetLocale() == 'zh_cn') {
+					$periods = array('秒', '分', '时');
+                    $ago_str = '前';
                 }
                 else {
                     $periods = array('seconds', 'minutes', 'hours');

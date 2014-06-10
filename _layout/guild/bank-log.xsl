@@ -19,13 +19,15 @@
 										<xsl:when test="guildBank">
 		                           			<xsl:call-template name="guildContent" />
 										</xsl:when>
+										<!--
 										<xsl:otherwise>
 											<xsl:call-template name = "armorymsg">
 												<xsl:with-param name="title" select = "$loc/strs/guildBank/str[@id='error.accessdenied']" />
 												<xsl:with-param name="message" select = "$loc/strs/guildBank/str[@id='error.notmember']" />
 											</xsl:call-template>
-										</xsl:otherwise>
+										</xsl:otherwise> -->
 									</xsl:choose>
+									
 						   		</div>
 							</div>
                         </div>
@@ -36,25 +38,23 @@
     </div>
 </xsl:template>
 
-
 <xsl:template name="guildContent">
 
-	<!-- character header -->
-	<xsl:call-template name="newGuildHeader" />
-	
 	<script type="text/javascript" src="_js/guild/bank-log.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			initGuildBankLog(
-								"<xsl:value-of select="$loc/strs/guildBank/str[@id='showguildinfo']"/>", 
+			initGuildBankLog(	"<xsl:value-of select="$loc/strs/guildBank/str[@id='showguildinfo']"/>", 
 								"<xsl:value-of select="$loc/strs/guildBank/str[@id='hideguildinfo']"/>",
 								"<xsl:value-of select="$loc/strs/unsorted/str[@id='armory.search.label.noSearchResults']" />");
 		});
 	</script>
+	
+	<!-- character header -->
+	<xsl:call-template name="newGuildHeader" />
 
 	<!-- gmotd -->
 	<div class="filterTitle"><xsl:value-of select="$loc/strs/guildBank/str[@id='guildmsgotd']"/>
-	<a  id="guildInfoToggler" class="dropdownicon" href="javascript:;"><xsl:value-of select="$loc/strs/guildBank/str[@id='showguildinfo']"/></a>
+	<a id="guildInfoToggler" class="dropdownicon" onclick="javascript:;"><xsl:value-of select="$loc/strs/guildBank/str[@id='showguildinfo']"/></a>
 	</div>
 	<div class="filtercontainer" style="padding-left: 20px; margin: 0 10px;">
 		<div style="width:820px; font-weight: bold;">
@@ -83,6 +83,7 @@
 			<div class="bottomshadow"></div>
 			<br />
 		</xsl:otherwise>
+		
 	</xsl:choose>
 	
 </xsl:template>
@@ -275,15 +276,33 @@
             <tbody id="tableTbody">
 				<xsl:for-each select="guildBank/banklogs/banklog">
 					<xsl:if test="not(@unknown = 1)">
-						<xsl:variable name="subInfo" select="current()/item" />			
+						<xsl:variable name="subInfo" select="@item" />			
 						<tr>
-							<td><a href="character-sheet.xml?n={@player}&amp;r={/page/guildInfo/guildHeader/@realm}"><xsl:value-of select="@player" /></a></td>
-							<td><xsl:value-of select="/page/guildInfo/guildRanks/rank[@id=current()/@rank]/@name" /></td>
 							<td>
-								<span style="display: none"><xsl:value-of select="@otab" /></span>
-								<xsl:if test="not(@otab = '')">
-									<span class="staticTip" onmouseover="setTipText('{/page/guildInfo/guildBank/bags/bag[@id=current()/@otab]/@name}')" 
-										style="background: url('wow-icons/_images/21x21/{/page/guildInfo/guildBank/bags/bag[@id=current()/@otab]/@icon}.png') no-repeat; 
+								<a href="character-sheet.xml?n={@player}&amp;r={/page/guildInfo/guildHeader/@realm}"><xsl:value-of select="@player" /></a>
+							</td>
+							<td>
+								<span style="display: none"><xsl:value-of select="@rank" /></span>
+								<xsl:choose>
+									<xsl:when test="not(@rank = '0')">
+										<strong>
+										<xsl:apply-templates mode="printf" select="$loc/strs/guild/str[@id='guild-rank-strOrder']">
+											<xsl:with-param name="param1" select="@rank" />
+										</xsl:apply-templates>
+										</strong>
+									</xsl:when>
+									<xsl:otherwise>
+										<q style="line-height:18px;"><img src="images/icons/icon-guildmaster.gif" align="absmiddle" hspace="5"/>
+	                                       <strong><xsl:value-of select="$loc/strs/guild/str[@id='guild-leader']" /></strong>
+	                                    </q>
+									</xsl:otherwise>
+								</xsl:choose>
+							</td>
+							<td>
+								<span style="display: none"><xsl:value-of select="@obag" /></span>
+								<xsl:if test="not(@obag = '')">
+									<span class="staticTip" onmouseover="setTipText('{/page/guildInfo/guildBank/bags/bag[@id=current()/@obag]/@name}')" 
+										style="background: url('wow-icons/_images/21x21/{/page/guildInfo/guildBank/bags/bag[@id=current()/@obag]/@icon}.png') no-repeat; 
 										display: block; width: 21px; height: 21px;" />
 								</xsl:if>
 							</td>
@@ -294,20 +313,20 @@
 									width: 30px; height: 21px; display: block;"></span>
 							</td>
 							<td>
-								<span style="display: none"><xsl:value-of select="@dtab" /></span>
-								<xsl:if test="not(@dtab = '')">
-									<span class="staticTip" onmouseover="setTipText('{/page/guildInfo/guildBank/bags/bag[@id=current()/@dtab]/@name}')" 
-										style="background: url('wow-icons/_images/21x21/{/page/guildInfo/guildBank/bags/bag[@id=current()/@dtab]/@icon}.png') no-repeat; 
+								<span style="display: none"><xsl:value-of select="@dbag" /></span>
+								<xsl:if test="not(@dbag = '')">
+									<span class="staticTip" onmouseover="setTipText('{/page/guildInfo/guildBank/bags/bag[@id=current()/@dbag]/@name}')" 
+										style="background: url('wow-icons/_images/21x21/{/page/guildInfo/guildBank/bags/bag[@id=current()/@dbag]/@icon}.png') no-repeat; 
 										display: block; width: 21px; height: 21px;" />
 								</xsl:if>
 							</td>
 							<td>								
 								<xsl:choose>
-									<xsl:when test="$subInfo">
-										<span style="display: none"><xsl:value-of select="$subInfo/@qi" /></span>
-										<a href="item-info.xml?i={@id}" class="staticTip itemToolTip rarity{$subInfo/@qi}" id="i={$subInfo/@id}" 
-											style="background: url('wow-icons/_images/21x21/{$subInfo/@icon}.png') no-repeat; padding: 2px 0 5px 25px;">
-											<xsl:value-of select="$subInfo/@name" /></a> x <xsl:value-of select="$subInfo/@count" />
+									<xsl:when test="not(@item = '0')">
+										<span style="display: none"><xsl:value-of select="@qi" /></span>
+										<a href="item-info.xml?i={@entry}" class="staticTip itemToolTip rarity{@qi}" id="i={@entry}" 
+											style="background: url('wow-icons/_images/21x21/{@icon}.png') no-repeat; padding: 2px 0 5px 25px;">
+											<xsl:value-of select="@name" /></a> x <xsl:value-of select="@quantity" />
 									</xsl:when>
 									<xsl:otherwise>
 										<span style="display: none"></span>

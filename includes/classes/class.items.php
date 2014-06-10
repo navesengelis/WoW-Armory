@@ -251,7 +251,7 @@ Class Items {
      * @return   array
      **/
     public function GetItemSetBonusInfo($itemsetdata) {
-        if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'ru_ru') {
+        if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'zh_cn' || Armory::GetLocale() == 'ru_ru') {
             $tmp_locale = Armory::GetLocale();
         }
         else {
@@ -454,7 +454,7 @@ Class Items {
                 }
                 break;
             case 'craft':
-                if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'ru_ru') {
+                if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'zh_cn' || Armory::GetLocale() == 'ru_ru') {
                     $CraftLoot = Armory::$aDB->select("
                     SELECT `Reagent_1`, `Reagent_2`, `Reagent_3`, `Reagent_4`, `Reagent_5`, `Reagent_6`, `Reagent_7`, `Reagent_8`,
                         `ReagentCount_1`, `ReagentCount_2`, `ReagentCount_3`, `ReagentCount_4`, `ReagentCount_5`, `ReagentCount_6`,
@@ -565,7 +565,7 @@ Class Items {
                 }
                 break;
             case 'reagent':
-                if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'ru_ru') {
+                if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'zh_cn' || Armory::GetLocale() == 'ru_ru') {
                     $ReagentLoot = Armory::$aDB->select("
                     SELECT `Reagent_1`, `Reagent_2`, `Reagent_3`, `Reagent_4`, `Reagent_5`, `Reagent_6`, `Reagent_7`, `Reagent_8`,
                         `ReagentCount_1`, `ReagentCount_2`, `ReagentCount_3`, `ReagentCount_4`, `ReagentCount_5`, `ReagentCount_6`,
@@ -2297,7 +2297,7 @@ Class Items {
             if($proto->Spells[$i]['spellid'] > 0) {
                 $spellData = 1;
                 $spell_tmp = Armory::$aDB->selectRow("SELECT * FROM `ARMORYDBPREFIX_spell` WHERE `id`=%d", $proto->Spells[$i]['spellid']);
-                if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'ru_ru') {
+                if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'zh_cn' || Armory::GetLocale() == 'ru_ru') {
                     $tmp_locale = Armory::GetLocale();
                 }
                 else {
@@ -2561,7 +2561,7 @@ Class Items {
     }
 
     public function GenerateEnchantmentSpellData($spellID) {
-        if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'ru_ru') {
+        if(Armory::GetLocale() == 'en_gb' || Armory::GetLocale() == 'zh_cn' || Armory::GetLocale() == 'ru_ru') {
             $tmp_locale = Armory::GetLocale();
         }
         else {
@@ -3035,7 +3035,7 @@ Class Items {
      * @return   int
      **/
     public function GetItemEntryByGUID($item_guid) {
-        return Armory::$cDB->selectCell("SELECT `item_template` FROM `character_inventory` WHERE `item`=%d", $item_guid);
+        return Armory::$cDB->selectCell("SELECT `itemEntry` FROM `item_instance` WHERE `guid`=%d", $item_guid);
     }
 
     /**
