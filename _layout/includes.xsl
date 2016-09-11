@@ -59,8 +59,6 @@
 	<script type="text/javascript" src="shared/global/third-party/sarissa/0.9.9.3/sarissa.js"></script>
 	<script type="text/javascript" src="_js/common.js"></script>
 	<script type="text/javascript" src="_js/armory.js"></script>
-
-	<script type="text/javascript" src="http://ads1.msn.com/library/dap.js"></script> <!-- MS Ad code-->
 	
     <!-- After JavaScript, before browser-specific CSS addition -->
 	<xsl:call-template name="head-content"/>

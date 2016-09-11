@@ -24,37 +24,7 @@ function initializeArmory(){
 
 	//always bind tooltips last
 	bindToolTips();
-
-	//ads are dead last so we don't wait for them
-	//initializeAds();
 }
-
-/*function initializeAds()
-{	//loadScript("http://ads1.msn.com/library/dap.js") 
-	//Does not callback when loaded, following commands error when loaded too soon
-
-	$(document).ready(function() {	
-
-		if(!isHomepage){
-			//top, long ad
-			dapMgr.enableACB("ad_728x90",false);         
-			dapMgr.renderAd("ad_728x90","&amp;PG=BLARS7&amp;AP=1390",728,90);
-
-			//middle box ad
-			dapMgr.enableACB("ad_300x250",false);         
-			dapMgr.renderAd("ad_300x250","&amp;PG=BLARS3&amp;AP=1089",300,250);
-
-		}
-		else{
-		//middle box ad
-		dapMgr.enableACB("ad_300x250",false);         
-		dapMgr.renderAd("ad_300x250","&amp;PG=BLARH3&amp;AP=1089",300,250);
-		}
-
-	});
-
-}*/
-
 
 //begin cookies section
 function getexpirydate(nodays){
