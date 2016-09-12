@@ -24,9 +24,6 @@ function initializeArmory(){
 
 	//always bind tooltips last
 	bindToolTips();
-
-	//ads are dead last so we don't wait for them
-	//initializeAds();
 }
 
 //begin cookies section
